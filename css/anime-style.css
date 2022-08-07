@@ -127,6 +127,7 @@ header .textos-header {
 
     .hover-galeria p {
         color: #fff;
+        font-size: 14px
     }
 
 .imagen-port:hover .hover-galeria {
