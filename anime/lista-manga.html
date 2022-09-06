@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Memoria del Pato Táctico</title>
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/anime-style.css">
+    <link rel="stylesheet" href="../css/lista-style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 </head>
 
@@ -34,8 +34,11 @@
         <section class="img-list">
             <div class="contenedor">
                 <h2 class="titulo">Mangas leidos</h2>
+
+                <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
+
                 <div class="galeria-port">
-                    <div class="imagen-port">
+                    <div class="imagen-port" id="articulo">
                         <img src="../media/manga/nanatsu.png" alt="">
                         <div class="hover-galeria">
                             <p>
@@ -45,7 +48,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="imagen-port">
+                    <div class="imagen-port" id="articulo">
                         <img src="../media/nada.png" alt="">
                         <div class="hover-galeria">
                             <p>
@@ -55,7 +58,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="imagen-port">
+                    <div class="imagen-port" id="articulo">
                         <img src="../media/nada.png" alt="">
                         <div class="hover-galeria">
                             <p>
@@ -65,7 +68,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="imagen-port">
+                    <div class="imagen-port" id="articulo">
                         <img src="../media/nada.png" alt="">
                         <div class="hover-galeria">
                             <p>
@@ -78,6 +81,7 @@
                 </div>
             </div>
         </section>
+        <script src="../js/buscador.js"></script>
     </main>
     <footer>
         <div class="contenedor-footer">
