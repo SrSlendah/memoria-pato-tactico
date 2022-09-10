@@ -8,18 +8,6 @@ body {
     font-family: 'open sans';
     background-color: #2E2E2E
 }
-input {
-    width: 53vw;
-    padding: 10px;
-    outline: none;
-    border: 5px solid #CCD1E4;
-    font-weight: 600;
-    margin-bottom: 60px
-}
-
-.filtro {
-    display: none;
-}
 
 .contenedor {
     padding: 60px 0;
@@ -34,6 +22,86 @@ input {
     font-size: 35px;
     text-align: center;
     margin-bottom: 60px;
+}
+
+/* Menu */
+section#menu {
+    background: #2E2E2E;
+}
+
+    section#menu::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+.logo {
+    float: left;
+    width: 190px;
+    height: 85px;
+    padding: 10px 0;
+}
+
+.menu {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 5px;
+        position: relative;
+    }
+
+    nav a {
+        color: #a0a0a0;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+        nav a:hover {
+            color: #757575;
+        }
+
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: #b3b3b3;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 150ms;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+
+/* Buscador */
+input {
+    width: 53vw;
+    padding: 10px;
+    outline: none;
+    border: 5px solid #CCD1E4;
+    font-weight: 600;
+    margin-bottom: 60px
+}
+
+.filtro {
+    display: none;
 }
 
 /* Header */
