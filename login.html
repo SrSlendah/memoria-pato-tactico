@@ -7,8 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Memoria del Pato Táctico</title>
     <link rel="shortcut icon" href="media/pato.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+
+    <script type="text/javascript">
+        function validar() {
+            var usuario = document.getElementById("u").value;
+            var contraseña = document.getElementById("p").value;
+
+            if (usuario == "Slendah" && contraseña == "mongoloyey") {
+                window.location = "admin/changelog.html"
+            }
+            else {
+                alert("El usuario y/o contraseña introducidos no son validos");
+            }
+        }
+    </script>
+
+
 </head>
 
 <body>
@@ -33,9 +49,17 @@
 
 
         <section class="textos-header">
-            <h1>Inicio</h1>
+            <h1> </h1>
         </section>
 
+        <div class="login">
+            <h1>Admin Login</h1>
+            <form method="post">
+                <input type="text" name="u" id="u" placeholder="Usuario" required="required" />
+                <input type="password" name="p" id="p" placeholder="Contraseña" required="required" />
+                <button type="button" class="btn btn-primary btn-block btn-large" onclick="validar()">Entrar</button>
+            </form>
+        </div>
 
         <div class="wave" style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -51,19 +75,6 @@
 
     <main>
 
-        <section class="contenedor en-esta-web">
-            <h2 class="titulo">En esta web</h2>
-            <div class="contenedor-en-esta-web">
-                <img src="media/esta-web.png" alt="" class="imagen-about-us">
-                <div class="contenido-textos">
-                    <h3><span>1</span>Sección "Anime"</h3>
-                    <p>En esta sección se puede encontrar las listas con los animes vistos y los mangas leidos.
-                    </p>
-                    <h3><span>2</span>Sección "Cine"</h3>
-                    <p>En esta sección se puede encontrar las listas con las películas vistas.</p>
-                </div>
-            </div>
-        </section>
 
     </main>
 

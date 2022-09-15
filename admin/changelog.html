@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memoria del Pato Táctico</title>
+    <link rel="shortcut icon" href="media/pato.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/lista-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+    <header>
+
+
+        <section id="menu">
+            <div class="menu">
+
+                <img src="../media/logo.png" alt="logo" class="logo">
+
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">inicio</a></li>
+                        <li><a href="../anime.html">Anime</a></li>
+                        <li><a href="../cine.html">Cine</a></li>
+                        <li><a href="./login.html">Admin</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+
+        <section class="textos-header">
+            <h1>Registro de Cambios</h1>
+        </section>
+
+
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                 style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                      style="stroke: none; fill: #2E2E2E; "></path>
+            </svg>
+        </div>
+
+
+    </header>
+
+
+    <main>
+
+        <section class="changelog">
+
+            <details class="changelog-details" align="center">
+                <summary>v3.4.0</summary>
+                <h6>15/09/2022</h6>
+                <p>
+                    Añadida la seccion para adminisdradores, protegida bajo contraseña, donde se podrá acceder al registro de cambios de la pagina
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.3.0</summary>
+                <h6>14/09/2022</h6>
+                <p>
+                    Añadido el anime "Jujutsu Kaisen 0"
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.2.8</summary>
+                <h6>14/09/2022</h6>
+                <p>
+                    Actualizado el numero de episodios vistos del anime "Mairimashita! Iruma-kun":<br>
+                    Antes: 12/23<br>
+                    Ahora: 23/23<br>
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.2.7</summary>
+                <h6>14/09/2022</h6>
+                <p>
+                    Actualizado el numero de episodios vistos del anime "Boku no Hero Academia 3rd Season":<br>
+                    Antes: 21/25<br>
+                    Ahora: 25/25<br>
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.2.6</summary>
+                <h6>14/09/2022</h6>
+                <p>
+                    Actualizado el numero de episodios vistos del anime "Boku no Hero Academia 3rd Season":<br>
+                    Antes: 4/25<br>
+                    Ahora: 21/25<br>
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.2.5</summary>
+                <h6>12/09/2022</h6>
+                <p>
+                    Actualizado el numero de episodios vistos del anime "Mairimashita! Iruma-kun":<br>
+                    Antes: 2/23<br>
+                    Ahora: 12/23<br>
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.2.4</summary>
+                <h6>11/09/2022</h6>
+                <p>
+                    Resubidas todas las imagenes de la web para que tengan un tamaño similar
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.2.3</summary>
+                <h6>11/09/2022</h6>
+                <p>
+                    Arreglado un error que provocaba que el anime "Nanatsu no taizai: Mokushiroku no Yonkishi" no tuviera imagen
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.2.2</summary>
+                <h6>11/09/2022</h6>
+                <p>
+                    Agregado el anime Go-Tõubun no Hanayome Movie, Made in Abyss: Retsujitsu no Ougonkyou, Nanatsu no taizai: Mokushiroku no Yonkishi
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.2.1</summary>
+                <h6>11/09/2022</h6>
+                <p>
+                    Agregado el anime Mairimashita! Iruma-kun T1,T2/T3
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.2.0</summary>
+                <h6>11/09/2022</h6>
+                <p>
+                    Rediseñado el boton de volver arriba
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.1.2</summary>
+                <h6>11/09/2022</h6>
+                <p>
+                    Cambiado el estado del anime "No game No Life: Zero"<br>
+                    Antes: Planeado<br>
+                    Ahora: Visto
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.1.1</summary>
+                <h6>11/09/2022</h6>
+                <p>
+                    Actualizado el numero de episodios vistos del anime "Sono Bisque Doll wa Koi wo Soru":<br>
+                    Antes: 1/12<br>
+                    Ahora: 12/12<br>
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.1.0</summary>
+                <h6>10/09/2022</h6>
+                <p>
+                    Agregado el anime Dororo
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v3.0.0</summary>
+                <h6>10/09/2022</h6>
+                <p>
+                    Remodelado el menu de navegacion por la web
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.8.1</summary>
+                <h6>10/09/2022</h6>
+                <p>
+                    Agregado el anime "Sono Bisque Doll wa Koi wo Suru" con 1/12 episodios vistos<br>
+                    Actualizado el numero de episodios vistos del anime "Boku no hero Academia 3":<br>
+                    Antes: 1/25<br>
+                    Ahora: 4/25<br>
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.8.0</summary>
+                <h6>09/09/2022</h6>
+                <p>
+                    Agregado un boton para volver arriba en las listas
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.7.7</summary>
+                <h6>09/09/2022</h6>
+                <p>
+                    Agregada la pelicula de Marvel "Thor: Love and Thunder"
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.7.6</summary>
+                <h6>09/09/2022</h6>
+                <p>
+                    Actualizado el numero de episodios vistos del anime "Boku no hero Academia 3":<br>
+                    Antes: 0/25<br>
+                    Ahora: 1/25
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.7.5</summary>
+                <h6>09/09/2022</h6>
+                <p>
+                    Actualizado el numero de episodios vistos del anime "Tate no Yuusha no Nariagari Season 2":<br>
+                    Antes: 0/13<br>
+                    Ahora: 13/13
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.7.4</summary>
+                <h6>08/09/2022</h6>
+                <p>
+                    Agregadas la quinta temporada de Stranger Things, la sexta temporada de Rick & Morty y la pelicula "Death Note: Live Action"
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.7.3</summary>
+                <h6>07/09/2022</h6>
+                <p>
+                    Agregadas la segunda y tercera temporada del anime "Tate no Yuusha no Nariagari"
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.7.2</summary>
+                <h6>07/09/2022</h6>
+                <p>
+                    Actualizado el numero de episodios vistos del anime "Tate no Yuusha no Nariagari":<br>
+                    Antes: 12/25<br>
+                    Ahora: 25/25
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.7.1</summary>
+                <h6>06/09/2022</h6>
+                <p>
+                    Actualizado el numero de episodios vistos del anime "Tate no Yuusha no Nariagari":<br>
+                    Antes: 1/25<br>
+                    Ahora: 12/25
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.7.0</summary>
+                <h6>06/09/2022</h6>
+                <p>
+                    Renombrado el archivo de estilo de las listas:<br>
+                    Antes: css/anime-style.css<br>
+                    Ahora: css/lista-style.css<br>
+                    Integrado el lenguaje JavaScript a la web con un buscador para las listas
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.6.2</summary>
+                <h6>06/09/2022</h6>
+                <p>
+                    Agregada la serie "Arcane" a la lista de cine
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.6.1</summary>
+                <h6>05/09/2022</h6>
+                <p>
+                    Resubidas las imagines de los animes planeadon para ver con una etiqueta que lo indica a la carpeta de "media/anime/temp"<br>
+                    Actualizado el numero de episodios visto del anime "Spy x Family":<br>
+                    Antes: 5/12<br>
+                    Ahora: 12/12
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.6.0</summary>
+                <h6>05/09/2022</h6>
+                <p>
+                    Resubidas las imagines de los animes planeadon para ver con una etiqueta que lo indica a la carpeta de "media/anime/temp"<br>
+                    Agregado las dos temporadas del anime: Spy x Family
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.5.0</summary>
+                <h6>04/09/2022</h6>
+                <p>
+                    Agregados los animes:<br>
+                    Arifureta Shokugyou se Sekai Saikyou, Blend S, Boku no Tonari no Ankoku Hakaishin ga Imasu, Boku no Hero Academia T3/T4/T5/T6, Bokutachi wa Benkyoy ga Dekinai, Btoom!, Edens Zero, Gamers!, Isekai Cheat Magician, Isekai Maou to Shoukan Shoujo no Dorei Majutsu Ω, Jahy-sama wa Kujikenai!, Lucky☆Star, Made in Abyss, Mahoutsukai Reimeiki, Mob Psycho 100 III, New Game!, No Game no Life: Zero, One Punch Man 3, Overlord T2/T3/T4, Princess Conect! Re:dive, Psycho-Pass, Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai, Sewayaki Kitsune no Senko-san, Shikkakumon no Saikyou Kenja, Tejina-senpai, Ueno-san wa Bukiyou
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.4.0</summary>
+                <h6>03/09/2022</h6>
+                <p>
+                    Resubidas todas las imagenes de la lista de anime con un tamaño similar<br>
+                    Agregados los animes:<br>
+                    Fairy Tail, Mob Psycho 100, Mob Psycho 100 II, Naruto, Neon Genesis Evangelion
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.3.0</summary>
+                <h6>01/09/2022</h6>
+                <p>
+                    Añadida la pelicula de "Slenderman" a la seccion de cine<br>
+                    Añadida la serie de Marvel "Yo soy groot"<br>
+                    Añadida la pelicula de Marvel "Spider-Man: Homecoming"<br>
+                    Añadida la pelicula de Marvel "Spider-Man: Far From Home"<br>
+                    Añadida la segunda parte del anime "JoJo no Kimyou na Bouken Stone Ocean" con los episodios vistos: 12/12<br>
+                    Se ha reordenado la lista de anime en orden alfabetico.
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.2.0</summary>
+                <h6>24/08/2022</h6>
+                <p>
+                    Añadidas la temporada 1 y 2 del anime "Komi-san wa, Comyushou desu"<br>
+                    Episodios vistos de la primera temporada: 12/12<br>
+                    Episodios vistos de la segunda temporada: 2/12
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.1.1</summary>
+                <h6>21/08/2022</h6>
+                <p>
+                    Arreglado un error en la casilla del anime "Nanatsu no Taizai"<br>
+                    Reordenada la lista de cine, ahora se muestra en el orden en el que se han visto
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.1.0</summary>
+                <h6>21/08/2022</h6>
+                <p>
+                    Cambiada la manera de representar las temporadas de los animes:<br>
+                    Antes: Estaban todas en la misma casilla<br>
+                    Ahora: Cada temporada tiene su casilla
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.0.4</summary>
+                <h6>20/08/2022</h6>
+                <p>
+                    Cambiada la cantidad de episodios vistos de la primera y segunda parte de la cuarta temporada del anime "Shingeki no Kyojin":<br>
+                    Antes: Parte 1 14/16 | Parte 2 0/12<br>
+                    Ahora: Parte 1 16/16 | Parte 2 12/12
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.0.3</summary>
+                <h6>20/08/2022</h6>
+                <p>
+                    Añadidas la parte 1 y 2 de la cuarta temporada del anime "Shingeki no Kyojin"<br>
+                    Episodios vistos de la primera parte: 14/16
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.0.2</summary>
+                <h6>19/08/2022</h6>
+                <p>
+                    Cambiada la cantidad de episodios vistos de la segunda temporada del anime "Go-Tõbun no Hanayome":<br>
+                    Antes: 0/12<br>
+                    Ahora: 12/12
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.0.1</summary>
+                <h6>18/08/2022</h6>
+                <p>
+                    Cambiada la cantidad de episodios vistos del anime "Go-Tõbun no Hanayome":<br>
+                    Antes: 0/12<br>
+                    Ahora: 12/12
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v2.0.0</summary>
+                <h6>14/08/2022</h6>
+                <p>
+                    Añadido el anime "Go-Tõbun no Hanayome"<br>
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.9.1</summary>
+                <h6>14/08/2022</h6>
+                <p>
+                    Cambiada la cantidad de episodios vistos de la segunda temporada de Enen no Shoubatai:<br>
+                    Antes: 20/24<br>
+                    Ahora: 24/24
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.9.0</summary>
+                <h6>14/08/2022</h6>
+                <p>
+                    Cambiada la cantidad de episodios vistos de la segunda temporada de Enen no Shoubatai:<br>
+                    Antes: 0/24<br>
+                    Ahora: 20/24
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.8.1</summary>
+                <h6>09/08/2022</h6>
+                <p>
+                    Cambiado el numero de episodios vistos de Stranger Things 3 y 4:<br>
+                    Antes: Stranger Things 3: 0/8 | Stranger Things 4: 0/9<br>
+                    Ahora: Stranger Things 3: 8/8 | Stranger Things 4: 8/9
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.8.0</summary>
+                <h6>07/08/2022</h6>
+                <p>
+                    Cambiada la manera de representar episodios y temporadas de anime:<br>
+                    Antes: Indicaba los episodios totales y las temporadas vistas<br>
+                    Ahora: Indica cuantos episodios vistos de cada temporada
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.7.2</summary>
+                <h6>06/08/2022</h6>
+                <p>
+                    Cambiada la cantidad de episodios vistos de Enen no Shoubatai:<br>
+                    Antes: 3/48<br>
+                    Ahora: 18/48
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.7.1</summary>
+                <h6>03/08/2022</h6>
+                <p>
+                    Cambiada la cantidad de episodios vistos de Enen no Shoubatai:<br>
+                    Antes: 1/48<br>
+                    Ahora: 3/48
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.7.0</summary>
+                <h6>02/08/2022</h6>
+                <p>
+                    Reordenada la lista de anime:<br>
+                    Antes: No tenia orden<br>
+                    Ahora: Esta ordenada segun se han ido viendo
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.6.2</summary>
+                <h6>02/08/2022</h6>
+                <p>
+                    Cambiado el numero de episodios vistos de Stranger Things 2:<br>
+                    Antes: 7/9<br>
+                    Ahora:  9/9
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.6.2</summary>
+                <h6>02/08/2022</h6>
+                <p>
+                    Cambiado el numero de episodios vistos de Stranger Things 2:<br>
+                    Antes: 7/9<br>
+                    Ahora:  9/9
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.6.1</summary>
+                <h6>02/08/2022</h6>
+                <p>
+                    Cambiado el numero de episodios vistos de Stranger Things 2:<br>
+                    Antes: 2/9<br>
+                    Ahora:  7/9
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.6.0</summary>
+                <h6>02/08/2022</h6>
+                <p>
+                    Cambiada la manera de representar las temporadas de las series:<br>
+                    Ahora se representaran cada temporada en una casilla distinte en lugar de representarse todas en la misma<br>
+                    Subidas las imagenes para las temporadas 1,2,3,4,5 de Rick & Morty y las temporadas 1,2,3,4 de Stranger Things
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.5.2</summary>
+                <h6>01/08/2022</h6>
+                <p>
+                    Actualizada la cantidad de episodios y temporadas vistas de Rick & Morty<br>
+                    Antes: 41/51 Episodios | T1, T2, T3, T4<br>
+                    Ahora: 51/51 Episodios | T1, T2, T3, T4, T5
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.5.1</summary>
+                <h6>01/08/2022</h6>
+                <p>
+                    Actualizada la cantidad de episodios y temporadas vistas de Rick & Morty<br>
+                    Antes: 11/41 Episodios | T1<br>
+                    Ahora: 41/51 Episodios | T1, T2, T3, T4
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.5.0</summary>
+                <h6>01/08/2022</h6>
+                <p>
+                    Cambiado el orden de la distribucion de como se representa las temporadas y los episodios vistos de una serie<br>
+                    Antes: Temporadas, Episodios<br>
+                    Ahora: Episodios, Temporadas<br><br>
+                    Agregados dos animes:<br>
+                    Tokyo Revengers, Enen no Shoubatai
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.4.0</summary>
+                <h6>30/07/2022</h6>
+                <p>
+                    Agregada la serie "Loki" a la lista de marvel, con 1 episodio visto
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.3.0</summary>
+                <h6>28/07/2022</h6>
+                <p>
+                    Actualizada la cantidad de episodios vistos de la serie de marvel "Moon Knight"<br>
+                    Antes: 1/6<br>
+                    Ahora: 6/6<br><br>
+                    Añadida la serie Rick & Morty T1
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.2.0</summary>
+                <h6>26/07/2022</h6>
+                <p>
+                    Agregada la serie "Moon Knight" a la lista de marvel
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.1.0</summary>
+                <h6>20/07/2022</h6>
+                <p>
+                    Cambios de directorios de las imagenes de la sección "cine":<br>
+                    Antes: media/peliculas/imagen.png<br>
+                    Ahora: media/otros/imagen.png<br><br>
+
+                    Agregadas 2 series a la seccion de cine:<br>
+                    Squid game, Stranger things T1
+                </p>
+            </details>
+
+            <details class="changelog-details" align="center">
+                <summary>v1.0.0</summary>
+                <h6>18/07/2022</h6>
+                <p>
+                    <h4>Creación de la pagina:</h4>
+                    Subidos todos los archivos para que la pagina funcione correctamente
+                </p>
+            </details>
+
+        </section>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/ir-arriba.js"></script>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Twitter</h4>
+                <p>@SLENDERS1T0</p>
+            </div>
+            <div class="content-foo">
+                <h4>Discord</h4>
+                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none" ; target=" _blank">Click</a></p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>
+    </footer>
+</body>
+
+</html>
