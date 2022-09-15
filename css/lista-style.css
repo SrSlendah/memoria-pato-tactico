@@ -291,3 +291,18 @@ footer {
     margin: 20px 0 0 0;
     color: #9e9797;
 }
+
+/* Chagelog */
+
+.changelog-details {
+    color: #fff;
+    margin-bottom: 15px
+}
+
+    .changelog-details > summary {
+        font-size: 26px;
+    }
+
+    .changelog-details > p {
+        margin-top: 15px;
+    }
