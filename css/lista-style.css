@@ -9,6 +9,21 @@ body {
     background-color: #2E2E2E
 }
 
+main h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+main h4 {
+    margin-bottom: 30px;
+}
+main h4 > a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .contenedor {
     padding: 60px 0;
     width: 90%;
@@ -98,7 +113,7 @@ input {
     outline: none;
     border: 5px solid #CCD1E4;
     font-weight: 600;
-    margin-bottom: 60px
+    margin-bottom: 30px
 }
 
 .filtro {
