@@ -1,0 +1,794 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memoria del Pato Táctico</title>
+    <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/lista-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+    <header>
+
+
+        <section id="menu">
+            <div class="menu">
+
+                <a href="../index.html"><img src="../media/logo.png" alt="logo" class="logo"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">inicio</a></li>
+                        <li><a href="../anime.html">Anime</a></li>
+                        <li><a href="../cine.html">Cine</a></li>
+                        <li><a href="../login.html">Admin</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+
+        <section class="textos-header">
+            <h1>Lista de Anime</h1>
+        </section>
+
+
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                 style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                      style="stroke: none; fill: #2E2E2E; "></path>
+            </svg>
+        </div>
+
+
+    </header>
+    <main>
+        <section class="img-list">
+            <div class="contenedor">
+                <h2 class="titulo"></h2>
+
+
+                <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
+                <h4 align="center"><a href="./proximos-estrenos.html">[ Para ver los próximos estrenos de anime da CLICK AQUI ]</a></h4>
+
+
+                <div class="galeria-port">
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/akamegakill.html">
+                            <img src="../media/anime/akamegakill.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Akame ga Kill!</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/ansatsukyoushitsu.html">
+                            <img src="../media/anime/ansatsukyoushitsu.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Ansatsu Kyoushitsu</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/arifureta.html">
+                            <img src="../media/anime/temp/arifureta.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Arifureta Shokugyou<br> de Sekai Saikyou</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/beastars.html">
+                            <img src="../media/anime/beastars.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Beastars</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/black-clover.html">
+                            <img src="../media/anime/temp/black-clover.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Black Clover</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/blends.html">
+                            <img src="../media/anime/blends.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Blend S</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/bna.html">
+                            <img src="../media/anime/bna.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>BNA: Brand New Animal</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/boku-no-tonari.html">
+                            <img src="../media/anime/temp/boku-no-tonari.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Boku no Tonari ni Ankoku<br> Hakaishin ga Imasu</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/bnha.html">
+                            <img src="../media/anime/bnha.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Boku no Hero Academia</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/bokutachi.html">
+                            <img src="../media/anime/temp/bokutachi.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Bokutachi wa Benkyou<br> ga Dekinai</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/btoom.html">
+                            <img src="../media/anime/temp/btooom.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Btooom!</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/chainsawman.html">
+                            <img src="../media/anime/temp/chainsawman.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Chainsaw Man</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/danmachi.html">
+                            <img src="../media/anime/danmachi.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Danmachi</b><br><br><br>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/darlinginthefranxx.html">
+                            <img src="../media/anime/darlinginthefranxx.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Darling in the FranXX</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/deathnote.html">
+                            <img src="../media/anime/deathnote.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Death Note</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/death-parade.html">
+                            <img src="../media/anime/temp/death-parade.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Death Parade</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/dorohedoro.html">
+                            <img src="../media/anime/dorohedoro.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Dorohedoro</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/dororo.html">
+                            <img src="../media/anime/temp/dororo.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Dororo</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/edenszero.html">
+                            <img src="../media/anime/temp/edenszero.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Edens Zero</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/fire-force.html">
+                            <img src="../media/anime/fire-force.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Enen no Shouboutai</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/fairy-tail.html">
+                            <img src="../media/anime/fairy-tail.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Fairy Tail</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/gamers.html">
+                            <img src="../media/anime/temp/gamers.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Gamers!</b><br><br><br>
+                                    <b>· </b>Episodios vistos:  0/12
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/quintillizas.html">
+                            <img src="../media/anime/quintillizas.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Go-Tōbun no Hanayome</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/goblinslayer.html">
+                            <img src="../media/anime/goblinslayer.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Goblin Slayer</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/isekai-cheat-magician.html">
+                            <img src="../media/anime/temp/isekai-cheat-magician.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Isekai Cheat Magician</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/isekaimaoutoshoukan.html">
+                            <img src="../media/anime/isekaimaoutoshoukan.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Isekai Maou to Shoukan<br> Shoujo no Dorei Majutsu</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/jahy-sama.html">
+                            <img src="../media/anime/temp/jahy-sama.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Jahy-sama wa Kujikenai!</b><br><br><br>
+                                    <b>· </b>Episodios vistos:  0/20
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/jojos.html">
+                            <img src="../media/anime/jojos.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>JoJo no Kimyou na Bouken</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/jujutsu.html">
+                            <img src="../media/anime/jujutsu.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Jujutsu Kaisen</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/kaguya-sama.html">
+                            <img src="../media/anime/temp/kaguya-sama.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Kaguya-sama wa<br> Kokurasetai: Tensai-tachi<br> no Renai Zunousen</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/kakegurui.html">
+                            <img src="../media/anime/kakegurui.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Kakegurui</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/parasyte.html">
+                            <img src="../media/anime/temp/parasyte.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Kiseijuu: Sei no Kakuritsu</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/takagisan.html">
+                            <img src="../media/anime/takagisan.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Karakai Jouzu no Takagi-san</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/kimetsu.html">
+                            <img src="../media/anime/kimetsu.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Kimetsu no Yaiba</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/kobayashisan.html">
+                            <img src="../media/anime/kobayashisan.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Kobayashi-san Chi no<br> Maid Dragon</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/komisan.html">
+                            <img src="../media/anime/komisan.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Komi-san wa,<br> Comyushou desu.</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/konosuba.html">
+                            <img src="../media/anime/konosuba.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Kono Subarashii Sekai<br> ni Shukufuku wo!</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/luckystar.html">
+                            <img src="../media/anime/temp/lucky-star.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Lucky☆Star</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/made-in-abyss.html">
+                            <img src="../media/anime/temp/made-in-abyss.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Made in Abyss</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/mahoutsukai.html">
+                            <img src="../media/anime/temp/mahoutsukai.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Mahoutsukai Reimeiki</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/mairimashita.html">
+                            <img src="../media/anime/mairimashita.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Mairimashita! Iruma-kun</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/mob-psycho.html">
+                            <img src="../media/anime/mob-psycho.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Mob Psycho 100</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/nanatsu.html">
+                            <img src="../media/anime/nanatsu.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Nanatsu no Taizai</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/naruto.html">
+                            <img src="../media/anime/temp/naruto.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Naruto</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/evangelion.html">
+                            <img src="../media/anime/temp/evangelion.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Neon Genesis Evangelion</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/newgame.html">
+                            <img src="../media/anime/temp/newgame.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>New Game!</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/nogamenolife.html">
+                            <img src="../media/anime/nogamenolife.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>No Game No Life</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/noragami.html">
+                            <img src="../media/anime/noragami.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Noragami</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/onepunchman.html">
+                            <img src="../media/anime/onepunchman.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>One Punch Man</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/overlord.html">
+                            <img src="../media/anime/overlord.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Overlord</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/re-dive.html">
+                            <img src="../media/anime/re-dive.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Princess Connect! Re:Dive</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/psycho-pass.html">
+                            <img src="../media/anime/temp/psycho-pass.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Psycho-Pass</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/rezero.html">
+                            <img src="../media/anime/rezero.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Re:Zero kara Hajimeru<br> Isekai Seikatsu</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/relife.html">
+                            <img src="../media/anime/relife.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>ReLIFE</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/bunny-girl-senpai.html">
+                            <img src="../media/anime/temp/bunny-girl-senpai.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Seishun Buta Yarou wa<br> Bunny Girl Senpai no<br> Yume wo Minai</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/senko-san.html">
+                            <img src="../media/anime/temp/senko-san.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Sewayaki Kitsune<br> no Senko-san</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/shigatsuwakiminouso.html">
+                            <img src="../media/anime/shigatsuwakiminouso.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Shigatsu wa Kimi no Uso</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/shikkakumon.html">
+                            <img src="../media/anime/temp/shikkakumon.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Shikkakumon no<br> Saikyou Kenja</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/shingeki.html">
+                            <img src="../media/anime/shingeki.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Shingeki no Kyojin</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/sonobisquedoll.html">
+                            <img src="../media/anime/sonobisquedoll.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Sono Bisque Doll<br> wa Koi wo Suru </b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/soul-eater.html">
+                            <img src="../media/anime/temp/soul-eater.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Soul Eater</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/kanrinrin-san.html">
+                            <img src="../media/anime/Kanrinrin-san.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Sunohara-sou no<br> Kanrinin-san</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/sao.html">
+                            <img src="../media/anime/sao.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Sword Art Online</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/spyxfamily.html">
+                            <img src="../media/anime/spyxfamily.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Spy x Family</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/tatenoyuusha.html">
+                            <img src="../media/anime/tatenoyuusha.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Tate no Yuusha<br> no Nariagari</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/tejina.html">
+                            <img src="../media/anime/temp/tejina.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Tejina-senpai</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/tokyoghoul.html">
+                            <img src="../media/anime/tokyoghoul.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Tokyo Ghoul</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/trevengers.html">
+                            <img src="../media/anime/temp/trevengers.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Tokyo Revengers</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <a href="../lista-anime/uenosan.html">
+                            <img src="../media/anime/temp/uenosan.png" alt="">
+                            <div class="hover-galeria">
+                                <p>
+                                    <b>Ueno-san wa Bukiyou</b>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <img src="../media/nada.png" alt="">
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <img src="../media/nada.png" alt="">
+                    </div>
+                    <div class="imagen-port" id="articulo">
+                        <img src="../media/nada.png" alt="">
+                    </div>
+
+                </div>
+    </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="../js/buscador.js"></script>
+        <script src="../js/ir-arriba.js"></script>
+
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Twitter</h4>
+                <p>@SLENDERS1T0</p>
+            </div>
+            <div class="content-foo">
+                <h4>Discord</h4>
+                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;" target="_blank">Click</a></p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none;" target="_blank">Click</a></p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>
+    </footer>
+</body>
+
+</html>
