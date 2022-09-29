@@ -24,6 +24,21 @@ body {
     margin-bottom: 60px;
 }
 
+h1 {
+    margin-top: 25px;
+    font-size: 50px;
+    color: #fff
+}
+
+h4 {
+    color: #fff
+}
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
 /* Menu */
 section#menu {
     background: #2E2E2E;
@@ -188,7 +203,6 @@ main .en-esta-web {
     text-align: justify;
 }
 
-
 /* footer */
 
 footer {
@@ -268,3 +282,4 @@ footer {
             font-weight: 300;
             padding-top: 5px;
         }
+
