@@ -1,4 +1,4 @@
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,23 +19,25 @@ body {
 
 .titulo {
     color: #fff;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 1px;
 }
 
 .subtitulo {
     color: #9C9C9C;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 1px;
 }
 
-h1 {
+.tipo {
     margin-top: 25px;
     font-size: 50px;
-    color: #fff
+    color: #fff;
 }
+
+
 
 h3 {
     margin-top:5px;
@@ -49,6 +51,57 @@ h4 {
 
 a {
     text-decoration: none;
+    color: #fff
+}
+
+img {
+    width: 30%;
+    height: 300%
+}
+
+.contenido-textos > h3 {
+    margin-top: 20px;
+    color: #fff;
+    margin-left: 42%
+}
+
+.contenido-textos > p {
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 38%
+}
+
+.contenido-textos span {
+    background: #6F3C97;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+    margin-bottom: 5px
+}
+
+summary {
+    list-style: none;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+details {
+    margin-top: 0px;
+}
+
+details summary::before {
+    content: "+ Mostrar mas";
+    color: #fff;
+}
+
+details[open] summary::before {
+    content: "- Mostrar menos";
     color: #fff
 }
 
@@ -228,6 +281,7 @@ main .en-esta-web {
 }
 
 .contenido-textos h3 {
+    margin-left: 15px;
     margin-bottom: 15px;
     color: #fff;
 }
@@ -245,7 +299,8 @@ main .en-esta-web {
     margin-right: 5px;
 }
 
-.contenido-textos p{
+.contenido-textos p {
+    margin-left: 15px;
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
@@ -299,12 +354,13 @@ footer {
 .cards {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 25px
 }
 
     .cards .card {
         background: #6F3C97;
         display: flex;
-        width: 46%;
+        width: 1250px;
         height: 200px;
         align-items: center;
         justify-content: space-evenly;
@@ -326,8 +382,15 @@ footer {
             color: #fff;
         }
 
+        
+        .cards .card > .contenido-texto-card h4 {
+            font-size:25px;
+            padding: 10px 0 25px;
+        }
+
         .cards .card > .contenido-texto-card p {
             font-weight: 300;
+            font-size: 20px;
             padding-top: 5px;
         }
 
