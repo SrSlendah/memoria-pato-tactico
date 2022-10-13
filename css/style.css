@@ -392,5 +392,31 @@ footer {
             font-weight: 300;
             font-size: 20px;
             padding-top: 5px;
+            color: #fff
         }
 
+    /* MANTENIMIENTO */
+
+.img-mant {
+    width: 17%;
+    margin-left: 42%;
+    margin-top: 130px
+}
+
+.titulo-mant {
+    font-size: 75px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.titulo2-mant {
+    font-size: 35px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.titulo3-mant {
+    font-size: 25px;
+    color: #fff;
+    margin-top: 30px;
+}
