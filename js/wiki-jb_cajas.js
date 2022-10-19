@@ -1,0 +1,114 @@
+function showTier1() {
+    document.getElementById('tier1').style.display = '';
+    document.getElementById('tier1-btn').style.backgroundColor = '#4b2966'
+    document.getElementById('tier1-btn').style.borderColor = '#311a42'
+    document.getElementById('tier1-btn').style.color = '#9e9e9e'
+    document.getElementById('tier2').style.display = 'none';
+    document.getElementById('tier2-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier2-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier2-btn').style.color = '#fff'
+    document.getElementById('tier3').style.display = 'none';
+    document.getElementById('tier3-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier3-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier3-btn').style.color = '#fff'
+    document.getElementById('tier4').style.display = 'none';
+    document.getElementById('tier4-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier4-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier4-btn').style.color = '#fff'
+    document.getElementById('tier5').style.display = 'none';
+    document.getElementById('tier5-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier5-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier5-btn').style.color = '#fff'
+}
+
+function showTier2() {
+    document.getElementById('tier1').style.display = 'none';
+    document.getElementById('tier1-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier1-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier1-btn').style.color = '#fff'
+    document.getElementById('tier2').style.display = '';
+    document.getElementById('tier2-btn').style.backgroundColor = '#4b2966'
+    document.getElementById('tier2-btn').style.borderColor = '#311a42'
+    document.getElementById('tier2-btn').style.color = '#9e9e9e'
+    document.getElementById('tier3').style.display = 'none';
+    document.getElementById('tier3-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier3-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier3-btn').style.color = '#fff'
+    document.getElementById('tier4').style.display = 'none';
+    document.getElementById('tier4-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier4-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier4-btn').style.color = '#fff'
+    document.getElementById('tier5').style.display = 'none';
+    document.getElementById('tier5-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier5-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier5-btn').style.color = '#fff'
+}
+
+function showTier3() {
+    document.getElementById('tier1').style.display = 'none';
+    document.getElementById('tier1-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier1-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier1-btn').style.color = '#fff'
+    document.getElementById('tier2').style.display = 'none';
+    document.getElementById('tier2-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier2-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier2-btn').style.color = '#fff'
+    document.getElementById('tier3').style.display = '';
+    document.getElementById('tier3-btn').style.backgroundColor = '#4b2966'
+    document.getElementById('tier3-btn').style.borderColor = '#311a42'
+    document.getElementById('tier3-btn').style.color = '#9e9e9e'
+    document.getElementById('tier4').style.display = 'none';
+    document.getElementById('tier4-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier4-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier4-btn').style.color = '#fff'
+    document.getElementById('tier5').style.display = 'none';
+    document.getElementById('tier5-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier5-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier5-btn').style.color = '#fff'
+}
+
+function showTier4() {
+    document.getElementById('tier1').style.display = 'none';
+    document.getElementById('tier1-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier1-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier1-btn').style.color = '#fff'
+    document.getElementById('tier2').style.display = 'none';
+    document.getElementById('tier2-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier2-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier2-btn').style.color = '#fff'
+    document.getElementById('tier3').style.display = 'none';
+    document.getElementById('tier3-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier3-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier3-btn').style.color = '#fff'
+    document.getElementById('tier4').style.display = '';
+    document.getElementById('tier4-btn').style.backgroundColor = '#4b2966'
+    document.getElementById('tier4-btn').style.borderColor = '#311a42'
+    document.getElementById('tier4-btn').style.color = '#9e9e9e'
+    document.getElementById('tier5').style.display = 'none';
+    document.getElementById('tier5-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier5-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier5-btn').style.color = '#fff'
+}
+
+function showTier5() {
+    document.getElementById('tier1').style.display = 'none';
+    document.getElementById('tier1-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier1-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier1-btn').style.color = '#fff'
+    document.getElementById('tier2').style.display = 'none';
+    document.getElementById('tier2-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier2-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier2-btn').style.color = '#fff'
+    document.getElementById('tier3').style.display = 'none';
+    document.getElementById('tier3-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier3-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier3-btn').style.color = '#fff'
+    document.getElementById('tier4').style.display = 'none';
+    document.getElementById('tier4-btn').style.backgroundColor = '#6f3c96'
+    document.getElementById('tier4-btn').style.borderColor = '#4b2866'
+    document.getElementById('tier4-btn').style.color = '#fff'
+    document.getElementById('tier5').style.display = '';
+    document.getElementById('tier5-btn').style.backgroundColor = '#4b2966'
+    document.getElementById('tier5-btn').style.borderColor = '#311a42'
+    document.getElementById('tier5-btn').style.color = '#9e9e9e'
+}

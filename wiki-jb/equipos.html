@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Equipos - Jailbreak Wiki</title>
+    <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/wiki-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/ir-arriba.js"></script>
+    <script src="../js/wiki-jb_equipos.js"></script>
+
+    <header>
+
+
+        <section id="menu">
+            <div class="menu">
+
+                <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="../index">inicio</a></li>
+                        <li><a href="../anime">Anime</a></li>
+                        <li><a href="../cine">Cine</a></li>
+                        <li><a href="../wikis">Wiki</a></li>
+                        <li><a href="../login">Admin</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+
+        <section class="textos-header">
+            <h1>Jailbreak Wiki</h1>
+            <h3>Equipos</h3>
+        </section>
+
+
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                 style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                      style="stroke: none; fill: #2E2E2E; "></path>
+            </svg>
+        </div>
+
+
+    </header>
+
+
+    <main>
+        <a href="../wiki/wiki-jb"><h4 align="center">[ Volver atrás ]</h4></a>
+        <br />
+
+        <div class="secciones" align="center">
+            <button id="policia-btn" onclick="showPolicia();" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Policia</button>
+            <button id="prisionero-btn" onclick="showPrisionero();">Prisionero</button>
+            <button id="criminal-btn" onclick="showCriminal();">Criminal</button>
+        </div>
+
+
+
+
+
+
+        <section id="policia" class="contenedor en-esta-web">
+            <h2 class="titulo">Policia</h2>
+            <div class="contenedor-en-esta-web">
+                <img src="../media/wiki/jb/equipos/policia.png" class="imagen-repesentacion" style=" margin-top: 175px">
+                <div class="contenido-textos">
+                    <br><br><br>
+                    <h3><span>✱</span>Color del Equipo</h3>
+                    <p style="margin-left: 35px"><b style="color: #00bfff">Azul</b></p>
+
+                    <h3><span>✱</span>Enemigos</h3>
+                    <p style="margin-left: 35px"><b style="color: #ff8c00">Prisioneros</b> y <b style="color: #ff0000">Criminales</b></p>
+
+                    <h3><span>✱</span>Ubicaciones de reaparición</h3>
+                    <p>
+                        <b>► </b> En el edificio de policia de prisión<br>
+                        <b>► </b> En el área de seguridad de prisión<br>
+                        <b>► </b> En el Cuartel General de la Policia<br>
+                        <b>► </b> En la Base Militar
+                    </p>
+
+                    <h3><span>✱</span>Habilidades especiales</h3>
+                    <p>
+                        <b>► </b> Arrestar y tasear criminales y prisioneros <br>
+                        <b>► </b> Cuando se suben a un vehiculo se le<br> agregan las luces y sirena de policía<br>
+                        <b>► </b> Cuando un criminal activa la alarma de<br> un lugar de robo, les llega una notificacion
+                    </p>
+
+                    <h3><span>✱</span>Pago diario</h3>
+                    <p>
+                        Los policias reciben <img src="../media/wiki/jb/cash.png" title="Dinero">1.200 a las 5:00 AM dentro del juego<br>
+                        arrestando criminales o teniendo el gamepass SWAT puede<br> hacer que varie este pago
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="prisionero" class="contenedor en-esta-web" style="display:none">
+            <h2 class="titulo">Prisionero</h2>
+            <div class="contenedor-en-esta-web">
+                <img src="../media/wiki/jb/equipos/prisionero.png" class="imagen-repesentacion" style=" margin-top: 95px">
+                <div class="contenido-textos">
+                    <br><br><br>
+                    <h3 style="margin-right: 250px;"><span>✱</span>Color del Equipo</h3>
+                    <p style="margin-left: 35px"><b style="color: #ff8c00">Naranja</b></p>
+
+                    <h3><span>✱</span>Enemigos</h3>
+                    <p style="margin-left: 35px"><b style="color: #00bfff">Policias</b></p>
+
+                    <h3><span>✱</span>Ubicaciones de reaparición</h3>
+                    <p>
+                        <b>► </b> En la prisión<br>
+                    </p>
+
+                    <h3><span>✱</span>Habilidades especiales</h3>
+                    <p>
+                        <b>► </b> Escapar de prisión <br>
+                    </p>
+
+                    <h3><span>✱</span>Pago diario</h3>
+                    <p>
+                        Los prisioneros no tienen pago diario
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="criminal" class="contenedor en-esta-web" style="display:none">
+            <h2 class="titulo">Criminal</h2>
+            <div class="contenedor-en-esta-web">
+                <img src="../media/wiki/jb/equipos/criminal.png" class="imagen-repesentacion" style=" margin-top: 100px">
+                <div class="contenido-textos">
+                    <br><br><br>
+                    <h3><span>✱</span>Color del Equipo</h3>
+                    <p style="margin-left: 35px"><b style="color: #ff0000">Rojo</b></p>
+
+                    <h3><span>✱</span>Enemigos</h3>
+                    <p style="margin-left: 35px"><b style="color: #00bfff">Policias</b></p>
+
+                    <h3><span>✱</span>Ubicaciones de reaparición</h3>
+                    <p>
+                        <b>► </b> En la Base Criminal del Volcan<br>
+                        <b>► </b> En la Base Criminal de Rising City<br>
+                    </p>
+
+                    <h3><span>✱</span>Habilidades especiales</h3>
+                    <p>
+                        <b>► </b> Iniciar robos<br>
+                    </p>
+
+                    <h3><span>✱</span>Pago diario</h3>
+                    <p>
+                        Los criminales reciben <img src="../media/wiki/jb/cash.png" title="Dinero">120 a las 5:00 AM dentro del juego<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Twitter</h4>
+                <p>@SLENDERS1T0</p>
+            </div>
+            <div class="content-foo">
+                <h4>Discord</h4>
+                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none" ; target=" _blank">Click</a></p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>
+    </footer>
+</body>
+
+</html>
