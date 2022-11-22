@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tren - Jailbreak Wiki</title>
+    <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/wiki-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/ir-arriba.js"></script>
+    <script src="../js/wiki-jb.js"></script>
+
+    <header>
+
+
+        <section id="menu">
+            <div class="menu">
+
+                <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="../index">inicio</a></li>
+                        <li><a href="../anime">Anime</a></li>
+                        <li><a href="../cine">Cine</a></li>
+                        <li><a href="../wikis">Wiki</a></li>
+                        <li><a href="../login">Admin</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+
+        <section class="textos-header">
+            <h1>Jailbreak Wiki</h1>
+            <h3>Tren</h3>
+        </section>
+
+
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                 style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                      style="stroke: none; fill: #2E2E2E; "></path>
+            </svg>
+        </div>
+
+
+    </header>
+
+
+    <main>
+        <a href="../wiki-jb/ubicaciones"><h4 align="center">[ Volver atrás ]</h4></a>
+        <br />
+        <div class="secciones" align="center">
+            <button id="sec1-btn" onclick="showSec1();" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Tren de Carga</button>
+            <button id="sec2-btn" onclick="showSec2();">Tren de Pasajeros</button>
+        </div>
+
+        <section id="sec1">
+            <table style="margin-top:40px;width:35%">
+                <tr>
+                    <th colspan="4">Tren de Carga</th>
+                </tr>
+                <tr>
+                    <td style="width:300px" rowspan="2"><img src="../media/wiki/jb/ubicaciones/robos/tren-carga.png"></td>
+                    <th style="height:30px;width:175px">Ubicación</th>
+                    <th style="width: 175px">Utilidad</th>
+                </tr>
+                <tr>
+                    <td>Circula desde Crater City hasta la gasolinera</td>
+                    <td>
+                        Lugar de robo
+                    </td>
+                </tr>
+            </table>
+
+            <h2 align="center" style="margin-top:30px">Como robar</h2>
+            <p style="color:#fff;margin-top:20px" align="center">
+                Se deberá subir encima de unos de los vagones rojos y abrir la trampilla, luego se tendrá que<br> detonar la puerta de la cámara y entrar. Para reclamar el dinero se tendrá que salir del tren
+            </p>
+            <h2 align="center" style="margin-top:30px">Recompensas</h2>
+            <p style="color:#fff;margin-top:20px" align="center">
+                <img src="../media/wiki/jb/cash.png" title="Dinero"> 1.750 sin ningun gamepass<br>
+                <img src="../media/wiki/jb/cash.png" title="Dinero"> 2.100 con el gamepass "VIP"<br>
+                <img src="../media/wiki/jb/cash.png" title="Dinero"> 2.334 con la mochila Tier 2<br>
+                <img src="../media/wiki/jb/cash.png" title="Dinero"> 2.800 con la mochila Tier 2 y el "VIP"<br>
+                <img src="../media/wiki/jb/cash.png" title="Dinero"> 2.917 con la mochila Tier 3<br>
+                <img src="../media/wiki/jb/cash.png" title="Dinero"> 3.500 con la mochila Tier 3 y el "VIP"<br>
+                <img src="../media/wiki/jb/cash.png" title="Dinero"> 3.500 con la mochila Tier 3<br>
+                <img src="../media/wiki/jb/cash.png" title="Dinero"> 4.200 con la mochila Tier 3 y el "VIP"<br>
+            </p>
+        </section>
+
+        <section id="sec2" style="display:none">
+            <table style="margin-top:40px;width:35%">
+                <tr>
+                    <th colspan="4">Tren de Pasajeros</th>
+                </tr>
+                <tr>
+                    <td style="width:300px" rowspan="2"><img src="../media/wiki/jb/ubicaciones/robos/tren-pasajeros.png"></td>
+                    <th style="height:30px;width:175px">Ubicación</th>
+                    <th style="width: 175px">Utilidad</th>
+                </tr>
+                <tr>
+                    <td>Circula desde la Gasolinera hasta Crater City</td>
+                    <td>
+                        Lugar de robo
+                    </td>
+                </tr>
+            </table>
+
+            <div class="secciones" align="center" style="margin-top:50px">
+                <button id="crim-btn" onclick="showCrim();" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Criminales</button>
+                <button id="poli-btn" onclick="showPoli();">Policias</button>
+            </div>
+
+            <section id="crim">
+                <h2 align="center" style="margin-top:30px">Como robar</h2>
+                <p style="color:#fff;margin-top:20px" align="center">
+                    Tendrán entrar al tren ya sea por encima o por una de sus puertas, deberán cojer objetos<br> hasta llenarse la mochila. Para reclamar el dinero deberán ir a la base criminal del volcan
+                </p>
+                <h2 align="center" style="margin-top:30px">Recompensas</h2>
+                <p style="color:#fff;margin-top:20px" align="center">
+                    <img src="../media/wiki/jb/cash.png" title="Dinero"> 1.500 sin ningun gamepass<br>
+                    <img src="../media/wiki/jb/cash.png" title="Dinero"> 1.800 con el gamepass "VIP"<br>
+                    <img src="../media/wiki/jb/cash.png" title="Dinero"> 2.000 con la mochila Tier 2<br>
+                    <img src="../media/wiki/jb/cash.png" title="Dinero"> 2.400 con la mochila Tier 2 y el "VIP"<br>
+                    <img src="../media/wiki/jb/cash.png" title="Dinero"> 2.500 con la mochila Tier 3<br>
+                    <img src="../media/wiki/jb/cash.png" title="Dinero"> 3.000 con la mochila Tier 3 y el "VIP"<br>
+                    <img src="../media/wiki/jb/cash.png" title="Dinero"> 3.000 con la mochila Tier 3<br>
+                    <img src="../media/wiki/jb/cash.png" title="Dinero"> 3.600 con la mochila Tier 3 y el "VIP"<br><br>
+                </p>
+            </section>
+
+            <section id="poli" style="display:none">
+                <h2 align="center" style="margin-top:30px">Como completar el envio</h2>
+                <p style="color:#fff;margin-top:20px" align="center">
+                    Tendrán entrar al tren ya sea por encima o por una de sus puertas y deberán cojer objetos<br> hasta llegar a su máximo para completar la entrega
+                </p>
+                <h2 align="center" style="margin-top:30px">Recompensas</h2>
+                <p style="color:#fff;margin-top:20px" align="center">
+                    <img src="../media/wiki/jb/cash.png" title="Dinero"> 750 sin ningun gamepass<br>
+                    <img src="../media/wiki/jb/cash.png" title="Dinero"> 900 con el gamepass "VIP"<br>
+                </p>
+            </section>
+
+
+
+
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Twitter</h4>
+                <p>@SLENDERS1T0</p>
+            </div>
+            <div class="content-foo">
+                <h4>Discord</h4>
+                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none" ; target=" _blank">Click</a></p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>
+    </footer>
+</body>
+
+</html>

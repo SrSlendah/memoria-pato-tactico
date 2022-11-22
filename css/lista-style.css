@@ -14,6 +14,12 @@ a {
     color: #fff;
 }
 
+h3 {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
 a h4 {
     margin-bottom: 25px
 }
@@ -46,6 +52,261 @@ main h4 > a {
     font-size: 35px;
     text-align: center;
     margin-bottom: 60px;
+}
+
+/* Lista */
+
+table {
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 12%;
+    color: #fff
+}
+
+td {
+    text-align: left;
+    padding: 4px;
+    text-align: center
+}
+
+th {
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+
+.wiki-bh-armas {
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    height: 30%;
+    color: #fff
+}
+
+.wiki-bh-armas_td {
+    border: 3px solid #4b2866;
+    text-align: left;
+    padding: 4px;
+    text-align: center;
+    width: 15px;
+    height: 15px
+}
+
+.wiki-bh-armas_td > img{
+    width: 37px;
+    height: 37px
+}
+
+    .wiki-bh-armas_td > a > img {
+        width: 37px;
+        height: 37px
+    }
+
+.wiki-bh-armas_th {
+    border: 3px solid #4b2866;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+    width: 10px
+}
+
+.info {
+    margin-top: 30px
+}
+
+.margin {
+    width: 200px;
+}
+
+.margin-top {
+    height: 25px;
+}
+
+.caja-img {
+    border: 3px solid #4b2866;
+    width: 100px;
+    height: 100px
+}
+
+    .caja-img img {
+        width: 175px;
+        height: 175px
+    }
+
+.wjb-img {
+    border: 3px solid #4b2866;
+    width: 100px;
+    height: 100px
+}
+
+    .wjb-img img {
+        width: 200px;
+        height: 175px
+    }
+
+.wbh-img {
+    border: 3px solid #4b2866;
+    width: 100px;
+    height: 100px
+}
+
+    .wbh-img img {
+        width: 200px;
+        height: 200px
+    }
+
+.wbh-table {
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    color: #fff
+}
+
+.wbh-table td {
+    border: 2px solid #4b2866;
+    text-align: left;
+    padding: 8px;
+    text-align: center
+}
+
+.wbh-table th {
+    border: 2px solid #4b2866;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+    background-color: #6f3c96;
+}
+
+.wbh-a {
+    color: #A55CDE;
+    text-decoration: none;
+}
+
+.wbh-a:hover {
+    color: #A55CDE;
+    text-decoration: underline;
+}
+
+.wbh-crossover-img {
+    border: 3px solid #4b2866;
+    width: 100px;
+    height: 100px
+}
+
+.wbh-crossover-img img {
+    width: 350px;
+    height: 197px
+}
+
+.wbh-map-img {
+    border: 3px solid #4b2866;
+    width: 100px;
+    height: 100px
+}
+
+.wbh-map-img img {
+    width: 200px;
+    height: 125px
+}
+
+.wbh-img-bp {
+    border: 3px solid #4b2866;
+    width: 100px;
+    height: 100px
+}
+
+    .wbh-img-bp img {
+        width: 200px;
+    }
+
+.info-img {
+    border: 3px solid #4b2866;
+    width: 100px;
+    height: 100px
+}
+
+.info-img img {
+    width: 200px;
+    height: 175px
+}
+
+.ubic-img {
+    border: 3px solid #4b2866;
+    width: 100px;
+    height: 100px
+}
+
+.ubic-img img {
+    width: 220px;
+    height: 150px
+}
+
+.info-title {
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    width: 600px;
+    height: 50px
+}
+
+.info-subtitle {
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    width: 600px;
+    height: 50px
+}
+
+.info-sep {
+    margin: 0 auto;
+    width: 30%
+}
+
+.info-prox-sep {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 50%
+}
+
+
+.season {
+    margin-top: 30px
+}
+
+.season-img {
+    width: 100px;
+    height: 100px
+}
+
+    .season-img img {
+        border: 5px solid #4b2866;
+        width: 100px;
+        height: 200px
+    }
+
+.season-title {
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    width: 600px;
+    height: 30px
+}
+
+.season-subtitle {
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    width: 600px;
+    height: 50px
+}
+
+.season-num {
+    border: 3px solid #4b2866;
+    width: 600px;
+    height: 50px
+}
+
+.season-sep {
+    margin: 0 auto;
+    width: 30%
 }
 
 /* Menu */
@@ -322,6 +583,19 @@ footer {
     font-size: 24px;
     margin: 20px 0 0 0;
     color: #9e9797;
+}
+
+/* SECCIONES */
+
+.secciones > button {
+    color: #fff;
+    background-color: #6f3c96;
+    padding: 10px 10px;
+    border-radius: 75px;
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    margin-bottom: 35px;
+    font-size: 16px
 }
 
 /* Chagelog */

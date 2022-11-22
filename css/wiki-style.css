@@ -57,6 +57,11 @@ a {
     color: #fff
 }
 
+.in-web {
+    text-decoration: auto;
+    color: #A174C4
+}
+
 .contenido-textos > h3 {
     color: #fff;
     margin-left: 42%
@@ -99,6 +104,17 @@ details {
     details[open] summary::before {
         content: "- Mostrar menos";
         color: #fff
+    }
+
+
+.wbh-a {
+    color: #A55CDE;
+    text-decoration: none;
+}
+
+    .wbh-a:hover {
+        color: #A55CDE;
+        text-decoration: underline;
     }
 
 /* Ir arriba */
@@ -348,6 +364,7 @@ footer {
 /* Cards */
 
 .cards {
+    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     margin-top: 25px
@@ -398,10 +415,13 @@ footer {
 /* BOTON */
 
 .rblx-btn button {
-    margin-left: 33%;
+    color: #fff;
     background-color: #6f3c96;
-    border-color: #4b2866;
-    padding: 16px 20px;
+    padding: 10px 10px;
+    border-radius: 75px;
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    font-size: 16px
 }
 
 .rblx-btn button > a {
@@ -413,14 +433,164 @@ footer {
 /* SECCIONES */
 
 .secciones > button {
-    background-color: #6f3c96;
-    border-color: #4b2866;
-    padding: 16px 20px;
-    margin-bottom: 35px;
     color: #fff;
-    font-size: 17px
+    background-color: #6f3c96;
+    padding: 10px 10px;
+    border-radius: 75px;
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    margin-bottom: 35px;
+    font-size: 16px
 }
 
+/* TABLA */
+
+table {
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    color: #fff
+}
+
+td {
+    border: 2px solid #4b2866;
+    text-align: left;
+    padding: 8px;
+    text-align: center
+}
+
+th {
+    border: 2px solid #4b2866;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+    background-color: #6f3c96;
+}
+
+.level table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+}
+
+.level td{
+    border: none;
+    text-align: left;
+    padding: 8px;
+    text-align: center
+
+}
+
+.margin-hori {
+    height: 100px;
+    border: none
+}
+
+.margin-vert {
+    width: 100px;
+    border: none
+}
+
+.table-extra {
+    width: 20%;
+}
+
+.gamepass {
+}
+
+.gamepass td, th {
+        border: 3px solid #4b2866;
+}
+
+.gamepass-img {
+    width: 300px
+}
+
+    .gamepass-img img {
+        width: 350px;
+        height: 350px
+    }
+
+.equipo {
+}
+
+.equipo-img {
+    width: 300px
+}
+
+.equipo-img img {
+    width: 350px;
+    height: 500px
+}
+
+.equipo th {
+    width: 100px
+}
+
+.table-title {
+    height: 50px
+}
+
+
+.info {
+    border: none;
+    width: 500px;
+    margin-top: 30px
+}
+
+.margin {
+    border:none;
+    width: 200px;
+}
+
+.info-img {
+    border: none;
+    width: 100px;
+    height: 100px
+}
+
+    .info-img img {
+        border: 5px solid #4b2866;
+        width: 300px;
+        height: 400px
+    }
+
+.info-img_cajas {
+    border: none;
+    width: 100px;
+    height: 100px
+}
+
+    .info-img_cajas img {
+        width: 300px;
+        height: 300px
+    }
+
+.info-title {
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    width: 600px;
+    height: 50px
+}
+
+.info-subtitle {
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    width: 600px;
+    height: 50px
+}
+
+.info-ep-num {
+    border: 3px solid #4b2866;
+    width: 600px;
+    height: 50px
+}
+
+.info-sep {
+    margin: 0 auto;
+    width: 30%
+}
 /* MANTENIMIENTO */
 
 .img-mant {

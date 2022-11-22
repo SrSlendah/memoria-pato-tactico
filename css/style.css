@@ -37,6 +37,15 @@ body {
     color: #fff;
 }
 
+button {
+    background-color: #6f3c96;
+    border-color: #4b2866;
+    padding: 16px 20px;
+    margin-top:20px;
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 17px
+}
 
 
 h3 {
@@ -105,8 +114,72 @@ details[open] summary::before {
     color: #fff
 }
 
-/* Ir arriba */
+/* TABLA */
 
+table {
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 35%;
+    color: #fff
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    text-align: center
+}
+
+th {
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+
+.info {
+    margin-top: 30px
+}
+
+.margin {
+    width: 200px;
+}
+
+.info-img {
+    width: 100px;
+    height: 100px
+}
+
+.info-img img {
+    border: 5px solid #4b2866;
+    width: 300px;
+    height: 400px
+}
+
+.info-title {
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    width: 600px;
+    height: 50px
+}
+
+.info-subtitle {
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    width: 600px;
+    height: 50px
+}
+
+.info-ep-num {
+    border: 3px solid #4b2866;
+    width: 600px;
+    height: 50px
+}
+
+.info-sep {
+    margin: 0 auto;
+    width: 30%
+}
+/* Ir arriba */
 #scroll {
     position: fixed;
     right: 20px;
