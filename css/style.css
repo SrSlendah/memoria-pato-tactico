@@ -144,6 +144,17 @@ th {
     width: 200px;
 }
 
+.secciones-img {
+    border: 5px solid #4b2866;
+    width: 100px;
+    height: 100px
+}
+
+    .secciones-img img {
+        width: 225px;
+        height: 225px
+    }
+
 .info-img {
     width: 100px;
     height: 100px
