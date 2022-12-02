@@ -221,6 +221,39 @@ th {
         width: 200px;
     }
 
+.anime-img {
+    border: 3px solid #4b2866;
+    width: 200px;
+    height: 284px
+}
+
+    .anime-img img {
+        width: 200px;
+        height: 284px
+    }
+
+.cine-img {
+    border: 3px solid #4b2866;
+    width: 200px;
+    height: 284px
+}
+
+    .cine-img img {
+        width: 200px;
+        height: 284px
+    }
+
+.manga-img {
+    border: 3px solid #4b2866;
+    width: 200px;
+    height: 284px
+}
+
+    .manga-img img {
+        width: 200px;
+        height: 284px
+    }
+
 .info-img {
     border: 3px solid #4b2866;
     width: 100px;
