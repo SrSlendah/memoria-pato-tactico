@@ -270,49 +270,66 @@ footer {
         margin-top: 15px;
     }
 
-/* Cards */
-
-.cards {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 25px
+table {
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 35%;
+    color: #fff
 }
 
-    .cards .card {
-        background: #6F3C97;
-        display: flex;
-        width: 1250px;
-        height: 200px;
-        align-items: center;
-        justify-content: space-evenly;
-        border-radius: 5px;
-        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+td {
+    text-align: left;
+    padding: 8px;
+    text-align: center
+}
+
+th {
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+
+.info {
+    margin-top: 30px
+}
+
+.margin {
+    width: 200px;
+}
+
+.secciones-img {
+    border: 5px solid #4b2866;
+    width: 100px;
+    height: 100px
+}
+
+    .secciones-img img {
+        width: 225px;
+        height: 225px
     }
 
-        .cards .card img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border: 3px solid #fff;
-            border-radius: 50%;
-            display: block;
-        }
+.info-img {
+    width: 100px;
+    height: 100px
+}
 
-        .cards .card > .contenido-texto-card {
-            width: 60%;
-            color: #fff;
-        }
+    .info-img img {
+        border: 5px solid #4b2866;
+        width: 300px;
+        height: 400px
+    }
 
+.info-title {
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    width: 600px;
+    height: 50px
+}
 
-            .cards .card > .contenido-texto-card h4 {
-                font-size: 25px;
-                padding: 10px 0 25px;
-                color: #fff
-            }
-
-            .cards .card > .contenido-texto-card p {
-                font-weight: 300;
-                font-size: 20px;
-                padding-top: 5px;
-                color: #fff
-            }
+.info-subtitle {
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    width: 600px;
+    height: 50px
+}
