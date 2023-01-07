@@ -117,6 +117,16 @@ details {
         text-decoration: underline;
     }
 
+.wwos-a {
+    color: #A55CDE;
+    text-decoration: none;
+}
+
+    .wwos-a:hover {
+        color: #A55CDE;
+        text-decoration: underline;
+    }
+
 /* Ir arriba */
 
 #scroll {
@@ -504,12 +514,12 @@ th {
 }
 
 .gamepass-img {
-    width: 300px
+    width: 250px
 }
 
     .gamepass-img img {
-        width: 350px;
-        height: 350px
+        width: 250px;
+        height: 250px
     }
 
 .equipo {
