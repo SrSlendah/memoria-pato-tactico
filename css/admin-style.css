@@ -26,6 +26,34 @@ a > h4 {
     margin-bottom: 25px;
 }
 
+/* Changelog */
+
+.version-selector {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    margin-bottom: 25px;
+}
+
+.version-selector > label {
+    font-size:24px;
+    margin-right: 10px;
+}
+
+.version-selector > select {
+    border:none;
+    background-color: #6f3c96;
+    font-size:18px;
+    color: white;
+    padding: 10px 20px;
+    border-radius:5px;
+}
+
+.version-selector > select:focus{
+  outline:none;
+}
+
 /* Boton */
 
 .btn {
