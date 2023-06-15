@@ -50,6 +50,18 @@ a > h4 {
     border-radius:5px;
 }
 
+.changelog-td_framed {
+    border: 3px solid #4b2866;
+}
+
+.changelog-th {
+    border: 3px solid #4b2866;
+    background-color: #6f3c96;
+    font-size:20px;
+    width: 600px;
+    height: 50px
+}
+
 .version-selector > select:focus{
   outline:none;
 }
