@@ -10,19 +10,7 @@
     <link rel="stylesheet" href="css/login.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 
-    <script type="text/javascript">
-        function validar() {
-            var usuario = document.getElementById("u").value;
-            var contraseña = document.getElementById("p").value;
-
-            if (usuario == "Slendah" && contraseña == "mongoloyey") {
-                window.location = "./administracion"
-            }
-            else {
-                alert("El usuario y/o contraseña introducidos no son validos");
-            }
-        }
-    </script>
+    <script src="./js/login.js"></script>
 
 
 </head>
@@ -48,17 +36,18 @@
             </div>
         </section>
 
-
-        <section class="textos-header">
-            <h1> </h1>
-        </section>
-
         <div class="login">
             <h1>Admin Login</h1>
             <form method="post">
-                <input type="text" name="u" id="u" placeholder="Usuario" required="required" />
-                <input type="password" name="p" id="p" placeholder="Contraseña" required="required" />
-                <button type="button" class="btn btn-primary btn-block btn-large" onclick="validar()">Entrar</button>
+                <input type="text" id="u" placeholder="Usuario" required="required" />
+                <input type="password" id="p" placeholder="Contraseña" required="required" />
+                <div class="login_empty" id="login_empty">
+                    <label>No se ha otorgado usuario o contraseña.</label>
+                </div>
+                <div class="login_error" id="login_error">
+                    <label>El Nombre de usuario o contraseña son incorrectos.</label>
+                </div>
+                <button type="button" class="btn btn-primary btn-block btn-large" onclick="login()" style="margin-top:10px">Entrar</button>
             </form>
         </div>
 

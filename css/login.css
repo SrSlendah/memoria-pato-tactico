@@ -9,6 +9,43 @@ body {
 	background-color: #2E2E2E
 }
 
+.login_empty {
+	margin-left: 30px;
+	display: none;
+	background-color: rgb(139, 32, 32);
+	border-radius: 7px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 300px;
+}
+
+.login_empty > label {
+	padding-left: 10px;
+	padding-top: 15px;
+	margin-right: 10px;
+	font-size: 11.5px;
+	color:lightgray;
+}
+
+.login_error {
+	display: none;
+	background-color: rgb(139, 32, 32);
+	border-radius: 7px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 300px;
+}
+
+.login_error > label {
+	padding-left: 10px;
+	padding-top: 15px;
+	margin-right: 10px;
+	font-size: 11.5px;
+	color:lightgray;
+}
+
+
+
 .contenedor {
 	padding: 60px 0;
 	width: 90%;
