@@ -1,5 +1,5 @@
 function new_versions_btn() {
-    window.location.replace('./changelog')
+    window.location = "./changelog"
 }
 
 
@@ -32,7 +32,7 @@ function GetVersion() {
     } 
 
     if (version == 0) {
-        window.location.replace('./changelog_old')
+        window.location = "./changelog_old"
 
         console.log("Se ha recibido el valor "+version)
     } 
