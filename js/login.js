@@ -4,7 +4,7 @@ function login() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
   
-    if (username === "Slendah" && password === "mongoloyey") {
+    if (username === "Slendah" || "slendah" && password === "mongoloyey") {
         window.location = "./administracion"
     } 
     else {
