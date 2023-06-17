@@ -29,6 +29,7 @@
                         <li><a href="../cine">Cine</a></li>
                         <li><a href="../wikis">Wiki</a></li>
                         <li><a href="../login">Admin</a></li>
+                        <li><a onclick="logout()">Log Out</a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,6 +55,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
     <script src="../js/admin-changelog.js"></script>
+    <script src="../js/login-check.js"></script>
+    <script src="../js/logout.js"></script>
 
     <main>
 
@@ -172,7 +175,10 @@
                 <td colspan="2" class="changelog-td_framed">Se ha agregado la pagina de error 404</td>
             </tr>
             <tr>
-                <td colspan="2" class="changelog-td_framed" style="border-top: 6px double #4b2866;">Se ha rediseñado y seprogramado la pantalla de inicio de sesion de administración</td>
+                <td colspan="2" class="changelog-td_framed" style="border-top: 6px double #4b2866;">Se ha rediseñado y reprogramado la pantalla de inicio de sesion de administración</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="changelog-td_framed" style="border-top: 6px double #4b2866;">Se ha agregado seguridad a la sección de administración, ahora si no tienes la sesion iniciada no puedes acceder</td>
             </tr>
             <tr>
                 <td colspan="2" class="changelog-td_framed" style="border-top: 6px double #4b2866;">Se ha reprogramado el codigo en JavaScript de la seccion de Changelog</td>
