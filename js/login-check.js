@@ -9,7 +9,7 @@ function CheckLoginStatus(){
     else {
         window.localStorage.setItem("NotLoggedIn", true);
         console.log("La sesion no esta iniciada, se ha redirigido.");
-        window.location = "/login";
+        window.location = "./login";
     }
 }
 
