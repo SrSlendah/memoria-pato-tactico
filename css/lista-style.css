@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+.announce_red {
+	background-color: rgb(139, 32, 32);
+	border-radius: 7px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 600px;
+    height: 65px;
+    margin: 0 auto;
+}
+
+.announce_red > label {
+	margin-right: 10px;
+	font-size: 15px;
+	color:lightgray;
+}
+
 body {
     font-family: 'open sans';
     background-color: #2E2E2E
