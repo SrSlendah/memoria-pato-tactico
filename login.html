@@ -19,7 +19,7 @@
     <header>
 
 
-        <section id="menu">
+        <section id="menu" style="margin-bottom: 75px;">
             <div class="menu">
 
                 <a href="./index"><img src="./media/logo.png" alt="logo" class="logo"></a>
@@ -36,29 +36,55 @@
             </div>
         </section>
 
+
+
+
+        <div class="container">
+            <h2>Inicio de Sesión</h2>
+            <form id="loginForm">
+              <div class="form-group">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+                  <label align="center" id="login_error" class="form-error" style="display: none;">El Nombre de usuario o contraseña son incorrectos.</label>
+                  <label align="center" id="login_empty" class="form-error" style="display: none;">No se ha proporcionado usuario o contraseña.</label>
+              <button type="submit" onclick="login()">Iniciar Sesión</button>
+            </form>
+          </div>
+
+
+
+
+
+        <section style="display: none;">
         <div class="login">
             <h1>Admin Login</h1>
-            <form method="post">
-                <input type="text" id="u" placeholder="Usuario" required="required" />
-                <input type="password" id="p" placeholder="Contraseña" required="required" />
+            <form id="login">
+                <input type="text" id="u" placeholder="usuario" required="required" />
+                <input type="password" id="p" placeholder="contraseña" required="required" />
                 <div class="login_empty" id="login_empty">
                     <label>No se ha otorgado usuario o contraseña.</label>
                 </div>
                 <div class="login_error" id="login_error">
                     <label>El Nombre de usuario o contraseña son incorrectos.</label>
                 </div>
-                <button type="button" class="btn btn-primary btn-block btn-large" onclick="login()" style="margin-top:10px">Entrar</button>
+                <button type="submit" class="btn btn-primary btn-block btn-large" style="margin-top:10px">Entrar</button>
             </form>
         </div>
+    </section>
 
-        <div class="wave" style="height: 150px; overflow: hidden;">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                 style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                      style="stroke: none; fill: #2E2E2E; "></path>
-            </svg>
-        </div>
 
+    <div class="wave" style="height: 100px; overflow: hidden;margin-top:250px">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+             style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                  style="stroke: none; fill: #2E2E2E; "></path>
+        </svg>
+    </div>
 
     </header>
 
