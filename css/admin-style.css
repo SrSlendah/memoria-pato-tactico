@@ -83,6 +83,7 @@ a > h4 {
 
 .btn > button {
     margin-left: 44.5%;
+    cursor: pointer;
     background-color: #6f3c96;
     border-color: #4b2866;
     padding: 15px 32px;

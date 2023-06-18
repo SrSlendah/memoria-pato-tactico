@@ -45,7 +45,8 @@ button {
     border: 3px solid #4b2866;
     margin-top: 20px;
     color: #fff;
-    font-size: 17px
+    font-size: 17px;
+    cursor: pointer;
 }
 
 
@@ -148,7 +149,7 @@ th {
 .secciones-img {
     border: 5px solid #4b2866;
     width: 100px;
-    height: 100px
+    height: 100px;
 }
 
     .secciones-img img {

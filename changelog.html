@@ -11,6 +11,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
 
     <script src="./js/login-check.js"></script>
+    <script src="./js/logout.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/ir-arriba.js"></script>
+    <script src="./js/admin-changelog.js"></script>
+
+
 </head>
 
 <body>
@@ -54,16 +60,12 @@
 
     </header>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="./js/ir-arriba.js"></script>
-    <script src="./js/admin-changelog.js"></script>
-    <script src="./js/logout.js"></script>
-
     <main>
 
     <form class="version-selector">
         <label>Versión:</label>
         <select name="" id="versiones" onchange="GetVersion()">
+            <option value="94">v4.2.6</option>
             <option value="93">v4.2.5</option>
             <option value="92">v4.2.4</option>
             <option value="91">v4.2.3</option>
@@ -160,7 +162,28 @@
         </select>
     </form>
 
-    <section id="v93">
+    <section id="v94">
+        <table style="width: 20%; margin-bottom:25px">
+            <tr>
+                <td class="changelog-td_framed">Fecha de publicación:</td>
+                <td class="changelog-td_framed">18/06/2023</td>
+            </tr>
+        </table>
+
+        <table style="width: 22.5%; ">
+            <tr>
+                <th class="changelog-th" colspan="2">Otros</th>
+            </tr>
+            <tr>
+                <td colspan="2" class="changelog-td_framed" style="border-top: 6px double #4b2866;">Se han arreglado errores en la reprogramación del sistema de inicio de sesión.</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="changelog-td_framed" style="border-top: 6px double #4b2866;">Se han reprogamado los codigo JavaScript de las wikis, ahora compactados en uno.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="v93" style="display: none;">
         <table style="width: 20%; margin-bottom:25px">
             <tr>
                 <td class="changelog-td_framed">Fecha de publicación:</td>
