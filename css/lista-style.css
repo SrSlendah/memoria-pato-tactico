@@ -94,6 +94,7 @@ th {
 
 .wiki-bh-armas {
     margin: 0 auto;
+    margin-top: -30px;
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 40%;
