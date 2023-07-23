@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>One Piece - Lista de Manga</title>
+    <title>One Piece - Lista de Anime</title>
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
+
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/ir-arriba.js"></script>
+
     <header>
 
 
@@ -35,8 +40,7 @@
 
         <section class="textos-header">
             <h1>One Piece</h1>
-            <h3>Total de volúmenes leidos: 2</h3>
-            <h3>Total de capítulos leidos: 21</h3>
+            <h3>Total de episodios vistos: 7</h3>
         </section>
 
 
@@ -53,13 +57,12 @@
 
 
     <main>
-        <script src="../js/anime.js"></script>
 
         <section class="info">
             <table>
                 <tr>
                     <td class="info-img" rowspan="10">
-                        <img src="../media/manga/one-piece.png">
+                        <img src="../media/anime/one-piece.png">
                     </td>
                     <td></td>
                     <td></td>
@@ -68,10 +71,19 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(1)">
-                    </th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <th class="info-title" colspan="3">One Piece</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                 </tr>
@@ -83,33 +95,21 @@
                 </tr>
                 <tr>
                     <td class="margin"></td>
-                    <th class="info-subtitle">Número de Volúmenes</th>
+                    <th class="info-subtitle">Número de Episodios</th>
                     <td class="margin"></td>
-                    <th class="info-subtitle">Volúmenes leídos</th>
+                    <th class="info-subtitle">Episodios Vistos</th>
                 </tr>
                 <tr>
                     <td></td>
                     <td class="info-ep-num">?</td>
                     <td></td>
-                    <td class="info-ep-num">2</td>
+                    <td class="info-ep-num">7</td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Capítulos</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Capítulos leídos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">?</td>
-                    <td></td>
-                    <td class="info-ep-num">21</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -118,22 +118,6 @@
                     <td></td>
                 </tr>
             </table>
-
-            <div id="ov1" class="overlay" style="display: none;">
-                <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece</h2>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Manga</p>
-                  <p><b>Autor:</b> Eiichiro Oda</p>
-                  <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
-                  <p><b>Fecha de Publicación:</b> 22/07/1997 -- ?</p>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Leido desde:</b> 20/27/2023</p>
-                  <p><b>Leido hasta:</b> ?</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
-                </div>
-              </div>
-
         </section>
 
     </main>
@@ -152,7 +136,7 @@
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>
-                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none"; target=" _blank">Click</a></p>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none" ; target=" _blank">Click</a></p>
             </div>
         </div>
         <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>

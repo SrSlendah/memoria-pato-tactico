@@ -53,6 +53,7 @@
 
 
     <main>
+        <script src="../js/anime.js"></script>
 
         <section class="info">
             <table>
@@ -67,7 +68,10 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <th class="info-title" colspan="3">Nanatsu no Taizai</th>
+                    <th class="info-title" colspan="3" style="position: relative;">
+                        Nanatsu no Taizai
+                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(1)">
+                    </th>
                     <td></td>
                     <td></td>
                 </tr>
@@ -114,6 +118,22 @@
                     <td></td>
                 </tr>
             </table>
+
+            <div id="ov1" class="overlay" style="display: none;">
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">Nanatsu no Taizai</h2>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Tipo:</b> Manga</p>
+                  <p><b>Autor:</b> Nakaba Suzuki</p>
+                  <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                  <p><b>Fecha de Publicación:</b> 10/10/2012 -- 25/03/2020</p>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Leido desde:</b> 17/05/2021</p>
+                  <p><b>Leido hasta:</b> ?</p>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                </div>
+              </div>
+
         </section>
 
     </main>

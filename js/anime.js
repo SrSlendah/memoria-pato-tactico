@@ -1,3 +1,19 @@
+function abrirOV(overlayNumber) {
+  var overlay = document.getElementById('ov' + overlayNumber);
+  if (overlay) {
+    overlay.style.display = '';
+    document.body.classList.add('scroll-blocked');
+  }
+}
+
+function cerrarOV(overlayNumber) {
+  var overlay = document.getElementById('ov' + overlayNumber);
+  if (overlay) {
+    overlay.style.display = 'none';
+    document.body.classList.remove('scroll-blocked');
+  }
+}
+
 function showSection(sectionNumber) {
     const totalSections = 5; // Actualiza esto con el número total de secciones
     
