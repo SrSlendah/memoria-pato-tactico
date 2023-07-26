@@ -16,7 +16,6 @@
     <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
-    <script src="../js/anime.js"></script>
 
     <header>
 
@@ -59,6 +58,7 @@
 
 
     <main>
+        <script src="../js/anime.js"></script>
 
         <div class="secciones" align="center">
             <button id="sec1-btn" onclick="showSection(1);" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button>
@@ -85,7 +85,10 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <th class="info-title" colspan="3">Danmachi</th>
+                            <th class="info-title" colspan="3" style="position: relative;">
+                                Danmachi
+                                <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(1)">
+                            </th>
                             <td></td>
                             <td></td>
                         </tr>
@@ -126,6 +129,23 @@
                             <td></td>
                         </tr>
                     </table>
+
+                    <div id="ov1" class="overlay" style="display: none;">
+                        <div class="contenido-overlay" id="contenido-overlay">
+                          <h2 style="margin-top:5px">Danmachi</h2>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Tipo:</b> Anime</p>
+                          <p><b>Estudio:</b> J.C.Staff</p>
+                          <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                          <p><b>Fecha de Publicación:</b> 04/04/2015 -- 27/06/2015</p>
+                          <p><b>Temporada:</b> Primavera 2015</p>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Visto desde:</b> 05/01/2022</p>
+                          <p><b>Visto hasta:</b> 11/01/2022</p>
+                          <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                        </div>
+                      </div>
+
                 </section>
                 <br>
                 <hr class="info-sep">
@@ -148,7 +168,10 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <th class="info-title" colspan="3">Danmachi II</th>
+                            <th class="info-title" colspan="3" style="position: relative;">
+                                Danmachi II
+                                <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(2)">
+                            </th>
                             <td></td>
                             <td></td>
                         </tr>
@@ -189,6 +212,23 @@
                             <td></td>
                         </tr>
                     </table>
+
+                    <div id="ov2" class="overlay" style="display: none;">
+                        <div class="contenido-overlay">
+                          <h2 style="margin-top:5px">Danmachi II</h2>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Tipo:</b> Anime</p>
+                          <p><b>Estudio:</b> J.C.Staff</p>
+                          <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                          <p><b>Fecha de Publicación:</b> 13/07/2019 -- 28/09/2019</p>
+                          <p><b>Temporada:</b> Verano 2019</p>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Visto desde:</b> 11/01/2022</p>
+                          <p><b>Visto hasta:</b> 12/01/2022</p>
+                          <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
+                        </div>
+                      </div>
+
                 </section>
                 <br>
                 <hr class="info-sep">
@@ -211,7 +251,10 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <th class="info-title" colspan="3">Danmachi III</th>
+                            <th class="info-title" colspan="3" style="position: relative;">
+                                Danmachi III
+                                <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(3)">
+                            </th>
                             <td></td>
                             <td></td>
                         </tr>
@@ -252,6 +295,23 @@
                             <td></td>
                         </tr>
                     </table>
+
+                    <div id="ov3" class="overlay" style="display: none;">
+                        <div class="contenido-overlay">
+                          <h2 style="margin-top:5px">Danmachi III</h2>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Tipo:</b> Anime</p>
+                          <p><b>Estudio:</b> J.C.Staff</p>
+                          <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                          <p><b>Fecha de Publicación:</b> 03/10/2020 -- 19/12/2020</p>
+                          <p><b>Temporada:</b> Otoño 2020</p>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Visto desde:</b> 12/01/2022</p>
+                          <p><b>Visto hasta:</b> 06/03/2022</p>
+                          <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(3)" title="Cerrar">
+                        </div>
+                      </div>
+
                 </section>
                 <br>
                 <hr class="info-sep">
@@ -274,7 +334,10 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <th class="info-title" colspan="3">Danmachi IV Part 1</th>
+                            <th class="info-title" colspan="3" style="position: relative;">
+                                Danmachi IV Part 1
+                                <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(4)">
+                            </th>
                             <td></td>
                             <td></td>
                         </tr>
@@ -315,6 +378,23 @@
                             <td></td>
                         </tr>
                     </table>
+
+                    <div id="ov4" class="overlay" style="display: none;">
+                        <div class="contenido-overlay">
+                          <h2 style="margin-top:5px">Danmachi IV Part 1</h2>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Tipo:</b> Anime</p>
+                          <p><b>Estudio:</b> J.C.Staff</p>
+                          <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                          <p><b>Fecha de Publicación:</b> 23/07/2022 -- 01/10/2022</p>
+                          <p><b>Temporada:</b> Verano 2022</p>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Visto desde:</b> 27/01/2023</p>
+                          <p><b>Visto hasta:</b> 04/02/2023</p>
+                          <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(4)" title="Cerrar">
+                        </div>
+                      </div>
+
                 </section>
                 <br>
                 <hr class="info-sep">
@@ -337,7 +417,10 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <th class="info-title" colspan="3">Danmachi IV Part 2</th>
+                            <th class="info-title" colspan="3" style="position: relative;">
+                                Danmachi IV Part 2
+                                <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(5)">
+                            </th>
                             <td></td>
                             <td></td>
                         </tr>
@@ -378,6 +461,23 @@
                             <td></td>
                         </tr>
                     </table>
+
+                    <div id="ov5" class="overlay" style="display: none;">
+                        <div class="contenido-overlay">
+                          <h2 style="margin-top:5px">Danmachi IV Part 2</h2>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Tipo:</b> Anime</p>
+                          <p><b>Estudio:</b> J.C.Staff</p>
+                          <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                          <p><b>Fecha de Publicación:</b> 07/01/2023 -- 18/03/2023</p>
+                          <p><b>Temporada:</b> Invierno 2023</p>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Visto desde:</b> 05/02/2023</p>
+                          <p><b>Visto hasta:</b> 17/03/2023</p>
+                          <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(5)" title="Cerrar">
+                        </div>
+                      </div>
+
                 </section>
             </section>
 
@@ -403,7 +503,10 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <th class="info-title" colspan="3">Danmachi: Orion no Ya</th>
+                            <th class="info-title" colspan="3" style="position: relative;text-align: center;">
+                                Danmachi:<br> Orion no Ya
+                                <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(6)">
+                            </th>
                             <td></td>
                             <td></td>
                         </tr>
@@ -444,6 +547,21 @@
                             <td></td>
                         </tr>
                     </table>
+
+                    <div id="ov6" class="overlay" style="display: none;">
+                        <div class="contenido-overlay">
+                          <h2 style="margin-top:5px">Danmachi: Orion no Ya</h2>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Tipo:</b> Película</p>
+                          <p><b>Estudio:</b> J.C.Staff</p>
+                          <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                          <p><b>Fecha de Publicación:</b> 15/02/2019</p>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Visto:</b> 27/03/2022</p>
+                          <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(6)" title="Cerrar">
+                        </div>
+                      </div>
+
                 </section>
 
             </section>

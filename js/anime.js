@@ -1,9 +1,12 @@
+// Gestion de Overlay
+
 function abrirOV(overlayNumber) {
   var overlay = document.getElementById('ov' + overlayNumber);
   if (overlay) {
     overlay.style.display = '';
     document.body.classList.add('scroll-blocked');
   }
+  console.log("[Overlay] Se ha pulsado el botón de mas información, Se ha abiarto el overlay ov" + overlayNumber)
 }
 
 function cerrarOV(overlayNumber) {
@@ -12,10 +15,32 @@ function cerrarOV(overlayNumber) {
     overlay.style.display = 'none';
     document.body.classList.remove('scroll-blocked');
   }
+  console.log("[Overlay] Se ha pulsado el boton de cerrar overlay, overlay cerrado")
 }
 
+function cerrarOVs() {
+  var overlayNumber = 1;
+  var overlay = document.getElementById('ov' + overlayNumber);
+
+  while (overlay) {
+    overlay.style.display = 'none';
+    document.body.classList.remove('scroll-blocked');
+    overlayNumber++;
+    overlay = document.getElementById('ov' + overlayNumber);
+  }
+}
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    console.log("[Overlay] Se ha pulsado la tecla escape, overlay cerrado")
+    cerrarOVs();
+  }
+});
+
+// Cambiar entre secciones
+
 function showSection(sectionNumber) {
-    const totalSections = 5; // Actualiza esto con el número total de secciones
+    const totalSections = 5;
     
     for (let i = 1; i <= totalSections; i++) {
       const section = document.getElementById('sec' + i);
