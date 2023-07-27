@@ -57,6 +57,11 @@
 
 
     <main>
+        <script src="../js/anime.js"></script>
+
+        <div class="announce_red" align="center">
+            <label><br><b>Este anime ha sido abandonado.</b></label>
+        </div>
 
         <section class="info">
             <table>
@@ -77,7 +82,10 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <th class="info-title" colspan="3">Fairy Tail</th>
+                    <th class="info-title" colspan="3" style="position: relative;">
+                        Fairy Tail
+                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(1)">
+                    </th>
                     <td></td>
                     <td></td>
                 </tr>
@@ -118,6 +126,23 @@
                     <td></td>
                 </tr>
             </table>
+
+            <div id="ov1" class="overlay" style="display: none;">
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">Fairy Tail</h2>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Tipo:</b> Anime</p>
+                  <p><b>Estudio:</b> Statelight, A-1 Pictures</p>
+                  <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                  <p><b>Fecha de Publicación:</b> 12/10/2009 -- 30/03/2013</p>
+                  <p><b>Temporada:</b> Otoño 2009</p>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Visto desde:</b> 14/08/2020</p>
+                  <p><b>Visto hasta:</b> <red>Abandonado</red></p>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                </div>
+              </div>
+
         </section>
 
     </main>

@@ -74,6 +74,26 @@ img {
     height: 300%
 }
 
+red {
+    color:rgb(255, 101, 73)
+}
+
+.announce_red {
+	background-color: rgb(139, 32, 32);
+	border-radius: 7px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 300px;
+    height: 65px;
+    margin: 0 auto;
+}
+
+.announce_red > label {
+	margin-right: 10px;
+	font-size: 15px;
+	color:lightgray;
+}
+
 .contenido-textos > h3 {
     margin-top: 20px;
     color: #fff;
