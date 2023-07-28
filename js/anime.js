@@ -37,6 +37,10 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
+// Cambio de página
+
+
+
 // Cambiar entre secciones
 
 function showSection(sectionNumber) {

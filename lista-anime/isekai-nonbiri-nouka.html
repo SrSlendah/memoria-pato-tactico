@@ -57,6 +57,7 @@
 
 
     <main>
+        <script src="../js/anime.js"></script>
 
         <section class="info">
             <table>
@@ -77,7 +78,10 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <th class="info-title" colspan="3">Isekai Nonbiri Nouka</th>
+                    <th class="info-title" colspan="3" style="position: relative;">
+                        Isekai Nonbiri Nouka
+                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(1)">
+                    </th>
                     <td></td>
                     <td></td>
                 </tr>
@@ -118,6 +122,23 @@
                     <td></td>
                 </tr>
             </table>
+
+            <div id="ov1" class="overlay" style="display: none;">
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">Isekai Nonbiri Nouka</h2>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Tipo:</b> Anime</p>
+                  <p><b>Estudio:</b> Zero-G</p>
+                  <p><b>Generos:</b> Fantasia, Recuento de la Vida</p>
+                  <p><b>Fecha de Publicación:</b> 06/01/2023 - 24/03/2023</p>
+                  <p><b>Temporada:</b> Invierno 2023</p>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Visto desde:</b> 13/01/2023</p>
+                  <p><b>Visto hasta:</b> 16/04/2023</p>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                </div>
+              </div>
+
         </section>
 
 

@@ -170,6 +170,12 @@ th {
     width: 200px;
 }
 
+.separador_btn {
+    border-left: 1px solid #ffffff;
+     height: 25px;
+      margin: 0 10px;
+}
+
 .secciones-img {
     border: 5px solid #4b2866;
     width: 100px;
