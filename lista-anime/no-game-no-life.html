@@ -16,7 +16,6 @@
     <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
-    <script src="../js/anime.js"></script>
 
     <header>
 
@@ -59,6 +58,7 @@
 
 
     <main>
+        <script src="../js/anime.js"></script>
 
         <div class="secciones" align="center">
             <button id="sec1-btn" onclick="showSection(1);" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button>
@@ -84,7 +84,10 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <th class="info-title" colspan="3">No Game No Life</th>
+                        <th class="info-title" colspan="3" style="position: relative;">
+                            No Game No Life
+                            <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(1)">
+                        </th>
                         <td></td>
                         <td></td>
                     </tr>
@@ -125,6 +128,23 @@
                         <td></td>
                     </tr>
                 </table>
+                
+            <div id="ov1" class="overlay" style="display: none;">
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px;text-align:center">No Game No Life</h2>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Tipo:</b> Anime</p>
+                  <p><b>Estudio:</b> Madhouse</p>
+                  <p><b>Generos:</b> Comedia, Fantasia, Ecchi</p>
+                  <p><b>Fecha de Publicación:</b> 09/04/2014 - 25/06/2014</p>
+                  <p><b>Temporada:</b> Primavera 2014</p>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Visto desde:</b> 17/03/2020</p>
+                  <p><b>Visto hasta:</b> 21/03/2020</p>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                </div>
+            </div>
+
             </section>
         </section>
 
@@ -148,7 +168,10 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <th class="info-title" colspan="3">No Game No Life: Zero</th>
+                            <th class="info-title" colspan="3" style="position: relative;">
+                                No Game No Life: Zero
+                                <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(2)">
+                            </th>
                             <td></td>
                             <td></td>
                         </tr>
@@ -189,6 +212,21 @@
                             <td></td>
                         </tr>
                     </table>
+                
+                    <div id="ov2" class="overlay" style="display: none;">
+                        <div class="contenido-overlay">
+                          <h2 style="margin-top:5px;text-align:center">No Game No Life: Zero</h2>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Tipo:</b> Película</p>
+                          <p><b>Estudio:</b> Madhouse</p>
+                          <p><b>Generos:</b> Drama, Fantasia, Romance</p>
+                          <p><b>Fecha de Publicación:</b> 15/07/2017</p>
+                          <hr style="margin-top:15px;margin-bottom:15px;">
+                          <p><b>Visto:</b> 11/09/2022</p>
+                          <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
+                        </div>
+                    </div>
+
                 </section>
 
             </section>
