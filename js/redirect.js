@@ -10,6 +10,10 @@ function goTo(string) {
         window.location.href = "../lista-manga/nanatsu-no-taizai"
     };
 
+    if (string == 'manga_onepiece') {
+        window.location.href = "../lista-manga/one-piece"
+    };
+
 //Anime
 
     if (string == 'anime_jojo') {
@@ -18,6 +22,10 @@ function goTo(string) {
 
     if (string == 'anime_nanatsu') {
         window.location.href = "../lista-anime/nanatsu-no-taizai"
+    };
+
+    if (string == 'anime_onepiece') {
+        window.location.href = "../lista-anime/one-piece"
     };
 
 //Wiki Brawlhalla

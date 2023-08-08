@@ -57,6 +57,7 @@
 
 
     <main>
+        <script src="../js/anime.js"></script>
 
         <section class="info">
             <table>
@@ -77,7 +78,10 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <th class="info-title" colspan="3">Oshi no Ko</th>
+                    <th class="info-title" colspan="3" style="position: relative;">
+                        Oshi no Ko
+                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(1)">
+                    </th>
                     <td></td>
                     <td></td>
                 </tr>
@@ -103,7 +107,7 @@
                     <td></td>
                     <td class="info-ep-num">11</td>
                     <td></td>
-                    <td class="info-ep-num">01</td>
+                    <td class="info-ep-num">05</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -118,6 +122,23 @@
                     <td></td>
                 </tr>
             </table>
+                
+            <div id="ov1" class="overlay" style="display: none;">
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">Oshi no Ko</h2>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Tipo:</b> Anime</p>
+                  <p><b>Estudio:</b> Doga Kobo</p>
+                  <p><b>Generos:</b> Drama, Supernatural</p>
+                  <p><b>Fecha de Publicación:</b> 12/04/2023 - 28/06/2023</p>
+                  <p><b>Temporada:</b> Primavera 2023</p>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Visto desde:</b> 04/05/2023</p>
+                  <p><b>Visto hasta:</b> ?</p>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                </div>
+            </div>
+
         </section>
     </main>
 
