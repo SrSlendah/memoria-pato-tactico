@@ -33,7 +33,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: "Spider-Man", url: '../lista-marvel/spiderman1' },
     { resultado: 'Spider-Man 2', url: '../lista-marvel/spiderman2' },
     { resultado: 'Spider-Man 3', url: '../lista-marvel/spiderman3' },
-    { resultado: 'The Amazing Spiderman', url: '../lista-marvel/amazing-spiderman' },
+    { resultado: 'The Amazing Spider-Man', url: '../lista-marvel/amazing-spiderman' },
     { resultado: "Venom", url: '../lista-marvel/venom' },
     { resultado: 'Shang-Chi y la Leyenda de los Diez Anillos', url: '../lista-marvel/shang-chi' },
     { resultado: 'Eternals', url: '../lista-marvel/eternals' },
@@ -42,7 +42,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Loki', url: '../lista-marvel/loki' },
     { resultado: 'Yo Soy Groot', url: '../lista-marvel/groot' },
     { resultado: 'Spider-Man: Homecoming', url: '../lista-marvel/spiderman-homecoming' },
-    { resultado: "Spiderman: Far From Home", url: '../lista-marvel/spiderman-far-from-home' },
+    { resultado: "Spider-Man: Far From Home", url: '../lista-marvel/spiderman-far-from-home' },
     { resultado: 'Thor: Love and Thunder', url: '../lista-marvel/thor-lovethunder' },
     { resultado: 'Black Panther: Wakanda Forever', url: '../lista-marvel/black-panther-wakanda-forever' },
     { resultado: "Ant-Man y la Avisma: Quantumania", url: '../lista-marvel/antman-avispa-quantumania' },
@@ -52,7 +52,7 @@ function obtenerResultadosConURLs(query) {
 
   query = removeAccents(query.toLowerCase());
 
-  return resultadosConURLs.filter(item => removeAccents(item.resultado.toLowerCase()).startsWith(query));
+  return resultadosConURLs.filter(item => removeAccents(item.resultado.toLowerCase()).includes(query));
 }
 
 searchInput.addEventListener('input', function() {

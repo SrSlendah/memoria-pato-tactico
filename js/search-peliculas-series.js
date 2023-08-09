@@ -23,7 +23,7 @@ function obtenerResultadosConURLs(query) {
 
   query = removeAccents(query.toLowerCase());
 
-  return resultadosConURLs.filter(item => removeAccents(item.resultado.toLowerCase()).startsWith(query));
+  return resultadosConURLs.filter(item => removeAccents(item.resultado.toLowerCase()).includes(query));
 }
 
 searchInput.addEventListener('input', function() {
