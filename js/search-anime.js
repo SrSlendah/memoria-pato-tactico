@@ -1,9 +1,12 @@
 const searchInput = document.getElementById('search-input');
 const autocompleteList = document.getElementById('autocomplete-list');
 
-let resultadosConURLs; // Declarar la variable en un alcance superior
+let resultadosConURLs;
 
-// Función de ejemplo para obtener resultados con URLs desde un archivo JSON
+function removeAccents(str) {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
 function obtenerResultadosConURLs(query) {
   resultadosConURLs = [
     { resultado: 'Akame ga Kill!', url: '../lista-anime/akame-ga-kill' },
@@ -66,12 +69,11 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Tokyo Ghoul', url: '../lista-anime/tokyo-ghoul' },
     { resultado: 'Tokyo Revengers', url: '../lista-anime/tokyo-revengers' },
     { resultado: 'Uzaki-chan wa Asobitai!', url: '../lista-anime/uzaki-chan-wa-asobitai' },
-    // Agregar más resultados y URLs aquí
   ];
 
-  query = query.toLowerCase(); // Convertir la consulta a minúsculas
+  query = removeAccents(query.toLowerCase());
 
-  return resultadosConURLs.filter(item => item.resultado.toLowerCase().startsWith(query));
+  return resultadosConURLs.filter(item => removeAccents(item.resultado.toLowerCase()).startsWith(query));
 }
 
 searchInput.addEventListener('input', function() {
@@ -82,7 +84,7 @@ searchInput.addEventListener('input', function() {
     const results = obtenerResultadosConURLs(searchQuery);
 
     if (results.length > 0) {
-      autocompleteList.style.display = 'block'; // Mostrar la lista de resultados
+      autocompleteList.style.display = 'block';
 
       results.forEach(result => {
         const listItem = document.createElement('li');
@@ -90,14 +92,13 @@ searchInput.addEventListener('input', function() {
         autocompleteList.appendChild(listItem);
       });
     } else {
-      autocompleteList.style.display = 'none'; // Ocultar la lista de resultados
+      autocompleteList.style.display = 'none';
     }
   } else {
-    autocompleteList.style.display = 'none'; // Ocultar la lista de resultados
+    autocompleteList.style.display = 'none';
   }
 });
 
-// Manejar clic en un resultado
 autocompleteList.addEventListener('click', function(event) {
   if (event.target.tagName === 'LI') {
     const clickedResult = event.target.textContent;
