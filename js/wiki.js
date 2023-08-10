@@ -1,7 +1,7 @@
 // WIKI JB
 
 function showSection(sectionNumber) {
-  const totalSections = 11; // Actualiza esto con el número total de secciones
+  const totalSections = 12; // Actualiza esto con el número total de secciones
   
   for (let i = 1; i <= totalSections; i++) {
     const section = document.getElementById('sec' + i);
@@ -56,4 +56,8 @@ function showSection(sectionNumber) {
   
   function showSec11() {
     showSection(11);
+  }
+  
+  function showSec12() {
+    showSection(12);
   }
