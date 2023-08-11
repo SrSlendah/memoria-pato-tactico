@@ -30,11 +30,26 @@ searchInput.addEventListener('input', function() {
   const searchQuery = this.value;
   autocompleteList.innerHTML = '';
 
-  if (searchQuery.length > 0) {
+  if (searchQuery.length >= 2) {
     const results = obtenerResultadosConURLs(searchQuery);
 
     if (results.length > 0) {
       autocompleteList.style.display = 'block';
+
+      const getScore = (result, query) => {
+        const resultLower = result.resultado.toLowerCase();
+        query = query.toLowerCase();
+
+        if (resultLower.startsWith(query)) {
+          return 2;
+        } else if (resultLower.includes(query)) {
+          return 1;
+        } else {
+          return 0;
+        }
+      };
+
+      results.sort((a, b) => getScore(b, searchQuery) - getScore(a, searchQuery));
 
       results.forEach(result => {
         const listItem = document.createElement('li');
