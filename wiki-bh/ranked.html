@@ -58,6 +58,12 @@
 
     </header>
     <main>
+        <div class="search-container" style="margin-bottom: 20px;">
+          <input type="text" id="search-input" placeholder="Buscar en la wiki de Brawlhalla...">
+          <ul id="autocomplete-list" style="display: none;"></ul>
+        </div>
+      
+        <script src="../js/search-wiki-bh.js"></script>
 
         <section>
             <h2 align="center" style="font-size:30px">Recompensas del Ranked</h2>
@@ -140,108 +146,122 @@
                             <b>Tier 1</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/6.png" title="Tier 6"><br>
-                            <b>Tier 6</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/2.png" title="Tier 2"><br>
+                            <b>Tier 2</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/11.png" title="Tier 11"><br>
-                            <b>Tier 11</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/3.png" title="Tier 3"><br>
+                            <b>Tier 3</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/16.png" title="Tier 16"><br>
-                            <b>Tier 16</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/4.png" title="Tier 4"><br>
+                            <b>Tier 4</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/21.png" title="Tier 21"><br>
-                            <b>Tier 21</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/5.png" title="Tier 5"><br>
+                            <b>Tier 5</b>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/2.png" title="Tier 2"><br>
-                            <b>Tier 2</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/6.png" title="Tier 6"><br>
+                            <b>Tier 6</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/7.png" title="Tier 7"><br>
                             <b>Tier 7</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/12.png" title="Tier 12"><br>
-                            <b>Tier 12</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/17.png" title="Tier 17"><br>
-                            <b>Tier 17</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/22.png" title="Tier 22"><br>
-                            <b>Tier 22</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/3.png" title="Tier 3"><br>
-                            <b>Tier 3</b>
-                        </td>
-                        <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/8.png" title="Tier 8"><br>
                             <b>Tier 8</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/13.png" title="Tier 13"><br>
-                            <b>Tier 13</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/18.png" title="Tier 18"><br>
-                            <b>Tier 18</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/23.png" title="Tier 23"><br>
-                            <b>Tier 23</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/4.png" title="Tier 4"><br>
-                            <b>Tier 4</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/9.png" title="Tier 9"><br>
                             <b>Tier 9</b>
                         </td>
                         <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/10.png" title="Tier 10"><br>
+                            <b>Tier 10</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/11.png" title="Tier 11"><br>
+                            <b>Tier 11</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/12.png" title="Tier 12"><br>
+                            <b>Tier 12</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/13.png" title="Tier 13"><br>
+                            <b>Tier 13</b>
+                        </td>
+                        <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/14.png" title="Tier 14"><br>
                             <b>Tier 14</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/15.png" title="Tier 15"><br>
+                            <b>Tier 15</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/16.png" title="Tier 16"><br>
+                            <b>Tier 16</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/17.png" title="Tier 17"><br>
+                            <b>Tier 17</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/18.png" title="Tier 18"><br>
+                            <b>Tier 18</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/19.png" title="Tier 19"><br>
                             <b>Tier 19</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/24.png" title="Tier 24"><br>
-                            <b>Tier 24</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/20.png" title="Tier 20"><br>
+                            <b>Tier 20</b>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/5.png" title="Tier 5"><br>
-                            <b>Tier 5</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/21.png" title="Tier 21"><br>
+                            <b>Tier 21</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/10.png" title="Tier 10"><br>
-                            <b>Tier 10</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/22.png" title="Tier 22"><br>
+                            <b>Tier 22</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/15.png" title="Tier 15"><br>
-                            <b>Tier 15</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/23.png" title="Tier 23"><br>
+                            <b>Tier 23</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/20.png" title="Tier 20"><br>
-                            <b>Tier 20</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/24.png" title="Tier 24"><br>
+                            <b>Tier 24</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/25.png" title="Tier 25"><br>
                             <b>Tier 25</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/26.png" title="Tier 26"><br>
+                            <b>Tier 26</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/27.png" title="Tier 27"><br>
+                            <b>Tier 27</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/28.png" title="Tier 28"><br>
+                            <b>Tier 28</b>
                         </td>
                     </tr>
                 </table>
@@ -300,108 +320,122 @@
                             <b>Tier 1</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/6.png" title="Tier 6"><br>
-                            <b>Tier 6</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/2.png" title="Tier 2"><br>
+                            <b>Tier 2</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/11.png" title="Tier 11"><br>
-                            <b>Tier 11</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/3.png" title="Tier 3"><br>
+                            <b>Tier 3</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/16.png" title="Tier 16"><br>
-                            <b>Tier 16</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/4.png" title="Tier 4"><br>
+                            <b>Tier 4</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/21.png" title="Tier 21"><br>
-                            <b>Tier 21</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/5.png" title="Tier 5"><br>
+                            <b>Tier 5</b>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/2.png" title="Tier 2"><br>
-                            <b>Tier 2</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/6.png" title="Tier 6"><br>
+                            <b>Tier 6</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/7.png" title="Tier 7"><br>
                             <b>Tier 7</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/12.png" title="Tier 12"><br>
-                            <b>Tier 12</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/17.png" title="Tier 17"><br>
-                            <b>Tier 17</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/22.png" title="Tier 22"><br>
-                            <b>Tier 22</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/3.png" title="Tier 3"><br>
-                            <b>Tier 3</b>
-                        </td>
-                        <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/8.png" title="Tier 8"><br>
                             <b>Tier 8</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/13.png" title="Tier 13"><br>
-                            <b>Tier 13</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/18.png" title="Tier 18"><br>
-                            <b>Tier 18</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/23.png" title="Tier 23"><br>
-                            <b>Tier 23</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/4.png" title="Tier 4"><br>
-                            <b>Tier 4</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/9.png" title="Tier 9"><br>
                             <b>Tier 9</b>
                         </td>
                         <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/10.png" title="Tier 10"><br>
+                            <b>Tier 10</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/11.png" title="Tier 11"><br>
+                            <b>Tier 11</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/12.png" title="Tier 12"><br>
+                            <b>Tier 12</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/13.png" title="Tier 13"><br>
+                            <b>Tier 13</b>
+                        </td>
+                        <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/14.png" title="Tier 14"><br>
                             <b>Tier 14</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/15.png" title="Tier 15"><br>
+                            <b>Tier 15</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/16.png" title="Tier 16"><br>
+                            <b>Tier 16</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/17.png" title="Tier 17"><br>
+                            <b>Tier 17</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/18.png" title="Tier 18"><br>
+                            <b>Tier 18</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/19.png" title="Tier 19"><br>
                             <b>Tier 19</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/24.png" title="Tier 24"><br>
-                            <b>Tier 24</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/20.png" title="Tier 20"><br>
+                            <b>Tier 20</b>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/5.png" title="Tier 5"><br>
-                            <b>Tier 5</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/21.png" title="Tier 21"><br>
+                            <b>Tier 21</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/10.png" title="Tier 10"><br>
-                            <b>Tier 10</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/22.png" title="Tier 22"><br>
+                            <b>Tier 22</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/15.png" title="Tier 15"><br>
-                            <b>Tier 15</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/23.png" title="Tier 23"><br>
+                            <b>Tier 23</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/20.png" title="Tier 20"><br>
-                            <b>Tier 20</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/24.png" title="Tier 24"><br>
+                            <b>Tier 24</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/25.png" title="Tier 25"><br>
                             <b>Tier 25</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/26.png" title="Tier 26"><br>
+                            <b>Tier 26</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/27.png" title="Tier 27"><br>
+                            <b>Tier 27</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/28.png" title="Tier 28"><br>
+                            <b>Tier 28</b>
                         </td>
                     </tr>
                 </table>
@@ -458,108 +492,122 @@
                             <b>Tier 1</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/6.png" title="Tier 6"><br>
-                            <b>Tier 6</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/2.png" title="Tier 2"><br>
+                            <b>Tier 2</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/11.png" title="Tier 11"><br>
-                            <b>Tier 11</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/3.png" title="Tier 3"><br>
+                            <b>Tier 3</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/16.png" title="Tier 16"><br>
-                            <b>Tier 16</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/4.png" title="Tier 4"><br>
+                            <b>Tier 4</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/21.png" title="Tier 21"><br>
-                            <b>Tier 21</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/5.png" title="Tier 5"><br>
+                            <b>Tier 5</b>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/2.png" title="Tier 2"><br>
-                            <b>Tier 2</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/6.png" title="Tier 6"><br>
+                            <b>Tier 6</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/7.png" title="Tier 7"><br>
                             <b>Tier 7</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/12.png" title="Tier 12"><br>
-                            <b>Tier 12</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/17.png" title="Tier 17"><br>
-                            <b>Tier 17</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/22.png" title="Tier 22"><br>
-                            <b>Tier 22</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/3.png" title="Tier 3"><br>
-                            <b>Tier 3</b>
-                        </td>
-                        <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/8.png" title="Tier 8"><br>
                             <b>Tier 8</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/13.png" title="Tier 13"><br>
-                            <b>Tier 13</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/18.png" title="Tier 18"><br>
-                            <b>Tier 18</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/23.png" title="Tier 23"><br>
-                            <b>Tier 23</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/4.png" title="Tier 4"><br>
-                            <b>Tier 4</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/9.png" title="Tier 9"><br>
                             <b>Tier 9</b>
                         </td>
                         <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/10.png" title="Tier 10"><br>
+                            <b>Tier 10</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/11.png" title="Tier 11"><br>
+                            <b>Tier 11</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/12.png" title="Tier 12"><br>
+                            <b>Tier 12</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/13.png" title="Tier 13"><br>
+                            <b>Tier 13</b>
+                        </td>
+                        <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/14.png" title="Tier 14"><br>
                             <b>Tier 14</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/15.png" title="Tier 15"><br>
+                            <b>Tier 15</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/16.png" title="Tier 16"><br>
+                            <b>Tier 16</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/17.png" title="Tier 17"><br>
+                            <b>Tier 17</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/18.png" title="Tier 18"><br>
+                            <b>Tier 18</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/19.png" title="Tier 19"><br>
                             <b>Tier 19</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/24.png" title="Tier 24"><br>
-                            <b>Tier 24</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/20.png" title="Tier 20"><br>
+                            <b>Tier 20</b>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/5.png" title="Tier 5"><br>
-                            <b>Tier 5</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/21.png" title="Tier 21"><br>
+                            <b>Tier 21</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/10.png" title="Tier 10"><br>
-                            <b>Tier 10</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/22.png" title="Tier 22"><br>
+                            <b>Tier 22</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/15.png" title="Tier 15"><br>
-                            <b>Tier 15</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/23.png" title="Tier 23"><br>
+                            <b>Tier 23</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/low/20.png" title="Tier 20"><br>
-                            <b>Tier 20</b>
+                            <img src="../media/wiki/bh/ranked/avatar/low/24.png" title="Tier 24"><br>
+                            <b>Tier 24</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/low/25.png" title="Tier 25"><br>
                             <b>Tier 25</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/26.png" title="Tier 26"><br>
+                            <b>Tier 26</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/27.png" title="Tier 27"><br>
+                            <b>Tier 27</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/28.png" title="Tier 28"><br>
+                            <b>Tier 28</b>
                         </td>
                     </tr>
                 </table>
@@ -628,108 +676,122 @@
                             <b>Tier 1</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/6.png" title="Tier 6"><br>
-                            <b>Tier 6</b>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/2.png" title="Tier 2"><br>
+                            <b>Tier 2</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/11.png" title="Tier 11"><br>
-                            <b>Tier 11</b>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/3.png" title="Tier 3"><br>
+                            <b>Tier 3</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/16.png" title="Tier 16"><br>
-                            <b>Tier 16</b>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/4.png" title="Tier 4"><br>
+                            <b>Tier 4</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/21.png" title="Tier 21"><br>
-                            <b>Tier 21</b>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/5.png" title="Tier 5"><br>
+                            <b>Tier 5</b>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/2.png" title="Tier 2"><br>
-                            <b>Tier 2</b>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/6.png" title="Tier 6"><br>
+                            <b>Tier 6</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/oro/7.png" title="Tier 7"><br>
                             <b>Tier 7</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/12.png" title="Tier 12"><br>
-                            <b>Tier 12</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/17.png" title="Tier 17"><br>
-                            <b>Tier 17</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/22.png" title="Tier 22"><br>
-                            <b>Tier 22</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/3.png" title="Tier 3"><br>
-                            <b>Tier 3</b>
-                        </td>
-                        <td>
                             <img src="../media/wiki/bh/ranked/avatar/oro/8.png" title="Tier 8"><br>
                             <b>Tier 8</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/13.png" title="Tier 13"><br>
-                            <b>Tier 13</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/18.png" title="Tier 18"><br>
-                            <b>Tier 18</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/23.png" title="Tier 23"><br>
-                            <b>Tier 23</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/4.png" title="Tier 4"><br>
-                            <b>Tier 4</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/oro/9.png" title="Tier 9"><br>
                             <b>Tier 9</b>
                         </td>
                         <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/10.png" title="Tier 10"><br>
+                            <b>Tier 10</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/11.png" title="Tier 11"><br>
+                            <b>Tier 11</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/12.png" title="Tier 12"><br>
+                            <b>Tier 12</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/13.png" title="Tier 13"><br>
+                            <b>Tier 13</b>
+                        </td>
+                        <td>
                             <img src="../media/wiki/bh/ranked/avatar/oro/14.png" title="Tier 14"><br>
                             <b>Tier 14</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/15.png" title="Tier 15"><br>
+                            <b>Tier 15</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/16.png" title="Tier 16"><br>
+                            <b>Tier 16</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/17.png" title="Tier 17"><br>
+                            <b>Tier 17</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/18.png" title="Tier 18"><br>
+                            <b>Tier 18</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/oro/19.png" title="Tier 19"><br>
                             <b>Tier 19</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/24.png" title="Tier 24"><br>
-                            <b>Tier 24</b>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/20.png" title="Tier 20"><br>
+                            <b>Tier 20</b>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/5.png" title="Tier 5"><br>
-                            <b>Tier 5</b>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/21.png" title="Tier 21"><br>
+                            <b>Tier 21</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/10.png" title="Tier 10"><br>
-                            <b>Tier 10</b>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/22.png" title="Tier 22"><br>
+                            <b>Tier 22</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/15.png" title="Tier 15"><br>
-                            <b>Tier 15</b>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/23.png" title="Tier 23"><br>
+                            <b>Tier 23</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/oro/20.png" title="Tier 20"><br>
-                            <b>Tier 20</b>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/24.png" title="Tier 24"><br>
+                            <b>Tier 24</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/oro/25.png" title="Tier 25"><br>
                             <b>Tier 25</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/26.png" title="Tier 26"><br>
+                            <b>Tier 26</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/27.png" title="Tier 27"><br>
+                            <b>Tier 27</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/28.png" title="Tier 28"><br>
+                            <b>Tier 28</b>
                         </td>
                     </tr>
                 </table>
@@ -798,108 +860,122 @@
                             <b>Tier 1</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/6.png" title="Tier 6"><br>
-                            <b>Tier 6</b>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/2.png" title="Tier 2"><br>
+                            <b>Tier 2</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/11.png" title="Tier 11"><br>
-                            <b>Tier 11</b>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/3.png" title="Tier 3"><br>
+                            <b>Tier 3</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/16.png" title="Tier 16"><br>
-                            <b>Tier 16</b>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/4.png" title="Tier 4"><br>
+                            <b>Tier 4</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/21.png" title="Tier 21"><br>
-                            <b>Tier 21</b>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/5.png" title="Tier 5"><br>
+                            <b>Tier 5</b>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/2.png" title="Tier 2"><br>
-                            <b>Tier 2</b>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/6.png" title="Tier 6"><br>
+                            <b>Tier 6</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/platino/7.png" title="Tier 7"><br>
                             <b>Tier 7</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/12.png" title="Tier 12"><br>
-                            <b>Tier 12</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/17.png" title="Tier 17"><br>
-                            <b>Tier 17</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/22.png" title="Tier 22"><br>
-                            <b>Tier 22</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/3.png" title="Tier 3"><br>
-                            <b>Tier 3</b>
-                        </td>
-                        <td>
                             <img src="../media/wiki/bh/ranked/avatar/platino/8.png" title="Tier 8"><br>
                             <b>Tier 8</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/13.png" title="Tier 13"><br>
-                            <b>Tier 13</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/18.png" title="Tier 18"><br>
-                            <b>Tier 18</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/23.png" title="Tier 23"><br>
-                            <b>Tier 23</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/4.png" title="Tier 4"><br>
-                            <b>Tier 4</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/platino/9.png" title="Tier 9"><br>
                             <b>Tier 9</b>
                         </td>
                         <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/10.png" title="Tier 10"><br>
+                            <b>Tier 10</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/11.png" title="Tier 11"><br>
+                            <b>Tier 11</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/12.png" title="Tier 12"><br>
+                            <b>Tier 12</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/13.png" title="Tier 13"><br>
+                            <b>Tier 13</b>
+                        </td>
+                        <td>
                             <img src="../media/wiki/bh/ranked/avatar/platino/14.png" title="Tier 14"><br>
                             <b>Tier 14</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/15.png" title="Tier 15"><br>
+                            <b>Tier 15</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/16.png" title="Tier 16"><br>
+                            <b>Tier 16</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/17.png" title="Tier 17"><br>
+                            <b>Tier 17</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/18.png" title="Tier 18"><br>
+                            <b>Tier 18</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/platino/19.png" title="Tier 19"><br>
                             <b>Tier 19</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/24.png" title="Tier 24"><br>
-                            <b>Tier 24</b>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/20.png" title="Tier 20"><br>
+                            <b>Tier 20</b>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/5.png" title="Tier 5"><br>
-                            <b>Tier 5</b>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/21.png" title="Tier 21"><br>
+                            <b>Tier 21</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/10.png" title="Tier 10"><br>
-                            <b>Tier 10</b>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/22.png" title="Tier 22"><br>
+                            <b>Tier 22</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/15.png" title="Tier 15"><br>
-                            <b>Tier 15</b>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/23.png" title="Tier 23"><br>
+                            <b>Tier 23</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/platino/20.png" title="Tier 20"><br>
-                            <b>Tier 20</b>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/24.png" title="Tier 24"><br>
+                            <b>Tier 24</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/platino/25.png" title="Tier 25"><br>
                             <b>Tier 25</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/26.png" title="Tier 26"><br>
+                            <b>Tier 26</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/27.png" title="Tier 27"><br>
+                            <b>Tier 27</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/28.png" title="Tier 28"><br>
+                            <b>Tier 28</b>
                         </td>
                     </tr>
                 </table>
@@ -948,108 +1024,122 @@
                             <b>Tier 1</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/6.png" title="Tier 6"><br>
-                            <b>Tier 6</b>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/2.png" title="Tier 2"><br>
+                            <b>Tier 2</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/11.png" title="Tier 11"><br>
-                            <b>Tier 11</b>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/3.png" title="Tier 3"><br>
+                            <b>Tier 3</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/16.png" title="Tier 16"><br>
-                            <b>Tier 16</b>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/4.png" title="Tier 4"><br>
+                            <b>Tier 4</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/21.png" title="Tier 21"><br>
-                            <b>Tier 21</b>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/5.png" title="Tier 5"><br>
+                            <b>Tier 5</b>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/2.png" title="Tier 2"><br>
-                            <b>Tier 2</b>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/6.png" title="Tier 6"><br>
+                            <b>Tier 6</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/diamante/7.png" title="Tier 7"><br>
                             <b>Tier 7</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/12.png" title="Tier 12"><br>
-                            <b>Tier 12</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/17.png" title="Tier 17"><br>
-                            <b>Tier 17</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/22.png" title="Tier 22"><br>
-                            <b>Tier 22</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/3.png" title="Tier 3"><br>
-                            <b>Tier 3</b>
-                        </td>
-                        <td>
                             <img src="../media/wiki/bh/ranked/avatar/diamante/8.png" title="Tier 8"><br>
                             <b>Tier 8</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/13.png" title="Tier 13"><br>
-                            <b>Tier 13</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/18.png" title="Tier 18"><br>
-                            <b>Tier 18</b>
-                        </td>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/23.png" title="Tier 23"><br>
-                            <b>Tier 23</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/4.png" title="Tier 4"><br>
-                            <b>Tier 4</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/diamante/9.png" title="Tier 9"><br>
                             <b>Tier 9</b>
                         </td>
                         <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/10.png" title="Tier 10"><br>
+                            <b>Tier 10</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/11.png" title="Tier 11"><br>
+                            <b>Tier 11</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/12.png" title="Tier 12"><br>
+                            <b>Tier 12</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/13.png" title="Tier 13"><br>
+                            <b>Tier 13</b>
+                        </td>
+                        <td>
                             <img src="../media/wiki/bh/ranked/avatar/diamante/14.png" title="Tier 14"><br>
                             <b>Tier 14</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/15.png" title="Tier 15"><br>
+                            <b>Tier 15</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/16.png" title="Tier 16"><br>
+                            <b>Tier 16</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/17.png" title="Tier 17"><br>
+                            <b>Tier 17</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/18.png" title="Tier 18"><br>
+                            <b>Tier 18</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/diamante/19.png" title="Tier 19"><br>
                             <b>Tier 19</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/24.png" title="Tier 24"><br>
-                            <b>Tier 24</b>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/20.png" title="Tier 20"><br>
+                            <b>Tier 20</b>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/5.png" title="Tier 5"><br>
-                            <b>Tier 5</b>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/21.png" title="Tier 21"><br>
+                            <b>Tier 21</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/10.png" title="Tier 10"><br>
-                            <b>Tier 10</b>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/22.png" title="Tier 22"><br>
+                            <b>Tier 22</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/15.png" title="Tier 15"><br>
-                            <b>Tier 15</b>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/23.png" title="Tier 23"><br>
+                            <b>Tier 23</b>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/ranked/avatar/diamante/20.png" title="Tier 20"><br>
-                            <b>Tier 20</b>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/24.png" title="Tier 24"><br>
+                            <b>Tier 24</b>
                         </td>
                         <td>
                             <img src="../media/wiki/bh/ranked/avatar/diamante/25.png" title="Tier 25"><br>
                             <b>Tier 25</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/26.png" title="Tier 26"><br>
+                            <b>Tier 26</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/27.png" title="Tier 27"><br>
+                            <b>Tier 27</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/28.png" title="Tier 28"><br>
+                            <b>Tier 28</b>
                         </td>
                     </tr>
                 </table>
