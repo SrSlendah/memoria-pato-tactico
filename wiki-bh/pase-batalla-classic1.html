@@ -192,19 +192,25 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <img src="../media/wiki/bh/pase-batalla/classic1/1-pago_a.png" title="Obake Petra">
+                                            <a href="./obake-petra">
+                                                <img src="../media/wiki/bh/pase-batalla/classic1/1-pago_a.png" title="Obake Petra">
+                                            </a>
                                         </td>
                                         <td>
-                                            <img src="../media/wiki/bh/pase-batalla/classic1/1-pago_b.png" title="Spirit Temple">
+                                            <a onclick="abrirOV(1)" class="wbh-a">
+                                                <img src="../media/wiki/bh/pase-batalla/classic1/1-pago_b.png" title="Spirit Temple">
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
+                                            <a href="./obake-petra" class="wbh-a">
                                             <h5>Obake Petra</h5>
+                                            </a>
                                             <h6 style="color:#9e9e9e;margin-top:5px">Skin</h6>
                                         </td>
                                         <td>
-                                            <h5>Spirit Temple</h5>
+                                            <h5><a onclick="abrirOV(1)" class="wbh-a">Spirit Temple</a></h5>
                                             <h6 style="color:#9e9e9e;margin-top:5px">Podio</h6>
                                         </td>
                                     </tr>
@@ -266,6 +272,31 @@
                         </td>
                     </tr>
                 </table>
+
+                <div id="ov1" class="overlay" style="display: none;">
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px">Spirit Temple</h2>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <table style="border-collapse: separate; border-spacing: 10px;">
+                        <tr>
+                            <td style="border:none; border-right: 2px solid #e0e0e0;">
+                                <img src="../media/wiki/bh/pase-batalla/1/podio-lvl1.png" style="width: 200px;"><br>
+                                <h3>Nivel 1</h3>
+                            </td>
+                            <td style="border:none; border-right: 2px solid #e0e0e0;">
+                                <img src="../media/wiki/bh/pase-batalla/1/podio-lvl2.png" style="width: 200px;"><br>
+                                <h3>Nivel 2</h3>
+                            </td>
+                            <td style="border:none;">
+                                <img src="../media/wiki/bh/pase-batalla/1/podio-lvl3.png" style="width: 200px;"><br>
+                                <h3>Nivel 3</h3>
+                            </td>
+                        </tr>
+                    </table>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                    </div>
+                  </div>
+
             </section>
 
             <section id="sec2" style="display:none">
@@ -464,8 +495,10 @@
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Esquema de Color</h6>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/classic1/23-pago.png" title="Netherworld Artemis">
-                            <h5 style="margin-top:15px">Netherworld <br>Artemis</h5>
+                            <a href="./netherworld-artemis">
+                                <img src="../media/wiki/bh/pase-batalla/classic1/23-pago.png" title="Netherworld Artemis">
+                            </a>
+                            <h5 style="margin-top:15px"><a href="./netherworld-artemis" class="wbh-a">Netherworld <br>Artemis</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                     </tr>
@@ -828,8 +861,10 @@
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Esquema de Color</h6>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/classic1/47-pago.png" title="Archfiend Zariel">
-                            <h5 style="margin-top:15px">Archfiend Zariel</h5>
+                            <a href="./archfiend-zariel">
+                                <img src="../media/wiki/bh/pase-batalla/classic1/47-pago.png" title="Archfiend Zariel">
+                            </a>
+                            <h5 style="margin-top:15px"><a href="./archfiend-zariel" class="wbh-a">Archfiend Zariel</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                     </tr>
@@ -1080,12 +1115,31 @@
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Esquema de Color</h6>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/classic1/63-pago.png" title="Hellfire">
-                            <h5 style="margin-top:15px">Hellfire</h5>
+                            <a onclick="abrirOV(2)" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/classic1/63-pago.png" title="Hellfire">
+                            </a>
+                            <h5 style="margin-top:15px"><a onclick="abrirOV(2)" class="wbh-a">Hellfire</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Efecto de KO</h6>
                         </td>
                     </tr>
                 </table>
+                
+                <div id="ov2" class="overlay" style="display: none;">
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px">Hellfire</h2>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <table style="border-collapse: separate; border-spacing: 10px;">
+                        <tr>
+                            <td style="border:none;">
+                                <img src="../media/wiki/bh/pase-batalla/1/efecto-ko.webp" style="width: 300px;"><br>
+                            </td>
+                        </tr>
+                    </table>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
+                    </div>
+                  </div>
+
+
             </section>
 
             <section id="sec9" style="display:none">
@@ -1371,8 +1425,10 @@
                         <td>Consigue Victorias</td>
                         <td>50</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/classic1/extra1.png" title="Obake Petra - LvL 2" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Obake Petra - LvL 2</h5>
+                            <a href="./obake-petra">
+                                <img src="../media/wiki/bh/pase-batalla/classic1/extra1.png" title="Obake Petra - LvL 2" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a href="./obake-petra" class="wbh-a">Obake Petra - LvL 2</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                         <td>Requiere el Pase de Pago</td>
@@ -1381,8 +1437,10 @@
                         <td>Consigue Victorias</td>
                         <td>150</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/classic1/extra2.png" title="Obake Petra - LvL 3" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Obake Petra - LvL 3</h5>
+                            <a href="./obake-petra">
+                                <img src="../media/wiki/bh/pase-batalla/classic1/extra2.png" title="Obake Petra - LvL 3" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a href="./obake-petra" class="wbh-a">Obake Petra - LvL 3</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                         <td>Requiere el Pase de Pago y completar el LvL 2</td>
@@ -1391,8 +1449,10 @@
                         <td>Consigue KOs</td>
                         <td>200</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/classic1/extra3.png" title="Spirit Temple - LvL 2" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Spirit Temple - LvL 2</h5>
+                            <a onclick="abrirOV(1)" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/classic1/extra3.png" title="Spirit Temple - LvL 2" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a onclick="abrirOV(1)" class="wbh-a">Spirit Temple - LvL 2</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                         <td>Requiere el Pase de Pago</td>
@@ -1401,8 +1461,10 @@
                         <td>Consigue KOs</td>
                         <td>500</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/classic1/extra4.png" title="Spirit Temple - LvL 3" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Spirit Temple - LvL 3</h5>
+                            <a onclick="abrirOV(1)" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/classic1/extra4.png" title="Spirit Temple - LvL 3" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a onclick="abrirOV(1)" class="wbh-a">Spirit Temple - LvL 3</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                         <td>Requiere el Pase de Pago y completar el LvL 2</td>

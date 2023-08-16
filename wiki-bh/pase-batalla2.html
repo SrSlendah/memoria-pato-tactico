@@ -199,7 +199,9 @@
                                             </a>
                                         </td>
                                         <td>
-                                            <img src="../media/wiki/bh/pase-batalla/2/1-pago_b.png" title="Arcade Nights" style="margin-top:15px">
+                                            <a onclick="abrirOV(1)" class="wbh-a">
+                                                <img src="../media/wiki/bh/pase-batalla/2/1-pago_b.png" title="Arcade Nights" style="margin-top:15px">
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -210,7 +212,9 @@
                                             <h6 style="color:#9e9e9e;margin-top:5px">Skin</h6>
                                         </td>
                                         <td>
-                                            <h5>Arcade Nights</h5>
+                                            <h5>
+                                                <a onclick="abrirOV(1)" class="wbh-a">Arcade Nights</a>
+                                            </h5>
                                             <h6 style="color:#9e9e9e;margin-top:5px">Podio</h6>
                                         </td>
                                     </tr>
@@ -272,6 +276,31 @@
                         </td>
                     </tr>
                 </table>
+                
+                <div id="ov1" class="overlay" style="display: none;">
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px">Arcade Nights</h2>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <table style="border-collapse: separate; border-spacing: 10px;">
+                        <tr>
+                            <td style="border:none; border-right: 2px solid #e0e0e0;">
+                                <img src="../media/wiki/bh/pase-batalla/2/podio-lvl1.png" style="width: 200px;"><br>
+                                <h3>Nivel 1</h3>
+                            </td>
+                            <td style="border:none; border-right: 2px solid #e0e0e0;">
+                                <img src="../media/wiki/bh/pase-batalla/2/podio-lvl2.png" style="width: 200px;"><br>
+                                <h3>Nivel 2</h3>
+                            </td>
+                            <td style="border:none;">
+                                <img src="../media/wiki/bh/pase-batalla/2/podio-lvl3.png" style="width: 200px;"><br>
+                                <h3>Nivel 3</h3>
+                            </td>
+                        </tr>
+                    </table>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                    </div>
+                  </div>
+
             </section>
 
             <section id="sec2" style="display:none">
@@ -1006,12 +1035,30 @@
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Esquema de Color</h6>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/2/63-pago.png" title="Digital_Breakdown.wav" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Digital_Breakdown.wav</h5>
+                            <a onclick="abrirOV(2)" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/2/63-pago.png" title="Digital_Breakdown.wav" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a onclick="abrirOV(2)" class="wbh-a">Digital_Breakdown.wav</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Efecto de KO</h6>
                         </td>
                     </tr>
                 </table>
+                
+                <div id="ov2" class="overlay" style="display: none;">
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px">Digital_Breakdown.wav</h2>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <table style="border-collapse: separate; border-spacing: 10px;">
+                        <tr>
+                            <td style="border:none;">
+                                <img src="../media/wiki/bh/pase-batalla/2/efecto-ko.webp" style="width: 300px;"><br>
+                            </td>
+                        </tr>
+                    </table>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
+                    </div>
+                  </div>
+
             </section>
 
             <section id="sec9" style="display:none">
@@ -1277,8 +1324,11 @@
                         <td>Consigue KOs con ataques característicos de lado o ataques de recuperación</td>
                         <td>200</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/2/extra1.png" title="Future Wave Val - LvL 2" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Future Wave Val - LvL 2</h5>
+                            <a href="./future-wave-val">
+                                <img src="../media/wiki/bh/pase-batalla/2/extra1.png" title="Future Wave Val - LvL 2" style="margin-top:15px">
+                            </a>    
+                            <h5 style="margin-top:15px">
+                                <a href="./future-wave-val" class="wbh-a">Future Wave Val - LvL 2</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                         <td>Requiere el Pase de Pago</td>
@@ -1287,8 +1337,11 @@
                         <td>Consigue KOs con ataques característicos de lado o ataques de recuperación</td>
                         <td>500</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/2/extra2.png" title="Future Wave Val - LvL 3" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Future Wave Val - LvL 3</h5>
+                            <a href="./future-wave-val">
+                                <img src="../media/wiki/bh/pase-batalla/2/extra2.png" title="Future Wave Val - LvL 3" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px">
+                                <a href="./future-wave-val" class="wbh-a">Future Wave Val - LvL 3</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                         <td>Requiere el Pase de Pago y completar el LvL 2</td>
@@ -1297,8 +1350,10 @@
                         <td>Consigue KOs en Sun Drive o Miami Dome</td>
                         <td>40</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/2/extra3.png" title="Arcade Nights - LvL 2" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Arcade Nights - LvL 2</h5>
+                            <a onclick="abrirOV(1)" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/2/extra3.png" title="Arcade Nights - LvL 2" style="margin-top:15px">
+                            </a>
+                                <h5 style="margin-top:15px"><a onclick="abrirOV(1)" class="wbh-a">Arcade Nights - LvL 2</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                         <td>Requiere el Pase de Pago</td>
@@ -1307,8 +1362,10 @@
                         <td>Consigue KOs en Sun Drive o Miami Dome</td>
                         <td>100</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/2/extra4.png" title="Arcade Nights - LvL 3" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Arcade Nights - LvL 3</h5>
+                            <a onclick="abrirOV(1)" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/2/extra4.png" title="Arcade Nights - LvL 3" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a onclick="abrirOV(1)" class="wbh-a">Arcade Nights - LvL 3</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                         <td>Requiere el Pase de Pago y completar el LvL 2</td>
