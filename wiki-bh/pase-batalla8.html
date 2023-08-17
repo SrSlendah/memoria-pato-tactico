@@ -224,9 +224,11 @@
                                         </tbody>
                                     </table>
                                 </td>
-                                <td id="1">
-                                    <img src="../media/wiki/bh/pase-batalla/8/1-pago_d.png" title="Darkheart Excavation" style="margin-top:15px">
-                                    <h5 style="margin-top:15px">Darkheart Excavation</h5>
+                                <td>
+                                    <a onclick="abrirOV(1)" class="wbh-a">
+                                        <img src="../media/wiki/bh/pase-batalla/8/1-pago_d.png" title="Darkheart Excavation" style="margin-top:15px">
+                                    </a>
+                                    <h5 style="margin-top:15px"><a onclick="abrirOV(1)" class="wbh-a">Darkheart Excavation</a></h5>
                                     <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Podio</h6>
                                 </td>
                                 <td>
@@ -1395,8 +1397,10 @@
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Esquema de Color</h6>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/8/81-pago.png" title="Darkheart Metamorphosis" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Darkheart Metamorphosis</h5>
+                            <a onclick="abrirOV(2)" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/8/81-pago.png" title="Darkheart Metamorphosis" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a onclick="abrirOV(2)" class="wbh-a">Darkheart Metamorphosis</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Efecto de KO</h6>
                         </td>
                     </tr>
@@ -1502,68 +1506,115 @@
                     </tr>
                 </table>
             </section>
-
-            <h2 align="center" style="margin-bottom:25px;margin-top:25px">Recompensas Adicionales</h2>
-            <section>
-                <table style="width:40%">
+                
+            <div id="ov1" class="overlay" style="display: none;">
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">Darkheart Excavation</h2>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <table style="border-collapse: separate; border-spacing: 10px;">
                     <tr>
-                        <th>Misión</th>
-                        <th>Cantidad</th>
-                        <th>Recompensa</th>
-                        <th>Notas</th>
-                    </tr>
-                    <tr>
-                        <td>Consigue KOs con ataques ligeros desde el suelo</td>
-                        <td>75</td>
-                        <td>
-                            <img src="../media/wiki/bh/pase-batalla/7/extra1.png" title="Luminous Paladin Jaeyun - LvL 2" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Luminous Paladin Jaeyun - LvL 2</h5>
-                            <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
+                        <td style="border:none; border-right: 2px solid #e0e0e0;">
+                            <img src="../media/wiki/bh/pase-batalla/8/podio-lvl1.png" style="width: 200px;"><br>
+                            <h3>Nivel 1</h3>
                         </td>
-                        <td>Requiere el Pase de Pago</td>
-                    </tr>
-                    <tr>
-                        <td>Consigue KOs con ataques ligeros desde el suelo</td>
-                        <td>200</td>
-                        <td>
-                            <img src="../media/wiki/bh/pase-batalla/7/extra2.png" title="Luminous Paladin Jaeyun - LvL 3" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Luminous Paladin Jaeyun - LvL 3</h5>
-                            <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
+                        <td style="border:none; border-right: 2px solid #e0e0e0;">
+                            <img src="../media/wiki/bh/pase-batalla/8/podio-lvl2.png" style="width: 200px;"><br>
+                            <h3>Nivel 2</h3>
                         </td>
-                        <td>Requiere el Pase de Pago y completar el LvL 2</td>
-                    </tr>
-                    <tr>
-                        <td>Juega revanchas</td>
-                        <td>40</td>
-                        <td>
-                            <img src="../media/wiki/bh/pase-batalla/7/extra3.png" title="Hero's Quest - LvL 2" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Hero's Quest - LvL 2</h5>
-                            <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
+                        <td style="border:none;">
+                            <img src="../media/wiki/bh/pase-batalla/8/podio-lvl3.png" style="width: 200px;"><br>
+                            <h3>Nivel 3</h3>
                         </td>
-                        <td>Requiere el Pase de Pago</td>
-                    </tr>
-                    <tr>
-                        <td>Juega revanchas</td>
-                        <td>75</td>
-                        <td>
-                            <img src="../media/wiki/bh/pase-batalla/7/extra4.png" title="Hero's Quest - LvL 3" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Hero's Quest - LvL 3</h5>
-                            <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
-                        </td>
-                        <td>Requiere el Pase de Pago y completar el LvL 2</td>
-                    </tr>
-                    <tr>
-                        <td>Llega al nivel máximo y completa todas las misiones semanales</td>
-                        <td>168</td>
-                        <td>
-                            <img src="../media/wiki/bh/pase-batalla/7/extra5.png" title="Fangwild Royalty" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Celestial Royalty</h5>
-                            <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Avatar</h6>
-                        </td>
-                        <td></td>
                     </tr>
                 </table>
-            </section>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                </div>
+              </div>
+                
+            <div id="ov2" class="overlay" style="display: none;">
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">Darkheart Metamorphosis</h2>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <table>
+                    <tr>
+                        <td style="border:none; align-items: center;">
+                            <img src="../media/wiki/bh/pase-batalla/8/efecto-ko.webp" style="width: 300px;">
+                        </td>
+                    </tr>
+                </table>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
+                </div>
+              </div>
+
+              <h2 align="center" style="margin-bottom:25px;margin-top:25px">Recompensas Adicionales</h2>
+              <section>
+                  <table style="width:40%">
+                      <tr>
+                          <th>Misión</th>
+                          <th>Cantidad</th>
+                          <th>Recompensa</th>
+                          <th>Notas</th>
+                      </tr>
+                      <tr>
+                          <td>Lanza oponentes hacia abajo y el olvido con ataques característicos</td>
+                          <td>35</td>
+                          <td>
+                              <a href="./corrupted-blood-tezca" class="wbh-a">
+                                  <img src="../media/wiki/bh/pase-batalla/8/extra1.png" title="Corrupted Blood Tezca - LvL 2" style="margin-top:15px">
+                              </a>
+                              <h5 style="margin-top:15px"><a href="./corrupted-blood-tezca" class="wbh-a">Corrupted Blood Tezca - LvL 2</a></h5>
+                              <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
+                          </td>
+                          <td>Requiere el Pase de Pago</td>
+                      </tr>
+                      <tr>
+                          <td>Lanza oponentes hacia abajo y el olvido con ataques característicos</td>
+                          <td>80</td>
+                          <td>
+                              <a href="./corrupted-blood-tezca" class="wbh-a">
+                                  <img src="../media/wiki/bh/pase-batalla/8/extra2.png" title="Corrupted Blood Tezca - LvL 3" style="margin-top:15px">
+                              </a>
+                              <h5 style="margin-top:15px"><a href="./corrupted-blood-tezca" class="wbh-a">Corrupted Blood Tezca - LvL 3</a></h5>
+                              <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
+                          </td>
+                          <td>Requiere el Pase de Pago y completar el LvL 2</td>
+                      </tr>
+                      <tr>
+                          <td>Lanza oponentes a la órbita con ataques característicos</td>
+                          <td>75</td>
+                          <td>
+                              <a onclick="abrirOV(1)" class="wbh-a">
+                                  <img src="../media/wiki/bh/pase-batalla/8/extra3.png" title="Darkheart Excavation - LvL 2" style="margin-top:15px">
+                              </a>
+                              <h5 style="margin-top:15px"><a onclick="abrirOV(1)" class="wbh-a">Darkheart Excavation - LvL 2</a></h5>
+                              <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Podio</h6>
+                          </td>
+                          <td>Requiere el Pase de Pago</td>
+                      </tr>
+                      <tr>
+                          <td>Lanza oponentes a la órbita con ataques característicos</td>
+                          <td>200</td>
+                          <td>
+                              <a onclick="abrirOV(1)" class="wbh-a">
+                                  <img src="../media/wiki/bh/pase-batalla/8/extra4.png" title="Darkheart Excavation - LvL 3" style="margin-top:15px">
+                              </a>
+                              <h5 style="margin-top:15px"><a onclick="abrirOV(1)" class="wbh-a">Darkheart Excavation - LvL 3</a></h5>
+                              <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Podio</h6>
+                          </td>
+                          <td>Requiere el Pase de Pago y completar el LvL 2</td>
+                      </tr>
+                      <tr>
+                          <td>Llega al nivel máximo y completa todas las misiones semanales</td>
+                          <td>168</td>
+                          <td>
+                              <img src="../media/wiki/bh/pase-batalla/8/extra5.png" title="Incarnate Loyalty" style="margin-top:15px">
+                              <h5 style="margin-top:15px">Incarnate Loyalty</h5>
+                              <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Avatar</h6>
+                          </td>
+                          <td></td>
+                      </tr>
+                  </table>
+              </section>
 
         </section>
 

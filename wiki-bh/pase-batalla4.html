@@ -198,18 +198,19 @@
                                             </a>
                                         </td>
                                         <td>
-                                            <img src="../media/wiki/bh/pase-batalla/4/1-pago_b.png" title="Fall of the Lions" style="margin-top:15px">
-                                        </td>
+                                            <a onclick="abrirOV(1)" class="wbh-a">
+                                                <img src="../media/wiki/bh/pase-batalla/4/1-pago_b.png" title="Fall of the Lions" style="margin-top:15px">
+                                            </a>
+                                           </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="./octavius-mordex" class="wbh-a">
-                                            <h5>Octavius Mordex</h5>
+                                            <h5><a href="./octavius-mordex" class="wbh-a">Octavius Mordex</a></h5>
                                             </a>
                                             <h6 style="color:#9e9e9e;margin-top:5px">Skin</h6>
                                         </td>
                                         <td>
-                                            <h5>Fall of the Lions</h5>
+                                            <h5><a onclick="abrirOV(1)" class="wbh-a">Fall of the Lions</a></h5>
                                             <h6 style="color:#9e9e9e;margin-top:5px">Podio</h6>
                                         </td>
                                     </tr>
@@ -1001,8 +1002,10 @@
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Esquema de Color</h6>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/4/63-pago.png" title="Unchained Resolve" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Unchained Resolve</h5>
+                            <a onclick="abrirOV(2)" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/4/63-pago.png" title="Unchained Resolve" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a onclick="abrirOV(2)" class="wbh-a">Unchained Resolve</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Efecto de KO</h6>
                         </td>
                     </tr>
@@ -1282,6 +1285,45 @@
                     </tr>
                 </table>
             </section>
+                
+            <div id="ov1" class="overlay" style="display: none;">
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">Fall of the Lions</h2>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <table style="border-collapse: separate; border-spacing: 10px;">
+                    <tr>
+                        <td style="border:none; border-right: 2px solid #e0e0e0;">
+                            <img src="../media/wiki/bh/pase-batalla/4/podio-lvl1.png" style="width: 200px;"><br>
+                            <h3>Nivel 1</h3>
+                        </td>
+                        <td style="border:none; border-right: 2px solid #e0e0e0;">
+                            <img src="../media/wiki/bh/pase-batalla/4/podio-lvl2.png" style="width: 200px;"><br>
+                            <h3>Nivel 2</h3>
+                        </td>
+                        <td style="border:none;">
+                            <img src="../media/wiki/bh/pase-batalla/4/podio-lvl3.png" style="width: 200px;"><br>
+                            <h3>Nivel 3</h3>
+                        </td>
+                    </tr>
+                </table>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                </div>
+              </div>
+                
+            <div id="ov2" class="overlay" style="display: none;">
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">Unchained Resolve</h2>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <table style="border-collapse: separate; border-spacing: 10px;">
+                    <tr>
+                        <td style="border:none;">
+                            <img src="../media/wiki/bh/pase-batalla/4/efecto-ko.webp" style="width: 300px;"><br>
+                        </td>
+                    </tr>
+                </table>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
+                </div>
+              </div>
 
             <h2 align="center" style="margin-bottom:25px;margin-top:25px">Recompensas Adicionales</h2>
             <section>
@@ -1296,8 +1338,10 @@
                         <td>Consigue KOs con ataques en versión activa</td>
                         <td>40</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/4/extra1.png" title="Octavius Mordex - LvL 2" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Future Wave Val - LvL 2</h5>
+                            <a href="./octavius-mordex">
+                                <img src="../media/wiki/bh/pase-batalla/4/extra1.png" title="Octavius Mordex - LvL 2" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a href="./octavius-mordex" class="wbh-a">Octavius Mordex - LvL 2</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                         <td>Requiere el Pase de Pago</td>
@@ -1306,8 +1350,10 @@
                         <td>Consigue KOs con ataques en versión activa</td>
                         <td>100</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/4/extra2.png" title="Octavius Mordex - LvL 3" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Future Wave Val - LvL 3</h5>
+                            <a href="./octavius-mordex">
+                                <img src="../media/wiki/bh/pase-batalla/4/extra2.png" title="Octavius Mordex - LvL 3" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a href="./octavius-mordex" class="wbh-a">Octavius Mordex - LvL 3</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                         <td>Requiere el Pase de Pago y completar el LvL 2</td>
@@ -1316,9 +1362,11 @@
                         <td>Inflinge daño con ataque ligero desde el suelo</td>
                         <td>21.000</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/4/extra3.png" title="Yggdrasil's Fate - LvL 2" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Fall of the Lions - LvL 2</h5>
-                            <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
+                            <a onclick="abrirOV(1)" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/4/extra3.png" title="Yggdrasil's Fate - LvL 2" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a onclick="abrirOV(1)" class="wbh-a">Fall of the Lions - LvL 2</a></h5>
+                            <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Podio</h6>
                         </td>
                         <td>Requiere el Pase de Pago</td>
                     </tr>
@@ -1326,9 +1374,11 @@
                         <td>Inflinge daño con ataque ligero desde el suelo</td>
                         <td>32.000</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/4/extra4.png" title="Yggdrasil's Fate - LvL 3" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Fall of the Lions - LvL 3</h5>
-                            <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
+                            <a onclick="abrirOV(1)" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/4/extra4.png" title="Yggdrasil's Fate - LvL 3" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a onclick="abrirOV(1)" class="wbh-a">Fall of the Lions - LvL 3</a></h5>
+                            <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Podio</h6>
                         </td>
                         <td>Requiere el Pase de Pago y completar el LvL 2</td>
                     </tr>

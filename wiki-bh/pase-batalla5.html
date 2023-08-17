@@ -195,22 +195,22 @@
                                     <tr>
                                         <td>
                                             <a href="./event-horizon-artemis">
-                                            <img src="../media/wiki/bh/pase-batalla/5/1-pago_a.png" title="Event Horizon Artemis" style="margin-top:15px">
+                                                <img src="../media/wiki/bh/pase-batalla/5/1-pago_a.png" title="Event Horizon Artemis" style="margin-top:15px">
                                             </a>
                                         </td>
                                         <td>
-                                            <img src="../media/wiki/bh/pase-batalla/5/1-pago_b.png" title="Edge of Existence" style="margin-top:15px">
+                                            <a onclick="abrirOV(1)" class="wbh-a">
+                                                <img src="../media/wiki/bh/pase-batalla/5/1-pago_b.png" title="Edge of Existence" style="margin-top:15px">
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="./event-horizon-artemis" class="wbh-a">
-                                            <h5>Event Horizon Artemis</h5>
-                                            </a>
+                                            <h5><a href="./event-horizon-artemis" class="wbh-a">Event Horizon Artemis</a></h5>
                                             <h6 style="color:#9e9e9e;margin-top:5px">Skin</h6>
                                         </td>
                                         <td>
-                                            <h5>Edge of Existence</h5>
+                                            <h5><a onclick="abrirOV(1)" class="wbh-a">Edge of Existence</a></h5>
                                             <h6 style="color:#9e9e9e;margin-top:5px">Podio</h6>
                                         </td>
                                     </tr>
@@ -1002,8 +1002,10 @@
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Esquema de Color</h6>
                         </td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/5/63-pago.png" title="Black Hole" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Black Hole</h5>
+                            <a onclick="abrirOV(2)" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/5/63-pago.png" title="Black Hole" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a onclick="abrirOV(2)" class="wbh-a">Black Hole</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Efecto de KO</h6>
                         </td>
                     </tr>
@@ -1283,6 +1285,45 @@
                     </tr>
                 </table>
             </section>
+                
+            <div id="ov1" class="overlay" style="display: none;">
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">Edge of Existence</h2>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <table style="border-collapse: separate; border-spacing: 10px;">
+                    <tr>
+                        <td style="border:none; border-right: 2px solid #e0e0e0;">
+                            <img src="../media/wiki/bh/pase-batalla/5/podio-lvl1.png" style="width: 200px;"><br>
+                            <h3>Nivel 1</h3>
+                        </td>
+                        <td style="border:none; border-right: 2px solid #e0e0e0;">
+                            <img src="../media/wiki/bh/pase-batalla/5/podio-lvl2.png" style="width: 200px;"><br>
+                            <h3>Nivel 2</h3>
+                        </td>
+                        <td style="border:none;">
+                            <img src="../media/wiki/bh/pase-batalla/5/podio-lvl3.png" style="width: 200px;"><br>
+                            <h3>Nivel 3</h3>
+                        </td>
+                    </tr>
+                </table>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                </div>
+              </div>
+                
+            <div id="ov2" class="overlay" style="display: none;">
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">Black Hole</h2>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <table>
+                    <tr>
+                        <td style="border:none; align-items: center;">
+                            <img src="../media/wiki/bh/pase-batalla/5/efecto-ko.webp" style="width: 300px;">
+                        </td>
+                    </tr>
+                </table>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
+                </div>
+              </div>
 
             <h2 align="center" style="margin-bottom:25px;margin-top:25px">Recompensas Adicionales</h2>
             <section>
@@ -1297,8 +1338,10 @@
                         <td>Consigue KOs en la parte inferior de la pantalla con armas que se lanzaron hacia arriba</td>
                         <td>3</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/5/extra1.png" title="Event Horizon Artemis - LvL 2" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Event Horizon Artemis - LvL 2</h5>
+                            <a href="./event-horizon-artemis" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/5/extra1.png" title="Event Horizon Artemis - LvL 2" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a href="./event-horizon-artemis" class="wbh-a">Event Horizon Artemis - LvL 2</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                         <td>Requiere el Pase de Pago</td>
@@ -1307,8 +1350,10 @@
                         <td>Consigue KOs en la parte inferior de la pantalla con armas que se lanzaron hacia arriba</td>
                         <td>10</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/5/extra2.png" title="Event Horizon Artemis - LvL 3" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Event Horizon Artemis - LvL 3</h5>
+                            <a href="./event-horizon-artemis" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/5/extra2.png" title="Event Horizon Artemis - LvL 3" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a href="./event-horizon-artemis" class="wbh-a">Event Horizon Artemis - LvL 3</a></h5>
                             <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
                         </td>
                         <td>Requiere el Pase de Pago y completar el LvL 2</td>
@@ -1317,9 +1362,11 @@
                         <td>Gana partidas competitivas</td>
                         <td>100</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/5/extra3.png" title="Edge of Existence - LvL 2" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Edge of Existence - LvL 2</h5>
-                            <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
+                            <a onclick="abrirOV(1)" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/5/extra3.png" title="Edge of Existence - LvL 2" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a onclick="abrirOV(1)" class="wbh-a">Edge of Existence - LvL 2</a></h5>
+                            <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Podio</h6>
                         </td>
                         <td>Requiere el Pase de Pago</td>
                     </tr>
@@ -1327,9 +1374,11 @@
                         <td>Gana partidas competitivas</td>
                         <td>250</td>
                         <td>
-                            <img src="../media/wiki/bh/pase-batalla/5/extra4.png" title="Edge of Existence - LvL 3" style="margin-top:15px">
-                            <h5 style="margin-top:15px">Edge of Existence - LvL 3</h5>
-                            <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Skin</h6>
+                            <a onclick="abrirOV(1)" class="wbh-a">
+                                <img src="../media/wiki/bh/pase-batalla/5/extra4.png" title="Edge of Existence - LvL 3" style="margin-top:15px">
+                            </a>
+                            <h5 style="margin-top:15px"><a onclick="abrirOV(1)" class="wbh-a">Edge of Existence - LvL 3</a></h5>
+                            <h6 style="margin-bottom:15px;margin-top:5px;color:#9e9e9e">Podio</h6>
                         </td>
                         <td>Requiere el Pase de Pago y completar el LvL 2</td>
                     </tr>
