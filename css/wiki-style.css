@@ -147,7 +147,7 @@ details {
 
 
 .wbh-a {
-    color: #A55CDE;
+    color: #a964de;
     text-decoration: none;
 }
 
@@ -540,6 +540,12 @@ footer {
     margin-bottom: 35px;
     font-size: 16px;
     cursor: pointer;
+}
+
+.separador_btn {
+    border-left: 1px solid #ffffff;
+     height: 25px;
+      margin: 0 10px;
 }
 
 /* TABLA */
