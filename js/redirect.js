@@ -14,6 +14,10 @@ function goTo(string) {
         window.location.href = "../lista-manga/one-piece"
     };
 
+    if (string == 'manga_sololvl') {
+        window.location.href = "../lista-manga/solo-leveling"
+    };
+
 //Anime
 
     if (string == 'anime_jojo') {
@@ -26,6 +30,10 @@ function goTo(string) {
 
     if (string == 'anime_onepiece') {
         window.location.href = "../lista-anime/one-piece"
+    };
+
+    if (string == 'anime_sololvl') {
+        window.location.href = "../lista-anime/solo-leveling"
     };
 
 //Wiki Brawlhalla

@@ -59,6 +59,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Re:Zero kara Hajimeru Isekai Saikatsu', url: '../lista-anime/re-zero-kara-hajimeru-isekai-seikatsu' },
     { resultado: 'Shigatsu wa Kimi no Uso', url: '../lista-anime/shigatsu-wa-kimi-no-uso' },
     { resultado: 'Shingeki no Kyojin', url: '../lista-anime/shingeki-no-kyojin' },
+    { resultado: 'Solo Leveling', url: '../lista-anime/solo-leveling' },
     { resultado: 'Sono Bisque Doll wa Koi wo Suru', url: '../lista-anime/sono-bisque-doll-wa-koi-wo-suru' },
     { resultado: 'Spy x Family', url: '../lista-anime/spy-x-family' },
     { resultado: 'Steins;Gate', url: '../lista-anime/steins-gate' },
