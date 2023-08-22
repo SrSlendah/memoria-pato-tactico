@@ -13,6 +13,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: "Jojo's Bizarre Adventure", url: '../lista-manga/jojos-bizarre-adventure' },
     { resultado: 'Nanatsu no Taizai', url: '../lista-manga/nanatsu-no-taizai' },
     { resultado: 'One Piece', url: '../lista-manga/one-piece' },
+    { resultado: 'Solo Leveling', url: '../lista-manga/solo-leveling' },
   ];
 
   query = removeAccents(query.toLowerCase());
