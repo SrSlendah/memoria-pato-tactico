@@ -43,6 +43,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Kono Subarashii Sekai ni Shukufuku wo!', url: '../lista-anime/kono-subarashii-sekai-ni-shukufuku-wo' },
     { resultado: 'Made in Abyss', url: '../lista-anime/made-in-abyss' },
     { resultado: 'Mairimashita! Iruma-kun', url: '../lista-anime/mairimashita-iruma-kun' },
+    { resultado: 'Mashle', url: '../lista-anime/mashle' },
     { resultado: 'Mob Psycho 100', url: '../lista-anime/mob-psycho-100' },
     { resultado: 'Nanatsu no Taizai', url: '../lista-anime/nanatsu-no-taizai' },
     { resultado: 'Nande Koko ni Sensei ga!?', url: '../lista-anime/nande-koko-ni-sensei-ga' },
