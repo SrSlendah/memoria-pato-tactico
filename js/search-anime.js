@@ -70,6 +70,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Tensei Shitara Ken Deshita', url: '../lista-anime/tensei-shitara-ken-deshita' },
     { resultado: 'Tokyo Ghoul', url: '../lista-anime/tokyo-ghoul' },
     { resultado: 'Tokyo Revengers', url: '../lista-anime/tokyo-revengers' },
+    { resultado: 'Tonikaku Kawaii', url: '../lista-anime/tonikaku-kawaii' },
     { resultado: 'Uzaki-chan wa Asobitai!', url: '../lista-anime/uzaki-chan-wa-asobitai' },
   ];
 
