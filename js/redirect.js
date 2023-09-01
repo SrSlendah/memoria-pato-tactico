@@ -36,10 +36,16 @@ function goTo(string) {
         window.location.href = "../lista-anime/solo-leveling"
     };
 
+//Lista Peliculas y series
+
+    if (string == 'lps_onepiece') {
+        window.location.href = "../lista-peliculas-series/one-piece"
+    };
+
 //Wiki Brawlhalla
 
     if (string == 'wbh_collectors') {
         window.open('https://store.steampowered.com/app/298641/Brawlhalla__Collectors_Pack/', '_blank')
-    }
+    };
 
 }

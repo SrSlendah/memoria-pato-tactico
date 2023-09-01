@@ -5,19 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>One Piece - Lista de Anime</title>
+    <title>One Piece - Lista de Películas y Series</title>
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../js/ir-arriba.js"></script>
-    <script src="../js/redirect.js"></script>
-
     <header>
 
 
@@ -41,7 +35,7 @@
 
         <section class="textos-header">
             <h1>One Piece</h1>
-            <h3>Total de episodios vistos: 7</h3>
+            <h3>Total de episodios vistos: 3</h3>
         </section>
 
 
@@ -59,23 +53,23 @@
 
     <main>
         <div class="search-container">
-          <input type="text" id="search-input" placeholder="Buscar en la lista de anime...">
+          <input type="text" id="search-input" placeholder="Buscar en la lista de peliculas y series...">
           <ul id="autocomplete-list" style="display: none;"></ul>
         </div>
       
-        <script src="../js/search-anime.js"></script>
-        <script src="../js/anime.js"></script>
+        <script src="../js/search-peliculas-series.js"></script>
+        <script src="../js/redirect.js"></script>
 
         <div class="secciones" align="center">
+            <button onclick="goTo('anime_onepiece');">Anime</button>
             <button onclick="goTo('manga_onepiece');">Manga</button>
-            <button onclick="goTo('lps_onepiece');">Live Action</button>
         </div>
 
         <section class="info">
             <table>
                 <tr>
                     <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece.png">
+                        <img src="../media/peliculas-series/one-piece.png">
                     </td>
                     <td></td>
                     <td></td>
@@ -90,10 +84,7 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(1)">
-                    </th>
+                    <th class="info-title" colspan="3">One Piece</th>
                     <td></td>
                     <td></td>
                 </tr>
@@ -117,9 +108,9 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td class="info-ep-num">?</td>
+                    <td class="info-ep-num">8</td>
                     <td></td>
-                    <td class="info-ep-num">7</td>
+                    <td class="info-ep-num">3</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -134,23 +125,6 @@
                     <td></td>
                 </tr>
             </table>
-                
-            <div id="ov1" class="overlay" style="display: none;">
-                <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece</h2>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Anime</p>
-                  <p><b>Estudio:</b> Toei Animation</p>
-                  <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
-                  <p><b>Fecha de Publicación:</b> 20/10/1999 - ?</p>
-                  <p><b>Temporada:</b> Otoño 1999</p>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Visto desde:</b> 30/07/2023</p>
-                  <p><b>Visto hasta:</b> ?</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
-                </div>
-            </div>
-
         </section>
 
     </main>
@@ -169,7 +143,7 @@
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>
-                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none" ; target=" _blank">Click</a></p>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none"; target=" _blank">Click</a></p>
             </div>
         </div>
         <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>
