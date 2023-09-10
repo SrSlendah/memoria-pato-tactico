@@ -10,8 +10,9 @@ function removeAccents(str) {
 function obtenerResultadosConURLs(query) {
   resultadosConURLs = [
     { resultado: 'Arcane', url: '../lista-peliculas-series/arcane' },
-    { resultado: "Death Note: Live Action", url: '../lista-peliculas-series/death-note-live-action' },
+    { resultado: "Death Note: Live Action", url: '../lista-peliculas-series/death-note' },
     { resultado: 'El Hoyo', url: '../lista-peliculas-series/el-hoyo' },
+    { resultado: 'Harry Potter', url: '../lista-peliculas-series/harry-potter' },
     { resultado: 'La Monja', url: '../lista-peliculas-series/la-monja' },
     { resultado: 'One Piece', url: '../lista-peliculas-series/one-piece' },
     { resultado: 'Rick & Morty', url: '../lista-peliculas-series/rick-morty' },

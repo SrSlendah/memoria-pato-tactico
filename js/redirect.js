@@ -36,10 +36,18 @@ function goTo(string) {
         window.location.href = "../lista-anime/solo-leveling"
     };
 
+    if (string == 'anime_deathnote') {
+        window.location.href = "../lista-anime/death-note"
+    };
+
 //Lista Peliculas y series
 
     if (string == 'lps_onepiece') {
         window.location.href = "../lista-peliculas-series/one-piece"
+    };
+
+    if (string == 'lps_deathnote') {
+        window.location.href = "../lista-peliculas-series/death-note"
     };
 
 //Wiki Brawlhalla
