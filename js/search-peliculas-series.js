@@ -13,6 +13,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: "Death Note: Live Action", url: '../lista-peliculas-series/death-note' },
     { resultado: 'El Hoyo', url: '../lista-peliculas-series/el-hoyo' },
     { resultado: 'Harry Potter', url: '../lista-peliculas-series/harry-potter' },
+    { resultado: 'Jurassic Park', url: '../lista-peliculas-series/jurassic-park' },
     { resultado: 'La Monja', url: '../lista-peliculas-series/la-monja' },
     { resultado: 'One Piece', url: '../lista-peliculas-series/one-piece' },
     { resultado: 'Rick & Morty', url: '../lista-peliculas-series/rick-morty' },
