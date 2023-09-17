@@ -17,7 +17,6 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'La Monja', url: '../lista-peliculas-series/la-monja' },
     { resultado: 'One Piece', url: '../lista-peliculas-series/one-piece' },
     { resultado: 'Rick & Morty', url: '../lista-peliculas-series/rick-morty' },
-    { resultado: "Saw", url: '../lista-peliculas-series/saw' },
     { resultado: "Scary Movie", url: '../lista-peliculas-series/scary-movie' },
     { resultado: 'Slenderman', url: '../lista-peliculas-series/slenderman' },
     { resultado: 'Squid Game', url: '../lista-peliculas-series/squid-game' },
