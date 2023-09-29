@@ -56,4 +56,8 @@ function goTo(string) {
         window.open('https://store.steampowered.com/app/298641/Brawlhalla__Collectors_Pack/', '_blank')
     };
 
+    if (string == 'wbh_yetee') {
+        window.open('https://theyetee.com/collections/brawlhalla', '_blank')
+    };
+
 }
