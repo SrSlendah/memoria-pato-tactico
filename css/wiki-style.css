@@ -61,6 +61,39 @@ a {
     color: #fff
 }
 
+.leyenda-info {
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+}
+
+/* Estilo para la imagen a la izquierda */
+.leyenda-info > .imagen {
+    flex: 1; /* La imagen ocupará una fracción flexible del espacio disponible */
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    border-right: 2px solid #e0e0e0; /* Borde derecho para la imagen (puedes cambiar el color y grosor) */
+    padding-right: 20px; /* Espacio a la derecha del borde */
+}
+
+/* Estilo para la lista de titulares y texto a la derecha */
+ul.lista {
+    list-style-type: square; /* Cambia el tipo de marcador de la lista (por ejemplo, a cuadrados) */
+    margin-left: 20px; /* Elimina el margen predeterminado de la lista */
+    padding-left: 20px; /* Agrega un espacio a la izquierda de los elementos de la lista */
+    flex: 2; /* La lista ocupará dos fracciones flexibles del espacio disponible */
+}
+
+/* Estilo para los titulares */
+ul.lista > li > h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/* Estilo para el texto debajo de los titulares */
+ul.lista > li >p {
+    font-size: 14px;
+}
+
+
 .gamemode > a {
     text-decoration: none;
     color: #ab49f7
