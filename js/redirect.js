@@ -1,5 +1,21 @@
 function goTo(string) {
 
+//wiki-link
+
+    if (string == 'wjb') {
+        window.location.href = "../wiki/wiki-jb"
+    }
+
+    if (string == 'wbh') {
+        window.location.href = "../wiki/wiki-bh"
+    }
+
+
+
+
+
+
+
 // Manga
 
     if (string == 'manga_jojo') {

@@ -8,7 +8,10 @@
     <title>Arachnid - Jailbreak Wiki</title>
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/wiki-style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">  
+
+    <script src="../js/wjb_visit-check.js"></script>
+
 </head>
 
 <body>
@@ -60,6 +63,15 @@
 
 
     <main>
+        
+        <div id="AlertaAbandono" class="overlay" style="display: none; justify-content: center; align-items: center;">
+            <div class="contenido-overlay" style="width: 355px;height: 355px;">
+                <img src="../media/wiki/jb/logo.png" width="300px" style="margin-top: -55px;">
+                <hr style="margin-top:-50px;margin-bottom:20px">
+                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarAlerta()" title="Cerrar">
+                <h3 align="center">Esta wiki ha sido abandonada y no recibirá nuevas actualizaciones</h2>
+            </div>
+        </div>
 
         <table style="margin-top:40px;width:50%">
             <tr>
