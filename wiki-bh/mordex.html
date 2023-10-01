@@ -65,13 +65,14 @@
         </div>
       
         <script src="../js/search-wiki-bh.js"></script>
+        <script src="../js/overlay.js"></script>
 
         <table style="margin-top:20px;width:50%">
             <tr>
                 <th colspan="4">Mordex</th>
             </tr>
             <tr>
-                <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/leyendas/pose/mordex.png" width="300px"></td>
+                <td style="width:300px" rowspan="3"><img src="../media/wiki/bh/leyendas/pose/mordex.png" width="300px"></td>
                 <th style="height:30px;width:175px">Precio</th>
                 <th style="width: 175px">Armas</th>
                 <th style="width: 207px">Estadísticas</th>
@@ -80,12 +81,12 @@
                 <td>
                     <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:20px"> <b style="font-size:20px">5.400</b>
                 </td>
-                <td>
+                <td rowspan="2">
                     <img src="../media/wiki/bh/armas/guadaña.png" title="Guanaña">
                     <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
                     <img src="../media/wiki/bh/armas/guanteletes.png" title="Guanteletes">
                 </td>
-                <td>
+                <td rowspan="2">
                     <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
                     <img src="../media/wiki/bh/leyendas/stats/6.png" title="Fuerza">
                     <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
@@ -99,7 +100,68 @@
                     <img src="../media/wiki/bh/leyendas/stats/7.png" title="Velocidad">
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <div class="secciones" align="center" style="margin-bottom:-60px;margin-top:-22px">
+                        <button id="sec1-btn" onclick="abrirOV(1);">Mas Información</button>
+                    </div>
+                </td>
+            </tr>
         </table>
+        
+        <div id="ov1" class="overlay" style="display: none">
+            <div class="contenido-overlay" style="width: 750px;height: 615px;">
+                <h2 style="margin-top:-20px">Mordex</h2>
+                <h5 style="margin-bottom:-10px;">El Voraz</h5>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <div class="leyenda-info">
+                    <img class="imagen" src="../media/wiki/bh/leyendas/mordex.png" width="350px">
+                    <ul class="lista">
+                        <li>
+                            <h2>Nombre Completo</h2>
+                            <p>Octavius Mordex</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Descripción en tienda</h2>
+                            <p>¡En las noches más frías y oscuras su hambre se vuelve feroz!</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Género</h2>
+                            <p>Masculino</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Especie</h2>
+                            <p>Licántropo</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Nombre de Bot</h2>
+                            <p>M0R-D3X</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Hogar</h2>
+                            <p>???</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Fecha de Publicación</h2>
+                            <p>29/03/2017</p>
+                        </li>
+                    </ul>
+                </div>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <div id="tags">
+                    <img src="../media/wiki/bh/tags/guadaña.png" title="Guadaña" style="width:150px">
+                    <img src="../media/wiki/bh/tags/guanteletes.png" title="Guanteletes" style="width:150px">
+                    <img src="../media/wiki/bh/tags/fangwild.png" title="Fangwild" style="width:150px">
+                    <img src="../media/wiki/bh/tags/leon-exaltado.png" title="León Exaltado" style="width:150px">
+                    <img src="../media/wiki/bh/tags/ganador-1c1-bcx.png" title="Ganador de 1c1 del BCX" style="width:150px">
+                    <img src="../media/wiki/bh/tags/batavia.png" title="Batavia" style="width:150px">
+                    <img src="../media/wiki/bh/tags/metamorfo.png" title="Metamorfo" style="width:150px">
+                    <img src="../media/wiki/bh/tags/top-3-1c1-bcx.png" title="Top 3 de 1c1 del BCX" style="width:150px">
+                    <img src="../media/wiki/bh/tags/usuario-magico.png" title="Usuario Mágico" style="width:150px">
+                </div>
+                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+            </div>
+        </div>
 
         <hr style="width:50%;margin:0 auto;margin-top:35px">
 

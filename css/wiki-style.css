@@ -178,6 +178,17 @@ details {
     text-shadow: 1px 1px 0 #4b2866, -1px -1px 0 #4b2866, 1px -1px 0 #4b2866, -1px 1px 0 #4b2866;
   }
 
+  #tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#tags img {
+    max-width: 150px;
+}
+
 
 .wbh-a {
     color: #a964de;
@@ -284,6 +295,12 @@ details {
 /* Menu */
 section#menu {
     background: #2E2E2E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
 }
 
     section#menu::after {
@@ -316,7 +333,7 @@ nav {
 
     nav li {
         display: inline-block;
-        margin-left: 70px;
+        margin-left: 40px;
         padding-top: 5px;
         position: relative;
     }

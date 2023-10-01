@@ -65,13 +65,14 @@
         </div>
       
         <script src="../js/search-wiki-bh.js"></script>
+        <script src="../js/overlay.js"></script>
 
         <table style="margin-top:20px;width:50%">
             <tr>
                 <th colspan="4">Lucien</th>
             </tr>
             <tr>
-                <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/leyendas/pose/lucien.png" width="300px"></td>
+                <td style="width:300px" rowspan="3"><img src="../media/wiki/bh/leyendas/pose/lucien.png" width="300px"></td>
                 <th style="height:30px;width:175px">Precio</th>
                 <th style="width: 175px">Armas</th>
                 <th style="width: 207px">Estadísticas</th>
@@ -80,12 +81,12 @@
                 <td>
                     <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:20px"> <b style="font-size:20px">2.300</b>
                 </td>
-                <td>
+                <td rowspan="2">
                     <img src="../media/wiki/bh/armas/katars.png" title="Katars">
                     <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
                     <img src="../media/wiki/bh/armas/pistolas.png" title="Pistolas">
                 </td>
-                <td>
+                <td rowspan="2">
                     <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
                     <img src="../media/wiki/bh/leyendas/stats/3.png" title="Fuerza">
                     <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
@@ -99,7 +100,60 @@
                     <img src="../media/wiki/bh/leyendas/stats/8.png" title="Velocidad">
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <div class="secciones" align="center" style="margin-bottom:-60px;margin-top:-22px">
+                        <button id="sec1-btn" onclick="abrirOV(1);">Mas Información</button>
+                    </div>
+                </td>
+            </tr>
         </table>
+        
+        <div id="ov1" class="overlay" style="display: none">
+            <div class="contenido-overlay" style="width: 750px;height: 525px;">
+                <h2 style="margin-top:-20px">Lucien</h2>
+                <h5 style="margin-bottom:-10px;">Highwayman</h5>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <div class="leyenda-info">
+                    <img class="imagen" src="../media/wiki/bh/leyendas/lucien.png" width="350px">
+                    <ul class="lista">
+                        <li>
+                            <h2>Nombre Completo</h2>
+                            <p>Count Lucien Degas</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Descripción en tienda</h2>
+                            <p>Highwayman roba a los ricos. Y a los pobres. Y especialmente a los recién muertos</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Género</h2>
+                            <p>Masculino</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Nombre de Bot</h2>
+                            <p>Loose Ion</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Hogar</h2>
+                            <p>???</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Fecha de Publicación</h2>
+                            <p>09/01/2015</p>
+                        </li>
+                    </ul>
+                </div>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <div id="tags">
+                    <img src="../media/wiki/bh/tags/katars.png" title="Katars" style="width:150px">
+                    <img src="../media/wiki/bh/tags/pistolas.png" title="Pistolas" style="width:150px">
+                    <img src="../media/wiki/bh/tags/ganador-1c1-bcx.png" title="Ganador de 1c1 del BCX" style="width:150px">
+                    <img src="../media/wiki/bh/tags/batavia.png" title="Batavia" style="width:150px">
+                    <img src="../media/wiki/bh/tags/portador-de-sombrero.png" title="Portador de Sombrero" style="width:150px">
+                </div>
+                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+            </div>
+        </div>
 
         <hr style="width:50%;margin:0 auto;margin-top:35px">
 
