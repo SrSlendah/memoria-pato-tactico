@@ -72,12 +72,19 @@ main h4 > a {
 
 /* cheat sheets */
 
+.sheets-container {
+    display: flex;
+    justify-content: center;
+}
+
 .sheets-selector {
-    display:flex;
+    display:inline-block;
     justify-content:center;
     align-items:center;
+    text-align: center;
     color:#fff;
     margin-bottom: 25px;
+    margin-right: 50px;
 }
 
 .sheets-selector > label {
@@ -94,21 +101,22 @@ main h4 > a {
     border-radius:5px;
 }
 
-.changelog-td_framed {
-    border: 3px solid #4b2866;
+.sheets-result {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente las tablas */
+    grid-template-columns: repeat(5, calc(110px + 100px));
+    gap: 20px;
 }
 
-.changelog-th {
-    border: 3px solid #4b2866;
-    background-color: #6f3c96;
-    font-size:20px;
-    width: 600px;
-    height: 50px
+.sheets-result table {
+    margin: 0
 }
 
 .sheets-selector > select:focus{
   outline:none;
 }
+
 
 /* Buscador */
 .search-container {
