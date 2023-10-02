@@ -69,8 +69,14 @@
       
         <script src="../js/search-wiki-bh.js"></script>
 
+        <div class="secciones" align="center">
+            <button id="1-btn" onclick="show1();" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Información</button>
+            <button id="2-btn" onclick="show2();">Cosméticos</button>
+        </div>
+
+        <section id="1">
         <section>
-            <h2 align="center" style="font-size:30px">Recompensas del Ranked</h2>
+            <h2 align="center" style="font-size:30px;margin-top:-20px">Recompensas del Ranked</h2>
             <br />
             <p align="center" style="color:#fff">
                 Al jugar Ranked puedes conseguir distintos rangos que otorgan avatares y marcos.<br>
@@ -1200,6 +1206,901 @@
             </section>
 
         </section>
+    </section>
+
+    <section id="2" style="display: none;">
+
+        <h2 align="center" style="margin-top:-20px">Color</h2>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Skyforged
+                </th>
+                <th>
+                    Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/color/skyforged.png" style="width:150px;">
+                </td>
+                <td style="width:300px">
+                        <img src="../media/wiki/bh/ranked/color/goldforged.png" style="width:150px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.500<br>
+                    <i style="font-size:13px">Por cada leyenda<br> (Requiere leyenda lvl 10)</i>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 3.750<br>
+                    <i style="font-size:13px">Por cada leyenda<br> (Requiere el skyforged)</i>
+                </td>
+            </tr>
+        </table>
+
+        <h2 align="center" style="margin-top:20px">Tema de IU</h2>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Joya Skyforged
+                </th>
+                <th>
+                    Joya Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/iu/joya-skyforged.png" style="width:250px;">
+                </td>
+                <td style="width:300px">
+                        <img src="../media/wiki/bh/ranked/iu/joya-goldforged.png" style="width:250px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 10.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 15.000<br>
+                    <i style="font-size:13px">Requiere la Joya Skyforged</i>
+                </td>
+            </tr>
+        </table>
+
+        <h2 align="center" style="margin-top:20px">Gestos</h2>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Trofeo Skyforged
+                </th>
+                <th>
+                    Trofeo Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/gestos/trofeo-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                        <img src="../media/wiki/bh/ranked/gestos/trofeo-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 6.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 9.000<br>
+                    <i style="font-size:13px">Requiere el Trofeo Skyforged</i>
+                </td>
+            </tr>
+        </table>
+
+        <h2 align="center" style="margin-top:20px">Compañeros</h2>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Buey de dos Colas Skyforged
+                </th>
+                <th>
+                    Buey de dos Colas Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/compañeros/buey-de-dos-colas-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                        <img src="../media/wiki/bh/ranked/compañeros/buey-de-dos-colas-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 6.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 9.000<br>
+                    <i style="font-size:13px">Requiere el Trofeo Skyforged</i>
+                </td>
+            </tr>
+        </table>
+
+        <h2 align="center" style="margin-top:20px">Skins de Armas</h2>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Espada Skyforged
+                </th>
+                <th>
+                    Espada Goldforged
+                </th>
+                <th>
+                    Martillo Skyforged
+                </th>
+                <th>
+                    Martillo Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/espada-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/espada-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/martillo-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/martillo-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Pistolas Skyforged
+                </th>
+                <th>
+                    Pistolas Goldforged
+                </th>
+                <th>
+                    Arpón Skyforged
+                </th>
+                <th>
+                    Arpón Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/pistolas-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/pistolas-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/arpon-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/arpon-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Lanza Cohete Skyforged
+                </th>
+                <th>
+                    Lanza Cohete Goldforged
+                </th>
+                <th>
+                    Cuchillas Skyforged
+                </th>
+                <th>
+                    Cuchillas Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/lanza-cohete-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/lanza-cohete-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/cuchillas-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/cuchillas-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Hacha Skyforged
+                </th>
+                <th>
+                    Hacha Goldforged
+                </th>
+                <th>
+                    Guanteletes Skyforged
+                </th>
+                <th>
+                    Guanteletes Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/hacha-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/hacha-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/guanteletes-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/guanteletes-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Arco Skyforged
+                </th>
+                <th>
+                    Arco Goldforged
+                </th>
+                <th>
+                    Guadaña Skyforged
+                </th>
+                <th>
+                    Guadaña Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/arco-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/arco-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/guadaña-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/guadaña-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Cañón Skyforged
+                </th>
+                <th>
+                    Cañón Goldforged
+                </th>
+                <th>
+                    Orbe Skyforged
+                </th>
+                <th>
+                    Orbe Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/cañon-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/cañon-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/orbe-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/orbe-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Greatsword Skyforged
+                </th>
+                <th>
+                    Greatsword Goldforged
+                </th>
+                <th>
+                    Botas de Batalla Skyforged
+                </th>
+                <th>
+                    Botas de Batalla Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/greatsword-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/greatsword-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/botas-batalla-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/botas-batalla-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <h2 align="center" style="margin-top:20px">Skin de Emojis</h2>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Espera Skyforged
+                </th>
+                <th>
+                    Espera Goldforged
+                </th>
+                <th>
+                    Risa Skyforged
+                </th>
+                <th>
+                    Risa Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/espera-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/espera-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/risa-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/risa-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Sorprendido Skyforged
+                </th>
+                <th>
+                    Sorprendido Goldforged
+                </th>
+                <th>
+                    Inteligente Skyforged
+                </th>
+                <th>
+                    Inteligente Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/sorprendido-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/sorprendido-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/inteligente-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/inteligente-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Furia Skyforged
+                </th>
+                <th>
+                    Furia Goldforged
+                </th>
+                <th>
+                    Ya vuelvo Skyforged
+                </th>
+                <th>
+                    Ya vuelvo Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/furia-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/furia-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/ya-vuelvo-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/ya-vuelvo-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Saludos Skyforged
+                </th>
+                <th>
+                    Saludos Goldforged
+                </th>
+                <th>
+                    GG Skyforged
+                </th>
+                <th>
+                    GG Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/saludos-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/saludos-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/gg-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/gg-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Bien Jugado Skyforged
+                </th>
+                <th>
+                    Bien Jugado  Goldforged
+                </th>
+                <th>
+                    DEP Skyforged
+                </th>
+                <th>
+                    DEP Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/bien-jugado-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/bien-jugado-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/dep-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/dep-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Pensar Skyforged
+                </th>
+                <th>
+                    Pensar Goldforged
+                </th>
+                <th>
+                    Encogimiento de Hombros Skyforged
+                </th>
+                <th>
+                    Encogimiento de Hombros Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/pensar-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/pensar-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/encogimiento-de-hombros-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/encogimiento-de-hombros-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Pulgar Arriba Skyforged
+                </th>
+                <th>
+                    Pulgar Arriba Goldforged
+                </th>
+                <th>
+                    Pulgar Abajo Skyforged
+                </th>
+                <th>
+                    Pulgar Abajo Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/pulgar-arriba-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/pulgar-arriba-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/pulgar-abajo-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/pulgar-abajo-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Mano a la Cara Skyforged
+                </th>
+                <th style="font-size: 15px;">
+                    Mano a la Cara Goldforged
+                </th>
+                <th>
+                    Skyforged: Uno Más
+                </th>
+                <th>
+                    Goldforged: Uno Más
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/mano-a-la-cara-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/mano-a-la-cara-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/skyforged-uno-mas.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/goldforged-uno-mas.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Skyforged: Llanto
+                </th>
+                <th>
+                    Goldforged: Llanto
+                </th>
+                <th>
+                    Skyforged: Corazón
+                </th>
+                <th>
+                    Goldforged: Corazón
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/skyforged-llanto.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/goldforged-llanto.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/skyforged-corazon.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/goldforged-corazon.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Skyforged: Sudor
+                </th>
+                <th>
+                    Goldforged: Sudor
+                </th>
+                <th>
+                    Skyforged: Estás Genial
+                </th>
+                <th>
+                    Goldforged: Estás Genial
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/skyforged-sudor.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/goldforged-sudor.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/skyforged-estas-genial.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/goldforged-estas-genial.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+    </section>
+
 
 </main>
     <footer>

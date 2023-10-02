@@ -63,6 +63,28 @@ document.addEventListener('keydown', function(event) {
 });
 
 // Secciones
+function show(sectionNumber) {
+  const totalSections = 4; // Actualiza esto con el número total de secciones
+  
+  for (let i = 1; i <= totalSections; i++) {
+    const section = document.getElementById(i);
+    const button = document.getElementById(i + '-btn');
+    
+    section.style.display = i === sectionNumber ? '' : 'none';
+    button.style.backgroundColor = i === sectionNumber ? '#4b2966' : '#6f3c96';
+    button.style.borderColor = i === sectionNumber ? '#311a42' : '#4b2866';
+    button.style.color = i === sectionNumber ? '#9e9e9e' : '#fff';
+  }
+}
+  
+  function show1() {
+    show(1);
+  }
+  
+  function show2() {
+    show(2);
+  }
+  
 
 function showSection(sectionNumber) {
   const totalSections = 12; // Actualiza esto con el número total de secciones
