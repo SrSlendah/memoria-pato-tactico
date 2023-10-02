@@ -60,8 +60,79 @@
           <input type="text" id="search-input" placeholder="Buscar en la wiki de Brawlhalla...">
           <ul id="autocomplete-list" style="display: none;"></ul>
         </div>
-      
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="../js/buscador.js"></script>
+        <script src="../js/ir-arriba.js"></script>
         <script src="../js/search-wiki-bh.js"></script>
+        <script src="../js/wbh_cheat-sheets.js"></script>
+
+    <form class="sheets-selector">
+        <label>Arma 1:</label>
+        <select name="" id="arma1" onchange="GetArma1()">
+            <option value="1">Arco</option>
+            <option value="2">Botas de Batalla</option>
+            <option value="3">Cañón</option>
+            <option value="4">Espada</option>
+            <option value="5">Espada Grande</option>
+            <option value="6">Guadaña</option>
+            <option value="7">Guanteletes</option>
+            <option value="8">Hacha</option>
+            <option value="9">Katars</option>
+            <option value="10">Lanza</option>
+            <option value="11">Lanza Cohete</option>
+            <option value="12">Martillo</option>
+            <option value="13">Orbe</option>
+            <option value="14">Pistolas</option>
+        </select>
+    </form>
+    
+    <form class="sheets-selector">
+        <label>Arma 2:</label>
+        <select name="" id="arma2" onchange="GetArma2()">
+            <option value="1">Arco</option>
+            <option value="2">Botas de Batalla</option>
+            <option value="3">Cañón</option>
+            <option value="4">Espada</option>
+            <option value="5">Espada Grande</option>
+            <option value="6">Guadaña</option>
+            <option value="7">Guanteletes</option>
+            <option value="8">Hacha</option>
+            <option value="9">Katars</option>
+            <option value="10">Lanza</option>
+            <option value="11">Lanza Cohete</option>
+            <option value="12">Martillo</option>
+            <option value="13">Orbe</option>
+            <option value="14">Pistolas</option>
+        </select>
+    </form>
+    
+    <form class="sheets-selector">
+        <label>Filtro:</label>
+        <select name="" id="filtro" onchange="GetFiltro()">
+            <option value="1">Asgardiano</option>
+            <option value="2">Batavia</option>
+            <option value="3">Bot «Bot»</option>
+            <option value="4">Club de Lectura</option>
+            <option value="5">Dueño de Mascota</option>
+            <option value="6">Elegido por Brynn</option>
+            <option value="7">Entrenado por Lin Fei</option>
+            <option value="8">Espacio Exterior</option>
+            <option value="9">Euro Pop</option>
+            <option value="10">Fangwild</option>
+            <option value="11">Ganador de 1c1 del BCX</option>
+            <option value="12">Ganador de 2c2 del BCX</option>
+            <option value="13">León Exaltado</option>
+            <option value="14">Metamorfo</option>
+            <option value="15">No ha leido</option>
+            <option value="16">Portador de Sombrero</option>
+            <option value="17">Thera</option>
+            <option value="18">Top 3 de 1c1 del BCX</option>
+            <option value="19">Top 3 de 2c2 del BCX</option>
+            <option value="20">Usuario Mágico</option>
+        </select>
+    </form>
+
 
         <table>
             <tr>
@@ -121,263 +192,6 @@
                 </th>
             </tr>
         </table>
-
-        <table style="margin-top:25px">
-            <tr>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-exaltado">
-                        <img src="../media/wiki/bh/cofres/cofre-exaltado.png" alt="">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-olimpico">
-                        <img src="../media/wiki/bh/cofres/cofre-olimpico.png" alt="">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-forjado">
-                        <img src="../media/wiki/bh/cofres/cofre-forjado.png" alt="">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-celestial">
-                        <img src="../media/wiki/bh/cofres/cofre-celestial.png" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-exaltado">
-                        Cofre Exaltado
-                    </a>
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-olimpico">
-                        Cofre Olímpico
-                    </a>
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-forjado">
-                        Cofre Forjado
-                    </a>
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-celestial">
-                        Cofre Celestial
-                    </a>
-                </th>
-            </tr>
-        </table>
-
-        <table style="margin-top:25px">
-            <tr>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-skysail">
-                        <img src="../media/wiki/bh/cofres/cofre-skysail.png" alt="">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-ragnarok">
-                        <img src="../media/wiki/bh/cofres/cofre-ragnarok.png" alt="">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-orden-real">
-                        <img src="../media/wiki/bh/cofres/cofre-orden-real.png" alt="">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-bandido">
-                        <img src="../media/wiki/bh/cofres/cofre-bandido.png" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-skysail">
-                        Cofre Skysail
-                    </a>
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-ragnarok">
-                        Cofre Ragnarok
-                    </a>
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-orden-real">
-                        Cofre de la Orden Real
-                    </a>
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-bandido">
-                        Cofre Bandido
-                    </a>
-                </th>
-            </tr>
-        </table>
-
-        <table style="margin-top:25px">
-            <tr>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-hundido">
-                        <img src="../media/wiki/bh/cofres/cofre-hundido.png" alt="">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-ancestral">
-                        <img src="../media/wiki/bh/cofres/cofre-ancestral.png" alt="">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-dragon">
-                        <img src="../media/wiki/bh/cofres/cofre-dragon.png" alt="">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-prohibido">
-                        <img src="../media/wiki/bh/cofres/cofre-prohibido.png" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-hundido">
-                        Cofre Hundido
-                    </a>
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-ancestral">
-                        Cofre Ancestral
-                    </a>
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-dragon">
-                        Cofre del Dragón
-                    </a>
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-prohibido">
-                        Cofre Prohibido
-                    </a>
-                </th>
-            </tr>
-        </table>
-
-        <table style="margin-top:25px">
-            <tr>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-sandstorm">
-                        <img src="../media/wiki/bh/cofres/cofre-sandstorm.png" alt="">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-imperial">
-                        <img src="../media/wiki/bh/cofres/cofre-imperial.png" alt="">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-cosmico">
-                        <img src="../media/wiki/bh/cofres/cofre-cosmico.png" alt="">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-brawl-city">
-                        <img src="../media/wiki/bh/cofres/cofre-brawl-city.png" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-sandstorm">
-                        Cofre Sandstorm
-                    </a>
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-imperial">
-                        Cofre Imperial
-                    </a>
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-cosmico">
-                        Cofre Cósmico
-                    </a>
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-brawl-city">
-                        Cofre Brawl City
-                    </a>
-                </th>
-            </tr>
-        </table>
-
-        <table style="margin-top:25px">
-            <tr>
-                <td class="wbh-img">
-                    <a href="../wiki-bh/cofre-synthwave">
-                        <img src="../media/wiki/bh/cofres/cofre-synthwave.png" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <th class="info-title">
-                    <a href="../wiki-bh/cofre-synthwave">
-                        Cofre Synthwave
-                    </a>
-                </th>
-            </tr>
-        </table>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="../js/buscador.js"></script>
-        <script src="../js/ir-arriba.js"></script>
 
     </main>
     <footer>
