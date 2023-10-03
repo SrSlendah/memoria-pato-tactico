@@ -75,6 +75,7 @@ main h4 > a {
 .sheets-container {
     display: flex;
     justify-content: center;
+    margin-left:60px
 }
 
 .sheets-selector {
@@ -116,7 +117,6 @@ main h4 > a {
 .sheets-selector > select:focus{
   outline:none;
 }
-
 
 /* Buscador */
 .search-container {
