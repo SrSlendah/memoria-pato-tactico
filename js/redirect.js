@@ -3,11 +3,11 @@ function goTo(string) {
 //wiki-link
 
     if (string == 'wjb') {
-        window.location.href = "./wiki/wiki-jb"
+        window.location.href = "/wiki/wiki-jb"
     }
 
     if (string == 'wbh') {
-        window.location.href = "./wiki/wiki-bh"
+        window.location.href = "/wiki/wiki-bh"
     }
 
 
