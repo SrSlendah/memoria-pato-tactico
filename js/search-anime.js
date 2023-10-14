@@ -69,9 +69,11 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Sword Art Online', url: '../lista-anime/sword-art-online' },
     { resultado: 'Tate no Yuusha no Nariagari', url: '../lista-anime/tate-no-yuusha-no-nariagari' },
     { resultado: 'Tensei Shitara Ken Deshita', url: '../lista-anime/tensei-shitara-ken-deshita' },
+    { resultado: 'The Eminence in Shadow', url: '../lista-anime/the-eminence-in-shadow' },
     { resultado: 'Tokyo Ghoul', url: '../lista-anime/tokyo-ghoul' },
     { resultado: 'Tokyo Revengers', url: '../lista-anime/tokyo-revengers' },
     { resultado: 'Tonikaku Kawaii', url: '../lista-anime/tonikaku-kawaii' },
+    { resultado: 'Undead Unluck', url: '../lista-anime/undead-unluck' },
     { resultado: 'Uzaki-chan wa Asobitai!', url: '../lista-anime/uzaki-chan-wa-asobitai' },
   ];
 
