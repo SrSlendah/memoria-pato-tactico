@@ -27,6 +27,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Eternals', url: '../lista-marvel/eternals' },
     { resultado: 'Guardianes de la Galaxia', url: '../lista-marvel/guardianes-de-la-galaxia' },
     { resultado: "Guardianes de la Galaxia Vol.2", url: '../lista-marvel/guardianes-de-la-galaxia-vol2' },
+    { resultado: "Guardianes de la Galaxia Vol.3", url: '../lista-marvel/guardianes-de-la-galaxia-vol3' },
     { resultado: 'Iron Man', url: '../lista-marvel/iron-man' },
     { resultado: "Iron Man 2", url: '../lista-marvel/iron-man-2' },
     { resultado: "Iron Man 3", url: '../lista-marvel/iron-man-3' },
