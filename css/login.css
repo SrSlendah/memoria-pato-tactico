@@ -130,7 +130,6 @@ body {
 /* Menu */
 section#menu {
     background: #2E2E2E;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
