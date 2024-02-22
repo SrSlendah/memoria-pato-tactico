@@ -12,6 +12,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Akame ga Kill!', url: '../lista-anime/akame-ga-kill' },
     { resultado: 'Ansatsu Kyoushitsu', url: '../lista-anime/ansatsu-kyoushitsu' },
     { resultado: 'Beastars', url: '../lista-anime/beastars' },
+    { resultado: 'Black Clover', url: '../lista-anime/black-clover' },
     { resultado: 'Blend S', url: '../lista-anime/blend-s' },
     { resultado: 'BNA: Brand New Animal', url: '../lista-anime/bna-brand-new-animal' },
     { resultado: 'Boku no Hero Academia', url: '../lista-anime/boku-no-hero-academia' },
