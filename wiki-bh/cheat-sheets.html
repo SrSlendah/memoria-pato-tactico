@@ -17,7 +17,6 @@
 
     <header>
 
-
         <section id="menu">
             <div class="menu">
 
@@ -66,6 +65,257 @@
         <script src="../js/ir-arriba.js"></script>
         <script src="../js/search-wiki-bh.js"></script>
         <script src="../js/wbh_cheat-sheets.js"></script>
+
+
+
+        
+        <div class="secciones" align="center">
+            <button id="sec1-btn" onclick="scrollToSection('armas')">Combinaciones de Armas</button>
+            <button id="sec2-btn" onclick="scrollToSection('misiones')">Facilitar Misiones</button>
+        </div>
+
+        <div id="nav-menu" class="sec-menu">
+            <h3 style="margin-top: 0;">Secciones</h3>
+            <hr style="border-color: #4b2866; margin: 10px 0;">
+            <!-- Agrega tus elementos de navegación aquí -->
+            <button style="display: block; margin: 10px auto;" onclick="scrollToSection('armas')">Combinaciones de Armas</button>
+            <button style="display: block; margin: 10px auto;" onclick="scrollToSection('misiones')">Facilitar Misiones</button>
+        </div>
+
+        <hr style="width:75%;margin:0 auto;margin-bottom:35px">
+
+        <h2 class="titulo" id="armas" style="margin-bottom: 80px;">Combinaciones de Armas</h2>
+
+        <table class="wiki-bh-armas">
+            <tr>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/espada.png" title="Espada" /></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/bodvar"><img src="../media/wiki/bh/leyendas/logos/bodvar.png" title="Bödvar" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/thatch"><img src="../media/wiki/bh/leyendas/logos/thatch.png" title="Thatch" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/sir-roland"><img src="../media/wiki/bh/leyendas/logos/sir-roland.png" title="Sir Roland" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/hattori"><img src="../media/wiki/bh/leyendas/logos/hattori.png" title="Hattori" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/asuri"><img src="../media/wiki/bh/leyendas/logos/asuri.png" title="Asuri" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/jhala"><img src="../media/wiki/bh/leyendas/logos/jhala.png" title="Jhala" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/koji"><img src="../media/wiki/bh/leyendas/logos/koji.png" title="Koji" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/val"><img src="../media/wiki/bh/leyendas/logos/val.png" title="Val" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/jiro"><img src="../media/wiki/bh/leyendas/logos/jiro.png" title="Jiro" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/sidra"><img src="../media/wiki/bh/leyendas/logos/sidra.png" title="Sidra" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/ezio"><img src="../media/wiki/bh/leyendas/logos/ezio.png" title="Ezio" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/jaeyun"><img src="../media/wiki/bh/leyendas/logos/jaeyun.png" title="Jaeyun" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+            </tr>
+            <tr>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/martillo.png" title="Martillo" /></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/cassidy"><img src="../media/wiki/bh/leyendas/logos/cassidy.png" title="Cassidy" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/scarlet"><img src="../media/wiki/bh/leyendas/logos/scarlet.png" title="Scarlet" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/gnash"><img src="../media/wiki/bh/leyendas/logos/gnash.png" title="Gnash" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/sentinel"><img src="../media/wiki/bh/leyendas/logos/sentinel.png" title="Sentinel" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/teros"><img src="../media/wiki/bh/leyendas/logos/teros.png" title="Teros" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/yumiko"><img src="../media/wiki/bh/leyendas/logos/yumiko.png" title="Yumiko" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/kor"><img src="../media/wiki/bh/leyendas/logos/kor.png" title="Kor" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/thor"><img src="../media/wiki/bh/leyendas/logos/thor.png" title="Thor" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/magyar"><img src="../media/wiki/bh/leyendas/logos/magyar.png" title="Magyar" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+            </tr>
+            <tr>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/pistolas.png" title="Pistolas" /></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/lord-vraxx"><img src="../media/wiki/bh/leyendas/logos/lord-vraxx.png" title="Lord Vraxx" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/ada"><img src="../media/wiki/bh/leyendas/logos/ada.png" title="Ada" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/lucien"><img src="../media/wiki/bh/leyendas/logos/lucien.png" title="Lucien" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/barraza"><img src="../media/wiki/bh/leyendas/logos/barraza.png" title="Barraza" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/diana"><img src="../media/wiki/bh/leyendas/logos/diana.png" title="Diana" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/cross"><img src="../media/wiki/bh/leyendas/logos/cross.png" title="Cross" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/nix"><img src="../media/wiki/bh/leyendas/logos/nix.png" title="Nix" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/isaiah"><img src="../media/wiki/bh/leyendas/logos/isaiah.png" title="Isaiah" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/reno"><img src="../media/wiki/bh/leyendas/logos/reno.png" title="Reno" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"></td>
+            </tr>
+            <tr>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/lanza-cohete.png" title="Lanza Cohete" /></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/orion"><img src="../media/wiki/bh/leyendas/logos/orion.png" title="Orion" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/ulgrim"><img src="../media/wiki/bh/leyendas/logos/ulgrim.png" title="Ulgrim" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/vector"><img src="../media/wiki/bh/leyendas/logos/vector.png" title="Vector" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/artemis"><img src="../media/wiki/bh/leyendas/logos/artemis.png" title="Artemis" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/thea"><img src="../media/wiki/bh/leyendas/logos/thea.png" title="Thea" /></a></td>
+            </tr>
+            <tr>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/lanza.png" title="Lanza" /></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/queen-nai"><img src="../media/wiki/bh/leyendas/logos/queen-nai.png" title="Queen Nai" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/brynn"><img src="../media/wiki/bh/leyendas/logos/brynn.png" title="Brynn" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/kaya"><img src="../media/wiki/bh/leyendas/logos/kaya.png" title="Kaya" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/wu-shang"><img src="../media/wiki/bh/leyendas/logos/wu-shang.png" title="Wu Shang" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/mirage"><img src="../media/wiki/bh/leyendas/logos/mirage.png" title="Mirage" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/seven"><img src="../media/wiki/bh/leyendas/logos/seven.png" title="Seven" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/dusk"><img src="../media/wiki/bh/leyendas/logos/dusk.png" title="Dusk" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/arcadia"><img src="../media/wiki/bh/leyendas/logos/arcadia.png" title="Arcadia" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+            </tr>
+            <tr>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/katars.png" title="Katars" /></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/ragnir"><img src="../media/wiki/bh/leyendas/logos/ragnir.png" title="Ragnir" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/ember"><img src="../media/wiki/bh/leyendas/logos/ember.png" title="Ember" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/caspian"><img src="../media/wiki/bh/leyendas/logos/caspian.png" title="Caspian" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/loki"><img src="../media/wiki/bh/leyendas/logos/loki.png" title="Loki" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/lin-fei"><img src="../media/wiki/bh/leyendas/logos/lin-fei.png" title="Lin Fei" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/mako"><img src="../media/wiki/bh/leyendas/logos/mako.png" title="Mako" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+            </tr>
+            <tr>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/hacha.png" title="Hacha" /></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/azoth"><img src="../media/wiki/bh/leyendas/logos/azoth.png" title="Azoth" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/rayman"><img src="../media/wiki/bh/leyendas/logos/rayman.png" title="Rayman" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/volkov"><img src="../media/wiki/bh/leyendas/logos/volkov.png" title="Volkov" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/xull"><img src="../media/wiki/bh/leyendas/logos/xull.png" title="Xull" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"></td>
+            </tr>
+            <tr>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/arco.png" title="Arco" /></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/zariel"><img src="../media/wiki/bh/leyendas/logos/zariel.png" title="Zariel" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/munin"><img src="../media/wiki/bh/leyendas/logos/munin.png" title="Munin" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"></td>
+            </tr>
+            <tr>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/guanteletes.png" title="Guanteletes" /></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/mordex"><img src="../media/wiki/bh/leyendas/logos/mordex.png" title="Mordex" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/onyx"><img src="../media/wiki/bh/leyendas/logos/onyx.png" title="Onyx" /></a></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/petra"><img src="../media/wiki/bh/leyendas/logos/petra.png" title="Petra" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/tezca"><img src="../media/wiki/bh/leyendas/logos/tezca.png" title="Tezca" /></a></td>
+            </tr>
+            <tr>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/guadaña.png" title="Guadaña" /></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/fait"><img src="../media/wiki/bh/leyendas/logos/fait.png" title="Fait" /></a></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"></td>
+            </tr>
+            <tr>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/cañon.png" title="Cañón" /></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"></td>
+            </tr>
+            <tr>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/orbe.png" title="Orbe" /></td>
+                <td class="wiki-bh-armas_td"></td>
+                <td class="wiki-bh-armas_td"><a href="../wiki-bh/red-raptor"><img src="../media/wiki/bh/leyendas/logos/red-raptor.png" title="Red Raptor" /></a></td>
+            </tr>
+            <tr>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/greatsword.png" title="Greatsword" /></td>
+                <td class="wiki-bh-armas_td"></td>
+            </tr>
+            <tr>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td" style="border:none"> </td>
+                <td class="wiki-bh-armas_td"><img src="../media/wiki/bh/armas/botas-batalla.png" title="Botas de Batalla" /></td>
+            </tr>
+        </table>
+
+        <hr style="width:75%;margin:0 auto;margin-top:35px;margin-bottom:35px">
+
+        <h2 class="titulo" style="margin-top: 50px" id="misiones">Facilitar Misiones</h2>
 
     <div class="sheets-container">
         <form class="sheets-selector">
