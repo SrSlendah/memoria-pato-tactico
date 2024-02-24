@@ -786,6 +786,7 @@ footer {
 }
 
 .sec-menu {
+    display: none;
     position: fixed;
     top: 50%;
     left: 0;
