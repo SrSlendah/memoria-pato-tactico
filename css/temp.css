@@ -1,0 +1,124 @@
+/* Reset de estilos y fuentes */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilos generales */
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilos del encabezado */
+
+header {
+    background-color: #2E2E2E; /* Gris oscuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 140px; /* Ajusta el tamaño según tu logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.textos-header h1 {
+    font-size: 2.5em;
+}
+
+/* Estilos del menú de navegación */
+
+.menu {
+    background-color: #2E2E2E; /* Gris oscuro */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #6A0DAD; /* Morado */
+}
+
+/* Estilos del pie de página */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2E2E2E; /* Gris oscuro */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+.contenedor-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-foo {
+    margin: 0 20px;
+}
+
+.content-foo h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.content-foo p {
+    margin: 0;
+}
+
+.titulo-final {
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+/* Otros estilos según sea necesario */
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
