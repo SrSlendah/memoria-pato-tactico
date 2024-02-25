@@ -85,6 +85,10 @@ function show(sectionNumber) {
     show(2);
   }
   
+  function show3() {
+    show(3);
+  }
+  
 
 function showSection(sectionNumber) {
   const totalSections = 12; // Actualiza esto con el número total de secciones

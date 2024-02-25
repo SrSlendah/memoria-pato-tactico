@@ -154,6 +154,8 @@ details {
     }
 
     
+
+    
 .overlay {
     position: fixed;
     top: 0;
@@ -856,4 +858,28 @@ th {
 
 .imagen-port:hover .hover-galeria {
     transform: scale(1);
+}
+
+.calc-reset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calc-reset input[type="number"] {
+    margin-bottom: 10px; /* Espacio entre el input y el botón */
+}
+
+.calc-reset button {
+    background-color: rgb(111, 60, 150); /* Color de fondo personalizado */
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid rgb(75, 40, 102); /* Borde personalizado */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calc-reset button:hover {
+    background-color: #8a4fb5; /* Cambio de color de fondo al pasar el cursor */
 }
