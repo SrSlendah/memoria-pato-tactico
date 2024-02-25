@@ -860,17 +860,35 @@ th {
     transform: scale(1);
 }
 
-.calc-reset {
+.calc-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+    gap: 20px; /* Espacio entre las columnas */
+    margin-left: 500px; /* Margen izquierdo */
+    margin-right: 500px; /* Margen derecho */
+}
+
+.calc-reset, .calc-glory {
+    padding: 20px; /* Añade un poco de espacio entre el contenido y el borde */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+.calc-column {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px; /* Espacio entre los elementos en la columna */
 }
 
-.calc-reset input[type="number"] {
+.calc-reset {
+    margin-right: 10px;
+}
+
+.calc-reset, .calc-glory input[type="number"] {
     margin-bottom: 10px; /* Espacio entre el input y el botón */
 }
 
-.calc-reset button {
+.calc-reset button, .calc-glory button {
     background-color: rgb(111, 60, 150); /* Color de fondo personalizado */
     color: white;
     padding: 10px 20px;
@@ -880,6 +898,31 @@ th {
     transition: background-color 0.3s ease;
 }
 
-.calc-reset button:hover {
+.calc-reset button:hover, .calc-glory button:hover {
     background-color: #8a4fb5; /* Cambio de color de fondo al pasar el cursor */
+}
+
+.calc-reset input[type="number"], .calc-glory input[type="number"] {
+    margin-bottom: 10px; /* Espacio entre el input y el botón */
+    padding: 8px 12px; /* Padding interior para espacio dentro del input */
+    border: 2px solid rgb(75, 40, 102); /* Borde personalizado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: border-color 0.3s ease; /* Transición suave para el cambio de color del borde */
+}
+
+.calc-reset input[type="number"]:focus, .calc-glory input[type="number"] {
+    outline: none; /* Quita el contorno predeterminado al enfocar */
+    border-color: #8a4fb5; /* Cambia el color del borde al enfocar */
+}
+
+#resultado-reset {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff
+}
+
+#resultado-glory {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff
 }
