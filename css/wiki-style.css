@@ -653,9 +653,6 @@ th {
     width: 20%;
 }
 
-.gamepass {
-}
-
 .gamepass td, th {
         border: 3px solid #4b2866;
 }
@@ -668,9 +665,6 @@ th {
         width: 250px;
         height: 250px
     }
-
-.equipo {
-}
 
 .equipo-img {
     width: 300px
