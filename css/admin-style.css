@@ -16,6 +16,17 @@ h2 {
     margin-bottom: 35px;
 }
 
+.link {
+    color: #a964de;
+    text-decoration: none;
+}
+
+    .link:hover {
+        cursor: pointer;
+        color: #A55CDE;
+        text-decoration: underline;
+    }
+
 a {
     text-decoration: none;
     color: #fff;
