@@ -62,9 +62,92 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
+// Calculadora Elo BH
+
+function calcularElo() {
+  var x = parseInt(document.getElementById("eloInput-reset").value);
+
+  if (!isNaN(x)) {
+      if (x < 1400) {
+          var resultado = x;
+      } else {
+          var resultado = Math.trunc(1400 + (x - 1400) / (3 - (3000 - x) / 800));
+      }
+  } else {
+      document.getElementById("resultado-reset").textContent = "No se ha introducido el mejor Elo";
+      return;
+  }
+
+  document.getElementById("resultado-reset").textContent = "Elo reiniciado: " + resultado;
+}
+
+// Calculadora Glory BH
+function calcularGlory() {
+  // Obtener el valor de x desde el input y convertirlo en un número entero
+  var x = parseInt(document.getElementById("eloInput-glory").value);
+
+  // Obtener el valor de y desde el input y convertirlo en un número entero
+  var y = parseInt(document.getElementById("winsInput-glory").value);
+
+  // Verificar si se han introducido ambos valores
+  if (isNaN(x) && isNaN(y)) {
+      document.getElementById("resultado-glory").innerHTML = "Introduce todos los datos";
+      return;
+  }
+
+  // Verificar si se ha introducido el valor de elo
+  if (isNaN(x)) {
+      document.getElementById("resultado-glory").innerHTML = "No se ha introducido el mejor Elo";
+      return;
+  }
+
+  // Verificar si se ha introducido el valor de victorias
+  if (isNaN(y)) {
+      document.getElementById("resultado-glory").innerHTML = "No se ha introducido la cantidad de victorias";
+      return;
+  }
+
+  // Verificar si las victorias son menores a 10
+  if (y < 10) {
+      document.getElementById("resultado-glory").innerHTML = "No se cumple el mínimo de victorias";
+      return;
+  }
+
+  // Calcular el Glory ganado del Elo
+  var gloryElo;
+  if (x < 1200) {
+      gloryElo = 250;
+  } else if (x >= 1200 && x <= 1285) {
+      gloryElo = 10 * Math.trunc(25 + (75 * (x - 1200) / 86));
+  } else if (x >= 1286 && x <= 1389) {
+      gloryElo = 10 * Math.trunc(100 + (75 * (x - 1286) / 104));
+  } else if (x >= 1390 && x <= 1679) {
+      gloryElo = 10 * Math.trunc(187 + (113 * (x - 1390) / 290));
+  } else if (x >= 1680 && x <= 1999) {
+      gloryElo = 10 * Math.trunc(300 + (137 * (x - 1680) / 320));
+  } else if (x >= 2000 && x <= 2299) {
+      gloryElo = 10 * Math.trunc(437 + (43 * (x - 2000) / 300));
+  } else if (x > 2300) {
+      gloryElo = 10 * Math.trunc(480 + (x - 2300) / 20);
+  }
+
+  // Calcular el Glory ganado por Victorias
+  var gloryWins;
+  if (y < 150) {
+      gloryWins = 20 * y;
+  } else {
+      gloryWins = 245 + Math.trunc(450 * Math.pow(Math.log10(2 * y), 2));
+  }
+
+  // Mostrar los resultados en el div con id "resultado-glory"
+  document.getElementById("resultado-glory").innerHTML = "Glory ganado del Elo: " + gloryElo + "<br>" +
+      "Glory ganado por Victorias: " + gloryWins + "<br>" +
+      "Glory total: " + (gloryElo + gloryWins);
+}
+
 // Secciones
 function show(sectionNumber) {
-  const totalSections = 4; // Actualiza esto con el número total de secciones
+  const totalSections = 4; // Actualizar esto con el número total de secciones
   
   for (let i = 1; i <= totalSections; i++) {
     const section = document.getElementById(i);
@@ -85,9 +168,13 @@ function show(sectionNumber) {
     show(2);
   }
   
+  function show3() {
+    show(3);
+  }
+  
 
 function showSection(sectionNumber) {
-  const totalSections = 12; // Actualiza esto con el número total de secciones
+  const totalSections = 12; // Actualizar esto con el número total de secciones
   
   for (let i = 1; i <= totalSections; i++) {
     const section = document.getElementById('sec' + i);
