@@ -178,6 +178,140 @@ nav {
             width: 100%;
         }
 
+        .menu-toggle {
+            display: none;
+            position: fixed;
+            top: 18px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #6f3c96;
+            border: 2px solid #4b2866;
+            padding: 0;
+            cursor: pointer;
+        }
+
+.menu-toggle img {
+    width: 30px;
+    height: auto;
+}
+
+.menu-ov-nav {
+    float: none;
+}
+
+.menu-ov-nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu-ov-nav li {
+        display: block;
+        margin-top: 15px;
+        position: relative;
+        text-align: center;
+    }
+
+    .menu-ov-nav a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .menu-ov-nav a:hover {
+            color: #a5a5a5;
+        }
+
+        .menu-ov-nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: #b3b3b3;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 150ms;
+        }
+
+        .menu-ov-nav a:hover::before {
+            width: 100%;
+        }
+
+    @media screen and (max-width: 950px) {
+        .menu-toggle {
+            display: block;
+        }
+        
+        .menu > nav {
+            display: none;
+        }
+    }
+
+
+/* Overlay */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .contenido-overlay {
+    background-color: #6f3c96;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    color:#e0e0e0;
+    border: 3px solid #4b2866;
+    text-shadow: 1px 1px 0 #4b2866, -1px -1px 0 #4b2866, 1px -1px 0 #4b2866, -1px 1px 0 #4b2866;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .menu-overlay > .contenido-overlay {
+    background-color: #6f3c96;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    color:#e0e0e0;
+    border: 3px solid #4b2866;
+    text-shadow: 1px 1px 0 #4b2866, -1px -1px 0 #4b2866, 1px -1px 0 #4b2866, -1px 1px 0 #4b2866;
+  }
+
+  .menu-ov-logo {
+    width: 190px;
+    height: 85px;
+    padding: 10px 0;
+}
+
+.cerrar-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
 /* Ir arriba */
 
