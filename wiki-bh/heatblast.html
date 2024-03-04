@@ -18,17 +18,16 @@
     <script src="../js/ir-arriba.js"></script>
 
     <header>
-
-
-        <section 
+        <script src="../js/menu.js"></script>
+        
         <section id="menu">
             <div class="menu">
 
-                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo" style="width:260px;height: 85px;"></a>
+                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
 
                 <nav>
                     <ul>
-                        <li><a href="../wikis">Otras Wikis</a></li>
+                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
@@ -39,6 +38,30 @@
                         <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
                     </ul>
                 </nav>
+            </div>
+            <button class="menu-toggle" onclick="abrir_menu()"><img src="../media/menu.png" alt=""></button>
+        </section>
+
+        <section id="menu-overlay" class="menu-overlay" style="display: none;">
+            <div id="menu-overlay">
+                <div class="contenido-overlay">
+                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                  <hr style="margin-top:15px;margin-bottom:-15px;">
+                  <nav class="menu-ov-nav">
+                      <ul>
+                        <li><a href="../index">Inicio</a></li>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                      </ul>
+                  </nav>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 8px; right: 8px;" onclick="cerrar_menu()" title="Cerrar" class="cerrar-overlay">
+                </div>
             </div>
         </section>
 

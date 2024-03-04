@@ -487,6 +487,13 @@ section#menu {
     padding: 10px 0;
 }
 
+.wiki-logo {
+    float: left;
+    width: 260px;
+    height: 85px;
+    padding: 10px 0;
+}
+
 .menu {
     width: 80%;
     margin: 0 auto;
@@ -538,6 +545,7 @@ nav {
         .menu-toggle {
             display: none;
             position: fixed;
+            top: 18px;
             right: 10px;
             width: 50px;
             height: 50px;
@@ -596,7 +604,7 @@ nav {
             width: 100%;
         }
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1750px) {
         .menu-toggle {
             display: block;
         }
