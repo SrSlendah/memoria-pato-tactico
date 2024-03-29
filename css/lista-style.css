@@ -487,6 +487,13 @@ section#menu {
     padding: 10px 0;
 }
 
+.logo-listas {
+    float: left;
+    width: 190px;
+    height: 85px;
+    padding: 10px 0;
+}
+
 .wiki-logo {
     float: left;
     width: 260px;
@@ -878,7 +885,7 @@ footer {
   }
 
   .menu-ov-logo {
-    width: 230px;
+    width: 190px;
     height: 85px;
     padding: 10px 0;
 }
