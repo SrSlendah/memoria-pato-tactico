@@ -34,10 +34,11 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Isekai Nonbiri Nouka', url: '../lista-anime/isekai-nonbiri-nouka' },
     { resultado: "Jojo's Bizarre Adventure", url: '../lista-anime/jojos-bizarre-adventure' },
     { resultado: 'Jujutsu Kaisen', url: '../lista-anime/jujutsu-kaisen' },
+    { resultado: 'Kaiju No. 8', url: '../lista-anime/kaiju-no-8' },
     { resultado: 'Kaiko sareta Ankoku Heishi (30-dai) no Slow na Second Life', url: '../lista-anime/kaiko-sareta-antoky-heisi-30-dai-no-slow-na-second-life' },
     { resultado: 'Kakegurui', url: '../lista-anime/kakegurui' },
     { resultado: 'Kami-tachi ni Hirowareta Otoko', url: '../lista-anime/kami-tachi-ni-hirowareta-otoko' },
-    { resultado: 'Karakai-jouzu-no-takagi-san', url: '../lista-anime/karakai-jouzu-no-takagi-san' },
+    { resultado: 'Karakai Jouzu no Takagi-San', url: '../lista-anime/karakai-jouzu-no-takagi-san' },
     { resultado: 'Kimetsu no Yaiba', url: '../lista-anime/kimetsu-no-yaiba' },
     { resultado: 'Kobayashi-san Chi no Maid Dragon', url: '../lista-anime/kobayashi-san-chi-no-maid-dragon' },
     { resultado: 'Komi-san wa, Comyushou desu', url: '../lista-anime/komi-san-wa-comyushou-desu' },
@@ -76,8 +77,8 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Tokyo Ghoul', url: '../lista-anime/tokyo-ghoul' },
     { resultado: 'Tokyo Revengers', url: '../lista-anime/tokyo-revengers' },
     { resultado: 'Tonikaku Kawaii', url: '../lista-anime/tonikaku-kawaii' },
-    { resultado: 'Undead Unluck', url: '../lista-anime/undead-unluck' },
     { resultado: 'Uzaki-chan wa Asobitai!', url: '../lista-anime/uzaki-chan-wa-asobitai' },
+    { resultado: 'Zoom 100: Bucket List of the Dead', url: '../lista-anime/zoom-100-bucket-list-of-the-dead' },
   ];
 
   query = removeAccents(query.toLowerCase());
