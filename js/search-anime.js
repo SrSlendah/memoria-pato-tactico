@@ -78,7 +78,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Tokyo Revengers', url: '../lista-anime/tokyo-revengers' },
     { resultado: 'Tonikaku Kawaii', url: '../lista-anime/tonikaku-kawaii' },
     { resultado: 'Uzaki-chan wa Asobitai!', url: '../lista-anime/uzaki-chan-wa-asobitai' },
-    { resultado: 'Zoom 100: Bucket List of the Dead', url: '../lista-anime/zoom-100-bucket-list-of-the-dead' },
+    { resultado: 'Zom 100: Bucket List of the Dead', url: '../lista-anime/zom-100-bucket-list-of-the-dead' },
   ];
 
   query = removeAccents(query.toLowerCase());
