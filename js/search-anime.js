@@ -58,6 +58,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'One Punch Man', url: '../lista-anime/one-punch-man' },
     { resultado: 'Oshi no Ko', url: '../lista-anime/oshi-no-ko' },
     { resultado: 'Overlord', url: '../lista-anime/overlord' },
+    { resultado: 'Persona The Animation', url: '../lista-anime/persona-the-animation' },
     { resultado: 'Princess Connect! Re:Dive', url: '../lista-anime/princess-connect-re-dive' },
     { resultado: 'Reborn as a Vending Machine, I Now Wander the Dungeon', url: '../lista-anime/reborn-as-a-vending-machine-i-now-wander-the-dungeon' },
     { resultado: 'Record of Ragnarok', url: '../lista-anime/record-of-ragnarok' },
