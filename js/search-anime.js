@@ -15,6 +15,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Black Clover', url: '../lista-anime/black-clover' },
     { resultado: 'Blend S', url: '../lista-anime/blend-s' },
     { resultado: 'BNA: Brand New Animal', url: '../lista-anime/bna-brand-new-animal' },
+    { resultado: 'Bocchi the Rock!', url: '../lista-anime/bocchi-the-rock' },
     { resultado: 'Boku no Hero Academia', url: '../lista-anime/boku-no-hero-academia' },
     { resultado: 'Bokutachi wa Benkyou ga Dekinai', url: '../lista-anime/bokutachi-wa-benkyou-ga-dekinai' },
     { resultado: 'Chainsaw Man', url: '../lista-anime/chainsaw-man' },
