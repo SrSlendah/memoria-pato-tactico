@@ -73,6 +73,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Spy x Family', url: '../lista-anime/spy-x-family' },
     { resultado: 'Steins;Gate', url: '../lista-anime/steins-gate' },
     { resultado: 'Sunohara-sou no Kanrinrin-san', url: '../lista-anime/sunohara-sou-no-kanrinrin-san' },
+    { resultado: 'Suzume', url: '../lista-anime/suzume' },
     { resultado: 'Sword Art Online', url: '../lista-anime/sword-art-online' },
     { resultado: 'Tate no Yuusha no Nariagari', url: '../lista-anime/tate-no-yuusha-no-nariagari' },
     { resultado: 'That Time I Got Reincarnated as a Slime', url: '../lista-anime/that-time-i-got-reincarnated-as-a-slime' },
