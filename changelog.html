@@ -38,6 +38,7 @@
                         <li><a href="./cine">Cine</a></li>
                         <li><a href="./wikis">Wiki</a></li>
                         <li><a href="./login">Admin</a></li>
+                        <li><a onclick="logout()" style="cursor:pointer">Log Out</a></li>
                     </ul>
                 </nav>
             </div>
@@ -56,6 +57,7 @@
                           <li><a href="./cine">Cine</a></li>
                           <li><a href="./wikis">Wiki</a></li>
                           <li><a href="./login">Admin</a></li>
+                          <li><a onclick="logout()" style="cursor:pointer">Log Out</a></li>
                       </ul>
                   </nav>
                   <img src="./media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 8px; right: 8px;" onclick="cerrar_menu()" title="Cerrar" class="cerrar-overlay">
@@ -85,6 +87,7 @@
     <form class="version-selector">
         <label>Versión:</label>
         <select name="" id="versiones" onchange="GetVersion()">
+            <option value="100">v4.3.5</option>
             <option value="99">v4.3.4</option>
             <option value="98">v4.3.3</option>
             <option value="97">v4.3.2</option>
@@ -187,7 +190,62 @@
         </select>
     </form>
     
-    <section id="v99">
+    <section id="v100">
+        <table style="width: 25%; margin-bottom:25px">
+            <tr>
+                <th class="changelog-th">Fecha de publicación</th>
+                <td></td>
+                <td></td>
+                <th class="changelog-th">Peso de la Página</th>
+            </tr>
+            <tr>
+                <td class="changelog-td_framed">03/05/2024</td>
+                <td></td>
+                <td></td>
+                <td class="changelog-td_framed">1,48GB</td>
+            </tr>
+        </table>
+
+        <hr style="width:50%;margin:0 auto;margin-top:35px;margin-bottom:35px">
+
+        <table style="width: 70%; ">
+            <tr>
+                <th class="changelog-th" colspan="2">Lista de Manga</th>
+                <td></td>
+                <td></td>
+                <th class="changelog-th" colspan="2">Lista de Anime</th>
+                <td></td>
+                <td></td>
+                <th class="changelog-th" colspan="2">Wiki de Jailbreak</th>
+            </tr>
+            <tr>
+                <tr>
+                    <td colspan="2" class="changelog-td_framed">
+                        Se ha actualizado la cantidad de capítulos<br> leidos de <a href="./lista-manga/one-piece" class="link">One Piece</a> y<br> <a href="./lista-manga/jojos-bizarre-adventure" class="link">Jojo's Bizarre Adventure: The JoJoLands</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2" class="changelog-td_framed">
+                        Se ha actualizado la cantidad de episodios vistos de <a href="./lista-anime/one-piece" class="link">One Piece</a>,<br> <a href="./lista-anime/mashle" class="link">Mashle</a> (2ª Temporada), <a href="./lista-anime/nanatsu-no-taizai" class="link">Nanatsu no Taizai:<br> Mokushiroku no Yonkishi</a>, <a href="./lista-anime/solo-leveling" class="link">Solo Leveling</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2" class="changelog-td_framed">
+                    Se ha eliminado la Wiki de Jailbreak de la página
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2" class="changelog-td_framed" style="border-top: 6px double #4b2866;">
+                        Se ha agregado el anime <a href="./lista-anime/reborn-as-a-vending-machine-i-now-wander-the-dungeon" class="link">Reborn as a Vending Machine,<br> I Now Wander the Dungeon</a>, <a href="./lista-anime/shangri-la-frontier" class="link">Shangri-La Frontier</a>,<br> <a href="./lista-anime/zom-100-bucket-list-of-the-dead" class="link">Zom 100: Bucket List of the Dead</a>, <a href="./lista-anime/kaiju-no-8" class="link">Kaiju No. 8</a>,<br> <a href="./lista-anime/one-piece" class="link">That Time I Got Reincarnated as a Slime</a><br> (Temporadas 1 y 2, ovas),<br> <a href="./lista-anime/i-was-reincarnated-as-the-7th-prince-so-i-can-take-my-time-perfecting-my-magical-ability" class="link">I Was Reincarnated as the 7th Prince so I Can Take<br> My Time Perfecting My Magical Ability, <a href="./lista-anime/kono-subarashii-sekai-ni-shukufuku-wo" class="link">Kono Subarashii Sekai<br> ni Shukufuku wo!</a> (Temporada 3), <a href="./lista-anime/kono-subarashii-sekai-ni-shukufuku-wo" class="link">Made in Abyss</a> (Temporada 2),<br><a href="./lista-anime/persona-the-animation" class="link">Persona 4 The Golden Animation</a>,<a href="./lista-anime/bocchi-the-rock" class="link">Bocchi the Rock!</a>, <a href="./lista-anime/suzume" class="link">Suzume</a>,
+                    </td>
+                </tr>
+        </table>
+    </section>
+    
+    <section id="v99" style="display: none;">
         <table style="width: 25%; margin-bottom:25px">
             <tr>
                 <th class="changelog-th">Fecha de publicación</th>
@@ -228,7 +286,7 @@
                     <td></td>
                     <td></td>
                     <td colspan="2" class="changelog-td_framed">
-                        Se ha actualizado la cantidad de capítulos<br> leidos de <a href="./lista-manga/one-piece" class="link">One Piece</a>,<br> <a href="./lista-manga/jojos-bizarre-adventure" class="link">Jojo's Bizarre Adventure: The JoJoLands</a>
+                        Se ha actualizado la cantidad de capítulos<br> leidos de <a href="./lista-manga/one-piece" class="link">One Piece</a> y<br> <a href="./lista-manga/jojos-bizarre-adventure" class="link">Jojo's Bizarre Adventure: The JoJoLands</a>
                     </td>
                 </tr>
                 <tr>

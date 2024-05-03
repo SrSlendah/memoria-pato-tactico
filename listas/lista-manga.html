@@ -17,11 +17,12 @@
 
     <header>
 
+        <script src="../js/menu.js"></script>
 
         <section id="menu">
-            <div class="menu">
+            <div class="menu-lista">
 
-                <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+                <a href="../index"><img src="../media/logo.png" alt="logo" class="logo-listas"></a>
 
                 <nav>
                     <ul>
@@ -32,6 +33,26 @@
                         <li><a href="../login">Admin</a></li>
                     </ul>
                 </nav>
+            </div>
+            <button class="menu-lista-toggle" onclick="abrir_menu()"><img src="../media/menu.png" alt=""></button>
+        </section>
+
+        <section id="menu-overlay" class="menu-overlay" style="display: none;">
+            <div id="menu-overlay">
+                <div class="contenido-overlay">
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                  <hr style="margin-top:15px;margin-bottom:-15px;">
+                  <nav class="menu-ov-nav">
+                      <ul>
+                          <li><a href="../index">inicio</a></li>
+                          <li><a href="../anime">Anime</a></li>
+                          <li><a href="../cine">Cine</a></li>
+                          <li><a href="../wikis">Wiki</a></li>
+                          <li><a href="../login">Admin</a></li>
+                      </ul>
+                  </nav>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 8px; right: 8px;" onclick="cerrar_menu()" title="Cerrar" class="cerrar-overlay">
+                </div>
             </div>
         </section>
 

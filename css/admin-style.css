@@ -240,7 +240,7 @@ nav {
             width: 100%;
         }
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1050px) {
         .menu-toggle {
             display: block;
         }
