@@ -41,6 +41,28 @@ body.scroll-blocked {
     color: #fff;
 }
 
+.announce_red_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+/* Estilos para el div con fondo morado y borde oscuro */
+.announce_red {
+    background-color: rgb(100, 0, 17);
+    border: 2px solid rgb(53, 0, 9); /* Morado oscuro */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para el texto dentro del div */
+.announce_red h2 {
+    color: white;
+    text-align: center;
+}
+
 button {
     background-color: #6f3c96;
     border-color: #4b2866;

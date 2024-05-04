@@ -26,6 +26,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Fairy Tail', url: '../lista-anime/fairy-tail' },
     { resultado: 'Fire Force', url: '../lista-anime/fire-force' },
     { resultado: 'Fuufu Ijou, Koibito Miman', url: '../lista-anime/fuufu-ijou-koibito-miman' },
+    { resultado: 'Gamers!', url: '../lista-anime/gamers' },
     { resultado: 'Go-Tōbun no Hanayome', url: '../lista-anime/go-tobun-no-hanayome' },
     { resultado: 'Goblin Slayer', url: '../lista-anime/goblin-slayer' },
     { resultado: 'Gokushufudou', url: '../lista-anime/gokushufudou' },
