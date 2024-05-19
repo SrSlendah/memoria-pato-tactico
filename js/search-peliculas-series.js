@@ -22,6 +22,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Slenderman', url: '../lista-peliculas-series/slenderman' },
     { resultado: 'Squid Game', url: '../lista-peliculas-series/squid-game' },
     { resultado: 'Stranger Things', url: '../lista-peliculas-series/stranger-things' },
+    { resultado: 'The 8 Show', url: '../lista-peliculas-series/the-8-show' },
     { resultado: 'Viernes 13', url: '../lista-peliculas-series/viernes13' },
   ];
 
