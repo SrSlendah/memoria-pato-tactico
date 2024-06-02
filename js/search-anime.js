@@ -53,6 +53,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Nanatsu no Taizai', url: '../lista-anime/nanatsu-no-taizai' },
     { resultado: 'Nande Koko ni Sensei ga!?', url: '../lista-anime/nande-koko-ni-sensei-ga' },
     { resultado: 'Naruto', url: '../lista-anime/naruto' },
+    { resultado: 'New Game!', url: '../lista-anime/new-game' },
     { resultado: 'Ningen Fushin no Boukensha-tachi ga Sekai wo Sukuu you desu', url: '../lista-anime/ningen-fushin-no-boukensha-tachi-ga-sekai-wo-sukuu-you-desu' },
     { resultado: 'No Game No Life', url: '../lista-anime/no-game-no-life' },
     { resultado: 'Noragami', url: '../lista-anime/noragami' },
