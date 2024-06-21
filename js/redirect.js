@@ -2,10 +2,6 @@ function goTo(string) {
 
 //wiki-link
 
-    if (string == 'wjb') {
-        window.location.href = "wiki/wiki-jb"
-    }
-
     if (string == 'wbh') {
         window.location.href = "wiki/wiki-bh"
     }
@@ -20,6 +16,9 @@ function goTo(string) {
 
     if (string == 'manga_jojo') {
         window.location.href = "../lista-manga/jojos-bizarre-adventure"
+    };
+    if (string == 'manga_jujutsu') {
+        window.location.href = "../lista-manga/jujutsu-kaisen"
     };
 
     if (string == 'manga_nanatsu') {
@@ -36,8 +35,16 @@ function goTo(string) {
 
 //Anime
 
+    if (string == 'anime_deathnote') {
+        window.location.href = "../lista-anime/death-note"
+    };
+
     if (string == 'anime_jojo') {
         window.location.href = "../lista-anime/jojos-bizarre-adventure"
+    };
+
+    if (string == 'anime_jujutsu') {
+        window.location.href = "../lista-anime/jujutsu-kaisen"
     };
 
     if (string == 'anime_nanatsu') {
@@ -50,10 +57,6 @@ function goTo(string) {
 
     if (string == 'anime_sololvl') {
         window.location.href = "../lista-anime/solo-leveling"
-    };
-
-    if (string == 'anime_deathnote') {
-        window.location.href = "../lista-anime/death-note"
     };
 
 //Lista Peliculas y series
