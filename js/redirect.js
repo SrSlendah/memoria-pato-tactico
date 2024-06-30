@@ -21,6 +21,10 @@ function goTo(string) {
         window.location.href = "../lista-manga/jujutsu-kaisen"
     };
 
+    if (string == 'manga_madeinabyss') {
+        window.location.href = "../lista-manga/made-in-abyss"
+    };
+
     if (string == 'manga_nanatsu') {
         window.location.href = "../lista-manga/nanatsu-no-taizai"
     };
@@ -45,6 +49,10 @@ function goTo(string) {
 
     if (string == 'anime_jujutsu') {
         window.location.href = "../lista-anime/jujutsu-kaisen"
+    };
+
+    if (string == 'anime_madeinabyss') {
+        window.location.href = "../lista-anime/made-in-abyss"
     };
 
     if (string == 'anime_nanatsu') {

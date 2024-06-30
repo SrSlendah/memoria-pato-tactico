@@ -12,6 +12,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Genshin Impact', url: '../lista-manga/genshin-impact' },
     { resultado: "Jojo's Bizarre Adventure", url: '../lista-manga/jojos-bizarre-adventure' },
     { resultado: "Jujutsu Kaisen", url: '../lista-manga/jujutsu-kaisen' },
+    { resultado: 'Made in Abyss', url: '../lista-manga/made-in-abyss' },
     { resultado: 'Nanatsu no Taizai', url: '../lista-manga/nanatsu-no-taizai' },
     { resultado: 'One Piece', url: '../lista-manga/one-piece' },
     { resultado: 'Solo Leveling', url: '../lista-manga/solo-leveling' },
