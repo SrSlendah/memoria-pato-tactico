@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lost Labyrinth - Brawlhalla Wiki</title>
+    <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/wiki-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/ir-arriba.js"></script>
+
+    <header>
+        <script src="../js/menu.js"></script>
+        
+        <section id="menu">
+            <div class="menu">
+
+                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="../index">Inicio</a></li>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="menu-toggle" onclick="abrir_menu()"><img src="../media/menu.png" alt=""></button>
+        </section>
+
+        <section id="menu-overlay" class="menu-overlay" style="display: none;">
+            <div id="menu-overlay">
+                <div class="contenido-overlay">
+                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                  <hr style="margin-top:15px;margin-bottom:-15px;">
+                  <nav class="menu-ov-nav">
+                      <ul>
+                        <li><a href="../index">Inicio</a></li>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                      </ul>
+                  </nav>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 8px; right: 8px;" onclick="cerrar_menu()" title="Cerrar" class="cerrar-overlay">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="textos-header">
+            <h1>Brawlhalla Wiki</h1>
+            <h3>Lost Labyrinth</h3>
+        </section>
+
+
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                 style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                      style="stroke: none; fill: #2E2E2E; "></path>
+            </svg>
+        </div>
+
+
+    </header>
+
+
+    <main>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Buscar en la wiki de Brawlhalla...">
+          <ul id="autocomplete-list" style="display: none;"></ul>
+        </div>
+      
+        <script src="../js/search-wiki-bh.js"></script>
+
+        <table style="margin-top:20px;width:30%">
+            <tr>
+                <th colspan="4">Lost Labyrinth</th>
+            </tr>
+            <tr>
+                <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/mapas/lost-labyrinth.png" style="width:400px"></td>
+                <th style="height:30px;width:175px">Leyendas Locales</th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="../wiki-bh/teros">
+                        <img src="../media/wiki/bh/leyendas/logos/teros.png" title="Teros" style="width:70px">
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <h2 align="center" style="margin-top:20px">Variantes</h2>
+
+        <table style="margin-top:40px;width:30%">
+            <tr>
+                <th>Estandar</th>
+                <th>Grande</th>
+            </tr>
+            <tr>
+                <td style="width:300px"><img src="../media/wiki/bh/mapas/lost-labyrinth.png" style="width:400px"></td>
+                <td style="width:300px"><img src="../media/wiki/bh/mapas/lost-labyrinth_large.png" style="width:400px"></td>
+            </tr>
+            <tr>
+                <td><i>Destinado a partidas Todos contra Todos</i></td>
+                <td><i>Destinado a partidas Todos contra Todos<br> con mas de 5 jugadores</i></td>
+            </tr>
+        </table>
+
+    </main>
+
+
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Twitter</h4>
+                <p>@SLENDERS1T0</p>
+            </div>
+            <div class="content-foo">
+                <h4>Discord</h4>
+                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none" ; target=" _blank">Click</a></p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>
+    </footer>
+</body>
+
+</html>

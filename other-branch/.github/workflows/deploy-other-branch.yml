@@ -1,0 +1,38 @@
+name: Deploy other branch
+
+on:
+  push:
+    branches:
+      - dev_build  # Cambia 'develop' por el nombre de la rama que quieras desplegar
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: Checkout other branch
+        uses: actions/checkout@v2
+        with:
+          ref: dev_build  # Cambia 'develop' por el nombre de la rama que quieras desplegar
+          path: other-branch
+
+      - name: Copy other branch to main
+        run: |
+          rm -rf ./other-branch/.git
+          mkdir -p ./deployed-content
+          cp -r ./other-branch/* ./deployed-content/
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m 'Deploy content from develop branch'
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

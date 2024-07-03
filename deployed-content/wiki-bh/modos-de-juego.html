@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modos de Juego - Brawlhalla Wiki</title>
+    <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/lista-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+    <header>
+        <script src="../js/menu.js"></script>
+        
+        <section id="menu">
+            <div class="menu">
+
+                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="../index">Inicio</a></li>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="menu-toggle" onclick="abrir_menu()"><img src="../media/menu.png" alt=""></button>
+        </section>
+
+        <section id="menu-overlay" class="menu-overlay" style="display: none;">
+            <div id="menu-overlay">
+                <div class="contenido-overlay">
+                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                  <hr style="margin-top:15px;margin-bottom:-15px;">
+                  <nav class="menu-ov-nav">
+                      <ul>
+                        <li><a href="../index">Inicio</a></li>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                      </ul>
+                  </nav>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 8px; right: 8px;" onclick="cerrar_menu()" title="Cerrar" class="cerrar-overlay">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="textos-header">
+            <h1>Brawlhalla Wiki</h1>
+            <h3>Modos de Juego</h3>
+        </section>
+
+
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                 style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                      style="stroke: none; fill: #2E2E2E; "></path>
+            </svg>
+        </div>
+
+
+    </header>
+    <main>
+        <div class="search-container" style="margin-bottom: 20px;">
+          <input type="text" id="search-input" placeholder="Buscar en la wiki de Brawlhalla...">
+          <ul id="autocomplete-list" style="display: none;"></ul>
+        </div>
+      
+        <script src="../js/search-wiki-bh.js"></script>
+
+        <table>
+            <tr>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/stock">
+                        <img src="../media/wiki/bh/gamemodes/stock.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/timed">
+                        <img src="../media/wiki/bh/gamemodes/timed.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/strikeout">
+                        <img src="../media/wiki/bh/gamemodes/strikeout.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/brawlball">
+                        <img src="../media/wiki/bh/gamemodes/brawlball.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/kung-foot">
+                        <img src="../media/wiki/bh/gamemodes/kung-foot.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/horde">
+                        <img src="../media/wiki/bh/gamemodes/horde.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <th class="info-title">
+                    <a href="../wiki-bh/stock">
+                        Stock
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title">
+                    <a href="../wiki-bh/timed">
+                        Timed
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/strikeout">
+                        Strikeout
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/brawlball">
+                        Brawlball
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/kung-foot">
+                        Kung Foot
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title">
+                    <a href="../wiki-bh/horde">
+                        Horde
+                    </a>
+                </th>
+            </tr>
+        </table>
+
+        <table style="margin-top:15px">
+            <tr>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/snowbrawl">
+                        <img src="../media/wiki/bh/gamemodes/snowbrawl.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/dodgebomb">
+                        <img src="../media/wiki/bh/gamemodes/dodgebomb.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/switchcraft">
+                        <img src="../media/wiki/bh/gamemodes/switchcraft.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/bombsketball">
+                        <img src="../media/wiki/bh/gamemodes/bombsketball.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/beachbrawl">
+                        <img src="../media/wiki/bh/gamemodes/beachbrawl.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/buddy">
+                        <img src="../media/wiki/bh/gamemodes/buddy.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/snowbrawl">
+                        Snowbrawl
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/dodgebomb">
+                        Dodgebomb
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/switchcraft">
+                        Switchcraft
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:14px">
+                    <a href="../wiki-bh/bombsketball">
+                        Bombsketball
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/beachbrawl">
+                        Beachbrawl
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title">
+                    <a href="../wiki-bh/buddy">
+                        Buddy
+                    </a>
+                </th>
+            </tr>
+        </table>
+
+        <table style="margin-top:15px">
+            <tr>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/brawldown">
+                        <img src="../media/wiki/bh/gamemodes/brawldown.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/captura-la-bandera">
+                        <img src="../media/wiki/bh/gamemodes/captura-la-bandera.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/bubble-tag">
+                        <img src="../media/wiki/bh/gamemodes/bubble-tag.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/temple-climb">
+                        <img src="../media/wiki/bh/gamemodes/temple-climb.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/morph">
+                        <img src="../media/wiki/bh/gamemodes/morph.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/walker-attack">
+                        <img src="../media/wiki/bh/gamemodes/walker-attack.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/brawldown">
+                        Brawldown
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:13px">
+                    <a href="../wiki-bh/captura-la-bandera">
+                        Captura la Bandera
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/bubble-tag">
+                        Bubble Tag
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:14px">
+                    <a href="../wiki-bh/temple-climb">
+                        Temple Climb
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title">
+                    <a href="../wiki-bh/morph">
+                        Morph
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:13px">
+                    <a href="../wiki-bh/walker-attack">
+                        Walker Attack!
+                    </a>
+                </th>
+            </tr>
+        </table>
+
+        <table style="margin-top:15px">
+            <tr>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/showdown">
+                        <img src="../media/wiki/bh/gamemodes/showdown.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/crew-battle">
+                        <img src="../media/wiki/bh/gamemodes/crew-battle.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/street-brawl">
+                        <img src="../media/wiki/bh/gamemodes/street-brawl.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/bounty">
+                        <img src="../media/wiki/bh/gamemodes/bounty.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/dice-destruction">
+                        <img src="../media/wiki/bh/gamemodes/no-logo.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/volleybrawl">
+                        <img src="../media/wiki/bh/gamemodes/no-logo.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/showdown">
+                        Showdown
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/crew-battle">
+                        Crew Battle
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/street-brawl">
+                        Street Brawl
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/bounty">
+                        Bounty
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:13px">
+                    <a href="../wiki-bh/dice-destruction">
+                        Dice & Destruction
+                    </a>
+                </th>
+                <td></td>
+                <td></td>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/volleybrawl">
+                        Volleybrawl
+                    </a>
+                </th>
+            </tr>
+        </table>
+
+        <table style="margin-top:15px;width: 5%;">
+            <tr>
+                <td class="wbh-img">
+                    <a href="../wiki-bh/oddbrawl">
+                        <img src="../media/wiki/bh/gamemodes/no-logo.png" alt="" style="width: 100px;height: 100px;">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <th class="info-title" style="font-size:15px">
+                    <a href="../wiki-bh/oddbrawl">
+                        Oddbrawl
+                    </a>
+                </th>
+            </tr>
+        </table>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="../js/buscador.js"></script>
+        <script src="../js/ir-arriba.js"></script>
+
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Twitter</h4>
+                <p>@SLENDERS1T0</p>
+            </div>
+            <div class="content-foo">
+                <h4>Discord</h4>
+                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;" target="_blank">Click</a></p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none;" target="_blank">Click</a></p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>
+    </footer>
+</body>
+
+</html>

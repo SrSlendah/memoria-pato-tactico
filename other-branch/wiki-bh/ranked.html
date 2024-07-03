@@ -1,0 +1,2175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ranked - Brawlhalla Wiki</title>
+    <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/wiki-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/buscador.js"></script>
+    <script src="../js/ir-arriba.js"></script>
+    <script src="../js/wiki.js"></script>
+    <script src="../js/search-wiki-bh.js"></script>
+
+    <header>
+        <script src="../js/menu.js"></script>
+        
+        <section id="menu">
+            <div class="menu">
+
+                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="../index">Inicio</a></li>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="menu-toggle" onclick="abrir_menu()"><img src="../media/menu.png" alt=""></button>
+        </section>
+
+        <section id="menu-overlay" class="menu-overlay" style="display: none;">
+            <div id="menu-overlay">
+                <div class="contenido-overlay">
+                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                  <hr style="margin-top:15px;margin-bottom:-15px;">
+                  <nav class="menu-ov-nav">
+                      <ul>
+                        <li><a href="../index">Inicio</a></li>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                      </ul>
+                  </nav>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 8px; right: 8px;" onclick="cerrar_menu()" title="Cerrar" class="cerrar-overlay">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="textos-header">
+            <h1>Brawlhalla Wiki</h1>
+            <h3>Ranked</h3>
+        </section>
+
+
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                 style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                      style="stroke: none; fill: #2E2E2E; "></path>
+            </svg>
+        </div>
+
+
+    </header>
+    <main>
+        <div class="search-container" style="margin-bottom: 20px;">
+          <input type="text" id="search-input" placeholder="Buscar en la wiki de Brawlhalla...">
+          <ul id="autocomplete-list" style="display: none;"></ul>
+        </div>
+      
+
+        <div class="secciones" align="center">
+            <button id="1-btn" onclick="show1();" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Información</button>
+            <button id="2-btn" onclick="show2();">Cosméticos</button>
+            <button id="3-btn" onclick="show3();">Calculadora</button>
+        </div>
+
+        <section id="1">
+        <section>
+            <h2 align="center" style="font-size:30px;margin-top:-20px">Recompensas del Ranked</h2>
+            <br />
+            <p align="center" style="color:#fff">
+                Al jugar Ranked puedes conseguir distintos rangos que otorgan avatares y marcos.<br>
+                También puedes conseguir Glory, la moneda para comprar mas recompensas del ranked.
+            </p>
+            <br /><br />
+            <h2 align="center" style="font-size:30px">Periodo de Situación</h2>
+            <br />
+            <p align="center" style="color:#fff">
+                En las 10 primeras partidas de cada temporada no se tiene un rango asignado, otorgan 3 veces la ganancia o la perdición de elo al jugar.<br>
+                Jugar estas 10 partidas hace que el jugador sea apto para ganar el avatar de ranked y los marcos.
+            </p>
+            <br /><br />
+            <h2 align="center" style="font-size:30px;margin-bottom:30px">Rangos</h2>
+
+
+            <div class="secciones" align="center">
+                <button id="sec1-btn" onclick="showSec1();" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Estaño</button>
+                <button id="sec2-btn" onclick="showSec2();">Bronce</button>
+                <button id="sec3-btn" onclick="showSec3();">Plata</button>
+                <button id="sec4-btn" onclick="showSec4();">Oro</button>
+                <button id="sec5-btn" onclick="showSec5();">Platino</button>
+                <button id="sec6-btn" onclick="showSec6();">Diamante</button>
+                <button id="sec7-btn" onclick="showSec7();">Valhallan</button>
+            </div>
+
+            <section id="sec1">
+                <table class="ranked" style="width:20%">
+                    <tr>
+                        <th colspan="3">Estaño</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="8" style="width:200px">
+                            <img src="../media/wiki/bh/ranked/estaño.png" style="width:150px">
+                        </td>
+                        <td style="width:50px"><b>Tier</b></td>
+                        <td><b>Elo</b></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">5</td>
+                        <td>872 - 909</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">4</td>
+                        <td>834 - 872</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">3</td>
+                        <td>796 - 833</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">2</td>
+                        <td>758 - 795</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">1</td>
+                        <td>720 - 757</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">0</td>
+                        <td>200 - 719</td>
+                    </tr>
+                </table>
+
+
+
+                <br /><br />
+                <h2 align="center" style="font-size:30px">Recompensas del Rango</h2>
+
+                <table class="ranked-avatar" style="width:30%;margin-top:30px">
+                    <tr>
+                        <th colspan="5">Avatar</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/1.png" title="Tier 1"><br>
+                            <b>Tier 1</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/2.png" title="Tier 2"><br>
+                            <b>Tier 2</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/3.png" title="Tier 3"><br>
+                            <b>Tier 3</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/4.png" title="Tier 4"><br>
+                            <b>Tier 4</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/5.png" title="Tier 5"><br>
+                            <b>Tier 5</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/6.png" title="Tier 6"><br>
+                            <b>Tier 6</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/7.png" title="Tier 7"><br>
+                            <b>Tier 7</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/8.png" title="Tier 8"><br>
+                            <b>Tier 8</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/9.png" title="Tier 9"><br>
+                            <b>Tier 9</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/10.png" title="Tier 10"><br>
+                            <b>Tier 10</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/11.png" title="Tier 11"><br>
+                            <b>Tier 11</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/12.png" title="Tier 12"><br>
+                            <b>Tier 12</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/13.png" title="Tier 13"><br>
+                            <b>Tier 13</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/14.png" title="Tier 14"><br>
+                            <b>Tier 14</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/15.png" title="Tier 15"><br>
+                            <b>Tier 15</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/16.png" title="Tier 16"><br>
+                            <b>Tier 16</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/17.png" title="Tier 17"><br>
+                            <b>Tier 17</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/18.png" title="Tier 18"><br>
+                            <b>Tier 18</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/19.png" title="Tier 19"><br>
+                            <b>Tier 19</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/20.png" title="Tier 20"><br>
+                            <b>Tier 20</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/21.png" title="Tier 21"><br>
+                            <b>Tier 21</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/22.png" title="Tier 22"><br>
+                            <b>Tier 22</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/23.png" title="Tier 23"><br>
+                            <b>Tier 23</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/24.png" title="Tier 24"><br>
+                            <b>Tier 24</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/25.png" title="Tier 25"><br>
+                            <b>Tier 25</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/26.png" title="Tier 26"><br>
+                            <b>Tier 26</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/27.png" title="Tier 27"><br>
+                            <b>Tier 27</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/28.png" title="Tier 28"><br>
+                            <b>Tier 28</b>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="sec2" style="display:none">
+                <table class="ranked" style="width:20%">
+                    <tr>
+                        <th colspan="3">Bronce</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="8" style="width:200px">
+                            <img src="../media/wiki/bh/ranked/bronce.png" style="width:150px">
+                        </td>
+                        <td style="width:50px"><b>Tier</b></td>
+                        <td><b>Elo</b></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">5</td>
+                        <td>1,086 - 1,129</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">4</td>
+                        <td>1,042 - 1,085</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">3</td>
+                        <td>998 - 1,041</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">2</td>
+                        <td>954 - 997</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">1</td>
+                        <td>910 - 953</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">0</td>
+                        <td>872 - 909</td>
+                    </tr>
+                </table>
+
+
+
+                <br /><br />
+                <h2 align="center" style="font-size:30px">Recompensas del Rango</h2>
+
+                <table class="ranked-avatar" style="width:30%;margin-top:30px">
+                    <tr>
+                        <th colspan="5">Avatar</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/1.png" title="Tier 1"><br>
+                            <b>Tier 1</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/2.png" title="Tier 2"><br>
+                            <b>Tier 2</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/3.png" title="Tier 3"><br>
+                            <b>Tier 3</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/4.png" title="Tier 4"><br>
+                            <b>Tier 4</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/5.png" title="Tier 5"><br>
+                            <b>Tier 5</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/6.png" title="Tier 6"><br>
+                            <b>Tier 6</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/7.png" title="Tier 7"><br>
+                            <b>Tier 7</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/8.png" title="Tier 8"><br>
+                            <b>Tier 8</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/9.png" title="Tier 9"><br>
+                            <b>Tier 9</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/10.png" title="Tier 10"><br>
+                            <b>Tier 10</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/11.png" title="Tier 11"><br>
+                            <b>Tier 11</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/12.png" title="Tier 12"><br>
+                            <b>Tier 12</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/13.png" title="Tier 13"><br>
+                            <b>Tier 13</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/14.png" title="Tier 14"><br>
+                            <b>Tier 14</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/15.png" title="Tier 15"><br>
+                            <b>Tier 15</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/16.png" title="Tier 16"><br>
+                            <b>Tier 16</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/17.png" title="Tier 17"><br>
+                            <b>Tier 17</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/18.png" title="Tier 18"><br>
+                            <b>Tier 18</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/19.png" title="Tier 19"><br>
+                            <b>Tier 19</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/20.png" title="Tier 20"><br>
+                            <b>Tier 20</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/21.png" title="Tier 21"><br>
+                            <b>Tier 21</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/22.png" title="Tier 22"><br>
+                            <b>Tier 22</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/23.png" title="Tier 23"><br>
+                            <b>Tier 23</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/24.png" title="Tier 24"><br>
+                            <b>Tier 24</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/25.png" title="Tier 25"><br>
+                            <b>Tier 25</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/26.png" title="Tier 26"><br>
+                            <b>Tier 26</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/27.png" title="Tier 27"><br>
+                            <b>Tier 27</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/28.png" title="Tier 28"><br>
+                            <b>Tier 28</b>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="sec3" style="display:none">
+                <table class="ranked" style="width:20%">
+                    <tr>
+                        <th colspan="3">Plata</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="8" style="width:200px">
+                            <img src="../media/wiki/bh/ranked/plata.png" style="width:150px">
+                        </td>
+                        <td style="width:50px"><b>Tier</b></td>
+                        <td><b>Elo</b></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">5</td>
+                        <td>1,338 - 1,389</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">4</td>
+                        <td>1,286 - 1,337</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">3</td>
+                        <td>1,234 - 1,285</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">2</td>
+                        <td>1,182 - 1,233</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">1</td>
+                        <td>1,130 - 1,181</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">0</td>
+                        <td>1,086 - 1,129</td>
+                    </tr>
+                </table>
+
+                <br /><br />
+                <h2 align="center" style="font-size:30px">Recompensas del Rango</h2>
+
+                <table class="ranked-avatar" style="width:30%;margin-top:30px">
+                    <tr>
+                        <th colspan="5">Avatar</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/1.png" title="Tier 1"><br>
+                            <b>Tier 1</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/2.png" title="Tier 2"><br>
+                            <b>Tier 2</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/3.png" title="Tier 3"><br>
+                            <b>Tier 3</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/4.png" title="Tier 4"><br>
+                            <b>Tier 4</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/5.png" title="Tier 5"><br>
+                            <b>Tier 5</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/6.png" title="Tier 6"><br>
+                            <b>Tier 6</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/7.png" title="Tier 7"><br>
+                            <b>Tier 7</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/8.png" title="Tier 8"><br>
+                            <b>Tier 8</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/9.png" title="Tier 9"><br>
+                            <b>Tier 9</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/10.png" title="Tier 10"><br>
+                            <b>Tier 10</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/11.png" title="Tier 11"><br>
+                            <b>Tier 11</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/12.png" title="Tier 12"><br>
+                            <b>Tier 12</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/13.png" title="Tier 13"><br>
+                            <b>Tier 13</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/14.png" title="Tier 14"><br>
+                            <b>Tier 14</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/15.png" title="Tier 15"><br>
+                            <b>Tier 15</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/16.png" title="Tier 16"><br>
+                            <b>Tier 16</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/17.png" title="Tier 17"><br>
+                            <b>Tier 17</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/18.png" title="Tier 18"><br>
+                            <b>Tier 18</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/19.png" title="Tier 19"><br>
+                            <b>Tier 19</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/20.png" title="Tier 20"><br>
+                            <b>Tier 20</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/21.png" title="Tier 21"><br>
+                            <b>Tier 21</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/22.png" title="Tier 22"><br>
+                            <b>Tier 22</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/23.png" title="Tier 23"><br>
+                            <b>Tier 23</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/24.png" title="Tier 24"><br>
+                            <b>Tier 24</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/25.png" title="Tier 25"><br>
+                            <b>Tier 25</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/26.png" title="Tier 26"><br>
+                            <b>Tier 26</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/27.png" title="Tier 27"><br>
+                            <b>Tier 27</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/low/28.png" title="Tier 28"><br>
+                            <b>Tier 28</b>
+                        </td>
+                    </tr>
+                </table>
+
+
+            </section>
+
+            <section id="sec4" style="display:none">
+                <table class="ranked" style="width:20%">
+                    <tr>
+                        <th colspan="3">Oro</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="8" style="width:200px">
+                            <img src="../media/wiki/bh/ranked/oro.png" style="width:150px">
+                        </td>
+                        <td style="width:50px"><b>Tier</b></td>
+                        <td><b>Elo</b></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">5</td>
+                        <td>1,622 - 1,679</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">4</td>
+                        <td>1,564 - 1,621</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">3</td>
+                        <td>1,506 - 1,563</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">2</td>
+                        <td>1,448 - 1,505</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">1</td>
+                        <td>1,390 - 1,447</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">0</td>
+                        <td>1,338 - 1,389</td>
+                    </tr>
+                </table>
+
+                <br /><br />
+                <h2 align="center" style="font-size:30px">Recompensas del Rango</h2>
+                <table class="ranked-marco" style="width:10%;margin-top:30px">
+                    <tr>
+                        <th colspan="6">Marco</th>
+                    </tr>
+                    <tr>
+                        <td colspan="6" style="width:200px">
+                            <img src="../media/wiki/bh/ranked/marco/marco-oro.png" style="width:100px">
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="ranked-avatar" style="width:30%;margin-top:30px">
+                    <tr>
+                        <th colspan="5">Avatar</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/1.png" title="Tier 1"><br>
+                            <b>Tier 1</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/2.png" title="Tier 2"><br>
+                            <b>Tier 2</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/3.png" title="Tier 3"><br>
+                            <b>Tier 3</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/4.png" title="Tier 4"><br>
+                            <b>Tier 4</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/5.png" title="Tier 5"><br>
+                            <b>Tier 5</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/6.png" title="Tier 6"><br>
+                            <b>Tier 6</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/7.png" title="Tier 7"><br>
+                            <b>Tier 7</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/8.png" title="Tier 8"><br>
+                            <b>Tier 8</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/9.png" title="Tier 9"><br>
+                            <b>Tier 9</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/10.png" title="Tier 10"><br>
+                            <b>Tier 10</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/11.png" title="Tier 11"><br>
+                            <b>Tier 11</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/12.png" title="Tier 12"><br>
+                            <b>Tier 12</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/13.png" title="Tier 13"><br>
+                            <b>Tier 13</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/14.png" title="Tier 14"><br>
+                            <b>Tier 14</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/15.png" title="Tier 15"><br>
+                            <b>Tier 15</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/16.png" title="Tier 16"><br>
+                            <b>Tier 16</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/17.png" title="Tier 17"><br>
+                            <b>Tier 17</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/18.png" title="Tier 18"><br>
+                            <b>Tier 18</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/19.png" title="Tier 19"><br>
+                            <b>Tier 19</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/20.png" title="Tier 20"><br>
+                            <b>Tier 20</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/21.png" title="Tier 21"><br>
+                            <b>Tier 21</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/22.png" title="Tier 22"><br>
+                            <b>Tier 22</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/23.png" title="Tier 23"><br>
+                            <b>Tier 23</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/24.png" title="Tier 24"><br>
+                            <b>Tier 24</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/25.png" title="Tier 25"><br>
+                            <b>Tier 25</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/26.png" title="Tier 26"><br>
+                            <b>Tier 26</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/27.png" title="Tier 27"><br>
+                            <b>Tier 27</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/oro/28.png" title="Tier 28"><br>
+                            <b>Tier 28</b>
+                        </td>
+                    </tr>
+                </table>
+
+            </section>
+
+            <section id="sec5" style="display:none">
+                <table class="ranked" style="width:20%">
+                    <tr>
+                        <th colspan="3">Platino</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="8" style="width:200px">
+                            <img src="../media/wiki/bh/ranked/platino.png" style="width:150px">
+                        </td>
+                        <td style="width:50px"><b>Tier</b></td>
+                        <td><b>Elo</b></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">5</td>
+                        <td>1,936 - 1,999</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">4</td>
+                        <td>1,872 - 1,935</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">3</td>
+                        <td>1,808 - 1,871</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">2</td>
+                        <td>1,744 - 1,807</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">1</td>
+                        <td>1,680 - 1,743</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50px">0</td>
+                        <td>1,622 - 1,679</td>
+                    </tr>
+                </table>
+
+                <br /><br />
+                <h2 align="center" style="font-size:30px">Recompensas del Rango</h2>
+
+                <table class="ranked-marco" style="width:10%;margin-top:30px">
+                    <tr>
+                        <th colspan="6">Marco</th>
+                    </tr>
+                    <tr>
+                        <td colspan="6" style="width:200px">
+                            <img src="../media/wiki/bh/ranked/marco/marco-platino.png" style="width:100px">
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="ranked-avatar" style="width:30%;margin-top:30px">
+                    <tr>
+                        <th colspan="5">Avatar</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/1.png" title="Tier 1"><br>
+                            <b>Tier 1</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/2.png" title="Tier 2"><br>
+                            <b>Tier 2</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/3.png" title="Tier 3"><br>
+                            <b>Tier 3</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/4.png" title="Tier 4"><br>
+                            <b>Tier 4</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/5.png" title="Tier 5"><br>
+                            <b>Tier 5</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/6.png" title="Tier 6"><br>
+                            <b>Tier 6</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/7.png" title="Tier 7"><br>
+                            <b>Tier 7</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/8.png" title="Tier 8"><br>
+                            <b>Tier 8</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/9.png" title="Tier 9"><br>
+                            <b>Tier 9</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/10.png" title="Tier 10"><br>
+                            <b>Tier 10</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/11.png" title="Tier 11"><br>
+                            <b>Tier 11</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/12.png" title="Tier 12"><br>
+                            <b>Tier 12</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/13.png" title="Tier 13"><br>
+                            <b>Tier 13</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/14.png" title="Tier 14"><br>
+                            <b>Tier 14</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/15.png" title="Tier 15"><br>
+                            <b>Tier 15</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/16.png" title="Tier 16"><br>
+                            <b>Tier 16</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/17.png" title="Tier 17"><br>
+                            <b>Tier 17</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/18.png" title="Tier 18"><br>
+                            <b>Tier 18</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/19.png" title="Tier 19"><br>
+                            <b>Tier 19</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/20.png" title="Tier 20"><br>
+                            <b>Tier 20</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/21.png" title="Tier 21"><br>
+                            <b>Tier 21</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/22.png" title="Tier 22"><br>
+                            <b>Tier 22</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/23.png" title="Tier 23"><br>
+                            <b>Tier 23</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/24.png" title="Tier 24"><br>
+                            <b>Tier 24</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/25.png" title="Tier 25"><br>
+                            <b>Tier 25</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/26.png" title="Tier 26"><br>
+                            <b>Tier 26</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/27.png" title="Tier 27"><br>
+                            <b>Tier 27</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/platino/28.png" title="Tier 28"><br>
+                            <b>Tier 28</b>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="sec6" style="display:none">
+                <table class="ranked" style="width:20%">
+                    <tr>
+                        <th colspan="3">Diamante</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="8" style="width:200px">
+                            <img src="../media/wiki/bh/ranked/diamante.png" style="width:150px">
+                        </td>
+                        <td style="height:30px;width:50px"><b>Tier</b></td>
+                        <td><b>Elo</b></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="8" style="width:50px">1</td>
+                        <td rowspan="8">2.000+</td>
+                    </tr>
+                </table>
+
+
+                <br /><br />
+                <h2 align="center" style="font-size:30px">Recompensas del Rango</h2>
+
+                <table class="ranked-marco" style="width:10%;margin-top:30px">
+                    <tr>
+                        <th colspan="6">Marco</th>
+                    </tr>
+                    <tr>
+                        <td colspan="6" style="width:200px">
+                            <img src="../media/wiki/bh/ranked/marco/marco-diamante.png" style="width:100px">
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="ranked-avatar" style="width:30%;margin-top:30px">
+                    <tr>
+                        <th colspan="5">Avatar</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/1.png" title="Tier 1"><br>
+                            <b>Tier 1</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/2.png" title="Tier 2"><br>
+                            <b>Tier 2</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/3.png" title="Tier 3"><br>
+                            <b>Tier 3</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/4.png" title="Tier 4"><br>
+                            <b>Tier 4</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/5.png" title="Tier 5"><br>
+                            <b>Tier 5</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/6.png" title="Tier 6"><br>
+                            <b>Tier 6</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/7.png" title="Tier 7"><br>
+                            <b>Tier 7</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/8.png" title="Tier 8"><br>
+                            <b>Tier 8</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/9.png" title="Tier 9"><br>
+                            <b>Tier 9</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/10.png" title="Tier 10"><br>
+                            <b>Tier 10</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/11.png" title="Tier 11"><br>
+                            <b>Tier 11</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/12.png" title="Tier 12"><br>
+                            <b>Tier 12</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/13.png" title="Tier 13"><br>
+                            <b>Tier 13</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/14.png" title="Tier 14"><br>
+                            <b>Tier 14</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/15.png" title="Tier 15"><br>
+                            <b>Tier 15</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/16.png" title="Tier 16"><br>
+                            <b>Tier 16</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/17.png" title="Tier 17"><br>
+                            <b>Tier 17</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/18.png" title="Tier 18"><br>
+                            <b>Tier 18</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/19.png" title="Tier 19"><br>
+                            <b>Tier 19</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/20.png" title="Tier 20"><br>
+                            <b>Tier 20</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/21.png" title="Tier 21"><br>
+                            <b>Tier 21</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/22.png" title="Tier 22"><br>
+                            <b>Tier 22</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/23.png" title="Tier 23"><br>
+                            <b>Tier 23</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/24.png" title="Tier 24"><br>
+                            <b>Tier 24</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/25.png" title="Tier 25"><br>
+                            <b>Tier 25</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/26.png" title="Tier 26"><br>
+                            <b>Tier 26</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/27.png" title="Tier 27"><br>
+                            <b>Tier 27</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/diamante/28.png" title="Tier 28"><br>
+                            <b>Tier 28</b>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="sec7" style="display:none">
+                <table class="ranked" style="width:20%">
+                    <tr>
+                        <th colspan="3">Valhallan</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="8" style="width:200px">
+                            <img src="../media/wiki/bh/ranked/valhallan.png" style="width:150px">
+                        </td>
+                        <td style="height:30px;width:50px"><b>Tier</b></td>
+                        <td><b>Requisito</b></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="8" style="width:50px">1</td>
+                        <td rowspan="8">Ser diamante, ganar mas de 100 partidas y entrar en el top de la región</td>
+                    </tr>
+                </table>
+
+
+                <br /><br />
+                <h2 align="center" style="font-size:30px">Recompensas del Rango</h2>
+
+                <table class="ranked-marco" style="width:10%;margin-top:30px">
+                    <tr>
+                        <th colspan="6">Marco</th>
+                    </tr>
+                    <tr>
+                        <td colspan="6" style="width:200px">
+                            <img src="../media/wiki/bh/ranked/marco/marco-valhallan.png" style="width:100px">
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="ranked-avatar_valhallan" style="width:20%;margin-top:30px">
+                    <tr>
+                        <th colspan="5">Avatar</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/valhallan/1.webp" title="Emblema Valhallan" style="width:100px"><br>
+                            <b>Emblema Valhallan</b>
+                        </td>
+                        <td>
+                            <img src="../media/wiki/bh/ranked/avatar/valhallan/2.png" title="Emblema Valhallan Caido" style="width:100px"><br>
+                            <b>Emblema Valhallan<br> Caido</b>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+        </section>
+    </section>
+
+    <section id="2" style="display: none;">
+
+        <h2 align="center" style="margin-top:-20px">Color</h2>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Skyforged
+                </th>
+                <th>
+                    Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/color/skyforged.png" style="width:150px;">
+                </td>
+                <td style="width:300px">
+                        <img src="../media/wiki/bh/ranked/color/goldforged.png" style="width:150px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.500<br>
+                    <i style="font-size:13px">Por cada leyenda<br> (Requiere leyenda lvl 10)</i>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 3.750<br>
+                    <i style="font-size:13px">Por cada leyenda<br> (Requiere el skyforged)</i>
+                </td>
+            </tr>
+        </table>
+
+        <h2 align="center" style="margin-top:20px">Tema de IU</h2>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Joya Skyforged
+                </th>
+                <th>
+                    Joya Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/iu/joya-skyforged.png" style="width:250px;">
+                </td>
+                <td style="width:300px">
+                        <img src="../media/wiki/bh/ranked/iu/joya-goldforged.png" style="width:250px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 10.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 15.000<br>
+                    <i style="font-size:13px">Requiere la Joya Skyforged</i>
+                </td>
+            </tr>
+        </table>
+
+        <h2 align="center" style="margin-top:20px">Gestos</h2>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Trofeo Skyforged
+                </th>
+                <th>
+                    Trofeo Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/gestos/trofeo-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                        <img src="../media/wiki/bh/ranked/gestos/trofeo-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 6.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 9.000<br>
+                    <i style="font-size:13px">Requiere el Trofeo Skyforged</i>
+                </td>
+            </tr>
+        </table>
+
+        <h2 align="center" style="margin-top:20px">Compañeros</h2>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Buey de dos Colas Skyforged
+                </th>
+                <th>
+                    Buey de dos Colas Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/compañeros/buey-de-dos-colas-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                        <img src="../media/wiki/bh/ranked/compañeros/buey-de-dos-colas-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 6.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 9.000<br>
+                    <i style="font-size:13px">Requiere el Trofeo Skyforged</i>
+                </td>
+            </tr>
+        </table>
+
+        <h2 align="center" style="margin-top:20px">Skins de Armas</h2>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Espada Skyforged
+                </th>
+                <th>
+                    Espada Goldforged
+                </th>
+                <th>
+                    Martillo Skyforged
+                </th>
+                <th>
+                    Martillo Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/espada-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/espada-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/martillo-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/martillo-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Pistolas Skyforged
+                </th>
+                <th>
+                    Pistolas Goldforged
+                </th>
+                <th>
+                    Arpón Skyforged
+                </th>
+                <th>
+                    Arpón Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/pistolas-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/pistolas-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/arpon-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/arpon-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Lanza Cohete Skyforged
+                </th>
+                <th>
+                    Lanza Cohete Goldforged
+                </th>
+                <th>
+                    Cuchillas Skyforged
+                </th>
+                <th>
+                    Cuchillas Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/lanza-cohete-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/lanza-cohete-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/cuchillas-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/cuchillas-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Hacha Skyforged
+                </th>
+                <th>
+                    Hacha Goldforged
+                </th>
+                <th>
+                    Guanteletes Skyforged
+                </th>
+                <th>
+                    Guanteletes Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/hacha-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/hacha-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/guanteletes-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/guanteletes-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Arco Skyforged
+                </th>
+                <th>
+                    Arco Goldforged
+                </th>
+                <th>
+                    Guadaña Skyforged
+                </th>
+                <th>
+                    Guadaña Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/arco-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/arco-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/guadaña-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/guadaña-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Cañón Skyforged
+                </th>
+                <th>
+                    Cañón Goldforged
+                </th>
+                <th>
+                    Orbe Skyforged
+                </th>
+                <th>
+                    Orbe Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/cañon-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/cañon-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/orbe-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/orbe-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Greatsword Skyforged
+                </th>
+                <th>
+                    Greatsword Goldforged
+                </th>
+                <th>
+                    Botas de Batalla Skyforged
+                </th>
+                <th>
+                    Botas de Batalla Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/greatsword-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/greatsword-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/botas-batalla-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/armas/botas-batalla-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 5.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 7.500<br>
+                </td>
+            </tr>
+        </table>
+
+        <h2 align="center" style="margin-top:20px">Skin de Emojis</h2>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Espera Skyforged
+                </th>
+                <th>
+                    Espera Goldforged
+                </th>
+                <th>
+                    Risa Skyforged
+                </th>
+                <th>
+                    Risa Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/espera-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/espera-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/risa-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/risa-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Sorprendido Skyforged
+                </th>
+                <th>
+                    Sorprendido Goldforged
+                </th>
+                <th>
+                    Inteligente Skyforged
+                </th>
+                <th>
+                    Inteligente Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/sorprendido-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/sorprendido-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/inteligente-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/inteligente-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Furia Skyforged
+                </th>
+                <th>
+                    Furia Goldforged
+                </th>
+                <th>
+                    Ya vuelvo Skyforged
+                </th>
+                <th>
+                    Ya vuelvo Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/furia-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/furia-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/ya-vuelvo-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/ya-vuelvo-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Saludos Skyforged
+                </th>
+                <th>
+                    Saludos Goldforged
+                </th>
+                <th>
+                    GG Skyforged
+                </th>
+                <th>
+                    GG Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/saludos-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/saludos-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/gg-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/gg-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Bien Jugado Skyforged
+                </th>
+                <th>
+                    Bien Jugado  Goldforged
+                </th>
+                <th>
+                    DEP Skyforged
+                </th>
+                <th>
+                    DEP Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/bien-jugado-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/bien-jugado-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/dep-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/dep-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Pensar Skyforged
+                </th>
+                <th>
+                    Pensar Goldforged
+                </th>
+                <th>
+                    Encogimiento de Hombros Skyforged
+                </th>
+                <th>
+                    Encogimiento de Hombros Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/pensar-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/pensar-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/encogimiento-de-hombros-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/encogimiento-de-hombros-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Pulgar Arriba Skyforged
+                </th>
+                <th>
+                    Pulgar Arriba Goldforged
+                </th>
+                <th>
+                    Pulgar Abajo Skyforged
+                </th>
+                <th>
+                    Pulgar Abajo Goldforged
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/pulgar-arriba-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/pulgar-arriba-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/pulgar-abajo-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/pulgar-abajo-goldforged.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Mano a la Cara Skyforged
+                </th>
+                <th style="font-size: 15px;">
+                    Mano a la Cara Goldforged
+                </th>
+                <th>
+                    Skyforged: Uno Más
+                </th>
+                <th>
+                    Goldforged: Uno Más
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/mano-a-la-cara-skyforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/mano-a-la-cara-goldforged.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/skyforged-uno-mas.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/goldforged-uno-mas.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Skyforged: Llanto
+                </th>
+                <th>
+                    Goldforged: Llanto
+                </th>
+                <th>
+                    Skyforged: Corazón
+                </th>
+                <th>
+                    Goldforged: Corazón
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/skyforged-llanto.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/goldforged-llanto.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/skyforged-corazon.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/goldforged-corazon.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Skyforged: Sudor
+                </th>
+                <th>
+                    Goldforged: Sudor
+                </th>
+                <th>
+                    Skyforged: Estás Genial
+                </th>
+                <th>
+                    Goldforged: Estás Genial
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/skyforged-sudor.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/goldforged-sudor.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/skyforged-estas-genial.png" style="width:200px;">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/ranked/emoji/goldforged-estas-genial.png" style="width:200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 1.500<br>
+                </td>
+                <td>
+                    <img src="../media/wiki/bh/iconos/glory.png" title="Glory"> 2.000<br>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="3">
+        <section>
+
+            <div class="calc-container">
+                <div class="calc-reset">
+                    <div class="calc-column">
+                        <h2 align="center" style="font-size:30px;margin-top:-20px;margin-bottom: 40px;">Elo reiniciado</h2>
+                        <input id="eloInput-reset" type="number" placeholder="Mejor Elo">
+                        <button onclick="calcularElo()">Calcular Elo reiniciado</button>
+                        <div id="resultado-reset"></div>
+                    </div>
+                </div>
+
+                <div class="calc-glory">
+                    <div class="calc-column">
+                        <h2 align="center" style="font-size:30px;margin-top:-20px;margin-bottom: 20px;">Glory conseguido</h2>
+                        <input id="eloInput-glory" type="number" placeholder="Mejor Elo">
+                        <input id="winsInput-glory" type="number" placeholder="Victorias">
+                        <button onclick="calcularGlory()">Calcular GLory conseguido</button>
+                        <div id="resultado-glory"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+</main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Twitter</h4>
+                <p>@SLENDERS1T0</p>
+            </div>
+            <div class="content-foo">
+                <h4>Discord</h4>
+                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;" target="_blank">Click</a></p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none;" target="_blank">Click</a></p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>
+    </footer>
+</body>
+
+</html>

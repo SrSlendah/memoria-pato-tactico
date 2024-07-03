@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tezca - Brawlhalla Wiki</title>
+    <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/wiki-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/ir-arriba.js"></script>
+
+    <header>
+        <script src="../js/menu.js"></script>
+        
+        <section id="menu">
+            <div class="menu">
+
+                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="../index">Inicio</a></li>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="menu-toggle" onclick="abrir_menu()"><img src="../media/menu.png" alt=""></button>
+        </section>
+
+        <section id="menu-overlay" class="menu-overlay" style="display: none;">
+            <div id="menu-overlay">
+                <div class="contenido-overlay">
+                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                  <hr style="margin-top:15px;margin-bottom:-15px;">
+                  <nav class="menu-ov-nav">
+                      <ul>
+                        <li><a href="../index">Inicio</a></li>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                      </ul>
+                  </nav>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 8px; right: 8px;" onclick="cerrar_menu()" title="Cerrar" class="cerrar-overlay">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="textos-header">
+            <h1>Brawlhalla Wiki</h1>
+            <h3>Tezca</h3>
+        </section>
+
+
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                 style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                      style="stroke: none; fill: #2E2E2E; "></path>
+            </svg>
+        </div>
+
+
+    </header>
+
+
+    <main>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Buscar en la wiki de Brawlhalla...">
+          <ul id="autocomplete-list" style="display: none;"></ul>
+        </div>
+      
+        <script src="../js/search-wiki-bh.js"></script>
+        <script src="../js/overlay.js"></script>
+
+        <table style="margin-top:20px;width:50%">
+            <tr>
+                <th colspan="4">Tezca</th>
+            </tr>
+            <tr>
+                <td style="width:300px" rowspan="3"><img src="../media/wiki/bh/leyendas/pose/tezca.png" width="300px"></td>
+                <th style="height:30px;width:175px">Precio</th>
+                <th style="width: 175px">Armas</th>
+                <th style="width: 207px">Estadísticas</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:20px"> <b style="font-size:20px">5.400</b>
+                </td>
+                <td rowspan="2">
+                    <img src="../media/wiki/bh/armas/botas-batalla.png" title="Botas de Batalla">
+                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
+                    <img src="../media/wiki/bh/armas/guanteletes.png" title="Guanteletes">
+                </td>
+                <td rowspan="2">
+                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
+                    <img src="../media/wiki/bh/leyendas/stats/7.png" title="Fuerza">
+                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
+                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
+                    <img src="../media/wiki/bh/leyendas/stats/5.png" title="Destreza">
+                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
+                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
+                    <img src="../media/wiki/bh/leyendas/stats/5.png" title="Defensa">
+                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
+                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
+                    <img src="../media/wiki/bh/leyendas/stats/5.png" title="Velocidad">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="secciones" align="center" style="margin-bottom:-60px;margin-top:-22px">
+                        <button id="sec1-btn" onclick="abrirOV(1);">Mas Información</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <div id="ov1" class="overlay" style="display: none">
+            <div class="contenido-overlay" style="width: 750px;height: 490px;">
+                <h2 style="margin-top:-20px">Tezca</h2>
+                <h5 style="margin-bottom:-10px;">El Luchador</h5>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <div class="leyenda-info">
+                    <img class="imagen" src="../media/wiki/bh/leyendas/tezca.png" width="350px">
+                    <ul class="lista">
+                        <li>
+                            <h2>Nombre Completo</h2>
+                            <p>Oscar Huerta</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Descripción en tienda</h2>
+                            <p>¡El Jaguar pone las reglas!</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Género</h2>
+                            <p>Masculino</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Nombre de Bot</h2>
+                            <p>Tezcalculator</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Hogar</h2>
+                            <p>???</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Fecha de Publicación</h2>
+                            <p>14/12/2022</p>
+                        </li>
+                    </ul>
+                </div>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <div id="tags">
+                    <img src="../media/wiki/bh/tags/botas-batalla.png" title="Botas de Batalla" style="width:150px">
+                    <img src="../media/wiki/bh/tags/guanteletes.png" title="Guanteletes" style="width:150px">
+                </div>
+                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+            </div>
+        </div>
+
+        <hr style="width:50%;margin:0 auto;margin-top:35px">
+
+        <h2 align="center" style="margin-top:20px">Armas</h2>
+
+        <table style="margin-top:20px;width:20%">
+            <tr>
+                <th>
+                    Patadas Voladoras
+                </th>
+                <th>
+                    Clawholds
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/leyendas/armas/tezca_patadas-voladoras.png" style="width:200px">
+                </td>
+                <td style="width:300px">
+                    <img src="../media/wiki/bh/leyendas/armas/tezca_clawholds.png" style="width:200px">
+                </td>
+            </tr>
+        </table>
+
+        <hr style="width:50%;margin:0 auto;margin-top:35px">
+
+        <h2 align="center" style="margin-top:20px">Skins Especiales</h2>
+
+        <table style="margin-top:10px;width:10%">
+            <tr>
+                <th>
+                    <a href="./corrupted-blood-tezca">Corrupted Blood Tezca</a>
+                </th>
+            </tr>
+            <tr>
+                <td style="width:300px">
+                    <a href="./corrupted-blood-tezca">
+                        <img src="../media/wiki/bh/skins/tezca/corrupted-blood-tezca.webp" style="width:200px">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="./pase-batalla7" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Temporada 7</a><br><i>Recompensa de nivel 23</i>
+                </td>
+            </tr>
+        </table>
+
+    </main>
+
+
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Twitter</h4>
+                <p>@SLENDERS1T0</p>
+            </div>
+            <div class="content-foo">
+                <h4>Discord</h4>
+                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none" ; target=" _blank">Click</a></p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>
+    </footer>
+</body>
+
+</html>
