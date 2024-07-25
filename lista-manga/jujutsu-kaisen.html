@@ -88,70 +88,29 @@
             <button onclick="goTo('anime_jujutsu');">Anime</button>
         </div>
 
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/manga/jujutsu-kaisen.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        Jujutsu Kaisen
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(1)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Volúmenes</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Volúmenes leídos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">?</td>
-                    <td></td>
-                    <td class="info-ep-num">27</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Capítulos</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Capítulos leídos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">?</td>
-                    <td></td>
-                    <td class="info-ep-num">262</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/manga/jujutsu-kaisen.png" alt="Jujutsu Kaisen">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="serie-titulo">Jujutsu Kaisen</h2>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Volúmenes:</strong></p>
+                                <p><strong>Capítulos:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>27 / ?</p>
+                                <p>263 / ?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov1" class="overlay" style="display: none;">
                 <div class="contenido-overlay">
                   <h2 style="margin-top:5px">Jujutsu Kaisen</h2>
@@ -165,9 +124,8 @@
                   <p><b>Leido hasta:</b> ??/??/????</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
                 </div>
-              </div>
-
-        </section>
+            </div>
+        </div>
 
     </main>
 

@@ -351,8 +351,11 @@ th {
 }
 
 .info-sep {
-    margin: 0 auto;
-    width: 30%
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* Ir arriba */
 #scroll {
@@ -731,4 +734,219 @@ footer {
     font-size: 25px;
     color: #fff;
     margin-top: 30px;
+}
+
+
+/* New listas css */
+.lista {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .lista {
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+
+@media (max-width: 960px) {
+    .lista {
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+
+@media (max-width: 750px) {
+    .lista {
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+
+@media (max-width: 475px) {
+    .lista {
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .list-imagen img {
+        width: 150px !important; /* Reduce aún más el ancho de la imagen */
+        height: 150px !important;
+        height: auto; /* Mantiene la relación de aspecto */
+    }
+
+    .list-titulo {
+        font-size: 0.8rem; /* Reduce aún más el tamaño del texto */
+        width: 150px;
+        padding: 6px; /* Ajusta el padding */
+    }
+}
+
+.list-elemento {
+    text-align: center;
+}
+
+.list-imagen img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+}
+
+.list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.list-dropped {
+    width: 50px; 
+    height: 50px; 
+    position: absolute; 
+    top: 0px; 
+    right: 0px; 
+    background-color:#4b2866; 
+    border-radius: 0 20px 0 30px;
+}
+
+
+/* Estilos básicos para la cuadrícula con 1 elemento por fila */
+.serie {
+    display: grid;
+    grid-template-columns: 1fr; /* Un solo elemento por fila */
+    gap: 20px; /* Espacio entre los elementos */
+    justify-content: center; /* Centra el contenido del grid horizontalmente */
+}
+/* Contenedor principal para centrar el contenido */
+.serie-container {
+    display: flex;
+    justify-content: center; /* Centra el contenedor horizontalmente */
+    padding: 20px;
+}
+
+.serie-elemento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.serie-imagen {
+    flex: 0 0 auto; /* No crecer, no encoger */
+    display: flex;
+    margin-right: 10px;
+    justify-content: center; /* Centra la imagen horizontalmente dentro del contenedor */
+}
+
+.serie-imagen img {
+    width: 300px; /* Ancho fijo */
+    height: 400px; /* Alto fijo */
+    border-radius: 15px;
+    border: 4px solid #4b2866;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.serie-info {
+    flex: 1;
+    display: flex;
+    background-color: #6f3c96;
+    padding: 17px;
+    border: 4px solid #4b2866;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 350px;
+}
+
+.serie-titulo {
+    font-size: 1.5rem; /* Tamaño del texto del título */
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.serie-subtitulo {
+    font-size: 1rem; /* Tamaño del texto del título */
+    font-weight: bold;
+    color: #fff;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.serie-details {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 10px; /* Espacio reducido entre las columnas */
+    width: 100%;
+}
+
+.serie-masinfo {
+    width: 17px; 
+    height: 17px; 
+    position: absolute; 
+    bottom: 5px; 
+    right: 5px;
+}
+
+.serie-details p {
+    color: #fff;
+    margin: 5px 0;
+}
+
+
+.serie-details-labels, .serie-details-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos dentro de la columna */
+}
+
+.serie-details-labels p, .serie-details-values p {
+    margin: 3px 0; /* Reduce el margen vertical */
+    color: white; /* Color del texto en el fondo */
+}
+
+/* Consultas de medios para pantallas más pequeñas */
+@media (max-width: 750px) {
+    .serie-elemento {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .serie-imagen {
+        margin-bottom: 10px; /* Espacio entre la imagen y la información */
+    }
+
+    .serie-imagen img {
+        width: 70%;
+        height: auto;
+    }
+
+    .serie-info {
+        text-align: center;
+    }
+
+    .serie-titulo {
+        font-size: 1.2rem; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
+
+    .serie-subtitulo {
+        font-size: 0.9rem;
+    }
+
+    .serie-details {
+        font-size: 0.9rem;
+    }
 }

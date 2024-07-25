@@ -88,69 +88,29 @@
             <button onclick="goTo('anime_chainsaw');">Anime</button>
         </div>
 
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/manga/chainsaw-man.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        Chainsaw Man
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(1)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Volúmenes</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Volúmenes leídos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">?</td>
-                    <td></td>
-                    <td class="info-ep-num">05</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Capítulos</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Capítulos leídos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">?</td>
-                    <td></td>
-                    <td class="info-ep-num">38</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/manga/chainsaw-man.png" alt="Chainsaw Man">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="serie-titulo">Chainsaw Man</h2>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Volúmenes:</strong></p>
+                                <p><strong>Capítulos:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>16 / ?</p>
+                                <p>172 / ?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <div id="ov1" class="overlay" style="display: none;">
                 <div class="contenido-overlay">
@@ -161,13 +121,12 @@
                   <p><b>Generos:</b> Acción, Supernatural</p>
                   <p><b>Fecha de Publicación:</b> 03/12/2018 -- ?</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Leido desde:</b> ?</p>
+                  <p><b>Leido desde:</b> 07/07/2024</p>
                   <p><b>Leido hasta:</b> ?</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
                 </div>
               </div>
-
-        </section>
+        </div>
 
     </main>
 
