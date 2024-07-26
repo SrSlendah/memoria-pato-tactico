@@ -291,6 +291,8 @@ th {
   }
   
   .contenido-overlay {
+    max-width: 500px;
+    width: 500px;
     background-color: #6f3c96;
     padding: 25px;
     border-radius: 15px;

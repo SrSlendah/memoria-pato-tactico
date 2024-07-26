@@ -11,6 +11,7 @@ function obtenerResultadosConURLs(query) {
   resultadosConURLs = [
     { resultado: 'Arcane', url: '../lista-peliculas-series/arcane' },
     { resultado: "Death Note: Live Action", url: '../lista-peliculas-series/death-note' },
+    { resultado: 'Dos "Rubias" de Pelo en Pecho', url: '../lista-peliculas-series/dos-rubias-de-pelo-en-pecho' },
     { resultado: 'El Hoyo', url: '../lista-peliculas-series/el-hoyo' },
     { resultado: "Fallout", url: '../lista-peliculas-series/fallout' },
     { resultado: "Five Nights at Freddy's", url: '../lista-peliculas-series/five-nights-at-freddys' },
