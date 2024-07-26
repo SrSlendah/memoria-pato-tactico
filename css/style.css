@@ -304,6 +304,16 @@ th {
     border: 3px solid #4b2866;
     text-shadow: 1px 1px 0 #4b2866, -1px -1px 0 #4b2866, 1px -1px 0 #4b2866, -1px 1px 0 #4b2866;
   }
+  
+.overlay-dropped {
+    width: 50px; 
+    height: 50px; 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    background-color:#4b2866; 
+    border-radius: 10px 0 30px 0 ;
+}
 
   .menu-overlay {
     position: fixed;
