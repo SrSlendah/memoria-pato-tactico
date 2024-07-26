@@ -298,6 +298,7 @@ th {
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
     position: relative;
     color:#e0e0e0;
     border: 3px solid #4b2866;
@@ -326,6 +327,7 @@ th {
     color:#e0e0e0;
     border: 3px solid #4b2866;
     text-shadow: 1px 1px 0 #4b2866, -1px -1px 0 #4b2866, 1px -1px 0 #4b2866, -1px 1px 0 #4b2866;
+    display: flex;
   }
 
   .menu-ov-logo {
