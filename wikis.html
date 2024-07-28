@@ -74,22 +74,16 @@
 
         <script src="./js/redirect.js"></script>
 
-        <table style="width: 10%;">
-            <tr>
-                <td class="secciones-img">
-                    <a onclick="goTo('wbh')" style="cursor:pointer">
-                        <img src="media/wiki/bh/logo.png" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <th class="info-title">
-                    <a onclick="goTo('wbh')" style="cursor:pointer">
-                        Wiki de Brawlhalla
-                    </a>
-                </th>
-            </tr>
-        </table>
+        <section class="lista" style="grid-template-columns: repeat(1, 200px);">
+
+            <div class="list-elemento">
+                <a onclick="goTo('wbh')" style="cursor:pointer">
+                    <div class="list-imagen"><img src="./media/wiki/bh/logo.png"></div>
+                    <div class="list-titulo">Wiki de Brawlhalla</div>
+                </a>
+            </div>
+            
+        </section>
 
     </main>
 

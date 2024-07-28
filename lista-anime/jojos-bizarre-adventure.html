@@ -92,73 +92,31 @@
             <button id="sec1-btn" onclick="goTo('manga_jojo');">Manga</button>
         </div>
 
-        <a href="../lista-manga/jojos-bizarre-adventure.html"></a>
-
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/jojos-bizarre-adventure.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        Jojo's Bizarre Adventure
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(1)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Episodios</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Episodios Vistos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">26</td>
-                    <td></td>
-                    <td class="info-ep-num">26</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/jojos-bizarre-adventure.png" alt="JoJo's Bizarre Adventure">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="serie-titulo">JoJo's Bizarre Adventure</h2>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Episodios:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>26 / 26</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov1" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/jojos-bizarre-adventure.png" alt="JoJo's Bizarre Adventure">
+                </div>
                 <div class="contenido-overlay">
                   <h2 style="margin-top:5px">Jojo's Bizarre Adventure</h2>
                   <hr style="margin-top:15px;margin-bottom:15px;">
@@ -172,79 +130,40 @@
                   <p><b>Visto hasta:</b> -</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
                 </div>
-              </div>
+            </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/jojos-bizarre-adventure-stardust-crusaders.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        Jojo's Bizarre Adventure:<br>
-                         Stardust Crusaders
-                         <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(2)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Episodios</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Episodios Vistos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">24</td>
-                    <td></td>
-                    <td class="info-ep-num">24</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/jojos-bizarre-adventure-stardust-crusaders.png" alt="JoJo's Bizarre Adventure">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(2)">
+                        <h2 class="serie-titulo">JoJo's Bizarre Adventure</h2>
+                        <h3 class="serie-subtitulo">Stardust Crusaders</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Episodios:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>24 / 24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov2" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/jojos-bizarre-adventure-stardust-crusaders.png" alt="JoJo's Bizarre Adventure">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px;text-align:center">Jojo's Bizarre Adventure:<br> Stardust Crusaders</h2>
+                  <h2 style="margin-top:5px">Jojo's Bizarre Adventure:</h2>
+                  <h3 style="font-size:15px">Stardust Crusaders</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Anime</p>
                   <p><b>Estudio:</b> David Production</p>
@@ -256,79 +175,40 @@
                   <p><b>Visto hasta:</b> -</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
                 </div>
-              </div>
+            </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/jojos-bizarre-adventure-stardust-crusaders-p2.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        Jojo's Bizarre Adventure:<br> 
-                        Stardust Crusaders Part 2
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(3)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Episodios</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Episodios Vistos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">24</td>
-                    <td></td>
-                    <td class="info-ep-num">24</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/jojos-bizarre-adventure-stardust-crusaders-p2.png" alt="JoJo's Bizarre Adventure">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(3)">
+                        <h2 class="serie-titulo">JoJo's Bizarre Adventure</h2>
+                        <h3 class="serie-subtitulo">Stardust Crusaders Part 2</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Episodios:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>24 / 24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov3" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/jojos-bizarre-adventure-stardust-crusaders-p2.png" alt="JoJo's Bizarre Adventure">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px;text-align:center">Jojo's Bizarre Adventure:<br> Stardust Crusaders Part 2</h2>
+                  <h2 style="margin-top:5px">Jojo's Bizarre Adventure:</h2>
+                  <h3 style="font-size:15px">Stardust Crusaders Part 2</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Anime</p>
                   <p><b>Estudio:</b> David Production</p>
@@ -340,79 +220,40 @@
                   <p><b>Visto hasta:</b> -</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(3)" title="Cerrar">
                 </div>
-              </div>
+            </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/jojos-bizarre-adventure-diamond-is-unbreakable.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        Jojo's Bizarre Adventure:<br>
-                         Diamond is Unbreakable
-                         <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(4)">
-                        </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Episodios</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Episodios Vistos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">39</td>
-                    <td></td>
-                    <td class="info-ep-num">39</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/jojos-bizarre-adventure-diamond-is-unbreakable.png" alt="JoJo's Bizarre Adventure">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(4)">
+                        <h2 class="serie-titulo">JoJo's Bizarre Adventure</h2>
+                        <h3 class="serie-subtitulo">Diamond is Unbreakable</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Episodios:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>39 / 39</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov4" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/jojos-bizarre-adventure-diamond-is-unbreakable.png" alt="JoJo's Bizarre Adventure">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px;text-align:center">Jojo's Bizarre Adventure:<br> Diamond is Unbreakable</h2>
+                  <h2 style="margin-top:5px">Jojo's Bizarre Adventure:</h2>
+                  <h3 style="font-size:15px">Diamond is Unbreakable</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Anime</p>
                   <p><b>Estudio:</b> David Production</p>
@@ -424,79 +265,40 @@
                   <p><b>Visto hasta:</b> -</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(4)" title="Cerrar">
                 </div>
-              </div>
+            </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/jojos-bizarre-adventure-golden-wind.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        Jojo's Bizarre Adventure:<br>
-                         Golden Wind
-                         <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(5)">
-                        </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Episodios</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Episodios Vistos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">39</td>
-                    <td></td>
-                    <td class="info-ep-num">39</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/jojos-bizarre-adventure-golden-wind.png" alt="JoJo's Bizarre Adventure">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(5)">
+                        <h2 class="serie-titulo">JoJo's Bizarre Adventure</h2>
+                        <h3 class="serie-subtitulo">Golden Wind</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Episodios:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>39 / 39</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov5" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/jojos-bizarre-adventure-golden-wind.png" alt="JoJo's Bizarre Adventure">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px;text-align:center">Jojo's Bizarre Adventure:<br> Golden Wind</h2>
+                  <h2 style="margin-top:5px">Jojo's Bizarre Adventure:</h2>
+                  <h3 style="font-size:15px">Golden Wind</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Anime</p>
                   <p><b>Estudio:</b> David Production</p>
@@ -508,79 +310,40 @@
                   <p><b>Visto hasta:</b> 14/09/2021</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(5)" title="Cerrar">
                 </div>
-              </div>
+            </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/jojos-bizarre-adventure-stone-ocean.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        Jojo's Bizarre Adventure:<br>
-                        Stone Ocean
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(6)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Episodios</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Episodios Vistos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">12</td>
-                    <td></td>
-                    <td class="info-ep-num">12</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/jojos-bizarre-adventure-stone-ocean.png" alt="JoJo's Bizarre Adventure">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(6)">
+                        <h2 class="serie-titulo">JoJo's Bizarre Adventure</h2>
+                        <h3 class="serie-subtitulo">Stone Ocean</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Episodios:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>12 / 12</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov6" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/jojos-bizarre-adventure-stone-ocean.png" alt="JoJo's Bizarre Adventure">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px;text-align:center">Jojo's Bizarre Adventure:<br> Stone Ocean</h2>
+                  <h2 style="margin-top:5px">Jojo's Bizarre Adventure:</h2>
+                  <h3 style="font-size:15px">Stone Ocean</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Anime</p>
                   <p><b>Estudio:</b> David Production</p>
@@ -592,79 +355,40 @@
                   <p><b>Visto hasta:</b> 04/12/2021</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(6)" title="Cerrar">
                 </div>
-              </div>
+            </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/jojos-bizarre-adventure-stone-ocean-p2.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        Jojo's Bizarre Adventure:<br> 
-                        Stone Ocean Part 2
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(7)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Episodios</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Episodios Vistos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">12</td>
-                    <td></td>
-                    <td class="info-ep-num">12</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/jojos-bizarre-adventure-stone-ocean-p2.png" alt="JoJo's Bizarre Adventure">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(7)">
+                        <h2 class="serie-titulo">JoJo's Bizarre Adventure</h2>
+                        <h3 class="serie-subtitulo">Stone Ocean Part 2</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Episodios:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>12 / 12</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov7" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/jojos-bizarre-adventure-stone-ocean-p2.png" alt="JoJo's Bizarre Adventure">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px;text-align:center">Jojo's Bizarre Adventure:<br> Stone Ocean Part 2</h2>
+                  <h2 style="margin-top:5px">Jojo's Bizarre Adventure:</h2>
+                  <h3 style="font-size:15px">Stone Ocean Part 2</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Anime</p>
                   <p><b>Estudio:</b> David Production</p>
@@ -676,79 +400,40 @@
                   <p><b>Visto hasta:</b> 01/09/2022</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(7)" title="Cerrar">
                 </div>
-              </div>
+            </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/jojos-bizarre-adventure-stone-ocean-p3.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        Jojo's Bizarre Adventure:<br>
-                         Stone Ocean Part 3
-                         <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(8)">
-                        </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Episodios</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Episodios Vistos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">14</td>
-                    <td></td>
-                    <td class="info-ep-num">14</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/jojos-bizarre-adventure-stone-ocean-p3.png" alt="JoJo's Bizarre Adventure">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(7)">
+                        <h2 class="serie-titulo">JoJo's Bizarre Adventure</h2>
+                        <h3 class="serie-subtitulo">Stone Ocean Part 3</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Episodios:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>14 / 14</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov8" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/jojos-bizarre-adventure-stone-ocean-p3.png" alt="JoJo's Bizarre Adventure">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px;text-align:center">Jojo's Bizarre Adventure:<br> Stone Ocean Part 3</h2>
+                  <h2 style="margin-top:5px;text-align:center">Jojo's Bizarre Adventure:</h2>
+                  <h3 style="font-size:15px">Stone Ocean Part 3</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Anime</p>
                   <p><b>Estudio:</b> David Production</p>
@@ -760,9 +445,8 @@
                   <p><b>Visto hasta:</b> 02/12/2022</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(8)" title="Cerrar">
                 </div>
-              </div>
-
-        </section>
+            </div>
+        </div>
 
     </main>
 
