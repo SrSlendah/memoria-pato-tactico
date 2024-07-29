@@ -525,3 +525,38 @@ th {
     width: 600px;
     height: 50px
 }
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.list-elemento {
+    text-align: center;
+}
+
+.list-imagen img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+}
+
+.list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
