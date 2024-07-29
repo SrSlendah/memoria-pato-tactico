@@ -950,6 +950,77 @@ footer {
     border-radius: 0 20px 0 30px;
 }
 
+.wiki-lista {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.wiki-list-elemento {
+    text-align: center;
+}
+
+.wiki-list-imagen img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+}
+
+.wiki-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+@media (max-width: 1200px) {
+    .lista {
+        grid-template-columns: repeat(4, 200px);
+    }
+}
+
+@media (max-width: 960px) {
+    .lista {
+        grid-template-columns: repeat(3, 200px);
+    }
+}
+
+@media (max-width: 750px) {
+    .lista {
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+
+@media (max-width: 475px) {
+    .lista {
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .list-imagen img {
+        width: 150px !important; /* Reduce aún más el ancho de la imagen */
+        height: 213px !important;
+        height: auto; /* Mantiene la relación de aspecto */
+    }
+
+    .list-titulo {
+        font-size: 0.8rem; /* Reduce aún más el tamaño del texto */
+        width: 150px;
+        padding: 6px; /* Ajusta el padding */
+    }
+}
+
 /* Overlay */
 
 .overlay {
