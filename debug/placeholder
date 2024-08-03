@@ -1,0 +1,23 @@
+
+//* CHANGELOG (AÑADIDO) *\\
+
+    <chng>  
+        <chng-add-icon class="chng-add">[ <i class="fa-solid fa-plus"></i> ]</chng-add-icon>
+        <chng-txt>Se ha agregado <a href="./" class="link">Placeholder</a></chng-txt>
+    </chng>
+
+
+    //* CHANGELOG (EDITADO) *\\
+
+    <chng>
+        <chng-edit-icon class="chng-edit">[ <i class="fa-sharp fa-solid fa-pen"></i> ]</chng-edit-icon>
+        <chng-txt>Se ha actualizado el estado de <a href="./" class="link">Placeholder</a></chng-txt>
+    </chng>
+
+
+    //* CHANGELOG (ELIMINADO) *\\
+
+    <chng> 
+        <chng-dlt-icon class="chng-delete">[ <i class="fas fa-trash"></i> ]</chng-dlt-icon> 
+        <chng-txt>Se han eliminado Placeholder</chng-txt>
+    </chng>
