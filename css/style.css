@@ -378,12 +378,13 @@ th {
         display: none;
     }
   }
+
   @media (max-width: 600px) {
     .contenido-overlay {
         max-width: 350px;
         width: 300px;
     }
-  }
+}
 /* Ir arriba */
 #scroll {
     position: fixed;
@@ -878,9 +879,27 @@ footer {
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 600px) {
     .lista {
         grid-template-columns: repeat(2, 150px);
+    }
+
+    .list-imagen img {
+        width: 150px !important; /* Reduce aún más el ancho de la imagen */
+        height: 150px !important;
+        height: auto; /* Mantiene la relación de aspecto */
+    }
+
+    .list-titulo {
+        font-size: 0.8rem; /* Reduce aún más el tamaño del texto */
+        width: 150px;
+        padding: 6px; /* Ajusta el padding */
+    }
+}
+
+@media (max-width: 450px) {
+    .lista {
+        grid-template-columns: repeat(1, 150px);
     }
 
     .list-imagen img {
