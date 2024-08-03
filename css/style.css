@@ -1037,3 +1037,49 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/* Error 404 */
+
+.center-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+  }
+
+.error-container {
+    text-align: center;
+    background:  #6f3c96;
+    width: 375px;
+    height: 350px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.error-container img {
+    max-width: 100%;
+    width: auto;
+    height: 100px;
+}
+.error-container h1 {
+    color: #fff;
+    font-size: 48px;
+    margin: 20px 0 10px;
+}
+.error-container p {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+.error-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #43245b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.error-container a:hover {
+    background-color: #582f77;
+}
