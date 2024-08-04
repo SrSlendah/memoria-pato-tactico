@@ -17,13 +17,13 @@ h2 {
 }
 
 .link {
-    color: #a964de;
+    color: #bb79ed;
     text-decoration: none;
 }
 
     .link:hover {
         cursor: pointer;
-        color: #A55CDE;
+        color: rgb(204, 155, 242);
         text-decoration: underline;
     }
 
