@@ -20,6 +20,11 @@
 	color:lightgray;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
+
 #toast {
     visibility: hidden;
     min-width: 250px;
