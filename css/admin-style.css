@@ -17,13 +17,13 @@ h2 {
 }
 
 .link {
-    color: #a964de;
+    color: #bb79ed;
     text-decoration: none;
 }
 
     .link:hover {
         cursor: pointer;
-        color: #A55CDE;
+        color: rgb(204, 155, 242);
         text-decoration: underline;
     }
 
@@ -525,3 +525,195 @@ th {
     width: 600px;
     height: 50px
 }
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.list-elemento {
+    text-align: center;
+}
+
+.admin-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.list-imagen img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+}
+
+.list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.lista-sep {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.changelog-lista-info {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.changelog-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 475px);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.changelog-list-text-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    height: 50px;
+    padding: 10px;
+}
+
+.changelog-list-titulo-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0 ;
+    border: 4px solid #4b2866;
+    border-bottom: none;
+    height: 60px;
+    padding: 10px;
+}
+
+.changelog-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0 ;
+    border: 4px solid #4b2866;
+    border-bottom: none;
+    height: 60px;
+    padding: 10px;
+}
+
+.changelog-list-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    height: 200px; /* Altura fija */
+    width: 100%; /* Ancho del contenedor, puedes ajustarlo según sea necesario */
+    padding: 15px;
+    overflow-y: auto; /* Barra de desplazamiento vertical */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño del elemento */
+}
+
+.changelog-list-text::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .changelog-list-text::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  .changelog-list-text::-webkit-scrollbar-thumb {
+    background: #6f3c96;
+    border: 2px solid #4b2866;
+    border-radius: 10px;
+  }
+
+  .changelog-list-text::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.changelog-list-text > a {
+    margin-top: 10px;
+    color: #b077db;
+}
+
+.changelog-list-text > a:hover {
+    color: #8654ac;
+}
+
+chng {
+  display: flex;
+}
+
+chng-txt {
+  flex: 1;
+  overflow-wrap: break-word;
+}
+
+.chng-add {
+    color: rgb(41, 226, 66);
+    margin-right: 10px;
+}
+
+.chng-edit {
+    color: rgb(123, 156, 56);
+    margin-right: 10px;
+}
+
+.chng-delete {
+    color: rgb(161, 39, 39);
+    margin-right: 10px;
+}
+
+@media (max-width: 1550px) {
+    .changelog-lista{
+    grid-template-columns: repeat(2, 450px);
+    }
+}
+
+@media (max-width: 1050px) {
+    .changelog-lista{
+    grid-template-columns: repeat(1, 475px);
+    }
+}
+

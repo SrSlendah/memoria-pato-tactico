@@ -32,6 +32,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: "Iron Man 2", url: '../lista-marvel/iron-man-2' },
     { resultado: "Iron Man 3", url: '../lista-marvel/iron-man-3' },
     { resultado: 'Loki', url: '../lista-marvel/loki' },
+    { resultado: 'Madame Web', url: '../lista-marvel/madame-web' },
     { resultado: "Moon Knight", url: '../lista-marvel/moon-knight' },
     { resultado: 'Shang-Chi y la Leyenda de los Diez Anillos', url: '../lista-marvel/shang-chi-y-la-leyenda-de-los-diez-anillos' },
     { resultado: "Spider-Man", url: '../lista-marvel/spider-man' },

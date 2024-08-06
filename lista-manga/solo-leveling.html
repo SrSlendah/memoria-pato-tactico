@@ -87,71 +87,33 @@
             <button onclick="goTo('anime_sololvl');">Anime</button>
         </div>
 
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/manga/solo-leveling.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        Solo Leveling
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(1)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Volúmenes</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Volúmenes leídos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">0</td>
-                    <td></td>
-                    <td class="info-ep-num">0</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Capítulos</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Capítulos leídos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">201</td>
-                    <td></td>
-                    <td class="info-ep-num">201</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/manga/solo-leveling.png" alt="Solo Leveling">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="serie-titulo">Solo Leveling</h2>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Volúmenes:</strong></p>
+                                <p><strong>Capítulos:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>11 / 11</p>
+                                <p>201 / 201</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov1" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/manga/solo-leveling.png" alt="Solo Leveling">
+                </div>
                 <div class="contenido-overlay">
                   <h2 style="margin-top:5px">Solo Leveling</h2>
                   <hr style="margin-top:15px;margin-bottom:15px;">
@@ -164,9 +126,54 @@
                   <p><b>Leido hasta:</b> 27/09/2023</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
                 </div>
-              </div>
+            </div>
+        </div>
+        
+        <hr class="info-sep">
 
-        </section>
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/manga/solo-leveling-ragnarok.png" alt="Solo Leveling">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(2)">
+                        <h2 class="serie-titulo">Solo Leveling</h2>
+                        <h3 class="serie-subtitulo">Ragnarok</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Volúmenes:</strong></p>
+                                <p><strong>Capítulos:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>0 / ?</p>
+                                <p>13 / ?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="ov2" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/manga/solo-leveling-ragnarok.png" alt="Solo Leveling">
+                </div>
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">Solo Leveling</h2>
+                  <h3 style="font-size:15px">Ragnarok</h3>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Tipo:</b> Manhwa</p>
+                  <p><b>Autor:</b> Daul (Historia), Jin (Arte)</p>
+                  <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                  <p><b>Fecha de Publicación:</b> 31/07/2024 -- ?</p>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Leido desde:</b> 31/07/2024</p>
+                  <p><b>Leido hasta:</b> ?</p>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
+                </div>
+            </div>
+        </div>
 
     </main>
 

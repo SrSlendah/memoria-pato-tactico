@@ -1,15 +1,20 @@
 function GetVersion() {
-    var version = document.getElementById("versiones").value;
-    var elemento = document.getElementById("v" + version);
+    let version = document.getElementById("versiones").value;
+    let elemento = document.getElementById(version);
 
-    // Ocultar todos los elementos con ID que comienza por "v" excepto "#versiones"
-    var elementos = document.querySelectorAll("[id^='v']:not(#versiones)");
-    for (var i = 0; i < elementos.length; i++) {
-        elementos[i].style.display = "none";
+    let elementos = document.querySelectorAll("[id]:not(#versiones)");
+    elementos.forEach(el => {
+        // Verifica si el ID es numérico
+        if (/^\d+$/.test(el.id)) {
+            el.style.display = "none";
+        }
+    });
+
+    if (elemento) {
+        elemento.style.display = "block";
+    } else {
+        console.warn("El elemento con ID '" + version + "' no existe.");
     }
-
-    // Mostrar el elemento seleccionado
-    elemento.style.display = "";
 
     console.log("Se ha recibido el valor " + version);
 }

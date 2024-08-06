@@ -9,8 +9,13 @@ function removeAccents(str) {
 
 function obtenerResultadosConURLs(query) {
   resultadosConURLs = [
+    { resultado: 'Boku no Hero Academia', url: '../lista-manga/boku-no-hero-academia' },
+    { resultado: 'Chainsaw Man', url: '../lista-manga/chainsaw-man' },
     { resultado: 'Genshin Impact', url: '../lista-manga/genshin-impact' },
     { resultado: "Jojo's Bizarre Adventure", url: '../lista-manga/jojos-bizarre-adventure' },
+    { resultado: "Jujutsu Kaisen", url: '../lista-manga/jujutsu-kaisen' },
+    { resultado: "Kaiju No. 8", url: '../lista-manga/kaiju-no-8' },
+    { resultado: 'Made in Abyss', url: '../lista-manga/made-in-abyss' },
     { resultado: 'Nanatsu no Taizai', url: '../lista-manga/nanatsu-no-taizai' },
     { resultado: 'One Piece', url: '../lista-manga/one-piece' },
     { resultado: 'Solo Leveling', url: '../lista-manga/solo-leveling' },

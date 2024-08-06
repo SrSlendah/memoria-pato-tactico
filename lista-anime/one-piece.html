@@ -100,71 +100,32 @@
 
 
     <section id="sec1">
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(1)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Número de Episodios</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Episodios Vistos</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">?</td>
-                    <td></td>
-                    <td class="info-ep-num">1028</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Episodios:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>1112 / ?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov1" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
                   <h2 style="margin-top:5px">One Piece</h2>
                   <hr style="margin-top:15px;margin-bottom:15px;">
@@ -179,78 +140,42 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
     </section>
     <section id="sec2" style="display: none;">
 
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-01.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 01
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(2)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">51:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-01.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(2)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 01</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>51:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov2" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-01.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 01</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 01</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -262,79 +187,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
 
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-02-nejimaki-jima-no-daibouken.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 02:<br>
-                        Nejimaki-jima no Daibouken
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(3)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">55:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-02-nejimaki-jima-no-daibouken.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(3)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 02: Nejimaki-jima no Daibouken</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>55:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov3" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-02-nejimaki-jima-no-daibouken.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 02:<br>Nejimaki-jima no Daibouken</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 02: Nejimaki-jima no Daibouken</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -346,78 +233,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(3)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
         
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-03-chinjuu-jima-no-chopper-oukoku.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 03:<br>Chinjuu-jima no Chopper Oukoku
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(4)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">55:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-03-chinjuu-jima-no-chopper-oukoku.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(4)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 03: Chinjuu-jima no Chopper Oukoku</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>55:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov4" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-03-chinjuu-jima-no-chopper-oukoku.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 03:<br>Chinjuu-jima no Chopper Oukoku</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 03: Chinjuu-jima no Chopper Oukoku</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -429,78 +279,38 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(4)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
         
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-04-dead-end-no-bouken.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 04:<br>Dead End no Bouken
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(5)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">01:35:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-04-dead-end-no-bouken.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(5)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 04: Dead End no Bouken</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>1:35:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov5" class="overlay" style="display: none;">
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 04:<br>Dead End no Bouken</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 04: Dead End no Bouken</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -512,78 +322,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(5)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
         
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-05-norowareta-seiken.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 05:<br>Norowareta Seiken
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(6)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">01:35:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-05-norowareta-seiken.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(6)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 05: Norowareta Seiken</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>1:35:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov6" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-05-norowareta-seiken.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 05:<br>Norowareta Seiken</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 05: Norowareta Seiken</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -595,78 +368,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(6)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
         
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-06-omatsuri-danshaku-to-himitsu-no-shima.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 06:<br><label style="font-size:13px">Omatsuri Danshaku to Himitsu no Shima</label>
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(7)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">01:31:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-06-omatsuri-danshaku-to-himitsu-no-shima.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(7)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 06: Omatsuri Danshaku to Himitsu no Shima</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>1:31:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov7" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-06-omatsuri-danshaku-to-himitsu-no-shima.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 06:<br><label style="font-size: 19px;">Omatsuri Danshaku to Himitsu no Shima</label></h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 06: Omatsuri Danshaku to Himitsu no Shima</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -678,78 +414,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(7)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
         
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-07-karakuri-jou-no-mecha-kyohei.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 07:<br>Karakuri-jou no Mecha Kyohei
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(8)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">01:34:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-07-karakuri-jou-no-mecha-kyohei.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(8)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 07: Karakuri-jou no Mecha Kyohei</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>1:34:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov8" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-07-karakuri-jou-no-mecha-kyohei.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 07:<br>Karakuri-jou no Mecha Kyohei</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 07: Karakuri-jou no Mecha Kyohei</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -761,78 +460,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(8)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
         
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-08-episode-of-alabasta-sabaku-no-oujo-to-kaizoku-tachi.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 08:<br>Episode of Alabasta<br> Sabaku no Oujo to Kaizoku-tachi
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(9)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">01:30:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-08-episode-of-alabasta-sabaku-no-oujo-to-kaizoku-tachi.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(9)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 08: Episode of Alabasta Sabaku no Oujo to Kaizoku-tachi</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>1:30:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov9" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-08-episode-of-alabasta-sabaku-no-oujo-to-kaizoku-tachi.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 08:<br>Episode of Alabasta<br> Sabaku no Oujo to Kaizoku-tachi</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 08: Episode of Alabasta Sabaku no Oujo to Kaizoku-tachi</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -844,78 +506,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(9)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
         
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-09-episode-of-chopper-plus-fuyu-ni-saku-kiseki-no-sakura.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 09:<br>Episode of Chopper Plus<br>Fuyu ni Saku, Kiseki no Sakura
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(10)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">01:53:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-09-episode-of-chopper-plus-fuyu-ni-saku-kiseki-no-sakura.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(10)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 09:  Episode of Chopper Plus Fuyu ni Saku, Kiseki no Sakura</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>1:53:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov10" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-09-episode-of-chopper-plus-fuyu-ni-saku-kiseki-no-sakura.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 09:<br>Episode of Chopper Plus<br>Fuyu ni Saku, Kiseki no Sakura</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 09: Episode of Chopper Plus Fuyu ni Saku, Kiseki no Sakura</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -927,78 +552,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(10)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
         
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-10-strong-world.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 10:<br>Strong World
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(11)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">01:55:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-10-strong-world.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(11)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 10: Strong World</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>1:55:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov11" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-10-strong-world.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 10:<br>Strong World</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 10: Strong World</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -1010,78 +598,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(11)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
         
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-12-z.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 12: Z
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(12)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">01:47:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-12-z.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(12)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 12: Z</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>1:47:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov12" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-12-z.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 12: Z</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 12: Z</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -1093,78 +644,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(12)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
         
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-13-gold.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 13: Gold
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(13)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">02:00:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-13-gold.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(13)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 13: Gold</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>2:00:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov13" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-13-gold.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 13: Gold</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 13: Gold</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -1176,78 +690,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(13)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
         
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-14-stampede.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 14: Stampede
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(14)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">01:41:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-14-stampede.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(14)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 14: Stampede</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>1:41:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov14" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-14-stampede.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 14: Stampede</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 14: Stampede</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -1259,78 +736,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(14)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
         
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-movie-15-red.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece Movie 15: Red
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(15)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">01:55:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-15-red.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(15)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 15: Red</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>1:55:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov15" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-15-red.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece Movie 15: Red</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Movie 15: Red</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -1342,81 +782,47 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(15)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
         </section>
 
     </section>
 
     <section id="sec3" style="display: none;">
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-episode-of-nami-koukaishi-no-namida-to-nakama-no-kizuna.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        One Piece: Episode of Nami<br><label style="font-size:12px">Koukaishi no Namida to Nakama no Kizuna</label>
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(16)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">01:46:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-episode-of-nami-koukaishi-no-namida-to-nakama-no-kizuna.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(16)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Episode of Nami - Koukaishi no Namida to Nakama no Kizuna</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>1:46:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov16" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-episode-of-nami-koukaishi-no-namida-to-nakama-no-kizuna.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece: Episode of Nami<br><label style="font-size:18px">Koukaishi no Namida to Nakama no Kizuna</label></h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Episode of Nami - Koukaishi no Namida to Nakama no Kizuna</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Anime</p>
+                  <p><b>Tipo:</b> Especial</p>
                   <p><b>Estudio:</b> Toei Animation</p>
                   <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
                   <p><b>Fecha de Publicación:</b> 25/08/2012</p>
@@ -1426,79 +832,43 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(16)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-episode-of-east-blue-luffy-to-4nin-no-nakama-no-daibouken.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;font-size:14px">
-                        One Piece: Episode of East Blue<br><label style="font-size:13px">Luffy to 4-nin no Nakama no Daibouken</label>
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(17)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">01:46:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-episode-of-east-blue-luffy-to-4nin-no-nakama-no-daibouken.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(17)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Episode of East Blue - Luffy to 4-nin no Nakama no Daibouken</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>1:46:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov17" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-episode-of-east-blue-luffy-to-4nin-no-nakama-no-daibouken.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece: Episode of East Blue<br><label style="font-size:18px">Luffy to 4-nin no Nakama no Daibouken</label></h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Episode of East Blue - Luffy to 4-nin no Nakama no Daibouken</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Anime</p>
+                  <p><b>Tipo:</b> Especial</p>
                   <p><b>Estudio:</b> Toei Animation</p>
                   <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
                   <p><b>Fecha de Publicación:</b> 26/08/2017</p>
@@ -1508,77 +878,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(17)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
-        <br>
         <hr class="info-sep">
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/one-piece-episode-of-skypiea.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;font-size:15px">
-                        One Piece: Episode of Skypiea</label>
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(18)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">01:45:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-episode-of-skypiea.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(18)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Episode of Skypiea</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>1:45:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov18" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-episode-of-skypiea.png" alt="One Piece">
+                </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece: Episode of Skypiea</h2>
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Episode of Skypiea</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Anime</p>
                   <p><b>Estudio:</b> Toei Animation</p>
@@ -1590,76 +924,41 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(18)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
         </section>
 
     </section>
     <section id="sec4" style="display: none;">
-        <section class="info">
-            <table>
-                <tr>
-                    <td class="info-img" rowspan="10">
-                        <img src="../media/anime/monsters-ippyaku-sanjou-hiryuu-jigoku.png">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th class="info-title" colspan="3" style="position: relative;">
-                        Monsters:<br> Ippyaku Sanjou Hiryuu Jigoku
-                        <img src="../media/icons/info.png" style="width: 17px; height: 17px; position: absolute; top: 5px; right: 5px;" title="Mas Información" onclick="abrirOV(19)">
-                    </th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Duración</th>
-                    <td class="margin"></td>
-                    <th class="info-subtitle">Estado</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="info-ep-num">25:00</td>
-                    <td></td>
-                    <td class="info-ep-num" title="Visto">✔️</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-                
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/monsters-ippyaku-sanjou-hiryuu-jigoku.png" alt="Monsters: Ippyaku Sanjou Hiryuu Jigoku">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(19)">
+                        <h2 class="serie-titulo">Monsters:</h2>
+                        <h3 class="serie-subtitulo">Ippyaku Sanjou Hiryuu Jigoku</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto">✔️</p>
+                                <p>25:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div id="ov19" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/monsters-ippyaku-sanjou-hiryuu-jigoku.png" alt="Monsters: Ippyaku Sanjou Hiryuu Jigoku">
+                </div>
                 <div class="contenido-overlay">
                   <h2 style="margin-top:5px">Monsters:<br> Ippyaku Sanjou Hiryuu Jigoku</label></h2>
                   <hr style="margin-top:15px;margin-bottom:15px;">
@@ -1673,8 +972,8 @@
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(19)" title="Cerrar">
                 </div>
             </div>
+        </div>
 
-        </section>
     </section>
 
     </main>

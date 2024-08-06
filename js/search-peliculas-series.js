@@ -11,7 +11,9 @@ function obtenerResultadosConURLs(query) {
   resultadosConURLs = [
     { resultado: 'Arcane', url: '../lista-peliculas-series/arcane' },
     { resultado: "Death Note: Live Action", url: '../lista-peliculas-series/death-note' },
+    { resultado: 'Dos "Rubias" de Pelo en Pecho', url: '../lista-peliculas-series/dos-rubias-de-pelo-en-pecho' },
     { resultado: 'El Hoyo', url: '../lista-peliculas-series/el-hoyo' },
+    { resultado: "Fallout", url: '../lista-peliculas-series/fallout' },
     { resultado: "Five Nights at Freddy's", url: '../lista-peliculas-series/five-nights-at-freddys' },
     { resultado: 'Harry Potter', url: '../lista-peliculas-series/harry-potter' },
     { resultado: 'Jurassic Park', url: '../lista-peliculas-series/jurassic-park' },
@@ -22,6 +24,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Slenderman', url: '../lista-peliculas-series/slenderman' },
     { resultado: 'Squid Game', url: '../lista-peliculas-series/squid-game' },
     { resultado: 'Stranger Things', url: '../lista-peliculas-series/stranger-things' },
+    { resultado: 'The 8 Show', url: '../lista-peliculas-series/the-8-show' },
     { resultado: 'Viernes 13', url: '../lista-peliculas-series/viernes13' },
   ];
 
