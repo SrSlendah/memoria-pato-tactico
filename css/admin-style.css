@@ -539,7 +539,7 @@ th {
 
 .admin-lista {
     display: grid;
-    grid-template-columns: repeat(1, 200px);
+    grid-template-columns: repeat(2, 200px);
     gap: 20px;
     justify-content: center;
 }
