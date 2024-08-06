@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/memoria-pato-tactico/media/pato.png" type="image/x-icon">
+    <title>Error 404 - Memoria del Pato Táctico</title>
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/memoria-pato-tactico/media/portada.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.error-container {
+    text-align: center;
+    background-color: #884ab86f;
+    border: 6px solid #452260;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 375px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #fff;
+}
+
+p {
+    font-size: 18px;
+    color: #e7e7e7;
+}
+button {
+    background-color: #bc6ef76f;
+    border-color: #6536896f;
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 3px solid #4b2866;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a04edf6f;
+}
+
+
+@media(max-width:500px) {
+    .error-container {
+        width: 330px;
+    }
+    .logo {
+        width: 175px;
+    }
+    h1 {
+        font-size:36px;
+    }
+    
+    p {
+        font-size:16px;
+    }
+    button {
+        font-size:15px;
+    }
+
+}
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <a href="/memoria-pato-tactico/"><img src="/memoria-pato-tactico/media/logo.png" alt="Logo" class="logo"></a>
+        <h1>Error 404</h1>
+        <p>La página a la que intentas acceder no existe</p>
+        <a href="/memoria-pato-tactico/"><button>Volver al Inicio</button></a>
+    </div>
+</body>
+</html>
