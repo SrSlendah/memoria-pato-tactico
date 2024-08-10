@@ -93,48 +93,63 @@
         <script src="../js/search-wiki-bh.js"></script>
         <script src="../js/overlay.js"></script>
 
-        <table style="margin-top:20px;width:50%">
-            <tr>
-                <th colspan="4">Bödvar</th>
-            </tr>
-            <tr>
-                <td style="width:300px" rowspan="3"><img src="../media/wiki/bh/leyendas/pose/bodvar.png" width="300px"></td>
-                <th style="height:30px;width:175px">Precio</th>
-                <th style="width: 175px">Armas</th>
-                <th style="width: 207px">Estadísticas</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:20px"> <b style="font-size:20px">900</b>
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/armas/martillo.png" title="Martillo">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/armas/espada.png" title="Espada">
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
-                    <img src="../media/wiki/bh/leyendas/stats/6.png" title="Fuerza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
-                    <img src="../media/wiki/bh/leyendas/stats/6.png" title="Destreza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
-                    <img src="../media/wiki/bh/leyendas/stats/5.png" title="Defensa">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
-                    <img src="../media/wiki/bh/leyendas/stats/5.png" title="Velocidad">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="secciones" align="center" style="margin-bottom:-60px;margin-top:-22px">
-                        <button id="sec1-btn" onclick="abrirOV(1);">Mas Información</button>
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/leyendas/pose/bodvar.png" alt="Akame ga Kill!">
                     </div>
-                </td>
-            </tr>
-        </table>
+
+                    <div class="leyenda-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="leyenda-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="leyenda-titulo">Bödvar</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Precio:<br><br>
+                                        
+                                        <img src="../media/wiki/bh/armas/martillo.png" title="Martillo">
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:13px;margin-right: 2px;"><b>900<br><br>
+                                        <img src="../media/wiki/bh/armas/espada.png" title="Espada">
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         
+        <div class="leyenda-container" style="margin-top: -60px;">
+            <section class="leyenda">
+                    <div class="leyenda-info">
+                        <h2 class="leyenda-titulo">Estadísticas</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
+                                    <img src="../media/wiki/bh/leyendas/stats/6.webp" title="Fuerza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
+                                    <img src="../media/wiki/bh/leyendas/stats/6.webp" title="Destreza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
+                                    <img src="../media/wiki/bh/leyendas/stats/5.webp" title="Defensa" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
+                                    <img src="../media/wiki/bh/leyendas/stats/5.webp" title="Velocidad" style="width: 165px;">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         <div id="ov1" class="overlay" style="display: none">
             <div class="contenido-overlay" style="width: 750px;height: 600px;">
                 <h2 style="margin-top:-20px">Bödvar</h2>
@@ -187,32 +202,67 @@
             </div>
         </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+        <hr style="width:50%;margin:0 auto;margin-top:10px">
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <h2 align="center" style="margin-top:10px;margin-bottom:10px;">Armas</h2>
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>
-                    Warhammer
-                </th>
-                <th>
-                    Broad Sword
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                        <img src="../media/wiki/bh/leyendas/armas/bodvar_warhammer.png" style="width:200px">
-                </td>
-                <td style="width:300px">
-                        <img src="../media/wiki/bh/leyendas/armas/bodvar_broad-sword.png" style="width:200px">
-                </td>
-            </tr>
-        </table>
+        <section class="wiki-lista dositems">
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+            <div class="wiki-list-elemento">
+                    <div class="wiki-list-imagen"><img src="../media/wiki/bh/leyendas/armas/bodvar_warhammer.png"></div>
+                    <div class="wiki-list-titulo">Warhammer</div>
+            </div>
+            
+            <div class="wiki-list-elemento">
+                    <div class="wiki-list-imagen"><img src="../media/wiki/bh/leyendas/armas/bodvar_broad-sword.png"></div>
+                    <div class="wiki-list-titulo">Broad Sword</div>
+            </div>
 
-        <h2 align="center" style="margin-top:20px">Skins Especiales</h2>
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:10px;margin-bottom:10px;">Skins Especiales</h2>
+
+        <section class="wiki-lista">
+
+            <div class="wiki-list-elemento">
+                <div class="wiki-list-skin-titulo">Metadev Bödvar</div>
+                    <div class="wiki-list-skin-imagen"><img src="../media/wiki/bh/skins/bodvar/metadev-bodvar.png"></div>
+                    <div class="wiki-list-skin-texto">Inobtenible</div>
+            </div>
+            
+            <div class="wiki-list-elemento">
+                <div class="wiki-list-skin-titulo">Asgard Bödvar</div>
+                    <div class="wiki-list-skin-imagen"><img src="../media/wiki/bh/skins/bodvar/asgard-bodvar.png"></div>
+                    <div class="wiki-list-skin-texto"><a href="./collectors-pack" class="wbh-a"><img src="../media/wiki/bh/iconos/collectors.png" title="Mammoth Coins" style="margin-right:5px">Collectors Pack<br></a></div>
+            </div>
+            
+            <div class="wiki-list-elemento">
+                <div class="wiki-list-skin-titulo">Warchief Bödvar</div>
+                    <div class="wiki-list-skin-imagen"><img src="../media/wiki/bh/skins/bodvar/warchief-bodvar.png"></div>
+                    <div class="wiki-list-skin-texto"><a href="./cofre-odin" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre de Odin</a></div>
+            </div>
+            
+            <div class="wiki-list-elemento">
+                <div class="wiki-list-skin-titulo">Draugr Bödvar</div>
+                    <div class="wiki-list-skin-imagen"><img src="../media/wiki/bh/skins/bodvar/draugr-bodvar.png"></div>
+                    <div class="wiki-list-skin-texto"><a href="./cofre-prohibido" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Prohibido</a></div>
+            </div>
+            
+            <div class="wiki-list-elemento">
+                <div class="wiki-list-skin-titulo">Vanir Guardian Bödvar</div>
+                    <div class="wiki-list-skin-imagen"><img src="../media/wiki/bh/skins/bodvar/vanir-guardian-bodvar.png"></div>
+                    <div class="wiki-list-skin-texto"><a href="./pase-batalla3" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Temporada 3</a></div>
+            </div>
+            
+            <div class="wiki-list-elemento">
+                <div class="wiki-list-skin-titulo">Xavier Woods</div>
+                    <div class="wiki-list-skin-imagen epic-skin"><img src="../media/wiki/bh/crossovers/wwe/xavier-woods.png"></div>
+                    <div class="wiki-list-skin-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300</div>
+            </div>
+
+        </section>
 
         <table style="margin-top:10px;width:10%">
             <tr>
