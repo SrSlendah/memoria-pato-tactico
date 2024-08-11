@@ -92,55 +92,92 @@
         <script src="../js/search-wiki-bh.js"></script>
         <script src="../js/overlay.js"></script>
 
-        <table style="margin-top:20px;width:50%">
-            <tr>
-                <th colspan="4">Orion</th>
-            </tr>
-            <tr>
-                <td style="width:300px" rowspan="3"><img src="../media/wiki/bh/leyendas/pose/orion.png" width="300px"></td>
-                <th style="height:30px;width:175px">Precio</th>
-                <th style="width: 175px">Armas</th>
-                <th style="width: 207px">Estadísticas</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:20px"> <b style="font-size:20px">2.300</b>
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/armas/lanza-cohete.png" title="Lanza Cohete">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/armas/lanza.png" title="Lanza">
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
-                    <img src="../media/wiki/bh/leyendas/stats/4.png" title="Fuerza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
-                    <img src="../media/wiki/bh/leyendas/stats/6.png" title="Destreza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
-                    <img src="../media/wiki/bh/leyendas/stats/6.png" title="Defensa">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
-                    <img src="../media/wiki/bh/leyendas/stats/6.png" title="Velocidad">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="secciones" align="center" style="margin-bottom:-60px;margin-top:-22px">
-                        <button id="sec1-btn" onclick="abrirOV(1);">Mas Información</button>
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/leyendas/pose/orion.png" alt="Orion">
                     </div>
-                </td>
-            </tr>
-        </table>
+
+                    <div class="leyenda-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="leyenda-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="leyenda-titulo">Orion</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Precio:<br><br>
+                                        
+                                        <img src="../media/wiki/bh/armas/lanza-cohete.png" title="Lanza Cohete">
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:13px;margin-right: 2px;"><b>2.300<br><br>
+                                        <img src="../media/wiki/bh/armas/lanza.png" title="Lanza">
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         
+        <div class="leyenda-container" style="margin-top: -60px;">
+            <section class="leyenda">
+                    <div class="leyenda-info">
+                        <h2 class="leyenda-titulo">Estadísticas</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
+                                    <img src="../media/wiki/bh/leyendas/stats/4.webp" title="Fuerza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
+                                    <img src="../media/wiki/bh/leyendas/stats/6.webp" title="Destreza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
+                                    <img src="../media/wiki/bh/leyendas/stats/6.webp" title="Defensa" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
+                                    <img src="../media/wiki/bh/leyendas/stats/6.webp" title="Velocidad" style="width: 165px;">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         <div id="ov1" class="overlay" style="display: none">
-            <div class="contenido-overlay" style="width: 750px;height: 545px;">
+            <div class="contenido-overlay" style="width: 750px;height: 600px;">
                 <h2 style="margin-top:-20px">Orion</h2>
                 <h5 style="margin-bottom:-10px;">El Extraño Misterioso</h5>
                 <hr style="margin-top:15px;margin-bottom:15px;">
-                <div class="leyenda-info">
-                    <img class="imagen" src="../media/wiki/bh/leyendas/orion.png" width="350px">
+                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                <section class="leyenda">
+                    <div class="leyenda-elemento">
+                        <div class="leyenda-imagen">
+                            <img src="../media/wiki/bh/leyendas/orion.png" alt="Orion">
+                        </div>
+    
+                        <div class="leyenda-info" style="position: relative;">
+                            <div class="leyenda-details">
+                                <div id="tags">
+                                    <img src="../media/wiki/bh/tags/lanza-cohete.png" title="Lanza Cohete" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/lanza.png" title="Lanza" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/asgardiano.png" title="Asgardiano" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/espacio-exterior.png" title="Espacio Exterior" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/portador-de-sombrero.png" title="Portador de Sombrero" style="width:150px">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </section>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <p style="font-weight: normal;">
                     <ul class="lista">
                         <li>
                             <h2>Nombre Completo</h2>
@@ -148,147 +185,106 @@
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Descripción en tienda</h2>
-                            <p>Una adivinanza envuelta en un enigma envuelto en una armadura de la Batalla Iválica. Aqui se le llama Orion</p>
+                            <p style="font-weight: normal;">Una adivinanza envuelta en un enigma envuelto en una armadura de la Batalla Iválica. Aqui se le llama Orion</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Género</h2>
-                            <p>Masculino</p>
+                            <p style="font-weight: normal;">Masculino</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Especie</h2>
+                            <p style="font-weight: normal;">???</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Nombre de Bot</h2>
-                            <p>Autorion</p>
+                            <p style="font-weight: normal;">Autorion</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Hogar</h2>
-                            <p>???</p>
+                            <p style="font-weight: normal;">???</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Fecha de Publicación</h2>
-                            <p>30/04/2014</p>
+                            <p style="font-weight: normal;">30/04/2014</p>
                         </li>
                     </ul>
-                </div>
-                <hr style="margin-top:15px;margin-bottom:15px;">
-                <div id="tags">
-                    <img src="../media/wiki/bh/tags/lanza-cohete.png" title="Lanza Cohete" style="width:150px">
-                    <img src="../media/wiki/bh/tags/lanza.png" title="Lanza" style="width:150px">
-                    <img src="../media/wiki/bh/tags/asgardiano.png" title="Asgardiano" style="width:150px">
-                    <img src="../media/wiki/bh/tags/espacio-exterior.png" title="Espacio Exterior" style="width:150px">
-                    <img src="../media/wiki/bh/tags/portador-de-sombrero.png" title="Portador de Sombrero" style="width:150px">
-                </div>
-                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                </p>
             </div>
         </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px">Armas</h2>
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>
-                    Armored Attack Rocket
-                </th>
-                <th>
-                    Sunforged Spear
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                        <img src="../media/wiki/bh/leyendas/armas/orion_armored-attack-rocket.png" style="width:200px">
-                </td>
-                <td style="width:300px">
-                        <img src="../media/wiki/bh/leyendas/armas/orion_sunforged-spear.png" style="width:200px">
-                </td>
-            </tr>
-        </table>
+        <section class="wbh-armas-lista">
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+            <div class="wbh-skins-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/leyendas/armas/orion_armored-attack-rocket.png"></div>
+                    <div class="wbh-armas-list-titulo">Armored Attack Rocket</div>
+            </div>
+            
+            <div class="wbh-skins-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/leyendas/armas/orion_sunforged-spear.png"></div>
+                    <div class="wbh-armas-list-titulo">Sunforged Spear</div>
+            </div>
 
-        <h2 align="center" style="margin-top:20px">Skins Especiales</h2>
+        </section>
 
-        <table style="margin-top:10px;width:10%">
-            <tr>
-                <th>
-                    <a href="./metadev">Metadev Orion</a>
-                </th>
-                <th>
-                    <a href="./corsair-orion">Corsair Orion</a>
-                </th>
-                <th>
-                    <a href="./crossfade-orion">Crossfade Orion</a>
-                </th>
-                <th>
-                    <a href="./live-action-orion">Live Action Orion</a>
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="./metadev">
-                        <img src="../media/wiki/bh/skins/orion/metadev-orion.png" style="width:200px">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="./corsair-orion">
-                        <img src="../media/wiki/bh/skins/orion/corsair-orion.png" style="width:200px">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="./crossfade-orion">
-                        <img src="../media/wiki/bh/skins/orion/crossfade-orion.png" style="width:200px">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="./live-action-orion">
-                        <img src="../media/wiki/bh/skins/orion/live-action-orion.png" style="width:200px">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Inobtenible
-                </td>
-                <td>
-                    Exclusiva del<br><a href="./cofre-skysail" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Skysail</a>
-                </td>
-                <td>
-                    Exclusiva del<br><a href="./cofre-brawl-city" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Brawl City</a>
-                </td>
-                <td>
-                    <a href="./pase-batalla8" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Temporada 8</a><br><i>Recompensa de nivel 65</i>
-                </td>
-            </tr>
-        </table>
-        <table style="margin-top:10px;width:10%">
-            <tr>
-                <th>
-                    <a href="./orion-prime">Orion Prime</a>
-                </th>
-                <th>
-                    <a href="./black-knight">Black Knight</a>
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="./orion-prime">
-                        <img src="../media/wiki/bh/skins/orion/orion-prime.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="./black-knight">
-                        <img src="../media/wiki/bh/crossovers/shovel-knight/black-knight.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="./pase-batalla5" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Temporada 5</a><br><i>Recompensa de nivel 85</i>
-                </td>
-                <td>
-                        <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                </td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins Especiales</h2>
+
+        <section class="wbh-skins-lista tresitems">
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./metadev#orion">
+                <div class="wbh-skins-list-titulo">Metadev Orion</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/orion/metadev-orion.png"></div>
+                    <div class="wbh-skins-list-texto">Inobtenible</div>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./corsair-orion">
+                <div class="wbh-skins-list-titulo">Corsair Orion</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/orion/corsair-orion.png"></div>
+                    <div class="wbh-skins-list-texto"><a href="./cofre-skysail" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Skysail</a></div>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./crossfade-orion">
+                <div class="wbh-skins-list-titulo">Crossfade Orion</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/orion/crossfade-orion.png"></div>
+                    <div class="wbh-skins-list-texto"><a href="./cofre-brawl-city" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Brawl City</a></div>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./live-action-orion">
+                <div class="wbh-skins-list-titulo">Live Action Orion</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/orion/live-action-orion.png"></div>
+                    <div class="wbh-skins-list-texto"><a href="./pase-batalla8#pagina9" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Temporada 8</a></div>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./orion-prime">
+                <div class="wbh-skins-list-titulo">Orion Prime</div>
+                    <div class="wbh-skins-list-imagen epic-skin"><img src="../media/wiki/bh/skins/orion/orion-prime.png"></div>
+                    <div class="wbh-skins-list-texto"><a href="./pase-batalla5#pagina11" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Temporada 5</a></div>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./black-knight">
+                <div class="wbh-skins-list-titulo">Black Knight</div>
+                    <div class="wbh-skins-list-imagen epic-skin"><img src="../media/wiki/bh/crossovers/shovel-knight/black-knight.png"></div>
+                    <div class="wbh-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300</div>
+                </a>
+            </div>
+
+        </section>
 
     </main>
 

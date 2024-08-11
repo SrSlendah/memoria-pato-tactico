@@ -270,6 +270,9 @@ function showSection(sectionNumber) {
     if (window.location.hash === "#pagina9") {
         showSec9();
     }
+    if (window.location.hash === "#pagina11") {
+        showSec11();
+    }
 });
 
 window.addEventListener("hashchange", function() {
@@ -305,5 +308,8 @@ window.addEventListener("hashchange", function() {
   }
   if (window.location.hash === "#pagina9") {
       showSec9();
+  }
+  if (window.location.hash === "#pagina11") {
+      showSec11();
   }
 });
