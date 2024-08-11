@@ -167,6 +167,7 @@ details {
     align-items: center;
     justify-content: center;
     z-index: 9999;
+    overflow-y: auto; 
   }
   
   .contenido-overlay {
@@ -178,7 +179,62 @@ details {
     color:#e0e0e0;
     border: 3px solid #4b2866;
     text-shadow: 1px 1px 0 #4b2866, -1px -1px 0 #4b2866, 1px -1px 0 #4b2866, -1px 1px 0 #4b2866;
+    overflow-y: auto; 
   }
+  
+  .contenido-overlay::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .contenido-overlay::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  .contenido-overlay::-webkit-scrollbar-thumb {
+    background: #5e337f;
+    border: 2px solid #4b2866;
+    border-radius: 10px;
+  }
+
+  .contenido-overlay::-webkit-scrollbar-thumb:hover {
+    background: #8146ae;
+  }
+
+  @media screen and (max-width:800px) {
+    .contenido-overlay {
+        max-width: 600px;
+        width: 600px;
+        max-height: 600px;
+        height: 600px;
+        overflow-y: auto; 
+    }
+
+    .leyenda-elemento {
+        max-width: 550px;
+    }
+
+   .leyenda-info {
+        max-width: 250px;
+    }
+  }
+  @media screen and (max-width:650px) {
+    .contenido-overlay {
+        max-width: 400px;
+        width: 400px;
+        max-height: 600px;
+        height: 600px;
+        overflow-y: auto; 
+    }
+}
+@media screen and (max-width:450px) {
+  .contenido-overlay {
+      max-width: 350px;
+      width: 350px;
+      max-height: 600px;
+      height: 600px;
+      overflow-y: auto; 
+  }
+}
   
   .menu-overlay {
     position: fixed;
@@ -226,18 +282,6 @@ details {
 #tags img {
     max-width: 150px;
 }
-
-
-.wbh-a {
-    color: #a964de;
-    text-decoration: none;
-}
-
-    .wbh-a:hover {
-        cursor: pointer;
-        color: #A55CDE;
-        text-decoration: underline;
-    }
 
 /* Buscador */
 .search-container {
@@ -1175,6 +1219,10 @@ th {
     justify-content: center;
 }
 
+.unitem {
+    grid-template-columns: repeat(1, 200px);
+}
+
 .dositems {
     grid-template-columns: repeat(2, 200px);
 }
@@ -1192,9 +1240,16 @@ th {
 
 .epic-skin {
     background-image: url(../media/wiki/bh/epic.png);
-    background-size: 94%;
+    background-size: 95%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 80% center;
+}
+
+.mythic-skin {
+    background-image: url(../media/wiki/bh/mythic.png);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: 80% center;
 }
 
 .wiki-list-skin-imagen img {
@@ -1222,7 +1277,35 @@ th {
     margin-top: -5px;
 }
 
-.wiki-list-skin-titulo {
+.wbh-skins-lista {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1150px) {
+    .wbh-skins-lista { grid-template-columns: repeat(4, 200px); }
+}
+@media screen and (max-width: 900px) {
+    .wbh-skins-lista { grid-template-columns: repeat(3, 200px); }
+}
+@media screen and (max-width: 700px) {
+    .wbh-skins-lista { grid-template-columns: repeat(2, 200px); }
+}
+
+.wbh-skins-list-elemento {
+    text-align: center;
+}
+
+.wbh-skins-list-imagen img {
+    width: 100%;
+    height: 200px;
+    margin-top: -4px;
+    border: 4px solid #4b2866;
+}
+
+.wbh-skins-list-titulo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1239,7 +1322,7 @@ th {
     margin-top: -5px;
 }
 
-.wiki-list-skin-texto {
+.wbh-skins-list-texto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1254,3 +1337,52 @@ th {
     padding: 10px;
     margin-top: -5px;
 }
+
+.wbh-armas-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.wbh-armas-list-elemento {
+    text-align: center;
+}
+
+.wbh-armas-list-imagen img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+}
+
+.wbh-armas-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+
+
+
+.wbh-a {
+    color: #a964de;
+    text-decoration: none;
+}
+
+    .wbh-a:hover {
+        cursor: pointer;
+        color: #A55CDE;
+        text-decoration: underline;
+    }

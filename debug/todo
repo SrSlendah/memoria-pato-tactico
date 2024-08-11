@@ -10,3 +10,40 @@ modos de juego
 collectors pack
 cheat sheets
 ranked
+
+
+
+                <div class="leyenda-info">
+                    <img class="imagen" src="../media/wiki/bh/leyendas/bodvar.png" width="350px">
+                    <ul class="lista">
+                        <li>
+                            <h2>Nombre Completo</h2>
+                            <p>Bödvar Bearson</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Descripción en tienda</h2>
+                            <p>Convencido de que nunca caería en batalla, Bödvar el Bearson derribó las puertas del Valhalla y entró</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Género</h2>
+                            <p>Masculino</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Especie</h2>
+                            <p>Medio-Oso, Humano</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Nombre de Bot</h2>
+                            <p>Bötvar</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Hogar</h2>
+                            <p>???</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Fecha de Publicación</h2>
+                            <p>30/04/2014</p>
+                        </li>
+                    </ul>
+                </div>
+                <hr style="margin-top:15px;margin-bottom:15px;">

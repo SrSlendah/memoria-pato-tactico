@@ -915,6 +915,9 @@ footer {
     }
 }
 
+.unitem {
+    grid-template-columns: repeat(1, 200px);
+}
 
 /* Estilos básicos para la cuadrícula con 1 elemento por fila */
 .serie {

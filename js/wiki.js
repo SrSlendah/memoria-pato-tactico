@@ -234,3 +234,76 @@ function showSection(sectionNumber) {
   function showSec12() {
     showSection(12);
   }
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.hash === "#orion") {
+        showSec1();
+    }
+    if (window.location.hash === "#brynn") {
+        showSec2();
+    }
+    if (window.location.hash === "#ember") {
+        showSec3();
+    }
+    if (window.location.hash === "#bodvar") {
+        showSec4();
+    }
+    if (window.location.hash === "#asuri") {
+        showSec5();
+    }
+    if (window.location.hash === "#fait") {
+        showSec6();
+    }
+    if (window.location.hash === "#barraza") {
+        showSec7();
+    }
+    if (window.location.hash === "#teros") {
+        showSec8();
+    }
+    if (window.location.hash === "#val") {
+        showSec9();
+    }
+    if (window.location.hash === "#otros") {
+        showSec10();
+    }
+    if (window.location.hash === "#pagina9") {
+        showSec9();
+    }
+});
+
+window.addEventListener("hashchange", function() {
+  if (window.location.hash === "#orion") {
+      showSec1();
+  }
+  if (window.location.hash === "#brynn") {
+      showSec2();
+  }
+  if (window.location.hash === "#ember") {
+      showSec3();
+  }
+  if (window.location.hash === "#bodvar") {
+      showSec4();
+  }
+  if (window.location.hash === "#asuri") {
+      showSec5();
+  }
+  if (window.location.hash === "#fait") {
+      showSec6();
+  }
+  if (window.location.hash === "#barraza") {
+      showSec7();
+  }
+  if (window.location.hash === "#teros") {
+      showSec8();
+  }
+  if (window.location.hash === "#val") {
+      showSec9();
+  }
+  if (window.location.hash === "#otros") {
+      showSec10();
+  }
+  if (window.location.hash === "#pagina9") {
+      showSec9();
+  }
+});
