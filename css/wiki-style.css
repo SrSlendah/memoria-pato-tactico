@@ -733,11 +733,11 @@ footer {
 
 /* SECCIONES */
 
-.secciones > button {
+.secciones button {
     color: #fff;
     background-color: #6f3c96;
     padding: 10px 10px;
-    border-radius: 50px;
+    border-radius: 20px;
     border: 3px solid #4b2866;
     background-color: #6f3c96;
     margin-bottom: 35px;
@@ -1108,14 +1108,10 @@ th {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.leyenda-dropped {
-    width: 50px; 
-    height: 50px; 
-    position: absolute; 
-    bottom: 0px; 
-    left: 0px; 
-    background-color:#4b2866; 
-    border-radius: 0 20px 0 10px;
+.leyenda-logo img {
+    border-radius: 15px;
+    border: 4px solid #4b2866;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 .leyenda-info {
@@ -1252,6 +1248,10 @@ th {
     background-position: 80% center;
 }
 
+.epic-skin img, .mythic-skin img {
+    padding: 15px;
+}
+
 .wiki-list-skin-imagen img {
     width: 100%;
     height: 200px;
@@ -1338,6 +1338,69 @@ th {
     margin-top: -5px;
 }
 
+.wbh-emoji-lista {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .wbh-emoji-lista { grid-template-columns: repeat(4, 150px); }
+}
+@media screen and (max-width: 800px) {
+    .wbh-emoji-lista { grid-template-columns: repeat(3, 150px); }
+}
+@media screen and (max-width: 600px) {
+    .wbh-emoji-lista { grid-template-columns: repeat(2, 150px); }
+}
+
+.wbh-emoji-list-elemento {
+    text-align: center;
+}
+
+.wbh-emoji-list-imagen img {
+    width: 150px;
+    height: 150px;
+    margin-top: -4px;
+    border: 4px solid #4b2866;
+}
+
+.wbh-emoji-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    width: 150px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.wbh-emoji-list-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    font-size: 15px;
+    height: 80px;
+    width: 150px;
+    padding: 10px;
+}
+
 .wbh-armas-lista {
     display: grid;
     grid-template-columns: repeat(2, 200px);
@@ -1374,7 +1437,89 @@ th {
 }
 
 
+.metadev-titulos-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 5px;
+    justify-content: center;
+}
 
+.metadev-titulos-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0 ;
+    border: 4px solid #4b2866;
+    border-bottom: none;
+    height: 60px;
+    padding: 10px;
+}
+
+.metadev-titulos-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 0 0;
+    border: 4px solid #4b2866;
+    height: 75px;
+    padding: 10px;
+}
+
+.metadev-titulos-text-abajo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    height: 75px;
+    padding: 10px;
+}
+
+@media screen and (max-width:730px){
+    .metadev-titulos-lista {
+        grid-template-columns: repeat(2, 250px);
+    }
+    .metadev-titulos-titulo, .metadev-titulos-text, .metadev-titulos-text-abajo {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .metadev-titulos-lista {
+        grid-template-columns: repeat(2, 200px);
+    }
+    .metadev-titulos-titulo, .metadev-titulos-text, .metadev-titulos-text-abajo {
+        width: 200px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:475px){
+    .metadev-titulos-lista {
+        grid-template-columns: repeat(2, 150px);
+    }
+    .metadev-titulos-titulo, .metadev-titulos-text, .metadev-titulos-text-abajo {
+        width: 150px;
+        font-size: 12px;
+    }
+}
 
 .wbh-a {
     color: #a964de;
