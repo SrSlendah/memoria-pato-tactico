@@ -64,6 +64,7 @@ a {
 .leyenda-info {
     display: flex; /* Establece el contenedor como un contenedor flexible */
     align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    min-width: 300px;
 }
 
 /* Estilo para la imagen a la izquierda */
@@ -1271,6 +1272,11 @@ th {
     padding: 5px;
     width: 135px;
     margin-top:15px
+}
+
+.steam-logo img:hover {
+    background-color: rgb(124, 67, 167);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width:750px) {
