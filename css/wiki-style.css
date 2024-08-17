@@ -1208,6 +1208,186 @@ th {
     }
 }
 
+.wbh-collectors-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.wbh-collectors-list-elemento {
+    text-align: center;
+}
+
+.wbh-collectors-info {
+    display: flex;
+    background-color: #6f3c96;
+    padding: 17px;
+    border: 4px solid #4b2866;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    height: 175px;
+    color: #fff;
+}
+
+.wbh-collectors-list-imagen img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 20px 0;
+    border: 4px solid #4b2866;
+}
+
+.wbh-collectors-list-imagen-principal img {
+    width: 100%;
+    height: 175px;
+    border-radius: 20px 20px 20px 20px;
+    border: 4px solid #4b2866;
+}
+
+.wbh-collectors-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.steam-logo img {
+    border-radius: 15px;
+    border: 4px solid #4b2866;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    width: 135px;
+    margin-top:15px
+}
+
+@media screen and (max-width:750px) {
+    .wbh-collectors-lista { grid-template-columns: repeat(1, 350px); }
+    .wbh-collectors-list-imagen img { height:175px }
+}
+
+
+.wbh-collectors-recompensas {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.wbh-collectors-recompensas-elemento {
+    text-align: center;
+}
+
+.wbh-collectors-recompensas-imagen img {
+    width: 100%;
+    height: 200px;
+    margin-top: -4px;
+    border: 4px solid #4b2866;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+}
+
+.wbh-collectors-recompensas-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+    border-radius: 0 0 20px 20px ;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .wbh-collectors-recompensas { grid-template-columns: repeat(4, 200px); }
+}
+@media screen and (max-width: 900px) {
+    .wbh-collectors-recompensas { grid-template-columns: repeat(3, 200px); }
+}
+@media screen and (max-width: 700px) {
+    .wbh-collectors-recompensas { grid-template-columns: repeat(2, 200px); }
+}
+@media screen and (max-width: 450px) {
+    .wbh-collectors-recompensas { grid-template-columns: repeat(2, 175px); }
+
+    .wbh-collectors-recompensas-imagen img { height: 175px; }
+}
+
+
+
+.wbh-collectors-asgardian {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.wbh-collectors-asgardian-elemento {
+    text-align: center;
+}
+
+.wbh-collectors-asgardian-imagen img {
+    width: 100%;
+    height: 200px;
+    margin-top: -4px;
+    border: 4px solid #4b2866;
+    padding: 15px;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.wbh-collectors-asgardian-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+    border-radius: 0 0 20px 20px ;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .wbh-collectors-asgardian { grid-template-columns: repeat(4, 200px); }
+}
+@media screen and (max-width: 900px) {
+    .wbh-collectors-asgardian { grid-template-columns: repeat(3, 200px); }
+}
+@media screen and (max-width: 700px) {
+    .wbh-collectors-asgardian { grid-template-columns: repeat(2, 200px); }
+}
+
+@media screen and (max-width: 450px) {
+    .wbh-collectors-asgardian { grid-template-columns: repeat(2, 175px); }
+
+    .wbh-collectors-asgardian-imagen img { height: 175px; }
+}
+
 
 .wiki-lista {
     display: grid;
@@ -1579,5 +1759,20 @@ th {
     .wbh-a:hover {
         cursor: pointer;
         color: #A55CDE;
+        text-decoration: underline;
+    }
+
+.wbh-a-nocolor:hover {
+    cursor: pointer;
+}
+
+.wbh-a-light {
+    color: #d8b6f2;
+    text-decoration: none;
+}
+
+    .wbh-a-light:hover {
+        cursor: pointer;
+        color: #c497e6;
         text-decoration: underline;
     }
