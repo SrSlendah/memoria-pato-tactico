@@ -1160,19 +1160,13 @@ footer {
   
   @media (max-width: 475px) {
       .leyendas-lista {
-          grid-template-columns: repeat(2, 150px);
+          grid-template-columns: repeat(2, 175px);
       }
   
       .leyendas-list-imagen img {
-          width: 150px !important; /* Reduce aún más el ancho de la imagen */
-          height: 213px !important;
-          height: auto; /* Mantiene la relación de aspecto */
-      }
-  
-      .leyendas-list-titulo {
-          font-size: 0.8rem; /* Reduce aún más el tamaño del texto */
-          width: 150px;
-          padding: 6px; /* Ajusta el padding */
+          width: 175px ;
+          height: 175px;
+          height: auto;
       }
   }
 

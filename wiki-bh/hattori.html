@@ -93,55 +93,92 @@
         <script src="../js/search-wiki-bh.js"></script>
         <script src="../js/overlay.js"></script>
 
-        <table style="margin-top:20px;width:50%">
-            <tr>
-                <th colspan="4">Hattori</th>
-            </tr>
-            <tr>
-                <td style="width:300px" rowspan="3"><img src="../media/wiki/bh/leyendas/pose/hattori.png" width="300px"></td>
-                <th style="height:30px;width:175px">Precio</th>
-                <th style="width: 175px">Armas</th>
-                <th style="width: 207px">Estadísticas</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:20px"> <b style="font-size:20px">2.300</b>
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/armas/espada.png" title="Espada">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/armas/lanza.png" title="Lanza">
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
-                    <img src="../media/wiki/bh/leyendas/stats/4.png" title="Fuerza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
-                    <img src="../media/wiki/bh/leyendas/stats/6.png" title="Destreza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
-                    <img src="../media/wiki/bh/leyendas/stats/4.png" title="Defensa">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
-                    <img src="../media/wiki/bh/leyendas/stats/8.png" title="Velocidad">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="secciones" align="center" style="margin-bottom:-60px;margin-top:-22px">
-                        <button id="sec1-btn" onclick="abrirOV(1);">Mas Información</button>
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/leyendas/pose/hattori.png" alt="Hattori">
                     </div>
-                </td>
-            </tr>
-        </table>
+
+                    <div class="leyenda-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="leyenda-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="leyenda-titulo">Hattori</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Precio:<br><br>
+                                        
+                                        <img src="../media/wiki/bh/armas/espada.png" title="Espada">
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:13px;margin-right: 2px;"><b>2.300<br><br>
+                                        <img src="../media/wiki/bh/armas/lanza.png" title="Lanza">
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         
+        <div class="leyenda-container" style="margin-top: -60px;">
+            <section class="leyenda">
+                    <div class="leyenda-info">
+                        <h2 class="leyenda-titulo">Estadísticas</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
+                                    <img src="../media/wiki/bh/leyendas/stats/4.webp" title="Fuerza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
+                                    <img src="../media/wiki/bh/leyendas/stats/6.webp" title="Destreza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
+                                    <img src="../media/wiki/bh/leyendas/stats/4.webp" title="Defensa" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
+                                    <img src="../media/wiki/bh/leyendas/stats/8.webp" title="Velocidad" style="width: 165px;">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         <div id="ov1" class="overlay" style="display: none">
-            <div class="contenido-overlay" style="width: 750px;height: 540px;">
-                <h2 style="margin-top:-20px">Hattori</h2>
+            <div class="contenido-overlay" style="width: 750px;height: 600px;">
+                <h2 style="margin-top:-20px">Hatori</h2>
                 <h5 style="margin-bottom:-10px;">Novia Demoniaca</h5>
                 <hr style="margin-top:15px;margin-bottom:15px;">
-                <div class="leyenda-info">
-                    <img class="imagen" src="../media/wiki/bh/leyendas/hattori.png" width="350px">
+                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                <section class="leyenda">
+                    <div class="leyenda-elemento">
+                        <div class="leyenda-imagen">
+                            <img src="../media/wiki/bh/leyendas/hattori.png" alt="Hattori">
+                        </div>
+    
+                        <div class="leyenda-info" style="position: relative;">
+                            <div class="leyenda-details">
+                                <div id="tags">
+                                    <img src="../media/wiki/bh/tags/espada.png" title="Espada" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/lanza.png" title="Lanza" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/ganador-2c2-bcx.png" title="Ganador de 2c2 del BCX" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/bot-bot.png" title="Bot «Bot»" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/top-3-1c1-bcx.png" title="Top 3 de 1c1 del BCX" style="width:150px">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </section>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <p style="font-weight: normal;">
                     <ul class="lista">
                         <li>
                             <h2>Nombre Completo</h2>
@@ -149,148 +186,106 @@
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Descripción en tienda</h2>
-                            <p>Una novia demoniaca y legendaria. La venganza arde en sus venas. Es demasiado tarde para correr</p>
+                            <p style="font-weight: normal;">Una novia demoniaca y legendaria. La venganza arde en sus venas. Es demasiado tarde para correr</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Género</h2>
-                            <p>Femenino</p>
+                            <p style="font-weight: normal;">Femenino</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Especie</h2>
+                            <p style="font-weight: normal;">Humano</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Nombre de Bot</h2>
-                            <p>Bottori</p>
+                            <p style="font-weight: normal;">Bottori</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Hogar</h2>
-                            <p>???</p>
+                            <p style="font-weight: normal;">???</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Fecha de Publicación</h2>
-                            <p>26/08/2014</p>
+                            <p style="font-weight: normal;">26/08/2014</p>
                         </li>
                     </ul>
-                </div>
-                <hr style="margin-top:15px;margin-bottom:15px;">
-                <div id="tags">
-                    <img src="../media/wiki/bh/tags/espada.png" title="Espada" style="width:150px">
-                    <img src="../media/wiki/bh/tags/lanza.png" title="Lanza" style="width:150px">
-                    <img src="../media/wiki/bh/tags/ganador-2c2-bcx.png" title="Ganador de 2c2 del BCX" style="width:150px">
-                    <img src="../media/wiki/bh/tags/bot-bot.png" title="Bot «Bot»" style="width:150px">
-                    <img src="../media/wiki/bh/tags/top-3-1c1-bcx.png" title="Top 3 de 1c1 del BCX" style="width:150px">
-                </div>
-                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                </p>
             </div>
         </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px">Armas</h2>
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>
-                    Katana
-                </th>
-                <th>
-                    Yari
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/leyendas/armas/hattori_katana.png" style="width:200px">
-                </td>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/leyendas/armas/hattori_yari.png" style="width:200px">
-                </td>
-            </tr>
-        </table>
+        <section class="wbh-armas-lista">
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+            <div class="wbh-skins-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/leyendas/armas/hattori_katana.png"></div>
+                    <div class="wbh-armas-list-titulo">Katana</div>
+            </div>
+            
+            <div class="wbh-skins-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/leyendas/armas/hattori_yari.png"></div>
+                    <div class="wbh-armas-list-titulo">Yari</div>
+            </div>
 
-        <h2 align="center" style="margin-top:20px">Skins Especiales</h2>
+        </section>
 
-        <table style="margin-top:10px;width:10%">
-            <tr>
-                <th>
-                    <a href="./death-adder-hattori">Death Adder Hattori</a>
-                </th>
-                <th>
-                    <a href="./sidewinder-hattori">Sidewinder Hattori</a>
-                </th>
-                <th>
-                    <a href="./neostreet-hattori">Neostreet Hattori</a>
-                </th>
-                <th>
-                    <a href="./akuma-no-kogo-hattori">Akuma no Kogo Hattori</a>
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="./death-adder-hattori">
-                        <img src="../media/wiki/bh/skins/hattori/death-adder-hattori.png" style="width:200px">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="./sidewinder-hattori">
-                        <img src="../media/wiki/bh/skins/hattori/sidewinder-hattori.png" style="width:200px">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="./neostreet-hattori">
-                        <img src="../media/wiki/bh/skins/hattori/neostreet-hattori.png" style="width:200px">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="./akuma-no-kogo-hattori">
-                        <img src="../media/wiki/bh/skins/hattori/akuma-no-kogo-hattori.webp" style="width:200px;background-image:url(../media/wiki/bh/epic.png);padding:15px">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Exclusiva del<br><a href="./cofre-imperial" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Imperial</a>
-                </td>
-                <td>
-                    Exclusiva del<br><a href="./cofre-bandido" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Bandido</a>
-                </td>
-                <td>
-                    <a href="./pase-batalla8" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Temporada 8</a><br><i>Recompensa de nivel 50</i>
-                </td>
-                <td>
-                    <a href="./pase-batalla1" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Temporada 1</a><br><i>Recompensa de nivel 85</i>
-                </td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:10px;width:10%">
-            <tr>
-                <th>
-                    <a href="./john-cena">John Cena</a>
-                </th>
-                <th>
-                    <a href="./zuko">Zuko</a>
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="./john-cena">
-                        <img src="../media/wiki/bh/crossovers/wwe/john-cena.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="./zuko">
-                        <img src="../media/wiki/bh/crossovers/avatar/zuko.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                </td>
-            </tr>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins Especiales</h2>
+
+        <section class="wbh-skins-lista">
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./death-adder-hattori">
+                <div class="wbh-skins-list-titulo">Death Adder Hattori</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/hattori/death-adder-hattori.png"></div>
+                    <a href="./cofre-imperial"><div class="wbh-skins-list-texto wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Imperial</div></a>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./sidewinder-hattori">
+                <div class="wbh-skins-list-titulo">Sidewinder Hattori</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/hattori/sidewinder-hattori.png"></div>
+                    <a href="./cofre-bandido"><div class="wbh-skins-list-texto wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Bandido</div></a>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./neostreet-hattori">
+                <div class="wbh-skins-list-titulo">Neostreet Hattori</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/hattori/neostreet-hattori.png"></div>
+                    <a href="./pase-batalla8#pagina7"><div class="wbh-skins-list-texto wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Nivel 50 - [T8]</div></a>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./akuma-no-kogo-hattori">
+                <div class="wbh-skins-list-titulo">Akuma no Kogo Hattori</div>
+                    <div class="wbh-skins-list-imagen epic-skin"><img src="../media/wiki/bh/skins/hattori/akuma-no-kogo-hattori.webp"></div>
+                    <a href="./pase-batalla1#pagina11"><div class="wbh-skins-list-texto wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Nivel 85 - [T1]</div></a>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./john-cena">
+                <div class="wbh-skins-list-titulo">John Cena</div>
+                    <div class="wbh-skins-list-imagen epic-skin"><img src="../media/wiki/bh/crossovers/wwe/john-cena.png"></div>
+                    <div class="wbh-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./zuko">
+                <div class="wbh-skins-list-titulo">Zuko</div>
+                    <div class="wbh-skins-list-imagen epic-skin"><img src="../media/wiki/bh/crossovers/avatar/zuko.png"></div>
+                    <div class="wbh-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
+
+        </section>
 
     </main>
 

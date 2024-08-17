@@ -267,8 +267,35 @@ function showSection(sectionNumber) {
     if (window.location.hash === "#otros") {
         showSec10();
     }
+    if (window.location.hash === "#pagina1") {
+        showSec1();
+    }
+    if (window.location.hash === "#pagina2") {
+        showSec2();
+    }
+    if (window.location.hash === "#pagina3") {
+        showSec3();
+    }
+    if (window.location.hash === "#pagina4") {
+        showSec4();
+    }
+    if (window.location.hash === "#pagina5") {
+        showSec5();
+    }
+    if (window.location.hash === "#pagina6") {
+        showSec6();
+    }
+    if (window.location.hash === "#pagina7") {
+        showSec7();
+    }
+    if (window.location.hash === "#pagina8") {
+        showSec8();
+    }
     if (window.location.hash === "#pagina9") {
         showSec9();
+    }
+    if (window.location.hash === "#pagina10") {
+        showSec10();
     }
     if (window.location.hash === "#pagina11") {
         showSec11();
@@ -306,8 +333,35 @@ window.addEventListener("hashchange", function() {
   if (window.location.hash === "#otros") {
       showSec10();
   }
+  if (window.location.hash === "#pagina1") {
+      showSec1();
+  }
+  if (window.location.hash === "#pagina2") {
+      showSec2();
+  }
+  if (window.location.hash === "#pagina3") {
+      showSec3();
+  }
+  if (window.location.hash === "#pagina4") {
+      showSec4();
+  }
+  if (window.location.hash === "#pagina5") {
+      showSec5();
+  }
+  if (window.location.hash === "#pagina6") {
+      showSec6();
+  }
+  if (window.location.hash === "#pagina7") {
+      showSec7();
+  }
+  if (window.location.hash === "#pagina8") {
+      showSec8();
+  }
   if (window.location.hash === "#pagina9") {
       showSec9();
+  }
+  if (window.location.hash === "#pagina10") {
+      showSec10();
   }
   if (window.location.hash === "#pagina11") {
       showSec11();

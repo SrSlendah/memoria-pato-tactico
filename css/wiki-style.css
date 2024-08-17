@@ -1216,14 +1216,6 @@ th {
     justify-content: center;
 }
 
-.unitem {
-    grid-template-columns: repeat(1, 200px);
-}
-
-.dositems {
-    grid-template-columns: repeat(2, 200px);
-}
-
 .wiki-list-elemento {
     text-align: center;
 }
@@ -1281,14 +1273,20 @@ th {
     justify-content: center;
 }
 
-@media screen and (max-width: 1150px) {
-    .wbh-skins-lista { grid-template-columns: repeat(4, 200px); }
+.unitem {
+    grid-template-columns: repeat(1, 200px);
 }
-@media screen and (max-width: 900px) {
-    .wbh-skins-lista { grid-template-columns: repeat(3, 200px); }
+
+.dositems {
+    grid-template-columns: repeat(2, 200px);
 }
-@media screen and (max-width: 700px) {
-    .wbh-skins-lista { grid-template-columns: repeat(2, 200px); }
+
+.tresitems {
+    grid-template-columns: repeat(3, 200px);
+}
+
+.cuatroitems {
+    grid-template-columns: repeat(4, 200px);
 }
 
 .wbh-skins-list-elemento {
@@ -1334,6 +1332,55 @@ th {
     height: 50px;
     padding: 10px;
     margin-top: -5px;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .wbh-skins-lista { grid-template-columns: repeat(4, 200px); }
+
+    .unitem { grid-template-columns: repeat(1, 200px); }
+    
+    .dositems { grid-template-columns: repeat(2, 200px); }
+
+    .tresitems { grid-template-columns: repeat(3, 200px); }
+
+    .cuatroitems { grid-template-columns: repeat(4, 200px); }
+}
+@media screen and (max-width: 900px) {
+    .wbh-skins-lista { grid-template-columns: repeat(3, 200px); }
+
+    .unitem { grid-template-columns: repeat(1, 200px); }
+    
+    .dositems { grid-template-columns: repeat(2, 200px); }
+    
+    .tresitems { grid-template-columns: repeat(3, 200px); }
+
+    .cuatroitems { grid-template-columns: repeat(3, 200px); }
+}
+@media screen and (max-width: 700px) {
+    .wbh-skins-lista { grid-template-columns: repeat(2, 200px); }
+
+    .unitem { grid-template-columns: repeat(1, 200px); }
+    
+    .dositems { grid-template-columns: repeat(2, 200px); }
+    
+    .tresitems { grid-template-columns: repeat(2, 200px); }
+
+    .cuatroitems { grid-template-columns: repeat(2, 200px); }
+}
+
+@media screen and (max-width: 450px) {
+    .wbh-skins-lista { grid-template-columns: repeat(2, 175px); }
+
+    .unitem { grid-template-columns: repeat(1, 175px); }
+    
+    .dositems { grid-template-columns: repeat(2, 175px); }
+    
+    .tresitems { grid-template-columns: repeat(2, 175px); }
+
+    .cuatroitems { grid-template-columns: repeat(2, 175px); }
+
+    .wbh-skins-list-imagen img { height: 175px; }
 }
 
 .wbh-emoji-lista {
@@ -1432,6 +1479,11 @@ th {
     height: 60px;
     padding: 10px;
     margin-top: -5px;
+}
+
+@media screen and (max-width:450px) {
+    .wbh-armas-lista { grid-template-columns: repeat(2, 175px); }
+    .wbh-armas-list-imagen img { height:175px }
 }
 
 

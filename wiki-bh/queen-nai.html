@@ -84,7 +84,6 @@
 
     </header>
 
-
     <main>
         <div class="search-container">
           <input type="text" id="search-input" placeholder="Buscar en la wiki de Brawlhalla...">
@@ -94,55 +93,91 @@
         <script src="../js/search-wiki-bh.js"></script>
         <script src="../js/overlay.js"></script>
 
-        <table style="margin-top:20px;width:50%">
-            <tr>
-                <th colspan="4">Queen Nai</th>
-            </tr>
-            <tr>
-                <td style="width:300px" rowspan="3"><img src="../media/wiki/bh/leyendas/pose/queen-nai.png" width="300px"></td>
-                <th style="height:30px;width:175px">Precio</th>
-                <th style="width: 175px">Armas</th>
-                <th style="width: 207px">Estadísticas</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:20px"> <b style="font-size:20px">2.300</b>
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/armas/lanza.png" title="Lanza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/armas/katars.png" title="Katars">
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
-                    <img src="../media/wiki/bh/leyendas/stats/7.png" title="Fuerza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
-                    <img src="../media/wiki/bh/leyendas/stats/4.png" title="Destreza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
-                    <img src="../media/wiki/bh/leyendas/stats/8.png" title="Defensa">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
-                    <img src="../media/wiki/bh/leyendas/stats/3.png" title="Velocidad">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="secciones" align="center" style="margin-bottom:-60px;margin-top:-22px">
-                        <button id="sec1-btn" onclick="abrirOV(1);">Mas Información</button>
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/leyendas/pose/queen-nai.png" alt="Queen Nai">
                     </div>
-                </td>
-            </tr>
-        </table>
+
+                    <div class="leyenda-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="leyenda-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="leyenda-titulo">Queen Nai</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Precio:<br><br>
+                                        
+                                        <img src="../media/wiki/bh/armas/lanza.png" title="Lanza">
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:13px;margin-right: 2px;"><b>2.300<br><br>
+                                        <img src="../media/wiki/bh/armas/katars.png" title="Katars">
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         
+        <div class="leyenda-container" style="margin-top: -60px;">
+            <section class="leyenda">
+                    <div class="leyenda-info">
+                        <h2 class="leyenda-titulo">Estadísticas</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
+                                    <img src="../media/wiki/bh/leyendas/stats/7.webp" title="Fuerza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
+                                    <img src="../media/wiki/bh/leyendas/stats/4.webp" title="Destreza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
+                                    <img src="../media/wiki/bh/leyendas/stats/8.webp" title="Defensa" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
+                                    <img src="../media/wiki/bh/leyendas/stats/3.webp" title="Velocidad" style="width: 165px;">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         <div id="ov1" class="overlay" style="display: none">
-            <div class="contenido-overlay" style="width: 750px;height: 505px;">
+            <div class="contenido-overlay" style="width: 750px;height: 600px;">
                 <h2 style="margin-top:-20px">Queen Nai</h2>
                 <h5 style="margin-bottom:-10px;">La Reina del Jaguar</h5>
                 <hr style="margin-top:15px;margin-bottom:15px;">
-                <div class="leyenda-info">
-                    <img class="imagen" src="../media/wiki/bh/leyendas/queen-nai.png" width="350px">
+                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                <section class="leyenda">
+                    <div class="leyenda-elemento">
+                        <div class="leyenda-imagen">
+                            <img src="../media/wiki/bh/leyendas/queen-nai.png" alt="Queen Nai">
+                        </div>
+    
+                        <div class="leyenda-info" style="position: relative;">
+                            <div class="leyenda-details">
+                                <div id="tags">
+                                    <img src="../media/wiki/bh/tags/lanza.png" title="Lanza" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/katars.png" title="Katars" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/usuario-magico.png" title="Usuario Mágico" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/portador-de-sombrero.png" title="Portador de Sombrero" style="width:150px">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </section>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <p style="font-weight: normal;">
                     <ul class="lista">
                         <li>
                             <h2>Nombre Completo</h2>
@@ -150,116 +185,90 @@
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Descripción en tienda</h2>
-                            <p>La Reina del Jaguar tiene sus propios planes para el Valhalla y el Ragnarok es solo el principio</p>
+                            <p style="font-weight: normal;">La Reina del Jaguar tiene sus propios planes para el Valhalla y el Ragnarok es solo el principio</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Género</h2>
-                            <p>Femenino</p>
+                            <p style="font-weight: normal;">Femenino</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Especie</h2>
+                            <p style="font-weight: normal;">Humano</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Nombre de Bot</h2>
-                            <p>Naiborg</p>
+                            <p style="font-weight: normal;">Naiborg</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Hogar</h2>
-                            <p>El Reino Jaguar</p>
+                            <p style="font-weight: normal;">El Reino Jaguar</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Fecha de Publicación</h2>
-                            <p>10/07/2014</p>
+                            <p style="font-weight: normal;">10/07/2014</p>
                         </li>
                     </ul>
-                </div>
-                <hr style="margin-top:15px;margin-bottom:15px;">
-                <div id="tags">
-                    <img src="../media/wiki/bh/tags/lanza.png" title="Lanza" style="width:150px">
-                    <img src="../media/wiki/bh/tags/katars.png" title="Katars" style="width:150px">
-                    <img src="../media/wiki/bh/tags/usuario-magico.png" title="Usuario Mágico" style="width:150px">
-                    <img src="../media/wiki/bh/tags/portador-de-sombrero.png" title="Portador de Sombrero" style="width:150px">
-                </div>
-                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                </p>
             </div>
         </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px">Armas</h2>
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>
-                    Serpent Spear
-                </th>
-                <th>
-                    Sacred Blades
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/leyendas/armas/queen-nai_serpent-spear.png" style="width:200px">
-                </td>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/leyendas/armas/queen-nai_sacred-blades.png" style="width:200px">
-                </td>
-            </tr>
-        </table>
+        <section class="wbh-armas-lista">
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+            <div class="wbh-skins-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/leyendas/armas/queen-nai_serpent-spear.png"></div>
+                    <div class="wbh-armas-list-titulo">Serpent Spear</div>
+            </div>
+            
+            <div class="wbh-skins-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/leyendas/armas/queen-nai_sacred-blades.png"></div>
+                    <div class="wbh-armas-list-titulo">Sacred Blades</div>
+            </div>
 
-        <h2 align="center" style="margin-top:20px">Skins Especiales</h2>
+        </section>
 
-        <table style="margin-top:10px;width:10%">
-            <tr>
-                <th>
-                    <a href="./winged-serpent-nai">Winged Serpent Nai</a>
-                </th>
-                <th>
-                    <a href="./nidhogg-nai">Nidhogg Nai</a>
-                </th>
-                <th>
-                    <a href="./high-priestess-nai">High Priestess Nai</a>
-                </th>
-                <th>
-                    <a href="./asuka">Asuka</a>
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                        <a href="./winged-serpent-nai">
-                            <img src="../media/wiki/bh/skins/queen-nai/winged-serpent-nai.png" style="width:200px">
-                        </a>
-                </td>
-                <td style="width:300px">
-                        <a href="./nidhogg-nai">
-                            <img src="../media/wiki/bh/skins/queen-nai/nidhogg-nai.png" style="width:200px">
-                        </a>
-                </td>
-                <td style="width:300px">
-                        <a href="./high-priestess-nai">
-                            <img src="../media/wiki/bh/skins/queen-nai/high-priestess-nai.png" style="width:200px">
-                        </a>
-                </td>
-                <td style="width:300px">
-                        <a href="./asuka">
-                            <img src="../media/wiki/bh/crossovers/wwe/asuka.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                        </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Exclusiva del<br><a href="./cofre-ancestral" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Ancestral</a>
-                </td>
-                <td>
-                    Exclusiva del<br><a href="./cofre-ragnarok" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Ragnarok</a>
-                </td>
-                <td>
-                    <a href="./pase-batalla4" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Temporada 4</a><br><i>Recompensa de nivel 47</i>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                </td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px">Skins Especiales</h2>
+
+        <section class="wbh-skins-lista cuatroitems">
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./winged-serpent-nai">
+                <div class="wbh-skins-list-titulo">Winged Serpent Nai</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/queen-nai/winged-serpent-nai.png"></div>
+                    <a href="./cofre-ancestral"><div class="wbh-skins-list-texto wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Ancestral</div></a>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./nidhogg-nai">
+                <div class="wbh-skins-list-titulo">Nidhogg Nai</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/queen-nai/nidhogg-nai.png"></div>
+                    <a href="./cofre-ragnarok"><div class="wbh-skins-list-texto wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Ragnarok</div></a>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./high-priestess-nai">
+                <div class="wbh-skins-list-titulo">High Priestess Nai</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/queen-nai/high-priestess-nai.png"></div>
+                    <a href="./pase-batalla4#pagina6"><div class="wbh-skins-list-texto wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Nivel 47 - [T4]</div></a>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./asuka">
+                <div class="wbh-skins-list-titulo">Asuka</div>
+                    <div class="wbh-skins-list-imagen epic-skin"><img src="../media/wiki/bh/crossovers/wwe/asuka.png"></div>
+                    <div class="wbh-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
+
+        </section>
 
     </main>
 
