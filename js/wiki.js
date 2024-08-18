@@ -367,3 +367,17 @@ window.addEventListener("hashchange", function() {
       showSec11();
   }
 });
+
+// Cambio de imagen (Skin eivor)
+function cambiar() {
+  var imagen = document.getElementById("eivor-foto");
+  var generoTexto = document.getElementById("eivor-genero");
+
+  if (imagen.src.includes("eivor-female.png")) {
+      imagen.src = "../media/wiki/bh/crossovers/assassins-creed/eivor-male.png";
+      generoTexto.textContent = "(Male)";
+  } else {
+      imagen.src = "../media/wiki/bh/crossovers/assassins-creed/eivor-female.png";
+      generoTexto.textContent = "(Female)";
+  }
+}

@@ -64,7 +64,7 @@ a {
 .leyenda-info {
     display: flex; /* Establece el contenedor como un contenedor flexible */
     align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
-    min-width: 300px;
+    min-width: 325px;
 }
 
 /* Estilo para la imagen a la izquierda */
@@ -208,6 +208,10 @@ details {
         max-height: 600px;
         height: 600px;
         overflow-y: auto; 
+    }
+    
+    .contenido-overlay .leyenda-info {
+        min-width: 200px;
     }
 
     .leyenda-elemento {
@@ -1152,6 +1156,24 @@ th {
     width: 100%;
 }
 
+#tags::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  #tags::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  #tags::-webkit-scrollbar-thumb {
+    background: #5e337f;
+    border: 2px solid #4b2866;
+    border-radius: 10px;
+  }
+
+  #tags::-webkit-scrollbar-thumb:hover {
+    background: #8146ae;
+  }
+
 .leyenda-masinfo {
     width: 17px; 
     height: 17px; 
@@ -1175,6 +1197,18 @@ th {
 .leyenda-details-labels p, .leyenda-details-values p {
     margin: 3px 0;
     color: white;
+}
+
+.gender-change-img {
+    position: absolute !important;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    background: rgba(94, 51, 127, 0.8);;
+    width:50px !important;
+    height:50px !important;
+    padding:2px !important;
+    border-radius: 0px 15px 0px 15px !important;
 }
 
 @media (max-width: 750px) {
