@@ -6,12 +6,6 @@ function goTo(string) {
         window.location.href = "wiki/wiki-bh"
     }
 
-
-
-
-
-
-
 // Manga
 
     if (string == 'manga_bnha') {
@@ -100,15 +94,4 @@ function goTo(string) {
     if (string == 'lps_deathnote') {
         window.location.href = "../lista-peliculas-series/death-note"
     };
-
-//Wiki Brawlhalla
-
-    if (string == 'wbh_collectors') {
-        window.open('https://store.steampowered.com/app/298641/Brawlhalla__Collectors_Pack/', '_blank')
-    };
-
-    if (string == 'wbh_yetee') {
-        window.open('https://theyetee.com/collections/brawlhalla', '_blank')
-    };
-
 }

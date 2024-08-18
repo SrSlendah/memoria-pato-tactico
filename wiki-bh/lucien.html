@@ -93,163 +93,177 @@
         <script src="../js/search-wiki-bh.js"></script>
         <script src="../js/overlay.js"></script>
 
-        <table style="margin-top:20px;width:50%">
-            <tr>
-                <th colspan="4">Lucien</th>
-            </tr>
-            <tr>
-                <td style="width:300px" rowspan="3"><img src="../media/wiki/bh/leyendas/pose/lucien.png" width="300px"></td>
-                <th style="height:30px;width:175px">Precio</th>
-                <th style="width: 175px">Armas</th>
-                <th style="width: 207px">Estadísticas</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:20px"> <b style="font-size:20px">2.300</b>
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/armas/katars.png" title="Katars">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/armas/pistolas.png" title="Pistolas">
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
-                    <img src="../media/wiki/bh/leyendas/stats/3.png" title="Fuerza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
-                    <img src="../media/wiki/bh/leyendas/stats/5.png" title="Destreza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
-                    <img src="../media/wiki/bh/leyendas/stats/6.png" title="Defensa">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
-                    <img src="../media/wiki/bh/leyendas/stats/8.png" title="Velocidad">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="secciones" align="center" style="margin-bottom:-60px;margin-top:-22px">
-                        <button id="sec1-btn" onclick="abrirOV(1);">Mas Información</button>
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/leyendas/pose/lucien.png" alt="Lucien">
                     </div>
-                </td>
-            </tr>
-        </table>
+
+                    <div class="leyenda-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="leyenda-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="leyenda-titulo">Lucien</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Precio:<br><br>
+                                        
+                                        <img src="../media/wiki/bh/armas/katars.png" title="Katars">
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:13px;margin-right: 2px;"><b>2.300<br><br>
+                                        <img src="../media/wiki/bh/armas/pistolas.png" title="Pistolas">
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         
+        <div class="leyenda-container" style="margin-top: -60px;">
+            <section class="leyenda">
+                    <div class="leyenda-info">
+                        <h2 class="leyenda-titulo">Estadísticas</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
+                                    <img src="../media/wiki/bh/leyendas/stats/3.webp" title="Fuerza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
+                                    <img src="../media/wiki/bh/leyendas/stats/5.webp" title="Destreza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
+                                    <img src="../media/wiki/bh/leyendas/stats/6.webp" title="Defensa" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
+                                    <img src="../media/wiki/bh/leyendas/stats/8.webp" title="Velocidad" style="width: 165px;">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         <div id="ov1" class="overlay" style="display: none">
-            <div class="contenido-overlay" style="width: 750px;height: 525px;">
+            <div class="contenido-overlay" style="width: 750px;height: 600px;">
                 <h2 style="margin-top:-20px">Lucien</h2>
                 <h5 style="margin-bottom:-10px;">Highwayman</h5>
                 <hr style="margin-top:15px;margin-bottom:15px;">
-                <div class="leyenda-info">
-                    <img class="imagen" src="../media/wiki/bh/leyendas/lucien.png" width="350px">
+                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                <section class="leyenda">
+                    <div class="leyenda-elemento">
+                        <div class="leyenda-imagen">
+                            <img src="../media/wiki/bh/leyendas/lucien.png" alt="Lucien">
+                        </div>
+    
+                        <div class="leyenda-info" style="position: relative;">
+                            <div class="leyenda-details">
+                                <div id="tags">
+                                    <img src="../media/wiki/bh/tags/katars.png" title="Katars" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/pistolas.png" title="Pistolas" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/ganador-1c1-bcx.png" title="Ganador de 1c1 del BCX" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/batavia.png" title="Batavia" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/portador-de-sombrero.png" title="Portador de Sombrero" style="width:150px">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </section>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <p style="font-weight: normal;">
                     <ul class="lista">
                         <li>
                             <h2>Nombre Completo</h2>
-                            <p>Count Lucien Degas</p>
+                            <p style="font-weight: normal;">Count Lucien Degas</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Descripción en tienda</h2>
-                            <p>Highwayman roba a los ricos. Y a los pobres. Y especialmente a los recién muertos</p>
+                            <p style="font-weight: normal;">Highwayman roba a los ricos. Y a los pobres. Y especialmente a los recién muertos</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Género</h2>
-                            <p>Masculino</p>
+                            <p style="font-weight: normal;">Masculino</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Especie</h2>
+                            <p style="font-weight: normal;">Humano</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Nombre de Bot</h2>
-                            <p>Loose Ion</p>
+                            <p style="font-weight: normal;">Loose Ion</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Hogar</h2>
-                            <p>???</p>
+                            <p style="font-weight: normal;">???</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Fecha de Publicación</h2>
-                            <p>09/01/2015</p>
+                            <p style="font-weight: normal;">09/01/2015</p>
                         </li>
                     </ul>
-                </div>
-                <hr style="margin-top:15px;margin-bottom:15px;">
-                <div id="tags">
-                    <img src="../media/wiki/bh/tags/katars.png" title="Katars" style="width:150px">
-                    <img src="../media/wiki/bh/tags/pistolas.png" title="Pistolas" style="width:150px">
-                    <img src="../media/wiki/bh/tags/ganador-1c1-bcx.png" title="Ganador de 1c1 del BCX" style="width:150px">
-                    <img src="../media/wiki/bh/tags/batavia.png" title="Batavia" style="width:150px">
-                    <img src="../media/wiki/bh/tags/portador-de-sombrero.png" title="Portador de Sombrero" style="width:150px">
-                </div>
-                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                </p>
             </div>
         </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>
-                    Assassin's Blades
-                </th>
-                <th>
-                    Highwayman's Flintlocks
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/leyendas/armas/lucien_assassins-blades.png" style="width:200px">
-                </td>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/leyendas/armas/lucien_highwaymans-flintlocks.png" style="width:200px">
-                </td>
-            </tr>
-        </table>
-    </main>
+        <section class="wbh-armas-lista">
 
-    <hr style="width:50%;margin:0 auto;margin-top:35px">
+            <div class="wbh-skins-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/leyendas/armas/lucien_assassins-blades.png"></div>
+                    <div class="wbh-armas-list-titulo">Assassin's Blades</div>
+            </div>
+            
+            <div class="wbh-skins-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/leyendas/armas/lucien_highwaymans-flintlocks.png"></div>
+                    <div class="wbh-armas-list-titulo">Highwayman's Flintlocks</div>
+            </div>
 
-    <h2 align="center" style="margin-top:20px">Skins Especiales</h2>
+        </section>
 
-    <table style="margin-top:10px;width:10%">
-        <tr>
-            <th>
-                <a href="./dreadnought-lucien">Dreadnought Lucien</a>
-            </th>
-            <th>
-                <a href="./overdrive-lucien">Overdrive Lucien</a>
-            </th>
-            <th>
-                <a href="./nina-williams">Nina Williams</a>
-            </th>
-        </tr>
-        <tr>
-            <td style="width:300px">
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins Especiales</h2>
+
+        <section class="wbh-skins-lista tresitems">
+            
+            <div class="wbh-skins-list-elemento">
                 <a href="./dreadnought-lucien">
-                    <img src="../media/wiki/bh/skins/lucien/dreadnought-lucien.png" style="width:200px;">
+                <div class="wbh-skins-list-titulo">Dreadnought Lucien</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/lucien/dreadnought-lucien.png"></div>
+                    <a href="./cofre-hundido"><div class="wbh-skins-list-texto wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Hundido</div></a>
                 </a>
-            </td>
-            <td style="width:300px">
-                <a href="./overdrive-lucien">
-                    <img src="../media/wiki/bh/skins/lucien/overdrive-lucien.png" style="width:200px;">
+            </div>
+            
+            <div class="wbh-skins-list-elemento">
+                <a href="./stormsteel-sentinel">
+                <div class="wbh-skins-list-titulo">Overdrive Lucien</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/lucien/overdrive-lucien.png"></div>
+                    <a href="./cofre-synthwave"><div class="wbh-skins-list-texto wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Synthwave</div></a>
                 </a>
-            </td>
-            <td style="width:300px">
+            </div>
+            
+            <div class="wbh-skins-list-elemento">
                 <a href="./nina-williams">
-                    <img src="../media/wiki/bh/crossovers/tekken/nina-williams.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png);padding:15px">
+                <div class="wbh-skins-list-titulo">Nina Williams</div>
+                    <div class="wbh-skins-list-imagen epic-skin"><img src="../media/wiki/bh/crossovers/tekken/nina-williams.png"></div>
+                    <div class="wbh-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
                 </a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Exclusiva del<br><a href="./cofre-hundido" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Hundido</a>
-            </td>
-            <td>
-                Exclusiva del<br><a href="./cofre-synthwave" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Synthwave</a>
-            </td>
-            <td>
-                <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-            </td>
-        </tr>
-    </table>
+            </div>
+
+        </section>
+
+    </main>
 
 
 
