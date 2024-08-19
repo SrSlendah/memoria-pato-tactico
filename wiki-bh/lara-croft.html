@@ -93,118 +93,63 @@
       
         <script src="../js/search-wiki-bh.js"></script>
         
-        <div class="secciones" align="center" style="margin-bottom: -50px;">
-            <button id="sec1-btn" onclick="showSec1();" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Lara Croft</button>
-            <button id="sec2-btn" onclick="showSec2();">Survivor Lara Croft</button>
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen epic-skin" style="position: relative;">
+                        <img src="../media/wiki/bh/crossovers/tomb-raider/lara-croft.png" id="laracroft-foto" style="padding: 25px;">
+                        <img src="../media/wiki/bh/iconos/change.png" id="cambiar-imagen" class="change-img" onclick="cambiar('laracroft')" alt="Cambiar Imagen">
+                    </div>
+
+                    <div class="leyenda-info" style="position: relative;">
+                        <h2 class="leyenda-titulo" id="laracroft-nombre">Lara Croft</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Precio:<br>
+                                        Crossover:<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300<br>
+                                    <a href="../wiki-bh/tomb-raider" class="wbh-a-light"><img src="../media/wiki/bh/iconos/bh.png" alt="Crossover" style="width:15px;margin-right:5px">Tomb Raider</a><br><br>
+                                    <a href="../wiki-bh/diana" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/diana.png" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
-<section id="sec1">
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: -10px;">
+            <h4>La compra de esta skin incluye a "Survivor Lara Croft" y sus respectivas skins de arma</h4>
+        </div>
 
-        <table style="margin-top:40px;width:35%">
-            <tr>
-                <th colspan="5">Lara Croft</th>
-            </tr>
-            <tr>
-                <td style="width:250px" rowspan="2"><img src="../media/wiki/bh/crossovers/tomb-raider/lara-croft.png" style="background-image:url(../media/wiki/bh/epic.png);width:200px"></td>
-                <th style="height:30px;width:100px">Precio</th>
-                <th style="width: 100px">Leyenda</th>
-                <th style="width: 100px">Adquisición</th>
-                <th style="width: 180px">Crossover</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="width:20px"> <b style="font-size:20px">300</b>
-                </td>
-                <td>
-                    <a href="../wiki-bh/diana"><img src="../media/wiki/bh/leyendas/logos/diana.png" title="Diana" style="width:75px"></a>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/tienda.png" alt="Tienda" style="width:15px;margin-right:5px">Tienda<br>
-                </td>
-                <td>
-                    <a href="../wiki-bh/tomb-raider" style="color:#A55CDE" title="Tomb Raider" class="wbh-a"><img src="../media/wiki/bh/iconos/bh.png" alt="Crossover" style="width:15px;margin-right:5px">Tomb Raider</a><br>
-                </td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <section class="wbh-armas-lista">
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>
-                    Lara's Bow
-                </th>
-                <th>
-                    Dual Pistols
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/crossovers/tomb-raider/armas/lara-croft_laras-bow.png" style="width:200px">
-                </td>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/crossovers/tomb-raider/armas/lara-croft_dual-pistols.png" style="width:200px">
-                </td>
-            </tr>
-        </table>
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/crossovers/tomb-raider/armas/lara-croft_laras-bow.png" style="padding:10px;" id="laracroft-arma1-foto"></div>
+                    <div class="wbh-armas-list-titulo" id="laracroft-arma1-nombre">Lara's Bow</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/crossovers/tomb-raider/armas/lara-croft_dual-pistols.png" style="padding:10px;" id="laracroft-arma2-foto"></div>
+                    <div class="wbh-armas-list-titulo" id="laracroft-arma2-nombre">Dual Pistols</div>
+            </div>
 
-    </section>
-    
-        <section id="sec2" style="display: none;">
-    
-            <table style="margin-top:40px;width:35%">
-                <tr>
-                    <th colspan="5">Survivor Lara Croft</th>
-                </tr>
-                <tr>
-                    <td style="width:250px" rowspan="2"><img src="../media/wiki/bh/crossovers/tomb-raider/survivor-lara-croft.png" style="background-image:url(../media/wiki/bh/epic.png);width:200px"></td>
-                    <th style="height:30px;width:100px">Precio</th>
-                    <th style="width: 100px">Leyenda</th>
-                    <th style="width: 100px">Adquisición</th>
-                    <th style="width: 180px">Crossover</th>
-                </tr>
-                <tr>
-                    <td>
-                        Incluido con Lara Croft
-                    </td>
-                    <td>
-                        <a href="../wiki-bh/diana"><img src="../media/wiki/bh/leyendas/logos/diana.png" title="Diana" style="width:75px"></a>
-                    </td>
-                    <td>
-                        <img src="../media/wiki/bh/iconos/tienda.png" alt="Tienda" style="width:15px;margin-right:5px">Tienda<br>
-                    </td>
-                    <td>
-                        <a href="../wiki-bh/tomb-raider" style="color:#A55CDE" title="Tomb Raider" class="wbh-a"><img src="../media/wiki/bh/iconos/bh.png" alt="Crossover" style="width:15px;margin-right:5px">Tomb Raider</a><br>
-                    </td>
-                </tr>
-            </table>
-
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
-
-        <h2 align="center" style="margin-top:20px">Armas</h2>
-
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>
-                    Recurve Bow
-                </th>
-                <th>
-                    Tactical Pistols
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/crossovers/tomb-raider/armas/survivor-lara-croft_recurve-bow.png" style="width:200px">
-                </td>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/crossovers/tomb-raider/armas/survivor-lara-croft_tactical-pistols.png" style="width:200px">
-                </td>
-            </tr>
-        </table>
-    
         </section>
+
 
     </main>
 

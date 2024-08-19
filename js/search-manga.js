@@ -16,6 +16,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: "Jujutsu Kaisen", url: '../lista-manga/jujutsu-kaisen' },
     { resultado: "Kaiju No. 8", url: '../lista-manga/kaiju-no-8' },
     { resultado: 'Made in Abyss', url: '../lista-manga/made-in-abyss' },
+    { resultado: 'Megami Ibunroku: Persona', url: '../lista-manga/megami-ibunroku-persona' },
     { resultado: 'Nanatsu no Taizai', url: '../lista-manga/nanatsu-no-taizai' },
     { resultado: 'One Piece', url: '../lista-manga/one-piece' },
     { resultado: 'Solo Leveling', url: '../lista-manga/solo-leveling' },

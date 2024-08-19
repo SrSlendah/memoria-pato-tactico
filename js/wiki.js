@@ -368,16 +368,41 @@ window.addEventListener("hashchange", function() {
   }
 });
 
-// Cambio de imagen (Skin eivor)
-function cambiar() {
-  var imagen = document.getElementById("eivor-foto");
-  var generoTexto = document.getElementById("eivor-genero");
+// Cambio de skin
+function cambiar(skin) {
+  if (skin === "eivor") {
+    var imagen = document.getElementById("eivor-foto");
+    var generoTexto = document.getElementById("eivor-genero");
 
-  if (imagen.src.includes("eivor-female.png")) {
+    if (imagen.src.includes("eivor-female.png")) {
       imagen.src = "../media/wiki/bh/crossovers/assassins-creed/eivor-male.png";
       generoTexto.textContent = "(Male)";
-  } else {
+    } else {
       imagen.src = "../media/wiki/bh/crossovers/assassins-creed/eivor-female.png";
       generoTexto.textContent = "(Female)";
+    }
+  } else if (skin === "laracroft") {
+    var imagen = document.getElementById("laracroft-foto");
+    var nombreTexto = document.getElementById("laracroft-nombre");
+    var arma1img = document.getElementById("laracroft-arma1-foto");
+    var arma1nombre = document.getElementById("laracroft-arma1-nombre");
+    var arma2img = document.getElementById("laracroft-arma2-foto");
+    var arma2nombre = document.getElementById("laracroft-arma2-nombre");
+
+    if (imagen.src.includes("/lara-croft.png")) {
+      imagen.src = "../media/wiki/bh/crossovers/tomb-raider/survivor-lara-croft.png";
+      nombreTexto.textContent = "Survivor Lara Croft";
+      arma1img.src = "../media/wiki/bh/crossovers/tomb-raider/armas/survivor-lara-croft_recurve-bow.png";
+      arma1nombre.textContent = "Recurve Bow";
+      arma2img.src = "../media/wiki/bh/crossovers/tomb-raider/armas/survivor-lara-croft_tactical-pistols.png";
+      arma2nombre.textContent = "Tactical Pistols";
+    } else {
+      imagen.src = "../media/wiki/bh/crossovers/tomb-raider/lara-croft.png";
+      nombreTexto.textContent = "Lara Croft";
+      arma1img.src = "../media/wiki/bh/crossovers/tomb-raider/armas/lara-croft_laras-bow.png";
+      arma1nombre.textContent = "Lara's Bow";
+      arma2img.src = "../media/wiki/bh/crossovers/tomb-raider/armas/lara-croft_dual-pistols.png";
+      arma2nombre.textContent = "Dual Pistols";
+    }
   }
 }

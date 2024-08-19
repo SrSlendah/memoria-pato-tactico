@@ -93,164 +93,176 @@
         <script src="../js/search-wiki-bh.js"></script>
         <script src="../js/overlay.js"></script>
 
-        <table style="margin-top:20px;width:50%">
-            <tr>
-                <th colspan="4">Ulgrim</th>
-            </tr>
-            <tr>
-                <td style="width:300px" rowspan="3"><img src="../media/wiki/bh/leyendas/pose/ulgrim.png" width="300px"></td>
-                <th style="height:30px;width:175px">Precio</th>
-                <th style="width: 175px">Armas</th>
-                <th style="width: 207px">Estadísticas</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:20px"> <b style="font-size:20px">5.400</b>
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/armas/hacha.png" title="Hacha">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/armas/lanza-cohete.png" title="Lanza Cohete">
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
-                    <img src="../media/wiki/bh/leyendas/stats/6.png" title="Fuerza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
-                    <img src="../media/wiki/bh/leyendas/stats/3.png" title="Destreza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
-                    <img src="../media/wiki/bh/leyendas/stats/7.png" title="Defensa">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
-                    <img src="../media/wiki/bh/leyendas/stats/6.png" title="Velocidad">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="secciones" align="center" style="margin-bottom:-60px;margin-top:-22px">
-                        <button id="sec1-btn" onclick="abrirOV(1);">Mas Información</button>
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/leyendas/pose/ulgrim.png" alt="Ulgrim">
                     </div>
-                </td>
-            </tr>
-        </table>
+
+                    <div class="leyenda-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="leyenda-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="leyenda-titulo">Ulgrim</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Precio:<br><br>
+                                        
+                                        <img src="../media/wiki/bh/armas/hacha.png" title="Hacha">
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:13px;margin-right: 2px;"><b>5.400<br><br>
+                                    <img src="../media/wiki/bh/armas/lanza-cohete.png" title="Lanza Cohete">
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         
+        <div class="leyenda-container" style="margin-top: -60px;">
+            <section class="leyenda">
+                    <div class="leyenda-info">
+                        <h2 class="leyenda-titulo">Estadísticas</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
+                                    <img src="../media/wiki/bh/leyendas/stats/6.webp" title="Fuerza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
+                                    <img src="../media/wiki/bh/leyendas/stats/3.webp" title="Destreza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
+                                    <img src="../media/wiki/bh/leyendas/stats/7.webp" title="Defensa" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
+                                    <img src="../media/wiki/bh/leyendas/stats/6.webp" title="Velocidad" style="width: 165px;">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         <div id="ov1" class="overlay" style="display: none">
-            <div class="contenido-overlay" style="width: 750px;height: 540px;">
+            <div class="contenido-overlay" style="width: 750px;height: 600px;">
                 <h2 style="margin-top:-20px">Ulgrim</h2>
                 <h5 style="margin-bottom:-10px;">El yunque inquebrantable, Hijo de Ivaldi</h5>
                 <hr style="margin-top:15px;margin-bottom:15px;">
-                <div class="leyenda-info">
-                    <img class="imagen" src="../media/wiki/bh/leyendas/ulgrim.png" width="350px">
+                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                <section class="leyenda">
+                    <div class="leyenda-elemento">
+                        <div class="leyenda-imagen">
+                            <img src="../media/wiki/bh/leyendas/ulgrim.png" alt="Ulgrim">
+                        </div>
+    
+                        <div class="leyenda-info" style="position: relative;">
+                            <div class="leyenda-details">
+                                <div id="tags">
+                                    <img src="../media/wiki/bh/tags/hacha.png" title="Hacha" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/lanza-cohete.png" title="Lanza Cohete" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/asgardiano.png" title="Asgardiano" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/euro-pop.png" title="Euro Pop" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/ganador-2c2-bcx.png" title="Ganador de 2c2 del BCX" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/top-3-2c2-bcx.png" title="Top 3 de 2c2 del BCX" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/portador-de-sombrero.png" title="Portador de Sombrero" style="width:150px">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </section>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <p style="font-weight: normal;">
                     <ul class="lista">
                         <li>
                             <h2>Nombre Completo</h2>
-                            <p>???</p>
+                            <p style="font-weight: normal;">???</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Descripción en tienda</h2>
-                            <p>Materiales raros, artículos maravillosos y hornos mágicos... Ninguno falta en un día de trabajo forjando herramientas para los dioses</p>
+                            <p style="font-weight: normal;">Materiales raros, artículos maravillosos y hornos mágicos... Ninguno falta en un día de trabajo forjando herramientas para los dioses</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Género</h2>
-                            <p>Masculino</p>
+                            <p style="font-weight: normal;">Masculino</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Especie</h2>
+                            <p style="font-weight: normal;">Humano</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Nombre de Bot</h2>
-                            <p>Ultragrim</p>
+                            <p style="font-weight: normal;">Ultragrim</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Hogar</h2>
-                            <p>???</p>
+                            <p style="font-weight: normal;">???</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Fecha de Publicación</h2>
-                            <p>02/03/2016</p>
+                            <p style="font-weight: normal;">02/03/2016</p>
                         </li>
                     </ul>
-                </div>
-                <hr style="margin-top:15px;margin-bottom:15px;">
-                <div id="tags">
-                    <img src="../media/wiki/bh/tags/hacha.png" title="Hacha" style="width:150px">
-                    <img src="../media/wiki/bh/tags/lanza-cohete.png" title="Lanza Cohete" style="width:150px">
-                    <img src="../media/wiki/bh/tags/asgardiano.png" title="Asgardiano" style="width:150px">
-                    <img src="../media/wiki/bh/tags/euro-pop.png" title="Euro Pop" style="width:150px">
-                    <img src="../media/wiki/bh/tags/ganador-2c2-bcx.png" title="Ganador de 2c2 del BCX" style="width:150px">
-                    <img src="../media/wiki/bh/tags/top-3-2c2-bcx.png" title="Top 3 de 2c2 del BCX" style="width:150px">
-                    <img src="../media/wiki/bh/tags/portador-de-sombrero.png" title="Portador de Sombrero" style="width:150px">
-                </div>
-                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                </p>
             </div>
         </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>
-                    Bellow's Breath
-                </th>
-                <th>
-                    Raging Furnace
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/leyendas/armas/ulgrim_bellows-breath.png" style="width:200px">
-                </td>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/leyendas/armas/ulgrim_raging-furnace.png" style="width:200px">
-                </td>
-            </tr>
-        </table>
+        <section class="wbh-armas-lista">
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+            <div class="wbh-skins-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/leyendas/armas/ulgrim_bellows-breath.png"></div>
+                    <div class="wbh-armas-list-titulo">Bellow's Breath</div>
+            </div>
+            
+            <div class="wbh-skins-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/leyendas/armas/ulgrim_raging-furnace.png"></div>
+                    <div class="wbh-armas-list-titulo">Raging Furnace</div>
+            </div>
 
-        <h2 align="center" style="margin-top:20px">Skins Especiales</h2>
+        </section>
 
-        <table style="margin-top:10px;width:10%">
-            <tr>
-                <th>
-                    <a href="./jotun-ulgrim">Jotun Ulgrim</a>
-                </th>
-                <th>
-                    <a href="./master-blacksmith-ulgrim">Master Blacksmith Ulgrim</a>
-                </th>
-                <th>
-                    <a href="./macho-man">Macho Man</a>
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="./jotun-ulgrim">
-                        <img src="../media/wiki/bh/skins/ulgrim/jotun-ulgrim.png" style="width:200px">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="./master-blacksmith-ulgrim">
-                        <img src="../media/wiki/bh/skins/ulgrim/master-blacksmith-ulgrim.png" style="width:200px">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="./macho-man">
-                        <img src="../media/wiki/bh/crossovers/wwe/macho-man.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Exclusiva del<br><a href="./cofre-ragnarok" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Ragnarok</a>
-                </td>
-                <td>
-                    <a href="./pase-batalla3" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Temporada 3</a><br><i>Recompensa de nivel 47</i>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                </td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins Especiales</h2>
+
+        <section class="wbh-skins-lista tresitems">
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./jotun-ulgrim">
+                <div class="wbh-skins-list-titulo">Jotun Ulgrim</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/ulgrim/jotun-ulgrim.png"></div>
+                    <a href="./cofre-ragnarok"><div class="wbh-skins-list-texto wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Ragnarok</div></a>
+                </a>
+            </div>
+            
+            <div class="wbh-skins-list-elemento">
+                <a href="./master-blacksmith-ulgrim">
+                <div class="wbh-skins-list-titulo">Master Blacksmith Ulgrim</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/ulgrim/master-blacksmith-ulgrim.png"></div>
+                    <a href="./pase-batalla3#pagina6"><div class="wbh-skins-list-texto wbh-a"><img src="../media/wiki/bh/iconos/bp.png" title="Pase de Batalla" style="margin-right:5px">Nivel 47 - [T3]</div></a>
+                </a>
+            </div>
+            
+            <div class="wbh-skins-list-elemento">
+                <a href="./macho-man">
+                <div class="wbh-skins-list-titulo">Macho Man</div>
+                    <div class="wbh-skins-list-imagen epic-skin"><img src="../media/wiki/bh/crossovers/wwe/macho-man.png"></div>
+                    <div class="wbh-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
+        </section>
 
     </main>
 
