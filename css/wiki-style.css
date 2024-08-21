@@ -200,6 +200,36 @@ details {
   .contenido-overlay::-webkit-scrollbar-thumb:hover {
     background: #8146ae;
   }
+  
+  .ov-skinpaselvl1 {
+    width: 750px;
+    height: 425px;
+    max-height: 425px;
+    overflow-y: initial;
+  }
+
+  .ov-skinpaselvl1-details {
+    max-height: 275px;
+    overflow-y: scroll;
+  }
+  
+  .ov-skinpaselvl1-details::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .ov-skinpaselvl1-details::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  .ov-skinpaselvl1-details::-webkit-scrollbar-thumb {
+    background: #5e337f;
+    border: 2px solid #4b2866;
+    border-radius: 10px;
+  }
+
+  .ov-skinpaselvl1-details::-webkit-scrollbar-thumb:hover {
+    background: #8146ae;
+  }
 
   @media screen and (max-width:800px) {
     .contenido-overlay {
@@ -214,6 +244,11 @@ details {
         min-width: 200px;
     }
 
+    .ov-skinpaselvl1 {
+        overflow-y: scroll;
+        max-height: 425px !important;
+    }
+
     .leyenda-elemento {
         max-width: 550px;
     }
@@ -221,6 +256,15 @@ details {
    .leyenda-info {
         max-width: 250px;
     }
+  }
+
+  @media screen and (max-width:750px) {
+    .ov-skinpaselvl1 {
+        overflow-y: scroll;
+        max-height: 425px !important;
+        max-width: 350px !important;
+    }
+    
   }
   @media screen and (max-width:650px) {
     .contenido-overlay {

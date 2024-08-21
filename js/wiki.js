@@ -404,5 +404,49 @@ function cambiar(skin) {
       arma2img.src = "../media/wiki/bh/crossovers/tomb-raider/armas/lara-croft_dual-pistols.png";
       arma2nombre.textContent = "Dual Pistols";
     }
+  } else if (skin === "wushangseeker") {
+    var imagen = document.getElementById("wushangseeker-foto");
+    var nivel = document.getElementById("wushangseeker-nivel");
+    var arma1img = document.getElementById("wushangseeker-arma1-foto");
+    var arma2img = document.getElementById("wushangseeker-arma2-foto");
+
+    if (imagen.src.includes("/wu-shang-the-seeker_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/wu-shang/wu-shang-the-seeker_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_earthly-answers_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_divine-question_lvl2.png";
+    } else if (imagen.src.includes("/wu-shang-the-seeker_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/wu-shang/wu-shang-the-seeker_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_earthly-answers_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_divine-question_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/wu-shang/wu-shang-the-seeker_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_earthly-answers_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_divine-question_lvl1.png";
+    }
+  } else if (skin === "futurewaveval") {
+    var imagen = document.getElementById("futurewaveval-foto");
+    var nivel = document.getElementById("futurewaveval-nivel");
+    var arma1img = document.getElementById("futurewaveval-arma1-foto");
+    var arma2img = document.getElementById("futurewaveval-arma2-foto");
+
+    if (imagen.src.includes("/future-wave-val_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/val/future-wave-val_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_the-playback_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_bitrate-blade_lvl2.png";
+    } else if (imagen.src.includes("/future-wave-val_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/val/future-wave-val_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_the-playback_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_bitrate-blade_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/val/future-wave-val_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_the-playback_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_bitrate-blade_lvl1.png";
+    }
   }
 }
