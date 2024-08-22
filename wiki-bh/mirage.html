@@ -93,172 +93,181 @@
         <script src="../js/search-wiki-bh.js"></script>
         <script src="../js/overlay.js"></script>
 
-        <table style="margin-top:20px;width:50%">
-            <tr>
-                <th colspan="4">Mirage</th>
-            </tr>
-            <tr>
-                <td style="width:300px" rowspan="3"><img src="../media/wiki/bh/leyendas/pose/mirage.png" width="300px"></td>
-                <th style="height:30px;width:175px">Precio</th>
-                <th style="width: 175px">Armas</th>
-                <th style="width: 207px">Estadísticas</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:20px"> <b style="font-size:20px">3.900</b>
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/armas/guadaña.png" title="Guadaña">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/armas/lanza.png" title="Lanza">
-                </td>
-                <td rowspan="2">
-                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
-                    <img src="../media/wiki/bh/leyendas/stats/7.png" title="Fuerza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
-                    <img src="../media/wiki/bh/leyendas/stats/6.png" title="Destreza">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
-                    <img src="../media/wiki/bh/leyendas/stats/4.png" title="Defensa">
-                    <hr style="margin:0 auto;margin-top:15px;margin-bottom:15px;width:75%">
-                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
-                    <img src="../media/wiki/bh/leyendas/stats/5.png" title="Velocidad">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="secciones" align="center" style="margin-bottom:-60px;margin-top:-22px">
-                        <button id="sec1-btn" onclick="abrirOV(1);">Mas Información</button>
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/leyendas/pose/mirage.png" alt="Mirage">
                     </div>
-                </td>
-            </tr>
-        </table>
+
+                    <div class="leyenda-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="leyenda-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="leyenda-titulo">Mirage</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Precio:<br><br>
+                                        
+                                        <img src="../media/wiki/bh/armas/guadaña.png" title="Guadaña">
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width:13px;margin-right: 2px;"><b>5.400<br><br>
+                                    <img src="../media/wiki/bh/armas/lanza.png" title="Lanza">
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         
+        <div class="leyenda-container" style="margin-top: -60px;">
+            <section class="leyenda">
+                    <div class="leyenda-info">
+                        <h2 class="leyenda-titulo">Estadísticas</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/leyendas/stats/fuerza.png" title="Fuerza">
+                                    <img src="../media/wiki/bh/leyendas/stats/7.webp" title="Fuerza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/destreza.png" title="Destreza">
+                                    <img src="../media/wiki/bh/leyendas/stats/6.webp" title="Destreza" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/defensa.png" title="Defensa">
+                                    <img src="../media/wiki/bh/leyendas/stats/4.webp" title="Defensa" style="width: 165px;"><br>
+                                    <img src="../media/wiki/bh/leyendas/stats/velocidad.png" title="Velocidad">
+                                    <img src="../media/wiki/bh/leyendas/stats/5.webp" title="Velocidad" style="width: 165px;">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         <div id="ov1" class="overlay" style="display: none">
-            <div class="contenido-overlay" style="width: 750px;height: 490px;">
+            <div class="contenido-overlay" style="width: 750px;height: 600px;">
                 <h2 style="margin-top:-20px">Mirage</h2>
                 <h5 style="margin-bottom:-10px;">La Tejedora de Dunas</h5>
                 <hr style="margin-top:15px;margin-bottom:15px;">
-                <div class="leyenda-info">
-                    <img class="imagen" src="../media/wiki/bh/leyendas/mirage.png" width="350px">
+                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                <section class="leyenda">
+                    <div class="leyenda-elemento">
+                        <div class="leyenda-imagen">
+                            <img src="../media/wiki/bh/leyendas/mirage.png" alt="Mirage">
+                        </div>
+    
+                        <div class="leyenda-info" style="position: relative;">
+                            <div class="leyenda-details">
+                                <div id="tags">
+                                    <img src="../media/wiki/bh/tags/guadaña.png" title="Guadaña" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/lanza.png" title="Lanza" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/dueño-de-mascota.png" title="Dueño de Mascota" style="width:150px">
+                                    <img src="../media/wiki/bh/tags/usuario-magico.png" title="Usuario Mágico" style="width:150px">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </section>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <p style="font-weight: normal;">
                     <ul class="lista">
                         <li>
                             <h2>Nombre Completo</h2>
-                            <p>Fatima Sabiq</p>
+                            <p style="font-weight: normal;">Fatima Sabiq</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Descripción en tienda</h2>
-                            <p>La muerte susurra a través de los vientos cálidos del desierto</p>
+                            <p style="font-weight: normal;">La muerte susurra a través de los vientos cálidos del desierto</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Género</h2>
-                            <p>Femenino</p>
+                            <p style="font-weight: normal;">Femenino</p>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <h2>Especie</h2>
+                            <p style="font-weight: normal;">Humano</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Nombre de Bot</h2>
-                            <p>Mirandroid</p>
+                            <p style="font-weight: normal;">Mirandroid</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Hogar</h2>
-                            <p>???</p>
+                            <p style="font-weight: normal;">???</p>
                         </li>
                         <li style="margin-top: 10px;">
                             <h2>Fecha de Publicación</h2>
-                            <p>11/01/2017</p>
+                            <p style="font-weight: normal;">11/01/2017</p>
                         </li>
                     </ul>
-                </div>
-                <hr style="margin-top:15px;margin-bottom:15px;">
-                <div id="tags">
-                    <img src="../media/wiki/bh/tags/guadaña.png" title="Guadaña" style="width:150px">
-                    <img src="../media/wiki/bh/tags/lanza.png" title="Lanza" style="width:150px">
-                    <img src="../media/wiki/bh/tags/dueño-de-mascota.png" title="Dueño de Mascota" style="width:150px">
-                    <img src="../media/wiki/bh/tags/usuario-magico.png" title="Usuario Mágico" style="width:150px">
-                </div>
-                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                </p>
             </div>
         </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>
-                    Scythe of the Sands
-                </th>
-                <th>
-                    Spear of the Nile
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/leyendas/armas/mirage_scythe-of-the-sands.png" style="width:200px">
-                </td>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/leyendas/armas/mirage_spear-of-the-nile.png" style="width:200px">
-                </td>
-            </tr>
-        </table>
+        <section class="wbh-armas-lista">
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+            <div class="wbh-skins-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/leyendas/armas/mirage_scythe-of-the-sands.png"></div>
+                    <div class="wbh-armas-list-titulo">Scythe of the Sands</div>
+            </div>
+            
+            <div class="wbh-skins-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/leyendas/armas/mirage_spear-of-the-nile.png"></div>
+                    <div class="wbh-armas-list-titulo">Spear of the Nile</div>
+            </div>
 
-        <h2 align="center" style="margin-top:20px">Skins Especiales</h2>
+        </section>
 
-        <table style="margin-top:10px;width:10%">
-            <tr>
-                <th>
-                    <a href="./anubis-mirage">Anubis Mirage</a>
-                </th>
-                <th>
-                    <a href="./mirage-incarnate">Mirage Incarnate</a>
-                </th>
-                <th>
-                    <a href="./apocalypse-mirage">Apocalypse Mirage</a>
-                </th>
-                <th>
-                    <a href="./donatello">Donatello</a>
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="./anubis-mirage">
-                        <img src="../media/wiki/bh/skins/mirage/anubis-mirage.png" style="width:200px">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="./mirage-incarnate">
-                        <img src="../media/wiki/bh/skins/mirage/mirage-incarnate.png" style="width:200px">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="./apocalypse-mirage">
-                        <img src="../media/wiki/bh/skins/mirage/apocalypse-mirage.webp" style="width:200px;background-image:url(../media/wiki/bh/epic.png);padding:12px">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="./donatello">
-                        <img src="../media/wiki/bh/crossovers/tortugas-ninja/donatello.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Exclusiva del<br><a href="./cofre-sandstorm" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Sandstorm</a>
-                </td>
-                <td>
-                    Exclusiva del<br><a href="./cofre-renacido" class="wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Renacido</a>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                </td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins Especiales</h2>
+
+        <section class="wbh-skins-lista cuatroitems">
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./anubis-mirage">
+                <div class="wbh-skins-list-titulo">Anubis Mirage</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/mirage/anubis-mirage.png"></div>
+                    <a href="./cofre-sandstorm"><div class="wbh-skins-list-texto wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Sandstorm</div></a>
+                </a>
+            </div>
+
+            <div class="wbh-skins-list-elemento">
+                <a href="./infernal-cross">
+                <div class="wbh-skins-list-titulo">Mirage Incarnate</div>
+                    <div class="wbh-skins-list-imagen"><img src="../media/wiki/bh/skins/mirage/mirage-incarnate.png"></div>
+                    <a href="./cofre-renacido"><div class="wbh-skins-list-texto wbh-a"><img src="../media/wiki/bh/iconos/chest.png" title="Cofre" style="margin-right:5px">Cofre Renacido</div></a>
+                </a>
+            </div>
+            
+            <div class="wbh-skins-list-elemento">
+                <a href="./apocalypse-mirage">
+                <div class="wbh-skins-list-titulo">Apocalypse Mirage</div>
+                    <div class="wbh-skins-list-imagen epic-skin"><img src="../media/wiki/bh/skins/mirage/apocalypse-mirage.webp"></div>
+                    <div class="wbh-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
+            
+            <div class="wbh-skins-list-elemento">
+                <a href="./donatello">
+                <div class="wbh-skins-list-titulo">Donatello</div>
+                    <div class="wbh-skins-list-imagen epic-skin"><img src="../media/wiki/bh/crossovers/tortugas-ninja/donatello.png"></div>
+                    <div class="wbh-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
+        </section>
 
     </main>
 

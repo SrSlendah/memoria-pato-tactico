@@ -300,6 +300,9 @@ function showSection(sectionNumber) {
     if (window.location.hash === "#pagina11") {
         showSec11();
     }
+    if (window.location.hash === "#pagina12") {
+        showSec12();
+    }
 });
 
 window.addEventListener("hashchange", function() {
@@ -365,6 +368,9 @@ window.addEventListener("hashchange", function() {
   }
   if (window.location.hash === "#pagina11") {
       showSec11();
+  }
+  if (window.location.hash === "#pagina12") {
+      showSec12();
   }
 });
 
@@ -447,6 +453,72 @@ function cambiar(skin) {
       nivel.textContent = "Nivel 1";
       arma1img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_the-playback_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_bitrate-blade_lvl1.png";
+    }
+  } else if (skin === "elderwildragnir") {
+    var imagen = document.getElementById("elderwildragnir-foto");
+    var nivel = document.getElementById("elderwildragnir-nivel");
+    var arma1img = document.getElementById("elderwildragnir-arma1-foto");
+    var arma2img = document.getElementById("elderwildragnir-arma2-foto");
+
+    if (imagen.src.includes("/elder-wild-ragnir_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/ragnir/elder-wild-ragnir_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_flora-blades_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_axe-of-regrowth_lvl2.png";
+    } else if (imagen.src.includes("/elder-wild-ragnir_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/ragnir/elder-wild-ragnir_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_flora-blades_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_axe-of-regrowth_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/ragnir/elder-wild-ragnir_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_flora-blades_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_axe-of-regrowth_lvl1.png";
+    }
+  } else if (skin === "octaviusmordex") {
+    var imagen = document.getElementById("octaviusmordex-foto");
+    var nivel = document.getElementById("octaviusmordex-nivel");
+    var arma1img = document.getElementById("octaviusmordex-arma1-foto");
+    var arma2img = document.getElementById("octaviusmordex-arma2-foto");
+
+    if (imagen.src.includes("/octavius-mordex_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/mordex/octavius-mordex_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_blood-moon-influence_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_betrayal-power_lvl2.png";
+    } else if (imagen.src.includes("/octavius-mordex_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/mordex/octavius-mordex_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_blood-moon-influence_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_betrayal-power_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/mordex/octavius-mordex_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_blood-moon-influence_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_betrayal-power_lvl1.png";
+    }
+  } else if (skin === "eventhorizonartemis") {
+    var imagen = document.getElementById("eventhorizonartemis-foto");
+    var nivel = document.getElementById("eventhorizonartemis-nivel");
+    var arma1img = document.getElementById("eventhorizonartemis-arma1-foto");
+    var arma2img = document.getElementById("eventhorizonartemis-arma2-foto");
+
+    if (imagen.src.includes("/event-horizon-artemis_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/artemis/event-horizon-artemis_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar_lvl2.png";
+    } else if (imagen.src.includes("/event-horizon-artemis_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/artemis/event-horizon-artemis_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/artemis/event-horizon-artemis_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar_lvl1.png";
     }
   }
 }

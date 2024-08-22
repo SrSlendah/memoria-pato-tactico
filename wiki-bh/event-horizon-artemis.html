@@ -86,92 +86,85 @@
         </div>
       
         <script src="../js/search-wiki-bh.js"></script>
+        <script src="../js/wiki.js"></script>
 
-        <table style="margin-top:20px;width:26%">
-            <tbody><tr>
-                <th colspan="4">Event Horizon Artemis</th>
-            </tr>
-            <tr>
-                <td style="width:200px;height: 225px;"" rowspan="2"><img src="../media/wiki/bh/skins/artemis/event-horizon-artemis.webp" style="width: 200px"></td>
-                <th style="width: 200px;height: 30px;">Adquisición</th>
-                <th style="width: 180px">Leyenda</th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="../wiki-bh/pase-batalla5" style="color:#A55CDE" title="Temporada 5" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:15px;margin-right:5px">Temporada 5</a><br>
-                    <i style="font-size:13px">Recompensa Tier 1</i>
-                </td>
-                <td>
-                    <a href="../wiki-bh/artemis"><img src="../media/wiki/bh/leyendas/logos/artemis.png" title="Artemis" style="width:75px"></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen" style="position: relative;">
+                        <img src="../media/wiki/bh/skins/artemis/event-horizon-artemis_lvl1.png" id="eventhorizonartemis-foto">
+                        <img src="../media/wiki/bh/iconos/change.png" id="cambiar-imagen" class="change-img" onclick="cambiar('eventhorizonartemis')" alt="Cambiar Imagen">
+                    </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+                    <div class="leyenda-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="leyenda-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="leyenda-titulo">Event Horizon Artemis</h2>
+                        <h4 style="margin-top:-10px;margin-bottom:5px" id="eventhorizonartemis-nivel">Nivel 1</h4>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Nivel 23 de la<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <a href="../wiki-bh/pase-batalla1#pagina3" class="wbh-a-light"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:15px;margin-right:5px">Temporada 1</a><br><br>
+                                    <a href="../wiki-bh/artemis" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/artemis.png" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        <div id="ov1" class="overlay" style="display: none;">
+            <div class="contenido-overlay ov-skinpaselvl1">
+                <h2 style="margin-top:-20px">Event Horizon Artemis</h2>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                <section class="leyenda">
+                    <div class="leyenda-elemento">
+                        <div class="leyenda-imagen">
+                            <img src="../media/wiki/bh/skins/artemis/event-horizon-artemis.webp" alt="Artemis">
+                        </div>
+    
+                        <div class="leyenda-info" style="position: relative;">
+                            <div class="leyenda-details ov-skinpaselvl1-details">
+                                <p style="font-size:15px">
+                                    <strong style="font-size: 18px;">Nivel 1:</strong><br> Conseguido al Nivel 1 de la <a href="../wiki-bh/pase-batalla2#pagina1" class="wbh-a-light"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:13px;margin-right:5px">Temporada 2</a><br><br>
+                                    <strong style="font-size: 18px;">Nivel 2:</strong><br> Conseguir 3 KOs en la parte inferior de la pantalla con armas que se lanzaron hacia arriba. <i>(Después de conseguir el Nivel 1)</i><br><br>
+                                    <strong style="font-size: 18px;">Nivel 3:</strong><br> Conseguir 10 KOs en la parte inferior de la pantalla con armas que se lanzaron hacia arriba. <i>(Después de conseguir el Nivel 2)</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        </div>
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:20px;width:20%">
-            <tbody>
-                <tr>
-                    <th>
-                        Quasar
-                    </th>
-                    <th>
-                        Cygnus
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar.webp" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus.webp" style="width:200px">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+        <section class="wbh-armas-lista">
 
-        <h2 align="center" style="margin-top:20px">Niveles</h2>
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus_lvl1.png" style="padding:10px;" id="eventhorizonartemis-arma1-foto"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Quasar</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar_lvl1.png" style="padding:10px;" id="eventhorizonartemis-arma2-foto"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Cygnus</div>
+            </div>
 
-        <table style="margin-top:20px;width:20%">
-                <tr>
-                    <th>
-                        Nivel 1
-                    </th>
-                    <th>
-                        Nivel 2
-                    </th>
-                    <th>
-                        Nivel 3
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/artemis/event-horizon-artemis_lvl1.png" style="width:200px;padding:15px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/artemis/event-horizon-artemis_lvl2.png" style="width:200px;padding:15px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/artemis/event-horizon-artemis_lvl3.png" style="width:200px;padding:15px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>    
-                        <a href="../wiki-bh/pase-batalla5" style="color:#A55CDE" title="Temporada 5" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:15px;margin-right:5px">Temporada 5</a><br>
-                    <i style="font-size:13px">Recompensa Tier 1</i>
-                </td>
-                    <td>
-                        <label style="font-size:13px">Conseguir 3 KOs en la parte inferior de la pantalla con armas que se lanzaron hacia arriba</label>
-                    <td>
-                        <label style="font-size:13px">Conseguir 10 KOs en la parte inferior de la pantalla con armas que se lanzaron hacia arriba</label>
-                    </td>
-                </tr>
-        </table>
+        </section>
 
     </main>
 
