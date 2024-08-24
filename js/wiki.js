@@ -520,5 +520,27 @@ function cambiar(skin) {
       arma1img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar_lvl1.png";
     }
+  } else if (skin === "obakepetra") {
+    var imagen = document.getElementById("obakepetra-foto");
+    var nivel = document.getElementById("obakepetra-nivel");
+    var arma1img = document.getElementById("obakepetra-arma1-foto");
+    var arma2img = document.getElementById("obakepetra-arma2-foto");
+
+    if (imagen.src.includes("/obake-petra_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/petra/obake-petra_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/petra/armas/obake-petra_haunting-terrors_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/petra/armas/obake-petra_demons-malice_lvl2.png";
+    } else if (imagen.src.includes("/obake-petra_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/petra/obake-petra_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/petra/armas/obake-petra_haunting-terrors_lvl3.webp";
+      arma2img.src = "../media/wiki/bh/skins/petra/armas/obake-petra_demons-malice_lvl3.webp";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/petra/obake-petra_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/petra/armas/obake-petra_haunting-terrors_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/petra/armas/obake-petra_demons-malice_lvl1.png";
+    }
   }
 }
