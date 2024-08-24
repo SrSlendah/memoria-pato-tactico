@@ -410,117 +410,7 @@ function cambiar(skin) {
       arma2img.src = "../media/wiki/bh/crossovers/tomb-raider/armas/lara-croft_dual-pistols.png";
       arma2nombre.textContent = "Dual Pistols";
     }
-  } else if (skin === "wushangseeker") {
-    var imagen = document.getElementById("wushangseeker-foto");
-    var nivel = document.getElementById("wushangseeker-nivel");
-    var arma1img = document.getElementById("wushangseeker-arma1-foto");
-    var arma2img = document.getElementById("wushangseeker-arma2-foto");
-
-    if (imagen.src.includes("/wu-shang-the-seeker_lvl1.png")) {
-      imagen.src = "../media/wiki/bh/skins/wu-shang/wu-shang-the-seeker_lvl2.png";
-      nivel.textContent = "Nivel 2";
-      arma1img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_earthly-answers_lvl2.png";
-      arma2img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_divine-question_lvl2.png";
-    } else if (imagen.src.includes("/wu-shang-the-seeker_lvl2.png")) {
-      imagen.src = "../media/wiki/bh/skins/wu-shang/wu-shang-the-seeker_lvl3.png";
-      nivel.textContent = "Nivel 3";
-      arma1img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_earthly-answers_lvl3.png";
-      arma2img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_divine-question_lvl3.png";
-    } else {
-      imagen.src = "../media/wiki/bh/skins/wu-shang/wu-shang-the-seeker_lvl1.png";
-      nivel.textContent = "Nivel 1";
-      arma1img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_earthly-answers_lvl1.png";
-      arma2img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_divine-question_lvl1.png";
-    }
-  } else if (skin === "futurewaveval") {
-    var imagen = document.getElementById("futurewaveval-foto");
-    var nivel = document.getElementById("futurewaveval-nivel");
-    var arma1img = document.getElementById("futurewaveval-arma1-foto");
-    var arma2img = document.getElementById("futurewaveval-arma2-foto");
-
-    if (imagen.src.includes("/future-wave-val_lvl1.png")) {
-      imagen.src = "../media/wiki/bh/skins/val/future-wave-val_lvl2.png";
-      nivel.textContent = "Nivel 2";
-      arma1img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_the-playback_lvl2.png";
-      arma2img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_bitrate-blade_lvl2.png";
-    } else if (imagen.src.includes("/future-wave-val_lvl2.png")) {
-      imagen.src = "../media/wiki/bh/skins/val/future-wave-val_lvl3.png";
-      nivel.textContent = "Nivel 3";
-      arma1img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_the-playback_lvl3.png";
-      arma2img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_bitrate-blade_lvl3.png";
-    } else {
-      imagen.src = "../media/wiki/bh/skins/val/future-wave-val_lvl1.png";
-      nivel.textContent = "Nivel 1";
-      arma1img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_the-playback_lvl1.png";
-      arma2img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_bitrate-blade_lvl1.png";
-    }
-  } else if (skin === "elderwildragnir") {
-    var imagen = document.getElementById("elderwildragnir-foto");
-    var nivel = document.getElementById("elderwildragnir-nivel");
-    var arma1img = document.getElementById("elderwildragnir-arma1-foto");
-    var arma2img = document.getElementById("elderwildragnir-arma2-foto");
-
-    if (imagen.src.includes("/elder-wild-ragnir_lvl1.png")) {
-      imagen.src = "../media/wiki/bh/skins/ragnir/elder-wild-ragnir_lvl2.png";
-      nivel.textContent = "Nivel 2";
-      arma1img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_flora-blades_lvl2.png";
-      arma2img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_axe-of-regrowth_lvl2.png";
-    } else if (imagen.src.includes("/elder-wild-ragnir_lvl2.png")) {
-      imagen.src = "../media/wiki/bh/skins/ragnir/elder-wild-ragnir_lvl3.png";
-      nivel.textContent = "Nivel 3";
-      arma1img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_flora-blades_lvl3.png";
-      arma2img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_axe-of-regrowth_lvl3.png";
-    } else {
-      imagen.src = "../media/wiki/bh/skins/ragnir/elder-wild-ragnir_lvl1.png";
-      nivel.textContent = "Nivel 1";
-      arma1img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_flora-blades_lvl1.png";
-      arma2img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_axe-of-regrowth_lvl1.png";
-    }
-  } else if (skin === "octaviusmordex") {
-    var imagen = document.getElementById("octaviusmordex-foto");
-    var nivel = document.getElementById("octaviusmordex-nivel");
-    var arma1img = document.getElementById("octaviusmordex-arma1-foto");
-    var arma2img = document.getElementById("octaviusmordex-arma2-foto");
-
-    if (imagen.src.includes("/octavius-mordex_lvl1.png")) {
-      imagen.src = "../media/wiki/bh/skins/mordex/octavius-mordex_lvl2.png";
-      nivel.textContent = "Nivel 2";
-      arma1img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_blood-moon-influence_lvl2.png";
-      arma2img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_betrayal-power_lvl2.png";
-    } else if (imagen.src.includes("/octavius-mordex_lvl2.png")) {
-      imagen.src = "../media/wiki/bh/skins/mordex/octavius-mordex_lvl3.png";
-      nivel.textContent = "Nivel 3";
-      arma1img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_blood-moon-influence_lvl3.png";
-      arma2img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_betrayal-power_lvl3.png";
-    } else {
-      imagen.src = "../media/wiki/bh/skins/mordex/octavius-mordex_lvl1.png";
-      nivel.textContent = "Nivel 1";
-      arma1img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_blood-moon-influence_lvl1.png";
-      arma2img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_betrayal-power_lvl1.png";
-    }
-  } else if (skin === "eventhorizonartemis") {
-    var imagen = document.getElementById("eventhorizonartemis-foto");
-    var nivel = document.getElementById("eventhorizonartemis-nivel");
-    var arma1img = document.getElementById("eventhorizonartemis-arma1-foto");
-    var arma2img = document.getElementById("eventhorizonartemis-arma2-foto");
-
-    if (imagen.src.includes("/event-horizon-artemis_lvl1.png")) {
-      imagen.src = "../media/wiki/bh/skins/artemis/event-horizon-artemis_lvl2.png";
-      nivel.textContent = "Nivel 2";
-      arma1img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus_lvl2.png";
-      arma2img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar_lvl2.png";
-    } else if (imagen.src.includes("/event-horizon-artemis_lvl2.png")) {
-      imagen.src = "../media/wiki/bh/skins/artemis/event-horizon-artemis_lvl3.png";
-      nivel.textContent = "Nivel 3";
-      arma1img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus_lvl3.png";
-      arma2img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar_lvl3.png";
-    } else {
-      imagen.src = "../media/wiki/bh/skins/artemis/event-horizon-artemis_lvl1.png";
-      nivel.textContent = "Nivel 1";
-      arma1img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus_lvl1.png";
-      arma2img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar_lvl1.png";
-    }
-  } else if (skin === "obakepetra") {
+  } else if (skin === "obakepetra") { // TEMPORADA 1 (Petra)
     var imagen = document.getElementById("obakepetra-foto");
     var nivel = document.getElementById("obakepetra-nivel");
     var arma1img = document.getElementById("obakepetra-arma1-foto");
@@ -542,5 +432,181 @@ function cambiar(skin) {
       arma1img.src = "../media/wiki/bh/skins/petra/armas/obake-petra_haunting-terrors_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/petra/armas/obake-petra_demons-malice_lvl1.png";
     }
-  }
+  } else if (skin === "futurewaveval") { // TEMPORADA 2 (Val)
+    var imagen = document.getElementById("futurewaveval-foto");
+    var nivel = document.getElementById("futurewaveval-nivel");
+    var arma1img = document.getElementById("futurewaveval-arma1-foto");
+    var arma2img = document.getElementById("futurewaveval-arma2-foto");
+
+    if (imagen.src.includes("/future-wave-val_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/val/future-wave-val_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_the-playback_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_bitrate-blade_lvl2.png";
+    } else if (imagen.src.includes("/future-wave-val_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/val/future-wave-val_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_the-playback_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_bitrate-blade_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/val/future-wave-val_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_the-playback_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_bitrate-blade_lvl1.png";
+    }
+  } else if (skin === "jormungandrmako") { // TEMPORADA 3 (Mako)
+    var imagen = document.getElementById("jormungandrmako-foto");
+    var nivel = document.getElementById("jormungandrmako-nivel");
+    var arma1img = document.getElementById("jormungandrmako-arma1-foto");
+    var arma2img = document.getElementById("jormungandrmako-arma2-foto");
+
+    if (imagen.src.includes("/jormungandr-mako_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/mako/jormungandr-mako_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/mako/armas/jormungandr-mako_serpents-fangs_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/mako/armas/jormungandr-mako_world-ender_lvl2.png";
+    } else if (imagen.src.includes("/jormungandr-mako_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/mako/jormungandr-mako_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/mako/armas/jormungandr-mako_serpents-fangs_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/mako/armas/jormungandr-mako_world-ender_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/mako/jormungandr-mako_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/mako/armas/jormungandr-mako_serpents-fangs_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/mako/armas/jormungandr-mako_world-ender_lvl1.png";
+    }
+  } else if (skin === "octaviusmordex") { // TEMPORADA 4 (Mordex)
+    var imagen = document.getElementById("octaviusmordex-foto");
+    var nivel = document.getElementById("octaviusmordex-nivel");
+    var arma1img = document.getElementById("octaviusmordex-arma1-foto");
+    var arma2img = document.getElementById("octaviusmordex-arma2-foto");
+
+    if (imagen.src.includes("/octavius-mordex_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/mordex/octavius-mordex_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_blood-moon-influence_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_betrayal-power_lvl2.png";
+    } else if (imagen.src.includes("/octavius-mordex_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/mordex/octavius-mordex_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_blood-moon-influence_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_betrayal-power_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/mordex/octavius-mordex_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_blood-moon-influence_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_betrayal-power_lvl1.png";
+    }
+  } else if (skin === "eventhorizonartemis") { // TEMPORADA 5 (Artemis)
+    var imagen = document.getElementById("eventhorizonartemis-foto");
+    var nivel = document.getElementById("eventhorizonartemis-nivel");
+    var arma1img = document.getElementById("eventhorizonartemis-arma1-foto");
+    var arma2img = document.getElementById("eventhorizonartemis-arma2-foto");
+
+    if (imagen.src.includes("/event-horizon-artemis_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/artemis/event-horizon-artemis_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar_lvl2.png";
+    } else if (imagen.src.includes("/event-horizon-artemis_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/artemis/event-horizon-artemis_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/artemis/event-horizon-artemis_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar_lvl1.png";
+    }
+  } else if (skin === "elderwildragnir") { // TEMPORADA 6 (Ragnir)
+    var imagen = document.getElementById("elderwildragnir-foto");
+    var nivel = document.getElementById("elderwildragnir-nivel");
+    var arma1img = document.getElementById("elderwildragnir-arma1-foto");
+    var arma2img = document.getElementById("elderwildragnir-arma2-foto");
+
+    if (imagen.src.includes("/elder-wild-ragnir_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/ragnir/elder-wild-ragnir_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_flora-blades_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_axe-of-regrowth_lvl2.png";
+    } else if (imagen.src.includes("/elder-wild-ragnir_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/ragnir/elder-wild-ragnir_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_flora-blades_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_axe-of-regrowth_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/ragnir/elder-wild-ragnir_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_flora-blades_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_axe-of-regrowth_lvl1.png";
+    }
+  } else if (skin === "luminouspaladinjaeyun") { // TEMPORADA 7 (Jaeyun)
+    var imagen = document.getElementById("luminouspaladinjaeyun-foto");
+    var nivel = document.getElementById("luminouspaladinjaeyun-nivel");
+    var arma1img = document.getElementById("luminouspaladinjaeyun-arma1-foto");
+    var arma2img = document.getElementById("luminouspaladinjaeyun-arma2-foto");
+
+    if (imagen.src.includes("/luminous-paladin-jaeyun_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/jaeyun/luminous-paladin-jaeyun_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/jaeyun/armas/luminous-paladin-jaeyun_benevolent-light_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/jaeyun/armas/luminous-paladin-jaeyun_divine-conviction_lvl2.png";
+    } else if (imagen.src.includes("/luminous-paladin-jaeyun_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/jaeyun/luminous-paladin-jaeyun_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/jaeyun/armas/luminous-paladin-jaeyun_benevolent-light_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/jaeyun/armas/luminous-paladin-jaeyun_divine-conviction_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/jaeyun/luminous-paladin-jaeyun_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/jaeyun/armas/luminous-paladin-jaeyun_benevolent-light_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/jaeyun/armas/luminous-paladin-jaeyun_divine-conviction_lvl1.png";
+    }
+  } else if (skin === "corruptedbloodtezca") { // TEMPORADA 8 (Tezca)
+    var imagen = document.getElementById("corruptedbloodtezca-foto");
+    var nivel = document.getElementById("corruptedbloodtezca-nivel");
+    var arma1img = document.getElementById("corruptedbloodtezca-arma1-foto");
+    var arma2img = document.getElementById("corruptedbloodtezca-arma2-foto");
+
+    if (imagen.src.includes("/corrupted-blood-tezca_lvl1")) {
+      imagen.src = "../media/wiki/bh/skins/tezca/corrupted-blood-tezca_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/tezca/armas/corrupted-blood-tezca_cloud-kickers_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/tezca/armas/corrupted-blood-tezca_malady-wear_lvl2.png";
+    } else if (imagen.src.includes("/corrupted-blood-tezca_lvl2")) {
+      imagen.src = "../media/wiki/bh/skins/tezca/corrupted-blood-tezca_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/tezca/armas/corrupted-blood-tezca_cloud-kickers_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/tezca/armas/corrupted-blood-tezca_malady-wear_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/tezca/corrupted-blood-tezca_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/tezca/armas/corrupted-blood-tezca_cloud-kickers_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/tezca/armas/corrupted-blood-tezca_malady-wear_lvl1.png";
+    }
+  }else if (skin === "wushangseeker") { // TEMPORADA 9 (Wu Shang)
+    var imagen = document.getElementById("wushangseeker-foto");
+    var nivel = document.getElementById("wushangseeker-nivel");
+    var arma1img = document.getElementById("wushangseeker-arma1-foto");
+    var arma2img = document.getElementById("wushangseeker-arma2-foto");
+
+    if (imagen.src.includes("/wu-shang-the-seeker_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/wu-shang/wu-shang-the-seeker_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_earthly-answers_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_divine-question_lvl2.png";
+    } else if (imagen.src.includes("/wu-shang-the-seeker_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/wu-shang/wu-shang-the-seeker_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_earthly-answers_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_divine-question_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/wu-shang/wu-shang-the-seeker_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_earthly-answers_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/wu-shang/armas/wu-shang-the-seeker_divine-question_lvl1.png";
+    }
+  } 
 }

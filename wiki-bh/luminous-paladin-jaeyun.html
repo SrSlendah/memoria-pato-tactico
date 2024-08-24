@@ -86,92 +86,85 @@
         </div>
       
         <script src="../js/search-wiki-bh.js"></script>
+        <script src="../js/wiki.js"></script>
 
-        <table style="margin-top:20px;width:26%">
-            <tbody><tr>
-                <th colspan="4">Luminous Paladin Jaeyun</th>
-            </tr>
-            <tr>
-                <td style="width:200px;height: 225px;"" rowspan="2"><img src="../media/wiki/bh/skins/jaeyun/luminous-paladin-jaeyun.webp" style="width: 206px"></td>
-                <th style="width: 200px;height: 30px;">Adquisición</th>
-                <th style="width: 180px">Leyenda</th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="../wiki-bh/pase-batalla7" style="color:#A55CDE" title="Temporada 7" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:15px;margin-right:5px">Temporada 7</a><br>
-                    <i style="font-size:13px">Recompensa Tier 1</i>
-                </td>
-                <td>
-                    <a href="../wiki-bh/jaeyun"><img src="../media/wiki/bh/leyendas/logos/jaeyun.png" title="Jaeyun" style="width:75px"></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen" style="position: relative;">
+                        <img src="../media/wiki/bh/skins/jaeyun/luminous-paladin-jaeyun_lvl1.png" id="luminouspaladinjaeyun-foto">
+                        <img src="../media/wiki/bh/iconos/change.png" id="cambiar-imagen" class="change-img" onclick="cambiar('luminouspaladinjaeyun')" alt="Cambiar Imagen">
+                    </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+                    <div class="leyenda-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="leyenda-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="leyenda-titulo">Luminous Paladin Jaeyun</h2>
+                        <h4 style="margin-top:-10px;margin-bottom:5px" id="luminouspaladinjaeyun-nivel">Nivel 1</h4>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Nivel 1 de la<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <a href="../wiki-bh/pase-batalla7#pagina1" class="wbh-a-light"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:15px;margin-right:5px">Temporada 7</a><br><br>
+                                    <a href="../wiki-bh/jaeyun" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/jaeyun.png" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        <div id="ov1" class="overlay" style="display: none;">
+            <div class="contenido-overlay ov-skinpaselvl1">
+                <h2 style="margin-top:-20px">Luminous Paladin Jaeyun</h2>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                <section class="leyenda">
+                    <div class="leyenda-elemento">
+                        <div class="leyenda-imagen">
+                            <img src="../media/wiki/bh/skins/jaeyun/luminous-paladin-jaeyun.webp" alt="Val">
+                        </div>
+    
+                        <div class="leyenda-info" style="position: relative;">
+                            <div class="leyenda-details ov-skinpaselvl1-details">
+                                <p style="font-size:15px">
+                                    <strong style="font-size: 18px;">Nivel 1:</strong><br> Conseguido al Nivel 1 de la <a href="../wiki-bh/pase-batalla7#pagina1" class="wbh-a-light"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:13px;margin-right:5px">Temporada 7</a><br><br>
+                                    <strong style="font-size: 18px;">Nivel 2:</strong><br> Conseguir 75 KOs con ataques ligeros desde el suelo. <i>(Después de conseguir el Nivel 1)</i><br><br>
+                                    <strong style="font-size: 18px;">Nivel 3:</strong><br> Conseguir 200 KOs con ataques ligeros desde el suelo. <i>(Después de conseguir el Nivel 2)</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        </div>
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:20px;width:20%">
-            <tbody>
-                <tr>
-                    <th>
-                        Benevolent Light
-                    </th>
-                    <th>
-                        Divine Conviction
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/jaeyun/armas/luminous-paladin-jaeyun_benevolent-light.webp" style="width:200px;padding:10px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/jaeyun/armas/luminous-paladin-jaeyun_divine-conviction.webp" style="width:200px">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+        <section class="wbh-armas-lista">
 
-        <h2 align="center" style="margin-top:20px">Niveles</h2>
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/jaeyun/armas/luminous-paladin-jaeyun_benevolent-light_lvl1.png" style="padding:10px;" id="luminouspaladinjaeyun-arma1-foto"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Benevolent Light</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/jaeyun/armas/luminous-paladin-jaeyun_divine-conviction_lvl1.png" style="padding:10px;" id="luminouspaladinjaeyun-arma2-foto"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Divine Conviction</div>
+            </div>
 
-        <table style="margin-top:20px;width:20%">
-                <tr>
-                    <th>
-                        Nivel 1
-                    </th>
-                    <th>
-                        Nivel 2
-                    </th>
-                    <th>
-                        Nivel 3
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/jaeyun/luminous-paladin-jaeyun_lvl1.png" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/jaeyun/luminous-paladin-jaeyun_lvl2.png" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/jaeyun/luminous-paladin-jaeyun_lvl3.png" style="width:200px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>    
-                        <a href="../wiki-bh/pase-batalla7" style="color:#A55CDE" title="Temporada 7" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:15px;margin-right:5px">Temporada 7</a><br>
-                    <i style="font-size:13px">Recompensa Tier 1</i>
-                </td>
-                    <td>
-                        <label style="font-size:13px">Conseguir 75 KOs con ataques ligeros desde el suelo</label>
-                    <td>
-                        <label style="font-size:13px">Conseguir 200 KOs con ataques ligeros desde el suelo</label>
-                    </td>
-                </tr>
-        </table>
+        </section>
 
     </main>
 

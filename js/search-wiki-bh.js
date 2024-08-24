@@ -203,7 +203,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Madame Yumiko', url: '../wiki-bh/madame-yumiko' },
     { resultado: 'Maggie', url: '../wiki-bh/maggie' },
     { resultado: 'Magyar', url: '../wiki-bh/magyar' },
-    { resultado: 'Mako', url: '../wiki-bh/Mako' },
+    { resultado: 'Mako', url: '../wiki-bh/mako' },
     { resultado: 'Mammoth Fortress', url: '../wiki-bh/mammoth-fortress' },
     { resultado: 'Mapas', url: '../wiki-bh/mapas' },
     { resultado: 'Master Blacksmith Ulgrim', url: '../wiki-bh/master-blacksmith-ulgrim' },
