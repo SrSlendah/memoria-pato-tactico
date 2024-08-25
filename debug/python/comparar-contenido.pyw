@@ -20,26 +20,21 @@ def escribir_diferencias(diferencias, file_path):
             file.write(linea + '\n')
 
 def main():
-    # Inicializar tkinter
     root = tk.Tk()
-    root.withdraw()  # Ocultar la ventana principal
+    root.withdraw()
     
-    # Seleccionar archivo1
     archivo1 = filedialog.askopenfilename(title="Selecciona la lista de archivos de la carpeta", filetypes=[("Text files", "*.txt")])
     if not archivo1:
         messagebox.showerror("Error", "No se seleccionó la lista de archivos de la carpeta.")
         return
 
-    # Seleccionar archivo2
     archivo2 = filedialog.askopenfilename(title="Selecciona el segundo archivo", filetypes=[("JavaScript files", "*.js")])
     if not archivo2:
         messagebox.showerror("Error", "No se seleccionó el segundo archivo.")
         return
 
-    # Extraer el nombre del archivo1 sin extensión
     nombre_archivo1 = os.path.splitext(os.path.basename(archivo1))[0]
     
-    # Determinar la ruta del archivo de diferencias en la misma carpeta que el script
     script_path = os.path.dirname(os.path.abspath(__file__))
     archivo_diferencias = os.path.join(script_path, f'diferencias-{nombre_archivo1}.txt')
 
@@ -53,7 +48,6 @@ def main():
 
     escribir_diferencias(todas_diferencias, archivo_diferencias)
     
-    # Abrir el archivo de diferencias
     os.startfile(archivo_diferencias)
 
 if __name__ == '__main__':

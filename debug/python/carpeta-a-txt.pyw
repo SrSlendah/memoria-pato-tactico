@@ -2,17 +2,13 @@ import os
 import tkinter as tk
 from tkinter import filedialog
 
-# Inicializar tkinter
 root = tk.Tk()
-root.withdraw()  # Ocultar la ventana principal
+root.withdraw()
 
-# Directorio predeterminado
 directorio_predeterminado = 'C:/Users/slend/Desktop/Proyectos/html/memoria-pato-tactico'
 
-# Abrir un selector de carpetas con el directorio predeterminado
 carpeta = filedialog.askdirectory(initialdir=directorio_predeterminado, title="Selecciona la carpeta")
 
-# Si el usuario seleccionó una carpeta
 if carpeta:
     archivos = os.listdir(carpeta)
     nombre_carpeta = os.path.basename(carpeta)
