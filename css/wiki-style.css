@@ -2081,7 +2081,7 @@ th {
     height: 200px;
     margin-top: -4px;
     border: 4px solid #4b2866;
-    padding: 15px
+    padding: 5px
 }
 
 .crossover-leyendas-list-titulo {
@@ -2204,7 +2204,7 @@ th {
 
 .crossover-podios-list-imagen img {
     width: 100%;
-    height: 325px;
+    height: 350px;
     margin-top: -4px;
     border: 4px solid #4b2866;
     padding: 15px
@@ -2246,7 +2246,7 @@ th {
 
 .crossover-efectos_ko-lista {
     display: grid;
-    grid-template-columns: repeat(5, 200px);
+    grid-template-columns: repeat(1, 200px);
     gap: 20px;
     justify-content: center;
 }
@@ -2264,7 +2264,7 @@ th {
     height: auto;
     margin-top: -4px;
     border: 4px solid #4b2866;
-    padding: 15px
+    padding: 5px
 }
 
 .crossover-efectos_ko-list-titulo {
@@ -2303,7 +2303,7 @@ th {
 
 .crossover-avatares-lista {
     display: grid;
-    grid-template-columns: repeat(6, 150px);
+    grid-template-columns: repeat(6, 125px);
     gap: 20px;
     justify-content: center;
 }
@@ -2321,7 +2321,7 @@ th {
     height: auto;
     margin-top: -4px;
     border: 4px solid #4b2866;
-    padding: 15px
+    padding: 5px
 }
 
 .crossover-avatares-list-titulo {
@@ -2358,6 +2358,168 @@ th {
     margin-top: -5px;
 }
 
+.unavatar{
+    grid-template-columns: repeat(1, 125px);
+}
+.dosavatares{
+    grid-template-columns: repeat(2, 125px);
+}
+.tresavatares{
+    grid-template-columns: repeat(3, 125px);
+}
+.cuatroavatares{
+    grid-template-columns: repeat(4, 125px);
+}
+.cincoavatares{
+    grid-template-columns: repeat(5, 125px);
+}
+
+@media screen and (max-width:900px) {
+    .crossover-avatares-lista {grid-template-columns: repeat(5, 125px);}
+    .cincoavatares {grid-template-columns: repeat(5, 125px);}
+    .cuatroavatares {grid-template-columns: repeat(4, 125px);}
+    .tresavatares {grid-template-columns: repeat(3, 125px);}
+    .dosavatares {grid-template-columns: repeat(2, 125px);}
+    .unavatar {grid-template-columns: repeat(1, 125px);}
+}
+
+@media screen and (max-width:740px) {
+    .crossover-avatares-lista {grid-template-columns: repeat(4, 125px);}
+    .cincoavatares {grid-template-columns: repeat(4, 125px);}
+    .cuatroavatares {grid-template-columns: repeat(4, 125px);}
+    .tresavatares {grid-template-columns: repeat(3, 125px);}
+    .dosavatares {grid-template-columns: repeat(2, 125px);}
+    .unavatar {grid-template-columns: repeat(1, 125px);}
+}
+
+@media screen and (max-width:600px) {
+    .crossover-avatares-lista {grid-template-columns: repeat(3, 125px);}
+    .cincoavatares {grid-template-columns: repeat(3, 125px);}
+    .cuatroavatares {grid-template-columns: repeat(3, 125px);}
+    .tresavatares {grid-template-columns: repeat(3, 125px);}
+    .dosavatares {grid-template-columns: repeat(2, 125px);}
+    .unavatar {grid-template-columns: repeat(1, 125px);}
+}
+
+@media screen and (max-width:450px) {
+    .crossover-avatares-lista {grid-template-columns: repeat(2, 125px);}
+    .cincoavatares {grid-template-columns: repeat(2, 125px);}
+    .cuatroavatares {grid-template-columns: repeat(2, 125px);}
+    .tresavatares {grid-template-columns: repeat(2, 125px);}
+    .dosavatares {grid-template-columns: repeat(2, 125px);}
+    .unavatar {grid-template-columns: repeat(1, 125px);}
+}
+
+
+.crossover-emojis-lista {
+    display: grid;
+    grid-template-columns: repeat(6, 125px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.crossover-emojis-list-elemento {
+    text-align: center;
+}
+
+.crossover-emojis-list-imagen {
+    position: relative;
+}
+
+.crossover-emojis-list-imagen img {
+    width: 100%;
+    height: auto;
+    margin-top: -4px;
+    border: 4px solid #4b2866;
+    padding: 5px
+}
+
+.crossover-emojis-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.crossover-emojis-list-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 50px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.unemoji{
+    grid-template-columns: repeat(1, 125px);
+}
+.dosemojis{
+    grid-template-columns: repeat(2, 125px);
+}
+.tresemojis{
+    grid-template-columns: repeat(3, 125px);
+}
+.cuatroemojis{
+    grid-template-columns: repeat(4, 125px);
+}
+.cincoemojis{
+    grid-template-columns: repeat(5, 125px);
+}
+
+@media screen and (max-width:900px) {
+    .crossover-emojis-lista {grid-template-columns: repeat(5, 125px);}
+    .cincoemojis {grid-template-columns: repeat(5, 125px);}
+    .cuatroemojis {grid-template-columns: repeat(4, 125px);}
+    .tresemojis {grid-template-columns: repeat(3, 125px);}
+    .dosemojis {grid-template-columns: repeat(2, 125px);}
+    .unemoji {grid-template-columns: repeat(1, 125px);}
+}
+
+@media screen and (max-width:740px) {
+    .crossover-emojis-lista {grid-template-columns: repeat(4, 125px);}
+    .cincoemojis {grid-template-columns: repeat(4, 125px);}
+    .cuatroemojis {grid-template-columns: repeat(4, 125px);}
+    .tresemojis {grid-template-columns: repeat(3, 125px);}
+    .dosemojis {grid-template-columns: repeat(2, 125px);}
+    .unemoji {grid-template-columns: repeat(1, 125px);}
+}
+
+@media screen and (max-width:600px) {
+    .crossover-emojis-lista {grid-template-columns: repeat(3, 125px);}
+    .cincoemojis {grid-template-columns: repeat(3, 125px);}
+    .cuatroemojis {grid-template-columns: repeat(3, 125px);}
+    .tresemojis {grid-template-columns: repeat(3, 125px);}
+    .dosemojis {grid-template-columns: repeat(2, 125px);}
+    .unemoji {grid-template-columns: repeat(1, 125px);}
+}
+
+@media screen and (max-width:450px) {
+    .crossover-emojis-lista {grid-template-columns: repeat(2, 125px);}
+    .cincoemojis {grid-template-columns: repeat(2, 125px);}
+    .cuatroemojis {grid-template-columns: repeat(2, 125px);}
+    .tresemojis {grid-template-columns: repeat(2, 125px);}
+    .dosemojis {grid-template-columns: repeat(2, 125px);}
+    .unemoji {grid-template-columns: repeat(1, 125px);}
+}
+
 .crossover-gestos-lista {
     display: grid;
     grid-template-columns: repeat(5, 175px);
@@ -2378,7 +2540,7 @@ th {
     height: auto;
     margin-top: -4px;
     border: 4px solid #4b2866;
-    padding: 15px
+    padding: 5px
 }
 
 .crossover-gestos-list-titulo {
@@ -2415,9 +2577,50 @@ th {
     margin-top: -5px;
 }
 
+.ungesto{
+    grid-template-columns: repeat(1, 175px);
+}
+.dosgestos{
+    grid-template-columns: repeat(2, 175px);
+}
+.tresgestos{
+    grid-template-columns: repeat(3, 175px);
+}
+.cuatrogestos{
+    grid-template-columns: repeat(4, 175px);
+}
+
+@media screen and (max-width:1000px) {
+    .crossover-gestos-lista {grid-template-columns: repeat(4, 175px);}
+    .cuatrogestos{grid-template-columns: repeat(4, 175px);}
+    .tresgestos {grid-template-columns: repeat(3, 175px);}
+    .dosgestos {grid-template-columns: repeat(2, 175px);}
+    .ungesto {grid-template-columns: repeat(1, 175px);}
+}
+
+@media screen and (max-width:800px) {
+    .crossover-gestos-lista {grid-template-columns: repeat(3, 175px);}
+    .cuatrogestos {grid-template-columns: repeat(3, 175px);}
+    .tresgestos {grid-template-columns: repeat(3, 175px);}
+    .dosgestos {grid-template-columns: repeat(2, 175px);}
+    .ungesto {grid-template-columns: repeat(1, 175px);}
+}
+
+@media screen and (max-width:600px) {
+    .crossover-gestos-lista {grid-template-columns: repeat(2, 175px);}
+    .cuatrogestos {grid-template-columns: repeat(2, 175px);}
+    .tresgestos {grid-template-columns: repeat(2, 175px);}
+    .dosgestos {grid-template-columns: repeat(2, 175px);}
+    .ungestos {grid-template-columns: repeat(1, 175px);}
+}
+
+@media screen and (max-width:450px) {
+    .crossover-gestos-lista {grid-template-columns: repeat(2, 160px);}
+}
+
 .crossover-compañeros-lista {
     display: grid;
-    grid-template-columns: repeat(5, 175px);
+    grid-template-columns: repeat(1, 175px);
     gap: 20px;
     justify-content: center;
 }
@@ -2474,7 +2677,7 @@ th {
 
 .crossover-modos_de_juego-lista {
     display: grid;
-    grid-template-columns: repeat(1, 150px) !important;
+    grid-template-columns: repeat(1, 115px) !important;
     gap: 20px;
     justify-content: center;
 }
@@ -2492,7 +2695,7 @@ th {
     height: auto;
     margin-top: -4px;
     border: 4px solid #4b2866;
-    padding: 15px;
+    padding: 5px;
     border-radius: 0 0 20px 20px;
 }
 
@@ -2515,7 +2718,7 @@ th {
 
 .crossover-mapas-lista {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(1, 300px);
     gap: 20px;
     justify-content: center;
 }
