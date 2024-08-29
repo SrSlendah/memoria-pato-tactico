@@ -232,7 +232,7 @@ details {
   }
 
   @media screen and (max-width:800px) {
-    .contenido-overlay {
+    .contenido-overlay#leyenda {
         max-width: 600px;
         width: 600px;
         max-height: 600px;
@@ -240,7 +240,7 @@ details {
         overflow-y: auto; 
     }
     
-    .contenido-overlay .leyenda-info {
+    .contenido-overlay#leyenda .leyenda-info {
         min-width: 200px;
     }
 
@@ -267,7 +267,7 @@ details {
     
   }
   @media screen and (max-width:650px) {
-    .contenido-overlay {
+    .contenido-overlay#leyenda {
         max-width: 400px;
         width: 400px;
         max-height: 600px;
@@ -276,7 +276,7 @@ details {
     }
 }
 @media screen and (max-width:450px) {
-  .contenido-overlay {
+  .contenido-overlay#leyenda {
       max-width: 350px;
       width: 350px;
       max-height: 600px;
