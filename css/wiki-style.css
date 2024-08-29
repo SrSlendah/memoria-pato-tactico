@@ -2187,9 +2187,58 @@ th {
     margin-top: -5px;
 }
 
+.unaskin {
+    grid-template-columns: repeat(1, 200px);
+}
+
+.dosskins {
+    grid-template-columns: repeat(2, 200px);
+}
+
+.tresskins {
+    grid-template-columns: repeat(3, 200px);
+}
+
+.cuatroskins {
+    grid-template-columns: repeat(4, 200px);
+}
+
+@media screen and (max-width:1150px) {
+    .crossover-skins-lista {grid-template-columns: repeat(4, 200px);}
+    .cuatroskins {grid-template-columns: repeat(4, 200px);}
+    .tresskins {grid-template-columns: repeat(3, 200px);}
+    .dosskins {grid-template-columns: repeat(2, 200px);}
+    .unaskin {grid-template-columns: repeat(1, 200px);}
+}
+
+@media screen and (max-width:900px) {
+    .crossover-skins-lista {grid-template-columns: repeat(3, 200px);}
+    .cuatroskins {grid-template-columns: repeat(3, 200px);}
+    .tresskins {grid-template-columns: repeat(3, 200px);}
+    .dosskins {grid-template-columns: repeat(2, 200px);}
+    .unaskin {grid-template-columns: repeat(1, 200px);}
+}
+
+@media screen and (max-width:675px) {
+    .crossover-skins-lista {grid-template-columns: repeat(2, 200px);}
+    .cuatroskins {grid-template-columns: repeat(2, 200px);}
+    .tresskins {grid-template-columns: repeat(2, 200px);}
+    .dosskins {grid-template-columns: repeat(2, 200px);}
+    .unaskin {grid-template-columns: repeat(1, 200px);}
+}
+
+@media screen and (max-width:475px) {
+    .crossover-skins-lista {grid-template-columns: repeat(2, 175px);}
+    .cuatroskins {grid-template-columns: repeat(2, 175px);}
+    .tresskins {grid-template-columns: repeat(2, 175px);}
+    .dosskins {grid-template-columns: repeat(2, 175px);}
+    .unaskin {grid-template-columns: repeat(1, 175px);}
+    .crossover-skins-list-imagen img {height: auto;}
+}
+
 .crossover-podios-lista {
     display: grid;
-    grid-template-columns: repeat(5, 200px);
+    grid-template-columns: repeat(1, 200px);
     gap: 20px;
     justify-content: center;
 }
@@ -2612,11 +2661,15 @@ th {
     .cuatrogestos {grid-template-columns: repeat(2, 175px);}
     .tresgestos {grid-template-columns: repeat(2, 175px);}
     .dosgestos {grid-template-columns: repeat(2, 175px);}
-    .ungestos {grid-template-columns: repeat(1, 175px);}
+    .ungesto {grid-template-columns: repeat(1, 175px);}
 }
 
 @media screen and (max-width:450px) {
     .crossover-gestos-lista {grid-template-columns: repeat(2, 160px);}
+    .cuatrogestos {grid-template-columns: repeat(2, 160px);}
+    .tresgestos {grid-template-columns: repeat(2, 160px);}
+    .dosgestos {grid-template-columns: repeat(2, 160px);}
+    .ungesto {grid-template-columns: repeat(1, 160px);}
 }
 
 .crossover-compañeros-lista {
@@ -2732,20 +2785,8 @@ th {
     position: relative;
 }
 
-.crossover-mapas-list-leyenda {
-    position: absolute !important;
-    bottom: 5px;
-    right: 0px;
-    cursor: pointer;
-    background: rgba(94, 51, 127, 0.8);;
-    width:50px !important;
-    height:50px !important;
-    padding:2px !important;
-    border-radius: 15px 0 0 0 !important;
-}
-
 .crossover-mapas-list-imagen img {
-    width: 300px;
+    width: 100%;
     height: auto;
     margin-top: -4px;
     border: 4px solid #4b2866;
@@ -2769,21 +2810,17 @@ th {
     margin-top: -5px;
 }
 
-@media screen and (max-width:1150px) {
-    .crossover-skins-lista {grid-template-columns: repeat(4, 200px);}
+.unmapa {
+    grid-template-columns: repeat(1, 300px);
 }
 
-@media screen and (max-width:900px) {
-    .crossover-skins-lista {grid-template-columns: repeat(3, 200px);}
+.dosmapas {
+    grid-template-columns: repeat(2, 300px);
 }
 
-@media screen and (max-width:675px) {
-    .crossover-skins-lista {grid-template-columns: repeat(2, 200px);}
-}
-
-@media screen and (max-width:475px) {
-    .crossover-skins-lista {grid-template-columns: repeat(2, 175px);}
-    .crossover-skins-list-imagen img {width: 175px; height: auto;}
+@media screen and (max-width:650px) {
+    .dosmapas {grid-template-columns: repeat(1, 300px);}
+    .unmapa {grid-template-columns: repeat(1, 300px);}
 }
 
 .unitem {
