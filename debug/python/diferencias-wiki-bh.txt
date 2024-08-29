@@ -1,0 +1,2 @@
+Líneas en archivo1 pero no encontradas en cualquier parte de archivo2:
+
