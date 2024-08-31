@@ -92,42 +92,62 @@
       
         <script src="../js/search-wiki-bh.js"></script>
 
-        <table style="margin-top:20px;width:30%">
-            <tr>
-                <th colspan="4">The Great Hall</th>
-            </tr>
-            <tr>
-                <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/mapas/the-great-hall.png" style="width:400px"></td>
-                <th style="height:30px;width:175px">Leyendas Locales</th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="../wiki-bh/brynn">
-                        <img src="../media/wiki/bh/leyendas/logos/brynn.png" title="Brynn" style="width:70px">
-                    </a>
-                </td>
-            </tr>
-        </table>
+        <div class="mapa-container">
+            <section class="mapa">
+                <div class="mapa-elemento">
+                    <div class="mapa-imagen">
+                        <img src="../media/wiki/bh/mapas/the-great-hall.png">
+                    </div>
 
-        <h2 align="center" style="margin-top:20px">Variantes</h2>
+                    <div class="mapa-info" style="position: relative;">
+                        <h2 class="mapa-titulo">The Great Hall</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="mapa-details">
+                            <div class="mapa-details-labels">
+                                <p>
+                                    <strong>
+                                        <br>
+                                        Hogar de:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="mapa-details-values">
+                                <p>
+                                    <a href="../wiki-bh/brynn" class="mapa-leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/brynn.png" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <table style="margin-top:40px;width:30%">
-            <tr>
-                <th>Pequeño</th>
-                <th>Estandar</th>
-                <th>Grande</th>
-            </tr>
-            <tr>
-                <td style="width:300px"><img src="../media/wiki/bh/mapas/the-great-hall_small.png" style="width:400px"></td>
-                <td style="width:300px"><img src="../media/wiki/bh/mapas/the-great-hall.png" style="width:400px"></td>
-                <td style="width:300px"><img src="../media/wiki/bh/mapas/the-great-hall_large.png" style="width:400px"></td>
-            </tr>
-            <tr>
-                <td><i>Destinado a partidas 1vs1</i></td>
-                <td><i>Destinado a partidas 2vs2 y Todos contra Todos</i></td>
-                <td><i>Destinado a partidas 3vs3, Todos contra Todos<br> con mas de 5 jugadores</i></td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Variaciones</h2>
+
+        <section class="mapa-variacion-lista">
+            
+            <div class="mapa-variacion-list-elemento">
+                <div class="mapa-variacion-list-titulo">Pequeño</div>
+                    <div class="mapa-variacion-list-imagen"><img src="../media/wiki/bh/mapas/the-great-hall_small.png"></div>
+                    <div class="mapa-variacion-list-texto" style="font-size:13.5px">Destinado a partidas de 1vs1</div>
+            </div>
+            
+            <div class="mapa-variacion-list-elemento">
+                <div class="mapa-variacion-list-titulo">Estándar</div>
+                    <div class="mapa-variacion-list-imagen"><img src="../media/wiki/bh/mapas/the-great-hall.png"></div>
+                    <div class="mapa-variacion-list-texto" style="font-size:13.5px">Destinado a partidas de 2vs2 y Todos contra Todos</div>
+            </div>
+            
+            <div class="mapa-variacion-list-elemento">
+                <div class="mapa-variacion-list-titulo">Grande</div>
+                    <div class="mapa-variacion-list-imagen"><img src="../media/wiki/bh/mapas/the-great-hall_large.png"></div>
+                    <div class="mapa-variacion-list-texto" style="font-size:13.5px">Destinado a partidas de 3vs3 y Todos contra Todos con mas de 5 jugadores</div>
+            </div>
+
+        </section>
 
     </main>
 

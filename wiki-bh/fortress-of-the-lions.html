@@ -92,45 +92,58 @@
       
         <script src="../js/search-wiki-bh.js"></script>
 
-        <table style="margin-top:20px;width:31%">
-            <tr>
-                <th colspan="4">Fortress of the Lions</th>
-            </tr>
-            <tr>
-                <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/mapas/fortress-of-the-lions.png" style="width:400px"></td>
-                <th style="height:30px;width:175px">Leyendas Locales</th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="../wiki-bh/volkov">
-                        <img src="../media/wiki/bh/leyendas/logos/volkov.png" title="Brynn" style="width:70px">
-                    </a>
-                    <a href="../wiki-bh/onyx">
-                        <img src="../media/wiki/bh/leyendas/logos/onyx.png" title="Brynn" style="width:70px">
-                    </a>
-                    <a href="../wiki-bh/magyar">
-                        <img src="../media/wiki/bh/leyendas/logos/magyar.png" title="Brynn" style="width:70px">
-                    </a>
-                </td>
-            </tr>
-        </table>
+        <div class="mapa-container">
+            <section class="mapa">
+                <div class="mapa-elemento">
+                    <div class="mapa-imagen">
+                        <img src="../media/wiki/bh/mapas/fortress-of-the-lions.png">
+                    </div>
 
-        <h2 align="center" style="margin-top:20px">Variantes</h2>
+                    <div class="mapa-info" style="position: relative;">
+                        <h2 class="mapa-titulo">Fortress of the Lions</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="mapa-details">
+                            <div class="mapa-details-labels">
+                                <p>
+                                    <strong>
+                                        <br>
+                                        Hogar de:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="mapa-details-values">
+                                <p>
+                                    <a href="../wiki-bh/volkov" class="mapa-leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/volkov.png" style="width:60px"></a>
+                                    <a href="../wiki-bh/onyx" class="mapa-leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/onyx.png" style="width:60px"></a><br>
+                                    <a href="../wiki-bh/magyar" class="mapa-leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/magyar.png" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <table style="margin-top:40px;width:30%">
-            <tr>
-                <th>Pequeño</th>
-                <th>Estandar</th>
-            </tr>
-            <tr>
-                <td style="width:300px"><img src="../media/wiki/bh/mapas/fortress-of-the-lions_small.png" style="width:400px"></td>
-                <td style="width:300px"><img src="../media/wiki/bh/mapas/fortress-of-the-lions.png" style="width:400px"></td>
-            </tr>
-            <tr>
-                <td><i>Destinado a partidas 1vs1 y 2vs2</i></td>
-                <td><i>Destinado a partidas Todos contra Todos</i></td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Variaciones</h2>
+
+        <section class="mapa-variacion-lista dosvariaciones">
+            
+            <div class="mapa-variacion-list-elemento">
+                <div class="mapa-variacion-list-titulo">Pequeño</div>
+                    <div class="mapa-variacion-list-imagen"><img src="../media/wiki/bh/mapas/fortress-of-the-lions_small.png"></div>
+                    <div class="mapa-variacion-list-texto">Destinado a partidas 1vs1 y 2vs2</div>
+            </div>
+            
+            <div class="mapa-variacion-list-elemento">
+                <div class="mapa-variacion-list-titulo">Estándar</div>
+                    <div class="mapa-variacion-list-imagen"><img src="../media/wiki/bh/mapas/fortress-of-the-lions.png"></div>
+                    <div class="mapa-variacion-list-texto" style="font-size:13.5px">Destinado a partidas de Todos contra Todos</div>
+            </div>
+
+        </section>
 
     </main>
 

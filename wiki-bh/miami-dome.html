@@ -92,42 +92,57 @@
       
         <script src="../js/search-wiki-bh.js"></script>
 
-        <table style="margin-top:20px;width:30%">
-            <tr>
-                <th colspan="4">Miami Dome</th>
-            </tr>
-            <tr>
-                <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/mapas/miami-dome.png" style="width:400px"></td>
-                <th style="height:30px;width:175px">Leyendas Locales</th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="../wiki-bh/ada">
-                        <img src="../media/wiki/bh/leyendas/logos/ada.png" title="Ada" style="width:70px">
-                    </a>
-                    <a href="../wiki-bh/val">
-                        <img src="../media/wiki/bh/leyendas/logos/val.png" title="Val" style="width:70px">
-                    </a>
-                </td>
-            </tr>
-        </table>
+        <div class="mapa-container">
+            <section class="mapa">
+                <div class="mapa-elemento">
+                    <div class="mapa-imagen">
+                        <img src="../media/wiki/bh/mapas/miami-dome.png">
+                    </div>
 
-        <h2 align="center" style="margin-top:20px">Variantes</h2>
+                    <div class="mapa-info" style="position: relative;">
+                        <h2 class="mapa-titulo">Miami Dome</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="mapa-details">
+                            <div class="mapa-details-labels">
+                                <p>
+                                    <strong>
+                                        <br>
+                                        Hogar de:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="mapa-details-values">
+                                <p>
+                                    <a href="../wiki-bh/ada" class="mapa-leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/ada.png" style="width:60px"></a>
+                                    <a href="../wiki-bh/val" class="mapa-leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/val.png" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <table style="margin-top:40px;width:30%">
-            <tr>
-                <th>Estandar</th>
-                <th>Grande</th>
-            </tr>
-            <tr>
-                <td style="width:300px"><img src="../media/wiki/bh/mapas/miami-dome.png" style="width:400px"></td>
-                <td style="width:300px"><img src="../media/wiki/bh/mapas/miami-dome_large.png" style="width:400px"></td>
-            </tr>
-            <tr>
-                <td><i>Destinado a partidas 1vs1 y 2vs2</i></td>
-                <td><i>Destinado a partidas 3vs3 y Todos contra Todos</i></td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Variaciones</h2>
+
+        <section class="mapa-variacion-lista dosvariaciones">
+            
+            <div class="mapa-variacion-list-elemento">
+                <div class="mapa-variacion-list-titulo">Estándar</div>
+                    <div class="mapa-variacion-list-imagen"><img src="../media/wiki/bh/mapas/miami-dome.png"></div>
+                    <div class="mapa-variacion-list-texto" style="font-size:13.5px">Destinado a partidas de 1vs1 y 2vs2</div>
+            </div>
+            
+            <div class="mapa-variacion-list-elemento">
+                <div class="mapa-variacion-list-titulo">Grande</div>
+                    <div class="mapa-variacion-list-imagen"><img src="../media/wiki/bh/mapas/miami-dome_large.png"></div>
+                    <div class="mapa-variacion-list-texto" style="font-size:13.5px">Destinado a partidas de 3vs3 y Todos contra Todos</div>
+            </div>
+
+        </section>
 
     </main>
 
