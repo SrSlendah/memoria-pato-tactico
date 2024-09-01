@@ -1921,6 +1921,46 @@ th {
     margin-top: -5px;
 }
 
+.mapa-fase-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.mapa-fase-list-elemento {
+    text-align: center;
+}
+
+.mapa-fase-list-imagen {
+    position: relative;
+}
+
+.mapa-fase-list-imagen img {
+    width: 350px;
+    height: auto;
+    margin-top: -4px;
+    border: 4px solid #4b2866;
+    border-radius: 0 0 20px 20px;
+}
+
+.mapa-fase-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
 .dosvariaciones {
     grid-template-columns: repeat(2, 350px);
 }
@@ -1930,13 +1970,13 @@ th {
 }
 
 @media screen and (max-width:1125px) {
-    .mapa-variacion-lista {grid-template-columns: repeat(2, 350px);}
+    .mapa-variacion-lista, .mapa-fase-lista {grid-template-columns: repeat(2, 350px);}
     .dosvariaciones {grid-template-columns: repeat(2, 350px);}
     .unavariacion {grid-template-columns: repeat(1, 350px);}
 }
 
 @media screen and (max-width:750px) {
-    .mapa-variacion-lista {grid-template-columns: repeat(1, 350px);}
+    .mapa-variacion-lista, .mapa-fase-lista {grid-template-columns: repeat(1, 350px);}
     .dosvariaciones {grid-template-columns: repeat(1, 350px);}
     .unavariacion {grid-template-columns: repeat(1, 350px);}
 }
