@@ -1690,6 +1690,15 @@ th {
     border-radius: 15px;
     border: 4px solid #4b2866;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    width: 55px;
+}
+
+.mapa-gamemode-logo img {
+    border-radius: 10px;
+    border: 4px solid #4b2866;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    width: 50px;
+    margin-top: 10px;
 }
 
 .mapa-info {
@@ -1703,7 +1712,7 @@ th {
     align-items: center;
     text-align: center;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    width: 350px;
+    width: 370px;
 }
 
 .mapa-titulo {
@@ -3167,7 +3176,18 @@ th {
     grid-template-columns: repeat(2, 300px);
 }
 
+.tresmapas {
+    grid-template-columns: repeat(3, 300px);
+}
+
+@media screen and (max-width:975px) {
+    .tresmapas {grid-template-columns: repeat(2, 300px);}
+    .dosmapas {grid-template-columns: repeat(2, 300px);}
+    .unmapa {grid-template-columns: repeat(1, 300px);}
+}
+
 @media screen and (max-width:650px) {
+    .tresmapas {grid-template-columns: repeat(1, 300px);}
     .dosmapas {grid-template-columns: repeat(1, 300px);}
     .unmapa {grid-template-columns: repeat(1, 300px);}
 }

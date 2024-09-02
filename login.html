@@ -88,15 +88,17 @@
                 var password = document.getElementById("password").value;
     
                 var encodedUsername = "U2xlbmRhaA==";
+                var encodedUsername2 = "c2xlbmRhaA==";
                 var encodedPassword = "TW9uZ29sb3lleTEh";
     
                 var decodedUsername = atob(encodedUsername);
+                var decodedUsername2 = atob(encodedUsername2);
                 var decodedPassword = atob(encodedPassword);
     
                 if (username === "" || password === "") {
                     document.getElementById("login_empty").style.display = "";
                     document.getElementById("login_error").style.display = "none";
-                } else if (username === decodedUsername && password === decodedPassword) {
+                } else if ((username === decodedUsername || username === decodedUsername2) && (password === decodedPassword)) {
                     window.localStorage.setItem("IsLoggedIn", true);
                     window.location.href = "./administracion.html";
                 } else {
