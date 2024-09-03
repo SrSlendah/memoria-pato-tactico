@@ -94,121 +94,164 @@
         <script src="../js/search-wiki-bh.js"></script>
 
         <div class="secciones" align="center" style="margin-top:20px">
-            <button id="sec1-btn" onclick="showSec1();" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Fase 1</button>
-            <button id="sec2-btn" onclick="showSec2();">Fase 2</button>
-            <button id="sec3-btn" onclick="showSec3();">Fase 3</button>
+            <a href="#fase1"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Fase 1</button></a>
+            <a href="#fase2"><button id="sec2-btn">Fase 2</button></a>
+            <a href="#fase3"><button id="sec3-btn">Fase 3</button></a>
         </div>
 
         <section id="sec1">
-            <h2 align="center" style="margin-top:15px">Mecánicas</h2>
 
-            <div align="center" style="margin-top:15px">
-                <p style="color:#fff">
-                    El modo iniciara con un arma en el suelo y una Brynn.<br> El juego dirigirá al jugador para que ataque a brynn,<br> una vez la ataque ella empezará a atacar tambien.<br> Para finalizar esta fase se deberá derrotar a brynn.<br><br>
+        <div class="mapa-container">
+            <section class="mapa">
+                <div class="mapa-elemento">
+                    <div class="mapa-imagen">
+                        <img src="../media/wiki/bh/mapas/tutorial1.png">
+                    </div>
 
-                    Completar esta fase otorga <img src="../media/wiki/bh/iconos/oro.png" title="Oro"> 100
-                </p>
-            </div>
+                    <div class="mapa-info" style="position: relative;">
+                        <h2 class="mapa-titulo">Tutorial</h2>
+                        <h2 class="mapa-subtitulo">Fase 1</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="mapa-details">
+                            <div class="mapa-details-labels">
+                                <p>
+                                    <strong>
+                                        Recompensa al completar:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="mapa-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width: 12px;"> 100
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-            <table style="margin-top:40px;width:5%">
-                <tr>
-                    <th>Logo</th>
-                </tr>
-                <tr>
-                    <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/gamemodes/no-logo.png" style="width:70px"></td>
-                </tr>
-            </table>
-
-
-            <table style="margin-top:10px;width:30%">
-                <tr>
-                    <th colspan="4">Tutorial - Fase 1</th>
-                </tr>
-                <tr>
-                    <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/mapas/tutorial1.png" style="width:400px"></td>
-                    <th style="height:30px;width:175px">Leyendas Locales</th>
-                </tr>
-                <tr>
-                    <td>
-                        Nadie
-                    </td>
-                </tr>
-            </table>
+        <div class="mapa-container" style="margin-top: -40px;">
+            <section class="mapa">
+                    <div class="mapa-info" id="mecanicas" style="width: 500px;">
+                        <h2 class="mapa-titulo">Mecánicas</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="mapa-details">
+                            <div class="mapa-details-values">
+                                <p>
+                                    La fase iniciará con un arma en el suelo y un bot de <a href="./brynn" class="wbh-a-light">Brynn</a>. El juego dirigirá al jugador para que ataque al bot de brynn. Una vez lo ataque, el bot empezará a atacar tambien. El jugador deberá derrotar al bot de <a href="./brynn" class="wbh-a-light">Brynn</a> para superar esta fase.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         </section>
 
         <section id="sec2" style="display:none">
-            <h2 align="center" style="margin-top:15px">Mecánicas</h2>
 
-            <div align="center" style="margin-top:15px">
-                <p style="color:#fff">
-                    El modo iniciara con un arma en el suelo y una Cassidy en lo alto de un pilar.<br> EL jugador deberá coger el arma y atacar a la Cassidy. Una vez la ataque, esta empezatá a pelear.<br> Para finalizar esta fase se deberá derrotar a Cassidy<br><br>
-
-                    Completar esta fase otorga <img src="../media/wiki/bh/iconos/oro.png" title="Oro"> 150
-                </p>
+            <div class="mapa-container">
+                <section class="mapa">
+                    <div class="mapa-elemento">
+                        <div class="mapa-imagen">
+                            <img src="../media/wiki/bh/mapas/tutorial2.png">
+                        </div>
+    
+                        <div class="mapa-info" style="position: relative;">
+                            <h2 class="mapa-titulo">Tutorial</h2>
+                            <h2 class="mapa-subtitulo">Fase 2</h2>
+                            <hr class="info-sep" style="margin-bottom: 10px;">
+                            <div class="mapa-details">
+                                <div class="mapa-details-labels">
+                                    <p>
+                                        <strong>
+                                            Recompensa al completar:
+                                        </strong>
+                                    </p>
+                                </div>
+                                <div class="mapa-details-values">
+                                    <p>
+                                        <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width: 12px;"> 150
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-
-            <table style="margin-top:40px;width:5%">
-                <tr>
-                    <th>Logo</th>
-                </tr>
-                <tr>
-                    <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/gamemodes/no-logo.png" style="width:70px"></td>
-                </tr>
-            </table>
-
-
-            <table style="margin-top:10px;width:30%">
-                <tr>
-                    <th colspan="4">Tutorial - Fase 2</th>
-                </tr>
-                <tr>
-                    <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/mapas/tutorial2.png" style="width:400px"></td>
-                    <th style="height:30px;width:175px">Leyendas Locales</th>
-                </tr>
-                <tr>
-                    <td>
-                        Nadie
-                    </td>
-                </tr>
-            </table>
+    
+            <div class="mapa-container" style="margin-top: -40px;">
+                <section class="mapa">
+                        <div class="mapa-info" id="mecanicas" style="width: 500px;">
+                            <h2 class="mapa-titulo">Mecánicas</h2>
+                            <hr class="info-sep" style="margin-bottom: 10px;">
+                            <div class="mapa-details">
+                                <div class="mapa-details-values">
+                                    <p>
+                                        La fase iniciará con un arma en el suelo y un bot de <a href="./cassidy" class="wbh-a-light">Cassidy</a> en lo alto de un pilar. EL jugador deberá coger el arma y atacar al bot de Cassidy. Una vez ataque al bot, este empezará a pelear. El jugador deberá derrotar al bot de <a href="./cassidy" class="wbh-a-light">Cassidy</a> para superar esta fase.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
         </section>
 
         <section id="sec3" style="display:none">
-            <h2 align="center" style="margin-top:15px">Mecánicas</h2>
 
-            <div align="center" style="margin-top:15px">
-                <p style="color:#fff">
-                    El modo iniciara como una partida de Todos contra Todos, enfrentándose a Orion, Teros y Ember.<br> El jugador deberá ser el último en pie para finalizar esta fase <br><br>
-
-                    Completar esta fase otorga <img src="../media/wiki/bh/iconos/oro.png" title="Oro"> 200
-                </p>
+            <div class="mapa-container">
+                <section class="mapa">
+                    <div class="mapa-elemento">
+                        <div class="mapa-imagen">
+                            <img src="../media/wiki/bh/mapas/tutorial3.png">
+                        </div>
+    
+                        <div class="mapa-info" style="position: relative;">
+                            <h2 class="mapa-titulo">Tutorial</h2>
+                            <h2 class="mapa-subtitulo">Fase 3</h2>
+                            <hr class="info-sep" style="margin-bottom: 10px;">
+                            <div class="mapa-details">
+                                <div class="mapa-details-labels">
+                                    <p>
+                                        <strong>
+                                            Recompensa al completar:
+                                        </strong>
+                                    </p>
+                                </div>
+                                <div class="mapa-details-values">
+                                    <p>
+                                        <img src="../media/wiki/bh/iconos/oro.png" title="Oro" style="width: 12px;"> 200
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-
-            <table style="margin-top:40px;width:5%">
-                <tr>
-                    <th>Logo</th>
-                </tr>
-                <tr>
-                    <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/gamemodes/no-logo.png" style="width:70px"></td>
-                </tr>
-            </table>
-
-
-            <table style="margin-top:10px;width:30%">
-                <tr>
-                    <th colspan="4">Tutorial - Fase 3</th>
-                </tr>
-                <tr>
-                    <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/mapas/tutorial3.png" style="width:400px"></td>
-                    <th style="height:30px;width:175px">Leyendas Locales</th>
-                </tr>
-                <tr>
-                    <td>
-                        Nadie
-                    </td>
-                </tr>
-            </table>
+    
+            <div class="mapa-container" style="margin-top: -40px;">
+                <section class="mapa">
+                        <div class="mapa-info" id="mecanicas" style="width: 500px;">
+                            <h2 class="mapa-titulo">Mecánicas</h2>
+                            <hr class="info-sep" style="margin-bottom: 10px;">
+                            <div class="mapa-details">
+                                <div class="mapa-details-values">
+                                    <p>
+                                        El jugador será colocado en un mapa identico a <a href="./mammoth-fortress" class="wbh-a-light">Mammoth Fortress</a>, pero con otras texturas, enfrentandose en una partida de Todos contra Todos a 3 Bots: <a href="./orion" class="wbh-a-light">Orion</a>, <a href="./teros" class="wbh-a-light">Teros</a> y <a href="./ember" class="wbh-a-light">Ember</a>. El jugador deberá ser el último en pie para superar esta fase.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
         </section>
+
     </main>
 
 

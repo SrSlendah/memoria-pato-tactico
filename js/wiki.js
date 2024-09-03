@@ -145,32 +145,9 @@ function calcularGlory() {
       "Glory total: " + (gloryElo + gloryWins);
 }
 
+
+
 // Secciones
-function show(sectionNumber) {
-  const totalSections = 4; // Actualizar esto con el número total de secciones
-  
-  for (let i = 1; i <= totalSections; i++) {
-    const section = document.getElementById(i);
-    const button = document.getElementById(i + '-btn');
-    
-    section.style.display = i === sectionNumber ? '' : 'none';
-    button.style.backgroundColor = i === sectionNumber ? '#4b2966' : '#6f3c96';
-    button.style.borderColor = i === sectionNumber ? '#311a42' : '#4b2866';
-    button.style.color = i === sectionNumber ? '#9e9e9e' : '#fff';
-  }
-}
-  
-  function show1() {
-    show(1);
-  }
-  
-  function show2() {
-    show(2);
-  }
-  
-  function show3() {
-    show(3);
-  }
   
 
 function showSection(sectionNumber) {
@@ -186,191 +163,185 @@ function showSection(sectionNumber) {
     button.style.color = i === sectionNumber ? '#9e9e9e' : '#fff';
   }
 }
-  
-  function showSec1() {
-    showSection(1);
-  }
-  
-  function showSec2() {
-    showSection(2);
-  }
-  
-  function showSec3() {
-    showSection(3);
-  }
-  
-  function showSec4() {
-    showSection(4);
-  }
-  
-  function showSec5() {
-    showSection(5);
-  }
-  
-  function showSec6() {
-    showSection(6);
-  }
-  
-  function showSec7() {
-    showSection(7);
-  }
-  
-  function showSec8() {
-    showSection(8);
-  }
-  
-  function showSec9() {
-    showSection(9);
-  }
-  
-  function showSec10() {
-    showSection(10);
-  }
-  
-  function showSec11() {
-    showSection(11);
-  }
-  
-  function showSec12() {
-    showSection(12);
-  }
 
 
   document.addEventListener("DOMContentLoaded", function() {
     if (window.location.hash === "#orion") {
-        showSec1();
+        showSection(1);
     }
     if (window.location.hash === "#brynn") {
-        showSec2();
+        showSection(2);
     }
     if (window.location.hash === "#ember") {
-        showSec3();
+        showSection(3);
     }
     if (window.location.hash === "#bodvar") {
-        showSec4();
+        showSection(4);
     }
     if (window.location.hash === "#asuri") {
-        showSec5();
+        showSection(5);
     }
     if (window.location.hash === "#fait") {
-        showSec6();
+        showSection(6);
     }
     if (window.location.hash === "#barraza") {
-        showSec7();
+        showSection(7);
     }
     if (window.location.hash === "#teros") {
-        showSec8();
+        showSection(8);
     }
     if (window.location.hash === "#val") {
-        showSec9();
+        showSection(9);
     }
     if (window.location.hash === "#otros") {
-        showSec10();
+        showSection(10);
     }
     if (window.location.hash === "#pagina1") {
-        showSec1();
+        showSection(1);
     }
     if (window.location.hash === "#pagina2") {
-        showSec2();
+        showSection(2);
     }
     if (window.location.hash === "#pagina3") {
-        showSec3();
+        showSection(3);
     }
     if (window.location.hash === "#pagina4") {
-        showSec4();
+        showSection(4);
     }
     if (window.location.hash === "#pagina5") {
-        showSec5();
+        showSection(5);
     }
     if (window.location.hash === "#pagina6") {
-        showSec6();
+        showSection(6);
     }
     if (window.location.hash === "#pagina7") {
-        showSec7();
+        showSection(7);
     }
     if (window.location.hash === "#pagina8") {
-        showSec8();
+        showSection(8);
     }
     if (window.location.hash === "#pagina9") {
-        showSec9();
+        showSection(9);
     }
     if (window.location.hash === "#pagina10") {
-        showSec10();
+        showSection(10);
     }
     if (window.location.hash === "#pagina11") {
-        showSec11();
+        showSection(11);
     }
     if (window.location.hash === "#pagina12") {
-        showSec12();
+        showSection(12);
+    }
+    if (window.location.hash === "#fase1") {
+        showSection(1);
+    }
+    if (window.location.hash === "#fase2") {
+        showSection(2);
+    }
+    if (window.location.hash === "#fase3") {
+        showSection(3);
+    }
+    if (window.location.hash === "#todas") {
+        showSection(1);
+    }
+    if (window.location.hash === "#pc") {
+        showSection(2);
+    }
+    if (window.location.hash === "#playstation") {
+        showSection(3);
+    }
+    if (window.location.hash === "#xbox") {
+        showSection(4);
     }
 });
 
 window.addEventListener("hashchange", function() {
   if (window.location.hash === "#orion") {
-      showSec1();
+      showSection(1);
   }
   if (window.location.hash === "#brynn") {
-      showSec2();
+      showSection(2);
   }
   if (window.location.hash === "#ember") {
-      showSec3();
+      showSection(3);
   }
   if (window.location.hash === "#bodvar") {
-      showSec4();
+      showSection(4);
   }
   if (window.location.hash === "#asuri") {
-      showSec5();
+      showSection(5);
   }
   if (window.location.hash === "#fait") {
-      showSec6();
+      showSection(6);
   }
   if (window.location.hash === "#barraza") {
-      showSec7();
+      showSection(7);
   }
   if (window.location.hash === "#teros") {
-      showSec8();
+      showSection(8);
   }
   if (window.location.hash === "#val") {
-      showSec9();
+      showSection(9);
   }
   if (window.location.hash === "#otros") {
-      showSec10();
+      showSection(10);
   }
   if (window.location.hash === "#pagina1") {
-      showSec1();
+      showSection(1);
   }
   if (window.location.hash === "#pagina2") {
-      showSec2();
+      showSection(2);
   }
   if (window.location.hash === "#pagina3") {
-      showSec3();
+      showSection(3);
   }
   if (window.location.hash === "#pagina4") {
-      showSec4();
+      showSection(4);
   }
   if (window.location.hash === "#pagina5") {
-      showSec5();
+      showSection(5);
   }
   if (window.location.hash === "#pagina6") {
-      showSec6();
+      showSection(6);
   }
   if (window.location.hash === "#pagina7") {
-      showSec7();
+      showSection(7);
   }
   if (window.location.hash === "#pagina8") {
-      showSec8();
+      showSection(8);
   }
   if (window.location.hash === "#pagina9") {
-      showSec9();
+      showSection(9);
   }
   if (window.location.hash === "#pagina10") {
-      showSec10();
+      showSection(10);
   }
   if (window.location.hash === "#pagina11") {
-      showSec11();
+      showSection(11);
   }
   if (window.location.hash === "#pagina12") {
-      showSec12();
+      showSection(12);
+  }
+  if (window.location.hash === "#fase1") {
+      showSection(1);
+  }
+  if (window.location.hash === "#fase2") {
+      showSection(2);
+  }
+  if (window.location.hash === "#fase3") {
+      showSection(3);
+  }
+  if (window.location.hash === "#todas") {
+      showSection(1);
+  }
+  if (window.location.hash === "#pc") {
+      showSection(2);
+  }
+  if (window.location.hash === "#playstation") {
+      showSection(3);
+  }
+  if (window.location.hash === "#xbox") {
+      showSection(4);
   }
 });
 

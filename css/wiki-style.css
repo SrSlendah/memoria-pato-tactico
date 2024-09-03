@@ -796,7 +796,7 @@ footer {
     border-radius: 20px;
     border: 3px solid #4b2866;
     background-color: #6f3c96;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     font-size: 16px;
     cursor: pointer;
 }
@@ -807,148 +807,6 @@ footer {
       margin: 0 10px;
 }
 
-/* TABLA */
-
-table {
-    margin: 0 auto;
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 75%;
-    color: #fff
-}
-
-td {
-    border: 2px solid #4b2866;
-    text-align: left;
-    padding: 8px;
-    text-align: center
-}
-
-th {
-    border: 2px solid #4b2866;
-    text-align: left;
-    padding: 8px;
-    text-align: center;
-    background-color: #6f3c96;
-}
-
-.level table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 75%;
-}
-
-.level td{
-    border: none;
-    text-align: left;
-    padding: 8px;
-    text-align: center
-
-}
-
-.margin-hori {
-    height: 100px;
-    border: none
-}
-
-.margin-vert {
-    width: 100px;
-    border: none
-}
-
-.table-extra {
-    width: 20%;
-}
-
-.gamepass td, th {
-        border: 3px solid #4b2866;
-}
-
-.gamepass-img {
-    width: 250px
-}
-
-    .gamepass-img img {
-        width: 250px;
-        height: 250px
-    }
-
-.equipo-img {
-    width: 300px
-}
-
-.equipo-img img {
-    width: 350px;
-    height: 500px
-}
-
-.equipo th {
-    width: 100px
-}
-
-.table-title {
-    height: 50px
-}
-
-
-.info {
-    border: none;
-    width: 500px;
-    margin-top: 30px
-}
-
-.margin {
-    border:none;
-    width: 200px;
-}
-
-.info-img {
-    border: none;
-    width: 100px;
-    height: 100px
-}
-
-    .info-img img {
-        border: 5px solid #4b2866;
-        width: 300px;
-        height: 400px
-    }
-
-.info-img_cajas {
-    border: none;
-    width: 100px;
-    height: 100px
-}
-
-    .info-img_cajas img {
-        width: 300px;
-        height: 300px
-    }
-
-.info-title {
-    border: 3px solid #4b2866;
-    background-color: #6f3c96;
-    width: 600px;
-    height: 50px
-}
-
-.info-subtitle {
-    border: 3px solid #4b2866;
-    background-color: #6f3c96;
-    width: 600px;
-    height: 50px
-}
-
-.info-ep-num {
-    border: 3px solid #4b2866;
-    width: 600px;
-    height: 50px
-}
-
-.info-sep {
-    margin: 0 auto;
-    width: 30%
-}
 /* MANTENIMIENTO */
 
 .img-mant {
@@ -1448,6 +1306,101 @@ th {
 .leyenda-details-labels p, .leyenda-details-values p {
     margin: 3px 0;
     color: white;
+}
+
+.leyenda-recompensas {
+    text-align: center;
+    color: #fff;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 1150px;
+    max-width: 1150px;
+    padding: 0 10px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.leyenda-recompensas::-webkit-scrollbar {
+    height: 10px;
+}
+
+.leyenda-recompensas::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+.leyenda-recompensas::-webkit-scrollbar-thumb {
+    background: #5e337f;
+    border: 2px solid #4b2866;
+    border-radius: 10px;
+}
+
+.leyenda-recompensas::-webkit-scrollbar-thumb:hover {
+    background: #8146ae;    
+}
+
+.leyenda-recompensas-tabla {
+    display: inline-table;
+    border-collapse: collapse;
+    width: auto;
+}
+
+.leyenda-recompensas-tabla th,
+.leyenda-recompensas-tabla td {
+    border: 4px solid #4b2866;
+    padding: 8px;
+    text-align: center;
+}
+
+.leyenda-recompensas-tabla th{
+    background-color: #6f3c96;
+}
+
+.leyenda-recompensas-tabla td {
+    width: 50px;
+    max-width: 50px;
+    height: 30px;
+    max-height: 30px;
+    overflow: hidden;
+}
+
+.leyenda-recompensas-tabla td > img.recompensa {
+    width: 30px;
+    height: auto;
+}
+
+.leyenda-recompensas-tabla .trescolores {
+    width: 120px;
+    max-width: 120px;
+}
+
+.leyenda-recompensas-tabla .oro {
+    width: 70px;
+    max-width: 70px;
+}
+
+.leyenda-recompensas-tabla .titulo {
+    width: 250px;
+    max-width: 250px;
+}
+
+.leyenda-recompensas-tabla .titulo span {
+    vertical-align: middle;
+    color: #0066FF;
+    font-size: 16px;
+    font-family:Arial Black;
+}
+
+.leyenda-recompensas-tabla .gildedname {
+    width: 120px;
+    max-width: 120px;
+}
+
+.leyenda-recompensas-tabla .gildedname span {
+    vertical-align: middle;
+    color: #ff0;
+    font-size: 16px;
+    font-family:Arial Black;
 }
 
 .cofre {
@@ -3445,6 +3398,13 @@ th {
     }
 }
 
+
+
+
+
+
+
+
 .wbh-a {
     color: #a964de;
     text-decoration: none;
@@ -3470,3 +3430,4 @@ th {
         color: #c497e6;
         text-decoration: underline;
     }
+
