@@ -1319,6 +1319,23 @@ footer {
     padding-bottom: 5px;
     box-sizing: border-box;
     margin: 0 auto;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:1200px) {
+    .leyenda-recompensas {max-width: 950px;}
+}
+@media screen and (max-width:1000px) {
+    .leyenda-recompensas {max-width: 750px;}
+}
+@media screen and (max-width:800px) {
+    .leyenda-recompensas {max-width: 600px;}
+}
+@media screen and (max-width:625px) {
+    .leyenda-recompensas {max-width: 450px;}
+}
+@media screen and (max-width:500px) {
+    .leyenda-recompensas {max-width: 375px;}
 }
 
 .leyenda-recompensas::-webkit-scrollbar {
@@ -1341,13 +1358,14 @@ footer {
 
 .leyenda-recompensas-tabla {
     display: inline-table;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 2px;
     width: auto;
 }
 
 .leyenda-recompensas-tabla th,
 .leyenda-recompensas-tabla td {
-    border: 4px solid #4b2866;
+    border: 3.5px solid #4b2866;
     padding: 8px;
     text-align: center;
 }
@@ -1357,8 +1375,8 @@ footer {
 }
 
 .leyenda-recompensas-tabla td {
-    width: 50px;
-    max-width: 50px;
+    width: 75px;
+    max-width: 75px;
     height: 30px;
     max-height: 30px;
     overflow: hidden;
@@ -1370,8 +1388,8 @@ footer {
 }
 
 .leyenda-recompensas-tabla .trescolores {
-    width: 120px;
-    max-width: 120px;
+    width: 130px;
+    max-width: 130px;
 }
 
 .leyenda-recompensas-tabla .oro {
@@ -1379,12 +1397,12 @@ footer {
     max-width: 70px;
 }
 
-.leyenda-recompensas-tabla .titulo {
-    width: 250px;
-    max-width: 250px;
+.leyenda-recompensas-tabla .titulo-td {
+    width: 260px;
+    max-width: 260px;
 }
 
-.leyenda-recompensas-tabla .titulo span {
+.leyenda-recompensas-tabla .titulo-td span {
     vertical-align: middle;
     color: #0066FF;
     font-size: 16px;
@@ -1401,6 +1419,22 @@ footer {
     color: #ff0;
     font-size: 16px;
     font-family:Arial Black;
+}
+
+.topleft {
+    border-radius: 15px 0 0 0;
+}
+
+.topright{
+    border-radius: 0 15px 0 0;
+}
+
+.bottomleft{
+    border-radius: 0 0 0 15px;
+}
+
+.bottomright{
+    border-radius: 0 0 15px 0;
 }
 
 .cofre {
