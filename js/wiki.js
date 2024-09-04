@@ -253,6 +253,15 @@ function showSection(sectionNumber) {
     if (window.location.hash === "#xbox") {
         showSection(4);
     }
+    if (window.location.hash === "#normales") {
+        showSection(1);
+    }
+    if (window.location.hash === "#modosdejuego") {
+        showSection(2);
+    }
+    if (window.location.hash === "#enprueba") {
+        showSection(3);
+    }
 });
 
 window.addEventListener("hashchange", function() {
@@ -342,6 +351,15 @@ window.addEventListener("hashchange", function() {
   }
   if (window.location.hash === "#xbox") {
       showSection(4);
+  }
+  if (window.location.hash === "#normales") {
+      showSection(1);
+  }
+  if (window.location.hash === "#modosdejuego") {
+      showSection(2);
+  }
+  if (window.location.hash === "#enprueba") {
+      showSection(3);
   }
 });
 

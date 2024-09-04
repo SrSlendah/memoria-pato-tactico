@@ -1088,6 +1088,42 @@ footer {
     margin-top: -5px;
 }
 
+.modos-de-juego-lista {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.modos-de-juego-list-elemento {
+    text-align: center;
+}
+
+.modos-de-juego-list-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+}
+
+.modos-de-juego-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
 .cofres-lista {
     display: grid;
     grid-template-columns: repeat(5, 225px);
