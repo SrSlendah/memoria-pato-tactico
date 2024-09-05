@@ -374,7 +374,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Void Major', url: '../wiki-bh/void-major' },
     { resultado: 'Volkov', url: '../wiki-bh/volkov' },
     { resultado: 'Volleybrawl', url: '../wiki-bh/volleybrawl' },
-    { resultado: 'Walker Attack', url: '../wiki-bh/walker-attack' },
+    { resultado: 'Walker Attack!', url: '../wiki-bh/walker-attack' },
     { resultado: 'Warchief Bödvar', url: '../wiki-bh/warchief-bodvar' },
     { resultado: 'Warrior Spirit Kor', url: '../wiki-bh/warrior-spirit-kor' },
     { resultado: 'Western Air Temple', url: '../wiki-bh/western-air-temple' },

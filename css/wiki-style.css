@@ -1124,6 +1124,113 @@ footer {
     margin-top: -5px;
 }
 
+
+.modo-de-juego {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+
+.modo-de-juego-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modo-de-juego-elemento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.modo-de-juego-imagen {
+    flex: 0 0 auto;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.modo-de-juego-imagen img {
+    width: 100px;
+    height: auto;
+    border-radius: 15px;
+    border: 4px solid #4b2866;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modo-de-juego-gamemode-logo img {
+    border-radius: 10px;
+    border: 4px solid #4b2866;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    width: 50px;
+    margin-top: 10px;
+}
+
+.modo-de-juego-info {
+    flex: 1;
+    display: flex;
+    background-color: #6f3c96;
+    padding: 17px;
+    border: 4px solid #4b2866;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 370px;
+}
+
+.modo-de-juego-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.modo-de-juego-subtitulo {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.modo-de-juego-details {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.modo-de-juego-masinfo {
+    width: 17px; 
+    height: 17px; 
+    position: absolute; 
+    bottom: 5px; 
+    right: 5px;
+}
+
+.modo-de-juego-details p {
+    color: #fff;
+    margin: 5px 0;
+}
+
+
+.modo-de-juego-details-labels, .modo-de-juego-details-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modo-de-juego-details-labels p, .modo-de-juego-details-values p {
+    margin: 3px 0;
+    color: white;
+}
+
+
 .cofres-lista {
     display: grid;
     grid-template-columns: repeat(5, 225px);
@@ -1937,6 +2044,63 @@ footer {
 }
 
 .mapa-variacion-list-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 50px;
+    padding: 5px;
+    margin-top: -5px;
+}
+
+.mapas-exclusivos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.mapas-exclusivos-list-elemento {
+    text-align: center;
+}
+
+.mapas-exclusivos-list-imagen {
+    position: relative;
+}
+
+.mapas-exclusivos-list-imagen img {
+    width: 300px;
+    height: auto;
+    margin-top: -4px;
+    border: 4px solid #4b2866;
+    border-radius: 0 0 20px 20px;
+}
+
+.mapas-exclusivos-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.mapas-exclusivos-list-texto {
     display: flex;
     justify-content: center;
     align-items: center;
