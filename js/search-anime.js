@@ -31,6 +31,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Go-Tōbun no Hanayome', url: '../lista-anime/go-tobun-no-hanayome' },
     { resultado: 'Goblin Slayer', url: '../lista-anime/goblin-slayer' },
     { resultado: 'Gokushufudou', url: '../lista-anime/gokushufudou' },
+    { resultado: 'Hunter x Hunter', url: '../lista-anime/hunter-x-hunter' },
     { resultado: 'I Was Reincarnated as the 7th Prince so I Can Take My Time Perfecting My Magical Ability', url: '../lista-anime/i-was-reincarnated-as-the-7th-prince-so-i-can-take-my-time-perfecting-my-magical-ability' },
     { resultado: 'Ijiranaide, Nagatoro-san', url: '../lista-anime/ijiranaide-nagatoro-san' },
     { resultado: 'Infinite Stratos', url: '../lista-anime/infinite-stratos' },
