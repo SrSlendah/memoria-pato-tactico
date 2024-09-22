@@ -87,11 +87,15 @@ function goTo(string) {
 
 //Lista Peliculas y series
 
-    if (string == 'lps_onepiece') {
-        window.location.href = "../lista-peliculas-series/one-piece"
-    };
-
     if (string == 'lps_deathnote') {
         window.location.href = "../lista-peliculas-series/death-note"
+    };
+
+    if (string == 'lps_jojo') {
+        window.location.href = "../lista-peliculas-series/jojos-bizarre-adventure"
+    };
+
+    if (string == 'lps_onepiece') {
+        window.location.href = "../lista-peliculas-series/one-piece"
     };
 }

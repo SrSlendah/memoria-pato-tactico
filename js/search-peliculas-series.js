@@ -16,6 +16,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: "Fallout", url: '../lista-peliculas-series/fallout' },
     { resultado: "Five Nights at Freddy's", url: '../lista-peliculas-series/five-nights-at-freddys' },
     { resultado: 'Harry Potter', url: '../lista-peliculas-series/harry-potter' },
+    { resultado: "JoJo's Biarre Adventure", url: '../lista-peliculas-series/jojos-bizarre-adventure' },
     { resultado: 'Jurassic Park', url: '../lista-peliculas-series/jurassic-park' },
     { resultado: 'La Monja', url: '../lista-peliculas-series/la-monja' },
     { resultado: 'One Piece', url: '../lista-peliculas-series/one-piece' },
