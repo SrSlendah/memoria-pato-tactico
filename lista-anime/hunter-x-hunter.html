@@ -87,47 +87,100 @@
         <script src="../js/anime.js"></script>
         <script src="../js/overlay.js"></script>
 
-        <div class="serie-container">
-            <section class="serie">
-                <div class="serie-elemento">
-                    <div class="serie-imagen">
-                        <img src="../media/anime/hunter-x-hunter.png" alt="Hunter x Hunter">
-                    </div>
-                    <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
-                        <h2 class="serie-titulo">Hunter x Hunter</h2>
-                        <hr class="info-sep">
-                        <div class="serie-details">
-                            <div class="serie-details-labels">
-                                <p><strong>Episodios:</strong></p>
-                            </div>
-                            <div class="serie-details-values">
-                                <p>003 / 148</p>
+        <div class="secciones" align="center">
+            <button id="sec1-btn" onclick="showSection(1);" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button>
+            <button id="sec2-btn" onclick="showSection(2);">Películas</button>
+        </div>
+
+        <section id="sec1">
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/anime/hunter-x-hunter.png" alt="Hunter x Hunter">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                            <h2 class="serie-titulo">Hunter x Hunter</h2>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Episodios:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p>058 / 148</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <div id="ov1" class="overlay" style="display: none;">
-                <div class="serie-imagen">
-                    <img src="../media/anime/hunter-x-hunter.png" alt="Hunter x Hunter">
-                </div>
-                <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">Hunter x Hunter</h2>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Anime</p>
-                  <p><b>Estudio:</b> Madhouse</p>
-                  <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
-                  <p><b>Fecha de Publicación:</b> 02/10/2011 - 24/09/2014</p>
-                  <p><b>Temporada:</b> Otoño 2011</p>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Visto desde:</b> 06/09/2024</p>
-                  <p><b>Visto hasta:</b> ?</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                </section>
+                <div id="ov1" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/hunter-x-hunter.png" alt="Hunter x Hunter">
+                    </div>
+                    <div class="contenido-overlay">
+                    <h2 style="margin-top:5px">Hunter x Hunter</h2>
+                    <hr style="margin-top:15px;margin-bottom:15px;">
+                    <p><b>Tipo:</b> Anime</p>
+                    <p><b>Estudio:</b> Madhouse</p>
+                    <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                    <p><b>Fecha de Publicación:</b> 02/10/2011 - 24/09/2014</p>
+                    <p><b>Temporada:</b> Otoño 2011</p>
+                    <hr style="margin-top:15px;margin-bottom:15px;">
+                    <p><b>Visto desde:</b> 06/09/2024</p>
+                    <p><b>Visto hasta:</b> ?</p>
+                    <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+        <section id="sec2" style="display:none">
+            
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/anime/hunter-x-hunter-movie-1-phantom-rouge.png" alt="Hunter x Hunter">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(3)">
+                            <h2 class="serie-titulo">Hunter x Hunter</h2>
+                            <h3 class="serie-subtitulo">Movie 1: Phantom Rouge</h3>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Estado:</strong></p>
+                                    <p><strong>Duración:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p title="Visto">✔️</p>
+                                    <p>1:36:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="ov3" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/hunter-x-hunter-movie-1-phantom-rouge.png" alt="Hunter x Hunter">
+                    </div>
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px">Hunter x Hunter</h2>
+                      <h3 style="font-size:15px">Movie 1: Phantom Rouge</h3>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Tipo:</b> Película</p>
+                      <p><b>Estudio:</b> Madhouse</p>
+                      <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                      <p><b>Fecha de Publicación:</b> 12/01/2013</p>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Visto:</b> 24/09/2024</p>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(3)" title="Cerrar">
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
 
     </main>
