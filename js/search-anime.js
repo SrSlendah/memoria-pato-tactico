@@ -20,6 +20,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Bokutachi wa Benkyou ga Dekinai', url: '../lista-anime/bokutachi-wa-benkyou-ga-dekinai' },
     { resultado: 'Buddy Daddies', url: '../lista-anime/buddy-daddies' },
     { resultado: 'Chainsaw Man', url: '../lista-anime/chainsaw-man' },
+    { resultado: 'Dandadan', url: '../lista-anime/dandadan' },
     { resultado: 'Danmachi', url: '../lista-anime/danmachi' },
     { resultado: 'Darling in the FranXX', url: '../lista-anime/darling-in-the-franxx' },
     { resultado: 'Death Note', url: '../lista-anime/death-note' },
