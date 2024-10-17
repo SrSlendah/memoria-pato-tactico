@@ -69,6 +69,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Oshi no Ko', url: '../lista-anime/oshi-no-ko' },
     { resultado: 'Overlord', url: '../lista-anime/overlord' },
     { resultado: 'Persona The Animation', url: '../lista-anime/persona-the-animation' },
+    { resultado: 'Pokemon', url: '../lista-anime/pokemon' },
     { resultado: 'Princess Connect! Re:Dive', url: '../lista-anime/princess-connect-re-dive' },
     { resultado: 'Reborn as a Vending Machine, I Now Wander the Dungeon', url: '../lista-anime/reborn-as-a-vending-machine-i-now-wander-the-dungeon' },
     { resultado: 'Record of Ragnarok', url: '../lista-anime/record-of-ragnarok' },
@@ -94,6 +95,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Tokyo Revengers', url: '../lista-anime/tokyo-revengers' },
     { resultado: 'Tonikaku Kawaii', url: '../lista-anime/tonikaku-kawaii' },
     { resultado: 'Uzaki-chan wa Asobitai!', url: '../lista-anime/uzaki-chan-wa-asobitai' },
+    { resultado: 'Uzumaki', url: '../lista-anime/uzumaki' },
     { resultado: 'Zom 100: Bucket List of the Dead', url: '../lista-anime/zom-100-bucket-list-of-the-dead' },
   ];
 
