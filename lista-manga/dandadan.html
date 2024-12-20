@@ -5,18 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dandadan - Lista de Anime</title>
+    <title>Dandadan - Lista de Manga</title>
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../js/ir-arriba.js"></script>
-    <script src="../js/overlay.js"></script>
 
     <header>
 
@@ -80,23 +75,24 @@
 
     <main>
         <div class="search-container">
-          <input type="text" id="search-input" placeholder="Buscar en la lista de anime...">
+          <input type="text" id="search-input" placeholder="Buscar en la lista de manga...">
           <ul id="autocomplete-list" style="display: none;"></ul>
         </div>
       
-        <script src="../js/search-anime.js"></script>
+        <script src="../js/search-manga.js"></script>
         <script src="../js/anime.js"></script>
+        <script src="../js/overlay.js"></script>
         <script src="../js/redirect.js"></script>
 
         <div class="secciones" align="center">
-            <button onclick="goTo('manga_dandadan');">Manga</button>
+            <button onclick="goTo('anime_dandadan');">Anime</button>
         </div>
 
         <div class="serie-container">
             <section class="serie">
                 <div class="serie-elemento">
                     <div class="serie-imagen">
-                        <img src="../media/anime/dandadan.png" alt="Dandadan">
+                        <img src="../media/manga/dandadan.png" alt="Dandadan">
                     </div>
                     <div class="serie-info" style="position: relative;">
                         <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
@@ -104,10 +100,12 @@
                         <hr class="info-sep">
                         <div class="serie-details">
                             <div class="serie-details-labels">
-                                <p><strong>Episodios:</strong></p>
+                                <p><strong>Volúmenes:</strong></p>
+                                <p><strong>Capítulos:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p>12 / 12</p>
+                                <p>4 / ?</p>
+                                <p>33 / ?</p>
                             </div>
                         </div>
                     </div>
@@ -115,24 +113,22 @@
             </section>
             <div id="ov1" class="overlay" style="display: none;">
                 <div class="serie-imagen">
-                    <img src="../media/anime/dandadan.png" alt="Dandadan">
+                    <img src="../media/manga/dandadan.png" alt="Dandadan">
                 </div>
                 <div class="contenido-overlay">
                   <h2 style="margin-top:5px">Dandadan</h2>
                   <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Anime</p>
-                  <p><b>Estudio:</b> Science SARU</p>
+                  <p><b>Tipo:</b> Manga</p>
+                  <p><b>Autor:</b> Yukinobu Tatsu</p>
                   <p><b>Generos:</b> Acción, Comedia, Supernatural</p>
-                  <p><b>Fecha de Publicación:</b> 04/10/2024 - 20/12/2024</p>
-                  <p><b>Temporada:</b> Otoño 2024</p>
+                  <p><b>Fecha de Publicación:</b> 06/04/2021 -- ?</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Visto desde:</b> 04/10/2024</p>
-                  <p><b>Visto hasta:</b> 20/12/2024</p>
+                  <p><b>Leido desde:</b> ?</p>
+                  <p><b>Leido hasta:</b> ?</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
                 </div>
             </div>
         </div>
-
 
     </main>
 
@@ -150,7 +146,7 @@
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>
-                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none" ; target=" _blank">Click</a></p>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none"; target=" _blank">Click</a></p>
             </div>
         </div>
         <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>

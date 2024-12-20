@@ -16,6 +16,10 @@ function goTo(string) {
         window.location.href = "../lista-manga/chainsaw-man"
     };
 
+    if (string == 'manga_dandadan') {
+        window.location.href = "../lista-manga/dandadan"
+    };
+
     if (string == 'manga_jojo') {
         window.location.href = "../lista-manga/jojos-bizarre-adventure"
     };
@@ -51,6 +55,10 @@ function goTo(string) {
 
     if (string == 'anime_chainsaw') {
         window.location.href = "../lista-anime/chainsaw-man"
+    };
+
+    if (string == 'anime_dandadan') {
+        window.location.href = "../lista-anime/dandadan"
     };
 
     if (string == 'anime_deathnote') {
