@@ -20,6 +20,10 @@ function goTo(string) {
         window.location.href = "../lista-manga/dandadan"
     };
 
+    if (string == 'manga_hxh') {
+        window.location.href = "../lista-manga/hunter-x-hunter"
+    };
+
     if (string == 'manga_jojo') {
         window.location.href = "../lista-manga/jojos-bizarre-adventure"
     };
@@ -63,6 +67,10 @@ function goTo(string) {
 
     if (string == 'anime_deathnote') {
         window.location.href = "../lista-anime/death-note"
+    };
+
+    if (string == 'anime_hxh') {
+        window.location.href = "../lista-anime/hunter-x-hunter"
     };
 
     if (string == 'anime_jojo') {
