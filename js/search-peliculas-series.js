@@ -9,9 +9,11 @@ function removeAccents(str) {
 
 function obtenerResultadosConURLs(query) {
   resultadosConURLs = [
+    { resultado: 'Alice in Borderland', url: '../lista-peliculas-series/alice-in-borderland' },
     { resultado: 'Arcane', url: '../lista-peliculas-series/arcane' },
     { resultado: "Death Note: Live Action", url: '../lista-peliculas-series/death-note' },
     { resultado: 'Dos "Rubias" de Pelo en Pecho', url: '../lista-peliculas-series/dos-rubias-de-pelo-en-pecho' },
+    { resultado: 'El Juego del Calamar', url: '../lista-peliculas-series/el-juego-del-calamar' },
     { resultado: 'El Hoyo', url: '../lista-peliculas-series/el-hoyo' },
     { resultado: "Fallout", url: '../lista-peliculas-series/fallout' },
     { resultado: "Five Nights at Freddy's", url: '../lista-peliculas-series/five-nights-at-freddys' },
@@ -24,7 +26,6 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Saw', url: '../lista-peliculas-series/saw' },
     { resultado: "Scary Movie", url: '../lista-peliculas-series/scary-movie' },
     { resultado: 'Slenderman', url: '../lista-peliculas-series/slenderman' },
-    { resultado: 'Squid Game', url: '../lista-peliculas-series/squid-game' },
     { resultado: 'Stranger Things', url: '../lista-peliculas-series/stranger-things' },
     { resultado: 'The 8 Show', url: '../lista-peliculas-series/the-8-show' },
     { resultado: 'Viernes 13', url: '../lista-peliculas-series/viernes13' },
