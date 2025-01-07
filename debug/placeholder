@@ -21,3 +21,9 @@
         <chng-dlt-icon class="chng-delete">[ <i class="fas fa-trash"></i> ]</chng-dlt-icon> 
         <chng-txt>Se han eliminado Placeholder</chng-txt>
     </chng>
+
+//* Overlay titulo y subtitulo *\\
+
+    
+    <h2 style="margin-top:5px">Placeholder</h2>
+    <h3 style="font-size:15px">Placeholder</h3>
