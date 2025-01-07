@@ -75,7 +75,6 @@
             </svg>
         </div>
 
-
     </header>
 
 
@@ -89,10 +88,9 @@
         <script src="../js/anime.js"></script>
 
         <div class="secciones" align="center">
-            <button id="sec1-btn" onclick="showSection(1);" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button>
-            <button id="sec2-btn" onclick="showSection(2);">Historias Paralelas</button>
-            <button id="sec3-btn" onclick="showSection(3);">OVAs</button>
-            <button id="sec4-btn" onclick="showSection(4);">Películas</button>
+            <a href="#temporadas"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button></a>
+            <a href="#peliculas"><button id="sec2-btn">Películas</button></a>
+            <a href="#otros"><button id="sec3-btn">Otros</button></a>
         </div>
 
         <section id="sec1">
@@ -225,143 +223,8 @@
             </div>
 
         </section>
-        
+
         <section id="sec2" style="display: none">
-            
-            <div class="serie-container">
-                <section class="serie">
-                    <div class="serie-elemento">
-                        <div class="serie-imagen">
-                            <img src="../media/anime/kono-subarashii-sekai-ni-bakuen-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
-                        </div>
-                        <div class="serie-info" style="position: relative;">
-                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(4)">
-                            <h2 class="serie-titulo" style="font-size:16px">Kono Subarashii Sekai ni Bakuen wo!</h2>
-                            <hr class="info-sep">
-                            <div class="serie-details">
-                                <div class="serie-details-labels">
-                                    <p><strong>Episodios:</strong></p>
-                                </div>
-                                <div class="serie-details-values">
-                                    <p>12 / 12</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div id="ov4" class="overlay" style="display: none;">
-                    <div class="serie-imagen">
-                        <img src="../media/anime/kono-subarashii-sekai-ni-bakuen-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
-                    </div>
-                    <div class="contenido-overlay">
-                      <h2 style="margin-top:5px;text-align:center">Kono Subarashii Sekai ni Bakuen wo!</h2>
-                      <hr style="margin-top:15px;margin-bottom:15px;">
-                      <p><b>Tipo:</b> Anime</p>
-                      <p><b>Estudio:</b> Drive</p>
-                      <p><b>Generos:</b> Aventura, Comedia, Fantasia</p>
-                      <p><b>Fecha de Publicación:</b> 06/04/2023 - 22/06/2023</p>
-                      <p><b>Temporada:</b> Primavera 2023</p>
-                      <hr style="margin-top:15px;margin-bottom:15px;">
-                      <p><b>Visto desde:</b> 26/04/2023</p>
-                      <p><b>Visto hasta:</b> 05/07/2023</p>
-                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(4)" title="Cerrar">
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="sec3" style="display: none">
-            
-            <div class="serie-container">
-                <section class="serie">
-                    <div class="serie-elemento">
-                        <div class="serie-imagen">
-                            <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-kono-subarashii-choker-ni-shukufuku-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
-                        </div>
-                        <div class="serie-info" style="position: relative;">
-                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(5)">
-                            <h2 class="serie-titulo" style="font-size:15px">Kono Subarashii Sekai ni Shukufuku wo!</h2>
-                            <h3 class="serie-subtitulo" style="font-size:13px">Kono Subarashii Choker ni Shukufuku wo!</h3>
-                            <hr class="info-sep">
-                            <div class="serie-details">
-                                <div class="serie-details-labels">
-                                    <p><strong>Episodios:</strong></p>
-                                </div>
-                                <div class="serie-details-values">
-                                    <p>1 / 1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div id="ov5" class="overlay" style="display: none;">
-                    <div class="serie-imagen">
-                        <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-kono-subarashii-choker-ni-shukufuku-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
-                    </div>
-                    <div class="contenido-overlay">
-                      <h2 style="margin-top:5px;font-size:20px">Kono Subarashii Sekai ni Shukufuku wo!</h2>
-                      <h3 style="font-size:15px">Kono Subarashii Choker ni Shukufuku wo!</h3>
-                      <hr style="margin-top:15px;margin-bottom:15px;">
-                      <p><b>Tipo:</b> OVA</p>
-                      <p><b>Estudio:</b> Studio Deen</p>
-                      <p><b>Generos:</b> Aventura, Comedia, Fantasia</p>
-                      <p><b>Fecha de Publicación:</b> 24/06/2016</p>
-                      <p><b>Temporada:</b> Verano 2016</p>
-                      <hr style="margin-top:15px;margin-bottom:15px;">
-                      <p><b>Visto:</b> 05/07/2023</p>
-                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(5)" title="Cerrar">
-                    </div>
-                </div>
-            </div>
-            
-            <hr class="info-sep">
-
-            <div class="serie-container">
-                <section class="serie">
-                    <div class="serie-elemento">
-                        <div class="serie-imagen">
-                            <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-2-kono-subarashii-geijutsu-ni-shukufuku-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
-                        </div>
-                        <div class="serie-info" style="position: relative;">
-                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(6)">
-                            <h2 class="serie-titulo" style="font-size:14px">Kono Subarashii Sekai ni Shukufuku wo! 2:</h2>
-                            <h3 class="serie-subtitulo" style="font-size:13px">Kono Subarashii Geijutsu ni Shukufuku wo!</h3>
-                            <hr class="info-sep">
-                            <div class="serie-details">
-                                <div class="serie-details-labels">
-                                    <p><strong>Episodios:</strong></p>
-                                </div>
-                                <div class="serie-details-values">
-                                    <p>1 / 1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div id="ov6" class="overlay" style="display: none;">
-                    <div class="serie-imagen">
-                        <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-2-kono-subarashii-geijutsu-ni-shukufuku-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
-                    </div>
-                    <div class="contenido-overlay">
-                      <h2 style="margin-top:5px;font-size:20px">Kono Subarashii Sekai ni Shukufuku wo! 2:</h2>
-                      <h3 style="font-size:15px">Kono Subarashii Geijutsu ni Shukufuku wo!</h3>
-                      <hr style="margin-top:15px;margin-bottom:15px;">
-                      <p><b>Tipo:</b> Anime</p>
-                      <p><b>Estudio:</b> Studio Deen</p>
-                      <p><b>Generos:</b> Aventura, Comedia, Fantasia</p>
-                      <p><b>Fecha de Publicación:</b> 24/07/2017</p>
-                      <p><b>Temporada:</b> Verano 2017</p>
-                      <hr style="margin-top:15px;margin-bottom:15px;">
-                      <p><b>Visto:</b> 05/07/2023</p>
-                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(6)" title="Cerrar">
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="sec4" style="display: none">
             
             <div class="serie-container">
                 <section class="serie">
@@ -403,6 +266,145 @@
                       <hr style="margin-top:15px;margin-bottom:15px;">
                       <p><b>Visto:</b> -</p>
                       <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(7)" title="Cerrar">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="sec3" style="display: none">
+            
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-kono-subarashii-choker-ni-shukufuku-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(5)">
+                            <h2 class="serie-titulo" style="font-size:15px">Kono Subarashii Sekai ni Shukufuku wo!</h2>
+                            <h3 class="serie-subtitulo" style="font-size:13px">Kono Subarashii Choker ni Shukufuku wo!</h3>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Tipo:</strong></p>
+                                    <p><strong>Episodios:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p>OVA</p>
+                                    <p>1 / 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="ov5" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-kono-subarashii-choker-ni-shukufuku-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
+                    </div>
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px;font-size:20px">Kono Subarashii Sekai ni Shukufuku wo!</h2>
+                      <h3 style="font-size:15px">Kono Subarashii Choker ni Shukufuku wo!</h3>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Tipo:</b> OVA</p>
+                      <p><b>Estudio:</b> Studio Deen</p>
+                      <p><b>Generos:</b> Aventura, Comedia, Fantasia</p>
+                      <p><b>Fecha de Publicación:</b> 24/06/2016</p>
+                      <p><b>Temporada:</b> Verano 2016</p>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Visto:</b> 05/07/2023</p>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(5)" title="Cerrar">
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="info-sep">
+
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-2-kono-subarashii-geijutsu-ni-shukufuku-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(6)">
+                            <h2 class="serie-titulo" style="font-size:14px">Kono Subarashii Sekai ni Shukufuku wo! 2:</h2>
+                            <h3 class="serie-subtitulo" style="font-size:13px">Kono Subarashii Geijutsu ni Shukufuku wo!</h3>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Tipo:</strong></p>
+                                    <p><strong>Episodios:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p>OVA</p>
+                                    <p>1 / 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="ov6" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-2-kono-subarashii-geijutsu-ni-shukufuku-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
+                    </div>
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px;font-size:20px">Kono Subarashii Sekai ni Shukufuku wo! 2:</h2>
+                      <h3 style="font-size:15px">Kono Subarashii Geijutsu ni Shukufuku wo!</h3>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Tipo:</b> OVA</p>
+                      <p><b>Estudio:</b> Studio Deen</p>
+                      <p><b>Generos:</b> Aventura, Comedia, Fantasia</p>
+                      <p><b>Fecha de Publicación:</b> 24/07/2017</p>
+                      <p><b>Temporada:</b> Verano 2017</p>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Visto:</b> 05/07/2023</p>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(6)" title="Cerrar">
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="info-sep">
+            
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/anime/kono-subarashii-sekai-ni-bakuen-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(4)">
+                            <h2 class="serie-titulo" style="font-size:16px">Kono Subarashii Sekai ni Bakuen wo!</h2>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Tipo:</strong></p>
+                                    <p><strong>Episodios:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p>Historia Paralela</p>
+                                    <p>12 / 12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="ov4" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/kono-subarashii-sekai-ni-bakuen-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
+                    </div>
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px;text-align:center">Kono Subarashii Sekai ni Bakuen wo!</h2>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Tipo:</b> Anime</p>
+                      <p><b>Estudio:</b> Drive</p>
+                      <p><b>Generos:</b> Aventura, Comedia, Fantasia</p>
+                      <p><b>Fecha de Publicación:</b> 06/04/2023 - 22/06/2023</p>
+                      <p><b>Temporada:</b> Primavera 2023</p>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Visto desde:</b> 26/04/2023</p>
+                      <p><b>Visto hasta:</b> 05/07/2023</p>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(4)" title="Cerrar">
                     </div>
                 </div>
             </div>
