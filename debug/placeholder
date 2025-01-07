@@ -24,6 +24,10 @@
 
 //* Overlay titulo y subtitulo *\\
 
-    
     <h2 style="margin-top:5px">Placeholder</h2>
     <h3 style="font-size:15px">Placeholder</h3>
+
+//* Peliculas vistas *\\
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<p title="Visto"><i class="fa-solid fa-check"></i></p>
