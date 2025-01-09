@@ -73,47 +73,69 @@ function calcularElo() {
       } else {
           var resultado = Math.trunc(1400 + (x - 1400) / (3 - (3000 - x) / 800));
       }
+      document.getElementById("resultado-elo-error").style.display = "none";
+      document.getElementById("elo-calc-container").style.height = "250px";
   } else {
-      document.getElementById("resultado-reset").textContent = "No se ha introducido el mejor Elo";
+      document.getElementById("resultado-elo-error").textContent = "No se ha introducido el mejor Elo";
+      document.getElementById("resultado-elo-error").style.display = "";
+      document.getElementById("elo-calc-container").style.height = "275px";
       return;
   }
 
-  document.getElementById("resultado-reset").textContent = "Elo reiniciado: " + resultado;
+  document.getElementById("resultado-reset-value").textContent = resultado;
 }
 
 // Calculadora Glory BH
 function calcularGlory() {
-  // Obtener el valor de x desde el input y convertirlo en un número entero
   var x = parseInt(document.getElementById("eloInput-glory").value);
 
-  // Obtener el valor de y desde el input y convertirlo en un número entero
   var y = parseInt(document.getElementById("winsInput-glory").value);
 
-  // Verificar si se han introducido ambos valores
   if (isNaN(x) && isNaN(y)) {
-      document.getElementById("resultado-glory").innerHTML = "Introduce todos los datos";
+    document.getElementById("resultado-glory-error").innerHTML = "Introduce todos los datos";
+      document.getElementById("resultado-glory-error").style.display = "";
+      document.getElementById("glory-calc-container").style.height = "345px";
+      document.getElementById("resultado-glory-elo").innerHTML = 0
+      document.getElementById("resultado-glory-wins").innerHTML = 0
+      document.getElementById("resultado-glory-total").innerHTML = 0
       return;
   }
 
-  // Verificar si se ha introducido el valor de elo
   if (isNaN(x)) {
-      document.getElementById("resultado-glory").innerHTML = "No se ha introducido el mejor Elo";
+      document.getElementById("resultado-glory-error").innerHTML = "No se ha introducido el mejor Elo";
+      document.getElementById("resultado-glory-error").style.display = "";
+      document.getElementById("glory-calc-container").style.height = "345px";
+      document.getElementById("resultado-glory-elo").innerHTML = 0
+      document.getElementById("resultado-glory-wins").innerHTML = 0
+      document.getElementById("resultado-glory-total").innerHTML = 0
       return;
   }
 
-  // Verificar si se ha introducido el valor de victorias
   if (isNaN(y)) {
-      document.getElementById("resultado-glory").innerHTML = "No se ha introducido la cantidad de victorias";
+      document.getElementById("resultado-glory-error").innerHTML = "Cantidad de victorias invalida";
+      document.getElementById("resultado-glory-error").style.display = "";
+      document.getElementById("glory-calc-container").style.height = "345px";
+      document.getElementById("resultado-glory-elo").innerHTML = 0
+      document.getElementById("resultado-glory-wins").innerHTML = 0
+      document.getElementById("resultado-glory-total").innerHTML = 0
       return;
   }
 
-  // Verificar si las victorias son menores a 10
   if (y < 10) {
-      document.getElementById("resultado-glory").innerHTML = "No se cumple el mínimo de victorias";
+      document.getElementById("resultado-glory-error").innerHTML = "Mínimo de victorias no alcanzado";
+      document.getElementById("resultado-glory-error").style.display = "";
+      document.getElementById("glory-calc-container").style.height = "345px";
+      document.getElementById("resultado-glory-elo").innerHTML = 0
+      document.getElementById("resultado-glory-wins").innerHTML = 0
+      document.getElementById("resultado-glory-total").innerHTML = 0
       return;
   }
 
-  // Calcular el Glory ganado del Elo
+  if (x && y > 10) {
+    document.getElementById("resultado-glory-error").style.display = "none";
+    document.getElementById("glory-calc-container").style.height = "325px";
+  }
+
   var gloryElo;
   if (x < 1200) {
       gloryElo = 250;
@@ -131,7 +153,6 @@ function calcularGlory() {
       gloryElo = 10 * Math.trunc(480 + (x - 2300) / 20);
   }
 
-  // Calcular el Glory ganado por Victorias
   var gloryWins;
   if (y < 150) {
       gloryWins = 20 * y;
@@ -139,10 +160,9 @@ function calcularGlory() {
       gloryWins = 245 + Math.trunc(450 * Math.pow(Math.log10(2 * y), 2));
   }
 
-  // Mostrar los resultados en el div con id "resultado-glory"
-  document.getElementById("resultado-glory").innerHTML = "Glory ganado del Elo: " + gloryElo + "<br>" +
-      "Glory ganado por Victorias: " + gloryWins + "<br>" +
-      "Glory total: " + (gloryElo + gloryWins);
+  document.getElementById("resultado-glory-elo").innerHTML = gloryElo
+  document.getElementById("resultado-glory-wins").innerHTML = gloryWins
+  document.getElementById("resultado-glory-total").innerHTML = (gloryElo + gloryWins)
 }
 
 
@@ -151,16 +171,20 @@ function calcularGlory() {
   
 
 function showSection(sectionNumber) {
-  const totalSections = 12; // Actualizar esto con el número total de secciones
-  
+  const totalSections = 12;
+
   for (let i = 1; i <= totalSections; i++) {
     const section = document.getElementById('sec' + i);
     const button = document.getElementById('sec' + i + '-btn');
-    
-    section.style.display = i === sectionNumber ? '' : 'none';
-    button.style.backgroundColor = i === sectionNumber ? '#4b2966' : '#6f3c96';
-    button.style.borderColor = i === sectionNumber ? '#311a42' : '#4b2866';
-    button.style.color = i === sectionNumber ? '#9e9e9e' : '#fff';
+
+    if (section) {
+      section.style.display = i === sectionNumber ? '' : 'none';
+    }
+    if (button) {
+      button.style.backgroundColor = i === sectionNumber ? '#4b2966' : '#6f3c96';
+      button.style.borderColor = i === sectionNumber ? '#311a42' : '#4b2866';
+      button.style.color = i === sectionNumber ? '#9e9e9e' : '#fff';
+    }
   }
 }
 
@@ -265,6 +289,18 @@ function showSection(sectionNumber) {
     if (window.location.hash === "#enprueba") {
         showSection(3);
     }
+    if (window.location.hash === "#informacion") {
+        showSection(1);
+    }
+    if (window.location.hash === "#rangos") {
+        showSection(2);
+    }
+    if (window.location.hash === "#cosmeticos") {
+        showSection(3);
+    }
+    if (window.location.hash === "#calculadora") {
+        showSection(4);
+    }
 });
 
 window.addEventListener("hashchange", function() {
@@ -366,6 +402,18 @@ window.addEventListener("hashchange", function() {
   }
   if (window.location.hash === "#enprueba") {
       showSection(3);
+  }
+  if (window.location.hash === "#informacion") {
+      showSection(1);
+  }
+  if (window.location.hash === "#rangos") {
+      showSection(2);
+  }
+  if (window.location.hash === "#cosmeticos") {
+      showSection(3);
+  }
+  if (window.location.hash === "#calculadora") {
+      showSection(4);
   }
 });
 

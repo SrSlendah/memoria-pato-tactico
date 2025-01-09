@@ -948,10 +948,11 @@ footer {
 }
 
 .calc-reset button, .calc-glory button {
-    background-color: rgb(111, 60, 150); /* Color de fondo personalizado */
+    background-color: rgb(111, 60, 150);
     color: white;
     padding: 10px 20px;
-    border: 2px solid rgb(75, 40, 102); /* Borde personalizado */
+    border: 3px solid #4b2866;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -975,15 +976,20 @@ footer {
 }
 
 #resultado-reset {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top:6px;
+    font-size: 16px;
     color: #fff
 }
 
 #resultado-glory {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 0px;
+    font-size: 16px;
     color: #fff
+}
+
+#resultado-glory-error, #resultado-elo-error {
+    color: #ff9e9e;
+    font-size: 16px;
 }
 
 .main-wiki-lista {
@@ -1261,6 +1267,7 @@ footer {
     margin: 3px 0;
     color: white;
 }
+
 @media (max-width: 550px) {
     .modo-de-juego-elemento {
         flex-direction: column;
@@ -1396,6 +1403,84 @@ footer {
     .crossovers-lista {grid-template-columns: repeat(1, 300px)}
 }
 
+
+.ranked-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ranked-info-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ranked-info-elemento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.ranked-info-info {
+    flex: 1;
+    display: flex;
+    background-color: #6f3c96;
+    padding: 17px;
+    border: 4px solid #4b2866;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    height: 250px;
+}
+
+.ranked-info-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.ranked-info-subtitulo {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.ranked-info-details-labels p, .ranked-info-details-values p {
+    margin: 3px 0;
+    color: white;
+}
+
+
+@media (max-width: 800px) {
+    .ranked-info-elemento {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .ranked-info-imagen {
+        margin-bottom: 10px;
+    }
+
+    .ranked-info-info {
+        text-align: center;
+        margin: 0 !important;
+    }
+
+    .ranked-info-details {
+        font-size: 0.9rem;
+    }
+}
 
 .leyenda {
     display: grid;

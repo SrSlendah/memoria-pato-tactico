@@ -93,42 +93,64 @@
         </div>
       
 
-        <div class="secciones" align="center">
-            <button id="1-btn" onclick="show1();" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Información</button>
-            <button id="2-btn" onclick="show2();">Cosméticos</button>
-            <button id="3-btn" onclick="show3();">Calculadora</button>
+        <div class="secciones" align="center" style="margin-top:10px;margin-bottom:-15px">
+            <a href="#informacion"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Información</button></a>
+            <a href="#rangos"><button id="sec2-btn">Rangos</button></a>
+            <a href="#cosmeticos"><button id="sec3-btn">Cosméticos</button></a>
+            <a href="#calculadora"><button id="sec4-btn">Calculadora</button></a>
         </div>
 
-        <section id="1">
-        <section>
-            <h2 align="center" style="font-size:30px;margin-top:-20px">Recompensas del Ranked</h2>
-            <br />
-            <p align="center" style="color:#fff">
-                Al jugar Ranked puedes conseguir distintos rangos que otorgan avatares y marcos.<br>
-                También puedes conseguir Glory, la moneda para comprar mas recompensas del ranked.
-            </p>
-            <br /><br />
-            <h2 align="center" style="font-size:30px">Periodo de Situación</h2>
-            <br />
-            <p align="center" style="color:#fff">
-                En las 10 primeras partidas de cada temporada no se tiene un rango asignado, otorgan 3 veces la ganancia o la perdición de elo al jugar.<br>
-                Jugar estas 10 partidas hace que el jugador sea apto para ganar el avatar de ranked y los marcos.
-            </p>
-            <br /><br />
+        <section id="sec1">
+
+            <div class="ranked-info-container">
+                <section class="ranked-info">
+                    <div class="ranked-info-elemento">
+                        <div class="ranked-info-info" style="position: relative;margin-right:10px;">
+                            <h2 class="ranked-info-titulo">Recompensas del Ranked</h2>
+                            <hr class="info-sep" style="margin-bottom: 10px;">
+                            <div class="ranked-info-details">
+                                <div class="ranked-info-details-labels">
+                                    <p><br>
+                                        Al jugar Ranked puedes conseguir distintos rangos que otorgan avatares y marcos. También puedes conseguir Glory, la moneda para comprar mas recompensas del ranked.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="ranked-info-info" style="position: relative;margin-left:10px;">
+                            <h2 class="ranked-info-titulo">Periodo de Situación</h2>
+                            <hr class="info-sep" style="margin-bottom: 10px;">
+                            <div class="ranked-info-details">
+                                <div class="ranked-info-details-labels">
+                                    <p>
+                                        En las 10 primeras partidas de cada temporada no se tiene un rango asignado, otorgan 3 veces la ganancia o la perdición de elo al jugar. Jugar estas 10 partidas hace que el jugador sea apto para ganar el avatar de ranked y los marcos.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </section>
+
+    <section id="sec2" style="display: none;"> <!-- Rangos -->
             <h2 align="center" style="font-size:30px;margin-bottom:30px">Rangos</h2>
 
 
             <div class="secciones" align="center">
-                <button id="sec1-btn" onclick="showSec1();" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Estaño</button>
-                <button id="sec2-btn" onclick="showSec2();">Bronce</button>
-                <button id="sec3-btn" onclick="showSec3();">Plata</button>
-                <button id="sec4-btn" onclick="showSec4();">Oro</button>
-                <button id="sec5-btn" onclick="showSec5();">Platino</button>
-                <button id="sec6-btn" onclick="showSec6();">Diamante</button>
-                <button id="sec7-btn" onclick="showSec7();">Valhallan</button>
+                <button id="sec2a-btn" onclick="showSec1();" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Estaño</button>
+                <button id="sec2b-btn" onclick="showSec2();">Bronce</button>
+                <button id="sec2c-btn" onclick="showSec3();">Plata</button>
+                <button id="sec2d-btn" onclick="showSec4();">Oro</button>
+                <button id="sec2e-btn" onclick="showSec5();">Platino</button>
+                <button id="sec2f-btn" onclick="showSec6();">Diamante</button>
+                <button id="sec2g-btn" onclick="showSec7();">Valhallan</button>
             </div>
 
-            <section id="sec1">
+            <section id="sec2a">
                 <table class="ranked" style="width:20%">
                     <tr>
                         <th colspan="3">Estaño</th>
@@ -302,7 +324,7 @@
                 </table>
             </section>
 
-            <section id="sec2" style="display:none">
+            <section id="sec2b" style="display:none">
                 <table class="ranked" style="width:20%">
                     <tr>
                         <th colspan="3">Bronce</th>
@@ -476,7 +498,7 @@
                 </table>
             </section>
 
-            <section id="sec3" style="display:none">
+            <section id="sec2c" style="display:none">
                 <table class="ranked" style="width:20%">
                     <tr>
                         <th colspan="3">Plata</th>
@@ -650,7 +672,7 @@
 
             </section>
 
-            <section id="sec4" style="display:none">
+            <section id="sec2d" style="display:none">
                 <table class="ranked" style="width:20%">
                     <tr>
                         <th colspan="3">Oro</th>
@@ -833,7 +855,7 @@
 
             </section>
 
-            <section id="sec5" style="display:none">
+            <section id="sec2e" style="display:none">
                 <table class="ranked" style="width:20%">
                     <tr>
                         <th colspan="3">Platino</th>
@@ -1016,7 +1038,7 @@
                 </table>
             </section>
 
-            <section id="sec6" style="display:none">
+            <section id="sec2f" style="display:none">
                 <table class="ranked" style="width:20%">
                     <tr>
                         <th colspan="3">Diamante</th>
@@ -1180,7 +1202,7 @@
                 </table>
             </section>
 
-            <section id="sec7" style="display:none">
+            <section id="sec2g" style="display:none">
                 <table class="ranked" style="width:20%">
                     <tr>
                         <th colspan="3">Valhallan</th>
@@ -1230,10 +1252,9 @@
                 </table>
             </section>
 
-        </section>
     </section>
 
-    <section id="2" style="display: none;">
+    <section id="sec3" style="display: none;"> <!-- Cosmeticos -->
 
         <h2 align="center" style="margin-top:-20px">Color</h2>
 
@@ -2126,29 +2147,58 @@
         </table>
     </section>
 
-    <section id="3">
+    <section id="sec4" style="display: none;"> <!-- Calculadora -->
         <section>
 
-            <div class="calc-container">
-                <div class="calc-reset">
-                    <div class="calc-column">
-                        <h2 align="center" style="font-size:30px;margin-top:-20px;margin-bottom: 40px;">Elo reiniciado</h2>
-                        <input id="eloInput-reset" type="number" placeholder="Mejor Elo">
-                        <button onclick="calcularElo()">Calcular Elo reiniciado</button>
-                        <div id="resultado-reset"></div>
-                    </div>
-                </div>
+            <div class="ranked-info-container">
+                <section class="ranked-info">
+                    <div class="ranked-info-elemento">
+                        <div class="ranked-info-info" id="elo-calc-container" style="position: relative;margin-right:10px;">
+                            <h2 class="ranked-info-titulo">Elo Reiniciado</h2>
+                            <hr class="info-sep" style="margin-bottom: 10px;">
+                            <div class="ranked-info-details">
+                                <div class="calc-reset">
+                                    <div class="calc-column">
+                                        <input id="eloInput-reset" type="number" placeholder="Mejor Elo">
+                                        <error id="resultado-elo-error" style="display: none;margin-top:-10px"><br></error>
+                                        <button onclick="calcularElo()">Calcular Elo reiniciado</button>
+                                        <div>
+                                            <p id="resultado-reset">Elo Reiniciado: <v id="resultado-reset-value">0</v></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="ranked-info-info" id="glory-calc-container" style="position: relative;margin-left:10px;height: 325px;">
+                            <h2 class="ranked-info-titulo">Glory Conseguido</h2>
+                            <hr class="info-sep" style="">
+                            <div class="ranked-info-details">
+                                <div class="ranked-info-details-labels">
+                                    <div class="calc-glory">
+                                        <div class="calc-column">
+                                            <input id="eloInput-glory" type="number" placeholder="Mejor Elo">
+                                            <input id="winsInput-glory" type="number" placeholder="Victorias">
+                                            <error id="resultado-glory-error" style="display: none;margin-top:-10px"><br></error>
+                                            <button onclick="calcularGlory()">Calcular Glory conseguido</button>
+                                            <div>
+                                                <p id="resultado-glory">
 
-                <div class="calc-glory">
-                    <div class="calc-column">
-                        <h2 align="center" style="font-size:30px;margin-top:-20px;margin-bottom: 20px;">Glory conseguido</h2>
-                        <input id="eloInput-glory" type="number" placeholder="Mejor Elo">
-                        <input id="winsInput-glory" type="number" placeholder="Victorias">
-                        <button onclick="calcularGlory()">Calcular GLory conseguido</button>
-                        <div id="resultado-glory"></div>
+                                                    Glory ganado por Elo: <img src="../media/wiki/bh/iconos/glory.png" title="Glory" style="width:15px;margin-right: 3px;"><v id="resultado-glory-elo">0</v><br>
+                                                    Glory ganado por Victorias: <img src="../media/wiki/bh/iconos/glory.png" title="Glory" style="width:15px;margin-right: 3px;"><v id="resultado-glory-wins">0</v><br>
+                                                    Glory ganado en Total: <img src="../media/wiki/bh/iconos/glory.png" title="Glory" style="width:15px;margin-right: 3px;"><v id="resultado-glory-total">0</v>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
+            
         </section>
     </section>
 
