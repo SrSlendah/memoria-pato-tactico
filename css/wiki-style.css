@@ -1095,6 +1095,38 @@ footer {
     justify-content: center;
 }
 
+@media (max-width: 950px) {
+    .modos-de-juego-lista {
+        grid-template-columns: repeat(7, 100px);
+    }
+}
+
+@media (max-width: 800px) {
+    .modos-de-juego-lista {
+        grid-template-columns: repeat(6, 100px);
+    }
+}
+@media (max-width: 675px) {
+    .modos-de-juego-lista {
+        grid-template-columns: repeat(5, 100px);
+    }
+}
+@media (max-width: 575px) {
+    .modos-de-juego-lista {
+        grid-template-columns: repeat(4, 100px);
+    }
+}
+@media (max-width: 475px) {
+    .modos-de-juego-lista {
+        grid-template-columns: repeat(3, 100px);
+    }
+}
+@media (max-width: 350px) {
+    .modos-de-juego-lista {
+        grid-template-columns: repeat(2, 100px);
+    }
+}
+
 .modos-de-juego-list-elemento {
     text-align: center;
 }
@@ -1228,6 +1260,24 @@ footer {
 .modo-de-juego-details-labels p, .modo-de-juego-details-values p {
     margin: 3px 0;
     color: white;
+}
+@media (max-width: 550px) {
+    .modo-de-juego-elemento {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modo-de-juego-imagen {
+        margin-bottom: 10px;
+    }
+
+    .modo-de-juego-info {
+        text-align: center;
+    }
+
+    .modo-de-juego-details {
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -2604,6 +2654,89 @@ footer {
     height: 60px;
     padding: 10px;
     margin-top: -5px;
+}
+
+
+.gamemode-misc-lista {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.gamemode-misc-list-elemento {
+    text-align: center;
+}
+
+.gamemode-misc-list-imagen {
+    position: relative;
+}
+
+.gamemode-misc-list-leyenda {
+    position: absolute !important;
+    bottom: 5px;
+    right: 0px;
+    cursor: pointer;
+    background: rgba(94, 51, 127, 0.8);;
+    width:40px !important;
+    height:40px !important;
+    padding:2px !important;
+    border-radius: 15px 0 0 0 !important;
+}
+
+.gamemode-misc-list-imagen img {
+    width: 100%;
+    height: 150px;
+    margin-top: -4px;
+    border: 4px solid #4b2866;
+    padding: 15px
+}
+
+.gamemode-misc-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.gamemode-misc-list-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    font-size: 13px;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 100px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+@media screen and (max-width:900px) {
+    .gamemode-misc-lista {grid-template-columns: repeat(3, 150px);}
+}
+
+@media screen and (max-width:550px) {
+    .gamemode-misc-lista {grid-template-columns: repeat(2, 150px);}
+}
+
+@media screen and (max-width:475px) {
+    .gamemode-misc-lista {grid-template-columns: repeat(2, 150px);}
+    .gamemode-misc-lista-imagen img {height: auto;}
 }
 
 .crossover-leyendas-lista {

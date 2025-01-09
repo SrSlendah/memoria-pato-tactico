@@ -193,8 +193,11 @@ function showSection(sectionNumber) {
     if (window.location.hash === "#val") {
         showSection(9);
     }
-    if (window.location.hash === "#otros") {
+    if (window.location.hash === "#nix") {
         showSection(10);
+    }
+    if (window.location.hash === "#otros") {
+        showSection(11);
     }
     if (window.location.hash === "#pagina1") {
         showSection(1);
@@ -292,8 +295,11 @@ window.addEventListener("hashchange", function() {
   if (window.location.hash === "#val") {
       showSection(9);
   }
-  if (window.location.hash === "#otros") {
+  if (window.location.hash === "#nix") {
       showSection(10);
+  }
+  if (window.location.hash === "#otros") {
+      showSection(11);
   }
   if (window.location.hash === "#pagina1") {
       showSection(1);
