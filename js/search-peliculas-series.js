@@ -28,7 +28,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Slenderman', url: '../lista-peliculas-series/slenderman' },
     { resultado: 'Stranger Things', url: '../lista-peliculas-series/stranger-things' },
     { resultado: 'The 8 Show', url: '../lista-peliculas-series/the-8-show' },
-    { resultado: 'Viernes 13', url: '../lista-peliculas-series/viernes13' },
+    { resultado: 'Viernes 13', url: '../lista-peliculas-series/viernes-13' },
   ];
 
   query = removeAccents(query.toLowerCase());

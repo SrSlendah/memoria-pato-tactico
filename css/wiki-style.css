@@ -3274,6 +3274,51 @@ footer {
     margin-top: -5px;
 }
 
+.uncompañero{
+    grid-template-columns: repeat(1, 175px);
+}
+.doscompañeros{
+    grid-template-columns: repeat(2, 175px);
+}
+.trescompañeros{
+    grid-template-columns: repeat(3, 175px);
+}
+.cuatrocompañeros{
+    grid-template-columns: repeat(4, 175px);
+}
+
+@media screen and (max-width:1000px) {
+    .crossover-compañeros-lista {grid-template-columns: repeat(4, 175px);}
+    .cuatrocompañeros{grid-template-columns: repeat(4, 175px);}
+    .trescompañeros {grid-template-columns: repeat(3, 175px);}
+    .doscompañeros {grid-template-columns: repeat(2, 175px);}
+    .uncompañero {grid-template-columns: repeat(1, 175px);}
+}
+
+@media screen and (max-width:800px) {
+    .crossover-compañeros-lista {grid-template-columns: repeat(3, 175px);}
+    .cuatrocompañeros {grid-template-columns: repeat(3, 175px);}
+    .trescompañeros {grid-template-columns: repeat(3, 175px);}
+    .doscompañeros {grid-template-columns: repeat(2, 175px);}
+    .uncompañero {grid-template-columns: repeat(1, 175px);}
+}
+
+@media screen and (max-width:600px) {
+    .crossover-compañeros-lista {grid-template-columns: repeat(2, 175px);}
+    .cuatrocompañeros {grid-template-columns: repeat(2, 175px);}
+    .trescompañeros {grid-template-columns: repeat(2, 175px);}
+    .doscompañeros {grid-template-columns: repeat(2, 175px);}
+    .uncompañero {grid-template-columns: repeat(1, 175px);}
+}
+
+@media screen and (max-width:450px) {
+    .crossover-compañeros-lista {grid-template-columns: repeat(2, 160px);}
+    .cuatrocompañeros {grid-template-columns: repeat(2, 160px);}
+    .trescompañeros {grid-template-columns: repeat(2, 160px);}
+    .doscompañeros {grid-template-columns: repeat(2, 160px);}
+    .uncompañero {grid-template-columns: repeat(1, 160px);}
+}
+
 .crossover-modos_de_juego-lista {
     display: grid;
     grid-template-columns: repeat(1, 115px) !important;
