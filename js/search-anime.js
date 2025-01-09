@@ -96,6 +96,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Tonikaku Kawaii', url: '../lista-anime/tonikaku-kawaii' },
     { resultado: 'Uzaki-chan wa Asobitai!', url: '../lista-anime/uzaki-chan-wa-asobitai' },
     { resultado: 'Uzumaki', url: '../lista-anime/uzumaki' },
+    { resultado: 'Zenshu', url: '../lista-anime/zenshu' },
     { resultado: 'Zom 100: Bucket List of the Dead', url: '../lista-anime/zom-100-bucket-list-of-the-dead' },
   ];
 
