@@ -1404,6 +1404,267 @@ footer {
 }
 
 
+.pases-batalla-lista {
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.pases-batalla-list-elemento {
+    text-align: center;
+    height: 200px;
+}
+
+.pases-batalla-list-imagen {
+    height: 125px;
+}
+
+.pases-batalla-list-imagen img {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+    object-fit: cover;
+}
+
+.pases-batalla-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+}
+
+.pases-batalla-list-titulo i {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.trespases { grid-template-columns: repeat(3, 250px); }
+
+.pase-batalla-info-rango {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pase-batalla-info-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pase-batalla-info-elemento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.pase-batalla-info-imagen {
+    flex: 0 0 auto;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.pase-batalla-info-imagen img {
+    padding: 10px;
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    border: 4px solid #4b2866;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pase-batalla-info-info {
+    flex: 1;
+    display: flex;
+    background-color: #6f3c96;
+    padding: 17px;
+    border: 4px solid #4b2866;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 250px;
+}
+
+.pase-batalla-info-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.pase-batalla-info-subtitulo {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #fff;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.pase-batalla-info-details {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.pase-batalla-info-details p {
+    color: #fff;
+    margin: 5px 0;
+}
+
+.pase-batalla-info-details-labels {
+    margin-right: 30px;
+}
+
+.pase-batalla-info-details-labels, .pase-batalla-info-details-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pase-batalla-info-details-labels strong, .pase-batalla-info-details-values strong {
+    margin: 3px 0;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.pase-batalla-info-details-labels p, .pase-batalla-info-details-values p {
+    margin: 3px 0;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .pase-batalla-info-elemento {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .pase-batalla-info-imagen {
+        margin-bottom: 10px;
+    }
+
+    .pase-batalla-info-info {
+        text-align: center;
+        margin: 0 !important;
+    }
+
+    .pase-batalla-info-details {
+        font-size: 0.9rem;
+    }
+}
+
+.pase-batalla {
+    text-align: center;
+    color: #fff;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 1375px;
+    max-width: 1375px;
+    padding: 0 10px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.pase-batalla::-webkit-scrollbar {
+    height: 10px;
+}
+
+.pase-batalla::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+.pase-batalla::-webkit-scrollbar-thumb {
+    background: #5e337f;
+    border: 2px solid #4b2866;
+    border-radius: 10px;
+}
+
+.pase-batalla::-webkit-scrollbar-thumb:hover {
+    background: #8146ae;    
+}
+
+.pase-batalla-tabla {
+    box-sizing: border-box;
+    border-spacing: 1px;
+}
+
+.pase-batalla-tabla td, .pase-batalla-tabla th{
+    border: 3.5px solid #4b2866;
+    padding: 5px;
+    white-space: normal;
+    width: 150px;
+}
+
+.bp-recompensa-lvl1 {
+    width: 300px !important;
+}
+
+.pase-batalla-tabla th {
+    background-color: #6f3c96;
+}
+
+.pase-batalla-tabla td {
+    max-width: 300px;
+}
+
+.bp-reward-nombre {
+    font-weight: bold;
+    font-size:14px;
+}
+
+.bp-reward-tipo {
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.bp-cuatro-recompensas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+}
+.bp-cuatro-recompensas img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bptopleft {
+    border-radius: 15px 0 0 0;
+}
+
+.bptopright{
+    border-radius: 0 15px 0 0;
+}
+
+.bpbottomleft{
+    border-radius: 0 0 0 15px;
+}
+
+.bpbottomright{
+    border-radius: 0 0 15px 0;
+}
+
 .ranked-info {
     display: grid;
     grid-template-columns: 1fr;

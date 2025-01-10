@@ -347,6 +347,12 @@ function showSubSection(subsectionNumber) {
     if (window.location.hash === "#calculadora") {
         showSection(4);
     }
+    if (window.location.hash === "#temporadas") {
+        showSection(1);
+    }
+    if (window.location.hash === "#temporadas-clasicas") {
+        showSection(2);
+    }
 });
 
 window.addEventListener("hashchange", function() {
@@ -489,6 +495,12 @@ window.addEventListener("hashchange", function() {
   }
   if (window.location.hash === "#calculadora") {
       showSection(4);
+  }
+  if (window.location.hash === "#temporadas") {
+      showSection(1);
+  }
+  if (window.location.hash === "#temporadas-clasicas") {
+      showSection(2);
   }
 });
 
