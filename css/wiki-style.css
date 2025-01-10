@@ -1417,6 +1417,22 @@ footer {
     padding: 20px;
 }
 
+.ranked-info-imagen {
+    flex: 0 0 auto;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.ranked-info-imagen img {
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    border: 4px solid #4b2866;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 .ranked-info-elemento {
     display: flex;
     align-items: center;
@@ -1484,7 +1500,7 @@ footer {
 
 .ranked-cosmetico {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(4, 200px);
     gap: 20px;
     justify-content: center;
 }
@@ -1500,6 +1516,10 @@ footer {
     border: 4px solid #4b2866;
     padding: 15px;
 }
+
+.ranked-cosmetico-imagen img#emoji-img {
+     height: 160px !important; 
+    }
 
 .ranked-cosmetico-titulo {
     display: flex;
@@ -1538,21 +1558,239 @@ footer {
 .doscosmeticos {grid-template-columns: repeat(2, 200px)}
 .trescosmeticos {grid-template-columns: repeat(3, 200px)}
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 950px) {
+    .ranked-cosmetico { grid-template-columns: repeat(3, 200px); }
+}
+@media screen and (max-width: 750px) {
     .ranked-cosmetico { grid-template-columns: repeat(2, 200px); }
 }
-@media screen and (max-width: 900px) {
-    .ranked-cosmetico { grid-template-columns: repeat(2, 200px); }
-}
-@media screen and (max-width: 700px) {
-    .ranked-cosmetico { grid-template-columns: repeat(2, 200px); }
+@media screen and (max-width: 500px) {
+    .ranked-cosmetico { grid-template-columns: repeat(2, 150px); }
+
+    .ranked-cosmetico-imagen img { height: 150px; }
+    .ranked-cosmetico-imagen img#tema-iu-img { height: 120px !important; }
+    .ranked-cosmetico-imagen img#emoji-img { height: 130px !important; }
+    .ranked-cosmetico-titulo {font-size:13px}
+    .ranked-cosmetico-subtitulo i { font-size:10px !important }
 }
 
-@media screen and (max-width: 450px) {
-    .ranked-cosmetico { grid-template-columns: repeat(2, 175px); }
-
-    .ranked-cosmetico-imagen img { height: 175px; }
+.ranked-rango {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
 }
+
+.ranked-rango-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ranked-rango-elemento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.ranked-rango-imagen {
+    flex: 0 0 auto;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.ranked-rango-imagen img {
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    border: 4px solid #4b2866;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.ranked-rango-info {
+    flex: 1;
+    display: flex;
+    background-color: #6f3c96;
+    padding: 17px;
+    border: 4px solid #4b2866;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 250px;
+}
+
+.ranked-rango-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.ranked-rango-subtitulo {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.ranked-rango-details {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.ranked-rango-details p {
+    color: #fff;
+    margin: 5px 0;
+}
+
+.ranked-rango-details-labels {
+    margin-right: 30px;
+}
+
+.ranked-rango-details-labels, .ranked-rango-details-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ranked-rango-details-labels strong, .ranked-rango-details-values strong {
+    margin: 3px 0;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.ranked-rango-details-labels p, .ranked-rango-details-values p {
+    margin: 3px 0;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .ranked-rango-elemento {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .ranked-rango-imagen {
+        margin-bottom: 10px;
+    }
+
+    .ranked-rango-info {
+        text-align: center;
+        margin: 0 !important;
+    }
+
+    .ranked-rango-details {
+        font-size: 0.9rem;
+    }
+}
+
+.ranked-rango-marco {
+    display: grid;
+    grid-template-columns: repeat(1, 150px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.ranked-rango-marco-elemento {
+    text-align: center;
+}
+
+.ranked-rango-marco-imagen img {
+    width: 100%;
+    height: auto;
+    margin-top: -4px;
+    border: 4px solid #4b2866;
+    padding: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.ranked-rango-avatar {
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.ranked-rango-avatar-elemento {
+    text-align: center;
+}
+
+.ranked-rango-avatar-imagen img {
+    width: 100%;
+    height: 100px;
+    margin-top: -4px;
+    border: 4px solid #4b2866;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+}
+.ranked-rango-avatar-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 40px;
+    padding: 10px;
+    margin-top: -5px;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.dosavataresranked {
+        grid-template-columns: repeat(2, 100px);
+}
+
+@media screen and (max-width:1150px) {
+    .ranked-rango-avatar {
+        grid-template-columns: repeat(9, 100px);
+    }
+}
+@media screen and (max-width:1050px) {
+    .ranked-rango-avatar {
+        grid-template-columns: repeat(8, 100px);
+    }
+}
+@media screen and (max-width:950px) {
+    .ranked-rango-avatar {
+        grid-template-columns: repeat(7, 100px);
+    }
+}
+@media screen and (max-width:850px) {
+    .ranked-rango-avatar {
+        grid-template-columns: repeat(6, 100px);
+    }
+}
+@media screen and (max-width:750px) {
+    .ranked-rango-avatar {
+        grid-template-columns: repeat(5, 100px);
+    }
+}
+@media screen and (max-width:650px) {
+    .ranked-rango-avatar {
+        grid-template-columns: repeat(4, 100px);
+    }
+}
+@media screen and (max-width:500px) {
+    .ranked-rango-avatar {
+        grid-template-columns: repeat(3, 100px);
+    }
+}
+
 
 .leyenda {
     display: grid;

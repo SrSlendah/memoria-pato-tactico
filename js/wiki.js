@@ -187,6 +187,23 @@ function showSection(sectionNumber) {
     }
   }
 }
+function showSubSection(subsectionNumber) {
+  const totalSections = 7;
+
+  for (let i = 1; i <= totalSections; i++) {
+    const section = document.getElementById('subsec' + i);
+    const button = document.getElementById('subsec' + i + '-btn');
+
+    if (section) {
+      section.style.display = i === subsectionNumber ? '' : 'none';
+    }
+    if (button) {
+      button.style.backgroundColor = i === subsectionNumber ? '#4b2966' : '#6f3c96';
+      button.style.borderColor = i === subsectionNumber ? '#311a42' : '#4b2866';
+      button.style.color = i === subsectionNumber ? '#9e9e9e' : '#fff';
+    }
+  }
+}
 
 
   document.addEventListener("DOMContentLoaded", function() {
@@ -294,6 +311,35 @@ function showSection(sectionNumber) {
     }
     if (window.location.hash === "#rangos") {
         showSection(2);
+        showSubSection(1);
+    }
+    if (window.location.hash === "#rangos#estano") {
+        showSection(2);
+        showSubSection(1);
+    }
+    if (window.location.hash === "#rangos#bronce") {
+        showSection(2);
+        showSubSection(2);
+    }
+    if (window.location.hash === "#rangos#plata") {
+        showSection(2);
+        showSubSection(3);
+    }
+    if (window.location.hash === "#rangos#oro") {
+        showSection(2);
+        showSubSection(4);
+    }
+    if (window.location.hash === "#rangos#platino") {
+        showSection(2);
+        showSubSection(5);
+    }
+    if (window.location.hash === "#rangos#diamante") {
+        showSection(2);
+        showSubSection(6);
+    }
+    if (window.location.hash === "#rangos#valhallan") {
+        showSection(2);
+        showSubSection(7);
     }
     if (window.location.hash === "#cosmeticos") {
         showSection(3);
@@ -408,6 +454,35 @@ window.addEventListener("hashchange", function() {
   }
   if (window.location.hash === "#rangos") {
       showSection(2);
+      showSubSection(1);
+  }
+  if (window.location.hash === "#rangos#estano") {
+      showSection(2);
+      showSubSection(1);
+  }
+  if (window.location.hash === "#rangos#bronce") {
+      showSection(2);
+      showSubSection(2);
+  }
+  if (window.location.hash === "#rangos#plata") {
+      showSection(2);
+      showSubSection(3);
+  }
+  if (window.location.hash === "#rangos#oro") {
+      showSection(2);
+      showSubSection(4);
+  }
+  if (window.location.hash === "#rangos#platino") {
+      showSection(2);
+      showSubSection(5);
+  }
+  if (window.location.hash === "#rangos#diamante") {
+      showSection(2);
+      showSubSection(6);
+  }
+  if (window.location.hash === "#rangos#valhallan") {
+      showSection(2);
+      showSubSection(7);
   }
   if (window.location.hash === "#cosmeticos") {
       showSection(3);
