@@ -1649,6 +1649,25 @@ footer {
     height: auto;
 }
 
+.bp-dos-recompensas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+}
+.bp-cuatro-recompensas img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pasegratis {
+    height: 200px;
+}
+
+.pasepago {
+    height: 360px;
+}
+
 .bptopleft {
     border-radius: 15px 0 0 0;
 }
@@ -1665,6 +1684,25 @@ footer {
     border-radius: 0 0 15px 0;
 }
 
+@media screen and (max-width: 1400px) { 
+    .pase-batalla { max-width: 1000px; }
+    .bp-cuatro-recompensas { width: 200px; }
+}
+@media screen and (max-width: 1050px) { 
+    .pase-batalla { max-width: 800px; }
+}
+@media screen and (max-width: 850px) { 
+    .pase-batalla { max-width: 650px; }
+}
+@media screen and (max-width: 700px) { 
+    .pase-batalla { max-width: 500px; }
+}
+@media screen and (max-width: 550px) { 
+    .pase-batalla { max-width: 400px; }
+}
+@media screen and (max-width: 400px) { 
+    .pase-batalla { max-width: 300px; }
+}
 .ranked-info {
     display: grid;
     grid-template-columns: 1fr;
