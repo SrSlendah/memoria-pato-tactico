@@ -1460,6 +1460,21 @@ footer {
 
 .trespases { grid-template-columns: repeat(3, 250px); }
 
+@media screen and (max-width: 1330px) {
+    .pases-batalla-lista { grid-template-columns: repeat(4, 250px); }
+}
+@media screen and (max-width: 1100px) {
+    .pases-batalla-lista { grid-template-columns: repeat(3, 250px); }
+}
+@media screen and (max-width: 850px) {
+    .pases-batalla-lista { grid-template-columns: repeat(2, 250px); }
+    .trespases { grid-template-columns: repeat(2, 250px); }
+}
+@media screen and (max-width: 600px) {
+    .pases-batalla-lista { grid-template-columns: repeat(1, 250px); }
+    .trespases { grid-template-columns: repeat(1, 250px); }
+}
+
 .pase-batalla-info-rango {
     display: grid;
     grid-template-columns: 1fr;
