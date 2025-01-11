@@ -259,6 +259,7 @@ function showSubSubSection(subsubsectionNumber) {
     }
     if (window.location.hash === "#recompensas") {
         showSection(1);
+        showSubSection(1);
     }
     if (window.location.hash === "#recompensas#pagina1") {
         showSubSection(1);
@@ -451,6 +452,7 @@ window.addEventListener("hashchange", function() {
   }
   if (window.location.hash === "#recompensas") {
       showSection(1);
+      showSubSection(1);
   }
   if (window.location.hash === "#recompensas#pagina1") {
       showSubSection(1);

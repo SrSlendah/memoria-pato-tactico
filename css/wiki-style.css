@@ -814,6 +814,7 @@ footer {
       margin: 0 10px;
 }
 
+
 /* MANTENIMIENTO */
 
 .img-mant {
@@ -1727,6 +1728,18 @@ footer {
 
 .pase-batalla-misiones-tabla th {
     background-color: #6f3c96;
+}
+
+@media screen and (max-width:800px) { 
+    .pase-batalla-misiones { max-width: 600px }
+}
+
+@media screen and (max-width:600px) { 
+    .pase-batalla-misiones { max-width: 450px }
+}
+
+@media screen and (max-width:450px) { 
+    .pase-batalla-misiones { max-width: 350px }
 }
 
 .bp-recompensa-lvl1 {
