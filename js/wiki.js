@@ -703,6 +703,20 @@ function cambiar(id) {
       arma1img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_the-playback_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_bitrate-blade_lvl1.png";
     }
+  } else if (id === "arcadenights") { // Temporada 1 (Podio)
+    var imagen = document.getElementById("podio-foto");
+    var nivel = document.getElementById("podio-lvl");
+
+    if (imagen.src.includes("/podio-lvl1.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/2/podio-lvl2.png";
+      nivel.textContent = "Nivel 2";
+    } else if (imagen.src.includes("/podio-lvl2.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/2/podio-lvl3.png";
+      nivel.textContent = "Nivel 3";
+    } else {
+      imagen.src = "../media/wiki/bh/pase-batalla/2/podio-lvl1.png";
+      nivel.textContent = "Nivel 1";
+    }
   } else if (id === "jormungandrmako") { // TEMPORADA 3 (Mako)
     var imagen = document.getElementById("jormungandrmako-foto");
     var nivel = document.getElementById("jormungandrmako-nivel");
