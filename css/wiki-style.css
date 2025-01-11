@@ -283,6 +283,13 @@ details {
       height: 600px;
       overflow-y: auto; 
   }
+  .contenido-overlay#efectoko {
+    max-width: 300px;
+    width: 300px;
+  }
+  .contenido-overlay#efectoko img#efectokoimg {
+    width: 220px !important;
+  }
 }
   
   .menu-overlay {
@@ -1616,8 +1623,8 @@ footer {
     width: 150px;
 }
 
-.bp-recompensa-lvl1 {
-    width: 300px !important;
+.pase-batalla-tabla#lastpage td, .pase-batalla-tabla#lastpage th {
+    width: 300px;
 }
 
 .pase-batalla-tabla th {
@@ -1626,6 +1633,104 @@ footer {
 
 .pase-batalla-tabla td {
     max-width: 300px;
+}
+
+.pase-batalla-extra {
+    text-align: center;
+    color: #fff;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 700px;
+    max-width: 700px;
+    padding: 0 10px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.pase-batalla-extra::-webkit-scrollbar {
+    height: 10px;
+}
+
+.pase-batalla-extra::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+.pase-batalla-extra::-webkit-scrollbar-thumb {
+    background: #5e337f;
+    border: 2px solid #4b2866;
+    border-radius: 10px;
+}
+
+.pase-batalla-extra::-webkit-scrollbar-thumb:hover {
+    background: #8146ae;    
+}
+
+.pase-batalla-extra-tabla {
+    box-sizing: border-box;
+    border-spacing: 1px;
+}
+
+.pase-batalla-extra-tabla td, .pase-batalla-extra-tabla th{
+    border: 3.5px solid #4b2866;
+    padding: 5px;
+    white-space: normal;
+}
+
+.pase-batalla-extra-tabla th {
+    background-color: #6f3c96;
+}
+
+.pase-batalla-misiones {
+    text-align: center;
+    color: #fff;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 800px;
+    max-width: 800px;
+    padding: 0 10px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.pase-batalla-misiones::-webkit-scrollbar {
+    height: 10px;
+}
+
+.pase-batalla-misiones::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+.pase-batalla-misiones::-webkit-scrollbar-thumb {
+    background: #5e337f;
+    border: 2px solid #4b2866;
+    border-radius: 10px;
+}
+
+.pase-batalla-misiones::-webkit-scrollbar-thumb:hover {
+    background: #8146ae;    
+}
+
+.pase-batalla-misiones-tabla {
+    box-sizing: border-box;
+    border-spacing: 1px;
+}
+
+.pase-batalla-misiones-tabla td, .pase-batalla-misiones-tabla th{
+    border: 3.5px solid #4b2866;
+    padding: 5px;
+    white-space: normal;
+}
+
+.pase-batalla-misiones-tabla th {
+    background-color: #6f3c96;
+}
+
+.bp-recompensa-lvl1 {
+    width: 300px !important;
 }
 
 .bp-reward-nombre {
@@ -1662,6 +1767,7 @@ footer {
 
 .pasegratis {
     height: 200px;
+    width: 150px;
 }
 
 .pasepago {
@@ -1694,15 +1800,23 @@ footer {
 @media screen and (max-width: 850px) { 
     .pase-batalla { max-width: 650px; }
 }
+@media screen and (max-width: 725px) {
+    .pase-batalla-extra { max-width: 475px; }
+}
 @media screen and (max-width: 700px) { 
     .pase-batalla { max-width: 500px; }
 }
 @media screen and (max-width: 550px) { 
     .pase-batalla { max-width: 400px; }
 }
+@media screen and (max-width: 500px) { 
+    .pase-batalla-extra { max-width: 400px; }
+}
 @media screen and (max-width: 400px) { 
     .pase-batalla { max-width: 300px; }
+    .pase-batalla-extra { max-width: 300px; }
 }
+
 .ranked-info {
     display: grid;
     grid-template-columns: 1fr;
@@ -2949,6 +3063,18 @@ footer {
     height:50px !important;
     padding:2px !important;
     border-radius: 0px 15px 0px 15px !important;
+}
+
+.change-img-bp-podio {
+    position: absolute !important;
+    bottom: 0px;
+    right: 0px;
+    cursor: pointer;
+    background: rgba(94, 51, 127, 0.8);;
+    width:50px !important;
+    height:50px !important;
+    padding:2px !important;
+    border-radius: 15px 0px  15px 0px !important;
 }
 
 @media (max-width:860px) {

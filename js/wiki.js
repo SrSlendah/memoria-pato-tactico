@@ -188,7 +188,7 @@ function showSection(sectionNumber) {
   }
 }
 function showSubSection(subsectionNumber) {
-  const totalSections = 7;
+  const totalSections = 12;
 
   for (let i = 1; i <= totalSections; i++) {
     const section = document.getElementById('subsec' + i);
@@ -201,6 +201,23 @@ function showSubSection(subsectionNumber) {
       button.style.backgroundColor = i === subsectionNumber ? '#4b2966' : '#6f3c96';
       button.style.borderColor = i === subsectionNumber ? '#311a42' : '#4b2866';
       button.style.color = i === subsectionNumber ? '#9e9e9e' : '#fff';
+    }
+  }
+}
+function showSubSubSection(subsubsectionNumber) {
+  const totalSections = 12;
+
+  for (let i = 1; i <= totalSections; i++) {
+    const section = document.getElementById('subsubsec' + i);
+    const button = document.getElementById('subsubsec' + i + '-btn');
+
+    if (section) {
+      section.style.display = i === subsubsectionNumber ? '' : 'none';
+    }
+    if (button) {
+      button.style.backgroundColor = i === subsubsectionNumber ? '#4b2966' : '#6f3c96';
+      button.style.borderColor = i === subsubsectionNumber ? '#311a42' : '#4b2866';
+      button.style.color = i === subsubsectionNumber ? '#9e9e9e' : '#fff';
     }
   }
 }
@@ -240,41 +257,84 @@ function showSubSection(subsectionNumber) {
     if (window.location.hash === "#otros") {
         showSection(11);
     }
-    if (window.location.hash === "#pagina1") {
+    if (window.location.hash === "#recompensas") {
         showSection(1);
     }
-    if (window.location.hash === "#pagina2") {
+    if (window.location.hash === "#recompensas#pagina1") {
+        showSubSection(1);
+    }
+    if (window.location.hash === "#recompensas#pagina2") {
+        showSubSection(2);
+    }
+    if (window.location.hash === "#recompensas#pagina3") {
+        showSubSection(3);
+    }
+    if (window.location.hash === "#recompensas#pagina4") {
+        showSubSection(4);
+    }
+    if (window.location.hash === "#recompensas#pagina5") {
+        showSubSection(5);
+    }
+    if (window.location.hash === "#recompensas#pagina6") {
+        showSubSection(6);
+    }
+    if (window.location.hash === "#recompensas#pagina7") {
+        showSubSection(7);
+    }
+    if (window.location.hash === "#recompensas#pagina8") {
+        showSubSection(8);
+    }
+    if (window.location.hash === "#recompensas#pagina9") {
+        showSubSection(9);
+    }
+    if (window.location.hash === "#recompensas#pagina10") {
+        showSubSection(10);
+    }
+    if (window.location.hash === "#recompensas#pagina11") {
+        showSubSection(11);
+    }
+    if (window.location.hash === "#recompensas#pagina12") {
+        showSubSection(12);
+    }
+    if (window.location.hash === "#misiones") {
         showSection(2);
+        showSubSubSection(1);
     }
-    if (window.location.hash === "#pagina3") {
-        showSection(3);
+    if (window.location.hash === "#misiones#pagina1") {
+        showSubSubSection(1);
     }
-    if (window.location.hash === "#pagina4") {
-        showSection(4);
+    if (window.location.hash === "#misiones#pagina2") {
+        showSubSubSection(2);
     }
-    if (window.location.hash === "#pagina5") {
-        showSection(5);
+    if (window.location.hash === "#misiones#pagina3") {
+        showSubSubSection(3);
     }
-    if (window.location.hash === "#pagina6") {
-        showSection(6);
+    if (window.location.hash === "#misiones#pagina4") {
+        showSubSubSection(4);
     }
-    if (window.location.hash === "#pagina7") {
-        showSection(7);
+    if (window.location.hash === "#misiones#pagina5") {
+        showSubSubSection(5);
     }
-    if (window.location.hash === "#pagina8") {
-        showSection(8);
+    if (window.location.hash === "#misiones#pagina6") {
+        showSubSubSection(6);
     }
-    if (window.location.hash === "#pagina9") {
-        showSection(9);
+    if (window.location.hash === "#misiones#pagina7") {
+        showSubSubSection(7);
     }
-    if (window.location.hash === "#pagina10") {
-        showSection(10);
+    if (window.location.hash === "#misiones#pagina8") {
+        showSubSubSection(8);
     }
-    if (window.location.hash === "#pagina11") {
-        showSection(11);
+    if (window.location.hash === "#misiones#pagina9") {
+        showSubSubSection(9);
     }
-    if (window.location.hash === "#pagina12") {
-        showSection(12);
+    if (window.location.hash === "#misiones#pagina10") {
+        showSubSubSection(10);
+    }
+    if (window.location.hash === "#misiones#pagina11") {
+        showSubSubSection(11);
+    }
+    if (window.location.hash === "#misiones#pagina12") {
+        showSubSubSection(12);
     }
     if (window.location.hash === "#fase1") {
         showSection(1);
@@ -389,41 +449,84 @@ window.addEventListener("hashchange", function() {
   if (window.location.hash === "#otros") {
       showSection(11);
   }
-  if (window.location.hash === "#pagina1") {
+  if (window.location.hash === "#recompensas") {
       showSection(1);
   }
-  if (window.location.hash === "#pagina2") {
+  if (window.location.hash === "#recompensas#pagina1") {
+      showSubSection(1);
+  }
+  if (window.location.hash === "#recompensas#pagina2") {
+      showSubSection(2);
+  }
+  if (window.location.hash === "#recompensas#pagina3") {
+      showSubSection(3);
+  }
+  if (window.location.hash === "#recompensas#pagina4") {
+      showSubSection(4);
+  }
+  if (window.location.hash === "#recompensas#pagina5") {
+      showSubSection(5);
+  }
+  if (window.location.hash === "#recompensas#pagina6") {
+      showSubSection(6);
+  }
+  if (window.location.hash === "#recompensas#pagina7") {
+      showSubSection(7);
+  }
+  if (window.location.hash === "#recompensas#pagina8") {
+      showSubSection(8);
+  }
+  if (window.location.hash === "#recompensas#pagina9") {
+      showSubSection(9);
+  }
+  if (window.location.hash === "#recompensas#pagina10") {
+      showSubSection(10);
+  }
+  if (window.location.hash === "#recompensas#pagina11") {
+      showSubSection(11);
+  }
+  if (window.location.hash === "#recompensas#pagina12") {
+      showSubSection(12);
+  }
+  if (window.location.hash === "#misiones") {
       showSection(2);
+      showSubSubSection(1);
   }
-  if (window.location.hash === "#pagina3") {
-      showSection(3);
+  if (window.location.hash === "#misiones#pagina1") {
+      showSubSubSection(1);
   }
-  if (window.location.hash === "#pagina4") {
-      showSection(4);
+  if (window.location.hash === "#misiones#pagina2") {
+      showSubSubSection(2);
   }
-  if (window.location.hash === "#pagina5") {
-      showSection(5);
+  if (window.location.hash === "#misiones#pagina3") {
+      showSubSubSection(3);
   }
-  if (window.location.hash === "#pagina6") {
-      showSection(6);
+  if (window.location.hash === "#misiones#pagina4") {
+      showSubSubSection(4);
   }
-  if (window.location.hash === "#pagina7") {
-      showSection(7);
+  if (window.location.hash === "#misiones#pagina5") {
+      showSubSubSection(5);
   }
-  if (window.location.hash === "#pagina8") {
-      showSection(8);
+  if (window.location.hash === "#misiones#pagina6") {
+      showSubSubSection(6);
   }
-  if (window.location.hash === "#pagina9") {
-      showSection(9);
+  if (window.location.hash === "#misiones#pagina7") {
+      showSubSubSection(7);
   }
-  if (window.location.hash === "#pagina10") {
-      showSection(10);
+  if (window.location.hash === "#misiones#pagina8") {
+      showSubSubSection(8);
   }
-  if (window.location.hash === "#pagina11") {
-      showSection(11);
+  if (window.location.hash === "#misiones#pagina9") {
+      showSubSubSection(9);
   }
-  if (window.location.hash === "#pagina12") {
-      showSection(12);
+  if (window.location.hash === "#misiones#pagina10") {
+      showSubSubSection(10);
+  }
+  if (window.location.hash === "#misiones#pagina11") {
+      showSubSubSection(11);
+  }
+  if (window.location.hash === "#misiones#pagina12") {
+      showSubSubSection(12);
   }
   if (window.location.hash === "#fase1") {
       showSection(1);
@@ -504,9 +607,9 @@ window.addEventListener("hashchange", function() {
   }
 });
 
-// Cambio de skin
-function cambiar(skin) {
-  if (skin === "eivor") {
+// Cambio de imagen skins/podios/etc
+function cambiar(id) {
+  if (id === "eivor") {
     var imagen = document.getElementById("eivor-foto");
     var generoTexto = document.getElementById("eivor-genero");
 
@@ -517,7 +620,7 @@ function cambiar(skin) {
       imagen.src = "../media/wiki/bh/crossovers/assassins-creed/eivor-female.png";
       generoTexto.textContent = "(Female)";
     }
-  } else if (skin === "laracroft") {
+  } else if (id === "laracroft") {
     var imagen = document.getElementById("laracroft-foto");
     var nombreTexto = document.getElementById("laracroft-nombre");
     var arma1img = document.getElementById("laracroft-arma1-foto");
@@ -540,7 +643,7 @@ function cambiar(skin) {
       arma2img.src = "../media/wiki/bh/crossovers/tomb-raider/armas/lara-croft_dual-pistols.png";
       arma2nombre.textContent = "Dual Pistols";
     }
-  } else if (skin === "obakepetra") { // TEMPORADA 1 (Petra)
+  } else if (id === "obakepetra") { // TEMPORADA 1 (Petra)
     var imagen = document.getElementById("obakepetra-foto");
     var nivel = document.getElementById("obakepetra-nivel");
     var arma1img = document.getElementById("obakepetra-arma1-foto");
@@ -562,7 +665,21 @@ function cambiar(skin) {
       arma1img.src = "../media/wiki/bh/skins/petra/armas/obake-petra_haunting-terrors_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/petra/armas/obake-petra_demons-malice_lvl1.png";
     }
-  } else if (skin === "futurewaveval") { // TEMPORADA 2 (Val)
+  } else if (id === "spirittemple") { // Temporada 1 (Podio)
+    var imagen = document.getElementById("podio-foto");
+    var nivel = document.getElementById("podio-lvl");
+
+    if (imagen.src.includes("/podio-lvl1.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/1/podio-lvl2.png";
+      nivel.textContent = "Nivel 2";
+    } else if (imagen.src.includes("/podio-lvl2.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/1/podio-lvl3.png";
+      nivel.textContent = "Nivel 3";
+    } else {
+      imagen.src = "../media/wiki/bh/pase-batalla/1/podio-lvl1.png";
+      nivel.textContent = "Nivel 1";
+    }
+  } else if (id === "futurewaveval") { // TEMPORADA 2 (Val)
     var imagen = document.getElementById("futurewaveval-foto");
     var nivel = document.getElementById("futurewaveval-nivel");
     var arma1img = document.getElementById("futurewaveval-arma1-foto");
@@ -584,7 +701,7 @@ function cambiar(skin) {
       arma1img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_the-playback_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_bitrate-blade_lvl1.png";
     }
-  } else if (skin === "jormungandrmako") { // TEMPORADA 3 (Mako)
+  } else if (id === "jormungandrmako") { // TEMPORADA 3 (Mako)
     var imagen = document.getElementById("jormungandrmako-foto");
     var nivel = document.getElementById("jormungandrmako-nivel");
     var arma1img = document.getElementById("jormungandrmako-arma1-foto");
@@ -606,7 +723,7 @@ function cambiar(skin) {
       arma1img.src = "../media/wiki/bh/skins/mako/armas/jormungandr-mako_serpents-fangs_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/mako/armas/jormungandr-mako_world-ender_lvl1.png";
     }
-  } else if (skin === "octaviusmordex") { // TEMPORADA 4 (Mordex)
+  } else if (id === "octaviusmordex") { // TEMPORADA 4 (Mordex)
     var imagen = document.getElementById("octaviusmordex-foto");
     var nivel = document.getElementById("octaviusmordex-nivel");
     var arma1img = document.getElementById("octaviusmordex-arma1-foto");
@@ -628,7 +745,7 @@ function cambiar(skin) {
       arma1img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_blood-moon-influence_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_betrayal-power_lvl1.png";
     }
-  } else if (skin === "eventhorizonartemis") { // TEMPORADA 5 (Artemis)
+  } else if (id === "eventhorizonartemis") { // TEMPORADA 5 (Artemis)
     var imagen = document.getElementById("eventhorizonartemis-foto");
     var nivel = document.getElementById("eventhorizonartemis-nivel");
     var arma1img = document.getElementById("eventhorizonartemis-arma1-foto");
@@ -650,7 +767,7 @@ function cambiar(skin) {
       arma1img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar_lvl1.png";
     }
-  } else if (skin === "elderwildragnir") { // TEMPORADA 6 (Ragnir)
+  } else if (id === "elderwildragnir") { // TEMPORADA 6 (Ragnir)
     var imagen = document.getElementById("elderwildragnir-foto");
     var nivel = document.getElementById("elderwildragnir-nivel");
     var arma1img = document.getElementById("elderwildragnir-arma1-foto");
@@ -672,7 +789,7 @@ function cambiar(skin) {
       arma1img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_flora-blades_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_axe-of-regrowth_lvl1.png";
     }
-  } else if (skin === "luminouspaladinjaeyun") { // TEMPORADA 7 (Jaeyun)
+  } else if (id === "luminouspaladinjaeyun") { // TEMPORADA 7 (Jaeyun)
     var imagen = document.getElementById("luminouspaladinjaeyun-foto");
     var nivel = document.getElementById("luminouspaladinjaeyun-nivel");
     var arma1img = document.getElementById("luminouspaladinjaeyun-arma1-foto");
@@ -694,7 +811,7 @@ function cambiar(skin) {
       arma1img.src = "../media/wiki/bh/skins/jaeyun/armas/luminous-paladin-jaeyun_benevolent-light_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/jaeyun/armas/luminous-paladin-jaeyun_divine-conviction_lvl1.png";
     }
-  } else if (skin === "corruptedbloodtezca") { // TEMPORADA 8 (Tezca)
+  } else if (id === "corruptedbloodtezca") { // TEMPORADA 8 (Tezca)
     var imagen = document.getElementById("corruptedbloodtezca-foto");
     var nivel = document.getElementById("corruptedbloodtezca-nivel");
     var arma1img = document.getElementById("corruptedbloodtezca-arma1-foto");
@@ -716,7 +833,7 @@ function cambiar(skin) {
       arma1img.src = "../media/wiki/bh/skins/tezca/armas/corrupted-blood-tezca_cloud-kickers_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/tezca/armas/corrupted-blood-tezca_malady-wear_lvl1.png";
     }
-  }else if (skin === "wushangseeker") { // TEMPORADA 9 (Wu Shang)
+  } else if (id === "wushangseeker") { // TEMPORADA 9 (Wu Shang)
     var imagen = document.getElementById("wushangseeker-foto");
     var nivel = document.getElementById("wushangseeker-nivel");
     var arma1img = document.getElementById("wushangseeker-arma1-foto");
