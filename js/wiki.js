@@ -703,7 +703,7 @@ function cambiar(id) {
       arma1img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_the-playback_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/val/armas/future-wave-val_bitrate-blade_lvl1.png";
     }
-  } else if (id === "arcadenights") { // Temporada 1 (Podio)
+  } else if (id === "arcadenights") { // Temporada 2 (Podio)
     var imagen = document.getElementById("podio-foto");
     var nivel = document.getElementById("podio-lvl");
 
@@ -739,6 +739,20 @@ function cambiar(id) {
       arma1img.src = "../media/wiki/bh/skins/mako/armas/jormungandr-mako_serpents-fangs_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/mako/armas/jormungandr-mako_world-ender_lvl1.png";
     }
+  } else if (id === "yggdrasilsfate") { // Temporada 3 (Podio)
+    var imagen = document.getElementById("podio-foto");
+    var nivel = document.getElementById("podio-lvl");
+
+    if (imagen.src.includes("/podio-lvl1.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/3/podio-lvl2.png";
+      nivel.textContent = "Nivel 2";
+    } else if (imagen.src.includes("/podio-lvl2.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/3/podio-lvl3.png";
+      nivel.textContent = "Nivel 3";
+    } else {
+      imagen.src = "../media/wiki/bh/pase-batalla/3/podio-lvl1.png";
+      nivel.textContent = "Nivel 1";
+    }
   } else if (id === "octaviusmordex") { // TEMPORADA 4 (Mordex)
     var imagen = document.getElementById("octaviusmordex-foto");
     var nivel = document.getElementById("octaviusmordex-nivel");
@@ -760,6 +774,20 @@ function cambiar(id) {
       nivel.textContent = "Nivel 1";
       arma1img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_blood-moon-influence_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/mordex/armas/octavius-mordex_betrayal-power_lvl1.png";
+    }
+  } else if (id === "fallofthelions") { // Temporada 4 (Podio)
+    var imagen = document.getElementById("podio-foto");
+    var nivel = document.getElementById("podio-lvl");
+
+    if (imagen.src.includes("/podio-lvl1.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/4/podio-lvl2.png";
+      nivel.textContent = "Nivel 2";
+    } else if (imagen.src.includes("/podio-lvl2.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/4/podio-lvl3.png";
+      nivel.textContent = "Nivel 3";
+    } else {
+      imagen.src = "../media/wiki/bh/pase-batalla/4/podio-lvl1.png";
+      nivel.textContent = "Nivel 1";
     }
   } else if (id === "eventhorizonartemis") { // TEMPORADA 5 (Artemis)
     var imagen = document.getElementById("eventhorizonartemis-foto");
