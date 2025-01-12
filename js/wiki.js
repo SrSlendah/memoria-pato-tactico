@@ -811,6 +811,20 @@ function cambiar(id) {
       arma1img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_cygnus_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/artemis/armas/event-horizon-artemis_quasar_lvl1.png";
     }
+  } else if (id === "edgeofexistence") { // Temporada 5 (Podio)
+    var imagen = document.getElementById("podio-foto");
+    var nivel = document.getElementById("podio-lvl");
+
+    if (imagen.src.includes("/podio-lvl1.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/5/podio-lvl2.png";
+      nivel.textContent = "Nivel 2";
+    } else if (imagen.src.includes("/podio-lvl2.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/5/podio-lvl3.png";
+      nivel.textContent = "Nivel 3";
+    } else {
+      imagen.src = "../media/wiki/bh/pase-batalla/5/podio-lvl1.png";
+      nivel.textContent = "Nivel 1";
+    }
   } else if (id === "elderwildragnir") { // TEMPORADA 6 (Ragnir)
     var imagen = document.getElementById("elderwildragnir-foto");
     var nivel = document.getElementById("elderwildragnir-nivel");
