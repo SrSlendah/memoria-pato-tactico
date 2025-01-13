@@ -847,6 +847,20 @@ function cambiar(id) {
       arma1img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_flora-blades_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_axe-of-regrowth_lvl1.png";
     }
+  } else if (id === "fabledovergrowth") { // Temporada 6 (Podio)
+    var imagen = document.getElementById("podio-foto");
+    var nivel = document.getElementById("podio-lvl");
+
+    if (imagen.src.includes("/podio-lvl1.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/6/podio-lvl2.png";
+      nivel.textContent = "Nivel 2";
+    } else if (imagen.src.includes("/podio-lvl2.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/6/podio-lvl3.png";
+      nivel.textContent = "Nivel 3";
+    } else {
+      imagen.src = "../media/wiki/bh/pase-batalla/6/podio-lvl1.png";
+      nivel.textContent = "Nivel 1";
+    }
   } else if (id === "luminouspaladinjaeyun") { // TEMPORADA 7 (Jaeyun)
     var imagen = document.getElementById("luminouspaladinjaeyun-foto");
     var nivel = document.getElementById("luminouspaladinjaeyun-nivel");
