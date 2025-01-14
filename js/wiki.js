@@ -919,6 +919,20 @@ function cambiar(id) {
       arma1img.src = "../media/wiki/bh/skins/tezca/armas/corrupted-blood-tezca_cloud-kickers_lvl1.png";
       arma2img.src = "../media/wiki/bh/skins/tezca/armas/corrupted-blood-tezca_malady-wear_lvl1.png";
     }
+  } else if (id === "darkheartexcavation") { // Temporada 8 (Podio)
+    var imagen = document.getElementById("podio-foto");
+    var nivel = document.getElementById("podio-lvl");
+
+    if (imagen.src.includes("/podio-lvl1.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/8/podio-lvl2.png";
+      nivel.textContent = "Nivel 2";
+    } else if (imagen.src.includes("/podio-lvl2.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/8/podio-lvl3.png";
+      nivel.textContent = "Nivel 3";
+    } else {
+      imagen.src = "../media/wiki/bh/pase-batalla/8/podio-lvl1.png";
+      nivel.textContent = "Nivel 1";
+    }
   } else if (id === "wushangseeker") { // TEMPORADA 9 (Wu Shang)
     var imagen = document.getElementById("wushangseeker-foto");
     var nivel = document.getElementById("wushangseeker-nivel");
