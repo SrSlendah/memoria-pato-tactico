@@ -1411,6 +1411,120 @@ footer {
     .crossovers-lista {grid-template-columns: repeat(1, 300px)}
 }
 
+.pases-batalla-info-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pases-batalla-info-elemento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.pases-batalla-info-imagen {
+    flex: 0 0 auto;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border: 4px solid #4b2866;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pases-batalla-info-imagen img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.pases-batalla-info-info {
+    flex: 1;
+    display: flex;
+    background-color: #6f3c96;
+    padding: 17px;
+    border: 4px solid #4b2866;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+.pases-batalla-info-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.pases-batalla-info-subtitulo {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #fff;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.pases-batalla-info-details {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.pases-batalla-info-details p {
+    color: #fff;
+    margin: 5px 0;
+}
+
+.pases-batalla-info-details-labels {
+    margin-right: 30px;
+}
+
+.pases-batalla-info-details-labels, .pases-batalla-info-details-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pases-batalla-info-details-labels strong, .pases-batalla-info-details-values strong {
+    margin: 3px 0;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.pases-batalla-info-details-labels p, .pases-batalla-info-details-values p {
+    margin: 3px 0;
+    color: white;
+}
+
+@media screen and (max-width:600px) {
+    .pases-batalla-info-elemento {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .pases-batalla-info-imagen {
+        margin-bottom: 10px;
+    }
+
+    .pases-batalla-info-info {
+        text-align: center;
+        margin: 0 !important;
+    }
+
+    .pases-batalla-info-details {
+        font-size: 0.9rem;
+    }
+}
+
 
 .pases-batalla-lista {
     display: grid;
