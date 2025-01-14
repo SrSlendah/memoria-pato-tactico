@@ -1770,6 +1770,57 @@ footer {
     max-width: 300px;
 }
 
+.pase-batalla-deluxe {
+    text-align: center;
+    color: #fff;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 430px;
+    max-width: 430px;
+    padding: 0 10px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.pase-batalla-deluxe::-webkit-scrollbar {
+    height: 10px;
+}
+
+.pase-batalla-deluxe::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+.pase-batalla-deluxe::-webkit-scrollbar-thumb {
+    background: #5e337f;
+    border: 2px solid #4b2866;
+    border-radius: 10px;
+}
+
+.pase-batalla-deluxe::-webkit-scrollbar-thumb:hover {
+    background: #8146ae;    
+}
+
+.pase-batalla-deluxe-tabla {
+    box-sizing: border-box;
+    border-spacing: 1px;
+}
+
+.pase-batalla-deluxe-tabla td, .pase-batalla-deluxe-tabla th{
+    border: 3.5px solid #4b2866;
+    padding: 5px;
+    white-space: normal;
+}
+
+.pase-batalla-deluxe-tabla th {
+    background-color: #6f3c96;
+}
+
+@media screen and (max-width:450px) {
+    .pase-batalla-deluxe { max-width: 375px; }
+}
+
 .pase-batalla-extra {
     text-align: center;
     color: #fff;
