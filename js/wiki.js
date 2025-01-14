@@ -969,6 +969,42 @@ function cambiar(id) {
       imagen.src = "../media/wiki/bh/pase-batalla/9/podio-lvl1.png";
       nivel.textContent = "Nivel 1";
     }
+  } else if (id === "fallenprinceteros") { // TEMPORADA 10 (Teros)
+    var imagen = document.getElementById("fallenprinceteros-foto");
+    var nivel = document.getElementById("fallenprinceteros-nivel");
+    var arma1img = document.getElementById("fallenprinceteros-arma1-foto");
+    var arma2img = document.getElementById("fallenprinceteros-arma2-foto");
+
+    if (imagen.src.includes("/fallen-prince-teros_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/teros/fallen-prince-teros_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/teros/armas/fallen-prince-teros_star-crossed-nightmare_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/teros/armas/fallen-prince-teros_taurus-rebellion_lvl2.png";
+    } else if (imagen.src.includes("/fallen-prince-teros_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/teros/fallen-prince-teros_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/teros/armas/fallen-prince-teros_star-crossed-nightmare_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/teros/armas/fallen-prince-teros_taurus-rebellion_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/teros/fallen-prince-teros_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/teros/armas/fallen-prince-teros_star-crossed-nightmare_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/teros/armas/fallen-prince-teros_taurus-rebellion_lvl1.png";
+    }
+  } else if (id === "sliceoflife") { // Temporada 10 (Podio)
+    var imagen = document.getElementById("podio-foto");
+    var nivel = document.getElementById("podio-lvl");
+
+    if (imagen.src.includes("/podio-lvl1.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/10/podio-lvl2.png";
+      nivel.textContent = "Nivel 2";
+    } else if (imagen.src.includes("/podio-lvl2.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/10/podio-lvl3.png";
+      nivel.textContent = "Nivel 3";
+    } else {
+      imagen.src = "../media/wiki/bh/pase-batalla/10/podio-lvl1.png";
+      nivel.textContent = "Nivel 1";
+    }
   }
 
 
