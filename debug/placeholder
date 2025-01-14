@@ -34,65 +34,34 @@
 
 
 
-.pase-batalla {
-    text-align: center;
-    color: #fff;
-    overflow-x: auto;
-    white-space: nowrap;
-    width: 1600px;
-    max-width: 1600px;
-    padding: 0 10px;
-    padding-bottom: 5px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    border-radius: 20px;
-}
 
-.pase-batalla::-webkit-scrollbar {
-    height: 10px;
-}
-
-.pase-batalla::-webkit-scrollbar-track {
-    background: #ffffff00;
-}
-
-.pase-batalla::-webkit-scrollbar-thumb {
-    background: #5e337f;
-    border: 2px solid #4b2866;
-    border-radius: 10px;
-}
-
-.pase-batalla::-webkit-scrollbar-thumb:hover {
-    background: #8146ae;    
-}
-
-.pase-batalla-tabla {
-    display: inline-table;
-    border-collapse: separate;
-    border-spacing: 2px;
-    width: 1500px;
-}
-
-.pase-batalla-tabla th,
-.pase-batalla-tabla td {
-    border: 3.5px solid #4b2866;
-    padding: 8px;
-    text-align: center;
-}
-
-.pase-batalla-tabla th{
-    background-color: #6f3c96;
-}
-
-.pase-batalla-tabla td {
-    width: 100px;
-    max-width: 100px;
-    height: 30px;
-    max-height: 30px;
-    overflow: hidden;
-}
-
-.pase-batalla-tabla td > img.recompensa {
-    width: 30px;
-    height: auto;
-}
+<div>
+    <img src="../media/wiki/bh/pase-batalla/8/1-pago_a.png">
+    <p class="bp-reward-nombre">Corrupted Blood Tezca</p>
+    <i class="bp-reward-tipo">Skin</i>
+</div>
+<div id="2recompensas">
+    <img src="../media/wiki/bh/pase-batalla/8/1-pago_b.png">
+    <p class="bp-reward-nombre">Cloud Kickers</p>
+    <i class="bp-reward-tipo">Skin de Arma</i>
+</div>
+<div id="2recompensas">
+    <img src="../media/wiki/bh/pase-batalla/8/1-pago_c.png">
+    <p class="bp-reward-nombre">Malady Wear</p>
+    <i class="bp-reward-tipo">Skin de Arma</i>
+</div>
+<div>
+    <img src="../media/wiki/bh/pase-batalla/8/1-pago_d.png">
+    <p class="bp-reward-nombre">Darkheart Excavation</p>
+    <i class="bp-reward-tipo">Podio</i>
+</div>
+<div id="2recompensas">
+    <img src="../media/wiki/bh/pase-batalla/8/1-pago_e.png">
+    <p class="bp-reward-nombre">BunBun</p>
+    <i class="bp-reward-tipo">Compañero</i>
+</div>
+<div id="2recompensas">
+    <img src="../media/wiki/bh/pase-batalla/8/1-pago_f.webp">
+    <p class="bp-reward-nombre">The Incarnate</p>
+    <i class="bp-reward-tipo">Avatar</i>
+</div>

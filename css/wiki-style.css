@@ -1640,6 +1640,10 @@ footer {
     width: 150px;
 }
 
+.pase-batalla-tabla#firstpage td, .pase-batalla-tabla#firstpage th {
+    width: 800px;
+}
+
 .pase-batalla-tabla#lastpage td, .pase-batalla-tabla#lastpage th {
     width: 300px;
 }
@@ -1762,6 +1766,33 @@ footer {
     width: 300px !important;
 }
 
+.bp-recompensa-lvl1-6recompensas {
+    overflow: auto;
+}
+
+.bp-recompensa-lvl1-6recompensas::-webkit-scrollbar {
+    height: 10px;
+    display: none;
+}
+
+.bp-recompensa-lvl1-6recompensas::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+.bp-recompensa-lvl1-6recompensas::-webkit-scrollbar-thumb {
+    background: #5e337f;
+    border: 2px solid #4b2866;
+    border-radius: 10px;
+}
+
+.bp-recompensa-lvl1-6recompensas::-webkit-scrollbar-thumb:hover {
+    background: #8146ae;    
+}
+
+.bp-recompensa-lvl1-6recompensas td{
+    border: none;
+}
+
 .bp-reward-nombre {
     font-weight: bold;
     font-size:14px;
@@ -1822,6 +1853,7 @@ footer {
 @media screen and (max-width: 1400px) { 
     .pase-batalla { max-width: 1000px; }
     .bp-cuatro-recompensas { width: 200px; }
+    .bp-recompensa-lvl1-6recompensas::-webkit-scrollbar { display: contents; }
 }
 @media screen and (max-width: 1050px) { 
     .pase-batalla { max-width: 800px; }
