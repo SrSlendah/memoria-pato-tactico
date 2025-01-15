@@ -1,9 +1,33 @@
 function goTo(string) {
 
-//wiki-link
+// Wiki
 
     if (string == 'wbh') {
         window.location.href = "wiki/wiki-bh"
+    }
+    
+    if (string == 'wbh_bp_t1') {
+        window.location.href = "./temporada-1"
+    }
+    
+    if (string == 'wbh_bpc_t1') {
+        window.location.href = "./temporada-clasica-1"
+    }
+    
+    if (string == 'wbh_bp_t2') {
+        window.location.href = "./temporada-2"
+    }
+    
+    if (string == 'wbh_bpc_t2') {
+        window.location.href = "./temporada-clasica-2"
+    }
+    
+    if (string == 'wbh_bp_t3') {
+        window.location.href = "./temporada-3"
+    }
+    
+    if (string == 'wbh_bpc_t3') {
+        window.location.href = "./temporada-clasica-3"
     }
 
 // Manga

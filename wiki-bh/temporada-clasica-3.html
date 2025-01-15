@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Temporada Clásica 2 - Brawlhalla Wiki</title>
+    <title>Temporada Clásica 3 - Brawlhalla Wiki</title>
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/wiki-style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
@@ -18,6 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
     <script src="../js/wiki.js"></script>
+    <script src="../js/redirect.js"></script>
 
     <header>
         <script src="../js/menu.js"></script>
@@ -67,10 +67,9 @@
             </div>
         </section>
 
-
         <section class="textos-header">
             <h1>Brawlhalla Wiki</h1>
-            <h3>Temporada Clásica 2: Synthwave</h3>
+            <h3>Temporada Clásica 3: Jötunn Winter</h3>
         </section>
 
 
@@ -85,7 +84,6 @@
 
     </header>
 
-
     <main>
         <div class="search-container">
           <input type="text" id="search-input" placeholder="Buscar en la wiki de Brawlhalla...">
@@ -98,12 +96,12 @@
             <section class="pase-batalla-info">
                 <div class="pase-batalla-info-elemento">
                     <div class="pase-batalla-info-imagen">
-                        <img src="../media/wiki/bh/pase-batalla/2.png" style="padding: 25px;">
+                        <img src="../media/wiki/bh/pase-batalla/3.webp" style="padding: 25px;">
                     </div>
 
                     <div class="pase-batalla-info-info" style="position: relative;">
-                        <h2 class="pase-batalla-info-titulo">Temporada 2</h2>
-                        <h2 class="pase-batalla-info-subtitulo">Synthwave</h2>
+                        <h2 class="pase-batalla-info-titulo">Temporada Clásica 3</h2>
+                        <h2 class="pase-batalla-info-subtitulo">Jötunn Winter</h2>
                         <hr class="info-sep" style="margin-bottom: 10px;">
                         <div class="pase-batalla-info-details">
                             <div class="pase-batalla-info-details-labels">
@@ -114,8 +112,8 @@
                             </div>
                             <div class="pase-batalla-info-details-values">
                                 <p>
-                                    17/09/2020<br><br>
-                                    10/12/2020
+                                    08/11/2023<br><br>
+                                    31/01/2024
                                 </p>
                             </div>
                             
@@ -128,6 +126,8 @@
         <hr style="width:50%;margin:0 auto;margin-top:10px">
 
             <div class="secciones" align="center" style="margin-bottom:5px;margin-top:20px">
+                <a onclick="goTo('wbh_bp_t3')"><button>Temporada Original</button></a>
+                <span class="separador_btn"></span>
                 <a href="#recompensas"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Recompensas</button></a>
                 <a href="#misiones"><button id="sec2-btn">Misiones</button></a>
             </div>
@@ -168,21 +168,21 @@
                                 <td class="pasegratis"><img src="../media/wiki/bh/pase-batalla/bp_gratis.png"><p><strong>Pase Gratuito</strong></p></td>
                                 <td> <!-- LVl1 gratis --> </td>
                                 <td> <!-- LVl2 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/2-gratis.png">
-                                    <p class="bp-reward-nombre">Secret Tech</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/2-gratis.png">
+                                    <p class="bp-reward-nombre">Golden Iggdrasil</p>
                                     <i class="bp-reward-tipo">Avatar</i>
                                 </td>
                                 <td> <!-- LVl3 gratis --> </td>
                                 <td> <!-- LVl4 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl5 gratis --> </td>
                                 <td> <!-- LVl6 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/6-gratis.png">
-                                    <p class="bp-reward-nombre">Smooth Waves</p>
-                                    <i class="bp-reward-tipo">Skin de Arco</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/6-gratis.png">
+                                    <p class="bp-reward-nombre">Black Icicles</p>
+                                    <i class="bp-reward-tipo">Skin de Katars</i>
                                 </td>
                                 <td> <!-- LVl7 gratis --> </td>
                             </tr>
@@ -192,59 +192,59 @@
                                 <td class="bp-recompensa-lvl1"> <!-- LVl1 pago --> 
                                     <div class="bp-cuatro-recompensas" style="padding: 10px;">
                                         <div>
-                                            <a href="./future-wave-val" class="wbh-a">
-                                                <img src="../media/wiki/bh/pase-batalla/clasica2/1-pago_a.png">
-                                                <p class="bp-reward-nombre">Future Wave Val</p>
+                                            <a href="./jormungandr-mako" class="wbh-a">
+                                                <img src="../media/wiki/bh/pase-batalla/clasica3/1-pago_a.png">
+                                                <p class="bp-reward-nombre">Jörmungandr Mako</p>
                                             </a>
                                                 <i class="bp-reward-tipo">Skin</i>
                                         </div>
                                         <div>
                                             <a onclick="abrirOV(1)" class="wbh-a">
-                                                <img src="../media/wiki/bh/pase-batalla/clasica2/1-pago_b.png">
-                                                <p class="bp-reward-nombre">Arcade Nights</p>
+                                                <img src="../media/wiki/bh/pase-batalla/clasica3/1-pago_b.png">
+                                                <p class="bp-reward-nombre">Yggdrasil's Fate</p>
                                             </a>
                                                 <i class="bp-reward-tipo">Podio</i>
                                         </div>
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/1-pago_c.png">
-                                            <p class="bp-reward-nombre">Cyber Fly</p>
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/1-pago_c.png">
+                                            <p class="bp-reward-nombre">Sköll</p>
                                             <i class="bp-reward-tipo">Compañero</i>
                                         </div>
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/1-pago_d.webp">
-                                            <p class="bp-reward-nombre">Digital Break</p>
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/1-pago_d.webp">
+                                            <p class="bp-reward-nombre">Morning Walk</p>
                                             <i class="bp-reward-tipo">Avatar</i>
                                         </div>
                                     </div>
                                 </td>
                                 <td> <!-- LVl2 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/xp-50.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/xp-50.png">
                                     <p class="bp-reward-nombre">Battle Pass XP Multiplier</p>
                                     <i class="bp-reward-tipo">Boost</i>
                                 </td>
                                 <td> <!-- LVl3 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl4 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/mammoth.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/mammoth.png">
                                     <p class="bp-reward-nombre">Mammoth Coins</p>
                                     <i class="bp-reward-tipo">Moneda</i>
                                 </td>
                                 <td> <!-- LVl5 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/5-pago.png">
-                                    <p class="bp-reward-nombre">Retro Raver</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/5-pago.png">
+                                    <p class="bp-reward-nombre">Feast!</p>
                                     <i class="bp-reward-tipo">Gesto</i>
                                 </td>
                                 <td> <!-- LVl6 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td class="bpbottomright"> <!-- LVl7 pago -->
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/7-pago.png">
-                                    <p class="bp-reward-nombre">Futurewave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/7-pago.png">
+                                    <p class="bp-reward-nombre">Gate to Valhalla</p>
                                     <i class="bp-reward-tipo">Marco</i>
                                 </td>
                             </tr>
@@ -277,22 +277,19 @@
                                 <td> <!-- LVl9 gratis --> 
                                 </td>
                                 <td> <!-- LVl10 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/10-gratis.png">
-                                    <p class="bp-reward-nombre">Boombox</p>
-                                    <i class="bp-reward-tipo">Avatar</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
+                                    <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl11 gratis --> 
                                 </td>
                                 <td> <!-- LVl12 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
-                                    <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl13 gratis --> 
                                 </td>
                                 <td> <!-- LVl14 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/14-gratis.png">
-                                    <p class="bp-reward-nombre">Twinkle Smile</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/14-gratis.png">
+                                    <p class="bp-reward-nombre">Lyre Solo</p>
                                     <i class="bp-reward-tipo">Gesto</i>
                                 </td>
                                 <td> <!-- LVl15 gratis --> </td>
@@ -301,53 +298,62 @@
                             <tr> <!-- Recompensas de pago -->
                                 <td class="bpbottomleft pasepago"><img src="../media/wiki/bh/pase-batalla/bp_pago.png"><p><strong>Pase de Pago</strong></p></td>
                                 <td> <!-- LVl8 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl9 pago --> 
                                     <div class="bp-dos-recompensas" style="padding: 10px;">
                                         <div>
-                                                <img src="../media/wiki/bh/pase-batalla/clasica2/9-pago.png">
-                                                <p class="bp-reward-nombre">Offworld</p>
-                                                <i class="bp-reward-tipo">Skin de Martillo</i>
+                                                <img src="../media/wiki/bh/pase-batalla/clasica3/9-pago.png">
+                                                <p class="bp-reward-nombre">Essence of Niflheim</p>
+                                                <i class="bp-reward-tipo">Skin de Orbe</i>
                                         </div>
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/xp-15.png">
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/xp-15.png">
                                             <p class="bp-reward-nombre">Battle Pass XP Multiplier</p>
                                             <i class="bp-reward-tipo">Boost</i>
                                         </div>
                                     </div>
                                 </td>
                                 <td> <!-- LVl10 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl11 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/mammoth.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/mammoth.png">
                                     <p class="bp-reward-nombre">Mammoth Coins</p>
                                     <i class="bp-reward-tipo">Moneda</i>
                                 </td>
                                 <td> <!-- LVl12 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
-                                    <i class="bp-reward-tipo">Esquema de Color</i>
+                                    <div class="bp-dos-recompensas" style="padding: 10px;">
+                                        <div>
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                            <p class="bp-reward-nombre">Frozen Forest</p>
+                                            <i class="bp-reward-tipo">Esquema de Color</i>
+                                        </div>
+                                        <div>
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/12-pago.png">
+                                            <p class="bp-reward-nombre">Vanir Guardian Thumbs Down</p>
+                                            <i class="bp-reward-tipo">Skin de Emoji</i>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td> <!-- LVl13 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/13-pago.webp">
-                                    <p class="bp-reward-nombre">Heartbeat</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/13-pago.webp">
+                                    <p class="bp-reward-nombre">World Serpent</p>
                                     <i class="bp-reward-tipo">Avatar</i>
                                 </td>
                                 <td> <!-- LVl14 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td class="bpbottomright"> <!-- LVl15 pago -->
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/15-pago.png">
-                                    <p class="bp-reward-nombre">Sunset Axe</p>
-                                    <i class="bp-reward-tipo">Skin de Hacha</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/15-pago.png">
+                                    <p class="bp-reward-nombre">Tundra Geir</p>
+                                    <i class="bp-reward-tipo">Skin de Lanza</i>
                                 </td>
                             </tr>
                         </tbody>
@@ -379,22 +385,19 @@
                                 <td> <!-- LVl17 gratis --> 
                                 </td>
                                 <td> <!-- LVl18 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl19 gratis --> 
                                 </td>
                                 <td> <!-- LVl20 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/20-gratis.png">
-                                    <p class="bp-reward-nombre">Modular Rift WP</p>
-                                    <i class="bp-reward-tipo">Skin de Emoji</i>
                                 </td>
                                 <td> <!-- LVl21 gratis --> 
                                 </td>
                                 <td> <!-- LVl22 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/22-gratis.png">
-                                    <p class="bp-reward-nombre">Spray Cans</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/22-gratis.png">
+                                    <p class="bp-reward-nombre">Odin's Raven</p>
                                     <i class="bp-reward-tipo">Avatar</i>
                                 </td>
                                 <td> <!-- LVl23 gratis --> </td>
@@ -403,44 +406,44 @@
                             <tr> <!-- Recompensas de pago -->
                                 <td class="bpbottomleft pasepago"><img src="../media/wiki/bh/pase-batalla/bp_pago.png"><p><strong>Pase de Pago</strong></p></td>
                                 <td> <!-- LVl16 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl17 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/xp-15.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/xp-15.png">
                                     <p class="bp-reward-nombre">Battle Pass XP Multiplier</p>
                                     <i class="bp-reward-tipo">Boost</i>
                                 </td>
                                 <td> <!-- LVl18 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/mammoth.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/mammoth.png">
                                     <p class="bp-reward-nombre">Mammoth Coins</p>
                                     <i class="bp-reward-tipo">Moneda</i>
                                 </td>
                                 <td> <!-- LVl19 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/19-pago.png">
-                                    <p class="bp-reward-nombre">Neon Gleam</p>
-                                    <i class="bp-reward-tipo">Skin de Espada</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/19-pago.webp">
+                                    <p class="bp-reward-nombre">Ymir's Breath</p>
+                                    <i class="bp-reward-tipo">Avatar</i>
                                 </td>
                                 <td> <!-- LVl20 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl21 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/21-pago.webp">
-                                    <p class="bp-reward-nombre">Cyber Hills</p>
-                                    <i class="bp-reward-tipo">Avatar</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/21-pago.png">
+                                    <p class="bp-reward-nombre">Drivsnö Pulse</p>
+                                    <i class="bp-reward-tipo">Skin de Lanza Cohete</i>
                                 </td>
                                 <td> <!-- LVl22 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td class="bpbottomright"> <!-- LVl23 pago -->
-                                    <a href="./cybernetic-beat-isaiah" class="wbh-a">
-                                        <img src="../media/wiki/bh/pase-batalla/clasica2/23-pago.png">
-                                        <p class="bp-reward-nombre">Cybernetic Beat Isaiah</p>
+                                    <a href="./royal-warrior-thor" class="wbh-a">
+                                        <img src="../media/wiki/bh/pase-batalla/clasica3/23-pago.png">
+                                        <p class="bp-reward-nombre">Royal Warrior Thor</p>
                                     </a>
                                     <i class="bp-reward-tipo">Skin</i>
                                 </td>
@@ -474,23 +477,23 @@
                                 <td> <!-- LVl25 gratis --> 
                                 </td>
                                 <td> <!-- LVl26 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl27 gratis --> 
                                 </td>
                                 <td> <!-- LVl28 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
-                                    <i class="bp-reward-tipo">Esquema de Color</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/28-gratis.png">
+                                    <p class="bp-reward-nombre">Master Blacksmith Thumbs Up</p>
+                                    <i class="bp-reward-tipo">Skin de Emoji</i>
                                 </td>
                                 <td> <!-- LVl29 gratis --> 
                                 </td>
                                 <td> <!-- LVl30 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/30-gratis.png">
-                                    <p class="bp-reward-nombre">Breakdance</p>
-                                    <i class="bp-reward-tipo">Gesto</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
+                                    <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl31 gratis --> </td>
                             </tr>
@@ -498,62 +501,53 @@
                             <tr> <!-- Recompensas de pago -->
                                 <td class="bpbottomleft pasepago"><img src="../media/wiki/bh/pase-batalla/bp_pago.png"><p><strong>Pase de Pago</strong></p></td>
                                 <td> <!-- LVl24 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl25 pago --> 
                                     <div class="bp-dos-recompensas" style="padding: 10px;">
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/25-pago.png">
-                                            <p class="bp-reward-nombre">kaTR-808</p>
-                                            <i class="bp-reward-tipo">Skin de Katars</i>
+                                                <img src="../media/wiki/bh/pase-batalla/clasica3/25-pago.png">
+                                                <p class="bp-reward-nombre">Skadi's Bow</p>
+                                                <i class="bp-reward-tipo">Skin de Arco</i>
                                         </div>
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/xp-15.png">
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/xp-15.png">
                                             <p class="bp-reward-nombre">Battle Pass XP Multiplier</p>
                                             <i class="bp-reward-tipo">Boost</i>
                                         </div>
                                     </div>
                                 </td>
                                 <td> <!-- LVl26 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl27 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/mammoth.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/mammoth.png">
                                     <p class="bp-reward-nombre">Mammoth Coins</p>
                                     <i class="bp-reward-tipo">Moneda</i>
                                 </td>
                                 <td> <!-- LVl28 pago --> 
-                                    <div class="bp-dos-recompensas" style="padding: 10px;">
-                                        <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                            <p class="bp-reward-nombre">Synthwave</p>
-                                            <i class="bp-reward-tipo">Esquema de Color</i>
-                                        </div>
-                                        <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/28-pago.png">
-                                            <p class="bp-reward-nombre">Cybernetic Beat Smart</p>
-                                            <i class="bp-reward-tipo">Skin de Emoji</i>
-                                        </div>
-                                    </div>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
+                                    <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl29 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/29-pago.png">
-                                    <p class="bp-reward-nombre">Synthetic Charge</p>
-                                    <i class="bp-reward-tipo">Skin de Lanza Cohete</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/29-pago.png">
+                                    <p class="bp-reward-nombre">Frost Brandr</p>
+                                    <i class="bp-reward-tipo">Skin de Espada</i>
                                 </td>
                                 <td> <!-- LVl30 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td class="bpbottomright"> <!-- LVl31 pago -->
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/31-pago.png">
-                                    <p class="bp-reward-nombre">TV Head</p>
-                                    <i class="bp-reward-tipo">Compañero</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/31-pago.png">
+                                    <p class="bp-reward-nombre">Skål</p>
+                                    <i class="bp-reward-tipo">Gesto Cooperativo</i>
                                 </td>
                             </tr>
                         </tbody>
@@ -585,8 +579,8 @@
                                 <td> <!-- LVl33 gratis --> 
                                 </td>
                                 <td> <!-- LVl34 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl35 gratis --> 
@@ -596,9 +590,9 @@
                                 <td> <!-- LVl37 gratis --> 
                                 </td>
                                 <td> <!-- LVl38 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/38-gratis.png">
-                                    <p class="bp-reward-nombre">Virtual Cruise</p>
-                                    <i class="bp-reward-tipo">Avatar</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/38-gratis.png">
+                                    <p class="bp-reward-nombre">Raven</p>
+                                    <i class="bp-reward-tipo">Gesto</i>
                                 </td>
                                 <td> <!-- LVl39 gratis --> </td>
                             </tr>
@@ -606,45 +600,45 @@
                             <tr> <!-- Recompensas de pago -->
                                 <td class="bpbottomleft pasepago"><img src="../media/wiki/bh/pase-batalla/bp_pago.png"><p><strong>Pase de Pago</strong></p></td>
                                 <td> <!-- LVl32 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl33 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/33-pago.webp">
-                                    <p class="bp-reward-nombre">Neon Sign</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/33-pago.webp">
+                                    <p class="bp-reward-nombre">First Snowfall</p>
                                     <i class="bp-reward-tipo">Avatar</i>
                                     </div>
                                 </td>
                                 <td> <!-- LVl34 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl35 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/mammoth.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/mammoth.png">
                                     <p class="bp-reward-nombre">Mammoth Coins</p>
                                     <i class="bp-reward-tipo">Moneda</i>
                                 </td>
                                 <td> <!-- LVl36 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl37 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/37-pago.png">
-                                    <p class="bp-reward-nombre">Digital Lockdown</p>
-                                    <i class="bp-reward-tipo">Skin de Guadaña</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/37-pago.png">
+                                    <p class="bp-reward-nombre">Vetr Bearded Axe</p>
+                                    <i class="bp-reward-tipo">Skin de Hacha</i>
                                 </td>
                                 <td> <!-- LVl38 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/xp-15.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/xp-15.png">
                                     <p class="bp-reward-nombre">Battle Pass XP Multiplier</p>
                                     <i class="bp-reward-tipo">Boost</i>
                                 </td>
                                 <td class="bpbottomright"> <!-- LVl39 pago -->
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/39-pago.png">
-                                    <p class="bp-reward-nombre">Keytar Solo</p>
-                                    <i class="bp-reward-tipo">Gesto</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/39-pago.png">
+                                    <p class="bp-reward-nombre">Tanngnjóstr & Tanngrisnir</p>
+                                    <i class="bp-reward-tipo">Compañero</i>
                                 </td>
                             </tr>
                         </tbody>
@@ -676,20 +670,23 @@
                                 <td> <!-- LVl41 gratis --> 
                                 </td>
                                 <td> <!-- LVl42 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl43 gratis --> 
                                 </td>
                                 <td> <!-- LVl44 gratis --> 
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
+                                    <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl45 gratis --> 
                                 </td>
                                 <td> <!-- LVl46 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/46-gratis.png">
-                                    <p class="bp-reward-nombre">Robo-n3k0</p>
-                                    <i class="bp-reward-tipo">Compañero</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
+                                    <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl47 gratis --> </td>
                             </tr>
@@ -697,62 +694,53 @@
                             <tr> <!-- Recompensas de pago -->
                                 <td class="bpbottomleft pasepago"><img src="../media/wiki/bh/pase-batalla/bp_pago.png"><p><strong>Pase de Pago</strong></p></td>
                                 <td> <!-- LVl40 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl41 pago --> 
                                     <div class="bp-dos-recompensas" style="padding: 10px;">
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/41-pago.png">
-                                            <p class="bp-reward-nombre">Tempo and Groove</p>
-                                            <i class="bp-reward-tipo">Skin de Pistolas</i>
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/41-pago.png">
+                                            <p class="bp-reward-nombre">Snowsmoke</p>
+                                            <i class="bp-reward-tipo">Skin de Cañón</i>
                                         </div>
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/xp-15.png">
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/xp-15.png">
                                             <p class="bp-reward-nombre">Battle Pass XP Multiplier</p>
                                             <i class="bp-reward-tipo">Boost</i>
                                         </div>
                                     </div>
                                 </td>
                                 <td> <!-- LVl42 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/mammoth.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/mammoth.png">
                                     <p class="bp-reward-nombre">Mammoth Coins</p>
                                     <i class="bp-reward-tipo">Moneda</i>
                                 </td>
                                 <td> <!-- LVl43 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
-                                    <i class="bp-reward-tipo">Esquema de Color</i>
-                                </td>
-                                <td> <!-- LVl44 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/44-pago.webp">
-                                    <p class="bp-reward-nombre">Sunset Palm</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/43-pago.webp">
+                                    <p class="bp-reward-nombre">Endless Pursuit</p>
                                     <i class="bp-reward-tipo">Avatar</i>
                                 </td>
+                                <td> <!-- LVl44 pago --> 
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
+                                    <i class="bp-reward-tipo">Esquema de Color</i>
+                                </td>
                                 <td> <!-- LVl45 pago --> 
-                                    <div class="bp-dos-recompensas" style="padding: 10px;">
-                                        <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/45-pago.png">
-                                            <p class="bp-reward-nombre">Resonance</p>
-                                            <i class="bp-reward-tipo">Tema de IU</i>
-                                        </div>
-                                        <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                            <p class="bp-reward-nombre">Synthwave</p>
-                                            <i class="bp-reward-tipo">Esquema de Color</i>
-                                        </div>
-                                    </div>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/45-pago.png">
+                                    <p class="bp-reward-nombre">Cosmic Radiance</p>
+                                    <i class="bp-reward-tipo">Tema de IU</i>
                                 </td>
                                 <td> <!-- LVl46 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td class="bpbottomright"> <!-- LVl47 pago -->
-                                    <a href="./modular-riff-ember" class="wbh-a">
-                                        <img src="../media/wiki/bh/pase-batalla/clasica2/47-pago.png">
-                                        <p class="bp-reward-nombre">Modular Riff Ember</p>
+                                    <a href="./master-blacksmith-ulgrim" class="wbh-a">
+                                        <img src="../media/wiki/bh/pase-batalla/clasica3/47-pago.png">
+                                        <p class="bp-reward-nombre">Master Blacksmith Ulgrim</p>
                                     </a>
                                     <i class="bp-reward-tipo">Skin</i>
                                 </td>
@@ -786,8 +774,8 @@
                                 <td> <!-- LVl49 gratis --> 
                                 </td>
                                 <td> <!-- LVl50 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl51 gratis --> 
@@ -797,8 +785,8 @@
                                 <td> <!-- LVl53 gratis --> 
                                 </td>
                                 <td> <!-- LVl54 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/54-gratis.png">
+                                    <p class="bp-reward-nombre">Emblem of Vargr</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl55 gratis --> </td>
@@ -807,53 +795,53 @@
                             <tr> <!-- Recompensas de pago -->
                                 <td class="bpbottomleft pasepago"><img src="../media/wiki/bh/pase-batalla/bp_pago.png"><p><strong>Pase de Pago</strong></p></td>
                                 <td> <!-- LVl48 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl49 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/xp-15.png">
-                                    <p class="bp-reward-nombre">Battle Pass XP Multiplier</p>
-                                    <i class="bp-reward-tipo">Boost</i>
-                                </td>
-                                <td> <!-- LVl50 pago --> 
                                     <div class="bp-dos-recompensas" style="padding: 10px;">
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/50-pago.png">
-                                            <p class="bp-reward-nombre">Nightlapse</p>
-                                            <i class="bp-reward-tipo">Skin de Guanteletes</i>
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/49-pago.webp">
+                                            <p class="bp-reward-nombre">To Glory!</p>
+                                            <i class="bp-reward-tipo">Avatar</i>
                                         </div>
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                            <p class="bp-reward-nombre">Synthwave</p>
-                                            <i class="bp-reward-tipo">Esquema de Color</i>
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/xp-15.png">
+                                            <p class="bp-reward-nombre">Battle Pass XP Multiplier</p>
+                                            <i class="bp-reward-tipo">Boost</i>
                                         </div>
                                     </div>
                                 </td>
+                                <td> <!-- LVl50 pago --> 
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
+                                    <i class="bp-reward-tipo">Esquema de Color</i>
+                                </td>
                                 <td> <!-- LVl51 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/mammoth.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/mammoth.png">
                                     <p class="bp-reward-nombre">Mammoth Coins</p>
                                     <i class="bp-reward-tipo">Moneda</i>
                                 </td>
                                 <td> <!-- LVl52 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl53 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/53-pago.webp">
-                                    <p class="bp-reward-nombre">Futuristic Flow</p>
-                                    <i class="bp-reward-tipo">Avatar</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/53-pago.png">
+                                    <p class="bp-reward-nombre">Jötunn Armaments</p>
+                                    <i class="bp-reward-tipo">Skin de Pistolas</i>
                                 </td>
                                 <td> <!-- LVl54 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td class="bpbottomright"> <!-- LVl55 pago -->
-                                        <img src="../media/wiki/bh/pase-batalla/clasica2/55-pago.png">
-                                        <p class="bp-reward-nombre">Techno Pup</p>
-                                        <i class="bp-reward-tipo">Compañero</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/55-pago.png">
+                                    <p class="bp-reward-nombre">Freya's Chariot</p>
+                                    <i class="bp-reward-tipo">Compañero</i>
                                 </td>
                             </tr>
                         </tbody>
@@ -885,9 +873,9 @@
                                 <td> <!-- LVl57 gratis --> 
                                 </td>
                                 <td> <!-- LVl58 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
-                                    <i class="bp-reward-tipo">Esquema de Color</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/58-gratis.png">
+                                    <p class="bp-reward-nombre">Royal Warrior Wave</p>
+                                    <i class="bp-reward-tipo">Skin de Emoji</i>
                                 </td>
                                 <td> <!-- LVl59 gratis --> 
                                 </td>
@@ -896,9 +884,9 @@
                                 <td> <!-- LVl61 gratis --> 
                                 </td>
                                 <td> <!-- LVl62 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/62-gratis.png">
-                                    <p class="bp-reward-nombre">Time is Running (Out)</p>
-                                    <i class="bp-reward-tipo" style="font-size:11px">Skin de Botas de Batalla</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
+                                    <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl63 gratis --> </td>
                             </tr>
@@ -906,62 +894,62 @@
                             <tr> <!-- Recompensas de pago -->
                                 <td class="bpbottomleft pasepago"><img src="../media/wiki/bh/pase-batalla/bp_pago.png"><p><strong>Pase de Pago</strong></p></td>
                                 <td> <!-- LVl56 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl57 pago --> 
                                     <div class="bp-dos-recompensas" style="padding: 10px;">
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/57-pago.png">
-                                            <p class="bp-reward-nombre">Sonic Boom</p>
-                                            <i class="bp-reward-tipo">Skin de Cañón</i>
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/57-pago.png">
+                                            <p class="bp-reward-nombre">Glacier Strike</p>
+                                            <i class="bp-reward-tipo">Skin de Greatsword</i>
                                         </div>
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/xp-15.png">
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/xp-15.png">
                                             <p class="bp-reward-nombre">Battle Pass XP Multiplier</p>
                                             <i class="bp-reward-tipo">Boost</i>
                                         </div>
                                     </div>
                                 </td>
                                 <td> <!-- LVl58 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl59 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/mammoth.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/mammoth.png">
                                     <p class="bp-reward-nombre">Mammoth Coins</p>
                                     <i class="bp-reward-tipo">Moneda</i>
                                 </td>
                                 <td> <!-- LVl60 pago --> 
                                     <div class="bp-dos-recompensas" style="padding: 10px;">
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                            <p class="bp-reward-nombre">Synthwave</p>
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                            <p class="bp-reward-nombre">Frozen Forest</p>
                                             <i class="bp-reward-tipo">Esquema de Color</i>
                                         </div>
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/60-pago.png">
-                                            <p class="bp-reward-nombre">Retro Reaper's Rage</p>
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/60-pago.png">
+                                            <p class="bp-reward-nombre">Aurora RIP</p>
                                             <i class="bp-reward-tipo">Skin de Emoji</i>
                                         </div>
                                     </div>
                                 </td>
                                 <td> <!-- LVl61 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/61-pago.png">
-                                    <p class="bp-reward-nombre">Burnout</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/61-pago.png">
+                                    <p class="bp-reward-nombre">Noble End</p>
                                     <i class="bp-reward-tipo">Gesto</i>
                                 </td>
                                 <td> <!-- LVl62 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td class="bpbottomright"> <!-- LVl63 pago -->
                                     <a onclick="abrirOV(2)" class="wbh-a">
-                                        <img src="../media/wiki/bh/pase-batalla/clasica2/63-pago.png">
-                                        <p class="bp-reward-nombre" style="font-size:11px">Digital_Breakdown.wav</p>
+                                        <img src="../media/wiki/bh/pase-batalla/clasica3/63-pago.png">
+                                        <p class="bp-reward-nombre">Nidhogg's Appetite</p>
                                     </a>
                                     <i class="bp-reward-tipo">Efecto de KO</i>
                                 </td>
@@ -995,20 +983,23 @@
                                 <td> <!-- LVl65 gratis --> 
                                 </td>
                                 <td> <!-- LVl66 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
-                                    <i class="bp-reward-tipo">Esquema de Color</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/66-gratis.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
+                                    <i class="bp-reward-tipo">Skin de Guanteletes</i>
                                 </td>
                                 <td> <!-- LVl67 gratis --> 
                                 </td>
                                 <td> <!-- LVl68 gratis --> 
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
+                                    <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl69 gratis --> 
                                 </td>
                                 <td> <!-- LVl70 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/70-gratis.png">
-                                    <p class="bp-reward-nombre">High Frequency Laugh</p>
-                                    <i class="bp-reward-tipo">Skin de Emoji</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
+                                    <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl71 gratis --> </td>
                             </tr>
@@ -1016,53 +1007,53 @@
                             <tr> <!-- Recompensas de pago -->
                                 <td class="bpbottomleft pasepago"><img src="../media/wiki/bh/pase-batalla/bp_pago.png"><p><strong>Pase de Pago</strong></p></td>
                                 <td> <!-- LVl64 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl65 pago --> 
                                     <div class="bp-dos-recompensas" style="padding: 10px;">
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/65-pago.png">
-                                            <p class="bp-reward-nombre">Galactic Glitch</p>
-                                            <i class="bp-reward-tipo">Skin de Orbe</i>
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/65-pago.webp">
+                                            <p class="bp-reward-nombre">Center of the Cosmos</p>
+                                            <i class="bp-reward-tipo">Avatar</i>
                                         </div>
                                         <div>
-                                            <img src="../media/wiki/bh/pase-batalla/clasica2/xp-15.png">
+                                            <img src="../media/wiki/bh/pase-batalla/clasica3/xp-15.png">
                                             <p class="bp-reward-nombre">Battle Pass XP Multiplier</p>
                                             <i class="bp-reward-tipo">Boost</i>
                                         </div>
                                     </div>
                                 </td>
                                 <td> <!-- LVl66 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl67 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/mammoth.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/mammoth.png">
                                     <p class="bp-reward-nombre">Mammoth Coins</p>
                                     <i class="bp-reward-tipo">Moneda</i>
                                 </td>
                                 <td> <!-- LVl68 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl69 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/69-pago.webp">
-                                    <p class="bp-reward-nombre">Interstellar</p>
-                                    <i class="bp-reward-tipo">Avatar</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/69-pago.png">
+                                    <p class="bp-reward-nombre">Beowulf Crushers</p>
+                                    <i class="bp-reward-tipo" style="font-size:11px">Skin de Botas de Batalla</i>
                                 </td>
                                 <td> <!-- LVl70 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td class="bpbottomright"> <!-- LVl71 pago -->
-                                    <a href="./high-frequency-yumiko" class="wbh-a">
-                                        <img src="../media/wiki/bh/pase-batalla/clasica2/71-pago.png">
-                                        <p class="bp-reward-nombre">High Frequency Yumiko</p>
+                                    <a href="./vanir-guardian-bodvar" class="wbh-a">
+                                        <img src="../media/wiki/bh/pase-batalla/clasica3/71-pago.png">
+                                        <p class="bp-reward-nombre">Vanir Guardian Bödvar</p>
                                     </a>
                                     <i class="bp-reward-tipo">Skin</i>
                                 </td>
@@ -1096,22 +1087,19 @@
                                 <td> <!-- LVl73 gratis --> 
                                 </td>
                                 <td> <!-- LVl74 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
-                                    <i class="bp-reward-tipo">Esquema de Color</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/74-gratis.png">
+                                    <p class="bp-reward-nombre">Jörmungandr BRB</p>
+                                    <i class="bp-reward-tipo">Skin de Emoji</i>
                                 </td>
                                 <td> <!-- LVl75 gratis --> 
                                 </td>
                                 <td> <!-- LVl76 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
-                                    <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl77 gratis --> 
                                 </td>
                                 <td> <!-- LVl78 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl79 gratis --> </td>
@@ -1120,44 +1108,44 @@
                             <tr> <!-- Recompensas de pago -->
                                 <td class="bpbottomleft pasepago"><img src="../media/wiki/bh/pase-batalla/bp_pago.png"><p><strong>Pase de Pago</strong></p></td>
                                 <td> <!-- LVl72 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl73 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/xp-15.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/xp-15.png">
                                     <p class="bp-reward-nombre">Battle Pass XP Multiplier</p>
                                     <i class="bp-reward-tipo">Boost</i>
                                 </td>
                                 <td> <!-- LVl74 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl75 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/mammoth.png">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/mammoth.png">
                                     <p class="bp-reward-nombre">Mammoth Coins</p>
                                     <i class="bp-reward-tipo">Moneda</i>
                                 </td>
                                 <td> <!-- LVl76 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl77 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/77-pago.webp">
-                                    <p class="bp-reward-nombre">Retro Mjölnir</p>
-                                    <i class="bp-reward-tipo">Avatar</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/77-pago.png">
+                                    <p class="bp-reward-nombre">Ymir's Sledge</p>
+                                    <i class="bp-reward-tipo">Skin de Martillo</i>
                                 </td>
                                 <td> <!-- LVl78 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td class="bpbottomright"> <!-- LVl79 pago -->
-                                        <img src="../media/wiki/bh/pase-batalla/clasica2/79-pago.png">
-                                        <p class="bp-reward-nombre">Astro Shard</p>
-                                    <i class="bp-reward-tipo">Skin de Lanza</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/79-pago.png">
+                                    <p class="bp-reward-nombre">Langskip</p>
+                                    <i class="bp-reward-tipo">Gesto Cooperativo</i>
                                 </td>
                             </tr>
                         </tbody>
@@ -1183,56 +1171,60 @@
 
                             <tr> <!-- Recompensas gratis -->
                                 <td class="pasegratis"><img src="../media/wiki/bh/pase-batalla/bp_gratis.png"><p><strong>Pase Gratuito</strong></p></td>
-                                <td> <!-- LVl80 gratis --> </td>
+                                <td> <!-- LVl80 gratis --> 
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
+                                    <i class="bp-reward-tipo">Esquema de Color</i>
+                                </td>
                                 <td> <!-- LVl81 gratis --> 
                                 </td>
                                 <td> <!-- LVl82 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/82-gratis.png">
-                                    <p class="bp-reward-nombre">Future Wave BRB</p>
-                                    <i class="bp-reward-tipo">Skin de Emoji</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/82-gratis.png">
+                                    <p class="bp-reward-nombre">Hati</p>
+                                    <i class="bp-reward-tipo">Compañero</i>
                                 </td>
                                 <td> <!-- LVl83 gratis --> 
                                 </td>
                                 <td> <!-- LVl84 gratis --> 
                                 </td>
                                 <td> <!-- LVl85 gratis --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/85-gratis.png">
-                                    <p class="bp-reward-nombre">Chill Player to Brawl With</p>
-                                    <i class="bp-reward-tipo">Titulo</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/85-gratis.png">
+                                    <p class="bp-reward-nombre">Ice Giant Warrior</p>
+                                    <i class="bp-reward-tipo">Título</i>
                                 </td>
                             </tr>
 
                             <tr> <!-- Recompensas de pago -->
                                 <td class="bpbottomleft pasepago"><img src="../media/wiki/bh/pase-batalla/bp_pago.png"><p><strong>Pase de Pago</strong></p></td>
                                 <td> <!-- LVl80 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl81 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/81-pago.png">
-                                    <p class="bp-reward-nombre">Outrun</p>
-                                    <i class="bp-reward-tipo">Skin de Greatsword</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/81-pago.png">
+                                    <p class="bp-reward-nombre">Wrath of Hel</p>
+                                    <i class="bp-reward-tipo">Skin de Guadaña</i>
                                 </td>
                                 <td> <!-- LVl82 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color</i>
                                 </td>
                                 <td> <!-- LVl83 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/83-pago.png">
-                                    <p class="bp-reward-nombre">Neon Drive</p>
-                                    <i class="bp-reward-tipo">Gesto</i>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/83-pago.webp">
+                                    <p class="bp-reward-nombre">Fenrir's Downfall</p>
+                                    <i class="bp-reward-tipo">Avatar</i>
                                 </td>
                                 <td> <!-- LVl84 pago --> 
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/color-all.png">
-                                    <p class="bp-reward-nombre">Synthwave</p>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/color-all.png">
+                                    <p class="bp-reward-nombre">Frozen Forest</p>
                                     <i class="bp-reward-tipo">Esquema de Color Universal</i>
                                 </td>
                                 <td class="bpbottomright"> <!-- LVl85 pago --> 
-                                    <a href="./retro-reaper-nix" class="wbh-a">
-                                        <img src="../media/wiki/bh/pase-batalla/clasica2/85-pago.png">
-                                        <p class="bp-reward-nombre">Retro Reaper Nix</p>
+                                    <a href="./aurora-brynn" class="wbh-a">
+                                        <img src="../media/wiki/bh/pase-batalla/clasica3/85-pago.png">
+                                        <p class="bp-reward-nombre">Aurora Brynn</p>
                                     </a>
                                     <i class="bp-reward-tipo">Skin Épica</i>
                                 </td>
@@ -1245,10 +1237,10 @@
 
             <div id="ov1" class="overlay" style="display: none;">
                 <div class="contenido-overlay" id="podio">
-                  <h2 style="margin-top:5px">Arcade Nights</h2>
+                  <h2 style="margin-top:5px">Yggdrasil's Fate</h2>
                   <hr style="margin-top:15px;margin-bottom:15px;">
-                  <img src="../media/wiki/bh/iconos/change.png" id="cambiar-imagen" class="change-img-bp-podio" onclick="cambiar('arcadenights')" alt="Cambiar Imagen">
-                            <img src="../media/wiki/bh/pase-batalla/clasica2/podio-lvl1.png" style="width: 200px;" id="podio-foto"><br>
+                  <img src="../media/wiki/bh/iconos/change.png" id="cambiar-imagen" class="change-img-bp-podio" onclick="cambiar('yggdrasilsfate')" alt="Cambiar Imagen">
+                            <img src="../media/wiki/bh/pase-batalla/clasica3/podio-lvl1.png" style="width: 200px;" id="podio-foto"><br>
                             <h3 style="text-align: center;" id="podio-lvl">Nivel 1</h3>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
                 </div>
@@ -1256,12 +1248,12 @@
 
             <div id="ov2" class="overlay" style="display: none;">
                 <div class="contenido-overlay" id="efectoko">
-                  <h2 style="margin-top:5px">Digital_Breakdown.wav</h2>
+                  <h2 style="margin-top:5px">Nidhogg's Appetite</h2>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <table style="border-collapse: separate; border-spacing: 10px;">
                     <tr>
                         <td style="border:none;">
-                            <img src="../media/wiki/bh/pase-batalla/clasica2/efecto-ko.webp" style="width: 300px;" id="efectokoimg"><br>
+                            <img src="../media/wiki/bh/pase-batalla/clasica3/efecto-ko.webp" style="width: 300px;" id="efectokoimg"><br>
                         </td>
                     </tr>
                 </table>
@@ -1285,15 +1277,15 @@
 
                         <tr>
                             <td>
-                                <p>Conseguir KOs con ataques característicos de lado o ataques de recuperación</p>
+                                <p>Conseguir KOs con ataques característicos neutrales en la parte inferior de la pantalla</p>
                             </td>
                             <td>
-                                <p>200</p>
+                                <p>25</p>
                             </td>
                             <td>
-                                <a href="./future-wave-val" class="wbh-a">
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/extra1.png">
-                                    <h5>Future Wave Val - LvL 2</h5>
+                                <a href="./jormungandr-mako" class="wbh-a">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/extra1.png">
+                                    <h5>Jörmungandr Mako - LvL 2</h5>
                                 </a>
                                 <i class="bp-reward-tipo">Mejora de Skin</i>
                             </td>
@@ -1303,15 +1295,15 @@
                         </tr>
                         <tr>
                             <td>
-                                <p>Conseguir KOs con ataques característicos de lado o ataques de recuperación</p>
+                                <p>Conseguir KOs con ataques característicos neutrales en la parte inferior de la pantalla</p>
                             </td>
                             <td>
-                                <p>500</p>
+                                <p>60</p>
                             </td>
                             <td>
-                                <a href="./future-wave-val" class="wbh-a">
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/extra2.png">
-                                    <h5>Future Wave Val - LvL 3</h5>
+                                <a href="./jormungandr-mako" class="wbh-a">
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/extra2.png">
+                                    <h5>Jörmungandr Mako - LvL 3</h5>
                                 </a>
                                 <i class="bp-reward-tipo">Mejora de Skin</i>
                             </td>
@@ -1321,15 +1313,15 @@
                         </tr>
                         <tr>
                             <td>
-                                <p>Conseguir KOs en Sun Drive o Miami Dome</p>
+                                <p>Conseguir KOs en Brawlhaven, The Great Hall o Thundergard Stadium</p>
                             </td>
                             <td>
-                                <p>40</p>
+                                <p>50</p>
                             </td>
                             <td>
                                 <a onclick="abrirOV(1)" class="wbh-a">
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/extra3.png">
-                                    <h5>Arcade Nights - LvL 2</h5>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/extra3.png">
+                                    <h5>Yggdrasil's Fate - LvL 2</h5>
                                 </a>
                                 <i class="bp-reward-tipo">Mejora de Podio</i>
                             </td>
@@ -1339,15 +1331,15 @@
                         </tr>
                         <tr>
                             <td>
-                                <p>Conseguir KOs en Sun Drive o Miami Dome</p>
+                                <p>Conseguir KOs en Brawlhaven, The Great Hall o Thundergard Stadium</p>
                             </td>
                             <td>
-                                <p>100</p>
+                                <p>125</p>
                             </td>
                             <td>
                                 <a onclick="abrirOV(1)" class="wbh-a">
-                                    <img src="../media/wiki/bh/pase-batalla/clasica2/extra4.png">
-                                    <h5>Arcade Nights - LvL 3</h5>
+                                    <img src="../media/wiki/bh/pase-batalla/clasica3/extra4.png">
+                                    <h5>Yggdrasil's Fate - LvL 3</h5>
                                 </a>
                                 <i class="bp-reward-tipo">Mejora de Podio</i>
                             </td>
@@ -1356,51 +1348,51 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="bpbottomleft">
                                 <p>Llegar al nivel máximo y completar todas las misiones semanales</p>
                             </td>
                             <td>
                                 <p>168</p>
                             </td>
                             <td>
-                                <img src="../media/wiki/bh/pase-batalla/clasica2/extra5.png">
-                                <h5>Synthwave Royalty</h5>
+                                <img src="../media/wiki/bh/pase-batalla/clasica3/extra5.png">
+                                <h5>World Serpent's Savior</h5>
                                 <i class="bp-reward-tipo">Avatar</i>
                             </td>
-                            <td>
+                            <td class="bpbottomright">
                                 <p style="font-size:15px;"></p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p>Llegar al nivel 46 durante la salida original de la Temporada 2</p>
+                                <p>Llegar al nivel 85 durante la salida original de la Temporada 3</p>
                             </td>
                             <td>
-                                <p>46</p>
+                                <p>85</p>
                             </td>
                             <td>
                                     <img src="../media/wiki/bh/pase-batalla/clasica2/og1.png">
-                                    <h5>Nix Stole My Soul</h5>
+                                    <h5>Jötunn Descendant</h5>
                                 <i class="bp-reward-tipo">Título</i>
                             </td>
                             <td>
-                                <p style="font-size:15px;">Requiere haber jugado en la salida original de la Temporada 1</p>
+                                <p style="font-size:15px;">Requiere haber jugado en la salida original de la Temporada 3</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="bpbottomleft">
-                                <p>Comprar el pase de pago durante la salida original de la Temporada 2</p>
+                                <p>Comprar el pase de pago durante la salida original de la Temporada 3</p>
                             </td>
                             <td>
                                 <p>1</p>
                             </td>
                             <td>
                                     <img src="../media/wiki/bh/pase-batalla/clasica2/og2.png">
-                                    <h5>A E S T H E T I C</h5>
+                                    <h5>Ymir's Chosen</h5>
                                 <i class="bp-reward-tipo">Título</i>
                             </td>
                             <td class="bpbottomright">
-                                <p style="font-size:15px;">Requiere haber jugado en la salida original de la Temporada 2</p>
+                                <p style="font-size:15px;">Requiere haber jugado en la salida original de la Temporada 3</p>
                             </td>
                         </tr>
                     </tbody>
@@ -1425,7 +1417,14 @@
                 <a href="#misiones#pagina11"><button id="subsubsec11-btn">Semana 11</button></a>
                 <a href="#misiones#pagina12"><button id="subsubsec12-btn">Semana 12</button></a>
             </div>
-
+            MISIONES
+            MISIONES
+            MISIONES
+            MISIONES
+            MISIONES
+            MISIONES
+            MISIONES
+            MISIONES
             <section id="subsubsec1">
 
                 <div class="pase-batalla-misiones">
@@ -1439,29 +1438,7 @@
 
                             <tr>
                                 <td>
-                                    <p>Victorias con leyendas con la ventaja local</p>
-                                </td>
-                                <td>
-                                    <p>1</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 4
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>KOs con martillo</p>
-                                </td>
-                                <td>
-                                    <p>15</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Conseguir el primer KO de la partida</p>
+                                    <p>Realizar esquives de persecución</p>
                                 </td>
                                 <td>
                                     <p>25</p>
@@ -1472,43 +1449,65 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Victorias con leyendas de lanza</p>
+                                    <p>KOs con greatsword</p>
                                 </td>
                                 <td>
                                     <p>15</p>
                                 </td>
                                 <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque fuerte de katars</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque ligero de lanza</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Victorias en distintas colas de emparejamiento</p>
+                                </td>
+                                <td>
+                                    <p>4</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>KOs dobles</p>
+                                </td>
+                                <td>
+                                    <p>10</p>
+                                </td>
+                                <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs con ataques en versión activa</p>
+                                    <p>Victorias sin morir mas de una vez</p>
                                 </td>
                                 <td>
-                                    <p>7</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Daño con orbe</p>
-                                </td>
-                                <td>
-                                    <p>5.000</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>KOs con golpes aereos hacia abajo</p>
-                                </td>
-                                <td>
-                                    <p>75</p>
+                                    <p>10</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
@@ -1544,10 +1543,10 @@
 
                             <tr>
                                 <td>
-                                    <p>Ser el primero en hacer un gesto</p>
+                                    <p>Golpear oponentes que estan mas arriba de los limites de la cámara</p>
                                 </td>
                                 <td>
-                                    <p>10</p>
+                                    <p>1</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 4
@@ -1561,7 +1560,29 @@
                                     <p>15</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque fuerte con guanteletes</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque ligero de pistolas</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
                                 </td>
                             </tr>
                             <tr>
@@ -1577,32 +1598,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Conseguir objetos lanzados por oponentes</p>
+                                    <p>KOs con ataques fuertes aéreos hacia abajo</p>
                                 </td>
                                 <td>
-                                    <p>1</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Victorias con leyendas de espada</p>
-                                </td>
-                                <td>
-                                    <p>15</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Daño con lanza cohete</p>
-                                </td>
-                                <td>
-                                    <p>5.000</p>
+                                    <p>100</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
@@ -1610,10 +1609,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Ganar ELO de cualquier tipo en ranked</p>
+                                    <p>KOs con ataque fuerte sin armas mientras se cancela la gravedad</p>
                                 </td>
                                 <td>
-                                    <p>2.000</p>
+                                    <p>5</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
@@ -1648,43 +1647,32 @@
 
                             <tr>
                                 <td>
-                                    <p>KOs con hacha</p>
+                                    <p>Hacer gestos mientras te deslizas</p>
+                                </td>
+                                <td>
+                                    <p>1</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 2
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>KOs con lanza</p>
                                 </td>
                                 <td>
                                     <p>15</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs en los primeros 10 segundos despues de reaparecer</p>
+                                    <p>Daño con ataque fuerte de martillo</p>
                                 </td>
                                 <td>
-                                    <p>8</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Estar haciendo un gesto con gravedad cancelada al final de la partida</p>
-                                </td>
-                                <td>
-                                    <p>12</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Ser el primero en conseguir un objeto</p>
-                                </td>
-                                <td>
-                                    <p>20</p>
+                                    <p>1.500</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
@@ -1692,10 +1680,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Victorias con leyenda de martillo</p>
+                                    <p>Daño con ataque ligero de orbe</p>
                                 </td>
                                 <td>
-                                    <p>8</p>
+                                    <p>1.500</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
@@ -1703,21 +1691,32 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Daño con guanteletes</p>
+                                    <p>Golpear a varios oponentes con un solo objeto</p>
                                 </td>
                                 <td>
-                                    <p>5.000</p>
+                                    <p>5</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs con ataques aereos laterales</p>
+                                    <p>Ganar ELO de cualquier tipo en ranked</p>
                                 </td>
                                 <td>
-                                    <p>120</p>
+                                    <p>10</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>KOs con ataques de recuperación cansados</p>
+                                </td>
+                                <td>
+                                    <p>5</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
@@ -1753,76 +1752,76 @@
 
                             <tr>
                                 <td>
-                                    <p>KOs con pistolas</p>
-                                </td>
-                                <td>
-                                    <p>15</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>KOs con golpes ligeros desde el suelo</p>
-                                </td>
-                                <td>
-                                    <p>5</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Conseguir 5 KOs en la misma partida</p>
-                                </td>
-                                <td>
-                                    <p>7</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Golpear oponentes con minas activadas</p>
+                                    <p>Victorias con leyendas que fueron miembros de la orden del leon exaltado</p>
                                 </td>
                                 <td>
                                     <p>3</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Victorias con leyenda de lanza cohete</p>
+                                    <p>KOs con cañón</p>
                                 </td>
                                 <td>
                                     <p>15</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Victorias en menos de 150 segundos</p>
+                                    <p>Daño con ataque fuerte de pistolas</p>
                                 </td>
                                 <td>
-                                    <p>5</p>
+                                    <p>1.500</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Daño con botas de batalla</p>
+                                    <p>Daño con ataque ligero de katars</p>
                                 </td>
                                 <td>
-                                    <p>5.000</p>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Interrumpir ataques de recuperación de oponentes</p>
+                                </td>
+                                <td>
+                                    <p>40</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 9
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Golpear oponentes hacia minas activadas</p>
+                                </td>
+                                <td>
+                                    <p>4</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 9
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>KOs con ataques neutrales aéreos</p>
+                                </td>
+                                <td>
+                                    <p>10</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
@@ -1857,29 +1856,7 @@
 
                             <tr>
                                 <td>
-                                    <p>Daño al saltar esquivando hacia un ataque</p>
-                                </td>
-                                <td>
-                                    <p>150</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 4
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>KOs con greatsword</p>
-                                </td>
-                                <td>
-                                    <p>15</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Victorias con leyendas que fueron traidas al Valhalla por Brynn</p>
+                                    <p>Victorias con leyendas que fueron miembros de una banda de euro pop del Valhalla</p>
                                 </td>
                                 <td>
                                     <p>3</p>
@@ -1890,43 +1867,65 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Victorias con leyendas de cañón</p>
+                                    <p>KOs con arco</p>
                                 </td>
                                 <td>
                                     <p>15</p>
                                 </td>
                                 <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque fuerte de Lanza Cohete</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque ligero de Hacha</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Victorias con diferentes mejoras de stats</p>
+                                </td>
+                                <td>
+                                    <p>5</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Hacer combos verdaderos</p>
+                                </td>
+                                <td>
+                                    <p>40</p>
+                                </td>
+                                <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Desarmar oponentes</p>
+                                    <p>Golpear oponentes con ataques característicos completamente cargados</p>
                                 </td>
                                 <td>
-                                    <p>50</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Daño con espada</p>
-                                </td>
-                                <td>
-                                    <p>5.000</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Lanzar oponentes al olvido con ataques característicos</p>
-                                </td>
-                                <td>
-                                    <p>10</p>
+                                    <p>25</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
@@ -1961,21 +1960,10 @@
 
                             <tr>
                                 <td>
-                                    <p>Hacer un gesto en la plataforma de Kor</p>
+                                    <p>Victorias con leyendas que forman farte del grupo de lectura del Valhalla</p>
                                 </td>
                                 <td>
-                                    <p>1</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 2
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>KOs con orbe</p>
-                                </td>
-                                <td>
-                                    <p>15</p>
+                                    <p>3</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
@@ -1983,32 +1971,54 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Victorias con leyenda de hacha</p>
+                                    <p>KOs con espada</p>
                                 </td>
                                 <td>
                                     <p>15</p>
                                 </td>
                                 <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque fuerte de cañón</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque ligero de greatsword</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Victorias con leyendas aleatorias</p>
+                                </td>
+                                <td>
+                                    <p>12</p>
+                                </td>
+                                <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs con ataques característicos neutrales</p>
+                                    <p>Victorias en menos de 150 segundos</p>
                                 </td>
                                 <td>
-                                    <p>25</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>KOs con ataques característicos laterales</p>
-                                </td>
-                                <td>
-                                    <p>25</p>
+                                    <p>5</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
@@ -2016,24 +2026,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs con ataques característicos hacia abajo</p>
+                                    <p>KOs con ataques en versión activa</p>
                                 </td>
                                 <td>
-                                    <p>25</p>
+                                    <p>7</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Daño con guadaña</p>
-                                </td>
-                                <td>
-                                    <p>5.000</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
                                 </td>
                             </tr>
                             <tr>
@@ -2065,21 +2064,10 @@
 
                             <tr>
                                 <td>
-                                    <p>Interrumpir ataques característicos de oponentes con lanzamientos de armas</p>
+                                    <p>Estar haciendo un gesto cancelando la gravedad al final de la partida</p>
                                 </td>
                                 <td>
-                                    <p>3</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 4
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>KOs con arco</p>
-                                </td>
-                                <td>
-                                    <p>8</p>
+                                    <p>12</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
@@ -2087,10 +2075,21 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs con ataques de recuperacion</p>
+                                    <p>Victorias con leyendas de Thera</p>
                                 </td>
                                 <td>
-                                    <p>25</p>
+                                    <p>3</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>KOs con orbe</p>
+                                </td>
+                                <td>
+                                    <p>15</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
@@ -2098,43 +2097,43 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs en los primeros 10 segundos desde la reaparición</p>
+                                    <p>Daño con ataque fuerte de guadaña</p>
                                 </td>
                                 <td>
-                                    <p>20</p>
+                                    <p>1.500</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Victorias con leyendas aleatorias</p>
-                                </td>
-                                <td>
-                                    <p>12</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Victorias con espada</p>
+                                    <p>Daño con ataque ligero de lanza cohete</p>
                                 </td>
                                 <td>
-                                    <p>15</p>
+                                    <p>1.500</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Daño con cañón</p>
+                                    <p>Daño ligero mientras se cancela la gravedad</p>
                                 </td>
                                 <td>
-                                    <p>4.000</p>
+                                    <p>500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Conseguir 1 KO en 1vs1 antes de recibir 50 de daño</p>
+                                </td>
+                                <td>
+                                    <p>5</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
@@ -2169,40 +2168,51 @@
 
                             <tr>
                                 <td>
-                                    <p>Conseguir el arma inicial del oponente</p>
+                                    <p>KOs con guanteletes</p>
                                 </td>
                                 <td>
-                                    <p>8</p>
+                                    <p>15</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Hacer esquives de persecución</p>
+                                    <p>Daño con ataque fuerte de hacha</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque ligero de cañón</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Recoger objetos</p>
                                 </td>
                                 <td>
                                     <p>25</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs con lanza cohete</p>
-                                </td>
-                                <td>
-                                    <p>8</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Dominar (3KOs en la misma vida)</p>
+                                    <p>Dominar (3 KOs en una sola vida)</p>
                                 </td>
                                 <td>
                                     <p>5</p>
@@ -2213,32 +2223,21 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Victorias con leyenads de martillo</p>
+                                    <p>Ser el primero en decir GG</p>
+                                </td>
+                                <td>
+                                    <p>25</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Conseguir el arma inicial de los oponentes</p>
                                 </td>
                                 <td>
                                     <p>15</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Daño con lanza</p>
-                                </td>
-                                <td>
-                                    <p>4.000</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Conseguir un KO en 1vs1 antes de recibir 50 de daño</p>
-                                </td>
-                                <td>
-                                    <p>10</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
@@ -2273,21 +2272,10 @@
 
                             <tr>
                                 <td>
-                                    <p>Victorias con leyendas que tienen "bot" en su nombre de bot</p>
+                                    <p>Victorias con leyendas que son dueños de mascotas</p>
                                 </td>
                                 <td>
-                                    <p>5</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 4
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>KOs con katars</p>
-                                </td>
-                                <td>
-                                    <p>8</p>
+                                    <p>3</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
@@ -2295,10 +2283,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Ser el primer jugador en conseguir un objeto</p>
+                                    <p>KOs con pistolas</p>
                                 </td>
                                 <td>
-                                    <p>20</p>
+                                    <p>15</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
@@ -2306,43 +2294,54 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Desarmar oponentes</p>
+                                    <p>Daño con ataque fuerte de greatsword</p>
                                 </td>
                                 <td>
-                                    <p>50</p>
+                                    <p>1.500</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Victorias con leyendas de cañón</p>
-                                </td>
-                                <td>
-                                    <p>15</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs con ataques característicos hacia abajo</p>
+                                    <p>Daño con ataque ligero de martillo</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>KOs en los primeros 10 segundos desde la reaparición</p>
+                                </td>
+                                <td>
+                                    <p>12</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 9
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Ser el primero en hacer un gesto</p>
                                 </td>
                                 <td>
                                     <p>25</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 9
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Daño con guanteletes</p>
+                                    <p>Interrumpir ataques característicos oponentes con ataques característicos</p>
                                 </td>
                                 <td>
-                                    <p>4.000</p>
+                                    <p>50</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
@@ -2377,21 +2376,10 @@
 
                             <tr>
                                 <td>
-                                    <p>Hacer un gesto en la plataforma de Kor</p>
+                                    <p>Victorias con leyendas que ganaron la Competición BCX 1vs1</p>
                                 </td>
                                 <td>
-                                    <p>1</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 4
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Hacer combos de equipo</p>
-                                </td>
-                                <td>
-                                    <p>10</p>
+                                    <p>3</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
@@ -2399,21 +2387,43 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs con pistolas</p>
-                                </td>
-                                <td>
-                                    <p>8</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Victorias con leyendas de arco</p>
+                                    <p>KOs con katars</p>
                                 </td>
                                 <td>
                                     <p>15</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque fuerte de espada</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque ligero de arco</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Golpear a oponentes que estan debajo del mapa con ataques ligeros</p>
+                                </td>
+                                <td>
+                                    <p>40</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
@@ -2421,35 +2431,24 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs con ataques característicos laterales</p>
+                                    <p>Desarmar oponentes</p>
+                                </td>
+                                <td>
+                                    <p>50</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Conseguir hacer el primer KO de la partida</p>
                                 </td>
                                 <td>
                                     <p>25</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Daño con martillo</p>
-                                </td>
-                                <td>
-                                    <p>4.000</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Conseguir 2 KOs con ataques fuertes aereos hacia abajo en la misma partida</p>
-                                </td>
-                                <td>
-                                    <p>5</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
                                 </td>
                             </tr>
                             <tr>
@@ -2481,43 +2480,21 @@
 
                             <tr>
                                 <td>
-                                    <p>Victorias con cada mejora de stats</p>
+                                    <p>Jugar una partida personalizada usando el buscador de salas publicas</p>
                                 </td>
                                 <td>
-                                    <p>5</p>
+                                    <p>1</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Realizar combos de 4 golpes</p>
-                                </td>
-                                <td>
-                                    <p>10</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 4
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs con espadas</p>
+                                    <p>KOs con hacha</p>
                                 </td>
                                 <td>
-                                    <p>8</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Golpear oponentes hacia minas activadas</p>
-                                </td>
-                                <td>
-                                    <p>3</p>
+                                    <p>15</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
@@ -2525,7 +2502,29 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Victorias con leyendas de hacha</p>
+                                    <p>Daño con ataque fuerte de lanza</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque ligero de guadaña</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Golpear con 5 ataques característicos distintos en la misma partida</p>
                                 </td>
                                 <td>
                                     <p>15</p>
@@ -2536,21 +2535,21 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Daño con lanza cohete</p>
+                                    <p>Golpear oponentes con ataques característicos mientras te deslizas</p>
                                 </td>
                                 <td>
-                                    <p>4.000</p>
+                                    <p>30</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs con ataques característicos deslizados</p>
+                                    <p>KOs con distintos tipos de ataques</p>
                                 </td>
                                 <td>
-                                    <p>3</p>
+                                    <p>11</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
@@ -2585,18 +2584,7 @@
 
                             <tr>
                                 <td>
-                                    <p>KOs con guadaña</p>
-                                </td>
-                                <td>
-                                    <p>8</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 6
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Conseguir armas antes de que las suelte tu compañero</p>
+                                    <p>Conseguir armas antes de que la suelte tu compañero</p>
                                 </td>
                                 <td>
                                     <p>5</p>
@@ -2607,43 +2595,54 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Interrumpir ataques de recuperación de oponentes</p>
-                                </td>
-                                <td>
-                                    <p>20</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Hacer combos verdaderos</p>
-                                </td>
-                                <td>
-                                    <p>25</p>
-                                </td>
-                                <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Victorias con leyendas de lanza</p>
+                                    <p>KOs con martillo</p>
                                 </td>
                                 <td>
                                     <p>15</p>
                                 </td>
                                 <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque fuerte de arco</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque ligero de guanteletes</p>
+                                </td>
+                                <td>
+                                    <p>1.500</p>
+                                </td>
+                                <td>
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daño con ataque ligero neutral</p>
+                                </td>
+                                <td>
+                                    <p>1.000</p>
+                                </td>
+                                <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>KOs con ataques característicos neutrales/p>
+                                    <p>Daño con ataque ligero lateral</p>
                                 </td>
                                 <td>
-                                    <p>25</p>
+                                    <p>1.000</p>
                                 </td>
                                 <td>
                                     <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
@@ -2651,13 +2650,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Daño con pistolas</p>
+                                    <p>Daño con ataque ligero hacia abajo</p>
                                 </td>
                                 <td>
-                                    <p>4.000</p>
+                                    <p>1.000</p>
                                 </td>
                                 <td>
-                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 12
+                                    <img src="../media/wiki/bh/iconos/bp-gem.png" style="width: 13px;"> 10
                                 </td>
                             </tr>
                             <tr>
