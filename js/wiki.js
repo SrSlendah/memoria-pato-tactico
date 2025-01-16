@@ -1010,3 +1010,10 @@ function cambiar(id) {
 
 
 }
+
+function bp_pararEP(id) {
+  const video = document.getElementById('episodio'+ id) ;
+
+  video.pause();
+  video.currentTime = 0;
+}

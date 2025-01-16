@@ -2015,6 +2015,14 @@ footer {
     border-radius: 0 0 15px 0;
 }
 
+.bpepisodio video {
+width: auto; 
+height: 360px;
+border-radius: 15px;
+border: 4px solid #4b2866;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 1400px) { 
     .pase-batalla { max-width: 1000px; }
     .bp-cuatro-recompensas { width: 200px; }
@@ -2026,6 +2034,9 @@ footer {
 @media screen and (max-width: 850px) { 
     .pase-batalla { max-width: 650px; }
 }
+@media screen and (max-width: 750px) {
+    .bpepisodio video { height: 230px; }
+}
 @media screen and (max-width: 725px) {
     .pase-batalla-extra { max-width: 475px; }
 }
@@ -2034,9 +2045,13 @@ footer {
 }
 @media screen and (max-width: 550px) { 
     .pase-batalla { max-width: 400px; }
+    .bpepisodio video { height: 175px; }
 }
 @media screen and (max-width: 500px) { 
     .pase-batalla-extra { max-width: 400px; }
+}
+@media screen and (max-width: 450px) { 
+    .bpepisodio video { height: 129px; }
 }
 @media screen and (max-width: 400px) { 
     .pase-batalla { max-width: 300px; }
