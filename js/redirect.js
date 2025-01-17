@@ -29,6 +29,22 @@ function goTo(string) {
     if (string == 'wbh_bpc_t3') {
         window.location.href = "./temporada-clasica-3"
     }
+    
+    if (string == 'wbh_bp_t4') {
+        window.location.href = "./temporada-4"
+    }
+    
+    if (string == 'wbh_bpc_t4') {
+        window.location.href = "./temporada-clasica-4"
+    }
+    
+    if (string == 'wbh_bp_t5') {
+        window.location.href = "./temporada-5"
+    }
+    
+    if (string == 'wbh_bpc_t5') {
+        window.location.href = "./temporada-clasica-5"
+    }
 
 // Manga
 
