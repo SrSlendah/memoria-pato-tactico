@@ -414,6 +414,12 @@ function showSubSubSection(subsubsectionNumber) {
     if (window.location.hash === "#temporadas-clasicas") {
         showSection(2);
     }
+    if (window.location.hash === "#filtro-leyendas") {
+        showSection(1);
+    }
+    if (window.location.hash === "#tabla-de-armas") {
+        showSection(2);
+    }
 });
 
 window.addEventListener("hashchange", function() {
@@ -605,6 +611,12 @@ window.addEventListener("hashchange", function() {
       showSection(1);
   }
   if (window.location.hash === "#temporadas-clasicas") {
+      showSection(2);
+  }
+  if (window.location.hash === "#filtro-leyendas") {
+      showSection(1);
+  }
+  if (window.location.hash === "#tabla-de-armas") {
       showSection(2);
   }
 });
