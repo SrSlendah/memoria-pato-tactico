@@ -367,6 +367,9 @@ function showSubSubSection(subsubsectionNumber) {
     if (window.location.hash === "#enprueba") {
         showSection(3);
     }
+    if (window.location.hash === "#eliminados") {
+        showSection(4);
+    }
     if (window.location.hash === "#informacion") {
         showSection(1);
     }
@@ -565,6 +568,9 @@ window.addEventListener("hashchange", function() {
   }
   if (window.location.hash === "#enprueba") {
       showSection(3);
+  }
+  if (window.location.hash === "#eliminados") {
+      showSection(4);
   }
   if (window.location.hash === "#informacion") {
       showSection(1);
