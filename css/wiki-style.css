@@ -3680,6 +3680,45 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     margin-top: -5px;
 }
 
+.wbh-skins-list-texto-evento-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 27px;
+    padding: 10px;
+    margin-top: -5px;
+    border-bottom: none;
+}
+
+.wbh-skins-list-texto-evento-bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 20px;
+    padding: 10px;
+}
+
+.wbh-skins-list-texto-evento-bot {
+    font-size:13px;
+    font-weight: normal;
+}
+.wbh-skins-list-texto-evento-bot img{
+    width: 13px;
+}
 
 .cofre-skins-lista {
     display: grid;
