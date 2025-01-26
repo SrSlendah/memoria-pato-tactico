@@ -5,21 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zom 100: Bucket List of the Dead - Lista de Anime</title>
+    <title>Zom 100: Bucket List of the Dead - Lista de Películas y Series</title>
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../js/ir-arriba.js"></script>
-    <script src="../js/overlay.js"></script>
-
     <header>
-
 
         <script src="../js/menu.js"></script>
 
@@ -80,57 +74,39 @@
 
     <main>
         <div class="search-container">
-          <input type="text" id="search-input" placeholder="Buscar en la lista de anime...">
+          <input type="text" id="search-input" placeholder="Buscar en la lista de peliculas y series...">
           <ul id="autocomplete-list" style="display: none;"></ul>
         </div>
       
-        <script src="../js/search-anime.js"></script>
-        <script src="../js/anime.js"></script>
+        <script src="../js/search-peliculas-series.js"></script>
         <script src="../js/redirect.js"></script>
 
         <div class="secciones" align="center">
-            <button onclick="goTo('lps_zom100');">Live Action</button>
+            <button onclick="goTo('anime_zom100');">Anime</button>
         </div>
 
         <div class="serie-container">
             <section class="serie">
                 <div class="serie-elemento">
                     <div class="serie-imagen">
-                        <img src="../media/anime/zom-100-bucket-list-of-the-dead.png" alt="Zom 100: Bucket List of the Dead">
+                        <img src="../media/peliculas-series/zom-100-bucket-list-of-the-dead.png" alt="Zom 100: Bucket List of the Dead">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
                         <h2 class="serie-titulo" style="font-size:18px">Zom 100: Bucket List of the Dead</h2>
                         <hr class="info-sep">
                         <div class="serie-details">
                             <div class="serie-details-labels">
-                                <p><strong>Episodios:</strong></p>
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p>12 / 12</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>2:09:00</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov1" class="overlay" style="display: none;">
-                <div class="serie-imagen">
-                    <img src="../media/anime/zom-100-bucket-list-of-the-dead.png" alt="Zom 100: Bucket List of the Dead">
-                </div>
-                <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">Zom 100: Bucket List of the Dead</h2>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Anime</p>
-                  <p><b>Estudio:</b> BUG FILMS</p>
-                  <p><b>Generos:</b> Acción, Comedia, Terror,<br>Supernatural, Suspense</p>
-                  <p><b>Fecha de Publicación:</b> 09/07/2023 - 26/12/2023</p>
-                  <p><b>Temporada:</b> Verano 2023</p>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Visto desde:</b> 15/04/2024</p>
-                  <p><b>Visto hasta:</b> 20/04/2024</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
-                </div>
-            </div>
         </div>
 
     </main>
@@ -149,7 +125,7 @@
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>
-                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none" ; target=" _blank">Click</a></p>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none"; target=" _blank">Click</a></p>
             </div>
         </div>
         <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>

@@ -141,6 +141,10 @@ function goTo(string) {
         window.location.href = "../lista-anime/solo-leveling"
     };
 
+    if (string == 'anime_zom100') {
+        window.location.href = "../lista-anime/zom-100-bucket-list-of-the-dead"
+    };
+
 //Lista Peliculas y series
 
     if (string == 'lps_deathnote') {
@@ -153,5 +157,9 @@ function goTo(string) {
 
     if (string == 'lps_onepiece') {
         window.location.href = "../lista-peliculas-series/one-piece"
+    };
+
+    if (string == 'lps_zom100') {
+        window.location.href = "../lista-peliculas-series/zom-100-bucket-list-of-the-dead"
     };
 }

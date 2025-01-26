@@ -1,0 +1,30 @@
+
+Comparación: search-anime.js
+
+No se encontraron diferencias
+
+**************************************************
+
+Comparación: search-manga.js
+
+No se encontraron diferencias
+
+**************************************************
+
+Comparación: search-marvel.js
+
+No se encontraron diferencias
+
+**************************************************
+
+Comparación: search-peliculas-series.js
+
+No se encontraron diferencias
+
+**************************************************
+
+Comparación: search-wiki-bh.js
+
+No se encontraron diferencias
+
+**************************************************

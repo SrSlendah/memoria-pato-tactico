@@ -30,6 +30,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Stranger Things', url: '../lista-peliculas-series/stranger-things' },
     { resultado: 'The 8 Show', url: '../lista-peliculas-series/the-8-show' },
     { resultado: 'Viernes 13', url: '../lista-peliculas-series/viernes-13' },
+    { resultado: 'Zom 100: Bucket List of the Dead', url: '../lista-peliculas-series/zom-100-bucket-list-of-the-dead' },
   ];
 
   query = removeAccents(query.toLowerCase());
