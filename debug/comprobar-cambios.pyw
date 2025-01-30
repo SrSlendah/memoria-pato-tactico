@@ -1,6 +1,7 @@
 import os
 import tkinter as tk
 from tkinter import messagebox
+from datetime import datetime
 
 def leer_archivo(file_path):
     """Lee el contenido de un archivo y devuelve una lista de líneas."""
@@ -67,7 +68,8 @@ def main():
     # Ruta del archivo de salida
     carpeta_salida = "./changes/"
     os.makedirs(carpeta_salida, exist_ok=True)
-    archivo_salida = os.path.abspath(os.path.join(carpeta_salida, "cambios-detectados.txt"))
+    fecha_hora = datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
+    archivo_salida = os.path.abspath(os.path.join(carpeta_salida, f"cambios_{fecha_hora}.txt"))
 
     # Generar el reporte
     generar_reporte(directorios, archivo_salida)

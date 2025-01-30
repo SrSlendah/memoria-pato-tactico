@@ -1,30 +1,35 @@
 
 Comparación: search-anime.js
 
-No se encontraron diferencias
+[ERROR] La carpeta ../lista-anime/ no existe.
+
 
 **************************************************
 
 Comparación: search-manga.js
 
-No se encontraron diferencias
+[ERROR] La carpeta ../lista-manga/ no existe.
+
 
 **************************************************
 
 Comparación: search-marvel.js
 
-No se encontraron diferencias
+[ERROR] La carpeta ../lista-marvel/ no existe.
+
 
 **************************************************
 
 Comparación: search-peliculas-series.js
 
-No se encontraron diferencias
+[ERROR] La carpeta ../lista-peliculas-series/ no existe.
+
 
 **************************************************
 
 Comparación: search-wiki-bh.js
 
-No se encontraron diferencias
+[ERROR] La carpeta ../wiki-bh/ no existe.
+
 
 **************************************************

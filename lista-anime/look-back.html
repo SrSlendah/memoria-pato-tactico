@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sakamoto Days - Lista de Anime</title>
+    <title>Look Back - Lista de Anime</title>
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -16,6 +17,7 @@
     <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
+    <script src="../js/overlay.js"></script>
 
     <header>
 
@@ -61,7 +63,7 @@
 
 
         <section class="textos-header">
-            <h1>Sakamoto Days</h1>
+            <h1>Look Back</h1>
         </section>
 
 
@@ -85,24 +87,25 @@
       
         <script src="../js/search-anime.js"></script>
         <script src="../js/anime.js"></script>
-        <script src="../js/overlay.js"></script>
-
+        
         <div class="serie-container">
             <section class="serie">
                 <div class="serie-elemento">
                     <div class="serie-imagen">
-                        <img src="../media/anime/sakamoto-days.png" alt="Sakamoto Days">
+                        <img src="../media/anime/look-back.png" alt="Look Back">
                     </div>
                     <div class="serie-info" style="position: relative;">
                         <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
-                        <h2 class="serie-titulo">Sakamoto Days</h2>
+                        <h2 class="serie-titulo">Look Back</h2>
                         <hr class="info-sep">
                         <div class="serie-details">
                             <div class="serie-details-labels">
-                                <p><strong>Episodios:</strong></p>
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p>03 / 11</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>57:00</p>
                             </div>
                         </div>
                     </div>
@@ -110,25 +113,22 @@
             </section>
             <div id="ov1" class="overlay" style="display: none;">
                 <div class="serie-imagen">
-                    <img src="../media/anime/sakamoto-days.png" alt="Sakamoto Days">
+                    <img src="../media/anime/look-back.png" alt="Look Back">
                 </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">Sakamoto Days</h2>
+                  <h2 style="margin-top:5px">Look Back</h2>
                   <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Anime</p>
-                  <p><b>Estudio:</b> TMS Entertainment</p>
-                  <p><b>Generos:</b> Acción, Comedia</p>
-                  <p><b>Fecha de Publicación:</b> 11/01/2025 - ?</p>
-                  <p><b>Temporada:</b> Invierno 2025</p>
+                  <p><b>Tipo:</b> Película</p>
+                  <p><b>Estudio:</b> Studio DURIAN</p>
+                  <p><b>Generos:</b> Drama</p>
+                  <p><b>Fecha de Publicación:</b> 28/06/2024</p>
+                  <p><b>Temporada:</b> Verano 2024</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Visto desde:</b> 12/01/2025</p>
-                  <p><b>Visto hasta:</b> ?</p>
+                  <p><b>Visto:</b> 29/01/2025</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
                 </div>
             </div>
         </div>
-
-
 
     </main>
 

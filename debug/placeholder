@@ -6,7 +6,6 @@
         <chng-txt>Se ha agregado <a href="./" class="link">Placeholder</a></chng-txt>
     </chng>
 
-
 //* CHANGELOG (EDITADO) *\\
 
     <chng>
@@ -21,6 +20,12 @@
         <chng-dlt-icon class="chng-delete">[ <i class="fas fa-trash"></i> ]</chng-dlt-icon> 
         <chng-txt>Se han eliminado Placeholder</chng-txt>
     </chng>
+
+//* comandos cmd *\\
+
+rm -r <directorio> (Vaciar carpetas)
+python <archivo> (ejecutar python)
+
 
 //* Overlay titulo y subtitulo *\\
 
