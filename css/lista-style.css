@@ -132,6 +132,24 @@ main h4 > a {
     transform: translateX(-50%);
     border-radius: 15px;
   }
+
+  #autocomplete-list::-webkit-scrollbar {
+      width: 10px;
+  }
+  
+  #autocomplete-list::-webkit-scrollbar-track {
+      background: #e6cef8;
+  }
+  
+  #autocomplete-list::-webkit-scrollbar-thumb {
+      background: #5e337f;
+      border: 2px solid #4b2866;
+      border-radius: 10px;
+  }
+  
+  #autocomplete-list::-webkit-scrollbar-thumb:hover {
+      background: #8146ae;    
+  }
   
   #autocomplete-list li {
     padding: 10px;

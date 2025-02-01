@@ -651,7 +651,7 @@ th {
     gap: 10px;
     color: white;
     font-weight: bold;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 15px 15px;
     border: 4px solid #4b2866;
     height: 200px; /* Altura fija */
     width: 100%; /* Ancho del contenedor, puedes ajustarlo según sea necesario */
@@ -665,7 +665,8 @@ th {
   }
 
   .changelog-list-text::-webkit-scrollbar-track {
-    background: #ffffff00;
+    background: #4c3a5a;
+    border-radius: 5px;
   }
 
   .changelog-list-text::-webkit-scrollbar-thumb {
