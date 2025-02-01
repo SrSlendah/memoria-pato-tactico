@@ -5066,6 +5066,25 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     margin-bottom: 25px;
     margin-right: 50px;
 }
+  
+.sheets-selector > select::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sheets-selector > select::-webkit-scrollbar-track {
+  background: #8359a0;
+  border-radius: 5px;
+}
+
+.sheets-selector > select::-webkit-scrollbar-thumb {
+  background: #5e337f;
+  border: 2px solid #4b2866;
+  border-radius: 10px;
+}
+
+.sheets-selector > select::-webkit-scrollbar-thumb:hover {
+  background: #8146ae;
+}
 
 .sheets-selector > label {
     font-size:24px;
@@ -5175,16 +5194,20 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     width: 54px;
 }
 
+.wbh_cs_armas_empty {
+    background-color: #5d337e;
+}
+
 .wbh_cs_armas_bottomleft {
-    border-radius: 0 0 0 70px;
+    border-radius: 0 0 0 10px;
 }
 
 .wbh_cs_armas_bottomright {
-    border-radius: 0 0 10px 0;
+    border-radius: 0 0 20px 0;
 }
 
 .wbh_cs_armas_topleft {
-    border-radius: 10px 0 0 0;
+    border-radius: 20px 0 0 0;
 }
 
 .wbh_cs_armas_topright {
