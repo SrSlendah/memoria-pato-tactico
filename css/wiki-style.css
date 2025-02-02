@@ -5183,7 +5183,9 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 
 .wbh_cs_armas td, .wbh_cs_armas th{
     border: 3.5px solid #4b2866;
-    width: 65px;
+    width: 50px;
+    text-align: center; /* Centrado horizontal */
+    vertical-align: middle; /* Centrado vertical */
 }
 
 .wbh_cs_armas th {
@@ -5191,7 +5193,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 .wbh_cs_armas img {
-    width: 54px;
+    width: 40px;
 }
 
 .wbh_cs_armas_empty {
@@ -5214,40 +5216,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     border-radius: 0 10px 0 0;
 }
 
-@media screen and (max-width: 1100px) {
-    .wbh_cs_armas td, .wbh_cs_armas th {
-        width: 60px;
-        border: 2.5px solid #4b2866;
-    }
-
-    .wbh_cs_armas img {
-        width: 50px;
-    }
-}
-
-@media screen and (max-width: 1025px) {
-    .wbh_cs_armas td, .wbh_cs_armas th {
-        width: 55px;
-        border: 2.5px solid #4b2866;
-    }
-
-    .wbh_cs_armas img {
-        width: 46px;
-    }
-}
-
-@media screen and (max-width: 950px) {
-    .wbh_cs_armas td, .wbh_cs_armas th {
-        width: 50px;
-        border: 2.5px solid #4b2866;
-    }
-
-    .wbh_cs_armas img {
-        width: 42px;
-    }
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .wbh_cs_armas td, .wbh_cs_armas th {
         width: 45px;
         border: 2.5px solid #4b2866;
@@ -5258,7 +5227,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .wbh_cs_armas td, .wbh_cs_armas th {
         width: 40px;
         border: 2.5px solid #4b2866;
@@ -5269,18 +5238,28 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     }
 }
 
+@media screen and (max-width: 700px) {
+    .wbh_cs_armas td, .wbh_cs_armas th {
+        width: 35px;
+        border: 2.5px solid #4b2866;
+    }
+
+    .wbh_cs_armas img {
+        width: 30px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     
     .wbh_cs_armas_wrapper {
-        width: 75%;
-        max-width: 100%;
+        width: 550px;
+        max-width: 550px;
         margin: 0 auto;
         overflow-x: auto;
     }
 
     .wbh_cs_armas {
-        width: 625px;
-        overflow-x: auto;
+        width: 800px;
     }
 
     .wbh_cs_armas table {
@@ -5297,6 +5276,10 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 
     .wbh_cs_armas table {
         min-width: 100%;
+    }
+
+    .wbh_cs_armas img {
+        width: 37px;
     }
 }
 
