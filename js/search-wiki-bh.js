@@ -318,6 +318,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Po', url: '../wiki-bh/po' },
     { resultado: 'Poseidon Thatch', url: '../wiki-bh/poseidon-thatch' },
     { resultado: 'Princess Bubblegum', url: '../wiki-bh/princess-bubblegum' },
+    { resultado: 'Priya', url: '../wiki-bh/priya' },
     { resultado: 'Professor Vraxx', url: '../wiki-bh/professor-vraxx' },
     { resultado: 'Puella Papilio Scarlet', url: '../wiki-bh/puella-papilio-scarlet' },
     { resultado: 'Queen Beat Sidra', url: '../wiki-bh/queen-beat-sidra' },
