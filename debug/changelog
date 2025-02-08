@@ -47,6 +47,7 @@ se han agregado hashes al link de las secciones para que la navegacion sea mas c
 se ha reemplazado "twitter" por "x" en el pie de la pagina
 se ha quitado el enlace a discord y se a puesto el usuario en el pie de la pagina
 se ha cambiado el @ de X (Twitter)
+Se ha cambiado el metodo de representacion de la duracion de peliculas y series: 0:00:00 -> 0 h. 0 min.
 
 --------------------------------------------------------------------------------------------------
 
