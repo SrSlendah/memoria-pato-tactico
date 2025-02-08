@@ -1036,6 +1036,14 @@ footer {
     margin-bottom: 10px;
 }
 
+.serie-subsubtitulo {
+    font-size: 0.8rem; /* Tamaño del texto del título */
+    font-weight: bold;
+    color: #fff;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
 .serie-details {
     display: flex;
     justify-content: center; /* Centra el contenido horizontalmente */
