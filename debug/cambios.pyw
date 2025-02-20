@@ -14,9 +14,9 @@ def comparar_contenidos(carpeta, archivo_js):
     return diferencias
 
 def generar_reporte(directorios):
-    separador = "\n" + "*" * 50 + "\n"
+    separador = "\n" + "*" * 44 + "\n"
     reporte = [(separador, "")]
-    separador = "\n" + "*" * 50 + "\n"
+    separador = "\n" + "*" * 44 + "\n"
     
     for carpeta, archivo_js in directorios:
         nombre_js = os.path.basename(archivo_js)
@@ -64,7 +64,7 @@ def crear_interfaz():
     root.resizable(False, False)
     root.attributes('-toolwindow', True)
     root.title("Comparador de Archivos")
-    root.geometry("600x590")
+    root.geometry("400x610")
     
     frame = tk.Frame(root)
     frame.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
