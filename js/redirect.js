@@ -1,9 +1,15 @@
 function goTo(string) {
 
+// Otros
+
+    if (string == 'mc') {
+        window.location.href = "juegos/random-things"
+    }
+
 // Wiki
 
     if (string == 'wbh') {
-        window.location.href = "wiki/wiki-bh"
+        window.location.href = "juegos/wiki-bh"
     }
     
     if (string == 'wbh_bp_t1') {

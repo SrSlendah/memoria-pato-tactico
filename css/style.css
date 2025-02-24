@@ -921,25 +921,25 @@ footer {
         padding: 6px;
     }
 }
-.wikis-lista {
+.juegos-lista {
     display: grid;
-    grid-template-columns: repeat(1, 200px);
+    grid-template-columns: repeat(2, 200px);
     gap: 20px;
     justify-content: center;
 }
 
-.wikis-list-elemento {
+.juegos-list-elemento {
     text-align: center;
 }
 
-.wikis-list-imagen img {
+.juegos-list-imagen img {
     width: 100%;
     height: 200px;
     border-radius: 20px 20px 0 0;
     border: 4px solid #4b2866;
 }
 
-.wikis-list-titulo {
+.juegos-list-titulo {
     display: flex;
     justify-content: center;
     align-items: center;
