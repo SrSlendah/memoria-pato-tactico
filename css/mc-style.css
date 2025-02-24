@@ -366,6 +366,31 @@ footer {
     padding: 5px;
     font-size: 16px;
     cursor: pointer;
+    appearance: none;
+    background-color: #6f3c96;
+    border: 3.5px solid #4b2866;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.version-selector select:hover {
+    background-color: #8a4fb5;
+}
+
+.version-selector option {
+    background-color: #6f3c96;
+    color: #fff;
+    padding: 5px;
+}
+
+.version-selector option:hover {
+    background-color: #6f3c96;
+    color: white;
 }
 
 .header, .row {
@@ -400,10 +425,10 @@ footer {
 button {
     padding: 10px;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: #6f3c96;
+    border: 3px solid #4b2866;
     color: white;
-    border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 20px;
     transition: background-color 0.3s;
     display: flex;
@@ -414,11 +439,11 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #8a4fb5;
 }
 
-button:active {
-    background-color: #388e3c;
+button > i {
+    color: #b9b9b9;
 }
 
 @media (max-width: 850px) {
@@ -453,4 +478,17 @@ button:active {
     .row .cell:first-child {
         text-align: left;
     }
+}
+
+.topleft {
+    border-radius: 20px 0 0 0;
+}
+.topright {
+    border-radius: 0 20px 0 0;
+}
+.bottomright {
+    border-radius: 0 0 20px 0;
+}
+.bottomleft {
+    border-radius: 0 0 0 20px;
 }
