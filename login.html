@@ -10,13 +10,23 @@
     <link rel="stylesheet" href="css/login.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 
-    <script src="./js/login.js"></script>
     <script src="./js/menu.js"></script>
 
 
 </head>
 
 <body>
+
+    <script>
+
+        window.onload = function() {
+            if (document.cookie.includes("IsLoggedIn=true")) {
+                window.location.href = "./administracion";
+            }
+        };
+
+    </script>
+
     <header>
 
 
@@ -79,34 +89,38 @@
                 </form>
             </div>
         </div>
-
-        <script>
-            document.getElementById('loginForm').addEventListener('submit', function(event) {
-                event.preventDefault();
+        
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
     
-                var username = document.getElementById("username").value;
-                var password = document.getElementById("password").value;
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
     
-                var encodedUsername = "U2xlbmRhaA==";
-                var encodedUsername2 = "c2xlbmRhaA==";
-                var encodedPassword = "TW9uZ29sb3lleTEh";
+            var encodedUsername = "U2xlbmRhaA==";
+            var encodedUsername2 = "c2xlbmRhaA==";
+            var encodedPassword = "TW9uZ29sb3lleTEh";
     
-                var decodedUsername = atob(encodedUsername);
-                var decodedUsername2 = atob(encodedUsername2);
-                var decodedPassword = atob(encodedPassword);
+            var decodedUsername = atob(encodedUsername);
+            var decodedUsername2 = atob(encodedUsername2);
+            var decodedPassword = atob(encodedPassword);
     
-                if (username === "" || password === "") {
-                    document.getElementById("login_empty").style.display = "";
-                    document.getElementById("login_error").style.display = "none";
-                } else if ((username === decodedUsername || username === decodedUsername2) && (password === decodedPassword)) {
-                    window.localStorage.setItem("IsLoggedIn", true);
-                    window.location.href = "./administracion.html";
-                } else {
-                    document.getElementById("login_empty").style.display = "none";
-                    document.getElementById("login_error").style.display = "";
-                }
-            });
-        </script>
+            if (username === "" || password === "") {
+                document.getElementById("login_empty").style.display = "";
+                document.getElementById("login_error").style.display = "none";
+            } else if ((username === decodedUsername || username === decodedUsername2) && (password === decodedPassword)) {
+                
+                var expirationDate = new Date();
+                expirationDate.setTime(expirationDate.getTime() + (3 * 24 * 60 * 60 * 1000));
+                document.cookie = "IsLoggedIn=true; expires=" + expirationDate.toUTCString() + "; path=/";
+    
+                window.location.href = "./administracion";
+            } else {
+                document.getElementById("login_empty").style.display = "none";
+                document.getElementById("login_error").style.display = "";
+            }
+        });
+    </script>
 
     <div class="wave" style="height: 100px; overflow: hidden;margin-top:250px">
         <svg viewBox="0 0 500 150" preserveAspectRatio="none"

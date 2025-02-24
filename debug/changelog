@@ -50,6 +50,7 @@ se ha cambiado el @ de X (Twitter)
 Se ha cambiado el metodo de representacion de la duracion de peliculas y series: 0:00:00 -> 0 h. 0 min.
 Se ha renombrado la seccion de wikis a juegos
 Se ha agregado la pagina del texturepack de minecraft con los cambios y descargas
+Se ha modificado el script de login para usar cookies en lugar de localstorage
 
 --------------------------------------------------------------------------------------------------
 
