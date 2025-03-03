@@ -1,0 +1,164 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Festive Yeti Onyx - Brawlhalla Wiki</title>
+    <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/wiki-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/ir-arriba.js"></script>
+
+    <header>
+        <script src="../js/menu.js"></script>
+        
+        <section id="menu">
+            <div class="menu">
+
+                <a href="../juegos/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="../index">Inicio</a></li>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="menu-toggle" onclick="abrir_menu()"><img src="../media/menu.png" alt=""></button>
+        </section>
+
+        <section id="menu-overlay" class="menu-overlay" style="display: none;">
+            <div id="menu-overlay">
+                <div class="contenido-overlay">
+                    <a href="../juegos/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                  <hr style="margin-top:15px;margin-bottom:-15px;">
+                  <nav class="menu-ov-nav">
+                      <ul>
+                        <li><a href="../index">Inicio</a></li>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                      </ul>
+                  </nav>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 8px; right: 8px;" onclick="cerrar_menu()" title="Cerrar" class="cerrar-overlay">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="textos-header">
+            <h1>Brawlhalla Wiki</h1>
+            <h3>Festive Yeti Onyx</h3>
+        </section>
+
+
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2E2E2E; "></path>
+            </svg>
+        </div>
+
+
+    </header>
+
+
+    <main>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Buscar en la wiki de Brawlhalla...">
+          <ul id="autocomplete-list" style="display: none;"></ul>
+        </div>
+      
+        <script src="../js/search-wiki-bh.js"></script>
+
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/skins/onyx/festive-yeti-onyx.png">
+                    </div>
+
+                    <div class="leyenda-info" style="position: relative;">
+                        <h2 class="leyenda-titulo">Festive Yeti Onyx</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Precio:<br>
+                                        Exclusiva de<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140<br>
+                                    <a href="../wiki-bh/brawlhallidays" class="wbh-a-light"><img src="../media/wiki/bh/eventos/logos/brawlhallidays.png" style="width:16px;margin-right:5px">Brawlhallidays</a><br><br>
+                                    <a href="../wiki-bh/onyx" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/onyx.png" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
+
+        <section class="wbh-armas-lista">
+
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/onyx/armas/festive-yeti-onyx_penguins-pummel.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Penguin's Pummel</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/onyx/armas/festive-yeti-onyx_frostys-fury.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Frosty's Fury</div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>X</h4>
+                <p>@SrSlendah</p>
+            </div>
+            <div class="content-foo">
+                <h4>Discord</h4>
+                <p>@Slendah</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none" ;="" target=" _blank">Click</a></p>
+            </div>
+        </div>
+        <h2 class="titulo-final">© Slendah | Pato Táctico</h2>
+    </footer>
+
+
+</body></html>
