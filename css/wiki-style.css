@@ -5342,6 +5342,93 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     .eventos-lista {grid-template-columns: repeat(1, 300px)}
 }
 
+.eventos-titulos-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+}
+
+.eventos-titulos-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+    border: 4px solid #4b2866;
+    border-bottom: none;
+    padding: 10px;
+    margin-top: -30px;
+    height: 45px;
+}
+
+.eventos-titulos-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 0 0;
+    border: 4px solid #4b2866;
+    height: 45px;
+    padding: 10px;
+}
+
+.eventos-titulos-text > span, .eventos-titulos-text-abajo > span {
+    color: rgb(215, 255, 255);
+    font-size: 16px;
+    font-family: Arial Black;
+}
+
+.eventos-titulos-topleft {
+    border-radius: 20px 0 0 0;
+}
+
+.eventos-titulos-topright {
+    border-radius: 0 20px 0 0;
+}
+
+.eventos-titulos-bottomleft {
+    border-radius: 0 0 0 20px;
+}
+
+.eventos-titulos-bottomright {
+    border-radius: 0 0 20px 0;
+}
+
+@media screen and (max-width:730px){
+    .eventos-titulos-lista {
+        grid-template-columns: repeat(2, 250px);
+    }
+    .eventos-titulos-titulo, .eventos-titulos-text, .eventos-titulos-text-abajo {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .eventos-titulos-lista {
+        grid-template-columns: repeat(2, 200px);
+    }
+    .eventos-titulos-titulo, .eventos-titulos-text, .eventos-titulos-text-abajo {
+        width: 200px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:475px){
+    .eventos-titulos-lista {
+        grid-template-columns: repeat(2, 150px);
+    }
+    .eventos-titulos-titulo, .eventos-titulos-text, .eventos-titulos-text-abajo {
+        width: 150px;
+        font-size: 12px;
+    }
+}
 
 .wbh-a {
     color: #a964de;
