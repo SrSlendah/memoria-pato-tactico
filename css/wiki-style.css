@@ -6094,6 +6094,178 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     margin-top: -5px;
 }
 
+.eventos-comapñero-lista {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.eventos-comapñero-list-elemento {
+    text-align: center;
+}
+
+.eventos-comapñero-list-imagen {
+    position: relative;
+}
+
+.eventos-comapñero-list-arma {
+    position: absolute !important;
+    bottom: 5px;
+    right: 0px;
+    cursor: pointer;
+    background: rgba(94, 51, 127, 0.8);;
+    width:50px !important;
+    height:50px !important;
+    padding:2px !important;
+    border-radius: 15px 0 0 0 !important;
+}
+
+.eventos-comapñero-list-imagen img {
+    width: 100%;
+    height: 200px;
+    margin-top: -4px;
+    border: 4px solid #4b2866;
+    padding: 15px
+}
+
+.eventos-comapñero-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.eventos-comapñero-list-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.eventos-comapñero-list-texto-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 0;
+    border: 4px solid #4b2866;
+    border-top: none;
+    border-bottom: none;
+    height: 25px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.eventos-comapñero-list-texto-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 35px;
+    padding: 10px;
+}
+
+.eventos-gesto-lista {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.eventos-gesto-list-elemento {
+    text-align: center;
+}
+
+.eventos-gesto-list-imagen {
+    position: relative;
+}
+
+.eventos-gesto-list-arma {
+    position: absolute !important;
+    bottom: 5px;
+    right: 0px;
+    cursor: pointer;
+    background: rgba(94, 51, 127, 0.8);;
+    width:50px !important;
+    height:50px !important;
+    padding:2px !important;
+    border-radius: 15px 0 0 0 !important;
+}
+
+.eventos-gesto-list-imagen img {
+    width: 100%;
+    height: 200px;
+    margin-top: -4px;
+    border: 4px solid #4b2866;
+    padding: 15px
+}
+
+.eventos-gesto-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.eventos-gesto-list-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 50px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
 
 
 
@@ -6148,7 +6320,27 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 .evento-cincoavatares {
     grid-template-columns: repeat(5, 125px);
 }
-
+.evento-doscompañeros {
+    grid-template-columns: repeat(2, 200px);
+}
+.evento-trescompañeros {
+    grid-template-columns: repeat(3, 200px);
+}
+.evento-cuatrocompañeros {
+    grid-template-columns: repeat(4, 200px);
+}
+.evento-ungesto {
+    grid-template-columns: repeat(1, 200px);
+}
+.evento-dosgestos {
+    grid-template-columns: repeat(2, 200px);
+}
+.evento-tresgestos {
+    grid-template-columns: repeat(3, 200px);
+}
+.evento-cuatrogestos {
+    grid-template-columns: repeat(4, 200px);
+}
 
 
 .wbh-a {
