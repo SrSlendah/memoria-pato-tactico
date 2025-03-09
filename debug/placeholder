@@ -43,6 +43,7 @@ python <archivo> (ejecutar python)
 
 titulos
 color
+leyendas
 Paquetes
 Skins
 skins de arma
@@ -52,3 +53,5 @@ compañeros
 podios
 efectos ko
 gestos
+modos de juego
+mapas

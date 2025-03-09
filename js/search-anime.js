@@ -25,6 +25,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Darling in the FranXX', url: '../lista-anime/darling-in-the-franxx' },
     { resultado: 'Death Note', url: '../lista-anime/death-note' },
     { resultado: 'Dorohedoro', url: '../lista-anime/dorohedoro' },
+    { resultado: 'Dragon Ball', url: '../lista-anime/dragon-ball' },
     { resultado: 'Fairy Tail', url: '../lista-anime/fairy-tail' },
     { resultado: 'Fire Force', url: '../lista-anime/fire-force' },
     { resultado: 'Fuufu Ijou, Koibito Miman', url: '../lista-anime/fuufu-ijou-koibito-miman' },

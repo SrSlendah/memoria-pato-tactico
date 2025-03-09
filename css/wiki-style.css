@@ -4097,6 +4097,90 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     .crossover-skins-list-imagen img {height: auto;}
 }
 
+.crossover-skins_arma-lista {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.crossover-skins_arma-list-elemento {
+    text-align: center;
+}
+
+.crossover-skins_arma-list-imagen {
+    position: relative;
+}
+
+.crossover-skins_arma-list-leyenda {
+    position: absolute !important;
+    bottom: 5px;
+    right: 0px;
+    cursor: pointer;
+    background: rgba(94, 51, 127, 0.8);;
+    width:50px !important;
+    height:50px !important;
+    padding:2px !important;
+    border-radius: 15px 0 0 0 !important;
+}
+
+.crossover-skins_arma-list-imagen img {
+    width: 100%;
+    height: 150px;
+    margin-top: -4px;
+    border: 4px solid #4b2866;
+    padding: 15px
+}
+
+.crossover-skins_arma-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.crossover-skins_arma-list-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 50px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.unarma {
+    grid-template-columns: repeat(1, 150px);
+}
+.dosarmas {
+    grid-template-columns: repeat(2, 150px);
+}
+
+.tresarmas {
+    grid-template-columns: repeat(3, 150px);
+}
+
+.cuatroarmas {
+    grid-template-columns: repeat(4, 150px);
+}
+
 .crossover-podios-lista {
     display: grid;
     grid-template-columns: repeat(1, 200px);
@@ -4114,10 +4198,10 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 
 .crossover-podios-list-imagen img {
     width: 100%;
-    height: 350px;
+    height: 200px;
     margin-top: -4px;
     border: 4px solid #4b2866;
-    padding: 15px
+    padding: 5px
 }
 
 .crossover-podios-list-titulo {
