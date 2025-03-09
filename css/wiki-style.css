@@ -5516,7 +5516,6 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     position: absolute !important;
     bottom: 5px;
     right: 0px;
-    cursor: pointer;
     background: rgba(94, 51, 127, 0.8);;
     width:50px !important;
     height:50px !important;
@@ -5911,22 +5910,22 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     margin-top: -5px;
 }
 
-.evento-emojis-lista {
+.evento-emoji-lista {
     display: grid;
     grid-template-columns: repeat(6, 125px);
     gap: 20px;
     justify-content: center;
 }
 
-.evento-emojis-list-elemento {
+.evento-emoji-list-elemento {
     text-align: center;
 }
 
-.evento-emojis-list-imagen {
+.evento-emoji-list-imagen {
     position: relative;
 }
 
-.evento-emojis-list-imagen img {
+.evento-emoji-list-imagen img {
     width: 100%;
     height: auto;
     margin-top: -4px;
@@ -5934,7 +5933,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     padding: 5px
 }
 
-.evento-emojis-list-titulo {
+.evento-emoji-list-titulo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5952,7 +5951,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     font-size: 14px;
 }
 
-.evento-emojis-list-texto {
+.evento-emoji-list-texto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5969,22 +5968,22 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     margin-top: -5px;
 }
 
-.evento-avatares-lista {
+.evento-avatar-lista {
     display: grid;
     grid-template-columns: repeat(6, 125px);
     gap: 20px;
     justify-content: center;
 }
 
-.evento-avatares-list-elemento {
+.evento-avatar-list-elemento {
     text-align: center;
 }
 
-.evento-avatares-list-imagen {
+.evento-avatar-list-imagen {
     position: relative;
 }
 
-.evento-avatares-list-imagen img {
+.evento-avatar-list-imagen img {
     width: 100%;
     height: auto;
     margin-top: -4px;
@@ -5992,7 +5991,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     padding: 5px
 }
 
-.evento-avatares-list-titulo {
+.evento-avatar-list-titulo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6009,7 +6008,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     margin-top: -5px;
 }
 
-.evento-avatares-list-texto {
+.evento-avatar-list-texto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6164,7 +6163,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 
 .evento-compañero-lista {
     display: grid;
-    grid-template-columns: repeat(5, 200px);
+    grid-template-columns: repeat(5, 175px);
     gap: 20px;
     justify-content: center;
 }
@@ -6179,7 +6178,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 
 .evento-compañero-list-imagen img {
     width: 100%;
-    height: 200px;
+    height: 175px;
     margin-top: -4px;
     border: 4px solid #4b2866;
     padding: 15px
@@ -6338,42 +6337,30 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     grid-template-columns: repeat(4, 200px);
 }
 
-.evento-dosavatares {
-    grid-template-columns: repeat(2, 125px);
-}
+.evento-cincoavatares {grid-template-columns: repeat(5, 125px);}
+.evento-cuatroavatares {grid-template-columns: repeat(4, 125px);}
+.evento-tresavatares {grid-template-columns: repeat(3, 125px);}
+.evento-dosavatares {grid-template-columns: repeat(2, 125px);}
 
-.evento-tresavatares {
-    grid-template-columns: repeat(3, 125px);
-}
+.evento-cincoemojis {grid-template-columns: repeat(5, 125px);}
+.evento-cuatroemojis {grid-template-columns: repeat(4, 125px);}
+.evento-tresemojis {grid-template-columns: repeat(3, 125px);}
+.evento-dosemojis {grid-template-columns: repeat(2, 125px);}
 
-.evento-cuatroavatares {
-    grid-template-columns: repeat(4, 125px);
-}
+.evento-cuatrocompañeros {grid-template-columns: repeat(4, 175px);}
+.evento-trescompañeros {grid-template-columns: repeat(3, 175px);}
+.evento-doscompañeros {grid-template-columns: repeat(2, 175px);}
+.evento-uncompañero {grid-template-columns: repeat(1, 175px);}
 
-.evento-cincoavatares {
-    grid-template-columns: repeat(5, 125px);
-}
-.evento-doscompañeros {
-    grid-template-columns: repeat(2, 200px);
-}
-.evento-trescompañeros {
-    grid-template-columns: repeat(3, 200px);
-}
-.evento-cuatrocompañeros {
-    grid-template-columns: repeat(4, 200px);
-}
-.evento-ungesto {
-    grid-template-columns: repeat(1, 200px);
-}
-.evento-dosgestos {
-    grid-template-columns: repeat(2, 200px);
-}
-.evento-tresgestos {
-    grid-template-columns: repeat(3, 200px);
-}
-.evento-cuatrogestos {
-    grid-template-columns: repeat(4, 200px);
-}
+.evento-cuatrogestos {grid-template-columns: repeat(4, 200px);}
+.evento-tresgestos {grid-template-columns: repeat(3, 200px);}
+.evento-dosgestos {grid-template-columns: repeat(2, 200px);}
+.evento-ungesto {grid-template-columns: repeat(1, 200px);}
+
+.evento-cuatropodios {grid-template-columns: repeat(4, 200px);}
+.evento-trespodios {grid-template-columns: repeat(3, 200px);}
+.evento-dospodios {grid-template-columns: repeat(2, 200px);}
+.evento-unpodio {grid-template-columns: repeat(1, 200px);}
 
 @media (max-width: 1300px) {
     .eventos-lista {grid-template-columns: repeat(3, 300px)}
@@ -6382,8 +6369,20 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 @media screen and (max-width:1150px){
     .evento-paquete-lista {grid-template-columns: repeat(2, 250px);}
     .evento-skin-lista {grid-template-columns: repeat(4, 200px);}
+
     .evento-podio-lista {grid-template-columns: repeat(4, 200px);}
-    .evento-emojis-lista {grid-template-columns: repeat(5, 125px);}
+    .evento-cuatropodios {grid-template-columns: repeat(4, 200px);}
+    .evento-trespodios {grid-template-columns: repeat(3, 200px);}
+    .evento-dospodios {grid-template-columns: repeat(2, 200px);}
+    .evento-unpodio {grid-template-columns: repeat(1, 200px);}
+}
+
+@media screen and (max-width:1000px){
+    .evento-compañero-lista {grid-template-columns: repeat(4, 175px);}
+    .evento-cuatrocompañeros {grid-template-columns: repeat(4, 175px);}
+    .evento-trescompañeros {grid-template-columns: repeat(3, 175px);}
+    .evento-doscompañeros {grid-template-columns: repeat(2, 175px);}
+    .evento-uncompañero {grid-template-columns: repeat(1, 175px);}
 }
 
 @media (max-width: 975px) {
@@ -6392,11 +6391,33 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 
 @media screen and (max-width:900px){
     .evento-skin-lista {grid-template-columns: repeat(3, 200px);}
+
     .evento-podio-lista {grid-template-columns: repeat(3, 200px);}
+    .evento-cuatropodios {grid-template-columns: repeat(3, 200px);}
+    .evento-trespodios {grid-template-columns: repeat(3, 200px);}
+    .evento-dospodios {grid-template-columns: repeat(2, 200px);}
+    .evento-unpodio {grid-template-columns: repeat(1, 200px);}
+    
+    .evento-emoji-lista {grid-template-columns: repeat(5, 125px);}
+    .evento-cincoemojis {grid-template-columns: repeat(5, 125px);}
+    .evento-cuatroemojis {grid-template-columns: repeat(4, 125px);}
+    .evento-tresemojis {grid-template-columns: repeat(3, 125px);}
+    .evento-dosemojis {grid-template-columns: repeat(2, 125px);}
+
+    .evento-avatar-lista {grid-template-columns: repeat(5, 125px);}
+    .evento-cincoavatares {grid-template-columns: repeat(5, 125px);}
+    .evento-cuatroavatares {grid-template-columns: repeat(4, 125px);}
+    .evento-tresavatares {grid-template-columns: repeat(3, 125px);}
+    .evento-dosavatares {grid-template-columns: repeat(2, 125px);}
 }
 
 @media screen and (max-width:800px){
-    .evento-emojis-lista {grid-template-columns: repeat(4, 125px);}
+
+    .evento-compañero-lista {grid-template-columns: repeat(3, 175px);}
+    .evento-cuatrocompañeros {grid-template-columns: repeat(3, 175px);}
+    .evento-trescompañeros {grid-template-columns: repeat(3, 175px);}
+    .evento-doscompañeros {grid-template-columns: repeat(2, 175px);}
+    .evento-uncompañero {grid-template-columns: repeat(1, 175px);}
 }
 
 @media (max-width: 750px) {
@@ -6404,6 +6425,18 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     .evento-paquete-imagen {margin-bottom: 10px;}
     .evento-paquete-titulo {font-size: 1.25rem;}
     .evento-paquete-details {font-size: 0.9rem;}
+    
+    .evento-emoji-lista {grid-template-columns: repeat(4, 125px);}
+    .evento-cincoemojis {grid-template-columns: repeat(4, 125px);}
+    .evento-cuatroemojis {grid-template-columns: repeat(4, 125px);}
+    .evento-tresemojis {grid-template-columns: repeat(3, 125px);}
+    .evento-dosemojis {grid-template-columns: repeat(2, 125px);}
+    
+    .evento-avatar-lista {grid-template-columns: repeat(4, 125px);}
+    .evento-cincoavatares {grid-template-columns: repeat(4, 125px);}
+    .evento-cuatroavatares {grid-template-columns: repeat(4, 125px);}
+    .evento-tresavatares {grid-template-columns: repeat(3, 125px);}
+    .evento-dosavatares {grid-template-columns: repeat(2, 125px);}
 }
 
 @media screen and (max-width:730px){
@@ -6414,7 +6447,12 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 
 @media screen and (max-width:700px){
     .evento-skin-lista {grid-template-columns: repeat(2, 200px);}
+
     .evento-podio-lista {grid-template-columns: repeat(2, 200px);}
+    .evento-cuatropodios {grid-template-columns: repeat(2, 200px);}
+    .evento-trespodios {grid-template-columns: repeat(2, 200px);}
+    .evento-dospodios {grid-template-columns: repeat(2, 200px);}
+    .evento-unpodio {grid-template-columns: repeat(1, 200px);}
 }
 
 @media (max-width: 650px) {
@@ -6423,24 +6461,56 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 
 @media screen and (max-width:600px){
     .evento-paquete-lista {grid-template-columns: repeat(1, 250px);}
+
     .evento-titulo-lista {grid-template-columns: repeat(2, 200px);}
     .evento-titulo-titulo, .evento-titulo-text, .evento-titulo-text-abajo {width: 200px;font-size: 13px;}
-    .evento-emojis-lista {grid-template-columns: repeat(3, 125px);}
+
+    .evento-compañero-lista {grid-template-columns: repeat(2, 175px);}
+    .evento-cuatrocompañeros {grid-template-columns: repeat(2, 175px);}
+    .evento-trescompañeros {grid-template-columns: repeat(2, 175px);}
+    .evento-doscompañeros {grid-template-columns: repeat(2, 175px);}
+    .evento-uncompañero {grid-template-columns: repeat(1, 175px);}
+    
+    .evento-emoji-lista {grid-template-columns: repeat(3, 125px);}
+    .evento-cincoemojis {grid-template-columns: repeat(3, 125px);}
+    .evento-cuatroemojis {grid-template-columns: repeat(3, 125px);}
+    .evento-tresemojis {grid-template-columns: repeat(3, 125px);}
+    .evento-dosemojis {grid-template-columns: repeat(2, 125px);}
+    
+    .evento-avatar-lista {grid-template-columns: repeat(3, 125px);}
+    .evento-cincoavatares {grid-template-columns: repeat(3, 125px);}
+    .evento-cuatroavatares {grid-template-columns: repeat(3, 125px);}
+    .evento-tresavatares {grid-template-columns: repeat(3, 125px);}
+    .evento-dosavatares {grid-template-columns: repeat(2, 125px);}
 }
 
 @media screen and (max-width:500px){
     .evento-skin-lista {grid-template-columns: repeat(2, 175px);}
     .evento-skin-list-imagen img {height: 175px;}
+
     .evento-podio-lista {grid-template-columns: repeat(2, 175px);}
+    .evento-cuatropodios {grid-template-columns: repeat(2, 175px);}
+    .evento-trespodios {grid-template-columns: repeat(2, 175px);}
+    .evento-dospodios {grid-template-columns: repeat(2, 175px);}
+    .evento-unpodio {grid-template-columns: repeat(1, 175px);}
     .evento-podio-list-imagen img {height: 175px;}
-    .evento-compañero-lista {grid-template-columns: repeat(2, 175px);}
-    .evento-compañero-list-imagen img {height: 175px;}
 }
 
 @media screen and (max-width:475px){
     .evento-titulo-lista {grid-template-columns: repeat(2, 150px);}
     .evento-titulo-titulo, .evento-titulo-text, .evento-titulo-text-abajo {width: 150px;font-size: 12px;}
-    .evento-emojis-lista {grid-template-columns: repeat(2, 125px);}
+
+    .evento-emoji-lista {grid-template-columns: repeat(2, 125px);}
+    .evento-cincoemojis {grid-template-columns: repeat(2, 125px);}
+    .evento-cuatroemojis {grid-template-columns: repeat(2, 125px);}
+    .evento-tresemojis {grid-template-columns: repeat(2, 125px);}
+    .evento-dosemojis {grid-template-columns: repeat(2, 125px);}
+    
+    .evento-avatar-lista {grid-template-columns: repeat(2, 125px);}
+    .evento-cincoavatares {grid-template-columns: repeat(2, 125px);}
+    .evento-cuatroavatares {grid-template-columns: repeat(2, 125px);}
+    .evento-tresavatares {grid-template-columns: repeat(2, 125px);}
+    .evento-dosavatares {grid-template-columns: repeat(2, 125px);}
 }
 
 
