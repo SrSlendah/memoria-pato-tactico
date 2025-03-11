@@ -73,6 +73,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Brawldown', url: '../wiki-bh/brawldown' },
     { resultado: 'Brawldown Ring', url: '../wiki-bh/brawldown-ring' },
     { resultado: 'Brawlhalla Fest', url: '../wiki-bh/brawlhalla-fest' },
+    { resultado: 'Brawlhallidays', url: '../wiki-bh/brawlhallidays' },
     { resultado: 'Brawlhalloween', url: '../wiki-bh/brawlhalloween' },
     { resultado: 'Brawlhaven', url: '../wiki-bh/brawlhaven' },
     { resultado: 'Brynn', url: '../wiki-bh/brynn' },
