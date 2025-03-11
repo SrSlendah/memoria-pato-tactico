@@ -5561,9 +5561,49 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     border-radius: 0 0 20px 20px;
     border: 4px solid #4b2866;
     border-top: none;
-    height: 50px;
+    height: 80px;
     padding: 10px;
     margin-top: -5px;
+}
+
+.evento-color-list-texto-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 0;
+    border: 4px solid #4b2866;
+    border-top: none;
+    border-bottom: none;
+    height: 45px;
+    padding: 10px;
+    margin-top: -5px;
+    font-size: 11.6px;
+}
+
+.evento-color-list-texto-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 35px;
+    padding: 10px;
+}
+
+.evento-color-list-texto-bottom i {
+    font-size:13px;
+    font-weight: normal;
 }
 
 .evento-paquete-lista {
@@ -6316,9 +6356,48 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     border-radius: 0 0 20px 20px;
     border: 4px solid #4b2866;
     border-top: none;
-    height: 50px;
+    height: 60px;
     padding: 10px;
     margin-top: -5px;
+}
+
+.evento-gesto-list-texto-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 0;
+    border: 4px solid #4b2866;
+    border-top: none;
+    border-bottom: none;
+    height: 35px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.evento-gesto-list-texto-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 25px;
+    padding: 10px;
+}
+
+.evento-gesto-list-texto-bottom i {
+    font-size:13px;
+    font-weight: normal;
 }
 
 
@@ -6346,6 +6425,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 .evento-cuatroemojis {grid-template-columns: repeat(4, 125px);}
 .evento-tresemojis {grid-template-columns: repeat(3, 125px);}
 .evento-dosemojis {grid-template-columns: repeat(2, 125px);}
+.evento-unemoji {grid-template-columns: repeat(1, 125px);}
 
 .evento-cuatrocompañeros {grid-template-columns: repeat(4, 175px);}
 .evento-trescompañeros {grid-template-columns: repeat(3, 175px);}
@@ -6361,6 +6441,9 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 .evento-trespodios {grid-template-columns: repeat(3, 200px);}
 .evento-dospodios {grid-template-columns: repeat(2, 200px);}
 .evento-unpodio {grid-template-columns: repeat(1, 200px);}
+
+.evento-doscolores {grid-template-columns: repeat(2, 200px);}
+.evento-trescolores {grid-template-columns: repeat(3, 200px);}
 
 @media (max-width: 1300px) {
     .eventos-lista {grid-template-columns: repeat(3, 300px)}
@@ -6403,6 +6486,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     .evento-cuatroemojis {grid-template-columns: repeat(4, 125px);}
     .evento-tresemojis {grid-template-columns: repeat(3, 125px);}
     .evento-dosemojis {grid-template-columns: repeat(2, 125px);}
+    .evento-unemoji {grid-template-columns: repeat(1, 125px);}
 
     .evento-avatar-lista {grid-template-columns: repeat(5, 125px);}
     .evento-cincoavatares {grid-template-columns: repeat(5, 125px);}
@@ -6431,6 +6515,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     .evento-cuatroemojis {grid-template-columns: repeat(4, 125px);}
     .evento-tresemojis {grid-template-columns: repeat(3, 125px);}
     .evento-dosemojis {grid-template-columns: repeat(2, 125px);}
+    .evento-unemoji {grid-template-columns: repeat(1, 125px);}
     
     .evento-avatar-lista {grid-template-columns: repeat(4, 125px);}
     .evento-cincoavatares {grid-template-columns: repeat(4, 125px);}
@@ -6453,6 +6538,9 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     .evento-trespodios {grid-template-columns: repeat(2, 200px);}
     .evento-dospodios {grid-template-columns: repeat(2, 200px);}
     .evento-unpodio {grid-template-columns: repeat(1, 200px);}
+
+    .evento-doscolores {grid-template-columns: repeat(2, 200px);}
+    .evento-trescolores {grid-template-columns: repeat(2, 200px);}
 }
 
 @media (max-width: 650px) {
@@ -6476,6 +6564,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     .evento-cuatroemojis {grid-template-columns: repeat(3, 125px);}
     .evento-tresemojis {grid-template-columns: repeat(3, 125px);}
     .evento-dosemojis {grid-template-columns: repeat(2, 125px);}
+    .evento-unemoji {grid-template-columns: repeat(1, 125px);}
     
     .evento-avatar-lista {grid-template-columns: repeat(3, 125px);}
     .evento-cincoavatares {grid-template-columns: repeat(3, 125px);}
@@ -6494,6 +6583,9 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     .evento-dospodios {grid-template-columns: repeat(2, 175px);}
     .evento-unpodio {grid-template-columns: repeat(1, 175px);}
     .evento-podio-list-imagen img {height: 175px;}
+
+    .evento-doscolores {grid-template-columns: repeat(1, 200px);}
+    .evento-trescolores {grid-template-columns: repeat(1, 200px);}
 }
 
 @media screen and (max-width:475px){
@@ -6505,6 +6597,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     .evento-cuatroemojis {grid-template-columns: repeat(2, 125px);}
     .evento-tresemojis {grid-template-columns: repeat(2, 125px);}
     .evento-dosemojis {grid-template-columns: repeat(2, 125px);}
+    .evento-unemoji {grid-template-columns: repeat(1, 125px);}
     
     .evento-avatar-lista {grid-template-columns: repeat(2, 125px);}
     .evento-cincoavatares {grid-template-columns: repeat(2, 125px);}
