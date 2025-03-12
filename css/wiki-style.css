@@ -5626,7 +5626,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     height: 200px;
     margin-top: -4px;
     border: 4px solid #4b2866;
-    padding: 15px
+    padding: 5px
 }
 
 .evento-paquete-list-titulo {
@@ -6276,6 +6276,23 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     margin-top: -5px;
 }
 
+.evento-compañero-list-texto-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62576b70;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 0;
+    border: 4px solid #4b2866;
+    border-top: none;
+    border-bottom: none;
+    height: 25px;
+    padding: 10px;
+}
+
 .evento-compañero-list-texto-bottom {
     display: flex;
     justify-content: center;
@@ -6288,7 +6305,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     border-radius: 0 0 20px 20px;
     border: 4px solid #4b2866;
     border-top: none;
-    height: 35px;
+    height: 25px;
     padding: 10px;
 }
 
@@ -6403,18 +6420,10 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 
 
 
-
-.evento-dositems {
-    grid-template-columns: repeat(2, 200px);
-}
-
-.evento-tresitems {
-    grid-template-columns: repeat(3, 200px);
-}
-
-.evento-cuatroitems {
-    grid-template-columns: repeat(4, 200px);
-}
+/* .evento-*items = contenido de paquetes */
+.evento-dositems {grid-template-columns: repeat(2, 200px);}
+.evento-tresitems {grid-template-columns: repeat(3, 200px);}
+.evento-cuatroitems {grid-template-columns: repeat(4, 200px);}
 
 .evento-cincoavatares {grid-template-columns: repeat(5, 125px);}
 .evento-cuatroavatares {grid-template-columns: repeat(4, 125px);}
