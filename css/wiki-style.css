@@ -2007,6 +2007,12 @@ footer {
     color: #a3a3a3;
 }
 
+.bp-reward-titulo {
+    color: rgb(153, 0, 255);
+    font-size: 16px;
+    font-family: "Arial Black";
+}
+
 .bp-cuatro-recompensas {
     display: grid;
     grid-template-columns: 1fr 1fr;
