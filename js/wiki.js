@@ -1023,6 +1023,42 @@ function cambiar(id) {
       imagen.src = "../media/wiki/bh/pase-batalla/10/podio-lvl1.png";
       nivel.textContent = "Nivel 1";
     }
+  } else if (id === "ascendantazoth") { // TEMPORADA 11 (Azoth)
+    var imagen = document.getElementById("ascendantazoth-foto");
+    var nivel = document.getElementById("ascendantazoth-nivel");
+    var arma1img = document.getElementById("ascendantazoth-arma1-foto");
+    var arma2img = document.getElementById("ascendantazoth-arma2-foto");
+
+    if (imagen.src.includes("/ascendant-azoth_lvl1.png")) {
+      imagen.src = "../media/wiki/bh/skins/azoth/ascendant-azoth_lvl2.png";
+      nivel.textContent = "Nivel 2";
+      arma1img.src = "../media/wiki/bh/skins/azoth/armas/ascendant-azoth_empress-favor_lvl2.png";
+      arma2img.src = "../media/wiki/bh/skins/azoth/armas/ascendant-azoth_lich-slayer_lvl2.png";
+    } else if (imagen.src.includes("/ascendant-azoth_lvl2.png")) {
+      imagen.src = "../media/wiki/bh/skins/azoth/ascendant-azoth_lvl3.png";
+      nivel.textContent = "Nivel 3";
+      arma1img.src = "../media/wiki/bh/skins/azoth/armas/ascendant-azoth_empress-favor_lvl3.png";
+      arma2img.src = "../media/wiki/bh/skins/azoth/armas/ascendant-azoth_lich-slayer_lvl3.png";
+    } else {
+      imagen.src = "../media/wiki/bh/skins/azoth/ascendant-azoth_lvl1.png";
+      nivel.textContent = "Nivel 1";
+      arma1img.src = "../media/wiki/bh/skins/azoth/armas/ascendant-azoth_empress-favor_lvl1.png";
+      arma2img.src = "../media/wiki/bh/skins/azoth/armas/ascendant-azoth_lich-slayer_lvl1.png";
+    }
+  } else if (id === "fallofixanocala") { // Temporada 11 (Podio)
+    var imagen = document.getElementById("podio-foto");
+    var nivel = document.getElementById("podio-lvl");
+
+    if (imagen.src.includes("/podio-lvl1.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/11/podio-lvl2.png";
+      nivel.textContent = "Nivel 2";
+    } else if (imagen.src.includes("/podio-lvl2.png")) {
+      imagen.src = "../media/wiki/bh/pase-batalla/11/podio-lvl3.png";
+      nivel.textContent = "Nivel 3";
+    } else {
+      imagen.src = "../media/wiki/bh/pase-batalla/11/podio-lvl1.png";
+      nivel.textContent = "Nivel 1";
+    }
   }
 
 
