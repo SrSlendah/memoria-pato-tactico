@@ -22,6 +22,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Metaphor: ReFantazio', url: '../lista-manga/metaphor-refantazio' },
     { resultado: 'Nanatsu no Taizai', url: '../lista-manga/nanatsu-no-taizai' },
     { resultado: 'One Piece', url: '../lista-manga/one-piece' },
+    { resultado: 'Sakamoto Days', url: '../lista-manga/sakamoto-days' },
     { resultado: 'Solo Leveling', url: '../lista-manga/solo-leveling' },
   ];
 
