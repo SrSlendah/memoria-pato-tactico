@@ -93,6 +93,10 @@ function goTo(string) {
         window.location.href = "../lista-manga/one-piece"
     };
 
+    if (string == 'manga_sakamoto') {
+        window.location.href = "../lista-manga/sakamoto-days"
+    };
+
     if (string == 'manga_sololvl') {
         window.location.href = "../lista-manga/solo-leveling"
     };
@@ -141,6 +145,10 @@ function goTo(string) {
 
     if (string == 'anime_onepiece') {
         window.location.href = "../lista-anime/one-piece"
+    };
+
+    if (string == 'anime_sakamoto') {
+        window.location.href = "../lista-anime/sakamoto-days"
     };
 
     if (string == 'anime_sololvl') {

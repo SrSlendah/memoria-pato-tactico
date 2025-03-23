@@ -240,6 +240,10 @@ th {
       margin: 0 10px;
 }
 
+.secciones {
+    margin-bottom: -15px;
+}
+
 .secciones-img {
     border: 5px solid #4b2866;
     width: 100px;
