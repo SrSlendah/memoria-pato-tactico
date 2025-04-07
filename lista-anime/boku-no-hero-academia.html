@@ -92,6 +92,7 @@
             <span class="separador_btn"></span>
             <a href="#temporadas"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button></a>
             <a href="#peliculas"><button id="sec2-btn">Películas</button></a>
+            <a href="#otros"><button id="sec3-btn">Otros</button></a>
         </div>
 
         
@@ -410,7 +411,7 @@
 
         </section>
 
-        <section id="sec2" style="display:none">
+        <section id="sec2">
             
             <div class="serie-container">
                 <section class="serie">
@@ -545,6 +546,59 @@
                 </div>
             </div>
         </section>
+
+        <section id="sec3">
+            
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/anime/vigilante-boku-no-hero-academia-illegals.png">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(11)">
+                            <h2 class="serie-titulo">Vigilante:</h2>
+                            <h3 class="serie-subtitulo">Boku no Hero Academia Illegals</h3>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Tipo:</strong></p>
+                                    <p><strong>Estado:</strong></p>
+                                    <p><strong>Episodios:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p>Historia Paralela</p>
+                                    <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                    <p>01 / 13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="ov11" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/vigilante-boku-no-hero-academia-illegals.png">
+                    </div>
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px">Vigilante:</h2>
+                      <h3 style="font-size:15px">Boku no Hero Academia Illegals</h3>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Tipo:</b> Anime</p>
+                      <p><b>Estudio:</b> Bones Film</p>
+                      <p><b>Generos:</b> Acción</p>
+                      <p><b>Fecha de Publicación:</b> 07/04/2025 - ?</p>
+                      <p><b>Temporada:</b> Primavera 2025</p>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Visto desde:</b> 07/04/2025</p>
+                      <p><b>Visto hasta:</b> ?</p>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(11)" title="Cerrar">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+
     </main>
 
 

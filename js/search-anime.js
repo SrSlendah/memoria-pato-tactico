@@ -95,6 +95,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Tensei Shitara Ken Deshita', url: '../lista-anime/tensei-shitara-ken-deshita' },
     { resultado: 'That Time I Got Reincarnated as a Slime', url: '../lista-anime/that-time-i-got-reincarnated-as-a-slime' },
     { resultado: 'The Eminence in Shadow', url: '../lista-anime/the-eminence-in-shadow' },
+    { resultado: 'To Be Hero X', url: '../lista-anime/to-be-hero-x' },
     { resultado: 'Tokyo Ghoul', url: '../lista-anime/tokyo-ghoul' },
     { resultado: 'Tokyo Revengers', url: '../lista-anime/tokyo-revengers' },
     { resultado: 'Tonikaku Kawaii', url: '../lista-anime/tonikaku-kawaii' },
