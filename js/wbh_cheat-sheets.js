@@ -1,28 +1,51 @@
-// Facilitar misiones
+document.addEventListener('DOMContentLoaded', function() {
+    var divs = document.querySelectorAll('div[data-tags]');
+    divs.forEach(function(div) {
+        var tags = div.getAttribute('data-tags').split(',');
+        if (tags.indexOf('se-conocen-valhalla') !== -1) {
+            div.style.display = 'none';
+        }
+        if (tags.indexOf('se-conocen-asgard') !== -1) {
+            div.style.display = 'none';
+        }
+    });
+});
 
-function filterTables() {
-  var selectedArma = document.getElementById('arma').value;
-  var selectedFiltro = document.getElementById('filtro').value;
+function filtroLeyendas() {
+    var selectedArma = document.getElementById('arma').value;
+    var selectedFiltro = document.getElementById('filtro').value;
 
-  var tables = document.querySelectorAll('table[data-tags]');
-  tables.forEach(function(table) {
-      var tags = table.getAttribute('data-tags').split(',');
-      var showTable = true;
+    var divs = document.querySelectorAll('div[data-tags]');
+    divs.forEach(function(div) {
+        var tags = div.getAttribute('data-tags').split(',');
+        var showDiv = true;
 
-      if (selectedArma !== '' && tags.indexOf(selectedArma) === -1) {
-          showTable = false;
-      }
+        if (tags.indexOf('se-conocen-valhalla') !== -1) {
+            if (selectedArma !== 'se-conocen-valhalla' && selectedFiltro !== 'se-conocen-valhalla') {
+                showDiv = false;
+            }
+        }
+        
+        if (tags.indexOf('se-conocen-asgard') !== -1) {
+            if (selectedArma !== 'se-conocen-asgard' && selectedFiltro !== 'se-conocen-asgard') {
+                showDiv = false;
+            }
+        }
 
-      if (selectedFiltro !== '' && tags.indexOf(selectedFiltro) === -1) {
-          showTable = false;
-      }
+        if (selectedArma !== '' && tags.indexOf(selectedArma) === -1) {
+            showDiv = false;
+        }
 
-      if (showTable) {
-          table.style.display = 'table';
-      } else {
-          table.style.display = 'none';
-      }
-  });
+        if (selectedFiltro !== '' && tags.indexOf(selectedFiltro) === -1) {
+            showDiv = false;
+        }
+
+        if (showDiv) {
+            div.style.display = 'block';
+        } else {
+            div.style.display = 'none';
+        }
+    });
 }
 
-filterTables();
+filtroLeyendas();

@@ -7,27 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cofre de Odin - Brawlhalla Wiki</title>
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/lista-style.css">
+    <link rel="stylesheet" href="../css/wiki-style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
 
     <header>
         <script src="../js/menu.js"></script>
         
-        <section id="menu">
-            <div class="menu">
+<section id="menu">
+    <div class="menu">
 
-                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+        <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+        <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="logo-wbh"></a>
 
                 <nav>
                     <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -43,13 +44,14 @@
         <section id="menu-overlay" class="menu-overlay" style="display: none;">
             <div id="menu-overlay">
                 <div class="contenido-overlay">
-                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="menu-ov-logo-wbh"></a>
                   <hr style="margin-top:15px;margin-bottom:-15px;">
                   <nav class="menu-ov-nav">
                       <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -88,207 +90,130 @@
       
         <script src="../js/search-wiki-bh.js"></script>
 
-        <table style="margin-top:20px;width:30%" class="wbh-table">
-            <tr>
-                <th colspan="4" class="info-title" style="height:5px">Cofre de Odin</th>
-            </tr>
-            <tr>
-                <td style="width:250px;height:250px" rowspan="3"><img src="../media/wiki/bh/cofres/cofre-odin.png" style="width:250px;height:250px"></td>
-                <th style="height:30px;width:175px">Precio</th>
-            </tr>
-            <tr>
-                <td>
-                    <b><img src="../media/wiki/bh/iconos/mammoth.png" alt=""> 100 por apertura</b>
-                </td>
-            </tr>
-        </table>
+        <div class="cofre-container">
+            <section class="cofre">
+                <div class="cofre-elemento">
+                    <div class="cofre-imagen">
+                        <img src="../media/wiki/bh/cofres/cofre-odin.png" alt="Cofre">
+                    </div>
 
-        <h2 align="center">Skins Exclusivas</h2>
+                    <div class="cofre-info">
+                        <h2 class="cofre-titulo">Cofre de Odin</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="cofre-details">
+                            <div class="cofre-details-labels">
+                                <p>
+                                    <strong>
+                                        Precio:<br><br>
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="cofre-details-values">
+                                <p><img src="../media/wiki/bh/iconos/mammoth.png" alt=""> 100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table>
-            <tr>
-                <td class="wbh-img">
-                    <a href="./forgeheart-teros">
-                        <img src="../media/wiki/bh/skins/teros/forgeheart-teros.png" alt="">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                    <a href="./warchief-bodvar">
-                        <img src="../media/wiki/bh/skins/bodvar/warchief-bodvar.png" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <th class="info-title">
-                    <a href="./forgeheart-teros">
-                        Forgeheart Teros
-                    </a>
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                    <a href="./warchief-bodvar">
-                        Warchief Bodvar
-                    </a>
-                </th>
-            </tr>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins Exclusivas</h2>
 
-        <h2 align="center">Skins</h2>
+        <section class="cofre-skins-lista dosskins">
 
-        <table style="margin-top:25px">
-            <tr>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/thatch/cursed-gold-thatch.png" alt="">
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/orion/harbinger-orion.png" alt="">
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/sir-roland/king-roland.png" alt="">
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/lucien/dark-of-night-lucien.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <th class="info-title">
-                        Cursed Gold Thatch
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                        Harbinger Orion
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                        King Roland
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                        Dark of Night Lucien
-                </th>
-            </tr>
-        </table>
+            <div class="cofre-skins-list-elemento">
+                <a href="./forgeheart-teros" class="wbh-a-nocolor">
+                    <div class="cofre-skins-list-titulo">Forgeheart Teros</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/teros/forgeheart-teros.png"></div>
+                </a>
+            </div>
 
-        <table style="margin-top:25px">
-            <tr>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/hattori/nightblade-hattori.png" alt="">
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/ember/nightshade-ember.png" alt="">
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/gnash/jurassic-gnash.png" alt="">
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/azoth/lichlord-azoth.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <th class="info-title">
-                        Nightblade Hattori
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                        Nightshade Ember
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                        Jurassic Gnash
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                        Lichlord Azoth
-                </th>
-            </tr>
-        </table>
+            <div class="cofre-skins-list-elemento">
+                <a href="./warchief-bodvar" class="wbh-a-nocolor">
+                    <div class="cofre-skins-list-titulo">Warchief Bodvar</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/bodvar/warchief-bodvar.png"></div>
+                </a>
+            </div>
 
-        <table style="margin-top:25px">
-            <tr>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/ulgrim/arcanium-ulgrim.png" alt="">
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/koji/demon-ogre-koji.png" alt="">
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/diana/wyrmslayer-diana.png" alt="">
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/queen-nai/snake-goddess-nai.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <th class="info-title">
-                        Arcanium Ulgrim
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                        Demon Ogre Koji
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                        Wyrmslayer Diana
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                        Snake Goddess Nai
-                </th>
-            </tr>
-        </table>
+        </section>
 
-        <table style="margin-top:25px">
-            <tr>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/jhala/orc-raider-jhala.png" alt="">
-                </td>
-                <td></td>
-                <td></td>
-                <td class="wbh-img">
-                        <img src="../media/wiki/bh/skins/kor/armored-kor.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <th class="info-title">
-                        Orc Raider Jhala
-                </th>
-                <td></td>
-                <td></td>
-                <th class="info-title">
-                        Armored Kor
-                </th>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins</h2>
+
+        <section class="cofre-skins-lista">
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">Cursed Gold Thatch</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/thatch/cursed-gold-thatch.png"></div>
+            </div>
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">Harbinger Orion</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/orion/harbinger-orion.png"></div>
+            </div>
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">King Roland</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/sir-roland/king-roland.png"></div>
+            </div>
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">Dark of Night Lucien</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/lucien/dark-of-night-lucien.png"></div>
+            </div>
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">Nightblade Hattori</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/hattori/nightblade-hattori.png"></div>
+            </div>
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">Nightshade Ember</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/ember/nightshade-ember.png"></div>
+            </div>
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">Jurassic Gnash</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/gnash/jurassic-gnash.png"></div>
+            </div>
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">Lichlord Azoth</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/azoth/lichlord-azoth.png"></div>
+            </div>
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">Arcanium Ulgrim</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/ulgrim/arcanium-ulgrim.png"></div>
+            </div>
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">Demon Ogre Koji</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/koji/demon-ogre-koji.png"></div>
+            </div>
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">Wyrmslayer Diana</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/diana/wyrmslayer-diana.png"></div>
+            </div>
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">Snake Goddess Nai</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/queen-nai/snake-goddess-nai.png"></div>
+            </div>
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">Orc Raider Jhala</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/jhala/orc-raider-jhala.png"></div>
+            </div>
+
+            <div class="cofre-skins-list-elemento">
+                <div class="cofre-skins-list-titulo">Armored Kor</div>
+                    <div class="cofre-skins-list-imagen"><img src="../media/wiki/bh/skins/kor/armored-kor.png"></div>
+            </div>
+        </section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="../js/buscador.js"></script>
@@ -298,12 +223,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;" target="_blank">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

@@ -9,11 +9,12 @@
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
     <script src="../js/overlay.js"></script>
@@ -33,7 +34,7 @@
                         <li><a href="../index">inicio</a></li>
                         <li><a href="../anime">Anime</a></li>
                         <li><a href="../cine">Cine</a></li>
-                        <li><a href="../wikis">Wiki</a></li>
+                        <li><a href="../juegos">Juegos</a></li>
                         <li><a href="../login">Admin</a></li>
                     </ul>
                 </nav>
@@ -51,7 +52,7 @@
                           <li><a href="../index">inicio</a></li>
                           <li><a href="../anime">Anime</a></li>
                           <li><a href="../cine">Cine</a></li>
-                          <li><a href="../wikis">Wiki</a></li>
+                          <li><a href="../juegos">Juegos</a></li>
                           <li><a href="../login">Admin</a></li>
                       </ul>
                   </nav>
@@ -74,7 +75,6 @@
             </svg>
         </div>
 
-
     </header>
 
 
@@ -88,10 +88,9 @@
         <script src="../js/anime.js"></script>
 
         <div class="secciones" align="center">
-            <button id="sec1-btn" onclick="showSection(1);" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button>
-            <button id="sec2-btn" onclick="showSection(2);">Historias Paralelas</button>
-            <button id="sec3-btn" onclick="showSection(3);">OVAs</button>
-            <button id="sec4-btn" onclick="showSection(4);">Películas</button>
+            <a href="#temporadas"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button></a>
+            <a href="#peliculas"><button id="sec2-btn">Películas</button></a>
+            <a href="#otros"><button id="sec3-btn">Otros</button></a>
         </div>
 
         <section id="sec1">
@@ -104,7 +103,7 @@
                         </div>
                         <div class="serie-info" style="position: relative;">
                             <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
-                            <h2 class="serie-titulo">Kono Subarashii Sekai ni Shukufuku wo!</h2>
+                            <h2 class="serie-titulo" style="font-size:15px">Kono Subarashii Sekai ni Shukufuku wo!</h2>
                             <hr class="info-sep">
                             <div class="serie-details">
                                 <div class="serie-details-labels">
@@ -122,7 +121,7 @@
                         <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
                     </div>
                     <div class="contenido-overlay">
-                    <h2 style="margin-top:5px;text-align:center">Kono Subarashii Sekai ni Shukufuku wo!</h2>
+                    <h2 style="margin-top:5px;font-size:20px">Kono Subarashii Sekai ni Shukufuku wo!</h2>
                     <hr style="margin-top:15px;margin-bottom:15px;">
                     <p><b>Tipo:</b> Anime</p>
                     <p><b>Estudio:</b> Studio Deen</p>
@@ -147,7 +146,7 @@
                         </div>
                         <div class="serie-info" style="position: relative;">
                             <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(2)">
-                            <h2 class="serie-titulo">Kono Subarashii Sekai ni Shukufuku wo! 2</h2>
+                            <h2 class="serie-titulo" style="font-size:14px">Kono Subarashii Sekai ni Shukufuku wo! 2</h2>
                             <hr class="info-sep">
                             <div class="serie-details">
                                 <div class="serie-details-labels">
@@ -165,7 +164,7 @@
                         <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-s2.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
                     </div>
                     <div class="contenido-overlay">
-                      <h2 style="margin-top:5px;text-align:center">Kono Subarashii Sekai ni Shukufuku wo! 2</h2>
+                      <h2 style="margin-top:5px;font-size:20px">Kono Subarashii Sekai ni Shukufuku wo! 2</h2>
                       <hr style="margin-top:15px;margin-bottom:15px;">
                       <p><b>Tipo:</b> Anime</p>
                       <p><b>Estudio:</b> Studio Deen</p>
@@ -190,7 +189,7 @@
                         </div>
                         <div class="serie-info" style="position: relative;">
                             <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(3)">
-                            <h2 class="serie-titulo">Kono Subarashii Sekai ni Shukufuku wo! 3</h2>
+                            <h2 class="serie-titulo" style="font-size:14px">Kono Subarashii Sekai ni Shukufuku wo! 3</h2>
                             <hr class="info-sep">
                             <div class="serie-details">
                                 <div class="serie-details-labels">
@@ -208,7 +207,7 @@
                         <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-s3.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
                     </div>
                     <div class="contenido-overlay">
-                      <h2 style="margin-top:5px;text-align:center">Kono Subarashii Sekai ni Shukufuku wo! 3</h2>
+                      <h2 style="margin-top:5px;font-size:20px">Kono Subarashii Sekai ni Shukufuku wo! 3</h2>
                       <hr style="margin-top:15px;margin-bottom:15px;">
                       <p><b>Tipo:</b> Anime</p>
                       <p><b>Estudio:</b> Drive</p>
@@ -224,46 +223,49 @@
             </div>
 
         </section>
-        
+
         <section id="sec2" style="display: none">
             
             <div class="serie-container">
                 <section class="serie">
                     <div class="serie-elemento">
                         <div class="serie-imagen">
-                            <img src="../media/anime/kono-subarashii-sekai-ni-bakuen-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
+                            <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-movie-kurenai-densetsu.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
                         </div>
                         <div class="serie-info" style="position: relative;">
-                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(4)">
-                            <h2 class="serie-titulo">Kono Subarashii Sekai ni Bakuen wo!</h2>
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(7)">
+                            <h2 class="serie-titulo" style="font-size:15px">Kono Subarashii Sekai ni Shukufuku wo!</h2>
+                            <h3 class="serie-subtitulo" style="font-size:14px">Movie: Kurenai Densetsu</h3>
                             <hr class="info-sep">
                             <div class="serie-details">
                                 <div class="serie-details-labels">
                                     <p><strong>Episodios:</strong></p>
+                                    <p><strong>Episodios:</strong></p>
                                 </div>
                                 <div class="serie-details-values">
-                                    <p>12 / 12</p>
+                                    <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                    <p>1 h. 30 min.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <div id="ov4" class="overlay" style="display: none;">
+                <div id="ov7" class="overlay" style="display: none;">
                     <div class="serie-imagen">
-                        <img src="../media/anime/kono-subarashii-sekai-ni-bakuen-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
+                        <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-movie-kurenai-densetsu.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
                     </div>
                     <div class="contenido-overlay">
-                      <h2 style="margin-top:5px;text-align:center">Kono Subarashii Sekai ni Bakuen wo!</h2>
+                      <h2 style="margin-top:5px;font-size:22px">Kono Subarashii Sekai ni Shukufuku wo!</h2>
+                      <h3 style="font-size:15px">Movie: Kurenai Densetsu</h3>
                       <hr style="margin-top:15px;margin-bottom:15px;">
-                      <p><b>Tipo:</b> Anime</p>
-                      <p><b>Estudio:</b> Drive</p>
+                      <p><b>Tipo:</b> Película</p>
+                      <p><b>Estudio:</b> J.C.Staff</p>
                       <p><b>Generos:</b> Aventura, Comedia, Fantasia</p>
-                      <p><b>Fecha de Publicación:</b> 06/04/2023 - 22/06/2023</p>
-                      <p><b>Temporada:</b> Primavera 2023</p>
+                      <p><b>Fecha de Publicación:</b> 30/08/2019</p>
+                      <p><b>Temporada:</b> Verano 2019</p>
                       <hr style="margin-top:15px;margin-bottom:15px;">
-                      <p><b>Visto desde:</b> 26/04/2023</p>
-                      <p><b>Visto hasta:</b> 05/07/2023</p>
-                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(4)" title="Cerrar">
+                      <p><b>Visto:</b> -</p>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(7)" title="Cerrar">
                     </div>
                 </div>
             </div>
@@ -280,15 +282,19 @@
                         </div>
                         <div class="serie-info" style="position: relative;">
                             <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(5)">
-                            <h2 class="serie-titulo">Kono Subarashii Sekai ni Shukufuku wo!</h2>
-                            <h3 class="serie-subtitulo">Kono Subarashii Choker ni Shukufuku wo!</h3>
+                            <h2 class="serie-titulo" style="font-size:15px">Kono Subarashii Sekai ni Shukufuku wo!</h2>
+                            <h3 class="serie-subtitulo" style="font-size:13px">Kono Subarashii Choker ni Shukufuku wo!</h3>
                             <hr class="info-sep">
                             <div class="serie-details">
                                 <div class="serie-details-labels">
-                                    <p><strong>Episodios:</strong></p>
+                                    <p><strong>Tipo:</strong></p>
+                                    <p><strong>Estado:</strong></p>
+                                    <p><strong>Duración:</strong></p>
                                 </div>
                                 <div class="serie-details-values">
-                                    <p>1 / 1</p>
+                                    <p>OVA</p>
+                                    <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                    <p>23 min.</p>
                                 </div>
                             </div>
                         </div>
@@ -299,7 +305,8 @@
                         <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-kono-subarashii-choker-ni-shukufuku-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
                     </div>
                     <div class="contenido-overlay">
-                      <h2 style="margin-top:5px;text-align:center">Kono Subarashii Sekai ni Shukufuku wo! Kono Subarashii Choker ni Shukufuku wo!</h2>
+                      <h2 style="margin-top:5px;font-size:20px">Kono Subarashii Sekai ni Shukufuku wo!</h2>
+                      <h3 style="font-size:15px">Kono Subarashii Choker ni Shukufuku wo!</h3>
                       <hr style="margin-top:15px;margin-bottom:15px;">
                       <p><b>Tipo:</b> OVA</p>
                       <p><b>Estudio:</b> Studio Deen</p>
@@ -323,15 +330,19 @@
                         </div>
                         <div class="serie-info" style="position: relative;">
                             <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(6)">
-                            <h2 class="serie-titulo">Kono Subarashii Sekai ni Shukufuku wo! 2:</h2>
-                            <h3 class="serie-subtitulo">Kono Subarashii Geijutsu ni Shukufuku wo!</h3>
+                            <h2 class="serie-titulo" style="font-size:14px">Kono Subarashii Sekai ni Shukufuku wo! 2:</h2>
+                            <h3 class="serie-subtitulo" style="font-size:13px">Kono Subarashii Geijutsu ni Shukufuku wo!</h3>
                             <hr class="info-sep">
                             <div class="serie-details">
                                 <div class="serie-details-labels">
-                                    <p><strong>Episodios:</strong></p>
+                                    <p><strong>Tipo:</strong></p>
+                                    <p><strong>Estado:</strong></p>
+                                    <p><strong>Duración:</strong></p>
                                 </div>
                                 <div class="serie-details-values">
-                                    <p>1 / 1</p>
+                                    <p>OVA</p>
+                                    <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                    <p>28 min.</p>
                                 </div>
                             </div>
                         </div>
@@ -342,9 +353,10 @@
                         <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-2-kono-subarashii-geijutsu-ni-shukufuku-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
                     </div>
                     <div class="contenido-overlay">
-                      <h2 style="margin-top:5px;text-align:center">Kono Subarashii Sekai ni<br> Shukufuku wo! 2: Kono Subarashii<br> Geijutsu ni Shukufuku wo!</h2>
+                      <h2 style="margin-top:5px;font-size:20px">Kono Subarashii Sekai ni Shukufuku wo! 2:</h2>
+                      <h3 style="font-size:15px">Kono Subarashii Geijutsu ni Shukufuku wo!</h3>
                       <hr style="margin-top:15px;margin-bottom:15px;">
-                      <p><b>Tipo:</b> Anime</p>
+                      <p><b>Tipo:</b> OVA</p>
                       <p><b>Estudio:</b> Studio Deen</p>
                       <p><b>Generos:</b> Aventura, Comedia, Fantasia</p>
                       <p><b>Fecha de Publicación:</b> 24/07/2017</p>
@@ -355,50 +367,50 @@
                     </div>
                 </div>
             </div>
-
-        </section>
-
-        <section id="sec4" style="display: none">
+            
+            <hr class="info-sep">
             
             <div class="serie-container">
                 <section class="serie">
                     <div class="serie-elemento">
                         <div class="serie-imagen">
-                            <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-movie-kurenai-densetsu.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
+                            <img src="../media/anime/kono-subarashii-sekai-ni-bakuen-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
                         </div>
                         <div class="serie-info" style="position: relative;">
-                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(7)">
-                            <h2 class="serie-titulo">Kono Subarashii Sekai ni Shukufuku wo!</h2>
-                            <h3 class="serie-subtitulo">Movie: Kurenai Densetsu</h3>
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(4)">
+                            <h2 class="serie-titulo" style="font-size:16px">Kono Subarashii Sekai ni Bakuen wo!</h2>
                             <hr class="info-sep">
                             <div class="serie-details">
                                 <div class="serie-details-labels">
-                                    <p><strong>Episodios:</strong></p>
+                                    <p><strong>Tipo:</strong></p>
+                                    <p><strong>Estado:</strong></p>
                                     <p><strong>Episodios:</strong></p>
                                 </div>
                                 <div class="serie-details-values">
-                                    <p title="Visto">✔️</p>
-                                    <p>1:30:00</p>
+                                    <p>Historia Paralela</p>
+                                    <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                    <p>12 / 12</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <div id="ov7" class="overlay" style="display: none;">
+                <div id="ov4" class="overlay" style="display: none;">
                     <div class="serie-imagen">
-                        <img src="../media/anime/kono-subarashii-sekai-ni-shukufuku-wo-movie-kurenai-densetsu.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
+                        <img src="../media/anime/kono-subarashii-sekai-ni-bakuen-wo.png" alt="Kono Subarashii Sekai ni Shukufuku wo!">
                     </div>
                     <div class="contenido-overlay">
-                      <h2 style="margin-top:5px;text-align:center">Kono Subarashii Sekai ni<br> Shukufuku wo! Movie:<br> Kurenai Densetsu</h2>
+                      <h2 style="margin-top:5px;text-align:center">Kono Subarashii Sekai ni Bakuen wo!</h2>
                       <hr style="margin-top:15px;margin-bottom:15px;">
-                      <p><b>Tipo:</b> Película</p>
-                      <p><b>Estudio:</b> J.C.Staff</p>
+                      <p><b>Tipo:</b> Historia Paralela</p>
+                      <p><b>Estudio:</b> Drive</p>
                       <p><b>Generos:</b> Aventura, Comedia, Fantasia</p>
-                      <p><b>Fecha de Publicación:</b> 30/08/2019</p>
-                      <p><b>Temporada:</b> Verano 2019</p>
+                      <p><b>Fecha de Publicación:</b> 06/04/2023 - 22/06/2023</p>
+                      <p><b>Temporada:</b> Primavera 2023</p>
                       <hr style="margin-top:15px;margin-bottom:15px;">
-                      <p><b>Visto:</b> -</p>
-                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(7)" title="Cerrar">
+                      <p><b>Visto desde:</b> 26/04/2023</p>
+                      <p><b>Visto hasta:</b> 05/07/2023</p>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(4)" title="Cerrar">
                     </div>
                 </div>
             </div>
@@ -412,12 +424,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

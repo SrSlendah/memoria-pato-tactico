@@ -161,7 +161,7 @@ section#menu {
 }
 
 .menu {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -222,9 +222,14 @@ nav {
             cursor: pointer;
         }
 
+        .menu-toggle:hover {
+        background-color: #512c6d;
+        }
+
 .menu-toggle img {
     width: 30px;
     height: auto;
+    margin-top:4px;
 }
 
 .menu-ov-nav {

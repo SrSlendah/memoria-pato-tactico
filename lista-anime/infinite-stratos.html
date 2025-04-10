@@ -9,11 +9,12 @@
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
     <script src="../js/anime.js"></script>
@@ -34,7 +35,7 @@
                         <li><a href="../index">inicio</a></li>
                         <li><a href="../anime">Anime</a></li>
                         <li><a href="../cine">Cine</a></li>
-                        <li><a href="../wikis">Wiki</a></li>
+                        <li><a href="../juegos">Juegos</a></li>
                         <li><a href="../login">Admin</a></li>
                     </ul>
                 </nav>
@@ -52,7 +53,7 @@
                           <li><a href="../index">inicio</a></li>
                           <li><a href="../anime">Anime</a></li>
                           <li><a href="../cine">Cine</a></li>
-                          <li><a href="../wikis">Wiki</a></li>
+                          <li><a href="../juegos">Juegos</a></li>
                           <li><a href="../login">Admin</a></li>
                       </ul>
                   </nav>
@@ -89,8 +90,8 @@
         <script src="../js/anime.js"></script>
 
         <div class="secciones" align="center">
-            <button id="sec1-btn" onclick="showSection(1);" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button>
-            <button id="sec2-btn" onclick="showSection(2);">OVAs</button>
+            <a href="#temporadas"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button></a>
+            <a href="#otros"><button id="sec3-btn">Otros</button></a>
         </div>
 
         <section id="sec1">
@@ -181,7 +182,7 @@
 
         </section>
 
-        <section id="sec2" style="display:none">
+        <section id="sec3" style="display:none">
     
             <div class="serie-container">
                 <section class="serie">
@@ -196,10 +197,14 @@
                             <hr class="info-sep">
                             <div class="serie-details">
                                 <div class="serie-details-labels">
-                                    <p><strong>Episodios:</strong></p>
+                                    <p><strong>Tipo:</strong></p>
+                                    <p><strong>Estado:</strong></p>
+                                    <p><strong>Duración:</strong></p>
                                 </div>
                                 <div class="serie-details-values">
-                                    <p>1 / 1</p>
+                                    <p>OVA</p>
+                                    <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                    <p>44 min.</p>
                                 </div>
                             </div>
                         </div>
@@ -233,12 +238,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

@@ -13,23 +13,24 @@
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
 
     <header>
         <script src="../js/menu.js"></script>
         
-        <section id="menu">
-            <div class="menu">
+<section id="menu">
+    <div class="menu">
 
-                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+        <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+        <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="logo-wbh"></a>
 
                 <nav>
                     <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -45,13 +46,14 @@
         <section id="menu-overlay" class="menu-overlay" style="display: none;">
             <div id="menu-overlay">
                 <div class="contenido-overlay">
-                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="menu-ov-logo-wbh"></a>
                   <hr style="margin-top:15px;margin-bottom:-15px;">
                   <nav class="menu-ov-nav">
                       <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -92,142 +94,159 @@
       
         <script src="../js/search-wiki-bh.js"></script>
 
-        <table style="margin-top:20px;width:30%">
-            <tr>
-                <th colspan="4">Hellboy</th>
-            </tr>
-            <tr>
-                <td style="width:350px;height:197px" rowspan="2"><img src="../media/wiki/bh/crossovers/hellboy.png" style="width:350px;height:197px"></td>
-                <th style="height:30px;width:175px">Fecha de Salida</th>
-            </tr>
-            <tr>
-                <td>
-                    <b>10/04/2019</b>
-                </td>
-            </tr>
-        </table>
+        <div class="crossover-container">
+            <section class="crossover">
+                <div class="crossover-elemento">
+                    <div class="crossover-imagen">
+                        <img src="../media/wiki/bh/crossovers/hellboy.png">
+                    </div>
 
-        <h2 align="center" style="margin-top:20px">Skins</h2>
+                    <div class="crossover-info" style="position: relative;">
+                        <h2 class="crossover-titulo">Hellboy</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="crossover-details">
+                            <div class="crossover-details-labels">
+                                <p>
+                                    <strong>
+                                        Fecha de salida:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    10/04/2019
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>Hellboy</th>
-                <th>Daimio</th>
-                <th>Nimue</th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="../wiki-bh/hellboy">
-                        <img src="../media/wiki/bh/crossovers/hellboy/hellboy.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="../wiki-bh/daimio">
-                        <img src="../media/wiki/bh/crossovers/hellboy/daimio.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="../wiki-bh/nimue">
-                        <img src="../media/wiki/bh/crossovers/hellboy/nimue.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Cross</i>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Mordex</i>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Dusk</i>
-                </td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:10px;width:10%">
-            <tr>
-                <th>Gruagach</th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="../wiki-bh/gruagach">
-                        <img src="../media/wiki/bh/crossovers/hellboy/gruagach.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 240<br>
-                    <i style="font-size:13px">Leyenda: Teros</i>
-                </td>
-            </tr>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins</h2>
 
-        <h2 align="center" style="margin-top:20px">Podios</h2>
+        <section class="crossover-skins-lista cuatroskins">
+            
+            <div class="crossover-skins-list-elemento">
+                <a href="./hellboy">
+                <div class="crossover-skins-list-titulo">Hellboy</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/hellboy/hellboy.png">
+                        <a href="./cross" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/cross.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
 
-        <table style="margin-top:20px;width:10%">
-            <tr>
-                <th>Beast of the Apocalypse</th>
-            </tr>
-            <tr>
-                <td style="width:300px"><img src="../media/wiki/bh/crossovers/hellboy/podios/beast-of-the-apocalypse.png"></td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 240
-                </td>
-            </tr>
-        </table>
-        <h2 align="center" style="margin-top:20px">Avatares</h2>
+            <div class="crossover-skins-list-elemento">
+                <a href="./daimio">
+                <div class="crossover-skins-list-titulo">Daimio</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/hellboy/daimio.png">
+                        <a href="./mordex" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/mordex.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
 
-        <table style="margin-top:20px;width:10%">
-            <tr>
-                <th>Crown of Flame</th>
-            </tr>
-            <tr>
-                <td style="width:300px"><img src="../media/wiki/bh/crossovers/hellboy/avatares/crown-of-flame.webp"></td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 60
-                </td>
-            </tr>
-        </table>
+            <div class="crossover-skins-list-elemento">
+                <a href="./nimue">
+                <div class="crossover-skins-list-titulo">Nimue</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/hellboy/nimue.png">
+                        <a href="./dusk" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/dusk.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
 
-        <h2 align="center" style="margin-top:20px">Mapas</h2>
+            <div class="crossover-skins-list-elemento">
+                <a href="./gruagach">
+                <div class="crossover-skins-list-titulo">Gruagach</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/hellboy/gruagach.png">
+                        <a href="./teros" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/teros.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                </a>
+            </div>
+            
+        </section>
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>Apocalypse</th>
-            </tr>
-            <tr>
-                <td class="wbh-map-img">
-                    <a href="../wiki-bh/apocalypse">
-                        <img src="../media/wiki/bh/mapas/apocalypse.png" alt="">
-                    </a>
-                </td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <h2 align="center" style="margin-top:20px">Modos de Juego</h2>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Avatares</h2>
 
-        <table style="margin-top:20px;width:5%">
-            <tr>
-                <th>Horde</th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="../wiki-bh/horde">
-                        <img src="../media/wiki/bh/gamemodes/horde.png" style="width:100px">
-                    </a>
-                </td>
-            </tr>
-        </table>
+        <section class="crossover-avatares-lista unavatar">
+            
+            <div class="crossover-avatares-list-elemento">
+                <div class="crossover-avatares-list-titulo">Crown of Flame</div>
+                <div class="crossover-avatares-list-imagen"><img src="../media/wiki/bh/crossovers/hellboy/avatares/crown-of-flame.webp"></div>
+                <div class="crossover-avatares-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">60</div>
+            </div>
 
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Podios</h2>
+
+        <section class="crossover-podios-lista unitem">
+            
+            <div class="crossover-podios-list-elemento">
+                <div class="crossover-podios-list-titulo">Beast of the Apocalypse</div>
+                <div class="crossover-podios-list-imagen"><img src="../media/wiki/bh/crossovers/hellboy/podios/beast-of-the-apocalypse.png"></div>
+                <div class="crossover-podios-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+            </div>
+
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Modos de Juego</h2>
+
+        <section class="crossover-modos_de_juego-lista unitem">
+            <a href="./horde" class="wbh-a-nocolor">
+                <div class="crossover-modos_de_juego-list-elemento">
+                    <div class="crossover-modos_de_juego-list-titulo">Horde</div>
+                    <div class="crossover-modos_de_juego-list-imagen"><img src="../media/wiki/bh/gamemodes/horde.png"></div>
+                </div>
+            </a>
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Mapas</h2>
+
+        <section class="crossover-mapas-lista dosmapas">
+            
+            <div class="crossover-mapas-list-elemento">
+                <a href="./apocalypse">
+                <div class="crossover-mapas-list-titulo">Apocalypse</div>
+                    <div class="crossover-mapas-list-imagen"><img src="../media/wiki/bh/mapas/apocalypse.png"></div>
+                </a>
+            </div>
+
+            <div class="crossover-mapas-list-elemento">
+                <a href="./horde-map">
+                <div class="crossover-mapas-list-titulo">Horde</div>
+                    <div class="crossover-mapas-list-imagen"><img src="../media/wiki/bh/mapas/horde.png"></div>
+                </a>
+            </div>
+
+        </section>
+        
     </main>
 
 
@@ -235,12 +254,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

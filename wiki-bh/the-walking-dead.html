@@ -13,23 +13,24 @@
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
 
     <header>
         <script src="../js/menu.js"></script>
         
-        <section id="menu">
-            <div class="menu">
+<section id="menu">
+    <div class="menu">
 
-                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+        <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+        <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="logo-wbh"></a>
 
                 <nav>
                     <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -45,13 +46,14 @@
         <section id="menu-overlay" class="menu-overlay" style="display: none;">
             <div id="menu-overlay">
                 <div class="contenido-overlay">
-                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="menu-ov-logo-wbh"></a>
                   <hr style="margin-top:15px;margin-bottom:-15px;">
                   <nav class="menu-ov-nav">
                       <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -92,149 +94,167 @@
       
         <script src="../js/search-wiki-bh.js"></script>
 
-        <table style="margin-top:20px;width:30%">
-            <tr>
-                <th colspan="4">The Walking Dead</th>
-            </tr>
-            <tr>
-                <td style="width:350px;height:197px" rowspan="2"><img src="../media/wiki/bh/crossovers/the-walking-dead.png" style="width:350px;height:197px"></td>
-                <th style="height:30px;width:175px">Fecha de Salida</th>
-            </tr>
-            <tr>
-                <td>
-                    <b>14/10/2020</b><br><br>
-                    <b>22/09/2021</b>
-                </td>
-            </tr>
-        </table>
+        <div class="crossover-container">
+            <section class="crossover">
+                <div class="crossover-elemento">
+                    <div class="crossover-imagen">
+                        <img src="../media/wiki/bh/crossovers/the-walking-dead.png">
+                    </div>
 
-        <h2 align="center" style="margin-top:20px">Skins</h2>
+                    <div class="crossover-info" style="position: relative;">
+                        <h2 class="crossover-titulo">The Walking Dead</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="crossover-details">
+                            <div class="crossover-details-labels">
+                                <p>
+                                    <strong>
+                                        Fecha de salida de la parte 1:<br><br>
+                                        Fecha de salida de la parte 2:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    14/10/2020<br><br>
+                                    22/09/2021
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>
-                    <a href="../wiki-bh/rick">Rick</a>
-                </th>
-                <th>
-                    <a href="../wiki-bh/michonne">Michonne</a>
-                </th>
-                <th>
-                    <a href="../wiki-bh/daryl">Daryl</a>
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="../wiki-bh/rick">
-                        <img src="../media/wiki/bh/crossovers/the-walking-dead/rick.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="../wiki-bh/michonne">
-                        <img src="../media/wiki/bh/crossovers/the-walking-dead/michonne.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="../wiki-bh/daryl">
-                        <img src="../media/wiki/bh/crossovers/the-walking-dead/daryl.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Barraza</i>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Koji</i>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Ember</i>
-                </td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:10px;width:20%">
-            <tr>
-                <th>
-                    <a href="../wiki-bh/negan">Negan</a>
-                </th>
-                <th>
-                    <a href="../wiki-bh/maggie">Maggie</a>
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="../wiki-bh/negan">
-                        <img src="../media/wiki/bh/crossovers/the-walking-dead/negan.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="../wiki-bh/maggie">
-                        <img src="../media/wiki/bh/crossovers/the-walking-dead/maggie.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Jaeyun</i>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Jhala</i>
-                </td>
-            </tr>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins</h2>
 
-        <h2 align="center" style="margin-top:20px">Podios</h2>
+        <section class="crossover-skins-lista">
+            
+            <div class="crossover-skins-list-elemento">
+                <a href="./rick">
+                <div class="crossover-skins-list-titulo">Rick</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/the-walking-dead/rick.png">
+                        <a href="./barraza" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/barraza.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
 
-        <table style="margin-top:20px;width:10%">
-            <tr>
-                <th>Days Gone Bye</th>
-            </tr>
-            <tr>
-                <td style="width:300px"><img src="../media/wiki/bh/crossovers/the-walking-dead/podios/days-gone-bye.png"></td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 240
-                </td>
-            </tr>
-        </table>
+            <div class="crossover-skins-list-elemento">
+                <a href="./michonne">
+                <div class="crossover-skins-list-titulo">Michonne</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/the-walking-dead/michonne.png">
+                        <a href="./koji" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/koji.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
 
-        <h2 align="center" style="margin-top:20px">Efectos de KO</h2>
+            <div class="crossover-skins-list-elemento">
+                <a href="./daryl">
+                <div class="crossover-skins-list-titulo">Daryl</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/the-walking-dead/daryl.png">
+                        <a href="./ember" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/ember.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
 
-        <table style="margin-top:20px;width:10%">
-            <tr>
-                <th>Walker's Grasp</th>
-            </tr>
-            <tr>
-                <td style="width:300px"><img src="../media/wiki/bh/crossovers/the-walking-dead/efectos-ko/walkers-grasp.webp"></td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 240
-                </td>
-            </tr>
-        </table>
+            <div class="crossover-skins-list-elemento">
+                <a href="./negan">
+                <div class="crossover-skins-list-titulo">Negan</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/the-walking-dead/negan.png">
+                        <a href="./jaeyun" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/jaeyun.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
 
-        <h2 align="center" style="margin-top:20px">Modos de Juego</h2>
+            <div class="crossover-skins-list-elemento">
+                <a href="./maggie">
+                <div class="crossover-skins-list-titulo">Maggie</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/the-walking-dead/maggie.png">
+                        <a href="./jhala" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/jhala.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
+            
+        </section>
 
-        <table style="margin-top:20px;width:5%">
-            <tr>
-                <th>Walker Attack!</th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="../wiki-bh/walker-attack">
-                        <img src="../media/wiki/bh/gamemodes/walker-attack.png" style="width:100px">
-                    </a>
-                </td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
 
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Podios</h2>
+
+        <section class="crossover-podios-lista">
+            
+            <div class="crossover-podios-list-elemento">
+                <div class="crossover-podios-list-titulo">Days Gone Bye</div>
+                <div class="crossover-podios-list-imagen"><img src="../media/wiki/bh/crossovers/the-walking-dead/podios/days-gone-bye.png"></div>
+                <div class="crossover-podios-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+            </div>
+
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Efectos de KO</h2>
+
+        <section class="crossover-efectos_ko-lista">
+            
+            <div class="crossover-efectos_ko-list-elemento">
+                <div class="crossover-efectos_ko-list-titulo">Walker's Grasp</div>
+                <div class="crossover-efectos_ko-list-imagen"><img src="../media/wiki/bh/crossovers/the-walking-dead/efectos-ko/walkers-grasp.webp"></div>
+                <div class="crossover-efectos_ko-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+            </div>
+
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Modos de Juego</h2>
+
+        <section class="crossover-modos_de_juego-lista">
+            <a href="./walker-attack" class="wbh-a-nocolor">
+                <div class="crossover-modos_de_juego-list-elemento">
+                    <div class="crossover-modos_de_juego-list-titulo">Walker Attack!</div>
+                    <div class="crossover-modos_de_juego-list-imagen"><img src="../media/wiki/bh/gamemodes/walker-attack.png"></div>
+                </div>
+            </a>
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Mapas</h2>
+
+        <section class="crossover-mapas-lista unmapa">
+
+            <a href="./walker-attack-map" class="wbh-a-nocolor">
+                <div class="crossover-mapas-list-elemento">
+                    <div class="crossover-mapas-list-titulo">Walker Attack!</div>
+                    <div class="crossover-mapas-list-imagen"><img src="../media/wiki/bh/mapas/walker-attack.png"></div>
+                </div>
+            </a>
+
+        </section>
+        
     </main>
 
 
@@ -242,12 +262,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

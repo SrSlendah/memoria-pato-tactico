@@ -100,54 +100,6 @@ main h4 > a {
     margin-bottom: 60px;
 }
 
-/* cheat sheets */
-
-.sheets-container {
-    display: flex;
-    justify-content: center;
-    margin-left:60px
-}
-
-.sheets-selector {
-    display:inline-block;
-    justify-content:center;
-    align-items:center;
-    text-align: center;
-    color:#fff;
-    margin-bottom: 25px;
-    margin-right: 50px;
-}
-
-.sheets-selector > label {
-    font-size:24px;
-    margin-right: 10px;
-}
-
-.sheets-selector > select {
-    border:none;
-    background-color: #6f3c96;
-    font-size:18px;
-    color: white;
-    padding: 10px 20px;
-    border-radius:5px;
-}
-
-.sheets-result {
-    display: grid;
-    flex-wrap: wrap;
-    justify-content: center; /* Centra horizontalmente las tablas */
-    grid-template-columns: repeat(5, calc(110px + 100px));
-    gap: 20px;
-}
-
-.sheets-result table {
-    margin: 0
-}
-
-.sheets-selector > select:focus{
-  outline:none;
-}
-
 /* Buscador */
 .search-container {
     display: flex;
@@ -179,6 +131,24 @@ main h4 > a {
     left: 50%; /* Centrar horizontalmente */
     transform: translateX(-50%);
     border-radius: 15px;
+  }
+
+  #autocomplete-list::-webkit-scrollbar {
+      width: 10px;
+  }
+  
+  #autocomplete-list::-webkit-scrollbar-track {
+      background: #e6cef8;
+  }
+  
+  #autocomplete-list::-webkit-scrollbar-thumb {
+      background: #5e337f;
+      border: 2px solid #4b2866;
+      border-radius: 10px;
+  }
+  
+  #autocomplete-list::-webkit-scrollbar-thumb:hover {
+      background: #8146ae;    
   }
   
   #autocomplete-list li {
@@ -228,43 +198,6 @@ th {
     text-align: center;
 }
 
-.wiki-bh-armas {
-    margin: 0 auto;
-    margin-top: -30px;
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 40%;
-    height: 30%;
-    color: #fff
-}
-
-.wiki-bh-armas_td {
-    border: 3px solid #4b2866;
-    text-align: left;
-    padding: 4px;
-    text-align: center;
-    width: 15px;
-    height: 15px
-}
-
-.wiki-bh-armas_td > img{
-    width: 37px;
-    height: 37px
-}
-
-    .wiki-bh-armas_td > a > img {
-        width: 37px;
-        height: 37px
-    }
-
-.wiki-bh-armas_th {
-    border: 3px solid #4b2866;
-    text-align: left;
-    padding: 8px;
-    text-align: center;
-    width: 10px
-}
-
 .info {
     margin-top: 30px
 }
@@ -286,92 +219,6 @@ th {
     .caja-img img {
         width: 175px;
         height: 175px
-    }
-
-.wjb-img {
-    border: 3px solid #4b2866;
-    width: 100px;
-    height: 100px
-}
-
-    .wjb-img img {
-        width: 200px;
-        height: 175px
-    }
-
-.wbh-img {
-    border: 3px solid #4b2866;
-    width: 100px;
-    height: 100px
-}
-
-    .wbh-img img {
-        width: 200px;
-        height: 200px
-    }
-
-.wbh-table {
-    margin: 0 auto;
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    color: #fff
-}
-
-.wbh-table td {
-    border: 2px solid #4b2866;
-    text-align: left;
-    padding: 8px;
-    text-align: center
-}
-
-.wbh-table th {
-    border: 2px solid #4b2866;
-    text-align: left;
-    padding: 8px;
-    text-align: center;
-    background-color: #6f3c96;
-}
-
-.wbh-a {
-    color: #A55CDE;
-    text-decoration: none;
-}
-
-.wbh-a:hover {
-    color: #A55CDE;
-    text-decoration: underline;
-}
-
-.wbh-crossover-img {
-    border: 3px solid #4b2866;
-    width: 100px;
-    height: 100px
-}
-
-.wbh-crossover-img img {
-    width: 350px;
-    height: 197px
-}
-
-.wbh-map-img {
-    border: 3px solid #4b2866;
-    width: 100px;
-    height: 100px
-}
-
-.wbh-map-img img {
-    width: 200px;
-    height: 125px
-}
-
-.wbh-img-bp {
-    border: 3px solid #4b2866;
-    width: 100px;
-    height: 100px
-}
-
-    .wbh-img-bp img {
-        width: 200px;
     }
 
 .anime-img {
@@ -534,7 +381,7 @@ section#menu {
 }
 
 .menu {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -619,9 +466,14 @@ nav {
     cursor: pointer;
 }
 
+.menu-toggle:hover {
+background-color: #512c6d;
+}
+
 .menu-toggle img {
 width: 30px;
 height: auto;
+margin-top:4px;
 }
 
 .menu-ov-nav {
@@ -713,6 +565,7 @@ input {
     width: 50px;
     height: 50px;
     background-color: #6f3c96;
+    border: 3.5px solid #4b2866;
     text-indent: -9999px;
     display: none;
     -webkit-border-radius: 60px;
@@ -741,7 +594,7 @@ input {
 
 header {
     width: 100%;
-    height: 600px;
+    height: 480px;
     background: url(../media/portada.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -980,40 +833,6 @@ footer {
     border-radius: 0 20px 0 30px;
 }
 
-.wiki-lista {
-    display: grid;
-    grid-template-columns: repeat(4, 200px);
-    gap: 20px;
-    justify-content: center;
-}
-
-.wiki-list-elemento {
-    text-align: center;
-}
-
-.wiki-list-imagen img {
-    width: 100%;
-    height: 200px;
-    border-radius: 20px 20px 0 0;
-    border: 4px solid #4b2866;
-}
-
-.wiki-list-titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #6f3c96;
-    color: white;
-    font-weight: bold;
-    border-radius: 15px;
-    overflow: hidden;
-    border-radius: 0 0 20px 20px;
-    border: 4px solid #4b2866;
-    border-top: none;
-    height: 60px;
-    padding: 10px;
-    margin-top: -5px;
-}
 
 @media (max-width: 1200px) {
     .lista {

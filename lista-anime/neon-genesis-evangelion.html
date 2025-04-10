@@ -9,11 +9,12 @@
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
 
@@ -32,7 +33,7 @@
                         <li><a href="../index">inicio</a></li>
                         <li><a href="../anime">Anime</a></li>
                         <li><a href="../cine">Cine</a></li>
-                        <li><a href="../wikis">Wiki</a></li>
+                        <li><a href="../juegos">Juegos</a></li>
                         <li><a href="../login">Admin</a></li>
                     </ul>
                 </nav>
@@ -50,7 +51,7 @@
                           <li><a href="../index">inicio</a></li>
                           <li><a href="../anime">Anime</a></li>
                           <li><a href="../cine">Cine</a></li>
-                          <li><a href="../wikis">Wiki</a></li>
+                          <li><a href="../juegos">Juegos</a></li>
                           <li><a href="../login">Admin</a></li>
                       </ul>
                   </nav>
@@ -87,48 +88,330 @@
         <script src="../js/anime.js"></script>
         <script src="../js/overlay.js"></script>
 
-        <div class="serie-container">
-            <section class="serie">
-                <div class="serie-elemento">
-                    <div class="serie-imagen">
-                        <img src="../media/anime/neon-genesis-evangelion.png" alt="Neon Genesis Evangelion">
-                    </div>
-                    <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
-                        <img src="../media/icons/dropped.png" class="serie-dropped" title="Anime Abandonado">
-                        <h2 class="serie-titulo">Neon Genesis Evangelion</h2>
-                        <hr class="info-sep">
-                        <div class="serie-details">
-                            <div class="serie-details-labels">
-                                <p><strong>Episodios:</strong></p>
-                            </div>
-                            <div class="serie-details-values">
-                                <p>06 / 26</p>
+        <div class="secciones" align="center">
+            <a href="#temporadas"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button></a>
+            <a href="#peliculas"><button id="sec2-btn">Películas</button></a>
+            <a href="#otros"><button id="sec3-btn">Otros</button></a>
+        </div>
+
+        <section id="sec1">
+
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/anime/neon-genesis-evangelion.png" alt="Neon Genesis Evangelion">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                            <h2 class="serie-titulo">Neon Genesis Evangelion</h2>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Episodios:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p>26 / 26</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <div id="ov1" class="overlay" style="display: none;">
-                <div class="serie-imagen">
-                    <img src="../media/anime/neon-genesis-evangelion.png" alt="Neon Genesis Evangelion">
-                </div>
-                <div class="contenido-overlay">
-                    <img src="../media/icons/dropped.png" class="overlay-dropped" title="Anime Abandonado">
-                  <h2 style="margin-top:5px">Neon Genesis Evangelion</h2>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Anime</p>
-                  <p><b>Estudio:</b> Gainax, Tatsunoko Production</p>
-                  <p><b>Generos:</b> Acción, Drama, Sci-Fi, Suspense</p>
-                  <p><b>Fecha de Publicación:</b> 04/10/1995 - 27/03/1996</p>
-                  <p><b>Temporada:</b> Otoño 1995</p>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Visto desde:</b> 09/03/2020</p>
-                  <p><b>Visto hasta:</b> <red>Abandonado</red></p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                </section>
+                <div id="ov1" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/neon-genesis-evangelion.png" alt="Neon Genesis Evangelion">
+                    </div>
+                    <div class="contenido-overlay">
+                    <h2 style="margin-top:5px">Neon Genesis Evangelion</h2>
+                    <hr style="margin-top:15px;margin-bottom:15px;">
+                    <p><b>Tipo:</b> Anime</p>
+                    <p><b>Estudio:</b> Gainax, Tatsunoko Production</p>
+                    <p><b>Generos:</b> Acción, Drama, Sci-Fi, Suspense</p>
+                    <p><b>Fecha de Publicación:</b> 04/10/1995 - 27/03/1996</p>
+                    <p><b>Temporada:</b> Otoño 1995</p>
+                    <hr style="margin-top:15px;margin-bottom:15px;">
+                    <p><b>Visto desde:</b> 29/01/2025</p>
+                    <p><b>Visto hasta:</b> 01/02/2025</p>
+                    <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                    </div>
                 </div>
             </div>
-        </div>
+
+        </section>
+
+        <section id="sec2">
+            
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/anime/neon-genesis-evangelion-the-end-of-evangelion.png" alt="Neon Genesis Evangelion">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(2)">
+                            <h2 class="serie-titulo">Neon Genesis Evangelion</h2>
+                            <h3 class="serie-subtitulo">The End of Evangelion</h3>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Estado:</strong></p>
+                                    <p><strong>Duración:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                    <p>1 h. 26 min.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="ov2" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/neon-genesis-evangelion-the-end-of-evangelion.png" alt="Neon Genesis Evangelion">
+                    </div>
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px;text-align:center">Neon Genesis Evangelion:</h2>
+                      <h3 style="font-size:15px">The End of Evangelion</h3>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Tipo:</b> Película</p>
+                      <p><b>Estudio:</b> Gainax, Production I.G</p>
+                      <p><b>Generos:</b> Acción, Drama, Sci-Fi, Suspense</p>
+                      <p><b>Fecha de Publicación:</b> 19/07/1997</p>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Visto:</b> 01/02/2025</p>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
+                    </div>
+                </div>
+            </div>
+
+            <hr class="info-sep">
+            
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/anime/evangelion-1-11-you-are-not-alone.png" alt="Evangelion">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(3)">
+                            <h2 class="serie-titulo">Evangelion 1.11:</h2>
+                            <h3 class="serie-subtitulo">You Are (Not) Alone</h3>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Estado:</strong></p>
+                                    <p><strong>Duración:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                    <p>1 h. 41 min.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="ov3" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/evangelion-1-11-you-are-not-alone.png" alt="Evangelion">
+                    </div>
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px;text-align:center">Evangelion 1.11:</h2>
+                      <h3 style="font-size:15px">You Are (Not) Alone</h3>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Tipo:</b> Película</p>
+                      <p><b>Estudio:</b> Khara</p>
+                      <p><b>Generos:</b> Acción, Drama, Sci-Fi, Suspense</p>
+                      <p><b>Fecha de Publicación:</b> 01/09/2007</p>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Visto:</b> 17/02/2025</p>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(3)" title="Cerrar">
+                    </div>
+                </div>
+            </div>
+
+            <hr class="info-sep">
+            
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/anime/evangelion-2-22-you-can-not-advance.png" alt="Evangelion">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(4)">
+                            <h2 class="serie-titulo">Evangelion 2.22:</h2>
+                            <h3 class="serie-subtitulo">You Can (Not) Advance</h3>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Estado:</strong></p>
+                                    <p><strong>Duración:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                    <p>1 h. 52 min.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="ov4" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/evangelion-2-22-you-can-not-advance.png" alt="Evangelion">
+                    </div>
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px;text-align:center">Evangelion 2.22:</h2>
+                      <h3 style="font-size:15px">You Can (Not) Advance</h3>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Tipo:</b> Película</p>
+                      <p><b>Estudio:</b> Khara</p>
+                      <p><b>Generos:</b> Acción, Drama, Sci-Fi, Suspense</p>
+                      <p><b>Fecha de Publicación:</b> 27/07/2009</p>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Visto:</b> 17/02/2025</p>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(4)" title="Cerrar">
+                    </div>
+                </div>
+            </div>
+
+            <hr class="info-sep">
+            
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/anime/evangelion-3-33-you-can-not-redo.png" alt="Evangelion">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(5)">
+                            <h2 class="serie-titulo">Evangelion 3.33:</h2>
+                            <h3 class="serie-subtitulo">You Can (Not) Redo</h3>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Estado:</strong></p>
+                                    <p><strong>Duración:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                    <p>1 h. 35 min.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="ov5" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/evangelion-3-33-you-can-not-redo.png" alt="Evangelion">
+                    </div>
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px;text-align:center">Evangelion 3.33:</h2>
+                      <h3 style="font-size:15px">You Can (Not) Redo</h3>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Tipo:</b> Película</p>
+                      <p><b>Estudio:</b> Khara</p>
+                      <p><b>Generos:</b> Acción, Drama, Sci-Fi, Suspense</p>
+                      <p><b>Fecha de Publicación:</b> 17/11/2012</p>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Visto:</b> 18/02/2025</p>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(5)" title="Cerrar">
+                    </div>
+                </div>
+            </div>
+
+            <hr class="info-sep">
+            
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/anime/evangelion-3-0-3-1-thrice-upon-a-time.png" alt="Evangelion">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(6)">
+                            <h2 class="serie-titulo">Evangelion 3.0+1.0:</h2>
+                            <h3 class="serie-subtitulo">Thrice Upon a Time</h3>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Estado:</strong></p>
+                                    <p><strong>Duración:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                    <p>2 h. 35 min.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="ov6" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/evangelion-3-0-3-1-thrice-upon-a-time.png" alt="Evangelion">
+                    </div>
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px;text-align:center">Evangelion 3.0+1.0:</h2>
+                      <h3 style="font-size:15px">Thrice Upon a Time</h3>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Tipo:</b> Película</p>
+                      <p><b>Estudio:</b> Khara</p>
+                      <p><b>Generos:</b> Acción, Drama, Sci-Fi, Suspense</p>
+                      <p><b>Fecha de Publicación:</b> 08/03/2021</p>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Visto:</b> 19/02/2025</p>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(6)" title="Cerrar">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="sec3">
+
+        
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/anime/evangelion-3-0-46h.png" alt="Evangelion">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(17)">
+                            <h2 class="serie-titulo">Evangelion 3.0: (-46h)</h2>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Tipo:</strong></p>
+                                    <p><strong>Estado:</strong></p>
+                                    <p><strong>Duración:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p>Especial</p>
+                                    <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                    <p>10 min.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="ov17" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/evangelion-3-0-46h.png" alt="Evangelion">
+                    </div>
+                    <div class="contenido-overlay">
+                      <h2 style="margin-top:5px">Evangelion 3.0: (-46h)</h2>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Tipo:</b> Especial</p>
+                      <p><b>Estudio:</b> Khara</p>
+                      <p><b>Generos:</b> Sci-Fi</p>
+                      <p><b>Fecha de Publicación:</b> 08/03/2023</p>
+                      <p><b>Temporada:</b> Primavera 2023</p>
+                      <hr style="margin-top:15px;margin-bottom:15px;">
+                      <p><b>Visto:</b> 20/02/2025</p>
+                      <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(17)" title="Cerrar">
+                    </div>
+                </div>
+            </div>
 
         </section>
 
@@ -140,12 +423,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

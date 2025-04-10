@@ -1,3 +1,11 @@
+//* cosas generales *\\
+
+Reemplazar en toda la web: ctrl + shift + h
+
+//* comandos cmd *\\
+
+rm -r <directorio> (Vaciar carpetas)
+python <archivo> (ejecutar python)
 
 //* CHANGELOG (AÑADIDO) *\\
 
@@ -5,7 +13,6 @@
         <chng-add-icon class="chng-add">[ <i class="fa-solid fa-plus"></i> ]</chng-add-icon>
         <chng-txt>Se ha agregado <a href="./" class="link">Placeholder</a></chng-txt>
     </chng>
-
 
 //* CHANGELOG (EDITADO) *\\
 
@@ -21,3 +28,30 @@
         <chng-dlt-icon class="chng-delete">[ <i class="fas fa-trash"></i> ]</chng-dlt-icon> 
         <chng-txt>Se han eliminado Placeholder</chng-txt>
     </chng>
+
+//* Overlay titulo y subtitulo *\\
+
+    <h2 style="margin-top:5px">Placeholder</h2>
+    <h3 style="font-size:15px">Placeholder</h3>
+
+//* Peliculas vistas *\\
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<p title="Visto"><i class="fa-solid fa-check"></i></p>
+
+
+
+titulos
+color
+leyendas
+Paquetes
+Skins
+skins de arma
+skins de emojis
+avatares
+compañeros
+podios
+efectos ko
+gestos
+modos de juego
+mapas

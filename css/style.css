@@ -240,6 +240,10 @@ th {
       margin: 0 10px;
 }
 
+.secciones {
+    margin-bottom: -15px;
+}
+
 .secciones-img {
     border: 5px solid #4b2866;
     width: 100px;
@@ -394,6 +398,7 @@ th {
     width: 50px;
     height: 50px;
     background-color: #6f3c96;
+    border: 3.5px solid #4b2866;
     text-indent: -9999px;
     display: none;
     -webkit-border-radius: 60px;
@@ -443,7 +448,7 @@ section#menu {
 }
 
 .menu {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -503,9 +508,14 @@ nav {
             cursor: pointer;
         }
 
+        .menu-toggle:hover {
+        background-color: #512c6d;
+        }
+
 .menu-toggle img {
     width: 30px;
     height: auto;
+    margin-top:4px;
 }
 
 .menu-ov-nav {
@@ -565,7 +575,7 @@ nav {
 
 header {
     width: 100%;
-    height: 600px;
+    height: 480px;
     background: url(../media/portada.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -800,6 +810,7 @@ footer {
     padding: 10px;
     margin-top: -5px;
 }
+
 .index-lista {
     display: grid;
     grid-template-columns: repeat(3, 200px);
@@ -903,18 +914,55 @@ footer {
     }
 
     .list-imagen img {
-        width: 150px !important; /* Reduce aún más el ancho de la imagen */
+        width: 150px !important;
         height: 150px !important;
-        height: auto; /* Mantiene la relación de aspecto */
+        height: auto;
     }
 
     .list-titulo {
-        font-size: 0.8rem; /* Reduce aún más el tamaño del texto */
+        font-size: 0.8rem;
         width: 150px;
-        padding: 6px; /* Ajusta el padding */
+        padding: 6px;
     }
 }
+.juegos-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+    justify-content: center;
+}
 
+.juegos-list-elemento {
+    text-align: center;
+}
+
+.juegos-list-imagen img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    border: 4px solid #4b2866;
+}
+
+.juegos-list-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f3c96;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    border: 4px solid #4b2866;
+    border-top: none;
+    height: 60px;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.unitem {
+    grid-template-columns: repeat(1, 200px);
+}
 
 /* Estilos básicos para la cuadrícula con 1 elemento por fila */
 .serie {
@@ -986,6 +1034,14 @@ footer {
 
 .serie-subtitulo {
     font-size: 1rem; /* Tamaño del texto del título */
+    font-weight: bold;
+    color: #fff;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.serie-subsubtitulo {
+    font-size: 0.8rem; /* Tamaño del texto del título */
     font-weight: bold;
     color: #fff;
     margin-top: -10px;

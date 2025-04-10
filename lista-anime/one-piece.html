@@ -9,11 +9,12 @@
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
     <script src="../js/redirect.js"></script>
@@ -34,7 +35,7 @@
                         <li><a href="../index">inicio</a></li>
                         <li><a href="../anime">Anime</a></li>
                         <li><a href="../cine">Cine</a></li>
-                        <li><a href="../wikis">Wiki</a></li>
+                        <li><a href="../juegos">Juegos</a></li>
                         <li><a href="../login">Admin</a></li>
                     </ul>
                 </nav>
@@ -52,7 +53,7 @@
                           <li><a href="../index">inicio</a></li>
                           <li><a href="../anime">Anime</a></li>
                           <li><a href="../cine">Cine</a></li>
-                          <li><a href="../wikis">Wiki</a></li>
+                          <li><a href="../juegos">Juegos</a></li>
                           <li><a href="../login">Admin</a></li>
                       </ul>
                   </nav>
@@ -92,10 +93,9 @@
             <button onclick="goTo('manga_onepiece');">Manga</button>
             <button onclick="goTo('lps_onepiece');">Live Action</button>
             <span class="separador_btn"></span>
-            <button id="sec1-btn" onclick="showSection(1);" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button>
-            <button id="sec2-btn" onclick="showSection(2)">Películas</button>
-            <button id="sec3-btn" onclick="showSection(3)">Especiales</button>
-            <button id="sec4-btn" onclick="showSection(4)">Otros</button>
+            <a href="#temporadas"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button></a>
+            <a href="#peliculas"><button id="sec2-btn">Películas</button></a>
+            <a href="#otros"><button id="sec3-btn">Otros</button></a>
         </div>
 
 
@@ -116,7 +116,7 @@
                                 <p><strong>Episodios:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p>1112 / ?</p>
+                                <p>1123 / ?</p>
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,55 @@
             </div>
         </div>
 
+        <hr class="info-sep">
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-arco-de-la-isla-gyojin.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(2)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h2 class="serie-subtitulo">Arco de la Isla Gyojin</h2>
+                        <h2 class="serie-subtitulo" style="font-size:12px">[Remake]</h2>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Episodios:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>21 / 21</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="ov2" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-arco-de-la-isla-gyojin.png" alt="One Piece">
+                </div>
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h2 class="serie-subtitulo" style="margin-top:0">Arco de la Isla Gyojin</h2>
+                  <h2 class="serie-subtitulo" style="font-size:12px">[Remake]</h2>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Tipo:</b> Anime</p>
+                  <p><b>Estudio:</b> Toei Animation</p>
+                  <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                  <p><b>Fecha de Publicación:</b> 03/11/2024 - 30/03/2025</p>
+                  <p><b>Temporada:</b> Otoño 2024</p>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Visto desde:</b> 03/11/2024</p>
+                  <p><b>Visto hasta:</b> 31/03/2025</p>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
+                </div>
+            </div>
+        </div>
+
     </section>
+
     <section id="sec2" style="display: none;">
 
         <div class="serie-container">
@@ -152,7 +200,7 @@
                         <img src="../media/anime/one-piece-movie-01.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(2)">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(3)">
                         <h2 class="serie-titulo">One Piece</h2>
                         <h3 class="serie-subtitulo">Movie 01</h3>
                         <hr class="info-sep">
@@ -162,14 +210,14 @@
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>51:00</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>51 min.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov2" class="overlay" style="display: none;">
+            <div id="ov3" class="overlay" style="display: none;">
                 <div class="serie-imagen">
                     <img src="../media/anime/one-piece-movie-01.png" alt="One Piece">
                 </div>
@@ -184,7 +232,7 @@
                   <p><b>Temporada:</b> Primavera 2000</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 28/09/2023</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(3)" title="Cerrar">
                 </div>
             </div>
         </div>
@@ -198,7 +246,7 @@
                         <img src="../media/anime/one-piece-movie-02-nejimaki-jima-no-daibouken.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(3)">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(4)">
                         <h2 class="serie-titulo">One Piece</h2>
                         <h3 class="serie-subtitulo">Movie 02: Nejimaki-jima no Daibouken</h3>
                         <hr class="info-sep">
@@ -208,14 +256,14 @@
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>55:00</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>55 min.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov3" class="overlay" style="display: none;">
+            <div id="ov4" class="overlay" style="display: none;">
                 <div class="serie-imagen">
                     <img src="../media/anime/one-piece-movie-02-nejimaki-jima-no-daibouken.png" alt="One Piece">
                 </div>
@@ -230,7 +278,7 @@
                   <p><b>Temporada:</b> Primavera 2001</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 24/10/2023</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(3)" title="Cerrar">
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(4)" title="Cerrar">
                 </div>
             </div>
         </div>
@@ -244,9 +292,9 @@
                         <img src="../media/anime/one-piece-movie-03-chinjuu-jima-no-chopper-oukoku.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(4)">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(5)">
                         <h2 class="serie-titulo">One Piece</h2>
-                        <h3 class="serie-subtitulo">Movie 03: Chinjuu-jima no Chopper Oukoku</h3>
+                        <h3 class="serie-subtitulo" style="font-size:14px">Movie 03: Chinjuu-jima no Chopper Oukoku</h3>
                         <hr class="info-sep">
                         <div class="serie-details">
                             <div class="serie-details-labels">
@@ -254,14 +302,14 @@
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>55:00</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>55 min.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov4" class="overlay" style="display: none;">
+            <div id="ov5" class="overlay" style="display: none;">
                 <div class="serie-imagen">
                     <img src="../media/anime/one-piece-movie-03-chinjuu-jima-no-chopper-oukoku.png" alt="One Piece">
                 </div>
@@ -276,7 +324,7 @@
                   <p><b>Temporada:</b> Primavera 2002</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 24/10/2023</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(4)" title="Cerrar">
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(5)" title="Cerrar">
                 </div>
             </div>
         </div>
@@ -290,7 +338,7 @@
                         <img src="../media/anime/one-piece-movie-04-dead-end-no-bouken.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(5)">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(6)">
                         <h2 class="serie-titulo">One Piece</h2>
                         <h3 class="serie-subtitulo">Movie 04: Dead End no Bouken</h3>
                         <hr class="info-sep">
@@ -300,14 +348,14 @@
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>1:35:00</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>1 h 35 min.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov5" class="overlay" style="display: none;">
+            <div id="ov6" class="overlay" style="display: none;">
                 <div class="contenido-overlay">
                   <h2 style="margin-top:5px">One Piece</h2>
                   <h3 style="font-size:15px">Movie 04: Dead End no Bouken</h3>
@@ -319,7 +367,7 @@
                   <p><b>Temporada:</b> Primavera 2003</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 24/10/2023</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(5)" title="Cerrar">
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(6)" title="Cerrar">
                 </div>
             </div>
         </div>
@@ -333,7 +381,7 @@
                         <img src="../media/anime/one-piece-movie-05-norowareta-seiken.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(6)">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(7)">
                         <h2 class="serie-titulo">One Piece</h2>
                         <h3 class="serie-subtitulo">Movie 05: Norowareta Seiken</h3>
                         <hr class="info-sep">
@@ -343,14 +391,14 @@
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>1:35:00</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>1 h 35 min.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov6" class="overlay" style="display: none;">
+            <div id="ov7" class="overlay" style="display: none;">
                 <div class="serie-imagen">
                     <img src="../media/anime/one-piece-movie-05-norowareta-seiken.png" alt="One Piece">
                 </div>
@@ -365,7 +413,7 @@
                   <p><b>Temporada:</b> Primavera 2004</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 24/10/2023</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(6)" title="Cerrar">
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(7)" title="Cerrar">
                 </div>
             </div>
         </div>
@@ -379,7 +427,7 @@
                         <img src="../media/anime/one-piece-movie-06-omatsuri-danshaku-to-himitsu-no-shima.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(7)">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(8)">
                         <h2 class="serie-titulo">One Piece</h2>
                         <h3 class="serie-subtitulo">Movie 06: Omatsuri Danshaku to Himitsu no Shima</h3>
                         <hr class="info-sep">
@@ -389,14 +437,14 @@
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>1:31:00</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>1 h. 31 min.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov7" class="overlay" style="display: none;">
+            <div id="ov8" class="overlay" style="display: none;">
                 <div class="serie-imagen">
                     <img src="../media/anime/one-piece-movie-06-omatsuri-danshaku-to-himitsu-no-shima.png" alt="One Piece">
                 </div>
@@ -411,7 +459,7 @@
                   <p><b>Temporada:</b> Primavera 2005</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 24/10/2023</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(7)" title="Cerrar">
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(8)" title="Cerrar">
                 </div>
             </div>
         </div>
@@ -425,9 +473,9 @@
                         <img src="../media/anime/one-piece-movie-07-karakuri-jou-no-mecha-kyohei.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(8)">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(9)">
                         <h2 class="serie-titulo">One Piece</h2>
-                        <h3 class="serie-subtitulo">Movie 07: Karakuri-jou no Mecha Kyohei</h3>
+                        <h3 class="serie-subtitulo" style="font-size:15px">Movie 07: Karakuri-jou no Mecha Kyohei</h3>
                         <hr class="info-sep">
                         <div class="serie-details">
                             <div class="serie-details-labels">
@@ -435,14 +483,14 @@
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>1:34:00</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>1 h. 34 min.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov8" class="overlay" style="display: none;">
+            <div id="ov9" class="overlay" style="display: none;">
                 <div class="serie-imagen">
                     <img src="../media/anime/one-piece-movie-07-karakuri-jou-no-mecha-kyohei.png" alt="One Piece">
                 </div>
@@ -457,7 +505,7 @@
                   <p><b>Temporada:</b> Primavera 2006</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 24/10/2023</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(8)" title="Cerrar">
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(9)" title="Cerrar">
                 </div>
             </div>
         </div>
@@ -471,7 +519,7 @@
                         <img src="../media/anime/one-piece-movie-08-episode-of-alabasta-sabaku-no-oujo-to-kaizoku-tachi.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(9)">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(10)">
                         <h2 class="serie-titulo">One Piece</h2>
                         <h3 class="serie-subtitulo">Movie 08: Episode of Alabasta Sabaku no Oujo to Kaizoku-tachi</h3>
                         <hr class="info-sep">
@@ -481,54 +529,8 @@
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>1:30:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="ov9" class="overlay" style="display: none;">
-                <div class="serie-imagen">
-                    <img src="../media/anime/one-piece-movie-08-episode-of-alabasta-sabaku-no-oujo-to-kaizoku-tachi.png" alt="One Piece">
-                </div>
-                <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece</h2>
-                  <h3 style="font-size:15px">Movie 08: Episode of Alabasta Sabaku no Oujo to Kaizoku-tachi</h3>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Película</p>
-                  <p><b>Estudio:</b> Toei Animation</p>
-                  <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
-                  <p><b>Fecha de Publicación:</b> 03/03/2007</p>
-                  <p><b>Temporada:</b> Primavera 2007</p>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Visto:</b> 29/03/2024</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(9)" title="Cerrar">
-                </div>
-            </div>
-        </div>
-
-        <hr class="info-sep">
-        
-        <div class="serie-container">
-            <section class="serie">
-                <div class="serie-elemento">
-                    <div class="serie-imagen">
-                        <img src="../media/anime/one-piece-movie-09-episode-of-chopper-plus-fuyu-ni-saku-kiseki-no-sakura.png" alt="One Piece">
-                    </div>
-                    <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(10)">
-                        <h2 class="serie-titulo">One Piece</h2>
-                        <h3 class="serie-subtitulo">Movie 09:  Episode of Chopper Plus Fuyu ni Saku, Kiseki no Sakura</h3>
-                        <hr class="info-sep">
-                        <div class="serie-details">
-                            <div class="serie-details-labels">
-                                <p><strong>Estado:</strong></p>
-                                <p><strong>Duración:</strong></p>
-                            </div>
-                            <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>1:53:00</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>1 h. 30 min.</p>
                             </div>
                         </div>
                     </div>
@@ -536,17 +538,17 @@
             </section>
             <div id="ov10" class="overlay" style="display: none;">
                 <div class="serie-imagen">
-                    <img src="../media/anime/one-piece-movie-09-episode-of-chopper-plus-fuyu-ni-saku-kiseki-no-sakura.png" alt="One Piece">
+                    <img src="../media/anime/one-piece-movie-08-episode-of-alabasta-sabaku-no-oujo-to-kaizoku-tachi.png" alt="One Piece">
                 </div>
                 <div class="contenido-overlay">
                   <h2 style="margin-top:5px">One Piece</h2>
-                  <h3 style="font-size:15px">Movie 09: Episode of Chopper Plus Fuyu ni Saku, Kiseki no Sakura</h3>
+                  <h3 style="font-size:14px">Movie 08: Episode of Alabasta Sabaku no Oujo to Kaizoku-tachi</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Película</p>
                   <p><b>Estudio:</b> Toei Animation</p>
                   <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
-                  <p><b>Fecha de Publicación:</b> 01/03/2008</p>
-                  <p><b>Temporada:</b> Primavera 2008</p>
+                  <p><b>Fecha de Publicación:</b> 03/03/2007</p>
+                  <p><b>Temporada:</b> Primavera 2007</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 29/03/2024</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(10)" title="Cerrar">
@@ -560,10 +562,56 @@
             <section class="serie">
                 <div class="serie-elemento">
                     <div class="serie-imagen">
-                        <img src="../media/anime/one-piece-movie-10-strong-world.png" alt="One Piece">
+                        <img src="../media/anime/one-piece-movie-09-episode-of-chopper-plus-fuyu-ni-saku-kiseki-no-sakura.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
                         <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(11)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Movie 09:  Episode of Chopper Plus Fuyu ni Saku, Kiseki no Sakura</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>1 h. 53 min.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="ov11" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-movie-09-episode-of-chopper-plus-fuyu-ni-saku-kiseki-no-sakura.png" alt="One Piece">
+                </div>
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:13px">Movie 09: Episode of Chopper Plus Fuyu ni Saku, Kiseki no Sakura</h3>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Tipo:</b> Película</p>
+                  <p><b>Estudio:</b> Toei Animation</p>
+                  <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                  <p><b>Fecha de Publicación:</b> 01/03/2008</p>
+                  <p><b>Temporada:</b> Primavera 2008</p>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Visto:</b> 29/03/2024</p>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(11)" title="Cerrar">
+                </div>
+            </div>
+        </div>
+
+        <hr class="info-sep">
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-movie-10-strong-world.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(12)">
                         <h2 class="serie-titulo">One Piece</h2>
                         <h3 class="serie-subtitulo">Movie 10: Strong World</h3>
                         <hr class="info-sep">
@@ -573,14 +621,14 @@
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>1:55:00</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>1 h. 55 min.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov11" class="overlay" style="display: none;">
+            <div id="ov12" class="overlay" style="display: none;">
                 <div class="serie-imagen">
                     <img src="../media/anime/one-piece-movie-10-strong-world.png" alt="One Piece">
                 </div>
@@ -595,7 +643,7 @@
                   <p><b>Temporada:</b> Invierno 2010</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 29/03/2024</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(11)" title="Cerrar">
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(12)" title="Cerrar">
                 </div>
             </div>
         </div>
@@ -609,7 +657,7 @@
                         <img src="../media/anime/one-piece-movie-12-z.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(12)">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(13)">
                         <h2 class="serie-titulo">One Piece</h2>
                         <h3 class="serie-subtitulo">Movie 12: Z</h3>
                         <hr class="info-sep">
@@ -619,14 +667,14 @@
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>1:47:00</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>1 h. 47 min.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov12" class="overlay" style="display: none;">
+            <div id="ov13" class="overlay" style="display: none;">
                 <div class="serie-imagen">
                     <img src="../media/anime/one-piece-movie-12-z.png" alt="One Piece">
                 </div>
@@ -641,7 +689,7 @@
                   <p><b>Temporada:</b> Invierno 2013</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 29/03/2024</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(12)" title="Cerrar">
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(13)" title="Cerrar">
                 </div>
             </div>
         </div>
@@ -655,7 +703,7 @@
                         <img src="../media/anime/one-piece-movie-13-gold.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(13)">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(14)">
                         <h2 class="serie-titulo">One Piece</h2>
                         <h3 class="serie-subtitulo">Movie 13: Gold</h3>
                         <hr class="info-sep">
@@ -665,14 +713,14 @@
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>2:00:00</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>2 h.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov13" class="overlay" style="display: none;">
+            <div id="ov14" class="overlay" style="display: none;">
                 <div class="serie-imagen">
                     <img src="../media/anime/one-piece-movie-13-gold.png" alt="One Piece">
                 </div>
@@ -687,7 +735,7 @@
                   <p><b>Temporada:</b> Verano 2016</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 29/03/2024</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(13)" title="Cerrar">
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(14)" title="Cerrar">
                 </div>
             </div>
         </div>
@@ -701,7 +749,7 @@
                         <img src="../media/anime/one-piece-movie-14-stampede.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(14)">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(15)">
                         <h2 class="serie-titulo">One Piece</h2>
                         <h3 class="serie-subtitulo">Movie 14: Stampede</h3>
                         <hr class="info-sep">
@@ -711,14 +759,14 @@
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>1:41:00</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>1 h. 41 min.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov14" class="overlay" style="display: none;">
+            <div id="ov15" class="overlay" style="display: none;">
                 <div class="serie-imagen">
                     <img src="../media/anime/one-piece-movie-14-stampede.png" alt="One Piece">
                 </div>
@@ -733,7 +781,7 @@
                   <p><b>Temporada:</b> Verano 2019</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 29/03/2024</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(14)" title="Cerrar">
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(15)" title="Cerrar">
                 </div>
             </div>
         </div>
@@ -747,7 +795,7 @@
                         <img src="../media/anime/one-piece-movie-15-red.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(15)">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(16)">
                         <h2 class="serie-titulo">One Piece</h2>
                         <h3 class="serie-subtitulo">Movie 15: Red</h3>
                         <hr class="info-sep">
@@ -757,14 +805,14 @@
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>1:55:00</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>1 h. 55 min.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov15" class="overlay" style="display: none;">
+            <div id="ov16" class="overlay" style="display: none;">
                 <div class="serie-imagen">
                     <img src="../media/anime/one-piece-movie-15-red.png" alt="One Piece">
                 </div>
@@ -779,12 +827,10 @@
                   <p><b>Temporada:</b> Verano 2022</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 07/04/2024</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(15)" title="Cerrar">
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(16)" title="Cerrar">
                 </div>
             </div>
         </div>
-
-        </section>
 
     </section>
 
@@ -797,64 +843,21 @@
                         <img src="../media/anime/one-piece-episode-of-nami-koukaishi-no-namida-to-nakama-no-kizuna.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(16)">
-                        <h2 class="serie-titulo">One Piece</h2>
-                        <h3 class="serie-subtitulo">Episode of Nami - Koukaishi no Namida to Nakama no Kizuna</h3>
-                        <hr class="info-sep">
-                        <div class="serie-details">
-                            <div class="serie-details-labels">
-                                <p><strong>Estado:</strong></p>
-                                <p><strong>Duración:</strong></p>
-                            </div>
-                            <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>1:46:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="ov16" class="overlay" style="display: none;">
-                <div class="serie-imagen">
-                    <img src="../media/anime/one-piece-episode-of-nami-koukaishi-no-namida-to-nakama-no-kizuna.png" alt="One Piece">
-                </div>
-                <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece</h2>
-                  <h3 style="font-size:15px">Episode of Nami - Koukaishi no Namida to Nakama no Kizuna</h3>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Especial</p>
-                  <p><b>Estudio:</b> Toei Animation</p>
-                  <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
-                  <p><b>Fecha de Publicación:</b> 25/08/2012</p>
-                  <p><b>Temporada:</b> Verano 2012</p>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Visto:</b> 24/10/2023</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(16)" title="Cerrar">
-                </div>
-            </div>
-        </div>
-
-        <hr class="info-sep">
-        
-        <div class="serie-container">
-            <section class="serie">
-                <div class="serie-elemento">
-                    <div class="serie-imagen">
-                        <img src="../media/anime/one-piece-episode-of-east-blue-luffy-to-4nin-no-nakama-no-daibouken.png" alt="One Piece">
-                    </div>
-                    <div class="serie-info" style="position: relative;">
                         <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(17)">
                         <h2 class="serie-titulo">One Piece</h2>
-                        <h3 class="serie-subtitulo">Episode of East Blue - Luffy to 4-nin no Nakama no Daibouken</h3>
+                        <h3 class="serie-subtitulo">Episode of Nami</h3>
+                        <h2 class="serie-subtitulo" style="font-size:12px">Koukaishi no Namida to Nakama no Kizuna</h2>
                         <hr class="info-sep">
                         <div class="serie-details">
                             <div class="serie-details-labels">
+                                <p><strong>Tipo:</strong></p>
                                 <p><strong>Estado:</strong></p>
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>1:46:00</p>
+                                <p>Especial</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>1 h. 46 min.</p>
                             </div>
                         </div>
                     </div>
@@ -862,17 +865,17 @@
             </section>
             <div id="ov17" class="overlay" style="display: none;">
                 <div class="serie-imagen">
-                    <img src="../media/anime/one-piece-episode-of-east-blue-luffy-to-4nin-no-nakama-no-daibouken.png" alt="One Piece">
+                    <img src="../media/anime/one-piece-episode-of-nami-koukaishi-no-namida-to-nakama-no-kizuna.png" alt="One Piece">
                 </div>
                 <div class="contenido-overlay">
                   <h2 style="margin-top:5px">One Piece</h2>
-                  <h3 style="font-size:15px">Episode of East Blue - Luffy to 4-nin no Nakama no Daibouken</h3>
+                  <h3 style="font-size:14px">Episode of Nami - Koukaishi no Namida to Nakama no Kizuna</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Especial</p>
                   <p><b>Estudio:</b> Toei Animation</p>
                   <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
-                  <p><b>Fecha de Publicación:</b> 26/08/2017</p>
-                  <p><b>Temporada:</b> Verano 2017</p>
+                  <p><b>Fecha de Publicación:</b> 25/08/2012</p>
+                  <p><b>Temporada:</b> Verano 2012</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 24/10/2023</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(17)" title="Cerrar">
@@ -886,21 +889,23 @@
             <section class="serie">
                 <div class="serie-elemento">
                     <div class="serie-imagen">
-                        <img src="../media/anime/one-piece-episode-of-skypiea.png" alt="One Piece">
+                        <img src="../media/anime/toriko-x-one-piece-dragon-ball-z-super-colaboracion.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
                         <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(18)">
-                        <h2 class="serie-titulo">One Piece</h2>
-                        <h3 class="serie-subtitulo">Episode of Skypiea</h3>
+                        <h2 class="serie-titulo" style="font-size:18px">Toriko x One Piece x Dragon Ball Z</h2>
+                        <h3 class="serie-subtitulo" style="font-size:12px">Super Colaboración</h3>
                         <hr class="info-sep">
                         <div class="serie-details">
                             <div class="serie-details-labels">
+                                <p><strong>Tipo:</strong></p>
                                 <p><strong>Estado:</strong></p>
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>1:45:00</p>
+                                <p>Especial</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>43 min.</p>
                             </div>
                         </div>
                     </div>
@@ -908,48 +913,48 @@
             </section>
             <div id="ov18" class="overlay" style="display: none;">
                 <div class="serie-imagen">
-                    <img src="../media/anime/one-piece-episode-of-skypiea.png" alt="One Piece">
+                    <img src="../media/anime/toriko-x-one-piece-dragon-ball-z-super-colaboracion.png" alt="One Piece">
                 </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">One Piece</h2>
-                  <h3 style="font-size:15px">Episode of Skypiea</h3>
+                  <h2 style="margin-top:5px">Toriko x One Piece x Dragon Ball Z</h2>
+                  <h3 style="font-size:14px">Super Colaboración</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Anime</p>
+                  <p><b>Tipo:</b> Especial</p>
                   <p><b>Estudio:</b> Toei Animation</p>
                   <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
-                  <p><b>Fecha de Publicación:</b> 25/08/2018</p>
-                  <p><b>Temporada:</b> Verano 2018</p>
+                  <p><b>Fecha de Publicación:</b> 07/04/2013</p>
+                  <p><b>Temporada:</b> Primavera 2013</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Visto:</b> 24/10/2023</p>
+                  <p><b>Visto:</b> 08/03/2025</p>
                   <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(18)" title="Cerrar">
                 </div>
             </div>
         </div>
 
-        </section>
-
-    </section>
-    <section id="sec4" style="display: none;">
+        <hr class="info-sep">
         
         <div class="serie-container">
             <section class="serie">
                 <div class="serie-elemento">
                     <div class="serie-imagen">
-                        <img src="../media/anime/monsters-ippyaku-sanjou-hiryuu-jigoku.png" alt="Monsters: Ippyaku Sanjou Hiryuu Jigoku">
+                        <img src="../media/anime/one-piece-episode-of-east-blue-luffy-to-4nin-no-nakama-no-daibouken.png" alt="One Piece">
                     </div>
                     <div class="serie-info" style="position: relative;">
                         <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(19)">
-                        <h2 class="serie-titulo">Monsters:</h2>
-                        <h3 class="serie-subtitulo">Ippyaku Sanjou Hiryuu Jigoku</h3>
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Episode of East Blue</h3>
+                        <h2 class="serie-subtitulo" style="font-size:12px">Luffy to 4-nin no Nakama no Daibouken</h2>
                         <hr class="info-sep">
                         <div class="serie-details">
                             <div class="serie-details-labels">
+                                <p><strong>Tipo:</strong></p>
                                 <p><strong>Estado:</strong></p>
                                 <p><strong>Duración:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p title="Visto">✔️</p>
-                                <p>25:00</p>
+                                <p>Especial</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>1 h. 46 min.</p>
                             </div>
                         </div>
                     </div>
@@ -957,10 +962,107 @@
             </section>
             <div id="ov19" class="overlay" style="display: none;">
                 <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-episode-of-east-blue-luffy-to-4nin-no-nakama-no-daibouken.png" alt="One Piece">
+                </div>
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:14px">Episode of East Blue - Luffy to 4-nin no Nakama no Daibouken</h3>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Tipo:</b> Especial</p>
+                  <p><b>Estudio:</b> Toei Animation</p>
+                  <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                  <p><b>Fecha de Publicación:</b> 26/08/2017</p>
+                  <p><b>Temporada:</b> Verano 2017</p>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Visto:</b> 24/10/2023</p>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(19)" title="Cerrar">
+                </div>
+            </div>
+        </div>
+
+        <hr class="info-sep">
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-episode-of-skypiea.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(20)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Episode of Skypiea</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Tipo:</strong></p>
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>Especial</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>1 h. 45 min.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="ov20" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-episode-of-skypiea.png" alt="One Piece">
+                </div>
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Episode of Skypiea</h3>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Tipo:</b> Especial</p>
+                  <p><b>Estudio:</b> Toei Animation</p>
+                  <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                  <p><b>Fecha de Publicación:</b> 25/08/2018</p>
+                  <p><b>Temporada:</b> Verano 2018</p>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Visto:</b> 24/10/2023</p>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(20)" title="Cerrar">
+                </div>
+            </div>
+        </div>
+
+        <hr class="info-sep">
+
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/monsters-ippyaku-sanjou-hiryuu-jigoku.png" alt="Monsters: Ippyaku Sanjou Hiryuu Jigoku">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(21)">
+                        <h2 class="serie-titulo">Monsters:</h2>
+                        <h3 class="serie-subtitulo">Ippyaku Sanjou Hiryuu Jigoku</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Tipo:</strong></p>
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>ONA</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>25 min.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="ov21" class="overlay" style="display: none;">
+                <div class="serie-imagen">
                     <img src="../media/anime/monsters-ippyaku-sanjou-hiryuu-jigoku.png" alt="Monsters: Ippyaku Sanjou Hiryuu Jigoku">
                 </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">Monsters:<br> Ippyaku Sanjou Hiryuu Jigoku</label></h2>
+                  <h2 style="margin-top:5px">Monsters:</h2>
+                  <h3 style="font-size:15px">Ippyaku Sanjou Hiryuu Jigoku</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> ONA</p>
                   <p><b>Estudio:</b> E&H Production</p>
@@ -969,7 +1071,55 @@
                   <p><b>Temporada:</b> Invierno 2024</p>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Visto:</b> 23/01/2024</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(19)" title="Cerrar">
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(21)" title="Cerrar">
+                </div>
+            </div>
+        </div>
+
+        <hr class="info-sep">
+        
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/anime/one-piece-fan-letter.png" alt="One Piece">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(22)">
+                        <h2 class="serie-titulo">One Piece</h2>
+                        <h3 class="serie-subtitulo">Fan Letter</h3>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Tipo:</strong></p>
+                                <p><strong>Estado:</strong></p>
+                                <p><strong>Duración:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>Especial</p>
+                                <p title="Visto"><i class="fa-solid fa-check"></i></p>
+                                <p>24 min.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="ov22" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/anime/one-piece-fan-letter.png" alt="One Piece">
+                </div>
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px">One Piece</h2>
+                  <h3 style="font-size:15px">Fan Letter</h3>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Tipo:</b> Especial</p>
+                  <p><b>Estudio:</b> Toei Animation</p>
+                  <p><b>Generos:</b> Acción, Aventura, Fantasia</p>
+                  <p><b>Fecha de Publicación:</b> 20/10/2024</p>
+                  <p><b>Temporada:</b> Otoño 2024</p>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Visto:</b> 20/10/2024</p>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(22)" title="Cerrar">
                 </div>
             </div>
         </div>
@@ -983,12 +1133,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

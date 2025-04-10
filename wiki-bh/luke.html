@@ -13,23 +13,24 @@
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
 
     <header>
         <script src="../js/menu.js"></script>
         
-        <section id="menu">
-            <div class="menu">
+<section id="menu">
+    <div class="menu">
 
-                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+        <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+        <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="logo-wbh"></a>
 
                 <nav>
                     <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -45,13 +46,14 @@
         <section id="menu-overlay" class="menu-overlay" style="display: none;">
             <div id="menu-overlay">
                 <div class="contenido-overlay">
-                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="menu-ov-logo-wbh"></a>
                   <hr style="margin-top:15px;margin-bottom:-15px;">
                   <nav class="menu-ov-nav">
                       <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -92,56 +94,57 @@
       
         <script src="../js/search-wiki-bh.js"></script>
 
-        <table style="margin-top:20px;width:36%">
-            <tr>
-                <th colspan="5">Luke</th>
-            </tr>
-            <tr>
-                <td style="width:240px" rowspan="2"><img src="../media/wiki/bh/crossovers/street-fighter/luke.png" style="background-image:url(../media/wiki/bh/epic.png);width:200px"></td>
-                <th style="height:30px;width:100px">Precio</th>
-                <th style="width: 100px">Leyenda</th>
-                <th style="width: 100px">Adquisición</th>
-                <th style="width: 180px">Crossover</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="width:20px"> <b style="font-size:20px">300</b>
-                </td>
-                <td>
-                    <a href="../wiki-bh/cross"><img src="../media/wiki/bh/leyendas/logos/cross.png" title="Cross" style="width:75px"></a>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/tienda.png" alt="Tienda" style="width:15px;margin-right:5px">Tienda<br>
-                </td>
-                <td>
-                    <a href="../wiki-bh/street-fighter" style="color:#A55CDE" title="Street Fighter" class="wbh-a"><img src="../media/wiki/bh/iconos/bh.png" alt="Crossover" style="width:15px;margin-right:5px">Street Fighter</a><br>
-                </td>
-            </tr>
-        </table>
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/street-fighter/luke.png" style="padding: 25px;">
+                    </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+                    <div class="leyenda-info" style="position: relative;">
+                        <h2 class="leyenda-titulo">Luke</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Precio:<br>
+                                        Crossover:<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300<br>
+                                    <a href="../wiki-bh/street-fighter" class="wbh-a-light"><img src="../media/wiki/bh/crossovers/logos/street-fighter.png" alt="Crossover" style="width:14px;margin-right:5px">Street fighter</a><br><br>
+                                    <a href="../wiki-bh/cross" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/cross.png" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>
-                    Special Forces Pistols
-                </th>
-                <th>
-                    Flashing Knuckles
-                </th>
-            </tr>
-        </tr>
-            <tr>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/crossovers/street-fighter/armas/luke_special-forces-pistols.png" style="width:200px">
-                </td>
-                <td style="width:300px">
-                    <img src="../media/wiki/bh/crossovers/street-fighter/armas/luke_flashing-knuckles.png" style="width:200px">
-                </td>
-            </tr>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
+
+        <section class="wbh-armas-lista">
+
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/crossovers/street-fighter/armas/luke_special-forces-pistols.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo">Special Forces Pistols</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/crossovers/street-fighter/armas/luke_flashing-knuckles.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo">Flashing Knuckles</div>
+            </div>
+
+        </section>
 
     </main>
 
@@ -150,12 +153,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

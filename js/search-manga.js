@@ -11,13 +11,18 @@ function obtenerResultadosConURLs(query) {
   resultadosConURLs = [
     { resultado: 'Boku no Hero Academia', url: '../lista-manga/boku-no-hero-academia' },
     { resultado: 'Chainsaw Man', url: '../lista-manga/chainsaw-man' },
+    { resultado: 'Dandadan', url: '../lista-manga/dandadan' },
     { resultado: 'Genshin Impact', url: '../lista-manga/genshin-impact' },
+    { resultado: 'Hunter x Hunter', url: '../lista-manga/hunter-x-hunter' },
     { resultado: "Jojo's Bizarre Adventure", url: '../lista-manga/jojos-bizarre-adventure' },
     { resultado: "Jujutsu Kaisen", url: '../lista-manga/jujutsu-kaisen' },
     { resultado: "Kaiju No. 8", url: '../lista-manga/kaiju-no-8' },
     { resultado: 'Made in Abyss', url: '../lista-manga/made-in-abyss' },
+    { resultado: 'Megami Ibunroku: Persona', url: '../lista-manga/megami-ibunroku-persona' },
+    { resultado: 'Metaphor: ReFantazio', url: '../lista-manga/metaphor-refantazio' },
     { resultado: 'Nanatsu no Taizai', url: '../lista-manga/nanatsu-no-taizai' },
     { resultado: 'One Piece', url: '../lista-manga/one-piece' },
+    { resultado: 'Sakamoto Days', url: '../lista-manga/sakamoto-days' },
     { resultado: 'Solo Leveling', url: '../lista-manga/solo-leveling' },
   ];
 

@@ -13,23 +13,24 @@
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
 
     <header>
         <script src="../js/menu.js"></script>
         
-        <section id="menu">
-            <div class="menu">
+<section id="menu">
+    <div class="menu">
 
-                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+        <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+        <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="logo-wbh"></a>
 
                 <nav>
                     <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -45,13 +46,14 @@
         <section id="menu-overlay" class="menu-overlay" style="display: none;">
             <div id="menu-overlay">
                 <div class="contenido-overlay">
-                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="menu-ov-logo-wbh"></a>
                   <hr style="margin-top:15px;margin-bottom:-15px;">
                   <nav class="menu-ov-nav">
                       <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -92,162 +94,178 @@
       
         <script src="../js/search-wiki-bh.js"></script>
 
-        <table style="margin-top:20px;width:30%">
-            <tr>
-                <th colspan="4">WWE</th>
-            </tr>
-            <tr>
-                <td style="width:350px;height:197px" rowspan="2"><img src="../media/wiki/bh/crossovers/wwe.png" style="width:350px;height:197px"></td>
-                <th style="height:30px;width:175px">Fecha de Salida</th>
-            </tr>
-            <tr>
-                <td>
-                    <b>08/08/2019</b><br><br>
-                    <b>04/11/2019</b>
-                </td>
-            </tr>
-        </table>
+        <div class="crossover-container">
+            <section class="crossover">
+                <div class="crossover-elemento">
+                    <div class="crossover-imagen">
+                        <img src="../media/wiki/bh/crossovers/wwe.png">
+                    </div>
 
-        <h2 align="center" style="margin-top:20px">Skins</h2>
+                    <div class="crossover-info" style="position: relative;">
+                        <h2 class="crossover-titulo">WWE</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="crossover-details">
+                            <div class="crossover-details-labels">
+                                <p>
+                                    <strong>
+                                        Fecha de salida de la parte 1:<br><br>
+                                        Fecha de salida de la parte 2:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    08/08/2019<br><br>
+                                    04/11/2019
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>
-                    <a href="../wiki-bh/the-rock">The Rock</a>
-                </th>
-                <th>
-                    <a href="../wiki-bh/john-cena">John Cena</a>
-                </th>
-                <th>
-                    <a href="../wiki-bh/becky-lynch">Becky Lynch</a>
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="../wiki-bh/the-rock">
-                        <img src="../media/wiki/bh/crossovers/wwe/the-rock.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="../wiki-bh/john-cena">
-                        <img src="../media/wiki/bh/crossovers/wwe/john-cena.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="../wiki-bh/becky-lynch">
-                        <img src="../media/wiki/bh/crossovers/wwe/becky-lynch.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Sentinel</i>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Hattori</i>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Gnash</i>
-                </td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:10px;width:20%">
-            <tr>
-                <th>
-                    <a href="../wiki-bh/xavier-woods">Xavier Woods</a>
-                </th>
-                <th>
-                    <a href="../wiki-bh/the-undertaker">The Undertaker</a>
-                </th>
-                <th>
-                    <a href="../wiki-bh/roman-reigns">Roman Reigns</a>
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="../wiki-bh/xavier-woods">
-                        <img src="../media/wiki/bh/crossovers/wwe/xavier-woods.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="../wiki-bh/the-undertaker">
-                        <img src="../media/wiki/bh/crossovers/wwe/the-undertaker.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="../wiki-bh/roman-reigns">
-                        <img src="../media/wiki/bh/crossovers/wwe/roman-reigns.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Bödvar</i>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Thor</i>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Teros</i>
-                </td>
-            </tr>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins</h2>
 
-        <table style="margin-top:10px;width:20%">
-            <tr>
-                <th>
-                    <a href="../wiki-bh/asuka">Asuka</a>
-                </th>
-                <th>
-                    <a href="../wiki-bh/macho-man">Macho Man</a>
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="../wiki-bh/asuka">
-                        <img src="../media/wiki/bh/crossovers/wwe/asuka.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="../wiki-bh/macho-man">
-                        <img src="../media/wiki/bh/crossovers/wwe/macho-man.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Queen Nai</i>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Ulgrim</i>
-                </td>
-            </tr>
-        </table>
+        <section class="crossover-skins-lista">
+            
+            <div class="crossover-skins-list-elemento">
+                <a href="./the-rock">
+                <div class="crossover-skins-list-titulo">The Rock</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/wwe/the-rock.png">
+                        <a href="./sentinel" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/sentinel.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
 
-        <h2 align="center" style="margin-top:20px">Modos de Juego</h2>
+            <div class="crossover-skins-list-elemento">
+                <a href="./john-cena">
+                <div class="crossover-skins-list-titulo">John Cena</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/wwe/john-cena.png">
+                        <a href="./hattori" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/hattori.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
 
-        <table style="margin-top:20px;width:5%">
-            <tr>
-                <th>Brawldown</th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="../wiki-bh/brawldown">
-                        <img src="../media/wiki/bh/gamemodes/brawldown.png" style="width:100px">
-                    </a>
-                </td>
-            </tr>
-        </table>
+            <div class="crossover-skins-list-elemento">
+                <a href="./becky-lynch">
+                <div class="crossover-skins-list-titulo">Becky Lynch</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/wwe/becky-lynch.png">
+                        <a href="./gnash" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/gnash.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
 
+            <div class="crossover-skins-list-elemento">
+                <a href="./xavier-woods">
+                <div class="crossover-skins-list-titulo">Xavier Woods</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/wwe/xavier-woods.png">
+                        <a href="./bodvar" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/bodvar.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
+
+            <div class="crossover-skins-list-elemento">
+                <a href="./the-undertaker">
+                <div class="crossover-skins-list-titulo">The Undertaker</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/wwe/the-undertaker.png">
+                        <a href="./thor" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/thor.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
+
+            <div class="crossover-skins-list-elemento">
+                <a href="./roman-reigns">
+                <div class="crossover-skins-list-titulo">Roman Reigns</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/wwe/roman-reigns.png">
+                        <a href="./teros" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/teros.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
+
+            <div class="crossover-skins-list-elemento">
+                <a href="./asuka">
+                <div class="crossover-skins-list-titulo">Asuka</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/wwe/asuka.png">
+                        <a href="./queen-nai" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/queen-nai.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
+
+            <div class="crossover-skins-list-elemento">
+                <a href="./macho-man">
+                <div class="crossover-skins-list-titulo">Macho Man</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/wwe/macho-man.png">
+                        <a href="./ulgrim" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/ulgrim.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">300</div>
+                </a>
+            </div>
+
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Modos de Juego</h2>
+
+        <section class="crossover-modos_de_juego-lista">
+            <a href="./brawldown" class="wbh-a-nocolor">
+                <div class="crossover-modos_de_juego-list-elemento">
+                    <div class="crossover-modos_de_juego-list-titulo">Brawldown</div>
+                    <div class="crossover-modos_de_juego-list-imagen"><img src="../media/wiki/bh/gamemodes/brawldown.png"></div>
+                </div>
+            </a>
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Mapas</h2>
+
+        <section class="crossover-mapas-lista unmapa">
+
+            <a href="./brawldown-ring" class="wbh-a-nocolor">
+                <div class="crossover-mapas-list-elemento">
+                    <div class="crossover-mapas-list-titulo">Brawldown Ring</div>
+                    <div class="crossover-mapas-list-imagen"><img src="../media/wiki/bh/mapas/brawldown-ring.png"></div>
+                </div>
+            </a>
+
+        </section>
+        
     </main>
 
 
@@ -255,12 +273,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

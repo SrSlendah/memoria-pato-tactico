@@ -10,23 +10,24 @@
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
 
     <header>
         <script src="../js/menu.js"></script>
         
-        <section id="menu">
-            <div class="menu">
+<section id="menu">
+    <div class="menu">
 
-                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+        <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+        <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="logo-wbh"></a>
 
                 <nav>
                     <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -42,13 +43,14 @@
         <section id="menu-overlay" class="menu-overlay" style="display: none;">
             <div id="menu-overlay">
                 <div class="contenido-overlay">
-                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="menu-ov-logo-wbh"></a>
                   <hr style="margin-top:15px;margin-bottom:-15px;">
                   <nav class="menu-ov-nav">
                       <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -86,92 +88,85 @@
         </div>
       
         <script src="../js/search-wiki-bh.js"></script>
+        <script src="../js/wiki.js"></script>
 
-        <table style="margin-top:20px;width:26%">
-            <tbody><tr>
-                <th colspan="4">Elder Wild Ragnir</th>
-            </tr>
-            <tr>
-                <td style="width:200px;height: 225px;"" rowspan="2"><img src="../media/wiki/bh/skins/ragnir/elder-wild-ragnir.webp" width="200px"></td>
-                <th style="width: 200px;height: 30px;">Adquisición</th>
-                <th style="width: 180px">Leyenda</th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="../wiki-bh/pase-batalla6" style="color:#A55CDE" title="Temporada 6" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:15px;margin-right:5px">Temporada 6</a><br>
-                    <i style="font-size:13px">Recompensa Tier 1</i>
-                </td>
-                <td>
-                    <a href="../wiki-bh/ragnir"><img src="../media/wiki/bh/leyendas/logos/ragnir.png" title="Ragnir" style="width:75px"></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen" style="position: relative;">
+                        <img src="../media/wiki/bh/skins/ragnir/elder-wild-ragnir_lvl1.png" id="elderwildragnir-foto">
+                        <img src="../media/wiki/bh/iconos/change.png" id="cambiar-imagen" class="change-img" onclick="cambiar('elderwildragnir')" alt="Cambiar Imagen">
+                    </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+                    <div class="leyenda-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="leyenda-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                        <h2 class="leyenda-titulo">Elder Wild Ragnir</h2>
+                        <h4 style="margin-top:-10px;margin-bottom:5px" id="elderwildragnir-nivel">Nivel 1</h4>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Nivel 1 de la<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <a href="../wiki-bh/temporada-6#recompensas#pagina1" class="wbh-a-light"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:15px;margin-right:5px">Temporada 6</a><br><br>
+                                    <a href="../wiki-bh/ragnir" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/ragnir.png" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        <div id="ov1" class="overlay" style="display: none;">
+            <div class="contenido-overlay ov-skinpaselvl1">
+                <h2 style="margin-top:-20px">Elder Wild Ragnir</h2>
+                <hr style="margin-top:15px;margin-bottom:15px;">
+                <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 10px; right: 10px;" onclick="cerrarOV(1)" title="Cerrar">
+                <section class="leyenda">
+                    <div class="leyenda-elemento">
+                        <div class="leyenda-imagen">
+                            <img src="../media/wiki/bh/skins/ragnir/elder-wild-ragnir.webp" alt="Ragnir">
+                        </div>
+    
+                        <div class="leyenda-info" style="position: relative;">
+                            <div class="leyenda-details ov-skinpaselvl1-details">
+                                <p style="font-size:15px">
+                                    <strong style="font-size: 18px;">Nivel 1:</strong><br> Conseguido al Nivel 1 de la <a href="../wiki-bh/temporada-6#recompensas#pagina1" class="wbh-a-light"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:13px;margin-right:5px">Temporada 6</a><br><br>
+                                    <strong style="font-size: 18px;">Nivel 2:</strong><br> Conseguir 40 KOs con ataques en versión activa <i>(Después de conseguir el Nivel 1)</i><br><br>
+                                    <strong style="font-size: 18px;">Nivel 3:</strong><br> Conseguir 100 KOs con ataques en versión activa <i>(Después de conseguir el Nivel 2)</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        </div>
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:20px;width:20%">
-            <tbody>
-                <tr>
-                    <th>
-                        Flora Blades
-                    </th>
-                    <th>
-                        Axe of Regrowth
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_flora-blades.webp" style="width:200px;padding:10px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_axe-of-regrowth.webp" style="width:200px">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+        <section class="wbh-armas-lista">
 
-        <h2 align="center" style="margin-top:20px">Niveles</h2>
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_flora-blades_lvl1.png" style="padding:10px;" id="elderwildragnir-arma1-foto"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Flora Blades</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/ragnir/armas/elder-wild-ragnir_axe-of-regrowth_lvl1.png" style="padding:10px;" id="elderwildragnir-arma2-foto"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Axe of Regrowth</div>
+            </div>
 
-        <table style="margin-top:20px;width:20%">
-                <tr>
-                    <th>
-                        Nivel 1
-                    </th>
-                    <th>
-                        Nivel 2
-                    </th>
-                    <th>
-                        Nivel 3
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/ragnir/elder-wild-ragnir_lvl1.png" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/ragnir/elder-wild-ragnir_lvl2.png" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/ragnir/elder-wild-ragnir_lvl3.png" style="width:200px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>    
-                        <a href="../wiki-bh/pase-batalla6" style="color:#A55CDE" title="Temporada 6" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:15px;margin-right:5px">Temporada 6</a><br>
-                    <i style="font-size:13px">Recompensa Tier 1</i>
-                </td>
-                    <td>
-                        <label style="font-size:13px">Conseguir 40 KOs con ataques en versión activa</label>
-                    <td>
-                        <label style="font-size:13px">Conseguir 100 KOs con ataques en versión activa</label>
-                    </td>
-                </tr>
-        </table>
+        </section>
 
     </main>
 
@@ -180,12 +175,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

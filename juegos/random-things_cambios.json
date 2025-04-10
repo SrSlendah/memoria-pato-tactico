@@ -1,0 +1,93 @@
+{
+
+    "mc-25w08a_1.0": {
+        "objetos_cambiados": [
+            {"objeto": "Disco 5", "cambio": "Chess (Slowed) - Joyful"},
+            {"objeto": "Disco 11", "cambio": "My Time - Omori OST"},
+            {"objeto": "Disco 13", "cambio": "School Days - Shin Megami Tensei: Persona OST"},
+            {"objeto": "Disco blocks", "cambio": "Specialist - Persona 4 OST"},
+            {"objeto": "Disco cat", "cambio": "Mass Destruction - Persona 3 Reload OST"},
+            {"objeto": "Disco chirp", "cambio": "Otonoke - Creepy Nuts"},
+            {"objeto": "Disco creator", "cambio": "Memories of You - Persona 3 Reload OST"},
+            {"objeto": "Disco creator (music box)", "cambio": "Misato Theme - Neon Genesis Evangelion OST"},
+            {"objeto": "Disco far", "cambio": "Bad Piggies Theme - Bad Piggies OST"},
+            {"objeto": "Disco mall", "cambio": "A Cyber's World? - Deltarune OST"},
+            {"objeto": "Disco mellohi", "cambio": "Dire, Dire Docks - Super Mario 64 OST"},
+            {"objeto": "Disco precipice", "cambio": "Burn My Dread - Persona 3 OST"},
+            {"objeto": "Disco relic", "cambio": "Kokiri Forest - The Legend of Zelda: Ocarina of Time OST"},
+            {"objeto": "Disco stal", "cambio": "Realm Overworld - The Legend of Zelda: Spirit Tracks OST"},
+            {"objeto": "Disco strad", "cambio": "Megalovania - Undertale OST"},
+            {"objeto": "Disco wait", "cambio": "Sway to My Beat in Cosmos - Robin [HSR OST]"},
+            {"objeto": "Disco ward", "cambio": "Forest Maze - Super Mario RPG OST"},
+            {"objeto": "Saco", "cambio": "Cosa Inutil"},
+            {"objeto": "Totem de inmortalidad", "cambio": "Adachi calvo"}
+        ],
+        "texturas_cambiadas": [
+            {"objeto": "Totem de inmortalidad", "cambio": "Adachi calvo"}
+        ],
+        "sonidos_cambiados": [
+            {"sonido": "Muerte de aldeano", "nuevo_sonido": "Sonido de muerte de undertale"},
+            {"sonido": "Aldeano recibe daño", "nuevo_sonido": "Sonido de daño en undertale"},
+            {"sonido": "Aldeano habla", "nuevo_sonido": "Sonido de sans"},
+            {"sonido": "Aldeano afirma", "nuevo_sonido": "Ben diciendo Yes"},
+            {"sonido": "Aldeano niega", "nuevo_sonido": "Ben diciendo No"}
+        ]
+    },
+
+    "mc-25w08a_1.1": {
+        "objetos_cambiados": [
+            {"objeto": "Nombres de discos", "cambio": "Arreglados los nombres"}
+        ],
+        "texturas_cambiadas": [
+            {"objeto": "Libros encantados", "cambio": "Textura especial para cada encantamiento"},
+            {"objeto": "Lluvia y nieve", "cambio": "Ahora no molesta a la vista"}
+        ],
+        "sonidos_cambiados": [
+            {"sonido": "Muerte del jugador", "nuevo_sonido": "Sonido de muerte de yoda"}
+        ],
+        "otros_cambios": [
+            {"otro": "Se han agregado iconos a los encantamientos"}
+        ]
+    },
+
+    "mc-25w08a_1.2": {
+        "sonidos_cambiados": [
+            {"sonido": "Discos de musica", "nuevo_sonido": "Se ha bajado el volumen"}
+        ],
+        "otros_cambios": [
+            {"otro": "Se han agregado splashes custom"}
+        ]
+    },
+
+    "mc-1.21.4_1.2": {
+        "sonidos_cambiados": [
+            {"sonido": "Discos de musica", "nuevo_sonido": "Se ha bajado el volumen"}
+        ],
+        "otros_cambios": [
+            {"otro": "Se ha adaptado el texturepack a la version 1.21.4, sin los libros retexturizados"},
+            {"otro": "Se han agregado splashes custom"}
+        ]
+    },
+
+    "mc-25w08a_1.3": {
+        "texturas_cambiadas": [
+            {"objeto": "Pociones", "cambio": "Textura especial para cada poción"}
+        ],
+        "sonidos_cambiados": [
+            {"sonido": "Daño al jugador", "nuevo_sonido": "Sonido de daño de Terraria"}
+        ],
+        "otros_cambios": [
+            {"otro": "Se han agregado iconos a los efectos"}
+        ]
+    },
+
+    "mc-1.21.4_1.3": {
+        "sonidos_cambiados": [
+            {"sonido": "Daño al jugador", "nuevo_sonido": "Sonido de daño de Terraria"}
+        ],
+        "otros_cambios": [
+            {"otro": "Se han agregado iconos a los efectos"}
+        ]
+    }
+
+}

@@ -13,23 +13,24 @@
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
 
     <header>
         <script src="../js/menu.js"></script>
         
-        <section id="menu">
-            <div class="menu">
+<section id="menu">
+    <div class="menu">
 
-                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+        <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+        <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="logo-wbh"></a>
 
                 <nav>
                     <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -45,13 +46,14 @@
         <section id="menu-overlay" class="menu-overlay" style="display: none;">
             <div id="menu-overlay">
                 <div class="contenido-overlay">
-                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="menu-ov-logo-wbh"></a>
                   <hr style="margin-top:15px;margin-bottom:-15px;">
                   <nav class="menu-ov-nav">
                       <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -92,34 +94,50 @@
       
         <script src="../js/search-wiki-bh.js"></script>
 
-        <table style="margin-top:20px;width:30%">
-            <tr>
-                <th colspan="4">Wheel</th>
-            </tr>
-            <tr>
-                <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/mapas/wheel.png" style="width:400px"></td>
-                <th style="height:30px;width:175px">Leyendas Locales</th>
-            </tr>
-            <tr>
-                <td>
-                    Nadie
-                </td>
-            </tr>
-        </table>
+        <div class="mapa-container">
+            <section class="mapa">
+                <div class="mapa-elemento">
+                    <div class="mapa-imagen">
+                        <img src="../media/wiki/bh/mapas/wheel.png">
+                    </div>
 
-        <h2 align="center" style="margin-top:20px">Variantes</h2>
+                    <div class="mapa-info" style="position: relative;">
+                        <h2 class="mapa-titulo">Wheel</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="mapa-details">
+                            <div class="mapa-details-labels">
+                                <p>
+                                    <strong>
+                                        Hogar de:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="mapa-details-values">
+                                <p>
+                                    Nadie
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <table style="margin-top:40px;width:20%">
-            <tr>
-                <th>Entandar</th>
-            </tr>
-            <tr>
-                <td style="width:300px"><img src="../media/wiki/bh/mapas/wheel.png" style="width:400px"></td>
-            </tr>
-            <tr>
-                <td><i>Destinado a partidas Todos contra Todos<br> TEST MAP - Solo jugable en partidas personalizadas</i></td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Variaciones</h2>
+
+        <section class="mapa-variacion-lista unavariacion">
+            
+            <div class="mapa-variacion-list-elemento">
+                <div class="mapa-variacion-list-titulo">Estándar</div>
+                    <div class="mapa-variacion-list-imagen"><img src="../media/wiki/bh/mapas/wheel.png"></div>
+                    <div class="mapa-variacion-list-texto" style="border-radius: 0;border-bottom:none;height:30px;">Destinado a partidas de Todos contra Todos</div>
+                    <div class="mapa-variacion-list-texto" style="margin-top:0;height:35px;font-style: italic;font-size:12px;padding-bottom: 10px;">Este mapa está en pruebas y solo es accesible desde partidas personalizadas</div>
+            </div>
+
+        </section>
 
     </main>
 
@@ -128,12 +146,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aniversario - Brawlhalla Wiki</title>
+    <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/wiki-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/ir-arriba.js"></script>
+
+    <header>
+        <script src="../js/menu.js"></script>
+        
+<section id="menu">
+    <div class="menu">
+
+        <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+        <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="logo-wbh"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="menu-toggle" onclick="abrir_menu()"><img src="../media/menu.png" alt=""></button>
+        </section>
+
+        <section id="menu-overlay" class="menu-overlay" style="display: none;">
+            <div id="menu-overlay">
+                <div class="contenido-overlay">
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="menu-ov-logo-wbh"></a>
+                  <hr style="margin-top:15px;margin-bottom:-15px;">
+                  <nav class="menu-ov-nav">
+                      <ul>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                      </ul>
+                  </nav>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 8px; right: 8px;" onclick="cerrar_menu()" title="Cerrar" class="cerrar-overlay">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="textos-header">
+            <h1>Brawlhalla Wiki</h1>
+            <h3>Aniversario</h3>
+        </section>
+
+
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                 style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                      style="stroke: none; fill: #2E2E2E; "></path>
+            </svg>
+        </div>
+
+
+    </header>
+
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar en la wiki de Brawlhalla...">
+          <ul id="autocomplete-list" style="display: none;"></ul>
+        </div>
+      
+        <script src="../js/search-wiki-bh.js"></script>
+
+        <div class="crossover-container">
+            <section class="crossover">
+                <div class="crossover-elemento">
+                    <div class="crossover-imagen">
+                        <img src="../media/wiki/bh/eventos/aniversario.png">
+                    </div>
+
+                    <div class="crossover-info" style="position: relative;">
+                        <h2 class="crossover-titulo">Aniversario</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="crossover-details">
+                            <div class="crossover-details-labels">
+                                <p>
+                                    <strong>
+                                        Fecha:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    Noviembre
+                                </p>
+                            </div>
+                            
+                        </div> 
+                        <i style="font-size:11px;margin-top:-10px;color:#fff">(Aproximadamente)</i>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Títulos</h2>
+
+        <section class="evento-titulo-lista" style="margin-top: 35px;">
+
+            <div class="evento-titulo-elemento">
+                    <div class="evento-titulo-titulo evento-titulo-topleft">Título</div>
+                    <div class="evento-titulo-text">
+                        <span>Reveler</span>
+                    </div>
+                    <div class="evento-titulo-text" style="margin-top:-4px;">
+                        <span>Socialite</span>
+                    </div>
+                    <div class="evento-titulo-text" style="margin-top:-4px;">
+                        <span>Celebrant</span>
+                    </div>
+                    <div class="evento-titulo-text" style="margin-top:-4px;">
+                        <span>Belle of the Brawl</span>
+                    </div>
+                    <div class="evento-titulo-text" style="margin-top:-4px;">
+                        <span>Life of the Party</span>
+                    </div>
+                    <div class="evento-titulo-text evento-titulo-bottomleft" style="margin-top:-4px;">
+                        <span>You Got This</span>
+                    </div>
+            </div>
+            
+            <div class="evento-titulo-elemento">
+                    <div class="evento-titulo-titulo evento-titulo-topright">Obtención</div>
+                    <div class="evento-titulo-text">
+                        Gratis durante el evento del 2020
+                    </div>
+                    <div class="evento-titulo-text" style="margin-top:-4px;">
+                        Gratis durante el evento del 2021
+                    </div>
+                    <div class="evento-titulo-text" style="margin-top:-4px;">
+                        Gratis durante el evento del 2022
+                    </div>
+                    <div class="evento-titulo-text" style="margin-top:-4px;">
+                        Gratis durante el evento del 2023
+                    </div>
+                    <div class="evento-titulo-text" style="margin-top:-4px;">
+                        Gratis durante el evento del 2024
+                    </div>
+                    <div class="evento-titulo-text evento-titulo-bottomright" style="margin-top:-4px;">
+                        Gratis durante el evento del 2024
+                    </div>
+            </div>
+            
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Colores</h2>
+
+        <section class="evento-color-lista evento-trescolores">
+            
+            <div class="evento-color-list-elemento">
+                <div class="evento-color-list-titulo">Gala</div>
+                    <div class="evento-color-list-imagen">
+                        <img src="../media/wiki/bh/eventos/aniversario/color.png">
+                            <img src="../media/wiki/bh/eventos/aniversario/color-logo.png" class="evento-color-list-logo">
+                    </div>
+                    <div class="evento-color-list-texto" style="height: 80px;"><img src="../media/wiki/bh/iconos/oro.png" style="margin-right:5px">3.000 o <img src="../media/wiki/bh/iconos/mammoth.png" style="margin-right:5px;margin-left:5px">10 por leyenda</div>
+            </div>
+            
+            <div class="evento-color-list-elemento">
+                <div class="evento-color-list-titulo">Esports</div>
+                    <div class="evento-color-list-imagen">
+                        <img src="../media/wiki/bh/eventos/aniversario/color-esports.png">
+                            <img src="../media/wiki/bh/eventos/aniversario/color-esports-logo.png" class="evento-color-list-logo">
+                    </div>
+                    <div class="evento-color-list-texto-top">Victoria por leyenda <br>(Ganar con todas da el color en futuras leyendas)</div>
+                    <div class="evento-color-list-texto-bottom"><i>Exclusivo del 2023</i></div>
+            </div>
+            
+            <div class="evento-color-list-elemento">
+                <div class="evento-color-list-titulo">Esports v.2</div>
+                    <div class="evento-color-list-imagen">
+                        <img src="../media/wiki/bh/eventos/aniversario/color-esports-v2.png">
+                            <img src="../media/wiki/bh/eventos/aniversario/color-esports-v2-logo.png" class="evento-color-list-logo">
+                    </div>
+                    <div class="evento-color-list-texto-top">Victoria por leyenda <br>(Ganar con todas da el color en futuras leyendas)</div>
+                    <div class="evento-color-list-texto-bottom"><i>Exclusivo del 2024</i></div>
+            </div>
+            
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins</h2>
+
+        <section class="evento-skin-lista">
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./ritzy-bodvar">
+                <div class="evento-skin-list-titulo">Ritzy Bödvar</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/bodvar/ritzy-bodvar.png">
+                        <a href="./bodvar" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/bodvar.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./gentleman-kor">
+                <div class="evento-skin-list-titulo">Gentleman Kor</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/kor/gentleman-kor.png">
+                        <a href="./kor" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/kor.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./maitre-dhattori">
+                <div class="evento-skin-list-titulo">Maître d'Hattori</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/hattori/maitre-dhattori.png">
+                        <a href="./hattori" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/hattori.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./the-honorable-sir-roland-esq">
+                <div class="evento-skin-list-titulo">The Honorable Sir Roland, Esq.</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/sir-roland/the-honorable-sir-roland-esq.png">
+                        <a href="./sir-roland" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/sir-roland.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./gothic-chic-nix">
+                <div class="evento-skin-list-titulo">Gothic Chic Nix</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/nix/gothic-chic-nix.png">
+                        <a href="./nix" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/nix.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./peacock-artemis">
+                <div class="evento-skin-list-titulo">Peacock Artemis</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/artemis/peacock-artemis.png">
+                        <a href="./artemis" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/artemis.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./swanky-diana">
+                <div class="evento-skin-list-titulo">Swanky Diana</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/diana/swanky-diana.png">
+                        <a href="./diana" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/diana.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./haute-couture-ember">
+                <div class="evento-skin-list-titulo">Haute Couture Ember</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/ember/haute-couture-ember.png">
+                        <a href="./ember" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/ember.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins de Emoji</h2>
+
+
+        <section class="evento-emoji-lista">
+            
+            <div class="evento-emoji-list-elemento">
+                <div class="evento-emoji-list-titulo">Ritzy GG</div>
+                <div class="evento-emoji-list-imagen"><img src="../media/wiki/bh/eventos/aniversario/emojis/ritzy-gg.png"></div>
+                <div class="evento-emoji-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">20</div>
+            </div>
+            
+            <div class="evento-emoji-list-elemento">
+                <div class="evento-emoji-list-titulo">Gentleman WP</div>
+                <div class="evento-emoji-list-imagen"><img src="../media/wiki/bh/eventos/aniversario/emojis/gentleman-wp.png"></div>
+                <div class="evento-emoji-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">20</div>
+            </div>
+            
+            <div class="evento-emoji-list-elemento">
+                <div class="evento-emoji-list-titulo">Gothic Chic Laugh</div>
+                <div class="evento-emoji-list-imagen"><img src="../media/wiki/bh/eventos/aniversario/emojis/gothic-chic-laugh.webp"></div>
+                <div class="evento-emoji-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">35</div>
+            </div>
+            
+            <div class="evento-emoji-list-elemento">
+                <div class="evento-emoji-list-titulo">The Honorable Astonishment</div>
+                <div class="evento-emoji-list-imagen"><img src="../media/wiki/bh/eventos/aniversario/emojis/the-honorable-astonishment.png"></div>
+                <div class="evento-emoji-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">20</div>
+            </div>
+            
+            <div class="evento-emoji-list-elemento">
+                <div class="evento-emoji-list-titulo">Maître d' Wait</div>
+                <div class="evento-emoji-list-imagen"><img src="../media/wiki/bh/eventos/aniversario/emojis/maitre-dwait.png"></div>
+                <div class="evento-emoji-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">20</div>
+            </div>
+            
+            <div class="evento-emoji-list-elemento">
+                <div class="evento-emoji-list-titulo">Lookin' Swanky</div>
+                <div class="evento-emoji-list-imagen"><img src="../media/wiki/bh/eventos/aniversario/emojis/lookin-swanky.png"></div>
+                <div class="evento-emoji-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">35</div>
+            </div>
+
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Podios</h2>
+
+        <section class="evento-podio-lista">
+            
+            <div class="evento-podio-list-elemento">
+                <div class="evento-podio-list-titulo">Gilded Deco</div>
+                <div class="evento-podio-list-imagen"><img src="../media/wiki/bh/eventos/aniversario/podios/gilded-deco.png"></div>
+                <div class="evento-podio-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                <div class="evento-podio-list-texto-bottom"><i>Exclusivo del 2020</i></div>
+            </div>
+            
+            <div class="evento-podio-list-elemento">
+                <div class="evento-podio-list-titulo">Gilded Deco 2021</div>
+                <div class="evento-podio-list-imagen"><img src="../media/wiki/bh/eventos/aniversario/podios/gilded-deco-2021.png"></div>
+                <div class="evento-podio-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                <div class="evento-podio-list-texto-bottom"><i>Exclusivo del 2021</i></div>
+            </div>
+            
+            <div class="evento-podio-list-elemento">
+                <div class="evento-podio-list-titulo">Gilded Deco 2022</div>
+                <div class="evento-podio-list-imagen"><img src="../media/wiki/bh/eventos/aniversario/podios/gilded-deco-2022.png"></div>
+                <div class="evento-podio-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                <div class="evento-podio-list-texto-bottom"><i>Exclusivo del 2022</i></div>
+            </div>
+            
+            <div class="evento-podio-list-elemento">
+                <div class="evento-podio-list-titulo">Gilded Deco 2023</div>
+                <div class="evento-podio-list-imagen"><img src="../media/wiki/bh/eventos/aniversario/podios/gilded-deco-2023.png"></div>
+                <div class="evento-podio-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                <div class="evento-podio-list-texto-bottom"><i>Exclusivo del 2023</i></div>
+            </div>
+            
+            <div class="evento-podio-list-elemento">
+                <div class="evento-podio-list-titulo">Gilded Deco 2024</div>
+                <div class="evento-podio-list-imagen"><img src="../media/wiki/bh/eventos/aniversario/podios/gilded-deco-2024.png"></div>
+                <div class="evento-podio-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                <div class="evento-podio-list-texto-bottom"><i>Exclusivo del 2024</i></div>
+            </div>
+
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Compañeros</h2>
+
+        <section class="evento-compañero-lista evento-doscompañeros">
+            
+            <div class="evento-compañero-list-elemento">
+                <div class="evento-compañero-list-titulo">MonoKyle</div>
+                <div class="evento-compañero-list-imagen">
+                    <img src="../media/wiki/bh/eventos/aniversario/compañeros/monokyle.webp">
+                </div>
+                <div class="evento-compañero-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" style="margin-right:5px;margin-left:5px">80</div>
+            </div>
+            
+            <div class="evento-compañero-list-elemento">
+                <div class="evento-compañero-list-titulo">Phil</div>
+                <div class="evento-compañero-list-imagen">
+                    <img src="../media/wiki/bh/eventos/aniversario/compañeros/phil.webp">
+                </div>
+                <div class="evento-compañero-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" style="margin-right:5px;margin-left:5px">80</div>
+            </div>
+            
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Gestos</h2>
+
+        <section class="evento-gesto-lista">
+            
+            <div class="evento-gesto-list-elemento">
+                <div class="evento-gesto-list-titulo">5th Cake-aversary</div>
+                    <div class="evento-gesto-list-imagen">
+                        <img src="../media/wiki/bh/eventos/aniversario/gestos/5th-cake-aversary.png">
+                    </div>
+                    <div class="evento-gesto-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" style="margin-right:5px;margin-left:5px">120</div>
+                    <div class="evento-gesto-list-texto-bottom"><i>Exclusivo del 2020</i></div>
+            </div>
+            
+            <div class="evento-gesto-list-elemento">
+                <div class="evento-gesto-list-titulo">6th Cake-aversary</div>
+                    <div class="evento-gesto-list-imagen">
+                        <img src="../media/wiki/bh/eventos/aniversario/gestos/6th-cake-aversary.png">
+                    </div>
+                    <div class="evento-gesto-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" style="margin-right:5px;margin-left:5px">120</div>
+                    <div class="evento-gesto-list-texto-bottom"><i>Exclusivo del 2021</i></div>
+            </div>
+            
+            <div class="evento-gesto-list-elemento">
+                <div class="evento-gesto-list-titulo">7th Cake-Aversary</div>
+                    <div class="evento-gesto-list-imagen">
+                        <img src="../media/wiki/bh/eventos/aniversario/gestos/7th-cake-aversary.png">
+                    </div>
+                    <div class="evento-gesto-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" style="margin-right:5px;margin-left:5px">120</div>
+                    <div class="evento-gesto-list-texto-bottom"><i>Exclusivo del 2022</i></div>
+            </div>
+            
+            <div class="evento-gesto-list-elemento">
+                <div class="evento-gesto-list-titulo">8th Cake-Aversary</div>
+                    <div class="evento-gesto-list-imagen">
+                        <img src="../media/wiki/bh/eventos/aniversario/gestos/8th-cake-aversary.png">
+                    </div>
+                    <div class="evento-gesto-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" style="margin-right:5px;margin-left:5px">120</div>
+                    <div class="evento-gesto-list-texto-bottom"><i>Exclusivo del 2023</i></div>
+            </div>
+            
+            <div class="evento-gesto-list-elemento">
+                <div class="evento-gesto-list-titulo">Champion's Belt</div>
+                    <div class="evento-gesto-list-imagen">
+                        <img src="../media/wiki/bh/eventos/aniversario/gestos/champions-belt.png">
+                    </div>
+                    <div class="evento-gesto-list-texto-top" style="font-size: 11.6px;">Conseguir 10.000 XP durante el evento</div>
+                    <div class="evento-gesto-list-texto-bottom"><i>Exclusivo del 2023</i></div>
+            </div>
+            
+            <div class="evento-gesto-list-elemento">
+                <div class="evento-gesto-list-titulo">9th Cake-Aversary</div>
+                    <div class="evento-gesto-list-imagen">
+                        <img src="../media/wiki/bh/eventos/aniversario/gestos/9th-cake-aversary.png">
+                    </div>
+                    <div class="evento-gesto-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" style="margin-right:5px;margin-left:5px">120</div>
+                    <div class="evento-gesto-list-texto-bottom"><i>Exclusivo del 2024</i></div>
+            </div>
+            
+            <div class="evento-gesto-list-elemento">
+                <div class="evento-gesto-list-titulo">Drum Solo</div>
+                    <div class="evento-gesto-list-imagen">
+                        <img src="../media/wiki/bh/eventos/aniversario/gestos/drum-solo.png">
+                    </div>
+                    <div class="evento-gesto-list-texto-top" style="font-size: 11.6px;">Conseguir 10.000 XP durante el evento</div>
+                    <div class="evento-gesto-list-texto-bottom"><i>Exclusivo del 2024</i></div>
+            </div>
+            
+        </section>
+            
+    </main>
+
+
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>X</h4>
+                <p>@SrSlendah</p>
+            </div>
+            <div class="content-foo">
+                <h4>Discord</h4>
+                <p>@Slendah</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none" ; target=" _blank">Click</a></p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>
+    </footer>
+</body>
+
+</html>

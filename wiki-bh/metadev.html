@@ -10,7 +10,7 @@
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
     <script src="../js/wiki.js"></script>
@@ -18,16 +18,17 @@
     <header>
         <script src="../js/menu.js"></script>
         
-        <section id="menu">
-            <div class="menu">
+<section id="menu">
+    <div class="menu">
 
-                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+        <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+        <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="logo-wbh"></a>
 
                 <nav>
                     <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -43,13 +44,14 @@
         <section id="menu-overlay" class="menu-overlay" style="display: none;">
             <div id="menu-overlay">
                 <div class="contenido-overlay">
-                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="menu-ov-logo-wbh"></a>
                   <hr style="margin-top:15px;margin-bottom:-15px;">
                   <nav class="menu-ov-nav">
                       <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -89,559 +91,686 @@
         <script src="../js/search-wiki-bh.js"></script>
 
         <div class="secciones" align="center" style="margin-top:10px;margin-bottom:-30px">
-            <button id="sec1-btn" onclick="showSec1();" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Orion</button>
-            <button id="sec2-btn" onclick="showSec2();">Brynn</button>
-            <button id="sec3-btn" onclick="showSec3();">Ember</button>
-            <button id="sec4-btn" onclick="showSec4();">Bödvar</button>
-            <button id="sec5-btn" onclick="showSec5();">Asuri</button>
-            <button id="sec6-btn" onclick="showSec6();">Fait</button>
-            <button id="sec7-btn" onclick="showSec7();">Barraza</button>
-            <button id="sec8-btn" onclick="showSec8();">Teros</button>
+            <a href="#orion"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Orion</button></a>
+            <a href="#brynn"><button id="sec2-btn">Brynn</button></a>
+            <a href="#ember"><button id="sec3-btn">Ember</button></a>
+            <a href="#bodvar"><button id="sec4-btn">Bödvar</button></a>
+            <a href="#asuri"><button id="sec5-btn">Asuri</button></a>
+            <a href="#fait"><button id="sec6-btn">Fait</button></a>
+            <a href="#barraza"><button id="sec7-btn">Barraza</button></a>
+            <a href="#teros"><button id="sec8-btn">Teros</button></a>
+            <a href="#val"><button id="sec9-btn">Val</button></a>
+            <a href="#nix"><button id="sec10-btn">Nix</button></a>
             <span class="separador_btn"></span>
-            <button id="sec9-btn" onclick="showSec9();">Otros</button>
+            <a href="#otros"><button id="sec11-btn">Otros</button></a>
 
         </div>
 
-        <section id="sec1">
-            <div style="display: flex; justify-content: center; align-items: center;margin-top: 10px;">
+    <section id="sec1">
+            <div style="display: flex; justify-content: center; align-items: center;margin-top: 35px;margin-bottom: -15px;">
                 <h4>Las skins Metadev no son normalmente obtenibles</h4>
             </div>
-        <table style="margin-top:20px;width:26%">
-            <tbody><tr>
-                <th colspan="4">Metadev Orion</th>
-            </tr>
-            <tr>
-                <td style="width:200px" rowspan="2"><img src="../media/wiki/bh/skins/orion/metadev-orion.png" style="width:250px;"></td>
-                <th style="width: 200px;height: 30px;">Año</th>
-                <th style="width: 180px">Leyenda</th>
-            </tr>
-            <tr>
-                <td>
-                    2015
-                </td>
-                <td>
-                    <a href="../wiki-bh/orion"><img src="../media/wiki/bh/leyendas/logos/orion.png" title="Orion" style="width:75px"></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
-
-        <h2 align="center" style="margin-top:20px">Armas</h2>
-
-        <table style="margin-top:20px;width:20%">
-            <tbody>
-                <tr>
-                    <th>
-                        Interstellar Rocket
-                    </th>
-                    <th>
-                        Starforged Spear
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/orion/armas/metadev-orion_interstellar-rocket.png" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/orion/armas/metadev-orion_starforged-spear.png" style="width:200px;padding:10px">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        
+            <div class="leyenda-container">
+                <section class="leyenda">
+                    <div class="leyenda-elemento">
+                        <div class="leyenda-imagen">
+                            <img src="../media/wiki/bh/skins/orion/metadev-orion.png" alt="Metadev Orion">
+                        </div>
+    
+                        <div class="leyenda-info" style="position: relative;">
+                            <h2 class="leyenda-titulo">Metadev Orion</h2>
+                            <hr class="info-sep" style="margin-bottom: 10px;">
+                            <div class="leyenda-details">
+                                <div class="leyenda-details-labels">
+                                    <p>
+                                        <strong>
+                                            Año:<br><br><br>
+                                            Leyenda:
+                                        </strong>
+                                    </p>
+                                </div>
+                                <div class="leyenda-details-values">
+                                    <p>
+                                        2015<br><br>
+                                        <a href="../wiki-bh/orion" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/orion.png" title="Orion" style="width:60px"></a>
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
+            <hr style="width:50%;margin:0 auto;margin-top:15px">
+    
+            <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
+    
+            <section class="wbh-armas-lista">
+    
+                <div class="wbh-emoji-list-elemento">
+                        <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/orion/armas/metadev-orion_interstellar-rocket.png" style="padding:10px;"></div>
+                        <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Interstellar Rocket</div>
+                </div>
+                
+                <div class="wbh-emoji-list-elemento">
+                        <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/orion/armas/metadev-orion_starforged-spear.png" style="padding:10px;"></div>
+                        <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Starforged Spear</div>
+                </div>
+    
+            </section>
     </section>
     
     <section id="sec2" style="display: none;">
-        <div style="display: flex; justify-content: center; align-items: center;margin-top: 10px;">
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 35px;margin-bottom: -15px;">
             <h4>Las skins Metadev no son normalmente obtenibles</h4>
         </div>
-        <table style="margin-top:20px;width:26%">
-            <tbody><tr>
-                <th colspan="4">Metadev Brynn</th>
-            </tr>
-            <tr>
-                <td style="width:200px" rowspan="2"><img src="../media/wiki/bh/skins/brynn/metadev-brynn.png" style="width:250px;"></td>
-                <th style="width: 200px;height: 30px;">Año</th>
-                <th style="width: 180px">Leyenda</th>
-            </tr>
-            <tr>
-                <td>
-                    2016
-                </td>
-                <td>
-                    <a href="../wiki-bh/brynn"><img src="../media/wiki/bh/leyendas/logos/brynn.png" title="Brynn" style="width:75px"></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/skins/brynn/metadev-brynn.png" alt="Metadev Brynn">
+                    </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+                    <div class="leyenda-info" style="position: relative;">
+                        <h2 class="leyenda-titulo">Metadev Brynn</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Año:<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    2016<br><br>
+                                    <a href="../wiki-bh/brynn" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/brynn.png" title="Brynn" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:20px;width:20%">
-            <tbody>
-                <tr>
-                    <th>
-                        Aesir Blade
-                    </th>
-                    <th>
-                        Moonstone Spear
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/brynn/armas/metadev-brynn_aesir-blade.png" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/brynn/armas/metadev-brynn_moonstone-spear.png" style="width:200px;padding:10px">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
+
+        <section class="wbh-armas-lista">
+
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/brynn/armas/metadev-brynn_aesir-blade.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Aesir Blade</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/brynn/armas/metadev-brynn_moonstone-spear.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Moonstone Spear</div>
+            </div>
+
+        </section>
     </section>
     
     <section id="sec3" style="display: none;">
-        <div style="display: flex; justify-content: center; align-items: center;margin-top: 10px;">
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 35px;margin-bottom: -15px;">
             <h4>Las skins Metadev no son normalmente obtenibles</h4>
         </div>
-        <table style="margin-top:20px;width:26%">
-            <tbody><tr>
-                <th colspan="4">Metadev Ember</th>
-            </tr>
-            <tr>
-                <td style="width:200px" rowspan="2"><img src="../media/wiki/bh/skins/ember/metadev-ember.png" style="width:250px;"></td>
-                <th style="width: 200px;height: 30px;">Año</th>
-                <th style="width: 180px">Leyenda</th>
-            </tr>
-            <tr>
-                <td>
-                    2017
-                </td>
-                <td>
-                    <a href="../wiki-bh/ember"><img src="../media/wiki/bh/leyendas/logos/ember.png" title="Ember" style="width:75px"></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/skins/ember/metadev-ember.png" alt="Metadev Ember">
+                    </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+                    <div class="leyenda-info" style="position: relative;">
+                        <h2 class="leyenda-titulo">Metadev Ember</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Año:<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    2017<br><br>
+                                    <a href="../wiki-bh/ember" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/ember.png" title="Ember" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:20px;width:20%">
-            <tbody>
-                <tr>
-                    <th>
-                        Moongleam Bow
-                    </th>
-                    <th>
-                        Crystalline Blades
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/ember/armas/metadev-ember_moongleam-bow.png" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/ember/armas/metadev-ember_crystalline-blades.png" style="width:200px;padding:10px">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
+
+        <section class="wbh-armas-lista">
+
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/ember/armas/metadev-ember_moongleam-bow.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Moongleam Bow</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/ember/armas/metadev-ember_crystalline-blades.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Crystalline Blades</div>
+            </div>
+
+        </section>
     </section>
     
     <section id="sec4" style="display: none;">
-        <div style="display: flex; justify-content: center; align-items: center;margin-top: 10px;">
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 35px;margin-bottom: -15px;">
             <h4>Las skins Metadev no son normalmente obtenibles</h4>
         </div>
-        <table style="margin-top:20px;width:26%">
-            <tbody><tr>
-                <th colspan="4">Metadev Bödvar</th>
-            </tr>
-            <tr>
-                <td style="width:200px" rowspan="2"><img src="../media/wiki/bh/skins/bodvar/metadev-bodvar.png" style="width:250px;"></td>
-                <th style="width: 200px;height: 30px;">Año</th>
-                <th style="width: 180px">Leyenda</th>
-            </tr>
-            <tr>
-                <td>
-                    2018
-                </td>
-                <td>
-                    <a href="../wiki-bh/bodvar"><img src="../media/wiki/bh/leyendas/logos/bodvar.png" title="Bödvar" style="width:75px"></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/skins/bodvar/metadev-bodvar.png" alt="Metadev Bödvar">
+                    </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+                    <div class="leyenda-info" style="position: relative;">
+                        <h2 class="leyenda-titulo">Metadev Bödvar</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Año:<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    2018<br><br>
+                                    <a href="../wiki-bh/bodvar" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/bodvar.png" title="Bödvar" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:20px;width:20%">
-            <tbody>
-                <tr>
-                    <th>
-                        The Starsmasher
-                    </th>
-                    <th>
-                        Moonbeam Blade
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/bodvar/armas/metadev-bodvar_the-starsmasher.png" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/bodvar/armas/metadev-bodvar_moonbeam-blade.png" style="width:200px;padding:10px">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
+
+        <section class="wbh-armas-lista">
+
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/bodvar/armas/metadev-bodvar_the-starsmasher.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">The Starsmasher</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/bodvar/armas/metadev-bodvar_moonbeam-blade.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Moonbeam Blade</div>
+            </div>
+
+        </section>
+
     </section>
     
     <section id="sec5" style="display: none;">
-        <div style="display: flex; justify-content: center; align-items: center;margin-top: 10px;">
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 35px;margin-bottom: -15px;">
             <h4>Las skins Metadev no son normalmente obtenibles</h4>
         </div>
-        <table style="margin-top:20px;width:26%">
-            <tbody><tr>
-                <th colspan="4">Metadev Asuri</th>
-            </tr>
-            <tr>
-                <td style="width:200px" rowspan="2"><img src="../media/wiki/bh/skins/asuri/metadev-asuri.png" style="width:250px;"></td>
-                <th style="width: 200px;height: 30px;">Año</th>
-                <th style="width: 180px">Leyenda</th>
-            </tr>
-            <tr>
-                <td>
-                    2019
-                </td>
-                <td>
-                    <a href="../wiki-bh/asuri"><img src="../media/wiki/bh/leyendas/logos/asuri.png" title="Asuri" style="width:75px"></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/skins/asuri/metadev-asuri.png" alt="Metadev Asuri">
+                    </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+                    <div class="leyenda-info" style="position: relative;">
+                        <h2 class="leyenda-titulo">Metadev Asuri</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Año:<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    2019<br><br>
+                                    <a href="../wiki-bh/asuri" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/asuri.png" title="Asuri" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:20px;width:20%">
-            <tbody>
-                <tr>
-                    <th>
-                        Crescent Moon Claws
-                    </th>
-                    <th>
-                        Starforged Scimitar
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/asuri/armas/metadev-asuri_crescent-moon-claws.png" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/asuri/armas/metadev-asuri_starforged-scimitar.png" style="width:200px;padding:10px">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
+
+        <section class="wbh-armas-lista">
+
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/asuri/armas/metadev-asuri_crescent-moon-claws.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Crescent Moon Claws</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/asuri/armas/metadev-asuri_starforged-scimitar.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Starforged Scimitar</div>
+            </div>
+
+        </section>
     </section>
     
     <section id="sec6" style="display: none;">
-        <div style="display: flex; justify-content: center; align-items: center;margin-top: 10px;">
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 35px;margin-bottom: -15px;">
             <h4>Las skins Metadev no son normalmente obtenibles</h4>
         </div>
-        <table style="margin-top:20px;width:26%">
-            <tbody><tr>
-                <th colspan="4">Metadev Fait</th>
-            </tr>
-            <tr>
-                <td style="width:200px" rowspan="2"><img src="../media/wiki/bh/skins/fait/metadev-fait.png" style="width:250px;"></td>
-                <th style="width: 200px;height: 30px;">Año</th>
-                <th style="width: 180px">Leyenda</th>
-            </tr>
-            <tr>
-                <td>
-                    2020
-                </td>
-                <td>
-                    <a href="../wiki-bh/fait"><img src="../media/wiki/bh/leyendas/logos/fait.png" title="Fait" style="width:75px"></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/skins/fait/metadev-fait.png" alt="Metadev Fait">
+                    </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+                    <div class="leyenda-info" style="position: relative;">
+                        <h2 class="leyenda-titulo">Metadev Fait</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Año:<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    2020<br><br>
+                                    <a href="../wiki-bh/fait" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/fait.png" title="Fait" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:20px;width:20%">
-            <tbody>
-                <tr>
-                    <th>
-                        Stargleam Scythe
-                    </th>
-                    <th>
-                        Moonlight Meteor
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/fait/armas/metadev-fait_stargleam-scythe.png" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/fait/armas/metadev-fait_moonlight-meteor.png" style="width:200px;padding:10px">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
+
+        <section class="wbh-armas-lista">
+
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/fait/armas/metadev-fait_stargleam-scythe.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Stargleam Scythe</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/fait/armas/metadev-fait_moonlight-meteor.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Moonlight Meteor</div>
+            </div>
+
+        </section>
     </section>
     
     <section id="sec7" style="display: none;">
-        <div style="display: flex; justify-content: center; align-items: center;margin-top: 10px;">
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 35px;margin-bottom: -15px;">
             <h4>Las skins Metadev no son normalmente obtenibles</h4>
         </div>
-        <table style="margin-top:20px;width:26%">
-            <tbody><tr>
-                <th colspan="4">Metadev Barraza</th>
-            </tr>
-            <tr>
-                <td style="width:200px" rowspan="2"><img src="../media/wiki/bh/skins/barraza/metadev-barraza.png" style="width:250px;"></td>
-                <th style="width: 200px;height: 30px;">Año</th>
-                <th style="width: 180px">Leyenda</th>
-            </tr>
-            <tr>
-                <td>
-                    2021
-                </td>
-                <td>
-                    <a href="../wiki-bh/barraza"><img src="../media/wiki/bh/leyendas/logos/barraza.png" title="Barraza" style="width:75px"></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/skins/barraza/metadev-barraza.png" alt="Metadev Barraza">
+                    </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+                    <div class="leyenda-info" style="position: relative;">
+                        <h2 class="leyenda-titulo">Metadev Barraza</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Año:<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    2021<br><br>
+                                    <a href="../wiki-bh/barraza" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/barraza.png" title="Barraza" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:20px;width:20%">
-            <tbody>
-                <tr>
-                    <th>
-                        Star Render
-                    </th>
-                    <th>
-                        Eclipsers
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/barraza/armas/metadev-barraza_star-render.png" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/barraza/armas/metadev-barraza_eclipsers.png" style="width:200px;padding:10px">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
+
+        <section class="wbh-armas-lista">
+
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/barraza/armas/metadev-barraza_star-render.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Star Render</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/barraza/armas/metadev-barraza_eclipsers.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Eclipsers</div>
+            </div>
+
+        </section>
     </section>
     
     <section id="sec8" style="display: none;">
-        <div style="display: flex; justify-content: center; align-items: center;margin-top: 10px;">
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 35px;margin-bottom: -15px;">
             <h4>Las skins Metadev no son normalmente obtenibles</h4>
         </div>
-        <table style="margin-top:20px;width:26%">
-            <tbody><tr>
-                <th colspan="4">Metadev Teros</th>
-            </tr>
-            <tr>
-                <td style="width:200px" rowspan="2"><img src="../media/wiki/bh/skins/teros/metadev-teros.png" style="width:250px;"></td>
-                <th style="width: 200px;height: 30px;">Año</th>
-                <th style="width: 180px">Leyenda</th>
-            </tr>
-            <tr>
-                <td>
-                    2022
-                </td>
-                <td>
-                    <a href="../wiki-bh/teros"><img src="../media/wiki/bh/leyendas/logos/teros.png" title="Teros" style="width:75px"></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/skins/teros/metadev-teros.png" alt="Metadev Teros">
+                    </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+                    <div class="leyenda-info" style="position: relative;">
+                        <h2 class="leyenda-titulo">Metadev Teros</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Año:<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    2022<br><br>
+                                    <a href="../wiki-bh/teros" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/teros.png" title="Teros" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:20px;width:20%">
-            <tbody>
-                <tr>
-                    <th>
-                        Champion's Axe
-                    </th>
-                    <th>
-                        Crystalline Mallet
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/teros/armas/metadev-teros_champions-axe.png" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/teros/armas/metadev-teros_crystalline-mallet.png" style="width:200px;padding:10px">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
+
+        <section class="wbh-armas-lista">
+
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/teros/armas/metadev-teros_champions-axe.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Champion's Axe</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/teros/armas/metadev-teros_crystalline-mallet.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Crystalline Mallet</div>
+            </div>
+
+        </section>
     </section>
-    <section id="sec9" style="display: none">
-    <table style="margin-top:20px;width:40%">
-        <tbody>
-        <tr>
-            <th style="width: 100px;height: 30px;">Titulo</th>
-            <th style="width: 250px">Obtención</th>
-        </tr>
-        <tr>
-            <td>
-                <span style="color: rgb(123, 198, 209); font-size: 16px; font-family: Arial Black; ">OG Metadev Asuri</span>
-            </td>
-            <td>
-                Otorgado a los poseedores de la Metadev Asuri antes del BCX 2020
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <span style="color: rgb(123, 198, 209); font-size: 16px; font-family: Arial Black; ">OG Metadev Bödvar</span>
-            </td>
-            <td>
-                Otorgado a los poseedores de la Metadev Bödvar antes del BCX 2020
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <span style="color: rgb(123, 198, 209); font-size: 16px; font-family: Arial Black; ">OG Metadev Brynn</span>
-            </td>
-            <td>
-                Otorgado a los poseedores de la Metadev Brynn antes del BCX 2020
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <span style="color: rgb(123, 198, 209); font-size: 16px; font-family: Arial Black; ">OG Metadev Ember</span>
-            </td>
-            <td>
-                Otorgado a los poseedores de la Metadev Ember antes del BCX 2020
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <span style="color: rgb(123, 198, 209); font-size: 16px; font-family: Arial Black; ">OG Metadev Orion</span>
-            </td>
-            <td>
-                Otorgado a los poseedores de la Metadev Orion antes del BCX 2020
-            </td>
-        </tr>
-        </tbody>
-    </table>
+    
+    <section id="sec9" style="display: none;">
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 35px;margin-bottom: -15px;">
+            <h4>Las skins Metadev no son normalmente obtenibles</h4>
+        </div>
+        
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/skins/val/metadev-val.png" alt="Metadev Val">
+                    </div>
+
+                    <div class="leyenda-info" style="position: relative;">
+                        <h2 class="leyenda-titulo">Metadev Val</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Año:<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    2023<br><br>
+                                    <a href="../wiki-bh/val" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/val.png" title="Val" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
+
+        <section class="wbh-armas-lista">
+
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/val/armas/metadev-val_stellar-nova.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Stellar Nova</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/val/armas/metadev-val_edge-of-twilight.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Edge of Twilight</div>
+            </div>
+
+        </section>
+    </section>
+    
+    <section id="sec10" style="display: none;">
+        <div style="display: flex; justify-content: center; align-items: center;margin-top: 35px;margin-bottom: -15px;">
+            <h4>Las skins Metadev no son normalmente obtenibles</h4>
+        </div>
+        
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/skins/nix/metadev-nix.png" alt="Metadev Nix">
+                    </div>
+
+                    <div class="leyenda-info" style="position: relative;">
+                        <h2 class="leyenda-titulo">Metadev Nix</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Año:<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    2024<br><br>
+                                    <a href="../wiki-bh/nix" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/nix.png" title="Nix" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
+
+        <section class="wbh-armas-lista">
+
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/nix/armas/metadev-nix_interstellar-edge.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Interstellar Edge</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/nix/armas/metadev-nix_stardusters.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Stardusters</div>
+            </div>
+
+        </section>
+    </section>
+
+    <section id="sec11" style="display: none">
+
+        
+        <section class="metadev-titulos-lista" style="margin-top: 35px;">
+
+            <div class="metadev-titulos-elemento">
+                    <div class="metadev-titulos-titulo">Título</div>
+                    <div class="metadev-titulos-text">
+                        <span style="color: rgb(123, 198, 209); font-size: 16px; font-family: Arial Black; ">OG Metadev Asuri</span>
+                    </div>
+                    <div class="metadev-titulos-text" style="margin-top:-4px;">
+                        <span style="color: rgb(123, 198, 209); font-size: 16px; font-family: Arial Black; ">OG Metadev Bödvar</span>
+                    </div>
+                    <div class="metadev-titulos-text" style="margin-top:-4px;">
+                        <span style="color: rgb(123, 198, 209); font-size: 16px; font-family: Arial Black; ">OG Metadev Brynn</span>
+                    </div>
+                    <div class="metadev-titulos-text" style="margin-top:-4px;">
+                        <span style="color: rgb(123, 198, 209); font-size: 16px; font-family: Arial Black; ">OG Metadev Ember</span>
+                    </div>
+                    <div class="metadev-titulos-text-abajo" style="margin-top:-4px;">
+                        <span style="color: rgb(123, 198, 209); font-size: 16px; font-family: Arial Black; ">OG Metadev Orion</span>
+                    </div>
+            </div>
+            
+            <div class="metadev-titulos-elemento">
+                    <div class="metadev-titulos-titulo">Obtención</div>
+                    <div class="metadev-titulos-text">
+                        Otorgado a los poseedores de la Metadev Asuri antes del BCX 2020
+                    </div>
+                    <div class="metadev-titulos-text" style="margin-top:-4px;">
+                        Otorgado a los poseedores de la Metadev Bödvar antes del BCX 2020
+                    </div>
+                    <div class="metadev-titulos-text" style="margin-top:-4px;">
+                        Otorgado a los poseedores de la Metadev Brynn antes del BCX 2020
+                    </div>
+                    <div class="metadev-titulos-text" style="margin-top:-4px;">
+                        Otorgado a los poseedores de la Metadev Ember antes del BCX 2020
+                    </div>
+                    <div class="metadev-titulos-text-abajo" style="margin-top:-4px;">
+                        Otorgado a los poseedores de la Metadev Orion antes del BCX 2020
+                    </div>
+            </div>
+            
+        </section>
+
 
     <hr style="width:50%;margin:0 auto;margin-top:35px;margin-bottom:35px">
     
-    <table style="margin-top:10px;width:10%">
-        <tr>
-            <th>
-                Metadev Wow
-            </th>
-            <th>
-                Metadev BRB
-            </th>
-            <th>
-                Metadev Wave
-            </th>
-            <th>
-                Metadev Think
-            </th>
-        </tr>
-        <tr>
-            <td style="width:300px">
-                    <img src="../media/wiki/bh/emojis/metadev-wow.png" style="width:150px;">
-            </td>
-            <td style="width:300px">
-                    <img src="../media/wiki/bh/emojis/metadev-brb.png" style="width:150px;">
-            </td>
-            <td style="width:300px">
-                    <img src="../media/wiki/bh/emojis/metadev-wave.png" style="width:150px;">
-            </td>
-            <td style="width:300px">
-                    <img src="../media/wiki/bh/emojis/metadev-think.png" style="width:150px;">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Recompensa de visualización del dia 3 del BCX '22
-            </td>
-            <td>
-                Recompensa de visualización del dia 3 del BCX '22
-            </td>
-            <td>
-                Recompensa de visualización del dia 3 del BCX '22
-            </td>
-            <td>
-                Recompensa de visualización del dia 3 del BCX '22
-            </td>
-        </tr>
-    </table>
-    
-    <table style="margin-top:10px;width:10%">
-        <tr>
-            <th>
-                Metadev Thumbs Up
-            </th>
-            <th>
-                Metadev Thumbs Down
-            </th>
-            <th>
-                Metadev Facepalm
-            </th>
-            <th>
-                Metadev GG
-            </th>
-        </tr>
-        <tr>
-            <td style="width:300px">
-                    <img src="../media/wiki/bh/emojis/metadev-thumbs-up.png" style="width:150px;">
-            </td>
-            <td style="width:300px">
-                    <img src="../media/wiki/bh/emojis/metadev-thumbs-down.png" style="width:150px;">
-            </td>
-            <td style="width:300px">
-                    <img src="../media/wiki/bh/emojis/metadev-facepalm.png" style="width:150px;">
-            </td>
-            <td style="width:300px">
-                    <img src="../media/wiki/bh/emojis/metadev-gg.png" style="width:150px;">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Recompensa de visualización del dia 3 del BCX '22
-            </td>
-            <td>
-                Recompensa de visualización del dia 3 del BCX '22
-            </td>
-            <td>
-                Recompensa de visualización del dia 3 del BCX '22
-            </td>
-            <td>
-                Otorgado al reclamar un codigo de la Metadev Teros
-            </td>
-        </tr>
-    </table>
+
+    <section class="wbh-emoji-lista">
+
+        <div class="wbh-emoji-list-elemento">
+            <div class="wbh-emoji-list-titulo">Metadev Wow</div>
+                <div class="wbh-emoji-list-imagen"><img src="../media/wiki/bh/emojis/metadev-wow.png"></div>
+                <div class="wbh-emoji-list-texto">Recompensa de visualización del dia 3 del BCX '22</div>
+        </div>
+        <div class="wbh-emoji-list-elemento">
+            <div class="wbh-emoji-list-titulo">Metadev BRB</div>
+                <div class="wbh-emoji-list-imagen"><img src="../media/wiki/bh/emojis/metadev-brb.png"></div>
+                <div class="wbh-emoji-list-texto">Recompensa de visualización del dia 3 del BCX '22</div>
+        </div>
+        <div class="wbh-emoji-list-elemento">
+            <div class="wbh-emoji-list-titulo">Metadev Wave</div>
+                <div class="wbh-emoji-list-imagen"><img src="../media/wiki/bh/emojis/metadev-wave.png"></div>
+                <div class="wbh-emoji-list-texto">Recompensa de visualización del dia 3 del BCX '22</div>
+        </div>
+        <div class="wbh-emoji-list-elemento">
+            <div class="wbh-emoji-list-titulo">Metadev Think</div>
+                <div class="wbh-emoji-list-imagen"><img src="../media/wiki/bh/emojis/metadev-think.png"></div>
+                <div class="wbh-emoji-list-texto">Recompensa de visualización del dia 3 del BCX '22</div>
+        </div>
+        <div class="wbh-emoji-list-elemento">
+            <div class="wbh-emoji-list-titulo">Metadev Thumbs Up</div>
+                <div class="wbh-emoji-list-imagen"><img src="../media/wiki/bh/emojis/metadev-thumbs-up.png"></div>
+                <div class="wbh-emoji-list-texto">Recompensa de visualización del dia 3 del BCX '22</div>
+        </div>
+        <div class="wbh-emoji-list-elemento">
+            <div class="wbh-emoji-list-titulo">Metadev Thumbs Down</div>
+                <div class="wbh-emoji-list-imagen"><img src="../media/wiki/bh/emojis/metadev-thumbs-down.png"></div>
+                <div class="wbh-emoji-list-texto">Recompensa de visualización del dia 3 del BCX '22</div>
+        </div>
+        <div class="wbh-emoji-list-elemento">
+            <div class="wbh-emoji-list-titulo">Metadev Facepalm</div>
+                <div class="wbh-emoji-list-imagen"><img src="../media/wiki/bh/emojis/metadev-facepalm.png"></div>
+                <div class="wbh-emoji-list-texto">Recompensa de visualización del dia 3 del BCX '22</div>
+        </div>
+        <div class="wbh-emoji-list-elemento">
+            <div class="wbh-emoji-list-titulo">Metadev GG</div>
+                <div class="wbh-emoji-list-imagen"><img src="../media/wiki/bh/emojis/metadev-gg.png"></div>
+                <div class="wbh-emoji-list-texto" style="font-size:13px">Otorgado al reclamar un codigo de la Metadev Teros</div>
+        </div>
+        <div class="wbh-emoji-list-elemento">
+            <div class="wbh-emoji-list-titulo">Metadev Heart</div>
+                <div class="wbh-emoji-list-imagen"><img src="../media/wiki/bh/emojis/metadev-heart.png"></div>
+                <div class="wbh-emoji-list-texto" style="font-size:13px">Otorgado al reclamar un codigo de la Metadev Val</div>
+        </div>
+        <div class="wbh-emoji-list-elemento">
+            <div class="wbh-emoji-list-titulo">Metadev RIP</div>
+                <div class="wbh-emoji-list-imagen"><img src="../media/wiki/bh/emojis/metadev-rip.png"></div>
+                <div class="wbh-emoji-list-texto" style="font-size:13px">Otorgado al reclamar un codigo de la Metadev Nix</div>
+        </div>
+
+    </section>
+
     </section>
 
 </section>
@@ -653,12 +782,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

@@ -49,6 +49,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Thor: Ragnarok', url: '../lista-marvel/thor-ragnarok' },
     { resultado: 'Thor: The Dark World', url: '../lista-marvel/thor-the-dark-world' },
     { resultado: "Venom", url: '../lista-marvel/venom' },
+    { resultado: 'Venom: El Último Baile', url: '../lista-marvel/venom-el-ultimo-baile' },
     { resultado: 'Venom: Habrá Matanza', url: '../lista-marvel/venom-habra-matanza' },
     { resultado: 'Yo Soy Groot', url: '../lista-marvel/yo-soy-groot' },
   ];

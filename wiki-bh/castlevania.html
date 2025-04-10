@@ -13,23 +13,24 @@
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
 
     <header>
         <script src="../js/menu.js"></script>
         
-        <section id="menu">
-            <div class="menu">
+<section id="menu">
+    <div class="menu">
 
-                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+        <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+        <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="logo-wbh"></a>
 
                 <nav>
                     <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -45,13 +46,14 @@
         <section id="menu-overlay" class="menu-overlay" style="display: none;">
             <div id="menu-overlay">
                 <div class="contenido-overlay">
-                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="menu-ov-logo-wbh"></a>
                   <hr style="margin-top:15px;margin-bottom:-15px;">
                   <nav class="menu-ov-nav">
                       <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -92,118 +94,155 @@
       
         <script src="../js/search-wiki-bh.js"></script>
 
-        <table style="margin-top:20px;width:30%">
-            <tr>
-                <th colspan="4">Castlevania</th>
-            </tr>
-            <tr>
-                <td style="width:350px;height:197px" rowspan="2"><img src="../media/wiki/bh/crossovers/castlevania.png" style="width:350px;height:197px"></td>
-                <th style="height:30px;width:175px">Fecha de Salida</th>
-            </tr>
-            <tr>
-                <td>
-                    <b>19/10/2022</b>
-                </td>
-            </tr>
-        </table>
+        <div class="crossover-container">
+            <section class="crossover">
+                <div class="crossover-elemento">
+                    <div class="crossover-imagen">
+                        <img src="../media/wiki/bh/crossovers/castlevania.png">
+                    </div>
 
-        <h2 align="center" style="margin-top:20px">Skins</h2>
+                    <div class="crossover-info" style="position: relative;">
+                        <h2 class="crossover-titulo">Castlevania</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="crossover-details">
+                            <div class="crossover-details-labels">
+                                <p>
+                                    <strong>
+                                        Fecha de salida:<br>
+                                        Fecha de eliminación:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    19/10/2022<br>
+                                    16/10/2024
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="crossover-container" style="margin-top: -40px;">
+            <section class="crossover">
+                <div class="crossover-info">
+                    <h2 class="crossover-titulo" style="font-size:19px">Crossover Eliminado de la Tienda</h2>
+                    <hr class="info-sep" style="margin-bottom: 10px;">
+                    <div class="crossover-details">
+                        <div class="crossover-details-values">
+                            <p>
+                                Este crossover ha sido eliminado de la tienda, los objetos ya no se pueden comprar pero siguen manteniendose en el inventario de los jugadores que los habian comprado
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>
-                    <a href="../wiki-bh/simon-belmont">Simon Belmont</a>
-                </th>
-                <th>
-                    <a href="../wiki-bh/alucard">Alucard</a>
-                </th>
-            </tr>
-            <tr>
-                <td style="width:300px">
-                    <a href="../wiki-bh/simon-belmont">
-                        <img src="../media/wiki/bh/crossovers/castlevania/simon-belmont.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-                <td style="width:300px">
-                    <a href="../wiki-bh/alucard">
-                        <img src="../media/wiki/bh/crossovers/castlevania/alucard.png" style="width:200px;background-image:url(../media/wiki/bh/epic.png)">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Jhala</i>
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 300<br>
-                    <i style="font-size:13px">Leyenda: Ezio</i>
-                </td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
 
-        <h2 align="center" style="margin-top:20px">Compañero</h2>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins</h2>
 
-        <table style="margin-top:20px;width:10%">
-            <tr>
-                <th>Vampire Bat</th>
-            </tr>
-            <tr>
-                <td style="width:300px"><img src="../media/wiki/bh/crossovers/castlevania/compañeros/vampire-bat.webp"></td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 60
-                </td>
-            </tr>
-        </table>
+        <section class="crossover-skins-lista dosskins">
+            
+            <div class="crossover-skins-list-elemento">
+                <a href="./simon-belmont">
+                <div class="crossover-skins-list-titulo">Simon Belmont</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/castlevania/simon-belmont.png">
+                        <a href="./jhala" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/jhala.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto-inobtenible-top">Inobtenible</div>
+                    <div class="crossover-skins-list-texto-inobtenible-bot"><i>Antes: <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:2px">300</i></div>
+                </a>
+            </div>
+            
+            <div class="crossover-skins-list-elemento">
+                <a href="./alucard">
+                <div class="crossover-skins-list-titulo">Alucard</div>
+                    <div class="crossover-skins-list-imagen epic-skin">
+                        <img src="../media/wiki/bh/crossovers/castlevania/alucard.png">
+                        <a href="./ezio" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/ezio.png" class="crossover-skins-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="crossover-skins-list-texto-inobtenible-top">Inobtenible</div>
+                    <div class="crossover-skins-list-texto-inobtenible-bot"><i>Antes: <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:2px">300</i></div>
+                </a>
+            </div>
+            
+        </section>
 
-        <h2 align="center" style="margin-top:20px">Avatares</h2>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:20px;width:10%">
-            <tr>
-                <th>Wolf Form</th>
-                <th>Morning Star</th>
-                <th>Dracula</th>
-                <th>Castlevania</th>
-            </tr>
-            <tr>
-                <td style="width:300px"><img src="../media/wiki/bh/crossovers/castlevania/avatares/wolf-form.png"></td>
-                <td style="width:300px"><img src="../media/wiki/bh/crossovers/castlevania/avatares/morning-star.png"></td>
-                <td style="width:300px"><img src="../media/wiki/bh/crossovers/castlevania/avatares/dracula.webp"></td>
-                <td style="width:300px"><img src="../media/wiki/bh/crossovers/castlevania/avatares/castlevania.webp"></td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 30
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 30
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 60
-                </td>
-                <td>
-                    <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins"> 60
-                </td>
-            </tr>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Avatares</h2>
 
-        <h2 align="center" style="margin-top:20px">Mapas</h2>
+        <section class="crossover-avatares-lista cuatroavatares">
+            
+            <div class="crossover-avatares-list-elemento">
+                <div class="crossover-avatares-list-titulo" style="font-size:15px">Wolf Form</div>
+                <div class="crossover-avatares-list-imagen"><img src="../media/wiki/bh/crossovers/castlevania/avatares/wolf-form.png"></div>
+                <div class="crossover-avatares-list-texto-inobtenible-top">Inobtenible</div>
+                <div class="crossover-avatares-list-texto-inobtenible-bot"><i>Antes: <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:2px">30</i></div>
+            </div>
+            
+            <div class="crossover-avatares-list-elemento">
+                <div class="crossover-avatares-list-titulo">Morning Star</div>
+                <div class="crossover-avatares-list-imagen"><img src="../media/wiki/bh/crossovers/castlevania/avatares/morning-star.png"></div>
+                <div class="crossover-avatares-list-texto-inobtenible-top">Inobtenible</div>
+                <div class="crossover-avatares-list-texto-inobtenible-bot"><i>Antes: <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:2px">30</i></div>
+            </div>
+            
+            <div class="crossover-avatares-list-elemento">
+                <div class="crossover-avatares-list-titulo">Dracula</div>
+                <div class="crossover-avatares-list-imagen"><img src="../media/wiki/bh/crossovers/castlevania/avatares/dracula.webp"></div>
+                <div class="crossover-avatares-list-texto-inobtenible-top">Inobtenible</div>
+                <div class="crossover-avatares-list-texto-inobtenible-bot"><i>Antes: <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:2px">60</i></div>
+            </div>
+            
+            <div class="crossover-avatares-list-elemento">
+                <div class="crossover-avatares-list-titulo">Castlevania</div>
+                <div class="crossover-avatares-list-imagen"><img src="../media/wiki/bh/crossovers/castlevania/avatares/castlevania.webp"></div>
+                <div class="crossover-avatares-list-texto-inobtenible-top">Inobtenible</div>
+                <div class="crossover-avatares-list-texto-inobtenible-bot"><i>Antes: <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:2px">60</i></div>
+            </div>
 
-        <table style="margin-top:20px;width:20%">
-            <tr>
-                <th>Dracula's Castle</th>
-            </tr>
-            <tr>
-                <td class="wbh-map-img">
-                    <a href="../wiki-bh/draculas-castle">
-                        <img src="../media/wiki/bh/mapas/draculas-castle.png" alt="">
-                    </a>
-                </td>
-            </tr>
-        </table>
+        </section>
 
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Compañeros</h2>
+
+        <section class="crossover-compañeros-lista uncompañero">
+            
+            <div class="crossover-compañeros-list-elemento">
+                <div class="crossover-compañeros-list-titulo">Vampire Bat</div>
+                <div class="crossover-compañeros-list-imagen"><img src="../media/wiki/bh/crossovers/castlevania/compañeros/vampire-bat.webp"></div>
+                <div class="crossover-avatares-list-texto-inobtenible-top">Inobtenible</div>
+                <div class="crossover-avatares-list-texto-inobtenible-bot"><i>Antes: <img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:2px">80</i></div>
+            </div>
+
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Mapas</h2>
+
+        <section class="crossover-mapas-lista">
+            <a href="./draculas-castle" class="wbh-a-nocolor">
+                <div class="crossover-mapas-list-elemento">
+                    <div class="crossover-mapas-list-titulo">Dracula's Castle</div>
+                    <div class="crossover-mapas-list-imagen-inaccesible"><img src="../media/wiki/bh/mapas/draculas-castle.png"></div>
+                    <div class="crossover-mapas-list-texto-inaccesible">Inaccesible</div>
+                </div>
+            </a>
+        </section>
+            
     </main>
 
 
@@ -211,12 +250,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

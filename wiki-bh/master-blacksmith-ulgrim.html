@@ -10,23 +10,24 @@
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
 
     <header>
         <script src="../js/menu.js"></script>
         
-        <section id="menu">
-            <div class="menu">
+<section id="menu">
+    <div class="menu">
 
-                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+        <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+        <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="logo-wbh"></a>
 
                 <nav>
                     <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -42,13 +43,14 @@
         <section id="menu-overlay" class="menu-overlay" style="display: none;">
             <div id="menu-overlay">
                 <div class="contenido-overlay">
-                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="menu-ov-logo-wbh"></a>
                   <hr style="margin-top:15px;margin-bottom:-15px;">
                   <nav class="menu-ov-nav">
                       <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -87,51 +89,55 @@
       
         <script src="../js/search-wiki-bh.js"></script>
 
-        <table style="margin-top:20px;width:26%">
-            <tbody><tr>
-                <th colspan="4">Master Blacksmith Ulgrim</th>
-            </tr>
-            <tr>
-                <td style="width:200px" rowspan="2"><img src="../media/wiki/bh/skins/ulgrim/master-blacksmith-ulgrim.png" width="200px"></td>
-                <th style="width: 200px;height: 30px;">Adquisición</th>
-                <th style="width: 180px">Leyenda</th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="../wiki-bh/pase-batalla3" style="color:#A55CDE" title="Temporada 3" class="wbh-a"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:15px;margin-right:5px">Temporada 3</a><br>
-                    <i style="font-size:13px">Recompensa Tier 47</i>
-                </td>
-                <td>
-                    <a href="../wiki-bh/ulgrim"><img src="../media/wiki/bh/leyendas/logos/ulgrim.png" title="Ulgrim" style="width:75px"></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="leyenda-container">
+            <section class="leyenda">
+                <div class="leyenda-elemento">
+                    <div class="leyenda-imagen">
+                        <img src="../media/wiki/bh/skins/ulgrim/master-blacksmith-ulgrim.png">
+                    </div>
 
-        <hr style="width:50%;margin:0 auto;margin-top:35px">
+                    <div class="leyenda-info" style="position: relative;">
+                        <h2 class="leyenda-titulo">Master Blacksmith Ulgrim</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="leyenda-details">
+                            <div class="leyenda-details-labels">
+                                <p>
+                                    <strong>
+                                        Nivel 47 de la<br><br><br>
+                                        Leyenda:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    <a href="../wiki-bh/temporada-3#recompensas#pagina6" class="wbh-a-light"><img src="../media/wiki/bh/iconos/bp.png" alt="Temporada" style="width:15px;margin-right:5px">Temporada 3</a><br><br>
+                                    <a href="../wiki-bh/ulgrim" class="leyenda-logo"><img src="../media/wiki/bh/leyendas/logos/ulgrim.png" style="width:60px"></a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <h2 align="center" style="margin-top:20px">Armas</h2>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
 
-        <table style="margin-top:20px;width:20%">
-            <tbody>
-                <tr>
-                    <th>
-                        Ivaldi Design
-                    </th>
-                    <th>
-                        Svartalfheim's Caverns
-                    </th>
-                </tr>
-                <tr>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/ulgrim/armas/master-blacksmith-ulgrim_ivaldi-design.png" style="width:200px">
-                    </td>
-                    <td style="width:300px">
-                            <img src="../media/wiki/bh/skins/ulgrim/armas/master-blacksmith-ulgrim_svartalfheims-caverns.png" style="width:200px">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Armas</h2>
+
+        <section class="wbh-armas-lista">
+
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/ulgrim/armas/master-blacksmith-ulgrim_ivaldi-design.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Ivaldi Design</div>
+            </div>
+            
+            <div class="wbh-emoji-list-elemento">
+                    <div class="wbh-armas-list-imagen"><img src="../media/wiki/bh/skins/ulgrim/armas/master-blacksmith-ulgrim_svartalfheims-caverns.png" style="padding:10px;"></div>
+                    <div class="wbh-armas-list-titulo" style="margin-top: 0px;">Svartalfheim's Caverns</div>
+            </div>
+
+        </section>
 
     </main>
 
@@ -140,12 +146,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

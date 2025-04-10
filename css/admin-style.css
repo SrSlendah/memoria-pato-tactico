@@ -131,7 +131,7 @@ section#menu {
 }
 
 .menu {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -192,9 +192,14 @@ nav {
             cursor: pointer;
         }
 
+        .menu-toggle:hover {
+        background-color: #512c6d;
+        }
+
 .menu-toggle img {
     width: 30px;
     height: auto;
+    margin-top:4px;
 }
 
 .menu-ov-nav {
@@ -323,6 +328,7 @@ nav {
     width: 50px;
     height: 50px;
     background-color: #6f3c96;
+    border: 3.5px solid #4b2866;
     text-indent: -9999px;
     display: none;
     -webkit-border-radius: 60px;
@@ -351,7 +357,7 @@ nav {
 
 header {
     width: 100%;
-    height: 600px;
+    height: 480px;
     background: url(../media/portada.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -645,7 +651,7 @@ th {
     gap: 10px;
     color: white;
     font-weight: bold;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 15px 15px;
     border: 4px solid #4b2866;
     height: 200px; /* Altura fija */
     width: 100%; /* Ancho del contenedor, puedes ajustarlo según sea necesario */
@@ -659,7 +665,8 @@ th {
   }
 
   .changelog-list-text::-webkit-scrollbar-track {
-    background: #ffffff00;
+    background: #4c3a5a;
+    border-radius: 5px;
   }
 
   .changelog-list-text::-webkit-scrollbar-thumb {

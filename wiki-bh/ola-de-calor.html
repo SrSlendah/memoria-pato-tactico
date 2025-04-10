@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ola de Calor - Brawlhalla Wiki</title>
+    <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/wiki-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/ir-arriba.js"></script>
+
+    <header>
+        <script src="../js/menu.js"></script>
+        
+<section id="menu">
+    <div class="menu">
+
+        <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+        <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="logo-wbh"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="menu-toggle" onclick="abrir_menu()"><img src="../media/menu.png" alt=""></button>
+        </section>
+
+        <section id="menu-overlay" class="menu-overlay" style="display: none;">
+            <div id="menu-overlay">
+                <div class="contenido-overlay">
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="menu-ov-logo-wbh"></a>
+                  <hr style="margin-top:15px;margin-bottom:-15px;">
+                  <nav class="menu-ov-nav">
+                      <ul>
+                        <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
+                        <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
+                        <li><a href="../wiki-bh/mapas">Mapas</a></li>
+                        <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
+                        <li><a href="../wiki-bh/cofres">Cofres</a></li>
+                        <li><a href="../wiki-bh/pase-batalla">Pase de batalla</a></li>
+                        <li><a href="../wiki-bh/ranked">Ranked</a></li>
+                        <li><a href="../wiki-bh/cheat-sheets">Cheat Sheets</a></li>
+                      </ul>
+                  </nav>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 8px; right: 8px;" onclick="cerrar_menu()" title="Cerrar" class="cerrar-overlay">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="textos-header">
+            <h1>Brawlhalla Wiki</h1>
+            <h3>Ola de Calor</h3>
+        </section>
+
+
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                 style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                      style="stroke: none; fill: #2E2E2E; "></path>
+            </svg>
+        </div>
+
+
+    </header>
+
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar en la wiki de Brawlhalla...">
+          <ul id="autocomplete-list" style="display: none;"></ul>
+        </div>
+      
+        <script src="../js/search-wiki-bh.js"></script>
+
+        <div class="crossover-container">
+            <section class="crossover">
+                <div class="crossover-elemento">
+                    <div class="crossover-imagen">
+                        <img src="../media/wiki/bh/eventos/ola-de-calor.png">
+                    </div>
+
+                    <div class="crossover-info" style="position: relative;">
+                        <h2 class="crossover-titulo">Ola de Calor</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="crossover-details">
+                            <div class="crossover-details-labels">
+                                <p>
+                                    <strong>
+                                        Fecha:
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="leyenda-details-values">
+                                <p>
+                                    Julio
+                                </p>
+                            </div>
+                            
+                        </div> 
+                        <i style="font-size:11px;margin-top:-10px;color:#fff">(Aproximadamente)</i>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Títulos</h2>
+
+        <section class="evento-titulo-lista" style="margin-top: 35px;">
+
+            <div class="evento-titulo-elemento">
+                    <div class="evento-titulo-titulo evento-titulo-topleft">Título</div>
+                    <div class="evento-titulo-text">
+                        <span>Beach Brawler</span>
+                    </div>
+                    <div class="evento-titulo-text" style="margin-top:-4px;">
+                        <span>Heat Warrior</span>
+                    </div>
+                    <div class="evento-titulo-text" style="margin-top:-4px;">
+                        <span>Heatwave Hero</span>
+                    </div>
+                    <div class="evento-titulo-text evento-titulo-bottomleft" style="margin-top:-4px;">
+                        <span>Vacation Mode</span>
+                    </div>
+            </div>
+            
+            <div class="evento-titulo-elemento">
+                    <div class="evento-titulo-titulo evento-titulo-topright">Obtención</div>
+                    <div class="evento-titulo-text">
+                        Gratis durante el evento del 2021
+                    </div>
+                    <div class="evento-titulo-text" style="margin-top:-4px;">
+                        Gratis durante el evento del 2022
+                    </div>
+                    <div class="evento-titulo-text" style="margin-top:-4px;">
+                        Gratis durante el evento del 2023
+                    </div>
+                    <div class="evento-titulo-text evento-titulo-bottomright" style="margin-top:-4px;">
+                        Gratis durante el evento del 2024
+                    </div>
+            </div>
+            
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Color</h2>
+
+        <section class="evento-color-lista">
+            
+            <div class="evento-color-list-elemento">
+                <div class="evento-color-list-titulo">Heatwave</div>
+                    <div class="evento-color-list-imagen">
+                        <img src="../media/wiki/bh/eventos/ola-de-calor/color.png">
+                            <img src="../media/wiki/bh/eventos/ola-de-calor/color-logo.png" class="evento-color-list-logo">
+                    </div>
+                    <div class="evento-color-list-texto"><img src="../media/wiki/bh/iconos/oro.png" style="margin-right:5px">1.500 o <img src="../media/wiki/bh/iconos/mammoth.png" style="margin-right:5px;margin-left:5px">10 por leyenda</div>
+            </div>
+            
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins</h2>
+
+        <section class="evento-skin-lista">
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./atlantean-orion">
+                <div class="evento-skin-list-titulo">Atlantean Orion</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/orion/atlantean-orion.png">
+                        <a href="./orion" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/orion.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./dog-days-mordex">
+                <div class="evento-skin-list-titulo">Dog Days Mordex</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/mordex/dog-days-mordex.png">
+                        <a href="./mordex" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/mordex.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./wipeout-nix">
+                <div class="evento-skin-list-titulo">Wipeout Nix</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/nix/wipeout-nix.png">
+                        <a href="./nix" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/nix.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./pool-party-diana">
+                <div class="evento-skin-list-titulo">Pool Party Diana</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/diana/pool-party-diana.png">
+                        <a href="./diana" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/diana.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./water-wars-cross">
+                <div class="evento-skin-list-titulo">Water Wars Cross</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/cross/water-wars-cross.png">
+                        <a href="./cross" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/cross.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./thor-by-the-shore">
+                <div class="evento-skin-list-titulo">Thor by the Shore</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/thor/thor-by-the-shore.png">
+                        <a href="./thor" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/thor.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./brawl-dad-isaiah">
+                <div class="evento-skin-list-titulo">Brawl Dad Isaiah</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/isaiah/brawl-dad-isaiah.png">
+                        <a href="./isaiah" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/isaiah.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./island-azoth">
+                <div class="evento-skin-list-titulo">Island Azoth</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/azoth/island-azoth.png">
+                        <a href="./azoth" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/azoth.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./hotshot-vector">
+                <div class="evento-skin-list-titulo">Hotshot Vector</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/vector/hotshot-vector.png">
+                        <a href="./vector" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/vector.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./riptide-petra">
+                <div class="evento-skin-list-titulo">Riptide Petra</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/petra/riptide-petra.png">
+                        <a href="./petra" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/petra.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./beachside-zariel">
+                <div class="evento-skin-list-titulo">Beachside Zariel</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/zariel/beachside-zariel.png">
+                        <a href="./zariel" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/zariel.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./vraxxy-jones">
+                <div class="evento-skin-list-titulo">Vraxxy Jones</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/lord-vraxx/vraxxy-jones.png">
+                        <a href="./lord-vraxx" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/lord-vraxx.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./deep-sea-lucien">
+                <div class="evento-skin-list-titulo">Deep Sea Lucien</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/lucien/deep-sea-lucien.png">
+                        <a href="./lucien" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/lucien.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./sea-krait-nai">
+                <div class="evento-skin-list-titulo">Sea Krait Nai</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/queen-nai/sea-krait-nai.png">
+                        <a href="./queen-nai" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/queen-nai.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./cockatiel-munin">
+                <div class="evento-skin-list-titulo">Cockatiel Munin</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/munin/cockatiel-munin.png">
+                        <a href="./munin" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/munin.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./alepisaurus-mako">
+                <div class="evento-skin-list-titulo">Alepisaurus Mako</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/mako/alepisaurus-mako.png">
+                        <a href="./mako" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/mako.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+            <div class="evento-skin-list-elemento">
+                <a href="./lakeside-loki">
+                <div class="evento-skin-list-titulo">Lakeside Loki</div>
+                    <div class="evento-skin-list-imagen">
+                        <img src="../media/wiki/bh/skins/loki/lakeside-loki.png">
+                        <a href="./loki" class="wbh-a-nocolor">
+                            <img src="../media/wiki/bh/leyendas/logos/loki.png" class="evento-skin-list-leyenda">
+                        </a>
+                    </div>
+                    <div class="evento-skin-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">140</div>
+                </a>
+            </div>
+            
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Skins de Emoji</h2>
+
+
+        <section class="evento-emoji-lista evento-tresemojis">
+            
+            <div class="evento-emoji-list-elemento">
+                <div class="evento-emoji-list-titulo">Dog Days Sweat</div>
+                <div class="evento-emoji-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/emojis/dog-days-sweat.png"></div>
+                <div class="evento-emoji-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">20</div>
+            </div>
+            
+            <div class="evento-emoji-list-elemento">
+                <div class="evento-emoji-list-titulo">Beachside Lookin' Good</div>
+                <div class="evento-emoji-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/emojis/beachside-lookin-good.png"></div>
+                <div class="evento-emoji-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">20</div>
+            </div>
+            
+            <div class="evento-emoji-list-elemento">
+                <div class="evento-emoji-list-titulo">Deep Sea Cry</div>
+                <div class="evento-emoji-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/emojis/deep-sea-cry.webp"></div>
+                <div class="evento-emoji-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">35</div>
+            </div>
+
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Avatares</h2>
+
+        <section class="evento-avatar-lista evento-dosavatares">
+            
+            <div class="evento-avatar-list-elemento">
+                <div class="evento-avatar-list-titulo" style="font-size:15px">Ice Kor-eam</div>
+                <div class="evento-avatar-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/avatares/ice-kor-eam.png"></div>
+                <div class="evento-avatar-list-texto"><img src="../media/wiki/bh/iconos/oro.png" title="Mammoth Coins" style="margin-right:5px">6.000</div>
+            </div>
+            
+            <div class="evento-avatar-list-elemento">
+                <div class="evento-avatar-list-titulo">Endless Heat Wave</div>
+                <div class="evento-avatar-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/avatares/endless-heat-wave.webp"></div>
+                <div class="evento-avatar-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">60</div>
+            </div>
+
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Podios</h2>
+
+        <section class="evento-podio-lista">
+            
+            <div class="evento-podio-list-elemento">
+                <div class="evento-podio-list-titulo">Heatwave 2017</div>
+                <div class="evento-podio-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/podios/heatwave-2017.png"></div>
+                <div class="evento-podio-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                <div class="evento-podio-list-texto-bottom"><i>Exclusivo del 2017</i></div>
+            </div>
+            
+            <div class="evento-podio-list-elemento">
+                <div class="evento-podio-list-titulo">Heatwave 2018</div>
+                <div class="evento-podio-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/podios/heatwave-2018.png"></div>
+                <div class="evento-podio-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                <div class="evento-podio-list-texto-bottom"><i>Exclusivo del 2018</i></div>
+            </div>
+            
+            <div class="evento-podio-list-elemento">
+                <div class="evento-podio-list-titulo">Heatwave 2019</div>
+                <div class="evento-podio-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/podios/heatwave-2019.png"></div>
+                <div class="evento-podio-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                <div class="evento-podio-list-texto-bottom"><i>Exclusivo del 2019</i></div>
+            </div>
+            
+            <div class="evento-podio-list-elemento">
+                <div class="evento-podio-list-titulo">Heatwave 2020</div>
+                <div class="evento-podio-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/podios/heatwave-2020.png"></div>
+                <div class="evento-podio-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                <div class="evento-podio-list-texto-bottom"><i>Exclusivo del 2020</i></div>
+            </div>
+            
+            <div class="evento-podio-list-elemento">
+                <div class="evento-podio-list-titulo">Heatwave 2021</div>
+                <div class="evento-podio-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/podios/heatwave-2021.png"></div>
+                <div class="evento-podio-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                <div class="evento-podio-list-texto-bottom"><i>Exclusivo del 2021</i></div>
+            </div>
+            
+            <div class="evento-podio-list-elemento">
+                <div class="evento-podio-list-titulo">Heatwave 2022</div>
+                <div class="evento-podio-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/podios/heatwave-2022.png"></div>
+                <div class="evento-podio-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                <div class="evento-podio-list-texto-bottom"><i>Exclusivo del 2022</i></div>
+            </div>
+            
+            <div class="evento-podio-list-elemento">
+                <div class="evento-podio-list-titulo">Heatwave 2023</div>
+                <div class="evento-podio-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/podios/heatwave-2023.png"></div>
+                <div class="evento-podio-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                <div class="evento-podio-list-texto-bottom"><i>Exclusivo del 2023</i></div>
+            </div>
+            
+            <div class="evento-podio-list-elemento">
+                <div class="evento-podio-list-titulo">Heatwave 2024</div>
+                <div class="evento-podio-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/podios/heatwave-2024.png"></div>
+                <div class="evento-podio-list-texto-top"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">240</div>
+                <div class="evento-podio-list-texto-bottom"><i>Exclusivo del 2024</i></div>
+            </div>
+
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Efectos de KO</h2>
+
+        <section class="evento-efecto_ko-lista">
+
+            <div class="evento-efecto_ko-list-elemento">
+                <div class="evento-efecto_ko-list-titulo">Hot Lava</div>
+                <div class="evento-efecto_ko-list-imagen"><img src="../media/wiki/bh/eventos/ola-de-calor/efectos-ko/hot-lava.webp"></div>
+                <div class="evento-efecto_ko-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" title="Mammoth Coins" style="margin-right:5px">200</div>
+            </div>
+
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Compañeros</h2>
+
+        <section class="evento-compañero-lista evento-uncompañero">
+            
+            <div class="evento-compañero-list-elemento">
+                <div class="evento-compañero-list-titulo">Ocean Messenger</div>
+                <div class="evento-compañero-list-imagen">
+                    <img src="../media/wiki/bh/eventos/ola-de-calor/compañeros/ocean-messenger.png">
+                </div>
+                <div class="evento-compañero-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" style="margin-right:5px;margin-left:5px">80</div>
+            </div>
+            
+        </section>
+
+        <hr style="width:50%;margin:0 auto;margin-top:25px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Gestos</h2>
+
+        <section class="evento-gesto-lista evento-ungesto">
+            
+            <div class="evento-gesto-list-elemento">
+                <div class="evento-gesto-list-titulo">Beachside Break</div>
+                    <div class="evento-gesto-list-imagen">
+                        <img src="../media/wiki/bh/eventos/ola-de-calor/gestos/beachside-break.png">
+                    </div>
+                    <div class="evento-gesto-list-texto"><img src="../media/wiki/bh/iconos/mammoth.png" style="margin-right:5px;margin-left:5px">120</div>
+            </div>
+            
+        </section>
+            
+    </main>
+
+
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>X</h4>
+                <p>@SrSlendah</p>
+            </div>
+            <div class="content-foo">
+                <h4>Discord</h4>
+                <p>@Slendah</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: #ccc; text-decoration: none" ; target=" _blank">Click</a></p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Slendah | Pato Táctico</h2>
+    </footer>
+</body>
+
+</html>

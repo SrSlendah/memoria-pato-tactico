@@ -13,23 +13,24 @@
 
 <body>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a id="scroll" title="Ir arriba" style="display: none;">Top<span></span></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/ir-arriba.js"></script>
 
     <header>
         <script src="../js/menu.js"></script>
         
-        <section id="menu">
-            <div class="menu">
+<section id="menu">
+    <div class="menu">
 
-                <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="logo"></a>
+        <a href="../index"><img src="../media/logo.png" alt="logo" class="logo"></a>
+        <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="logo-wbh"></a>
 
                 <nav>
                     <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -45,13 +46,14 @@
         <section id="menu-overlay" class="menu-overlay" style="display: none;">
             <div id="menu-overlay">
                 <div class="contenido-overlay">
-                    <a href="../wiki/wiki-bh"><img src="../media/logo_wiki-bh.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../index"><img src="../media/logo.png" alt="logo" class="menu-ov-logo"></a>
+                    <a href="../juegos/wiki-bh"><img src="../media/wiki/bh/logo.png" alt="logo" class="menu-ov-logo-wbh"></a>
                   <hr style="margin-top:15px;margin-bottom:-15px;">
                   <nav class="menu-ov-nav">
                       <ul>
-                        <li><a href="../index">Inicio</a></li>
                         <li><a href="../wiki-bh/leyendas">Leyendas</a></li>
                         <li><a href="../wiki-bh/crossovers">Crossovers</a></li>
+                        <li><a href="../wiki-bh/eventos">Eventos</a></li>
                         <li><a href="../wiki-bh/mapas">Mapas</a></li>
                         <li><a href="../wiki-bh/modos-de-juego">Modos de juego</a></li>
                         <li><a href="../wiki-bh/cofres">Cofres</a></li>
@@ -92,22 +94,41 @@
       
         <script src="../js/search-wiki-bh.js"></script>
 
-        <h2 align="center" style="margin-top:20px">Mecánicas</h2>
+        <div class="modo-de-juego-container">
+            <section class="modo-de-juego">
+                <div class="modo-de-juego-elemento">
+                    <div class="modo-de-juego-imagen">
+                        <img src="../media/wiki/bh/gamemodes/morph.png">
+                    </div>
 
-        <div align="center" style="margin-top:15px">
-            <p style="color:#fff">
-                Los jugadores aparecerán en su lado del mapa.<br> Usaran un arma de cada leyenda que halla elegido.<br> Para cambiar de leyenda, deberan pulsar el boton de lanzar objetos.<br> El objetivo es acabar con las vidas del oponente.<br>
-            </p>
+                    <div class="modo-de-juego-info" style="position: relative;">
+                        <h2 class="modo-de-juego-titulo">Morph</h2>
+                        <hr class="info-sep" style="margin-bottom: 10px;">
+                        <div class="modo-de-juego-details">
+                            <div class="modo-de-juego-details-values">
+                                <p>
+                                    Los jugadores aparecerán en su lado del mapa. Usaran un arma de cada leyenda que halla elegido. Para cambiar de leyenda, deberan pulsar el boton de lanzar objetos. El objetivo es acabar con las vidas del oponente.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <table style="margin-top:40px;width:5%">
-            <tr>
-                <th>Logo</th>
-            </tr>
-            <tr>
-                <td style="width:300px" rowspan="2"><img src="../media/wiki/bh/gamemodes/morph.png" style="width:70px"></td>
-            </tr>
-        </table>
+        <hr style="width:50%;margin:0 auto;margin-top:15px">
+
+        <h2 align="center" style="margin-top:15px;margin-bottom:15px;">Mapas Exclusivos</h2>
+
+        <section class="mapas-exclusivos-lista unmapa">
+            
+            <div class="mapas-exclusivos-list-elemento">
+                <div class="mapas-exclusivos-list-titulo">Morph</div>
+                <div class="mapas-exclusivos-list-texto" style="border-top: 4px solid #4b2866;">Este modo no tiene ningun mapa exclusivo</div>
+            </div>
+            
+        </section>
 
     </main>
 
@@ -116,12 +137,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>

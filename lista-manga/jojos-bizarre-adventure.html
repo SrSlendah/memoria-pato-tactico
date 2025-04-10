@@ -30,7 +30,7 @@
                         <li><a href="../index">inicio</a></li>
                         <li><a href="../anime">Anime</a></li>
                         <li><a href="../cine">Cine</a></li>
-                        <li><a href="../wikis">Wiki</a></li>
+                        <li><a href="../juegos">Juegos</a></li>
                         <li><a href="../login">Admin</a></li>
                     </ul>
                 </nav>
@@ -48,7 +48,7 @@
                           <li><a href="../index">inicio</a></li>
                           <li><a href="../anime">Anime</a></li>
                           <li><a href="../cine">Cine</a></li>
-                          <li><a href="../wikis">Wiki</a></li>
+                          <li><a href="../juegos">Juegos</a></li>
                           <li><a href="../login">Admin</a></li>
                       </ul>
                   </nav>
@@ -86,16 +86,14 @@
 
         <div class="secciones" align="center">
             <button onclick="goTo('anime_jojo');">Anime</button>
+            <button onclick="goTo('lps_jojo');">Live Action</button>
             <span class="separador_btn"></span>
-            <button id="sec1-btn" onclick="showSection(1);" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Historia Principal</button>
-            <button id="sec2-btn" onclick="showSection(2);">Historias Paralelas</button>
-            <button id="sec3-btn" onclick="showSection(3);">Spin Offs</button>
-            <button id="sec4-btn" onclick="showSection(4);">Otros</button>
+            <a href="#historia_principal"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Historia Principal</button></a>
+            <a href="#otros"><button id="sec3-btn">Otros</button></a>
         </div>
 
         <section id="sec1">
 
-            
         <div class="serie-container">
             <section class="serie">
                 <div class="serie-elemento">
@@ -474,7 +472,7 @@
                             </div>
                             <div class="serie-details-values">
                                 <p>03 / ?</p>
-                                <p>17 / ?</p>
+                                <p>21 / ?</p>
                             </div>
                         </div>
                     </div>
@@ -499,10 +497,8 @@
             </div>
         </div>
         </section>
-    
-        </section>
 
-        <section id="sec2" style="display: none;">
+        <section id="sec3" style="display: none;">
             
         <div class="serie-container">
             <section class="serie">
@@ -516,10 +512,12 @@
                         <hr class="info-sep">
                         <div class="serie-details">
                             <div class="serie-details-labels">
+                                <p><strong>Tipo:</strong></p>
                                 <p><strong>Volúmenes:</strong></p>
                                 <p><strong>Capítulos:</strong></p>
                             </div>
                             <div class="serie-details-values">
+                                <p>Historia Paralela</p>
                                 <p>1 / 1</p>
                                 <p>7 / 7</p>
                             </div>
@@ -532,7 +530,7 @@
                     <img src="../media/manga/shikei-shikkouchuu-datsugoku-shinkouchuu.png" alt="JoJo's Bizarre Adventure">
                 </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">Shikei Shikkouchuu Datsugoku Shinkouchuu</h2>
+                  <h2 style="margin-top:5px;font-size:19px">Shikei Shikkouchuu Datsugoku Shinkouchuu</h2>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Manga</p>
                   <p><b>Autor:</b> Hirohiko Araki</p>
@@ -545,11 +543,9 @@
                 </div>
             </div>
         </div>
-
-        </section>
-
-        <section id="sec3" style="display: none;">
-            
+        
+        <hr class="info-sep">
+        
         <div class="serie-container">
             <section class="serie">
                 <div class="serie-elemento">
@@ -558,14 +554,16 @@
                     </div>
                     <div class="serie-info" style="position: relative;">
                         <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(11)">
-                        <h2 class="serie-titulo">Kishibe Rohan Louvre e Iku</h2>
+                        <h2 class="serie-titulo" style="font-size:22px">Kishibe Rohan Louvre e Iku</h2>
                         <hr class="info-sep">
                         <div class="serie-details">
                             <div class="serie-details-labels">
+                                <p><strong>Tipo:</strong></p>
                                 <p><strong>Volúmenes:</strong></p>
                                 <p><strong>Capítulos:</strong></p>
                             </div>
                             <div class="serie-details-values">
+                                <p>One-Shot</p>
                                 <p>1 / 1</p>
                                 <p>1 / 1</p>
                             </div>
@@ -606,10 +604,12 @@
                         <hr class="info-sep">
                         <div class="serie-details">
                             <div class="serie-details-labels">
+                                <p><strong>Tipo:</strong></p>
                                 <p><strong>Volúmenes:</strong></p>
                                 <p><strong>Capítulos:</strong></p>
                             </div>
                             <div class="serie-details-values">
+                                <p>One-Shot</p>
                                 <p>1 / 1</p>
                                 <p>1 / 1</p>
                             </div>
@@ -635,7 +635,7 @@
                 </div>
             </div>
         </div>
-        
+       
         <hr class="info-sep">
         
         <div class="serie-container">
@@ -646,15 +646,17 @@
                     </div>
                     <div class="serie-info" style="position: relative;">
                         <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(13)">
-                        <h2 class="serie-titulo">JoJo no Kimyou na Bouken:</h2>
-                        <h3 class="serie-subtitulo">Crazy Diamond no Akuryou-teki Shitsuren</h3>
+                        <h2 class="serie-titulo" style="font-size:22px">JoJo no Kimyou na Bouken:</h2>
+                        <h3 class="serie-subtitulo" style="font-size:14px">Crazy Diamond no Akuryou-teki Shitsuren</h3>
                         <hr class="info-sep">
                         <div class="serie-details">
                             <div class="serie-details-labels">
+                                <p><strong>Tipo:</strong></p>
                                 <p><strong>Volúmenes:</strong></p>
                                 <p><strong>Capítulos:</strong></p>
                             </div>
                             <div class="serie-details-values">
+                                <p>One-Shot</p>
                                 <p>3 / 3</p>
                                 <p>16 / 16</p>
                             </div>
@@ -667,10 +669,8 @@
                     <img src="../media/manga/jojo-no-kimyou-na-bouken-crazy-diamond-no-akuryou-teki-shitsuren.png" alt="JoJo's Bizarre Adventure">
                 </div>
                 <div class="contenido-overlay">
-                  <h2 style="margin-top:5px;text-align: center;">
-                    JoJo no Kimyou na Bouken:<br> 
-                    Crazy Diamond no<br> Akuryou-teki Shitsuren
-                </h2>
+                    <h2 style="margin-top:5px">JoJo no Kimyou na Bouken:</h2>
+                    <h3 style="font-size:15px">Crazy Diamond no Akuryou-teki Shitsuren</h3>
                   <hr style="margin-top:15px;margin-bottom:15px;">
                   <p><b>Tipo:</b> Manga</p>
                   <p><b>Autor:</b> Hirohiko Araki</p>
@@ -683,6 +683,56 @@
                 </div>
             </div>
         </div>
+       
+        <hr class="info-sep">
+
+        <div class="serie-container">
+            <section class="serie">
+                <div class="serie-elemento">
+                    <div class="serie-imagen">
+                        <img src="../media/manga/oingo-to-boingo-kyoudai-daibouken.png" alt="JoJo's Bizarre Adventure">
+                    </div>
+                    <div class="serie-info" style="position: relative;">
+                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(14)">
+                        <h2 class="serie-titulo" style="font-size:17px">Oingo to Boingo Kyoudai Daibouken</h2>
+                        <hr class="info-sep">
+                        <div class="serie-details">
+                            <div class="serie-details-labels">
+                                <p><strong>Tipo:</strong></p>
+                                <p><strong>Volúmenes:</strong></p>
+                                <p><strong>Capítulos:</strong></p>
+                            </div>
+                            <div class="serie-details-values">
+                                <p>One-Shot</p>
+                                <p>1 / 1</p>
+                                <p>2 / 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="ov14" class="overlay" style="display: none;">
+                <div class="serie-imagen">
+                    <img src="../media/manga/oingo-to-boingo-kyoudai-daibouken.png" alt="JoJo's Bizarre Adventure">
+                </div>
+                <div class="contenido-overlay">
+                  <h2 style="margin-top:5px;">
+                    Oingo to Boingo Kyoudai Daibouken
+                </h2>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Tipo:</b> One-Shot</p>
+                  <p><b>Autor:</b> Hirohiko Araki</p>
+                  <p><b>Generos:</b> Fantasia, Supernatural</p>
+                  <p><b>Fecha de Publicación:</b> 23/10/2002</p>
+                  <hr style="margin-top:15px;margin-bottom:15px;">
+                  <p><b>Leido desde:</b> 17/07/2023</p>
+                  <p><b>Leido hasta:</b> 17/07/2023</p>
+                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(14)" title="Cerrar">
+                </div>
+            </div>
+        </div>
+    </section>
+
         </section>
 
         <section id="sec4" style="display: none;">
@@ -740,12 +790,12 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Twitter</h4>
-                <p>@SLENDERS1T0</p>
+                <h4>X</h4>
+                <p>@SrSlendah</p>
             </div>
             <div class="content-foo">
                 <h4>Discord</h4>
-                <p> <a href="https://discord.gg/E4nEfBjXsu" style="color: #ccc; text-decoration: none;">Click</a></p>
+                <p>@Slendah</p>
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>
