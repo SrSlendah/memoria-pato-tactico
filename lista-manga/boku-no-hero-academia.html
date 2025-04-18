@@ -86,49 +86,100 @@
 
         <div class="secciones" align="center">
             <button onclick="goTo('anime_bnha');">Anime</button>
+            <span class="separador_btn"></span>
+            <a href="#historia_principal"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Historia Principal</button></a>
+            <a href="#otros"><button id="sec3-btn">Otros</button></a>
         </div>
 
-        <div class="serie-container">
-            <section class="serie">
-                <div class="serie-elemento">
-                    <div class="serie-imagen">
-                        <img src="../media/manga/boku-no-hero-academia.png" alt="Boku no Hero Academia">
-                    </div>
-                    <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
-                        <h2 class="serie-titulo">Boku no Hero Academia</h2>
-                        <hr class="info-sep">
-                        <div class="serie-details">
-                            <div class="serie-details-labels">
-                                <p><strong>Volúmenes:</strong></p>
-                                <p><strong>Capítulos:</strong></p>
-                            </div>
-                            <div class="serie-details-values">
-                                <p>42 / 42</p>
-                                <p>430 / 430</p>
+        <section id="sec1">
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/manga/boku-no-hero-academia.png" alt="Boku no Hero Academia">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                            <h2 class="serie-titulo">Boku no Hero Academia</h2>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Volúmenes:</strong></p>
+                                    <p><strong>Capítulos:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p>42 / 42</p>
+                                    <p>430 / 430</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </section>
+                <div id="ov1" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/manga/boku-no-hero-academia.png" alt="Boku no Hero Academia">
+                    </div>
+                    <div class="contenido-overlay">
+                    <h2 style="margin-top:5px">Boku no Hero Academia</h2>
+                    <hr style="margin-top:15px;margin-bottom:15px;">
+                    <p><b>Tipo:</b> Manga</p>
+                    <p><b>Autor:</b> Kouhei Horikoshi</p>
+                    <p><b>Generos:</b> Acción</p>
+                    <p><b>Fecha de Publicación:</b> 07/07/2014 -- 05/08/2024</p>
+                    <hr style="margin-top:15px;margin-bottom:15px;">
+                    <p><b>Leido desde:</b> 27/07/2024</p>
+                    <p><b>Leido hasta:</b> 05/08/2024</p>
+                    <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                    </div>
                 </div>
-            </section>
-            <div id="ov1" class="overlay" style="display: none;">
-                <div class="serie-imagen">
-                    <img src="../media/manga/boku-no-hero-academia.png" alt="Boku no Hero Academia">
+            </div>
+        </section>
+
+        <section id="sec3">
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/manga/my-villain-gang.png">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(2)">
+                            <h2 class="serie-titulo">My Villain Gang</h2>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Tipo:</strong></p>
+                                    <p><strong>Volúmenes:</strong></p>
+                                    <p><strong>Capítulos:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p>Historia Paralela <i style="font-size:11px">(Fanmade)</i></p>
+                                    <p>0 / 0</p>
+                                    <p>03 / 10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="ov2" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/manga/my-villain-gang.png">
+                    </div>
+                    <div class="contenido-overlay">
+                    <h2 style="margin-top:5px">My Villain Gang</h2>
+                    <hr style="margin-top:15px;margin-bottom:15px;">
+                    <p><b>Tipo:</b> Manga</p>
+                    <p><b>Autor:</b> Demongem</p>
+                    <p><b>Generos:</b> Acción</p>
+                    <p><b>Fecha de Publicación:</b> 17/07/2022 -- 07/04/2023</p>
+                    <hr style="margin-top:15px;margin-bottom:15px;">
+                    <p><b>Leido desde:</b> 18/04/2025</p>
+                    <p><b>Leido hasta:</b> ?</p>
+                    <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
+                    </div>
                 </div>
-                <div class="contenido-overlay">
-                  <h2 style="margin-top:5px">Boku no Hero Academia</h2>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Manga</p>
-                  <p><b>Autor:</b> Kouhei Horikoshi</p>
-                  <p><b>Generos:</b> Acción</p>
-                  <p><b>Fecha de Publicación:</b> 07/07/2014 -- 05/08/2024</p>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Leido desde:</b> 27/07/2024</p>
-                  <p><b>Leido hasta:</b> 05/08/2024</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
-                </div>
-              </div>
-        </div>
+            </div>
+        </section>
 
     </main>
 
