@@ -40,6 +40,7 @@ python <archivo> (ejecutar python)
 <p title="Visto"><i class="fa-solid fa-check"></i></p>
 
 
+//* Orden de secciones en WBH *\\
 
 titulos
 color
@@ -50,6 +51,7 @@ skins de arma
 skins de emojis
 avatares
 compañeros
+acompañantes
 podios
 efectos ko
 gestos
