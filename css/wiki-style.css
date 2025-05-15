@@ -5786,6 +5786,12 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     font-family: Arial Black;
 }
 
+.evento-titulo-text_teal > span, .evento-titulo-text-abajo_teal > span {
+    color: #03FCC6;
+    font-size: 16px;
+    font-family: Arial Black;
+}
+
 .evento-titulo-topleft {
     border-radius: 20px 0 0 0;
 }
