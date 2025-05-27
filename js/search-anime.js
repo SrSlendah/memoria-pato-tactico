@@ -79,6 +79,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Record of Ragnarok', url: '../lista-anime/record-of-ragnarok' },
     { resultado: 'ReLIFE', url: '../lista-anime/relife' },
     { resultado: 'Re:Zero kara Hajimeru Isekai Saikatsu', url: '../lista-anime/re-zero-kara-hajimeru-isekai-seikatsu' },
+    { resultado: 'Rick & Morty: The Anime', url: '../lista-anime/rick-morty-the-anime' },
     { resultado: 'Sakamoto Days', url: '../lista-anime/sakamoto-days' },
     { resultado: 'Shangri-La Frontier', url: '../lista-anime/shangri-la-frontier' },
     { resultado: 'Shigatsu wa Kimi no Uso', url: '../lista-anime/shigatsu-wa-kimi-no-uso' },

@@ -147,6 +147,10 @@ function goTo(string) {
         window.location.href = "../lista-anime/one-piece"
     };
 
+    if (string == 'anime_rickmorty') {
+        window.location.href = "../lista-anime/rick-morty-the-anime"
+    };
+
     if (string == 'anime_sakamoto') {
         window.location.href = "../lista-anime/sakamoto-days"
     };
@@ -171,6 +175,10 @@ function goTo(string) {
 
     if (string == 'lps_onepiece') {
         window.location.href = "../lista-peliculas-series/one-piece"
+    };
+
+    if (string == 'lps_rickmorty') {
+        window.location.href = "../lista-peliculas-series/rick-morty"
     };
 
     if (string == 'lps_zom100') {
