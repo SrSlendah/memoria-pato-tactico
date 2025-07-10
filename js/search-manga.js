@@ -16,6 +16,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Hunter x Hunter', url: '../lista-manga/hunter-x-hunter' },
     { resultado: "Jojo's Bizarre Adventure", url: '../lista-manga/jojos-bizarre-adventure' },
     { resultado: "Jujutsu Kaisen", url: '../lista-manga/jujutsu-kaisen' },
+    { resultado: "Kagurabachi", url: '../lista-manga/kagurabachi' },
     { resultado: "Kaiju No. 8", url: '../lista-manga/kaiju-no-8' },
     { resultado: 'Made in Abyss', url: '../lista-manga/made-in-abyss' },
     { resultado: 'Megami Ibunroku: Persona', url: '../lista-manga/megami-ibunroku-persona' },
