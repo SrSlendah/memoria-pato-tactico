@@ -100,6 +100,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'That Time I Got Reincarnated as a Slime', url: '../lista-anime/that-time-i-got-reincarnated-as-a-slime' },
     { resultado: 'The Beginning After the End', url: '../lista-anime/the-beginning-after-the-end' },
     { resultado: 'The Eminence in Shadow', url: '../lista-anime/the-eminence-in-shadow' },
+    { resultado: 'The Summer Hikaru Died', url: '../lista-anime/the-summer-hikaru-died' },
     { resultado: 'To Be Hero X', url: '../lista-anime/to-be-hero-x' },
     { resultado: 'Tokyo Ghoul', url: '../lista-anime/tokyo-ghoul' },
     { resultado: 'Tokyo Revengers', url: '../lista-anime/tokyo-revengers' },
