@@ -13,7 +13,6 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Chainsaw Man', url: '../lista-manga/chainsaw-man' },
     { resultado: 'Dandadan', url: '../lista-manga/dandadan' },
     { resultado: 'Genshin Impact', url: '../lista-manga/genshin-impact' },
-    { resultado: 'Hunter x Hunter', url: '../lista-manga/hunter-x-hunter' },
     { resultado: "Jojo's Bizarre Adventure", url: '../lista-manga/jojos-bizarre-adventure' },
     { resultado: "Jujutsu Kaisen", url: '../lista-manga/jujutsu-kaisen' },
     { resultado: "Kagurabachi", url: '../lista-manga/kagurabachi' },
