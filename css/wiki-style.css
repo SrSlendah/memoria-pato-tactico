@@ -6224,6 +6224,10 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     margin-top: -5px;
 }
 
+.evento-skin-list-texto > div > img {
+    width: 15px;
+}
+
 .evento-paquete {
     display: grid;
     grid-template-columns: 1fr;

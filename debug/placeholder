@@ -42,6 +42,7 @@ python <archivo> (ejecutar python)
 
 //* Orden de secciones en WBH *\\
 
+monedas
 titulos
 color
 leyendas
