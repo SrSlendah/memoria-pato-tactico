@@ -19,6 +19,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Boku no Hero Academia', url: '../lista-anime/boku-no-hero-academia' },
     { resultado: 'Bokutachi wa Benkyou ga Dekinai', url: '../lista-anime/bokutachi-wa-benkyou-ga-dekinai' },
     { resultado: 'Buddy Daddies', url: '../lista-anime/buddy-daddies' },
+    { resultado: 'Campfire Cooking in Another World with My Absurd Skill', url: '../lista-anime/campfire-cooking-in-another-world-with-my-absurd-skill' },
     { resultado: 'Chainsaw Man', url: '../lista-anime/chainsaw-man' },
     { resultado: 'Clevatess', url: '../lista-anime/clevatess' },
     { resultado: 'Dandadan', url: '../lista-anime/dandadan' },
