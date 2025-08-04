@@ -110,6 +110,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Tokyo Revengers', url: '../lista-anime/tokyo-revengers' },
     { resultado: 'Tondemo Skill de Isekai Hourou Meshi', url: '../lista-anime/tondemo-skill-de-isekai-hourou-meshi' },
     { resultado: 'Tonikaku Kawaii', url: '../lista-anime/tonikaku-kawaii' },
+    { resultado: 'Tougen Anki', url: '../lista-anime/tougen-anki' },
     { resultado: 'Uzaki-chan wa Asobitai!', url: '../lista-anime/uzaki-chan-wa-asobitai' },
     { resultado: 'Uzumaki', url: '../lista-anime/uzumaki' },
     { resultado: 'Zenshu', url: '../lista-anime/zenshu' },
