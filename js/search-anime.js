@@ -22,6 +22,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Campfire Cooking in Another World with My Absurd Skill', url: '../lista-anime/campfire-cooking-in-another-world-with-my-absurd-skill' },
     { resultado: 'Chainsaw Man', url: '../lista-anime/chainsaw-man' },
     { resultado: 'Clevatess', url: '../lista-anime/clevatess' },
+    { resultado: 'Cyberpunk: Edgerunners', url: '../lista-anime/cyberpunk-edgerunners' },
     { resultado: 'Dandadan', url: '../lista-anime/dandadan' },
     { resultado: 'Danmachi', url: '../lista-anime/danmachi' },
     { resultado: 'Darling in the FranXX', url: '../lista-anime/darling-in-the-franxx' },
