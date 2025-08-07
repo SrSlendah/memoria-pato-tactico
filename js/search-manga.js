@@ -11,6 +11,7 @@ function obtenerResultadosConURLs(query) {
   resultadosConURLs = [
     { resultado: 'Boku no Hero Academia', url: '../lista-manga/boku-no-hero-academia' },
     { resultado: 'Chainsaw Man', url: '../lista-manga/chainsaw-man' },
+    { resultado: 'Choujin X', url: '../lista-manga/choujin-x' },
     { resultado: 'Dandadan', url: '../lista-manga/dandadan' },
     { resultado: 'Genshin Impact', url: '../lista-manga/genshin-impact' },
     { resultado: "Jojo's Bizarre Adventure", url: '../lista-manga/jojos-bizarre-adventure' },

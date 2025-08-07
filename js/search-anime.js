@@ -74,6 +74,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Noragami', url: '../lista-anime/noragami' },
     { resultado: 'One Piece', url: '../lista-anime/one-piece' },
     { resultado: 'One Punch Man', url: '../lista-anime/one-punch-man' },
+    { resultado: 'Oniichan wa Oshimai!', url: '../lista-anime/oniichan-wa-oshimai' },
     { resultado: 'Oshi no Ko', url: '../lista-anime/oshi-no-ko' },
     { resultado: 'Overlord', url: '../lista-anime/overlord' },
     { resultado: 'Persona The Animation', url: '../lista-anime/persona-the-animation' },
