@@ -29,6 +29,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Slenderman', url: '../lista-peliculas-series/slenderman' },
     { resultado: 'Stranger Things', url: '../lista-peliculas-series/stranger-things' },
     { resultado: 'The 8 Show', url: '../lista-peliculas-series/the-8-show' },
+    { resultado: 'The Amazing Digital Circus', url: '../lista-peliculas-series/the-amazing-digital-circus' },
     { resultado: 'The Last of Us', url: '../lista-peliculas-series/the-last-of-us' },
     { resultado: 'Una Película de Minecraft', url: '../lista-peliculas-series/una-pelicula-de-minecraft' },
     { resultado: 'Viernes 13', url: '../lista-peliculas-series/viernes-13' },
