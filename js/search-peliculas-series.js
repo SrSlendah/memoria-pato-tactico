@@ -26,6 +26,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Rick & Morty', url: '../lista-peliculas-series/rick-morty' },
     { resultado: 'Saw', url: '../lista-peliculas-series/saw' },
     { resultado: "Scary Movie", url: '../lista-peliculas-series/scary-movie' },
+    { resultado: "Silent Hill", url: '../lista-peliculas-series/silent-hill' },
     { resultado: 'Slenderman', url: '../lista-peliculas-series/slenderman' },
     { resultado: 'Stranger Things', url: '../lista-peliculas-series/stranger-things' },
     { resultado: 'The 8 Show', url: '../lista-peliculas-series/the-8-show' },
