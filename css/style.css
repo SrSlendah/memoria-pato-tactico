@@ -403,7 +403,8 @@ th {
     display: none;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
-    border-radius: 60px
+    border-radius: 60px;
+    z-index: 999;
 }
 
     #scroll span {
@@ -987,15 +988,15 @@ footer {
 }
 
 .serie-imagen {
-    flex: 0 0 auto; /* No crecer, no encoger */
+    flex: 0 0 auto;
     display: flex;
     margin-right: 10px;
-    justify-content: center; /* Centra la imagen horizontalmente dentro del contenedor */
+    justify-content: center;
 }
 
 .serie-imagen img {
-    width: 300px; /* Ancho fijo */
-    height: 400px; /* Alto fijo */
+    width: 300px;
+    height: 400px;
     border-radius: 15px;
     border: 4px solid #4b2866;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
@@ -1019,21 +1020,21 @@ footer {
     border: 4px solid #4b2866;
     border-radius: 15px;
     flex-direction: column;
-    align-items: center; /* Centra el contenido horizontalmente */
+    align-items: center;
     text-align: center;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     width: 350px;
 }
 
 .serie-titulo {
-    font-size: 1.5rem; /* Tamaño del texto del título */
+    font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
     margin-bottom: 10px;
 }
 
 .serie-subtitulo {
-    font-size: 1rem; /* Tamaño del texto del título */
+    font-size: 1rem;
     font-weight: bold;
     color: #fff;
     margin-top: -10px;
@@ -1041,7 +1042,7 @@ footer {
 }
 
 .serie-subsubtitulo {
-    font-size: 0.8rem; /* Tamaño del texto del título */
+    font-size: 0.8rem;
     font-weight: bold;
     color: #fff;
     margin-top: -10px;
@@ -1050,8 +1051,8 @@ footer {
 
 .serie-details {
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    gap: 10px; /* Espacio reducido entre las columnas */
+    justify-content: center;
+    gap: 10px;
     width: 100%;
 }
 
@@ -1072,28 +1073,27 @@ footer {
 .serie-details-labels, .serie-details-values {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos dentro de la columna */
+    align-items: center;
 }
 
 .serie-details-labels p, .serie-details-values p {
-    margin: 3px 0; /* Reduce el margen vertical */
-    color: white; /* Color del texto en el fondo */
+    margin: 3px 0;
+    color: white;
 }
 
-/* Consultas de medios para pantallas más pequeñas */
 @media (max-width: 750px) {
     .serie-elemento {
-        flex-direction: column; /* Coloca los elementos en una columna */
-        align-items: center; /* Centra los elementos horizontalmente */
+        flex-direction: column;
+        align-items: center;
     }
 
     .serie-imagen {
-        margin-bottom: 10px; /* Espacio entre la imagen y la información */
+        margin-bottom: 10px;
     }
 
     .serie-imagen img {
-        width: 70%;
-        height: auto;
+        width: 200px;
+        height: 300px;
     }
 
     .serie-info {
@@ -1101,7 +1101,7 @@ footer {
     }
 
     .serie-titulo {
-        font-size: 1.2rem; /* Reduce el tamaño del texto en pantallas pequeñas */
+        font-size: 1.2rem;
     }
 
     .serie-subtitulo {
