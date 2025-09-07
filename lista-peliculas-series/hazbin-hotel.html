@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dandadan - Lista de Manga</title>
+    <title>Hazbin Hotel - Lista de Películas y Series</title>
     <link rel="shortcut icon" href="../media/pato.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
-
 
         <script src="../js/menu.js"></script>
 
@@ -57,7 +55,7 @@
 
 
         <section class="textos-header">
-            <h1>Dandadan</h1>
+            <h1>Hazbin Hotel</h1>
         </section>
 
 
@@ -75,59 +73,32 @@
 
     <main>
         <div class="search-container">
-          <input type="text" id="search-input" placeholder="Buscar en la lista de manga...">
+          <input type="text" id="search-input" placeholder="Buscar en la lista de peliculas y series...">
           <ul id="autocomplete-list" style="display: none;"></ul>
         </div>
       
-        <script src="../js/search-manga.js"></script>
-        <script src="../js/anime.js"></script>
-        <script src="../js/overlay.js"></script>
-        <script src="../js/redirect.js"></script>
-
-        <div class="secciones" align="center">
-            <button onclick="goTo('anime_dandadan');">Anime</button>
-        </div>
+        <script src="../js/search-peliculas-series.js"></script>
 
         <div class="serie-container">
             <section class="serie">
                 <div class="serie-elemento">
                     <div class="serie-imagen">
-                        <img src="../media/manga/dandadan.png" alt="Dandadan">
+                        <img src="../media/peliculas-series/hazbin-hotel.png">
                     </div>
                     <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
-                        <h2 class="serie-titulo">Dandadan</h2>
+                        <h2 class="serie-titulo">Hazbin Hotel</h2>
                         <hr class="info-sep">
                         <div class="serie-details">
                             <div class="serie-details-labels">
-                                <p><strong>Capítulos:</strong></p>
-                                <p><strong>Volúmenes:</strong></p>
+                                <p><strong>Episodios:</strong></p>
                             </div>
                             <div class="serie-details-values">
-                                <p>207 / ?</p>
-                                <p>20 / ?</p>
+                                <p>2 / 8</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div id="ov1" class="overlay" style="display: none;">
-                <div class="serie-imagen">
-                    <img src="../media/manga/dandadan.png" alt="Dandadan">
-                </div>
-                <div class="contenido-overlay">
-                  <h2 class="serie-titulo">Dandadan</h2>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Manga</p>
-                  <p><b>Autor:</b> Yukinobu Tatsu</p>
-                  <p><b>Generos:</b> Acción, Comedia, Supernatural</p>
-                  <p><b>Fecha de Publicación:</b> 06/04/2021 - ?</p>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Leido desde:</b> 28/12/2024</p>
-                  <p><b>Leido hasta:</b> ?</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
-                </div>
-            </div>
         </div>
 
     </main>

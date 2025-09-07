@@ -11,6 +11,7 @@ function obtenerResultadosConURLs(query) {
   resultadosConURLs = [
     { resultado: 'Akame ga Kill!', url: '../lista-anime/akame-ga-kill' },
     { resultado: 'Ansatsu Kyoushitsu', url: '../lista-anime/ansatsu-kyoushitsu' },
+    { resultado: 'Azumanga Daiou The Animation', url: '../lista-anime/azumanga-daiou-the-animation' },
     { resultado: 'Beastars', url: '../lista-anime/beastars' },
     { resultado: 'Black Clover', url: '../lista-anime/black-clover' },
     { resultado: 'Blend S', url: '../lista-anime/blend-s' },
