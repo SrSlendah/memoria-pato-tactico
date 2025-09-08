@@ -86,49 +86,106 @@
 
         <div class="secciones" align="center">
             <button onclick="goTo('anime_jujutsu');">Anime</button>
+            <span class="separador_btn"></span>
+            <a href="#historia_principal"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Historia Principal</button></a>
+            <a href="#otros"><button id="sec3-btn">Otros</button></a>
         </div>
 
-        <div class="serie-container">
-            <section class="serie">
-                <div class="serie-elemento">
-                    <div class="serie-imagen">
-                        <img src="../media/manga/jujutsu-kaisen.png" alt="Jujutsu Kaisen">
-                    </div>
-                    <div class="serie-info" style="position: relative;">
-                        <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
-                        <h2 class="serie-titulo">Jujutsu Kaisen</h2>
-                        <hr class="info-sep">
-                        <div class="serie-details">
-                            <div class="serie-details-labels">
-                                <p><strong>Capítulos:</strong></p>
-                                <p><strong>Volúmenes:</strong></p>
-                            </div>
-                            <div class="serie-details-values">
-                                <p>271 / 271</p>
-                                <p>30 / 30</p>
+        <section id="sec1">
+
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/manga/jujutsu-kaisen.png">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(1)">
+                            <h2 class="serie-titulo">Jujutsu Kaisen</h2>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Capítulos:</strong></p>
+                                    <p><strong>Volúmenes:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p>271 / 271</p>
+                                    <p>30 / 30</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <div id="ov1" class="overlay" style="display: none;">
-                <div class="serie-imagen">
-                    <img src="../media/manga/jujutsu-kaisen.png" alt="Jujutsu Kaisen">
-                </div>
-                <div class="contenido-overlay">
-                  <h2 class="serie-titulo">Jujutsu Kaisen</h2>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Tipo:</b> Manga</p>
-                  <p><b>Autor:</b> Gege Akutami</p>
-                  <p><b>Generos:</b> Acción, Supernatural</p>
-                  <p><b>Fecha de Publicación:</b> 05/03/2018 -- 30/09/2024</p>
-                  <hr style="margin-top:15px;margin-bottom:15px;">
-                  <p><b>Leido desde:</b> 21/06/2024</p>
-                  <p><b>Leido hasta:</b> 30/09/2024</p>
-                  <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                </section>
+                <div id="ov1" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/manga/jujutsu-kaisen.png">
+                    </div>
+                    <div class="contenido-overlay">
+                    <h2 class="serie-titulo">Jujutsu Kaisen</h2>
+                    <hr style="margin-top:15px;margin-bottom:15px;">
+                    <p><b>Tipo:</b> Manga</p>
+                    <p><b>Autor:</b> Gege Akutami</p>
+                    <p><b>Generos:</b> Acción, Supernatural</p>
+                    <p><b>Fecha de Publicación:</b> 05/03/2018 - 30/09/2024</p>
+                    <hr style="margin-top:15px;margin-bottom:15px;">
+                    <p><b>Leido desde:</b> 21/06/2024</p>
+                    <p><b>Leido hasta:</b> 30/09/2024</p>
+                    <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(1)" title="Cerrar">
+                    </div>
                 </div>
             </div>
-        </div>
+
+        </section>
+
+        <section id="sec3">
+            
+            <div class="serie-container">
+                <section class="serie">
+                    <div class="serie-elemento">
+                        <div class="serie-imagen">
+                            <img src="../media/manga/jujutsu-kaisen-modulo.png">
+                        </div>
+                        <div class="serie-info" style="position: relative;">
+                            <img src="../media/icons/info.png" class="serie-masinfo" title="Mas Información" onclick="abrirOV(2)">
+                            <h2 class="serie-titulo">Jujutsu Kaisen</h2>
+                            <h2 class="serie-subtitulo">Modulo</h2>
+                            <hr class="info-sep">
+                            <div class="serie-details">
+                                <div class="serie-details-labels">
+                                    <p><strong>Tipo:</strong></p>
+                                    <p><strong>Capítulos:</strong></p>
+                                    <p><strong>Volúmenes:</strong></p>
+                                </div>
+                                <div class="serie-details-values">
+                                    <p>Spin-Off</p>    
+                                    <p>1 / ?</p>
+                                    <p>0 / ?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="ov2" class="overlay" style="display: none;">
+                    <div class="serie-imagen">
+                        <img src="../media/manga/jujutsu-kaisen-modulo.png">
+                    </div>
+                    <div class="contenido-overlay">
+                    <h2 class="serie-titulo">Jujutsu Kaisen</h2>
+                    <h2 class="serie-subtitulo">Modulo</h2>
+                    <hr style="margin-top:15px;margin-bottom:15px;">
+                    <p><b>Tipo:</b> Manga</p>
+                    <p><b>Autores:</b> Gege Akutami (Histoia), Yuuji Iwasaki (Arte)</p>
+                    <p><b>Generos:</b> Acción, Supernatural, Sci-Fi</p>
+                    <p><b>Fecha de Publicación:</b> 08/09/2025 - ?</p>
+                    <hr style="margin-top:15px;margin-bottom:15px;">
+                    <p><b>Leido desde:</b> 08/09/2025</p>
+                    <p><b>Leido hasta:</b> ?</p>
+                    <img src="../media/icons/close.png" style="width: 17px; height: 17px; position: absolute; top: 7px; right: 7px;" onclick="cerrarOV(2)" title="Cerrar">
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
     </main>
 
