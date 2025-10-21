@@ -297,6 +297,39 @@ function showSubSubSection(subsubsectionNumber) {
     if (window.location.hash === "#recompensas#pagina12") {
         showSubSection(12);
     }
+    if (window.location.hash === "#recompensas#inicio") {
+        showSubSection(1);
+    }
+    if (window.location.hash === "#recompensas#pasado-p1") {
+        showSubSection(2);
+    }
+    if (window.location.hash === "#recompensas#pasado-p2") {
+        showSubSection(3);
+    }
+    if (window.location.hash === "#recompensas#pasado-p3") {
+        showSubSection(4);
+    }
+    if (window.location.hash === "#recompensas#presente-p1") {
+        showSubSection(5);
+    }
+    if (window.location.hash === "#recompensas#presente-p2") {
+        showSubSection(6);
+    }
+    if (window.location.hash === "#recompensas#presente-p3") {
+        showSubSection(7);
+    }
+    if (window.location.hash === "#recompensas#futuro-p1") {
+        showSubSection(8);
+    }
+    if (window.location.hash === "#recompensas#futuro-p2") {
+        showSubSection(9);
+    }
+    if (window.location.hash === "#recompensas#futuro-p3") {
+        showSubSection(10);
+    }
+    if (window.location.hash === "#recompensas#final") {
+        showSubSection(11);
+    }
     if (window.location.hash === "#misiones") {
         showSection(2);
         showSubSubSection(1);
@@ -498,6 +531,39 @@ window.addEventListener("hashchange", function() {
   }
   if (window.location.hash === "#recompensas#pagina12") {
       showSubSection(12);
+  }
+  if (window.location.hash === "#recompensas#inicio") {
+      showSubSection(1);
+  }
+  if (window.location.hash === "#recompensas#pasado-p1") {
+      showSubSection(2);
+  }
+  if (window.location.hash === "#recompensas#pasado-p2") {
+      showSubSection(3);
+  }
+  if (window.location.hash === "#recompensas#pasado-p3") {
+      showSubSection(4);
+  }
+  if (window.location.hash === "#recompensas#presente-p1") {
+      showSubSection(5);
+  }
+  if (window.location.hash === "#recompensas#presente-p2") {
+      showSubSection(6);
+  }
+  if (window.location.hash === "#recompensas#presente-p3") {
+      showSubSection(7);
+  }
+  if (window.location.hash === "#recompensas#futuro-p1") {
+      showSubSection(8);
+  }
+  if (window.location.hash === "#recompensas#futuro-p2") {
+      showSubSection(9);
+  }
+  if (window.location.hash === "#recompensas#futuro-p3") {
+      showSubSection(10);
+  }
+  if (window.location.hash === "#recompensas#final") {
+      showSubSection(11);
   }
   if (window.location.hash === "#misiones") {
       showSection(2);
