@@ -6,6 +6,7 @@ comprobar errores pase batalla 12, agregar paginas de cada skin, agragar efecto 
 ERRORES PASE BATALLA 12:
     Pasado LvL14 -> foto de la skin de botas
     Pasado LvL22 -> foto de la skin de chakram
+agregar fotos armas shinobi no mono jiro
 
 agregar evento halloween 2025
 
