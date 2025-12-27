@@ -1,13 +1,11 @@
-cambios crossover destiny (cambias fotos placeholder de acompañantes)
-
 cambios crossover rayman (mejorar calidad bundles, emojis, avatar)
 
-comprobar errores pase batalla 12, agregar paginas de cada skin, agragar efecto de ko, agregar podio
+comprobar errores pase batalla 12, agragar efecto de ko, agregar podio
 ERRORES PASE BATALLA 12:
     Pasado LvL14 -> foto de la skin de botas
     Pasado LvL22 -> foto de la skin de chakram
-agregar fotos armas shinobi no mono jiro
 
-agregar evento halloween 2025
+agregar fotos armas shinobi no mono jiro, sengoku rappa petra, modern monomi val, future nokizaru koji, akuma shinobi priya, trick or treater kaya
 
-ulltima version de brawlhalla comprobada: 9.12
+
+ulltima version de brawlhalla comprobada: 9.13
