@@ -20,6 +20,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: "Five Nights at Freddy's", url: '../lista-peliculas-series/five-nights-at-freddys' },
     { resultado: 'Harry Potter', url: '../lista-peliculas-series/harry-potter' },
     { resultado: 'Hazbin Hotel', url: '../lista-peliculas-series/hazbin-hotel' },
+    { resultado: 'Helluva Boss', url: '../lista-peliculas-series/helluva-boss' },
     { resultado: "JoJo's Biarre Adventure", url: '../lista-peliculas-series/jojos-bizarre-adventure' },
     { resultado: 'Jurassic Park', url: '../lista-peliculas-series/jurassic-park' },
     { resultado: 'K-Pop Demon Hunters', url: '../lista-peliculas-series/k-pop-demon-hunters' },

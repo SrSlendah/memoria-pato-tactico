@@ -43,11 +43,11 @@ def generar_reporte(directorios):
 
 def mostrar_resultado():
     directorios = [
-        ("../lista-anime/", "../js/search-anime.js"),
-        ("../lista-manga/", "../js/search-manga.js"),
-        ("../lista-marvel/", "../js/search-marvel.js"),
-        ("../lista-peliculas-series/", "../js/search-peliculas-series.js"),
-        ("../wiki-bh/", "../js/search-wiki-bh.js"),
+        ("lista-anime/", "js/search-anime.js"),
+        ("lista-manga/", "js/search-manga.js"),
+        ("lista-marvel/", "js/search-marvel.js"),
+        ("lista-peliculas-series/", "js/search-peliculas-series.js"),
+        ("wiki-bh/", "js/search-wiki-bh.js"),
     ]
     
     resultado = generar_reporte(directorios)
