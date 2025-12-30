@@ -1,3 +1,17 @@
 {
-    "quickCommandButtons.activeSet": null
+    "quickCommandButtons.activeSet": null,
+    "quickCommandButtons.buttons": [
+        {
+            "command": "py debug/cambios.pyw",
+            "insertOnly": false,
+            "name": "$(clippy) Cambios",
+            "useVsCodeApi": false
+        },
+        {
+            "command": "py debug/ordenar.py",
+            "insertOnly": false,
+            "name": "$(checklist) Ordenar",
+            "useVsCodeApi": false
+        }
+    ]
 }
