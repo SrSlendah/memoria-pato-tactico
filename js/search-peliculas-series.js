@@ -15,6 +15,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Dos "Rubias" de Pelo en Pecho', url: '../lista-peliculas-series/dos-rubias-de-pelo-en-pecho' },
     { resultado: 'El Juego del Calamar', url: '../lista-peliculas-series/el-juego-del-calamar' },
     { resultado: 'El Juego del Pulpo', url: '../lista-peliculas-series/el-juego-del-pulpo' },
+    { resultado: 'Exit 8', url: '../lista-peliculas-series/exit-8' },
     { resultado: 'El Hoyo', url: '../lista-peliculas-series/el-hoyo' },
     { resultado: "Fallout", url: '../lista-peliculas-series/fallout' },
     { resultado: "Five Nights at Freddy's", url: '../lista-peliculas-series/five-nights-at-freddys' },
