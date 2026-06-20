@@ -11,6 +11,7 @@ function obtenerResultadosConURLs(query) {
   resultadosConURLs = [
     { resultado: 'Alice in Borderland', url: '../lista-peliculas-series/alice-in-borderland' },
     { resultado: 'Arcane', url: '../lista-peliculas-series/arcane' },
+    { resultado: 'Backrooms', url: '../lista-peliculas-series/backrooms' },
     { resultado: "Death Note: Live Action", url: '../lista-peliculas-series/death-note' },
     { resultado: 'Dos "Rubias" de Pelo en Pecho', url: '../lista-peliculas-series/dos-rubias-de-pelo-en-pecho' },
     { resultado: 'El Juego del Calamar', url: '../lista-peliculas-series/el-juego-del-calamar' },
