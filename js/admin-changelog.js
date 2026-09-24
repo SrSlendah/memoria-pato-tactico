@@ -4,7 +4,6 @@ function GetVersion() {
 
     let elementos = document.querySelectorAll("[id]:not(#versiones)");
     elementos.forEach(el => {
-        // Verifica si el ID es numérico
         if (/^\d+$/.test(el.id)) {
             el.style.display = "none";
         }

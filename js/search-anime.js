@@ -87,6 +87,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Princess Connect! Re:Dive', url: '../lista-anime/princess-connect-re-dive' },
     { resultado: 'Reborn as a Vending Machine, I Now Wander the Dungeon', url: '../lista-anime/reborn-as-a-vending-machine-i-now-wander-the-dungeon' },
     { resultado: 'Record of Ragnarok', url: '../lista-anime/record-of-ragnarok' },
+    { resultado: 'Reincarnation no Kaben', url: '../lista-anime/reincarnation-no-kaben' },
     { resultado: 'ReLIFE', url: '../lista-anime/relife' },
     { resultado: 'Re:Zero kara Hajimeru Isekai Saikatsu', url: '../lista-anime/re-zero-kara-hajimeru-isekai-seikatsu' },
     { resultado: 'Rick & Morty: The Anime', url: '../lista-anime/rick-morty-the-anime' },
