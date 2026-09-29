@@ -78,34 +78,68 @@
         </div>
       
         <script src="../js/search-peliculas-series.js"></script>
+        <script src="../js/peliculas-series.js"></script>
         <script src="../js/redirect.js"></script>
 
         <div class="secciones" align="center">
             <button onclick="goTo('anime_onepiece');">Anime</button>
             <button onclick="goTo('manga_onepiece');">Manga</button>
+            <span class="separador_btn"></span>
+            <a href="#temporadas"><button id="sec1-btn" style="background-color: #4b2966; border-color: #311a42; color: #9e9e9e;">Temporadas</button></a>
+            <a href="#otros"><button id="sec3-btn">Otros</button></a>
         </div>
 
-        <div class="serie-container">
-            <section class="serie">
-                <div class="serie-elemento">
-                    <div class="serie-imagen">
-                        <img src="../media/peliculas-series/one-piece.png" alt="One Piece">
-                    </div>
-                    <div class="serie-info" style="position: relative;">
-                        <h2 class="serie-titulo">One Piece</h2>
-                        <hr class="info-sep">
-                        <div class="serie-details">
-                            <div class="serie-details-labels">
-                                <p><strong>Episodios:</strong></p>
+        <section id="sec1">
+
+                <div class="serie-container">
+                    <section class="serie">
+                        <div class="serie-elemento">
+                            <div class="serie-imagen">
+                                <img src="../media/peliculas-series/one-piece.png">
                             </div>
-                            <div class="serie-details-values">
-                                <p>8 / 8</p>
+                            <div class="serie-info" style="position: relative;">
+                                <h2 class="serie-titulo">One Piece</h2>
+                                <hr class="info-sep">
+                                <div class="serie-details">
+                                    <div class="serie-details-labels">
+                                        <p><strong>Episodios:</strong></p>
+                                    </div>
+                                    <div class="serie-details-values">
+                                        <p>8 / 8</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
-            </section>
-        </div>
+
+        </section>
+
+        <section id="sec3" style="display: none;">
+            
+                <div class="serie-container">
+                    <section class="serie">
+                        <div class="serie-elemento">
+                            <div class="serie-imagen">
+                                <img src="../media/peliculas-series/lego-one-piece.png">
+                            </div>
+                            <div class="serie-info" style="position: relative;">
+                                <h2 class="serie-titulo">Lego One Piece</h2>
+                                <hr class="info-sep">
+                                <div class="serie-details">
+                                    <div class="serie-details-labels">
+                                        <p><strong>Episodios:</strong></p>
+                                    </div>
+                                    <div class="serie-details-values">
+                                        <p>2 / 2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+        </section>
 
     </main>
 
