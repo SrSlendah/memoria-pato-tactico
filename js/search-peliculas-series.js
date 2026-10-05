@@ -27,6 +27,7 @@ function obtenerResultadosConURLs(query) {
     { resultado: 'Jurassic Park', url: '../lista-peliculas-series/jurassic-park' },
     { resultado: 'K-Pop Demon Hunters', url: '../lista-peliculas-series/k-pop-demon-hunters' },
     { resultado: 'La Monja', url: '../lista-peliculas-series/la-monja' },
+    { resultado: 'Obsession', url: '../lista-peliculas-series/obsession' },
     { resultado: 'One Piece', url: '../lista-peliculas-series/one-piece' },
     { resultado: 'Rick & Morty', url: '../lista-peliculas-series/rick-morty' },
     { resultado: 'Saw', url: '../lista-peliculas-series/saw' },
